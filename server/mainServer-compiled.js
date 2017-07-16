@@ -10,6 +10,10 @@ var compress = require('compression');
 var https = require('https');
 var fs = require('fs');
 
+var mysite = './build/cert/wanchain.org.key'; //key
+var mysiteCrt = './build/cert/3bb55a3526ededcc.crt'; //
+var gd1 = './build/cert/gd_bundle-g2-g1.crt';
+
 var app = express();
 app.use(compress());
 
@@ -62,6 +66,13 @@ if (project.env === 'development') {
   app.use(express.static(path.resolve(project.basePath, project.outDir)));
 }
 
-module.exports = app;
+module.exports = https.createServer({
+  key: fs.readFileSync(mysite),
+  certificate: fs.readFileSync(mysiteCrt),
+  ca: [fs.readFileSync(gd1)],
+  requestCert: false,
+  rejectUnauthorized: false
+  //ca: [fs.readFileSync(gd1)]
+}, app);
 
-//# sourceMappingURL=main-compiled.js.map
+//# sourceMappingURL=mainServer-compiled.js.map
