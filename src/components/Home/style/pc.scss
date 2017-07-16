@@ -15,6 +15,10 @@
       float: left;
     }
 
+    .navbarImg{
+      display: none;
+    }
+
     .homeHeaderUl{
       padding-top: 10px;
       float: left;
@@ -133,8 +137,11 @@
           font-family: BebasNeue;
           font-size: 48px;
           color: #fff;
-          padding: 6px;
-          background: #201f1f;
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          text-align: center;
+          line-height: 55px;
         }
         small{
           padding-left: 30px;
@@ -143,7 +150,7 @@
           font-size: 48px;
         }
         p{
-          padding-top: 6px;
+          padding-top: 0;
           font-size: 16px;
           color: #ffffff;
           opacity: 0.65;
@@ -180,13 +187,19 @@
       vertical-align: middle;
       padding-top: 12px;
       display: block;
+      opacity: 0.6;
     }
 
     .home-submit-button .home-submit-button2:focus,
-    .home-submit-button .home-submit-button2:hover{
+    .home-submit-button2:hover{
       color: #FFF;
       border-color: transparent;
     }
+
+    .home-submit-button:hover{
+      background: #1f6ce9;
+    }
+
   }
 }
 

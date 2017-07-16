@@ -5,6 +5,12 @@ const logger = require('../build/lib/logger');
 const webpackConfig = require('../build/webpack.config');
 const project = require('../project.config');
 const compress = require('compression');
+var https = require('https');
+var fs = require('fs');
+
+const mysite = ('./build/cert/ddlphtcsr.pem');
+const mysiteCrt = ('./build/cert/7ce659ffec8df530.crt');
+const gd1 = ('./build/cert/gd_bundle-g2-g1.crt');
 
 const app = express();
 app.use(compress());
@@ -64,4 +70,9 @@ if (project.env === 'development') {
   app.use(express.static(path.resolve(project.basePath, project.outDir)))
 }
 
-module.exports = app;
+
+module.exports = https.createServer({
+  key: fs.readFileSync(mysite),
+  certificate: fs.readFileSync(mysiteCrt),
+  ca: [fs.readFileSync(gd1)]
+}, app);

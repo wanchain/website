@@ -14,6 +14,7 @@ import { IndexLink, Link } from 'react-router';
 import './Home.scss'
 import github from '../../image/github.png';
 import logo from '../../image/logo.png';
+import nav from '../../image/nav1.png';
 
 
 var currentDate = function (offset) {
@@ -45,7 +46,7 @@ class Home extends Component {
     }
 
     tick() {
-        var target_date = new Date('09/09/2017 23:59:59'), // set target date
+        var target_date = new Date('09/20/2017 12:20:00'), // set target date
             current_date = currentDate(+10); // get fixed current date
 
         // difference of dates
@@ -106,7 +107,7 @@ class Home extends Component {
                                 <i className="fa fa-bars"></i>
                             </button>
 
-                            <span className="menu-icon-span"><div className="menu-icon"></div></span>
+                            <img src={nav} className="navbarImg"/>
                         </div>
                         <div className="collapse navbar-collapse homeHeaderUl" id="navbar-menu">
                             <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
@@ -120,8 +121,7 @@ class Home extends Component {
                         </div>
 
                         <div className="homeGit">
-                            <img src={github} />
-                            <p><a>中文</a>{' | '}<a>English</a></p>
+                            <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
                         </div>
                     </nav>
                     <div className="container">
@@ -132,22 +132,22 @@ class Home extends Component {
                             </p>
                             <ul className="countdown">
                                 <li>
-                                    <span>{this.state.date.days}</span>
+                                    <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.days}</span>
                                     <small>:</small>
                                     <p>{this.state.date.ref_days}</p>
                                 </li>
                                 <li>
-                                    <span>{this.state.date.hours}</span>
+                                    <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.hours}</span>
                                     <small>:</small>
                                     <p>{this.state.date.ref_hours}</p>
                                 </li>
                                 <li>
-                                    <span>{this.state.date.minutes}</span>
+                                    <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.minutes}</span>
                                     <small>:</small>
                                     <p>{this.state.date.ref_minutes}</p>
                                 </li>
                                 <li>
-                                    <span>{this.state.date.seconds}</span>
+                                    <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.seconds}</span>
                                     <small style={{opacity: '0', paddingLeft: '0', paddingRight: '0'}}>:</small>
                                     <p>{this.state.date.ref_seconds}</p>
                                 </li>
@@ -158,7 +158,7 @@ class Home extends Component {
                                 白皮书
                             </a>
 
-                            <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">
                                 众筹
                             </a>
                         </div>
@@ -188,3 +188,4 @@ const mapStateToProps = (state) => ({
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
 
 // <Div4 />
+//  <p><a>中文</a>{' | '}<a>English</a></p>

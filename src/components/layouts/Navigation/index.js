@@ -8,6 +8,7 @@ import './Navigation.scss';
 
 import github from '../../../image/github2.png';
 import logo from '../../../image/logo2.png';
+import nav from '../../../image/nav2.png';
 
 class Navigation extends Component {
     static propTypes = {
@@ -41,7 +42,7 @@ class Navigation extends Component {
                             <i className="fa fa-bars"></i>
                         </button>
 
-                        <span className="menu-icon-span"><div className="menu-icon"></div></span>
+                        <img src={nav} className="navbarImg"/>
                     </div>
                     <div className="collapse navbar-collapse navHeaderUl" id="navbar-menu">
                         <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" id="navbar-brand">
@@ -55,8 +56,7 @@ class Navigation extends Component {
                     </div>
 
                     <div className="navGit">
-                        <img src={github} />
-                        <p><a>中文</a>{' | '}<a>English</a></p>
+                        <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
                     </div>
                 </nav>
             </div>
@@ -83,3 +83,8 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navigation)
+
+// <div className="navGit">
+//     <img src={github} />
+//     <p><a>中文</a>{' | '}<a>English</a></p>
+// </div>

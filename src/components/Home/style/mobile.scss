@@ -10,9 +10,18 @@
       width: 25%;
     }
 
+    .navbarImg{
+      width: 6%;
+      margin-left: 12px;
+      float: right;
+      position: relative;
+      top: 5px;
+      left: 20px;
+    }
+
     .homeHeaderUl{
       padding-top: 10px;
-      float: left;
+      float: right;
       padding-left: 30px;
     }
 
@@ -41,8 +50,9 @@
     float: right;
     img{
       margin-top: -30px;
-      position: relative;
-      left: 10px;
+      /* position: relative; */
+      /* left: 10px; */
+      width: 66%;
     }
     p{
       color: #fff;
