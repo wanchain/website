@@ -8,8 +8,8 @@ const compress = require('compression');
 var https = require('https');
 var fs = require('fs');
 
-const mysite = ('./build/cert/ddlphtcsr.pem');
-const mysiteCrt = ('./build/cert/7ce659ffec8df530.crt');
+const mysite = ('./build/cert/wanchain.org.key'); //key
+const mysiteCrt = ('./build/cert/3bb55a3526ededcc.crt'); //
 const gd1 = ('./build/cert/gd_bundle-g2-g1.crt');
 
 const app = express();
@@ -74,5 +74,10 @@ if (project.env === 'development') {
 module.exports = https.createServer({
   key: fs.readFileSync(mysite),
   certificate: fs.readFileSync(mysiteCrt),
-  ca: [fs.readFileSync(gd1)]
+  ca: [fs.readFileSync(gd1)],
+  requestCert: false,
+  rejectUnauthorized: false
+  //ca: [fs.readFileSync(gd1)]
 }, app);
+
+// module.exports = app;

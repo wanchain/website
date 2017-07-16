@@ -31,7 +31,7 @@ class Div2 extends React.Component {
                         </p>
 
                         <div className="div2-submit-area">
-                            <a className="div2-submit-button btn" href='/files/test.pdf' target="_blank">
+                            <a className="div2-submit-button btn">
                                 白皮书<img src={download} />
                             </a>
                         </div>

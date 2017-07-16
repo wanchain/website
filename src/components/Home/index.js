@@ -113,10 +113,10 @@ class Home extends Component {
                             <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
 
                                 <li><IndexLink to='/'>首页</IndexLink></li>
-                                <li><Link to='/counter'>众筹</Link></li>
-                                <li><a href='/files/test.pdf' target="_blank">白皮书</a></li>
+                                <li><Link to='/'>众筹</Link></li>
+                                <li><Link to='/'>白皮书</Link></li>
                                 <li><Link to='/about'>关于</Link></li>
-                                <li><Link to='/blog'>博客</Link></li>
+                                <li><Link to='/'>博客</Link></li>
                             </ul>
                         </div>
 
@@ -154,7 +154,7 @@ class Home extends Component {
                             </ul>
                         </div>
                         <div className="homeHeaderBodyDiv2">
-                            <a className="btn home-submit-button" href='/files/test.pdf' target="_blank" >
+                            <a className="btn home-submit-button">
                                 白皮书
                             </a>
 
@@ -189,3 +189,4 @@ export default connect(mapStateToProps, mapDispatchToProps)(Home)
 
 // <Div4 />
 //  <p><a>中文</a>{' | '}<a>English</a></p>
+// <li><a href='/' target="_blank">白皮书</a></li>
