@@ -1,0 +1,139 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .navRoot{
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    background-image: linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
+
+    box-shadow: 0 5px 5px #aea9a9;
+    -webkit-box-shadow: 0 5px 5px #aea9a9;
+    -moz-box-shadow: 0 5px 5px #aea9a9;
+  }
+  .navHeader{
+    img{
+      padding-top: 10px;
+      float: left;
+      width: 25%;
+    }
+
+    .navHeaderUl{
+      padding-top: 10px;
+      float: left;
+      padding-left: 30px;
+
+      #navbar-brand{
+        li{
+          a{
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .navbar-toggle{
+      z-index: 999;
+      margin-right: 8px;
+    }
+    .menu-icon-span{
+      float: right;
+      position: relative;
+      left: 20px;
+      .menu-icon{
+        width: 25px;
+        height: 20px;
+        border-top: 5px solid #000000;
+        border-bottom: 5px solid #000000;
+        background-color: #000000;
+        padding: 2px 0;
+        margin-top: 10px;
+        background-clip: content-box;
+      }
+    }
+  }
+
+  .navGit{
+    float: right;
+    img{
+      margin-top: -30px;
+      position: relative;
+      left: 10px;
+    }
+    p{
+      color: #000000;
+      float: right;
+      margin-right: 32px;
+      padding-top: 0;
+      margin-top: -20px;
+      font-size: 10px;
+    }
+    a{
+      color: #000000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-brand{
+    padding: 29px 15px;
+    height: auto;
+  }
+  nav.navbar.bootsnav{
+    border: none;
+    margin-bottom: 150px;
+  }
+  .navbar-nav{
+    float: left;
+  }
+  nav.navbar.bootsnav ul.nav > li > a{
+    color: #474747;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+  nav.navbar.bootsnav ul.nav > li:hover{
+    //background: #f4f4f4;
+  }
+  .nav > li:after{
+    content: "";
+    width: 0;
+    height: 5px;
+    background: #34c9dd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+  .nav > li:hover:after{
+    width: 100%;
+  }
+  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
+    content: "+";
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    transition: all 0.4s ease 0s;
+  }
+  nav.navbar.bootsnav ul.nav > li.dropdown.on > a.dropdown-toggle:after{
+    content: "\f105";
+    transform: rotate(90deg);
+  }
+  .dropdown-menu.multi-dropdown{
+    position: absolute;
+    left: -100% !important;
+  }
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+
+  .nav>li>a:focus, .nav>li>a:hover{
+    background-color: inherit;
+  }
+
+  .navbar-brand, .navbar-nav>li>a {
+    color: #ffffff;
+    padding: 8px;
+  }
+}
+

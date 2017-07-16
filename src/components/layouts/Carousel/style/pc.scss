@@ -1,0 +1,32 @@
+@media screen and (min-width: 1076px) {
+  .cooperation{
+    text-align: center;
+    margin: 0 auto;
+    background: #f7fafe;
+    margin-top: 50px;
+  }
+
+  .media{
+    padding-top: 60px;
+    height: 260px;
+    ul{
+      display: inline-block;
+      float: left;
+      padding: 5px;
+    }
+    img{
+      height: 100%;
+      width: 240px;
+    }
+  }
+
+  .choose2{
+    margin-top: 20px;
+    img{
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
+    }
+  }
+}
+

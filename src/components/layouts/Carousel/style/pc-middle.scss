@@ -1,0 +1,30 @@
+@media screen and (min-width: 771px) and (max-width: 1075px) {
+  .cooperation{
+    text-align: center;
+    margin: 0 auto;
+    background: #f7fafe;
+    margin-top: 50px;
+  }
+
+  .media{
+    padding-top: 60px;
+    ul{
+      display: inline-block;
+      padding: 5px;
+    }
+    img{
+      height: 100%;
+      width: 170px;
+    }
+  }
+
+  .choose2{
+    margin-top: 20px;
+    img{
+      width: 8px;
+      height: 8px;
+      margin-left: 10px;
+    }
+  }
+}
+

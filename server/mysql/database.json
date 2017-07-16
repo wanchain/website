@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "driver": "mysql",
+    "user": "zsun",
+    "database": "test2",
+	"password": "zsun913"
+  },
+ 
+  "production": {
+    "driver": "mysql",
+    "user": "zsun",
+    "database": "test2"
+  }
+}
