@@ -7,6 +7,7 @@ const project = require('../project.config');
 const compress = require('compression');
 var https = require('https');
 var fs = require('fs');
+var http = require('http');
 
 const mysite = ('./build/cert/wanchain.org.key'); //key
 const mysiteCrt = ('./build/cert/3bb55a3526ededcc.crt'); //
@@ -70,6 +71,13 @@ if (project.env === 'development') {
   app.use(express.static(path.resolve(project.basePath, project.outDir)))
 }
 
+const httpapp = express();
+const server = new http.Server(httpapp);
+httpapp.use('*', function(req, res) {
+  console.log("HTTP: " + req.url);
+  return res.redirect("https://" + req.headers["host"] + req.url);
+});
+httpapp.listen(80);
 
 module.exports = https.createServer({
   key: fs.readFileSync(mysite),

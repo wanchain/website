@@ -9,6 +9,7 @@ var project = require('../project.config');
 var compress = require('compression');
 var https = require('https');
 var fs = require('fs');
+var http = require('http');
 
 var mysite = './build/cert/wanchain.org.key'; //key
 var mysiteCrt = './build/cert/3bb55a3526ededcc.crt'; //
@@ -65,6 +66,14 @@ if (project.env === 'development') {
   // server in production.
   app.use(express.static(path.resolve(project.basePath, project.outDir)));
 }
+
+var httpapp = express();
+var server = new http.Server(httpapp);
+httpapp.use('*', function (req, res) {
+  console.log("HTTP: " + req.url);
+  return res.redirect("https://" + req.headers["host"] + req.url);
+});
+httpapp.listen(80);
 
 module.exports = https.createServer({
   key: fs.readFileSync(mysite),
