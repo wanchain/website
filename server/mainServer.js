@@ -73,7 +73,7 @@ if (project.env === 'development') {
 
 module.exports = https.createServer({
   key: fs.readFileSync(mysite),
-  certificate: fs.readFileSync(mysiteCrt),
+  cert: fs.readFileSync(mysiteCrt),
   ca: [fs.readFileSync(gd1)],
   requestCert: false,
   rejectUnauthorized: false
