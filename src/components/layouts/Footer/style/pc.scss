@@ -104,6 +104,28 @@
     padding-right: 20px;
     float: right;
     padding-top: 60px;
+
+    a{
+      cursor: pointer;
+      img{
+        float: left;
+        padding: 10px;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .formGroupDiv > a > img:hover{
+    opacity: 1;
+  }
+
+  .wechat{
+    display: none;
+    left: 126px;
+  }
+
+  .qq{
+    display: none;
   }
 }
 

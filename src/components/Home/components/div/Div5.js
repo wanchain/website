@@ -11,8 +11,7 @@ class Div5 extends React.Component {
         return (
             <div className="div5Header">
                 <div className="div5HeaderDiv container" >
-                    <h2>ROADMAP</h2>
-                    <img src={line} className="div5HeaderImg"/>
+                    <h2><hr className="div5HeaderImg"/>ROADMAP<hr className="div5HeaderImg"/></h2>
                 </div>
                 <div className="module8Div clearfix container">
                     <div className="module8DivUp col-lg-3">

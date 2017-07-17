@@ -8,21 +8,18 @@
   .FooterContainer {
     margin: 0 auto;
     text-align: center;
-    height:190px;
     position: relative;
     width: 100%;
   }
 
   .FooterformGroup{
-    float: left;
-    padding-top: 60px;
-    padding-left: 20px;
+    padding-top: 30px;
     position: relative;
 
     img {
       position: absolute;
-      left: 30px;
-      top: 67px;
+      left: 20px;
+      top: 37px;
     }
 
     input {
@@ -32,8 +29,7 @@
 
     p {
       padding-top: 15px;
-      padding-left: 10px;
-      text-align: left;
+      text-align: center;
       color: #ffffff;
       font-size: 12px;
     }
@@ -77,7 +73,7 @@
   }
 
   .submit-area{
-    text-align: left;
+    //text-align: left;
   }
 
   .submit-button{
@@ -104,9 +100,22 @@
   }
 
   .formGroupDiv{
-    padding-right: 20px;
-    float: right;
-    padding-top: 0;
+    margin: 0 auto;
+
+    a{
+      cursor: pointer;
+      img{
+        padding: 10px;
+      }
+    }
+  }
+
+  .wechat{
+    display: none;
+  }
+
+  .qq{
+    display: none;
   }
 }
 

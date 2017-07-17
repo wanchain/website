@@ -9,8 +9,7 @@ class Div1 extends React.Component {
     render() {
         return (
             <div className="container div1Header">
-                <h2>万维链是什么？</h2>
-                <img src={line} className="div1HeaderImg" />
+                <h2> <hr className="div1HeaderImg"/>万维链是什么？<hr className="div1HeaderImg"/></h2>
                 <p>基于数字资产的分布式金融基础设施</p>
                 <img src={div1Img} className="div1HeaderImg2"/>
             </div>
@@ -19,3 +18,5 @@ class Div1 extends React.Component {
 }
 
 export default Div1;
+
+// <img src={line} className="div1HeaderImg" />

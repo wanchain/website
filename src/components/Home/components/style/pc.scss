@@ -15,10 +15,20 @@
     }
 
     .div1HeaderImg{
-      width: 98%;
-      margin: 0;
-      padding-top: 11px;
-      padding-bottom: 0;
+      //width: 98%;
+      //margin: 0;
+      //padding-top: 11px;
+      //padding-bottom: 0;
+
+      width: 20px;
+      display: inline-block;
+      height: 1px;
+      border: 0;
+      background-color: #d5d5d5;
+      color: #d5d5d5;
+      position: relative;
+      top: 3px;
+      margin: 10px;
     }
 
     .div1HeaderImg2{
@@ -52,10 +62,20 @@
     }
 
     .div2HeaderImg{
-      width: 98%;
-      margin: 0;
-      padding-top: 11px;
-      padding-bottom: 0;
+      //width: 98%;
+      //margin: 0;
+      //padding-top: 11px;
+      //padding-bottom: 0;
+
+      width: 20px;
+      display: inline-block;
+      height: 1px;
+      border: 0;
+      background-color: #d5d5d5;
+      color: #d5d5d5;
+      position: relative;
+      top: 3px;
+      margin: 10px;
     }
 
     img{
@@ -74,7 +94,7 @@
 
   .astroModule2 img{
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
   }
 
   .astroModule2word {
@@ -91,27 +111,44 @@
 
 
   .astroModule2wordDiv {
-    position: relative;
-    height: 70px;
+    //position: relative;
+    //height: 70px;
+    //border-radius: 4px;
+    //border: 1px solid #eff4fb;
+    //margin-bottom: 20px;
+
     border-radius: 4px;
     border: 1px solid #eff4fb;
     margin-bottom: 20px;
+    width: 400px;
 
     img{
-      display: inline-block;
+      //display: inline-block;
+      //padding: 0;
+      //padding-top: 20px;
+      //padding-left: 10px;
+
       padding: 0;
-      padding-top: 20px;
       padding-left: 10px;
+      position: relative;
+      top: -10px;
     }
 
     p {
+      //display: inline-block;
+      //text-align: left;
+      //position: absolute;
+      //top: 15px;
+      //left: 50px;
+      //font-size: 14px;
+      //padding: 0;
+
       display: inline-block;
-      text-align: left;
-      position: absolute;
-      top: 15px;
-      left: 50px;
       font-size: 14px;
       padding: 0;
+      padding-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     span {
@@ -122,12 +159,12 @@
   }
 
   .div2-submit-area{
-    padding-top: 40px;
+    padding-top: 10px;
   }
 
   .div2-submit-button{
-    width: 130px;
-    height: 45px;
+    width: 150px;
+    height: 50px;
     margin-top: 15px;
     background-color: #3680f8;
     color: #FFF;
@@ -150,11 +187,12 @@
   //+++++++++++ div3 style+++++++++++++++++++++++++++++++++++++++++++++++++
   .officalModule3{
     background: #f7fafe;
-    margin-top: 60px;
+    //margin-top: 60px;
 
     img {
       padding-top: 100px;
-      padding-bottom: 100px;
+      margin-bottom: 60px;
+      float: left;
     }
   }
 
@@ -189,7 +227,7 @@
       font-size: 14px;
       color: #688499;
       text-align: left;
-      padding-top: 50px;
+      margin-top: 60px;
       padding-left: 66px;
     }
   }
@@ -233,7 +271,7 @@
       font-size: 14px;
       color: #688499;
       text-align: left;
-      padding-top: 50px;
+      padding-top: 10px;
       padding-left: 66px;
     }
   }
@@ -331,10 +369,20 @@
     }
 
     .div5HeaderImg{
-      width: 98%;
-      margin: 0;
-      padding-top: 11px;
-      padding-bottom: 0;
+      //width: 98%;
+      //margin: 0;
+      //padding-top: 11px;
+      //padding-bottom: 0;
+
+      width: 20px;
+      display: inline-block;
+      height: 1px;
+      border: 0;
+      background-color: #d5d5d5;
+      color: #d5d5d5;
+      position: relative;
+      top: 3px;
+      margin: 10px;
     }
 
     img{
@@ -354,6 +402,8 @@
 
       img{
         float: left;
+        position: relative;
+        top: 7px;
       }
 
       h4{
@@ -394,6 +444,8 @@
 
       img{
         float: left;
+        position: relative;
+        top: -7px;
       }
 
       h4{

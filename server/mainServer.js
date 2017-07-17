@@ -19,6 +19,7 @@ app.use(compress());
 // ------------------------------------
 // Apply Webpack HMR Middleware
 // ------------------------------------
+
 if (project.env === 'development') {
   const compiler = webpack(webpackConfig);
 

@@ -161,7 +161,7 @@
   .officalModule3Img{
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width: 40%;
     padding-bottom: 0;
     padding-top: 180px;
   }
@@ -172,36 +172,29 @@
     position: relative;
     padding-bottom: 30px;
 
-    img {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    .officalModule3Img{
-      display: block;
-      margin: 0 auto;
-      width: 70%;
-      padding-bottom: 0;
-      padding-top: 160px;
-    }
   }
 
   .officalModule3Div{
     position: absolute;
     top: 20px;
 
+    .officalModule3Img{
+      width: 40%;
+    }
+
     img {
       padding: 0;
       padding-left: 0;
-      width: 10%;
+      width: 6%;
     }
 
     h2{
-      font-size: 15px;
+      font-size: 20px;
       color: #2b363d;
       font-weight: 600;
       position: absolute;
-      top: 5px;
-      left: 17%;
+      top: 16px;
+      left: 9%;
     }
 
     span {
@@ -209,10 +202,12 @@
     }
 
     p {
-      font-size: 10px;
+      font-size: 18px;
       color: #688499;
       text-align: left;
       padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
@@ -228,16 +223,17 @@
 
     img {
       padding: 0;
-      width: 10%;
+      padding-left: 0;
+      width: 6%;
     }
 
     h2{
-      font-size: 15px;
+      font-size: 20px;
       color: #2b363d;
       font-weight: 600;
       position: absolute;
-      top: 1px;
-      left: 17%;
+      top: 16px;
+      left: 9%;
     }
 
     span {
@@ -245,10 +241,12 @@
     }
 
     p {
-      font-size: 10px;
+      font-size: 18px;
       color: #688499;
       text-align: left;
       padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 

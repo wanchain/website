@@ -105,6 +105,14 @@
     padding-right: 20px;
     float: right;
     padding-top: 60px;
+
+    a{
+      cursor: pointer;
+      img{
+        float: left;
+        padding: 10px;
+      }
+    }
   }
 }
 
