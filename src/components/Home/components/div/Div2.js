@@ -27,7 +27,7 @@ class Div2 extends React.Component {
                         </div>
 
                         <div className="div2-submit-area">
-                            <a className="div2-submit-button btn">
+                            <a className="div2-submit-button btn" href='http://wanchain.org/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">
                                 白皮书<img src={download} />
                             </a>
                         </div>

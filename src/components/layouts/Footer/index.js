@@ -54,8 +54,8 @@ export default class Footer extends React.Component {
             <div className="formGroupDiv form-group col-lg-4">
                 <img src={wecater} className="wechat" id="wechat"/>
                 <img src={qqer} className="qq" id="qq"/>
-                <a href="https://wanchain.org:3030"><img src={robot1}/></a>
-                <a><img src={slack1}/></a>
+                <a ><img src={robot1}/></a>
+                <a href="http://wanchain.org:3000/" target="_blank"><img src={slack1}/></a>
                 <a><img src={twitter1}/></a>
                 <a><img src={webo1}/></a>
                 <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
