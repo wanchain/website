@@ -88,44 +88,9 @@
   nav.navbar.bootsnav ul.nav > li:hover{
     //background: #f4f4f4;
   }
-  .nav > li:after{
-    content: "";
-    width: 0;
-    height: 5px;
-    background: #34c9dd;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all 0.5s ease 0s;
-  }
+
   .nav > li:hover:after{
     width: 100%;
-  }
-  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
-    content: "+";
-    font-family: 'FontAwesome';
-    font-size: 16px;
-    font-weight: 500;
-    position: absolute;
-    top: 35%;
-    right: 10%;
-    transition: all 0.4s ease 0s;
-  }
-  nav.navbar.bootsnav ul.nav > li.dropdown.on > a.dropdown-toggle:after{
-    content: "\f105";
-    transform: rotate(90deg);
-  }
-  .dropdown-menu.multi-dropdown{
-    position: absolute;
-    left: -100% !important;
-  }
-  nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border: none;
-  }
-
-  .nav>li>a:focus, .nav>li>a:hover{
-    background-color: inherit;
   }
 
 

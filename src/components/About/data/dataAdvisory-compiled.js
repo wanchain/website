@@ -19,7 +19,7 @@ var data = [{ title: '沈波',
 }, { title: '韩峰',
     img: t17,
     position: '',
-    describe: '清华大学i-center 博士生导师 DACA协会秘书长'
+    describe: 'DACA协会秘书长'
 }, { title: 'David A. Johnston',
     img: t18,
     position: '',
@@ -31,7 +31,7 @@ var data = [{ title: '沈波',
 }, { title: 'Albert Ching',
     img: t20,
     position: '',
-    describe: '新加坡安讯奔创始人，副总裁'
+    describe: '新加坡 i-Sprint 创始人'
 }, { title: 'Ramble',
     img: t21,
     position: '',
@@ -39,11 +39,11 @@ var data = [{ title: '沈波',
 }, { title: '张宇焱',
     img: t22,
     position: '',
-    describe: '乐商云集CEO 区块链供应链联盟主席, 知名区块链专家'
-}, { title: 'Pitinan Kooarmornpatana',
+    describe: 'S League 供应链区块链联盟主席'
+}, { title: 'Pitinan',
     img: t23,
     position: '',
-    describe: 'DIGITALPASS公司管理合伙人， ICANN会议泰国政府顾问委员会 IT顾问'
+    describe: 'DIGITALPASS公司管理合伙人'
 }];
 
 exports.default = data;

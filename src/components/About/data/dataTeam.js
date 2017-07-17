@@ -19,7 +19,7 @@ const data = [
   {title: '吕旭军',
     img: t1,
     position: '创始人',
-    describe: '北京大学、俄亥俄大学硕士，区块链资深创业者及技术专家，12年进入区块链领域，13年联合创立著名区块链项目Factom，16年创立区块链商业应用企业网录科技。致力于推动区块链技术的更大范围应用。'
+    describe: '北京大学、俄亥俄大学硕士，区块链资深创业者及技术专家，12年进入区块链领域，14年联合创立著名区块链项目Factom，16年创立区块链商业应用企业网录科技。致力于推动区块链技术的更大范围应用。'
   },
   {title: '梁智',
     img: t2,
@@ -44,7 +44,7 @@ const data = [
   {title: 'Michael Y.',
     img: t6,
     position: '',
-    describe: '12年进入区块链领域，开始进行比特币相关开发，社区活跃开发人员，曾任Master Coin和Factom核心开发人员。'
+    describe: '12年进入区块链领域，开始进行比特币相关开发，社区活跃开发人员，曾是Master Coin，Omni 和Factom的核心开发人员。'
   },
   {title: 'Eric Swartz',
     img: t7,

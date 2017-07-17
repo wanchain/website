@@ -5,3 +5,5 @@ dist
 coverage
 .idea/
 .yarn-cache
+.npm-debug.log
+

@@ -332,6 +332,7 @@
     margin: 0 auto;
     width: 100%;
     background: #f7fafe;
+    padding-bottom: 50px;
   }
 
   .div5HeaderDiv {
@@ -390,38 +391,7 @@
 
 
   .module8Div2{
-    margin-top: 10px;
-    padding-left: 30px;
-    padding-bottom: 60px;
-    .module8DivUp2{
-      padding-left: 0;
-      padding-bottom: 10px;
-      img{
-        display: none;
-      }
-
-      h4{
-        text-align: left;
-        line-height: 20px;
-        font-size: 13px;
-        margin-top: 0;
-      }
-
-      p{
-        font-family: BebasNeue;
-        font-size: 20px;
-        color: #498cf9;
-        padding-top: 10px;
-        margin: 0 auto;
-        text-align: left;
-      }
-
-      span{
-        font-size: 10px;
-        color: #2b363d;
-      }
-
-    }
+    display: none;
   }
 }
 

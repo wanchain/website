@@ -45,7 +45,7 @@ class About extends Component {
                     <img className="aboutHeaderImg1" src={blog1} />
                     <img className="aboutHeaderImg2" src={blog2} />
                     <h2>项目团队</h2>
-                    <p>WANGLU TEAM</p>
+                    <p>WANCHAIN TEAM</p>
                 </div>
                 <div className="container aboutBody">
                     <div className="aboutTitle">
