@@ -55,7 +55,7 @@ export default class Footer extends React.Component {
                 <img src={wecater} className="wechat" id="wechat"/>
                 <img src={qqer} className="qq" id="qq"/>
                 <a ><img src={robot1}/></a>
-                <a href="http://wanchain.org:3000/" target="_blank"><img src={slack1}/></a>
+                <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
                 <a><img src={twitter1}/></a>
                 <a><img src={webo1}/></a>
                 <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>

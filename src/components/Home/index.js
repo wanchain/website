@@ -114,7 +114,7 @@ class Home extends Component {
 
                                 <li><IndexLink to='/'>首页</IndexLink></li>
                                 <li><Link to='/'>众筹</Link></li>
-                                <li><a href='http://wanchain.org/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a></li>
+                                <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a></li>
                                 <li><Link to='/about'>关于</Link></li>
                                 <li><Link to='/'>博客</Link></li>
                             </ul>
@@ -154,7 +154,7 @@ class Home extends Component {
                             </ul>
                         </div>
                         <div className="homeHeaderBodyDiv2">
-                            <a className="btn home-submit-button" href='http://wanchain.org/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">
+                            <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">
                                 白皮书
                             </a>
 
