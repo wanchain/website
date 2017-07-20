@@ -10,14 +10,16 @@ var _port2 = _interopRequireDefault(_port);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var fetchDownload = function fetchDownload(api, type) {
+var fetchData = function fetchData(api, type) {
     return function (dispatch) {
-        return fetch(_port2.default + '/' + api).then(function () {
-            dispatch({ type: type, data: 'success' });
+        return fetch(_port2.default + '/' + api, {}).then(function (res) {
+            return res.json();
+        }).then(function (json) {
+            dispatch({ type: type, data: json });
         });
     };
 };
 
-exports.default = fetchDownload;
+exports.default = fetchData;
 
-//# sourceMappingURL=fetchDownload-compiled.js.map
+//# sourceMappingURL=fetchPost-compiled.js.map

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
+import { connect } from 'react-redux'
+
+import { subscribe } from '../../../store/home';
+
 import './Footer.scss';
 
 import email from '../../../image/email.png';
-
-
 import robot1 from '../../../image/share/robot1.png';
 import slack1 from '../../../image/share/slack1.png';
 import twitter1 from '../../../image/share/twitter1.png';
@@ -14,7 +16,22 @@ import qq1 from '../../../image/share/qq1.png';
 import wecater from '../../../image/share/wecater.png';
 import qqer from '../../../image/share/qqer.png';
 
-export default class Footer extends React.Component {
+function emailCheck (email) {
+    var emailPat=/^(.+)@(.+)$/;
+    var matchArray=email.match(emailPat);
+    if (matchArray==null) {
+        alert("电子邮件地址必须包括 ( @ 和 . )");
+        return false;
+    }
+    return true;
+}
+
+class Footer extends React.Component {
+
+    static propTypes = {
+        language: PropTypes.string,
+        subscribe: PropTypes.func,
+    };
 
   onSubmit = () => {
       document.getElementById("wechat").style.position="absolute";
@@ -36,16 +53,27 @@ export default class Footer extends React.Component {
       document.getElementById("qq").style.display="none";
   };
 
+  onClick = () => {
+      const {wanchain_subscribe} = this.refs;
+
+      if (emailCheck(wanchain_subscribe.value)) {
+          const data = {email: wanchain_subscribe.value};
+          this.props.subscribe(data);
+
+          wanchain_subscribe.value = '';
+      }
+  };
+
   render() {
     return (
       <div className="FooterRoot">
         <div className="FooterContainer container">
           <div className="FooterformGroup form-group col-lg-4">
               <img src={email}/>
-              <input type="text" className="form-control" id="name"
+              <input type="text" className="form-control" id="name" ref="wanchain_subscribe"
                      placeholder="Please enter the email address" />
               <div className="submit-area">
-                  <a className="btn submit-button" data-toggle="modal" data-target=".bs-example-modal-lg">
+                  <a className="btn submit-button" data-toggle="modal" data-target=".bs-example-modal-lg" onClick={this.onClick.bind(this)}>
                       {' + '}Subscribe
                   </a>
               </div>
@@ -70,3 +98,17 @@ export default class Footer extends React.Component {
     );
   }
 }
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        subscribe: (data) => {
+            dispatch(subscribe(data));
+        },
+    };
+};
+
+const mapStateToProps = (state) => ({
+    language : state.lang.language,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Footer)

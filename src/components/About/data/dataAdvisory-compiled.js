@@ -11,6 +11,7 @@ var t20 = require('../../../image/20.png');
 var t21 = require('../../../image/21.png');
 var t22 = require('../../../image/22.png');
 var t23 = require('../../../image/23.png');
+var t24 = require('../../../image/t24.png');
 
 var data = [{ title: '沈波',
     img: t16,
@@ -44,6 +45,10 @@ var data = [{ title: '沈波',
     img: t23,
     position: '',
     describe: 'DIGITALPASS公司管理合伙人'
+}, { title: '李荣阁',
+    img: t24,
+    position: '',
+    describe: '大河资本 合伙人'
 }];
 
 exports.default = data;

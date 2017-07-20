@@ -6,6 +6,7 @@ const t20 = require('../../../image/20.png');
 const t21 = require('../../../image/21.png');
 const t22 = require('../../../image/22.png');
 const t23 = require('../../../image/23.png');
+const t24 = require('../../../image/t24.png');
 
 
 const data = [
@@ -48,6 +49,11 @@ const data = [
         img: t23,
         position: '',
         describe: 'DIGITALPASS公司管理合伙人'
+    },
+    {title: '李荣阁',
+        img: t24,
+        position: '',
+        describe: '大河资本 合伙人'
     },
 ];
 

@@ -13,14 +13,14 @@ import nav from '../../../image/nav2.png';
 class Navigation extends Component {
     static propTypes = {
         changeLanguage: PropTypes.func.isRequired,
-        language: PropTypes.string,
+        // language: PropTypes.string,
 
         login: PropTypes.func,
         users: PropTypes.func,
     };
 
     onClick = (name) => {
-        this.props.changeLanguage(name);
+        // this.props.changeLanguage(name);
         this.props.users();
         this.props.login();
 
@@ -49,7 +49,7 @@ class Navigation extends Component {
 
                             <li><IndexLink to='/'>首页</IndexLink></li>
                             <li><Link to='/'>众筹</Link></li>
-                            <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a></li>
+                            <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank" onClick={this.onClick}>白皮书</a></li>
                             <li><Link to='/about'>关于</Link></li>
                             <li><Link to='/'>博客</Link></li>
                         </ul>
@@ -79,7 +79,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const mapStateToProps = (state) => ({
-    language : state.lang.language,
+    // language : state.lang.language,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navigation)
