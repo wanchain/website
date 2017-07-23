@@ -1,1 +1,0 @@
-{"version":3,"sources":["auth.js"],"names":[],"mappings":";;AAAA;;;;;;AAEA,IAAM,QAAQ,aAAd","file":"auth-compiled.js","sourcesContent":["import cookie from 'react-cookie';\r\n\r\nconst LOGIN = 'Astro/LOGIN';\r\n\r\n"]}

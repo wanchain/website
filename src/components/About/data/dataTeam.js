@@ -14,6 +14,7 @@ const t13 = require('../../../image/13.png');
 const t14 = require('../../../image/14.png');
 const t15 = require('../../../image/15.png');
 const t16 = require('../../../image/t16.png');
+const t25 = require('../../../image/25.png');
 
 const data = [
   {title: '吕旭军',
@@ -95,6 +96,11 @@ const data = [
     img: t16,
     position: '',
     describe: '中国传媒大学毕业，多年电视台、杂志、出版社工作经历，曾任智加设计创新集团市场总监。区块链社区组织者，多次策划及组织区块链联盟会议，区块链行业会议。'
+  },
+  {title: '覃文延',
+    img: t25,
+    position: '',
+    describe: '曾就职于IBM多伦多实验室，蒙特利尔银行，数据技术及数据模型规范专家。加入区块链后参与以太坊Parity开发工作。'
   },
 ];
 

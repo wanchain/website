@@ -7,3 +7,6 @@ coverage
 .yarn-cache
 .npm-debug.log
 *.js.map
+*-compiled.js
+
+src/fetch/port.js
