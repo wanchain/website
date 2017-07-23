@@ -7,13 +7,15 @@
     "clean": "rimraf dist",
     "compile": "node build/scripts/compile",
     "build": "npm run clean && cross-env NODE_ENV=production npm run compile",
-    "start": "cross-env NODE_ENV=development node build/scripts/start",
-    "server": "cross-env NODE_ENV=production node build/scripts/server",
+    "startClient": "cross-env NODE_ENV=development node build/scripts/start",
+    "serverClient": "cross-env NODE_ENV=production node build/scripts/server",
     "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "db": "node server/server"
+    "db": "node server/server &",
+    "start": "concurrently  \"npm run db\" \"npm run startClient\"",
+    "server": "concurrently  \"npm run db\" \"npm run serverClient\""
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "body-parser": "^1.0.1",
     "bootstrap": "^4.0.0-alpha",
     "compression": "^1.6.2",
+    "concurrently": "^3.5.0",
     "crypto": "0.0.3",
     "events": "^1.1.1",
     "express": "^4.15.3",

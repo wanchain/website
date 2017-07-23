@@ -1,1 +1,0 @@
-{"version":3,"sources":["port.js"],"names":[],"mappings":";;;;;AAAA,IAAM,SAAS,2BAAf;;kBAEe,M","file":"port-compiled.js","sourcesContent":["const portId = \"http://localhost:3001/api\";\r\n\r\nexport default portId;"]}

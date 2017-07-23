@@ -41,17 +41,19 @@ app.get('/white_paper/:fileName', function(req, res, next){
 // ======Router======
 var Router = require("./modules/index");
 
-
-// Middleware to use for all requests
-Router.use(function(req, res, next) {
-	// do logging
-	// console.log('Something is happening.');
-	next();
-});
+for (var i in Router) {
+	// Middleware to use for all requests
+	Router[i].use(function(req, res, next) {
+		// do logging
+		// console.log('Something is happening.');
+		next();
+	});
 
 // REGISTER OUR ROUTES
 // =============================================================================
-app.use('/api', Router);
+	app.use('/api', Router);
+}
+
 
 // START THE SERVER
 // =============================================================================

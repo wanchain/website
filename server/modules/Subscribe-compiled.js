@@ -84,10 +84,10 @@ SubscribeRouter.route('/subscribe')
         if (users) {
             res.json(users);
         } else {
-            res.send(401, "User not found");
+            res.send(401, "User Not Found");
         }
     }, function (error) {
-        res.send("User not found");
+        res.send("User Not Found");
     });
 });
 
