@@ -24,7 +24,7 @@ const data = [
     {title: 'David A. Johnston',
         img: t18,
         position: '',
-        describe: '美国Factom（公证通）创始人'
+        describe: 'Factom（公证通）董事长'
     },
     {title: 'Dustin Byington',
         img: t19,
