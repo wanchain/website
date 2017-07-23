@@ -92,7 +92,7 @@ class Footer extends React.Component {
         </div>
 
         <div className="FooterEnd">
-          <span>©wanchain 2017 版权所有 all right reserved</span>
+          <span>©wanchain 2017 版权所有 All Rights Reserved</span>
         </div>
       </div>
     );
