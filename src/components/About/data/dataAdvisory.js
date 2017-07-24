@@ -17,7 +17,7 @@ const data = [
         position: '',
         describe: '分布式基金合伙人'
     },
-    {title: '韩峰',
+    {title: '韩锋',
         img: t17,
         position: '',
         describe: 'DACA协会秘书长'
