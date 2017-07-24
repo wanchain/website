@@ -10,4 +10,6 @@ coverage
 *-compiled.js
 
 port.js
-sendMail/
+email.config.js
+mail.js
+test.js

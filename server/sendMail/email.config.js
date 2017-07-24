@@ -1,7 +1,7 @@
 module.exports = {
     email: {
-        service: '**',
-        user: '****',
-        pass: '********',
+        service: 'QQex',
+        user: 'info@wanchain.org',
+        pass: 'gFSeVU9ad2kSCY3T',
     }
 };
