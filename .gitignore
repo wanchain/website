@@ -9,7 +9,4 @@ coverage
 *.js.map
 *-compiled.js
 
-port.js
-email.config.js
-mail.js
-test.js
+server/sendMail/
