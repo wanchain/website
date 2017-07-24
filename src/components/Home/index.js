@@ -34,7 +34,7 @@ var currentDate = function (offset) {
 class Home extends Component {
     static propTypes = {
         language: PropTypes.string,
-        downloadWhitePaper: PropTypes.func,
+        changeLanguage: PropTypes.func,
     };
 
     constructor(props) {
@@ -94,7 +94,7 @@ class Home extends Component {
     }
 
     onChange(lang) {
-        console.log('lang', lang);
+        this.props.changeLanguage(lang);
     }
 
     render() {
@@ -103,76 +103,98 @@ class Home extends Component {
         return (
             <div className="homeRoot">
             <div className="homeDiv" style={{background: `url(${'image/homeHeader.jpg'})`}}>
-    <nav className="homeHeader container">
-            <img src={logo} />
-            <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-            <i className="fa fa-bars"></i>
-            </button>
+                <nav className="homeHeader container">
+                    <img src={logo} />
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i className="fa fa-bars"></i>
+                        </button>
+                        <img src={nav} className="navbarImg"/>
+                    </div>
+                    <div className="collapse navbar-collapse homeHeaderUl" id="navbar-menu">
+                        {language === 'zn' &&
+                        <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><IndexLink to='/'>首页</IndexLink></li>
+                            <li><Link to='/'>众筹</Link></li>
+                            <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a></li>
+                            <li><Link to='/about'>关于</Link></li>
+                            <li><Link to='/'>博客</Link></li>
+                        </ul>
+                        }
+                        {language === 'en' &&
+                        <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><IndexLink to='/'>Home</IndexLink></li>
+                            <li><Link to='/'>Crowdsale</Link></li>
+                            <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">Whitepaper</a></li>
+                            <li><Link to='/about'>About</Link></li>
+                            <li><Link to='/'>Blog</Link></li>
+                        </ul>
+                        }
+                    </div>
 
-            <img src={nav} className="navbarImg"/>
-            </div>
-            <div className="collapse navbar-collapse homeHeaderUl" id="navbar-menu">
-            <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                    <div className="homeGit">
+                        <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
 
-            <li><IndexLink to='/'>首页</IndexLink></li>
-            <li><Link to='/'>众筹</Link></li>
-            <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a></li>
-            <li><Link to='/about'>关于</Link></li>
-            <li><Link to='/'>博客</Link></li>
-            </ul>
+                    </div>
+                </nav>
+
+                <div className="container">
+                    <div className="homeHeaderBodyDiv1">
+                        {language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}
+                        {language === 'en' && <h2>Distributed future"<span>bank</span>"</h2>}
+                        {language === 'zn' &&
+                        <p>连接不同数字资产，连接现在与未来
+                            <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
+                        </p>
+                        }
+                        {language === 'en' &&
+                        <p>Links different digital assets,connecting the present and future
+                            <small>Wanchain seeks to establish a new financial infrastructure, connecting different blockchain networks and exchanging value in a decentralized manner.</small>
+                        </p>
+                        }
+                        <ul className="countdown">
+                            <li>
+                                <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.days}</span>
+                                <small>:</small>
+                                <p>{this.state.date.ref_days}</p>
+                            </li>
+                            <li>
+                                <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.hours}</span>
+                                <small>:</small>
+                                <p>{this.state.date.ref_hours}</p>
+                            </li>
+                            <li>
+                                <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.minutes}</span>
+                                <small>:</small>
+                                <p>{this.state.date.ref_minutes}</p>
+                            </li>
+                            <li>
+                                <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.seconds}</span>
+                                <small style={{opacity: '0', paddingLeft: '0', paddingRight: '0'}}>:</small>
+                                <p>{this.state.date.ref_seconds}</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {language === 'zn' &&
+                    <div className="homeHeaderBodyDiv2">
+                        <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a>
+                        <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">众筹</a>
+                    </div>
+                    }
+                    {language === 'en' &&
+                    <div className="homeHeaderBodyDiv2">
+                        <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">Whitepaper</a>
+                        <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">Crowdsale</a>
+                    </div>
+                    }
+                </div>
             </div>
 
-            <div className="homeGit">
-            <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-                <p><a onClick={() => {this.onChange('zn')}}>中文</a>{' | '}<a onClick={() => {this.onChange('en')}}>English</a></p>
-            </div>
-            </nav>
-            <div className="container">
-            <div className="homeHeaderBodyDiv1">
-            <h2>分布式未来"<span>银行</span>"</h2>
-        <p>连接不同数字资产，连接现在与未来
-        <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
-        </p>
-        <ul className="countdown">
-            <li>
-            <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.days}</span>
-        <small>:</small>
-        <p>{this.state.date.ref_days}</p>
-        </li>
-        <li>
-        <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.hours}</span>
-        <small>:</small>
-        <p>{this.state.date.ref_hours}</p>
-        </li>
-        <li>
-        <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.minutes}</span>
-        <small>:</small>
-        <p>{this.state.date.ref_minutes}</p>
-        </li>
-        <li>
-        <span style={{background: `url(${'image/radius2.png'})`}}>{this.state.date.seconds}</span>
-        <small style={{opacity: '0', paddingLeft: '0', paddingRight: '0'}}>:</small>
-        <p>{this.state.date.ref_seconds}</p>
-        </li>
-        </ul>
-        </div>
-        <div className="homeHeaderBodyDiv2">
-            <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">
-            白皮书
-            </a>
-
-            <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">
-            众筹
-            </a>
-            </div>
-            </div>
-            </div>
-
-            <Div1 />
-            <Div2 />
-            <Div3 />
-            <Div5 />
+                <Div1 />
+                <Div2 />
+                <Div3 />
+                <Div5 />
 
             </div>
     )
@@ -195,3 +217,5 @@ export default connect(mapStateToProps, mapDispatchToProps)(Home)
 
 // <Div4 />
 
+// <a onClick={() => {this.onChange('zn')}}>中文</a>{' | '}
+// <a onClick={() => {this.onChange('en')}}>English</a>

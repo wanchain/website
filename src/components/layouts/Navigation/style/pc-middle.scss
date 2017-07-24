@@ -43,24 +43,24 @@
 
   .navGit{
     float: right;
-    img{
-      margin-top: 4px;
-      position: relative;
-      left: 10px;
-      width: 30%;
-    }
+    color: #000000;
+    padding-top: 25px;
     p{
       color: #000000;
       float: right;
-      margin-right: 32px;
-      padding-top: 0;
-      margin-top: 15px;
-      font-size: 10px;
+      padding-left: 20px;
+      padding-top: 23px;
     }
     a{
       color: #000000;
       text-decoration: none;
       cursor: pointer;
+      padding: 5px;
+    }
+    img{
+      padding-top: 0;
+      float: left;
+      width: 30%;
     }
   }
 

@@ -62,24 +62,24 @@
 
   .navGit{
     float: right;
-    img{
-      margin-top: -35px;
-      /* position: relative; */
-      /* left: 10px; */
-      width: 66%;
-    }
+    color: #000;
+    margin-top: -25px;
     p{
-      color: #fff;
+      color: #000;
       float: right;
-      margin-right: 32px;
-      padding-top: 0;
-      margin-top: -20px;
-      font-size: 10px;
+      padding-left: 20px;
+      padding-top: 23px;
     }
     a{
-      color: #fff;
+      color: #000;
       text-decoration: none;
       cursor: pointer;
+      padding: 5px;
+    }
+    img{
+      padding-top: 0;
+      float: left;
+      width: 30%;
     }
   }
 

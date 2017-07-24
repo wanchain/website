@@ -40,6 +40,9 @@
 
   .navGit{
     float: right;
+    color: #000000;
+    padding-top: 25px;
+    line-height: 26px;
     p{
       color: #000000;
       float: right;
@@ -50,6 +53,11 @@
       color: #000000;
       text-decoration: none;
       cursor: pointer;
+      padding: 5px;
+    }
+    img{
+      padding-top: 0;
+      float: left
     }
   }
 
