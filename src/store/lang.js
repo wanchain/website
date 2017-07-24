@@ -1,3 +1,5 @@
+// add Chinese/English transformation
+
 export const LANGUAGE_CHANGE = 'Astro/LANGUAGE_CHANGE';
 
 const initialState = {
