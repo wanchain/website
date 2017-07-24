@@ -3,7 +3,7 @@
 export const LANGUAGE_CHANGE = 'Astro/LANGUAGE_CHANGE';
 
 const initialState = {
-    language: 'cn',
+    language: 'zn',
 };
 
 export default function lang(state = initialState, action = {}) {
