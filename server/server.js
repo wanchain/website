@@ -3,16 +3,9 @@
 const fs = require('fs');
 const path = require('path');
 var mime = require('mime');
-var http = require('http');
-
-var https = require('https');
 
 const express = require('express'),
 	bodyParser = require('body-parser');
-
-const mysite = ('./build/cert/wanchain.org.key'); //key
-const mysiteCrt = ('./build/cert/3bb55a3526ededcc.crt'); //
-const gd1 = ('./build/cert/gd_bundle-g2-g1.crt');
 
 var app = express();
 app.use(bodyParser());
@@ -62,22 +55,7 @@ for (var i in Router) {
 }
 
 
-const httpapp = express();
-const server = new http.Server(httpapp);
-
-httpapp.use('*', function(req, res) {
-	console.log("HTTP: " + req.url);
-	return res.redirect("https://" + req.headers["host"] + req.url);
-});
 // START THE SERVER
 // =============================================================================
-httpapp.listen(port);
-
-https.createServer({
-	key: fs.readFileSync(mysite),
-	cert: fs.readFileSync(mysiteCrt),
-	ca: [fs.readFileSync(gd1)],
-	requestCert: false,
-	rejectUnauthorized: false
-}, app);
+app.listen(port);
 console.log('Magic happens on port ' + port);
