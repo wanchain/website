@@ -9,6 +9,7 @@ const t23 = require('../../../image/23.png');
 const t24 = require('../../../image/t24.png');
 const t26 = require('../../../image/26.png');
 const t27 = require('../../../image/27.png');
+const t28 = require('../../../image/28.png');
 
 
 const data = [
@@ -66,6 +67,11 @@ const data = [
         img: t27,
         position: '',
         describe: '北京大学网络与信息安全实验室主任'
+    },
+    {title: '金键',
+        img: t28,
+        position: '',
+        describe: '中国信息通信研究院研究员'
     },
 ];
 

@@ -16,7 +16,7 @@ const fetchData = (api, type, data) => {
             return fetch(`${portId}/${api}`,
                 {
                     method: "POST",
-                    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', },
+                    headers: { 'Accept': 'application/json, text/html,application/xhtml+xml,application/xml', 'Content-Type': 'application/json'},
                     body: JSON.stringify(data),
                 })
                 .then(res => res.json())

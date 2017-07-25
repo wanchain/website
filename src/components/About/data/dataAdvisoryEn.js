@@ -9,7 +9,7 @@ const t23 = require('../../../image/23.png');
 const t24 = require('../../../image/t24.png');
 const t26 = require('../../../image/26.png');
 const t27 = require('../../../image/27.png');
-
+const t28 = require('../../../image/28.png');
 
 const data = [
     {title: 'Bo Shen',
@@ -66,6 +66,11 @@ const data = [
         img: t27,
         position: '',
         describe: 'Director of Information Security Lab, Peking University'
+    },
+    {title: 'Jian Jin',
+        img: t27,
+        position: '',
+        describe: ' Research Fellow, China information and Communication Research Institute(CAICT)'
     },
 ];
 

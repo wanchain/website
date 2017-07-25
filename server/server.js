@@ -3,9 +3,14 @@
 const fs = require('fs');
 const path = require('path');
 var mime = require('mime');
+var https = require('https');
 
 const express = require('express'),
 	bodyParser = require('body-parser');
+
+const mysite = ('./build/cert/wanchain.org.key'); //key
+const mysiteCrt = ('./build/cert/3bb55a3526ededcc.crt'); //
+const gd1 = ('./build/cert/gd_bundle-g2-g1.crt');
 
 var app = express();
 app.use(bodyParser());
@@ -13,6 +18,7 @@ app.use(bodyParser());
 app.use(function(req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*");
 	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	res.header("Content-Security-Policy", "upgrade-insecure-requests");
 	next();
 });
 
@@ -57,5 +63,13 @@ for (var i in Router) {
 
 // START THE SERVER
 // =============================================================================
-app.listen(port);
+https.createServer({
+	key: fs.readFileSync(mysite),
+	cert: fs.readFileSync(mysiteCrt),
+	ca: [fs.readFileSync(gd1)],
+	requestCert: false,
+	rejectUnauthorized: false
+	//ca: [fs.readFileSync(gd1)]
+}, app).listen(port);
+
 console.log('Magic happens on port ' + port);
