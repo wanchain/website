@@ -40,6 +40,38 @@
         top: 56%;
       }
     }
+
+    .aboutHeaderEn{
+      padding-top: 0;
+      position: relative;
+      background: #f7fafd;
+      height: 298px;
+      top: -20px;
+
+      .aboutHeaderImg1{
+        position: absolute;
+        top: 43%;
+        left: 40%;
+        height: 70px;
+        width: 420px;
+      }
+
+
+      .aboutHeaderImg2{
+        position: absolute;
+        top: 30%;
+        left: 38%;
+      }
+
+      h2 {
+        font-family: MicrosoftYaHeiLight;
+        font-size: 48px;
+        color: #fff;
+        position: absolute;
+        top: 44%;
+        left: 42%;
+      }
+    }
   }
 
   .aboutBody{

@@ -16,6 +16,7 @@
         left: 43%;
       }
 
+
       .aboutHeaderImg2{
         position: absolute;
         top: 30%;
@@ -38,6 +39,38 @@
         position: absolute;
         left: 47%;
         top: 64%;
+      }
+    }
+
+    .aboutHeaderEn{
+      padding-top: 0;
+      position: relative;
+      background: #f7fafd;
+      height: 298px;
+      top: -20px;
+
+      .aboutHeaderImg1{
+        position: absolute;
+        top: 43%;
+        left: 40%;
+        height: 70px;
+        width: 420px;
+      }
+
+
+      .aboutHeaderImg2{
+        position: absolute;
+        top: 30%;
+        left: 38%;
+      }
+
+      h2 {
+        font-family: MicrosoftYaHeiLight;
+        font-size: 48px;
+        color: #fff;
+        position: absolute;
+        top: 44%;
+        left: 42%;
       }
     }
   }
@@ -80,10 +113,12 @@
       font-size: 14px;
       color: #688499;
       text-align: left;
-      height: 90px;
+      height: 120px;
       padding-left: 20px;
       padding-right: 20px;
       margin-bottom: 40px;
+      word-wrap: break-word;
+      word-break: break-all;
     }
   }
 

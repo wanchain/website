@@ -65,6 +65,7 @@ class Footer extends React.Component {
   };
 
   render() {
+    const {language} = this.props;
     return (
       <div className="FooterRoot">
         <div className="FooterContainer container">
@@ -77,7 +78,13 @@ class Footer extends React.Component {
                       {' + '}Subscribe
                   </a>
               </div>
+              {language === 'zn' &&
               <p>更多项目请咨询：<span>info@wanchain.org</span></p>
+              }
+
+              {language === 'en' &&
+              <p>for more information, please contact: <span>info@wanchain.org</span></p>
+              }
           </div>
             <div className="formGroupDiv form-group col-lg-4">
                 <img src={wecater} className="wechat" id="wechat"/>
@@ -91,9 +98,16 @@ class Footer extends React.Component {
             </div>
         </div>
 
-        <div className="FooterEnd">
-          <span>©wanchain 2017 版权所有 All Rights Reserved</span>
-        </div>
+          {language === 'zn' &&
+          <div className="FooterEnd">
+              <span>©wanchain 2017 版权所有 all rights reserved</span>
+          </div>
+          }
+          {language === 'en' &&
+          <div className="FooterEnd">
+              <span>©WANCHAIN FOUNDATION LTD  2017 all rights reserved</span>
+          </div>
+          }
       </div>
     );
   }
