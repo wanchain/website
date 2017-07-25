@@ -134,14 +134,15 @@ class Home extends Component {
 
                     <div className="homeGit">
                         <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-
+                        <a onClick={() => {this.onChange('zn')}}>中文</a>{' | '}
+                        <a onClick={() => {this.onChange('en')}}>English</a>
                     </div>
                 </nav>
 
                 <div className="container">
                     <div className="homeHeaderBodyDiv1">
                         {language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}
-                        {language === 'en' && <h2>Distributed future"<span>bank</span>"</h2>}
+                        {language === 'en' && <h2>Distributed Future"<span>Bank</span>"</h2>}
                         {language === 'zn' &&
                         <p>连接不同数字资产，连接现在与未来
                             <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
@@ -217,5 +218,3 @@ export default connect(mapStateToProps, mapDispatchToProps)(Home)
 
 // <Div4 />
 
-// <a onClick={() => {this.onChange('zn')}}>中文</a>{' | '}
-// <a onClick={() => {this.onChange('en')}}>English</a>

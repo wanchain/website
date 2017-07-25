@@ -71,7 +71,8 @@ class Navigation extends Component {
 
                     <div className="navGit">
                         <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-
+                        <a onClick={() => {this.onChange('zn')}}>中文</a>{' | '}
+                        <a onClick={() => {this.onChange('en')}}>English</a>
                     </div>
                 </nav>
             </div>
@@ -103,6 +104,3 @@ export default connect(mapStateToProps, mapDispatchToProps)(Navigation)
 //     <img src={github} />
 //     <p><a>中文</a>{' | '}<a>English</a></p>
 // </div>
-
-// <a onClick={() => {this.onChange('zn')}}>中文</a>{' | '}
-// <a onClick={() => {this.onChange('en')}}>English</a>

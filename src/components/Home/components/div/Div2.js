@@ -48,20 +48,28 @@ class Div2 extends React.Component {
                     }
 
                     {language === 'en' &&
-                    <div className= "astroModule2word col-lg-4">
-                        <div className="astroModule2wordDiv">
+                    <div className= "astroModule2word">
+                        <div className="astroModule2wordDivEn">
                             <img src={one} />
-                            <p>Wanchain is not merely a <span>universal cross-chain protocol,<br/></span>it is a<span> distributed ledger </span>that records cross-chain and intra-chain transactions</p>
+                            <p>Wanchain is not merely a <span>universal cross-chain protocol,</span>it is a<span> distributed ledger </span>that records cross-chain and intra-chain transactions.</p>
                         </div>
-                        <div className="astroModule2wordDiv">
+                        <div className="astroModule2wordDivEn">
                             <img src={two} />
-                            <p>这个账本不但支持<span>智能合约虚拟机<br/></span>而且能支持智能合约下的<span>交易隐私保护</span></p>
+
+                            <p>The ledger not only supports<span>smart contracts,</span> but also supports <span>privacy protection</span> for the smart contracts.</p>
                         </div>
 
                         <div className="div2-submit-area">
+                            {language === 'zn' &&
                             <a className="div2-submit-button btn" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">
                                 白皮书<img src={download} />
                             </a>
+                            }
+                            {language === 'en' &&
+                            <a className="div2-submit-buttonEn btn" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">
+                                Whitepaper<img src={download} />
+                            </a>
+                            }
                         </div>
                     </div>
                     }
