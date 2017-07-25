@@ -8,6 +8,7 @@ const compress = require('compression');
 var https = require('https');
 var fs = require('fs');
 var http = require('http');
+var getIP = require('ipware')().get_ip;
 
 const mysite = ('./build/cert/wanchain.org.key'); //key
 const mysiteCrt = ('./build/cert/3bb55a3526ededcc.crt'); //
@@ -15,6 +16,13 @@ const gd1 = ('./build/cert/gd_bundle-g2-g1.crt');
 
 const app = express();
 app.use(compress());
+
+app.use(function(req, res, next) {
+  var ipInfo = getIP(req);
+  console.log(ipInfo);
+  // { clientIp: '127.0.0.1', clientIpRoutable: false }
+  next();
+});
 
 // ------------------------------------
 // Apply Webpack HMR Middleware

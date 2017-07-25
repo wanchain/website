@@ -29,21 +29,20 @@ Cofounded Factom in 2014; founded Wanglutech, which brings Blockchain technology
     img: t2,
     position: '',
     describe: `
-    MSc in Applied Mathematics from Peking University; PhD from University of Massachusetts, specialized in High Performance Computing, cryptography algorithm and cryptography security;
-    `
+    Applied Mathematics degree from Peking University and PhD from the University of Massachusetts. Specializes in high performance computing, cryptographic algorithms and cryptographic security.
+   `
   },
   {title: 'Ying Zhang',
     img: t3,
     position: '',
     describe: `
-    Senior engineer from Huawei and served as CAO and CTO of several companies. Proficient in design architecture, concurrent web services and big data processing. A senior developer of Ethereum with a deep understanding of, and engineering experience with, blockchain architecture, smart contracts and consensus algorithms.`
+    Senior engineer from Huawei and served as CAO and CTO of several companies. A senior developer of Ethereum with a deep understanding of, and engineering experience with, blockchain architecture, smart contracts and consensus algorithms.`
   },
   {title: 'Shi',
     img: t4,
     position: '',
     describe: `
-    Double major in Science and Computer Software with a PhD in Applied Mathematics from Peking University. Specializing in elliptic curve cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology.
-Implemented the SM9 algorithm and designed a blockchain-based system of integral and acceleration algorithms in elliptic curve cryptography.`
+    Double major in Science and Computer Software with a PhD in Applied Mathematics from Peking University. Specializing in elliptic curve cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology.`
   },
   {title: 'Demmon',
     img: t5,
@@ -81,7 +80,7 @@ Served as the head of product design at Ericsson; Analog design engineer at NXP 
   {title: 'Richard Zhang',
     img: t11,
     position: '',
-    describe: `More than 20 years of software development experience. A former Huawei senior engineer, proficient in C/C++, Golang, Node.js, Java and other languages. Considerable expertise in block chain P2P networking, encryption algorithms and consensus algorithms.`
+    describe: `More than 20 years of software development experience. Proficient in C/C++, Golang, Node.js, Java and other languages. Considerable expertise in block chain P2P networking, encryption algorithms and consensus algorithms.`
   },
   {title: 'Jeffrey Gu',
     img: t12,

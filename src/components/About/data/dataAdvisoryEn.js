@@ -68,7 +68,7 @@ const data = [
         describe: 'Director of Information Security Lab, Peking University'
     },
     {title: 'Jian Jin',
-        img: t27,
+        img: t28,
         position: '',
         describe: ' Research Fellow, China information and Communication Research Institute(CAICT)'
     },

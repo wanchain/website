@@ -35,6 +35,7 @@
     "express": "^4.15.3",
     "https": "^1.0.0",
     "immutable": "^3.8.1",
+    "ipware": "^1.0.0",
     "mysql": "^2.5.5",
     "node-sass": "^4.5.3",
     "nodemailer": "^4.0.1",
