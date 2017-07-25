@@ -21,101 +21,102 @@ const data = [
     img: t1,
     position: 'Founder',
     describe: `
-    MSc from Peking University and Ohio University Senior entrepreneur and technical expert in Blockchain;
-    Entered Blockchain area in 2012; cofounded Factom in 2013; founded Wanglutech, which is oriented to bringing Blockchain technology into a much wider range of application.`
+    Graduated from Peking University and the Ohio State University.
+Blockchain entrepreneur and technical expert. 
+Cofounded Factom in 2014; founded Wanglutech, which brings Blockchain technology to a greater range of applications.`
   },
   {title: 'Zane Liang',
     img: t2,
     position: '',
     describe: `
     MSc in Applied Mathematics from Peking University; PhD from University of Massachusetts, specialized in High Performance Computing, cryptography algorithm and cryptography security;
-    More than 20 years’ R&D experience in the United States; In charge of the company’s science team.`
+    `
   },
-  {title: 'Zhang Ying',
+  {title: 'Ying Zhang',
     img: t3,
     position: '',
     describe: `
-    Senior engineer from Huawei and served as CAO and CTO of several companies. proficient in architecture design, 
-    high concurrent Web services and big data processing. Senior developer of Ethereum, 
-    thorough understanding and engineering experience of blockchain architecture, smart contract and DPOS.`
+    Senior engineer from Huawei and served as CAO and CTO of several companies. Proficient in design architecture, concurrent web services and big data processing. A senior developer of Ethereum with a deep understanding of, and engineering experience with, blockchain architecture, smart contracts and consensus algorithms.`
   },
   {title: 'Shi',
     img: t4,
     position: '',
     describe: `
-    Double major in Science and Computer Software, PhD in Applied Mathematics from Peking University. Specialized in Elliptic Curve Cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology. 
-    Has implemented  SM9 algorithm and designed blockchain-based system of integral and acceleration algorithm in Elliptic Curve Cryptography.`
+    Double major in Science and Computer Software with a PhD in Applied Mathematics from Peking University. Specializing in elliptic curve cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology.
+Implemented the SM9 algorithm and designed a blockchain-based system of integral and acceleration algorithms in elliptic curve cryptography.`
   },
   {title: 'Demmon',
     img: t5,
     position: '',
     describe: `
-    BSc, Bec and PhD in Applied Mathematics from Peking University. Specialized in elliptic curve cryptography, security analysis of cryptographic algorithm.
-    In charge of designing privacy and anonymity algorithm of blockchain technology. Already completed several designs.`
+    PhD in Applied Mathematics from Peking University. Specializes in elliptic curve cryptography and security analysis of cryptographic algorithms.
+In charge of designing the privacy and anonymity algorithms of blockchain technology.`
   },
   {title: 'Michael Y.',
     img: t6,
     position: '',
-    describe: 'Entered Blockchain business in 2012, specialized in Bitcoin related development and Core developer from Master Coin and Factom.'
+    describe: 'Entered into the blockchain space in 2012, specializing in Bitcoin related development. Core developer of Master Coin, Omni and Factom.'
   },
   {title: 'Eric Swartz',
     img: t7,
     position: '',
-    describe: 'BSc in computer science from Southwestern University; Employed at Xtreme Power, Dell, etc.'
+    describe: 'BS in Computer Science from Southwestern University. Software test engineer and technical writer, employed at Novell, VTEL, Xtreme Power, etc.'
   },
   {title: 'Piyush Mehta',
     img: t8,
     position: '',
-    describe: 'Graduated from Indian Institute of Technology and University of Southern California; Former Senior Engineer at Dell, AT&T and Loss Recovery Company.'
+    describe: 'Graduated from the Indian Institute of Technology and the University of Southern California. Former senior engineer at Dell, AT&T and the Loss Recovery Company.'
   },
   {title: 'James Shen',
     img: t9,
     position: '',
-    describe: 'BSc in Computer Science from University of Texas; former Chief Engineer of General Motors and HP; Entered Blockchain business in 2011; senior miner and senior developing engineer.'
+    describe: 'BS in Computer Science from the University of Texas. Lead engineer at General Motors and HP. Entered into the blockchain space in 2011 as a senior blockchain miner and developer.'
   },
   {title: 'Shanfeng Chen',
     img: t10,
     position: '',
-    describe: `Master from Fudan University, PhD from Texas A&M University.
-    Served as the head of Ericsson’s product design in Italy and France; NXP semiconductors analog design engineer.`
+    describe: `BS and MS from Fudan University, PhD from Texas A&M University.
+Served as the head of product design at Ericsson; Analog design engineer at NXP Semiconductors.`
   },
   {title: 'Richard Zhang',
     img: t11,
     position: '',
-    describe: `More than 20 years’ developing experience, former Huawei senior engineer, proficient in C/C++,Golang, nodejs, java and other languages;
-    Considerable expertise in block chain P2P network, encryption algorithm, consensus algorithm.`
+    describe: `More than 20 years of software development experience. A former Huawei senior engineer, proficient in C/C++, Golang, Node.js, Java and other languages. Considerable expertise in block chain P2P networking, encryption algorithms and consensus algorithms.`
   },
   {title: 'Jeffrey Gu',
     img: t12,
     position: '',
-    describe: 'Graduated from Tsinghua University and MSc in computer science from University of Maryland. Served as senior engineer at Cisco and Dell; Specialized in network communications and information security.'
+    describe: 'BS from Tsinghua University and MS in Computer Science from the University of Maryland. Served as a senior engineer at Cisco and Dell, specializing in network communications and information security.'
   },
-  {title: 'Luo Ning',
+  {title: 'Ning Luo',
     img: t13,
     position: '',
-    describe: 'PhD in Physics and Computer Science from University of Clemson’ Served as Chief Software Engineer at MaxPoint and Lumeris.'
+    describe: 'PhD in Physics and Computer Science from the University of Clemson. Served as the chief software engineer at MaxPoint and Lumeris.'
   },
   {title: 'Cathy Niu',
     img: t14,
     position: '',
-    describe: `MSc in Computer Science from Ohio State University; served as Chief Engineer and Architect at HP and R&R. Participated in the core R&D of Factcom.`
+    describe: `MS in Computer Science from Ohio State University.
+Served as lead engineer and architect at HP and R&R.
+Participated in the core development of Factom.`
   },
   {title: 'Boris Yang',
     img: t15,
     position: '',
-    describe: `Former senior consultant of financial sector. Fascinated at digital currency notions since 2014.
-    Considerable expertise in Blockchain product design. Published various articles on Blockchain and currency.`
+    describe: `Former senior financial consultant. Entered into the blockcahin space in 2014.
+Considerable expertise in blockchain product design.
+Published various articles on blockchain and currency.`
   },
   {title: 'Lizzie Lu',
     img: t16,
     position: '',
-    describe: `Graduated from China Communication University, years of television, magazine and press working experience. Former marketing director of ZCODESIGN.
-    Organizer for Blockchain community, affiliations and conferences.`
+    describe: `Graduated from China Communication University. Years of television, magazine and press  experience. Former marketing director at ZCODesign.
+An organizer in the blockchain community, affiliations and conferences.`
   },
   {title: 'Wenyan Qin',
     img: t25,
     position: '',
-    describe: `IBM Toronto lab DB2 engine infrastructure team, focal on database protocol; Bank of Montreal VaR engine; Manulife retirement service engine, 401K, now blockchain platform development in Beijing.`
+    describe: `A member of the IBM Toronto Software Lab DB2 engine infrastructure team, focused on database protocols, the Bank of Montreal VaR engine, the Manulife retirement service engine, 401K, and now blockchain platform development in Beijing.`
   },
 ];
 

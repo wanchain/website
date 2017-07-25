@@ -62,11 +62,11 @@ const data = [
         position: '',
         describe: 'Founder of Bixin'
     },
-    // {title: '陈钟',
-    //     img: t27,
-    //     position: '',
-    //     describe: '北京大学网络与信息安全实验室主任'
-    // },
+    {title: 'Zhong Chen',
+        img: t27,
+        position: '',
+        describe: 'Director of Information Security Lab, Peking University'
+    },
 ];
 
 

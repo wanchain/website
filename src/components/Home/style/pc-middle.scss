@@ -210,5 +210,47 @@
       border-color: transparent;
     }
   }
+
+  .homeHeaderBodyDiv2En{
+    //float: left;
+    //margin-top: 220px;
+    //margin-left: 200px;
+
+    .home-submit-button{
+      width: 210px;
+      height: 50px;
+      background-color: #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .home-submit-button2{
+      width: 210px;
+      height: 50px;
+      border: 1px solid #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .home-submit-button .home-submit-button2:focus,
+    .home-submit-button .home-submit-button2:hover{
+      color: #FFF;
+      border-color: transparent;
+    }
+  }
 }
 

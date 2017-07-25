@@ -211,7 +211,47 @@
     .home-submit-button:hover{
       background: #1f6ce9;
     }
+  }
 
+  .homeHeaderBodyDiv2En{
+    float: right;
+    margin-top: -160px;
+    margin-right: 50px;
+
+    .home-submit-button{
+      width: 210px;
+      height: 50px;
+      margin-top: 20px;
+      background-color: #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+    }
+
+    .home-submit-button2{
+      width: 210px;
+      height: 50px;
+      margin-top: 20px;
+      border: 1px solid #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+      opacity: 0.6;
+    }
+
+    .home-submit-button .home-submit-button2:focus,
+    .home-submit-button2:hover{
+      color: #FFF;
+      border-color: transparent;
+    }
+
+    .home-submit-button:hover{
+      background: #1f6ce9;
+    }
   }
 }
 

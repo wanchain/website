@@ -44,13 +44,10 @@ class Div3 extends React.Component {
                         {language === 'en' &&
                         <div className="officalModule3Div col-lg-8">
                             <img src={one}/>
-                            <h2>Decentralized Cross-Chain Mechanism</h2>
+                            <h2>Distributed Cross-Chain Mechanism</h2>
                             {/*<span>DECENTRALIZED CHAIN MECHANISM</span>*/}
                             <p>
-                                On Wanchain, we support cross-chain transactions (such as BTC and ETH) of mainstream public chains,
-                                assets cross-chain transaction among alliance chains as well as cross-chain transaction of public chain and alliance chain.
-                                The distributive secret key management of the cross-link locking account can be realized by joint anchoring,
-                                multiparty computation, threshold secret key sharing mechanism and multi-role node design.
+                                Wanchain supports cross-chain transactions of mainstream public chains (such as Bitcoin and Ethereum), cross-chain transactions  among consortium chains as well as cross-chain transactions between public chains and consortium chains. The distributive cryptographic key management is achieved by  the threshold secret key sharing mechanism, joint anchoring, multiparty computation, and multi-role node design.
                             </p>
                         </div>
                         }
@@ -78,11 +75,7 @@ class Div3 extends React.Component {
                             <h2>Universal cross-chain protocol</h2>
                             {/*<span>GENERAL AGREEMENT ACROSS THE CHAIN</span>*/}
                             <p>
-                                The universal cross-chain protocol of Wanchain is the node of the wallet and the Wanchain;
-                                and the communication protocol between the Wanchain node and the isomorphic chain node can realize the related communication,
-                                such as requiring and confirming the related data of the cross-chain transaction.
-                                The universal protocol community developer can develop independent multi-assets wallets and set up chains with different
-                                opening degrees according to the application scenarios.
+                                The universal cross-chain protocol between the Wanchain and the Wanchain wallet, and the communication protocol between Wanchain and its homogeneous chain, provide request and confirmation communication for cross-chain transactions. Community developers can develop independent multi-asset wallets and set up chains according to their application requirements.
                             </p>
                         </div>
                         }
@@ -110,9 +103,7 @@ class Div3 extends React.Component {
                             <h2>Privacy Protection</h2>
                             {/*<span>TRANSACTION PRIVACY PROTECTION</span>*/}
                             <p>
-                                Wanchain and isomorphic chain support privacy protection based on smart contract assets.
-                                Wanchain realizes the privacy protection of smart contract token transactions by using ring signatures and one-off addresses.
-                                Wanchain is the first to realize privacy protection for smart contract token transactions which makes Wanchain and blockchains more applicable for use in financial applications.
+                                Wanchain and homogeneous chains support privacy protection based on smart contract assets. Wanchain achieves the privacy protection of smart contract token transactions by using ring signatures and one-time addresses. Wanchain is the first to achieve privacy protection for smart contract token transactions, which makes Wanchain and blockchains more applicable to financial applications.
                             </p>
                         </div>
                         }
@@ -136,13 +127,10 @@ class Div3 extends React.Component {
                         {language === 'en' &&
                         <div className="officalModule4Div col-lg-7 ">
                             <img src={four}/>
-                            <h2>Support complex scene</h2>
+                            <h2>Complex Application Support</h2>
                             {/*<span>TRANSACTION PRIVACY PROTECTION</span>*/}
                             <p>
-                                Based on the smart contract and universal protocol, the community developer can develop more complicated scene application,
-                                particularly the scene needing multi-currency supporting. The connection between the alliance chain and the public chain as well as
-                                the connection among the alliance chains can provide more selections for further application prospect.
-                                Sealing and opening is no longer either-or question.
+                                Based on the smart contract and universal protocols, community developers can develop more complicated applications, such as multi-currency applications. The connections between the consortium chains and the public chains, as well as the connections among the consortium chains, provide more options for further application development.
                             </p>
                         </div>
                         }
