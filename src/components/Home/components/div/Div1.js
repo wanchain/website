@@ -17,13 +17,10 @@ class Div1 extends React.Component {
     render() {
         const {language, clientWidth} = this.props;
 
-        console.log('clientWidth', clientWidth);
         let imgEn;
         if ( Number(clientWidth) >= 320 && Number(clientWidth) <= 767) {
-            console.log('mobile');
             imgEn = div1En;
         } else {
-            console.log('pc');
             imgEn = div1EnPc
         }
 

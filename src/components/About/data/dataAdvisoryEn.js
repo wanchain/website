@@ -20,7 +20,7 @@ const data = [
     {title: 'Feng Han',
         img: t17,
         position: '',
-        describe: 'secretary-general of DACA'
+        describe: 'Secretary-General of DACA'
     },
     {title: 'David A. Johnston',
         img: t18,
@@ -30,22 +30,22 @@ const data = [
     {title: 'Dustin Byington',
         img: t19,
         position: '',
-        describe: 'President & Founder of Stokens Venture Capital Tendermint co-founder Bitcoin College founder&dean '
+        describe: 'President & Founder of Stokens Venture Capital, Tendermint Co-founder, Bitcoin College Founder '
     },
     {title: 'Albert Ching',
         img: t20,
         position: '',
-        describe: 'Founder of I-sprint'
+        describe: 'Founder of i-Sprint'
     },
     {title: 'Ramble',
         img: t21,
         position: '',
-        describe: 'chairmen of North America Blockchain Association(NABA) '
+        describe: 'Chairman of North America Blockchain Association(NABA) '
     },
     {title: 'Marvin',
         img: t22,
         position: '',
-        describe: 'chairmen of S-league'
+        describe: 'Chairman of S-league'
     },
     {title: 'Pitinan',
         img: t23,
@@ -55,7 +55,7 @@ const data = [
     {title: 'Rongge Li',
         img: t24,
         position: '',
-        describe: 'River Capital Founding Partner'
+        describe: 'River Capital Partner'
     },
     {title: 'GANG WU',
         img: t26,
@@ -70,7 +70,7 @@ const data = [
     {title: 'Jian Jin',
         img: t28,
         position: '',
-        describe: ' Research Fellow, China information and Communication Research Institute(CAICT)'
+        describe: ' Research Fellow, China Information and Communication Research Institute(CAICT)'
     },
 ];
 
