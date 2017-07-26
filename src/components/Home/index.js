@@ -104,7 +104,7 @@ class Home extends Component {
             <div className="homeRoot">
             <div className="homeDiv" style={{background: `url(${'image/homeHeader.jpg'})`}}>
                 <nav className="homeHeader container">
-                    <img src={logo} />
+                    <IndexLink to='/'><img src={logo} /></IndexLink>
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i className="fa fa-bars"></i>

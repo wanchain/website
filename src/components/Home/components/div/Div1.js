@@ -5,16 +5,27 @@ import { changeLanguage } from '../../../../store/lang';
 import '../div.scss';
 
 import div1Img from '../../../../image/div1.png';
-import div1En from '../../../../image/div1En2.png';
-import div1En2 from '../../../../image/div1En.png';
+import div1En from '../../../../image/div1En.png';
+import div1EnPc from '../../../../image/div1EnPc.png';
 
 class Div1 extends React.Component {
     static propTypes = {
         language: PropTypes.string,
+        clientWidth: PropTypes.number,
     };
 
     render() {
-        const {language} = this.props;
+        const {language, clientWidth} = this.props;
+
+        console.log('clientWidth', clientWidth);
+        let imgEn;
+        if ( Number(clientWidth) >= 320 && Number(clientWidth) <= 767) {
+            console.log('mobile');
+            imgEn = div1En;
+        } else {
+            console.log('pc');
+            imgEn = div1EnPc
+        }
 
         return (
             <div className="container div1Header">
@@ -36,7 +47,7 @@ class Div1 extends React.Component {
                 <img src={div1Img} className="div1HeaderImg2"/>
                 }
                 {language === 'en' &&
-                <img src={div1En} className="div1HeaderImg2"/>
+                <img src={imgEn} className="div1HeaderImg2"/>
                 }
 
             </div>
@@ -54,6 +65,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => ({
     language : state.lang.language,
+    clientWidth: state.lang.clientWidth,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Div1)

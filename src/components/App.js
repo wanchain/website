@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { browserHistory, Router } from 'react-router';
 import { Provider } from 'react-redux';
-import PropTypes from 'prop-types';
+
+import { getClientWidth } from '../store/lang';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
   static propTypes = {
     store: PropTypes.object.isRequired,
     routes: PropTypes.object.isRequired,
+    getClientWidth: PropTypes.func,
   };
 
   componentWillMount() {
     const width = document.documentElement.clientWidth;
-    console.log('width', width);
+    this.props.getClientWidth(width);
   }
 
   shouldComponentUpdate () {
@@ -30,4 +33,16 @@ class App extends React.Component {
   }
 }
 
-export default App
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getClientWidth: (data) => {
+      dispatch(getClientWidth(data))
+    },
+  };
+};
+
+const mapStateToProps = (state) => ({
+  language : state.lang.language,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

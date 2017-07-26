@@ -40,7 +40,7 @@ class Navigation extends Component {
         return (
             <div className="navRoot">
                 <nav className="navHeader container">
-                    <img src={logo} />
+                    <IndexLink to='/'><img src={logo} /></IndexLink>
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i className="fa fa-bars"></i>
