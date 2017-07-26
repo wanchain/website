@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, IndexRoute} from 'react-router';
+import {HashRouter, Route, IndexRoute} from 'react-router';
 
 import CoreLayout from '../components/layouts/PageLayout/PageLayout'
 import Home from '../components/Home/index';
@@ -11,13 +11,13 @@ import CounterRoute from '../components/Counter/index'
 
 export default () => {
   return (
-      <Route path="/" component={CoreLayout}>
+      <HashRouter path="/" component={CoreLayout}>
           <IndexRoute component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/blog" component={Blog}/>
 
           <Route path="/counter" component={CounterRoute}/>
-      </Route>
+      </HashRouter>
   );
 };
 // <Route path="/detail/:id" component={UserDetail}/>

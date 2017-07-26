@@ -17,12 +17,12 @@ const gd1 = ('./build/cert/gd_bundle-g2-g1.crt');
 const app = express();
 app.use(compress());
 
-app.use(function(req, res, next) {
-  var ipInfo = getIP(req);
-  console.log(ipInfo);
-  // { clientIp: '127.0.0.1', clientIpRoutable: false }
-  next();
-});
+// app.use(function(req, res, next) {
+//   var ipInfo = getIP(req);
+//   console.log(ipInfo);
+//   // { clientIp: '127.0.0.1', clientIpRoutable: false }
+//   next();
+// });
 
 // ------------------------------------
 // Apply Webpack HMR Middleware
