@@ -5,7 +5,8 @@ import { changeLanguage } from '../../../../store/lang';
 import '../div.scss';
 
 import div1Img from '../../../../image/div1.png';
-import div1En from '../../../../image/div1En.png';
+import div1En from '../../../../image/div1En2.png';
+import div1En2 from '../../../../image/div1En.png';
 
 class Div1 extends React.Component {
     static propTypes = {

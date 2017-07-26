@@ -28,7 +28,7 @@ app.use(compress());
 // Apply Webpack HMR Middleware
 // ------------------------------------
 
-if (project.env === 'development') {
+if (project.env === 'production') {
   const compiler = webpack(webpackConfig);
 
   logger.info('Enabling webpack development and HMR middleware');
@@ -49,7 +49,8 @@ if (project.env === 'development') {
   // these files. This middleware doesn't need to be enabled outside
   // of development since this directory will be copied into ~/dist
   // when the application is compiled.
-  app.use(express.static(path.resolve(project.basePath, 'public')));
+  // app.use(express.static(path.resolve(project.basePath, 'public')));
+  app.use(express.static(path.resolve(project.basePath, project.outDir)));
 
   // This rewrites all routes requests to the root /index.html file
   // (ignoring file requests). If you want to implement universal
