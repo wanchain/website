@@ -134,12 +134,12 @@ class Div5 extends React.Component {
                     </div>
                     <div className="module8DivUp col-lg-3">
                         <img src={up} />
-                        <h4>Wanchain 1.0 goes live (Privacy Protection, WANCoin，POS，Wallet, Block chain Explorer)</h4>
+                        <h4>WANChain 1.0 goes live (Privacy Protection, WANCoin，POS，Wallet, Block chain Explorer)</h4>
                         <p>2017<span>{' / '}11</span></p>
                     </div>
                     <div className="module8DivUp col-lg-3">
                         <img src={up} />
-                        <h4>Wanchain 3.0 (Integration with Bitcoin, Multi-Coin Wallet)</h4>
+                        <h4>WANChain 3.0 (Integration with Bitcoin, Multi-Coin Wallet)</h4>
                         <p>2018<span>{' / '}12</span></p>
                     </div>
                 </div>
@@ -170,22 +170,22 @@ class Div5 extends React.Component {
                     <div className="module8Div1Up col-lg-3">
                         <img src={up} />
                         <p>2017<span>{' / '}11</span></p>
-                        <h4>Wanchain 1.0 goes live (Privacy Protection, WANCoin，POS，Wallet, Block chain Explorer)</h4>
+                        <h4>WANChain 1.0 goes live (Privacy Protection, WANCoin，POS，Wallet, Block chain Explorer)</h4>
                     </div>
                     <div className="module8Div1Up col-lg-3">
                         <img src={down} />
                         <p>2018<span>{' / '}06</span></p>
-                        <h4>Wanchain 2.0 (Integration with Ethereum, Multi-Coin Wallet)</h4>
+                        <h4>WANChain 2.0 (Integration with Ethereum, Multi-Coin Wallet)</h4>
                     </div>
                     <div className="module8Div1Up col-lg-3">
                         <img src={up} />
                         <p>2018<span>{' / '}12</span></p>
-                        <h4>Wanchain 3.0 (Integration with Bitcoin, Multi-Coin Wallet)</h4>
+                        <h4>WANChain 3.0 (Integration with Bitcoin, Multi-Coin Wallet)</h4>
                     </div>
                     <div className="module8Div1Up col-lg-3">
                         <img src={down} />
                         <p>2019</p>
-                        <h4>Wanchain 4.0 (Integration with Private Chains, Multi-Coin Wallet)</h4>
+                        <h4>WANChain 4.0 (Integration with Private Chains, Multi-Coin Wallet)</h4>
                     </div>
                 </div>
                 }
@@ -205,12 +205,12 @@ class Div5 extends React.Component {
                     <div className="module8DivUp2 col-lg-3">
                         <img src={down} />
                         <p>2018<span>{' / '}06</span></p>
-                        <h4>Wanchain 2.0 (Integration with Ethereum, Multi-Coin Wallet)</h4>
+                        <h4>WANChain 2.0 (Integration with Ethereum, Multi-Coin Wallet)</h4>
                     </div>
                     <div className="module8DivUp2 col-lg-3">
                         <img src={down} />
                         <p>2019</p>
-                        <h4>Wanchain 4.0 (Integration with Private Chains, Multi-Coin Wallet)</h4>
+                        <h4>WANChain 4.0 (Integration with Private Chains, Multi-Coin Wallet)</h4>
                     </div>
                 </div>
                 }
