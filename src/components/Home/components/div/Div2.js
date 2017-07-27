@@ -66,7 +66,7 @@ class Div2 extends React.Component {
                             </a>
                             }
                             {language === 'en' &&
-                            <a className="div2-submit-buttonEn btn" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">
+                            <a className="div2-submit-buttonEn btn" href='/files/Wanchain-Whitepaper-EN-version.pdf' target="_blank">
                                 Whitepaper<img src={download} />
                             </a>
                             }

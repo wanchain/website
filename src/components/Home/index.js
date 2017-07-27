@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
+import Helmet from 'react-helmet';
 
 import { changeLanguage } from '../../store/lang';
 
@@ -98,10 +99,16 @@ class Home extends Component {
     }
 
     render() {
-        const {language} = this.props;
+        const {language, clientWidth} = this.props;
 
         return (
             <div className="homeRoot">
+                {language === 'en' &&
+                <Helmet title="wanchain"/>
+                }
+                {language === 'zn' &&
+                <Helmet title="万维链"/>
+                }
             <div className="homeDiv" style={{background: `url(${'image/homeHeader.jpg'})`}}>
                 <nav className="homeHeader container">
                     <IndexLink to='/'><img src={logo} /></IndexLink>
@@ -142,7 +149,8 @@ class Home extends Component {
                 <div className="container">
                     <div className="homeHeaderBodyDiv1">
                         {language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}
-                        {language === 'en' && <h2>Building A Distributed "<span>Super Financial Market</span>"</h2>}
+                        {language === 'en' && Number(clientWidth) > 767 && <h2>Building A Distributed "<span>Super Financial Market</span>"</h2>}
+                        {language === 'en' && Number(clientWidth) <= 767 && <h2>Building A Distributed<br/> "<span>Super Financial Market</span>"</h2>}
                         {language === 'zn' &&
                         <p>连接不同数字资产，连接现在与未来
                             <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
@@ -185,7 +193,7 @@ class Home extends Component {
                     }
                     {language === 'en' &&
                     <div className="homeHeaderBodyDiv2En">
-                        <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">Whitepaper</a>
+                        <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-EN-version.pdf' target="_blank">Whitepaper</a>
                         <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">Crowdsale</a>
                     </div>
                     }
@@ -212,6 +220,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => ({
     language : state.lang.language,
+    clientWidth: state.lang.clientWidth,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
