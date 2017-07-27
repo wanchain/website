@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
 import Helmet from 'react-helmet';
+import { IndexLink, Link } from 'react-router';
 
 import { changeLanguage } from '../../store/lang';
 
@@ -10,26 +11,13 @@ import Div3 from './components/div/Div3';
 import Div4 from './components/div/Div4';
 import Div5 from './components/div/Div5';
 
-import { IndexLink, Link } from 'react-router';
 
 import './Home.scss'
 import github from '../../image/github.png';
 import logo from '../../image/logo.png';
 import nav from '../../image/nav1.png';
 
-
-var currentDate = function (offset) {
-    // get client's current date
-    var date = new Date();
-
-    // turn date to utc
-    var utc = date.getTime() + (date.getTimezoneOffset() * 60000);
-
-    // set new Date object
-    var new_date = new Date(utc + (3600000*offset));
-
-    return new_date;
-};
+import currentDate from './helpers/currentDate';
 
 
 class Home extends Component {
@@ -40,10 +28,12 @@ class Home extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {date: {
-            days: '00', hours: '00', minutes: '00', seconds: '00',
-            ref_days: 'DAY', ref_hours: 'HOUR', ref_minutes: 'MINUTE', ref_seconds: 'SECOND'
-        }};
+        this.state = {
+            date: {
+                days: '00', hours: '00', minutes: '00', seconds: '00',
+                ref_days: 'DAY', ref_hours: 'HOUR', ref_minutes: 'MINUTE', ref_seconds: 'SECOND'
+            },
+        };
     }
 
     tick() {
@@ -85,6 +75,7 @@ class Home extends Component {
             }
         }));
     }
+
 
     componentDidMount() {
         this.interval = setInterval(() => this.tick(), 1000);
@@ -148,7 +139,13 @@ class Home extends Component {
 
                 <div className="container">
                     <div className="homeHeaderBodyDiv1">
-                        {language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}
+                        <div className="wrap">
+                            <div className="content">
+                                <h2>分布式未来"<span>银行</span>"</h2>
+                                <h2>区块链的"<span>互联网</span>"</h2>
+                            </div>
+                        </div>
+                        {/*{language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}*/}
                         {language === 'en' && Number(clientWidth) > 767 && <h2>Building A Distributed "<span>Super Financial Market</span>"</h2>}
                         {language === 'en' && Number(clientWidth) <= 767 && <h2>Building A Distributed<br/> "<span>Super Financial Market</span>"</h2>}
                         {language === 'zn' &&
