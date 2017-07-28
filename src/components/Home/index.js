@@ -139,9 +139,38 @@ class Home extends Component {
 
                 <div className="container">
                     <div className="homeHeaderBodyDiv1">
-                        {language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}
-                        {language === 'en' && Number(clientWidth) > 767 && <h2>Building A Distributed "<span>Super Financial Market</span>"</h2>}
-                        {language === 'en' && Number(clientWidth) <= 767 && <h2>Building A Distributed<br/> "<span>Super Financial Market</span>"</h2>}
+
+                        {language === 'zn' &&
+                        <div className="scrolltext">
+                            <div id="quotation">
+                                <ul>
+                                    <li><h2>分布式未来"<span>银行</span>"</h2></li>
+                                    <li><h2>数字经济超级"<span>金融市场</span>"</h2></li>
+                                    <li><h2>区块链的"<span>互联网</span>"</h2></li>
+                                </ul>
+                            </div>
+                        </div>
+                        }
+                        {language === 'en' && Number(clientWidth) > 767 &&
+                        <div className="scrolltext">
+                            <div id="quotation">
+                                <ul>
+                                    <li><h2>Building A Distributed "<span>Super Financial Market</span>"</h2></li>
+                                    <li><h2>Internet of "<span>Blockchain</span>"</h2></li>
+                                </ul>
+                            </div>
+                        </div>
+                        }
+                        {language === 'en' && Number(clientWidth) <= 767 &&
+                        <div className="scrolltext">
+                            <div id="quotation">
+                                <ul>
+                                    <li><h2>Building A Distributed<br/> "<span>Super Financial Market</span>"</h2></li>
+                                    <li><h2>Internet of "<span>Blockchain</span>"</h2></li>
+                                </ul>
+                            </div>
+                        </div>
+                        }
                         {language === 'zn' &&
                         <p>连接不同数字资产，连接现在与未来
                             <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>

@@ -38,13 +38,13 @@ Cofounded Factom in 2014; founded Wanglutech, which brings Blockchain technology
     describe: `
     Senior engineer from Huawei and served as CAO and CTO of several companies. A senior developer of Ethereum with a deep understanding of, and engineering experience with, blockchain architecture, smart contracts and consensus algorithms.`
   },
-  {title: 'Shi',
+  {title: 'Shi Liu',
     img: t4,
     position: '',
     describe: `
     Double major in Science and Computer Software with a PhD in Applied Mathematics from Peking University. Specializing in elliptic curve cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology.`
   },
-  {title: 'Demmon',
+  {title: 'Demmon Zhao',
     img: t5,
     position: '',
     describe: `

@@ -38,7 +38,7 @@ const data = [
         position: '',
         describe: '新加坡 i-Sprint 创始人'
     },
-    {title: 'Ramble',
+    {title: '兰波',
         img: t21,
         position: '',
         describe: '北美区块链协会会长 '
@@ -48,7 +48,7 @@ const data = [
         position: '',
         describe: 'S League 供应链区块链联盟主席'
     },
-    {title: 'Pitinan',
+    {title: 'Pitinan Kooarmornpatana',
         img: t23,
         position: '',
         describe: 'DIGITALPASS公司管理合伙人'

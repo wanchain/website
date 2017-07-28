@@ -37,17 +37,17 @@ const data = [
         position: '',
         describe: 'Founder of i-Sprint'
     },
-    {title: 'Ramble',
+    {title: 'Ramble Lan',
         img: t21,
         position: '',
         describe: 'Chairman of North America Blockchain Association(NABA) '
     },
-    {title: 'Marvin',
+    {title: 'Marvin Zhang',
         img: t22,
         position: '',
         describe: 'Chairman of S-league'
     },
-    {title: 'Pitinan',
+    {title: 'Pitinan Kooarmornpatana',
         img: t23,
         position: '',
         describe: 'DIGITALPASS Co., Ltd. Managing Partner'

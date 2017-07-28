@@ -122,6 +122,12 @@
     float: left;
     margin-top: 180px;
 
+    .scrolltext{height:50px;overflow:hidden;}
+    /* quotation */
+    #quotation{height: 60px; overflow: hidden;}
+    #quotation li{line-height:28px;padding-bottom:35px;}
+    #quotation li .a-r{text-align:right;}
+
     h2{
       font-size: 40px;
       color: #ffffff;
@@ -131,7 +137,7 @@
       }
     }
     p{
-      padding-top: 30px;
+      padding-top: 10px;
       font-size: 24px;
       color: #ffffff;
       small{

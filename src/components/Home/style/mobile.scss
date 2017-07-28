@@ -99,33 +99,11 @@
     margin-top: 60px;
     text-align: center;
 
-    .wrap{
-      height: 50px;
-      overflow: hidden;
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      left: 0;
-    }
-    h2{margin:0;height: 30px;width: 100%}
-    .content h2{
-      position: absolute;
-    }
-    @-webkit-keyframes anim1{
-      0% {top: 50px;opacity: 1}
-      50% {top: -50px;opacity: 1}
-      75% {top: -50px ;opacity: 0}
-      100%{top:50px;opacity: 0}
-    }
-    @-webkit-keyframes anim2{
-      0% {top: -50px;opacity: 0}
-      25% {top: 50px;opacity: 0}
-      50% {top: 50px;opacity: 1}
-      100%{top: -50px;opacity: 1}
-    }
-
-    .content h2:nth-child(1){  -webkit-animation: anim1 5s linear infinite;  }
-    .content h2:nth-child(2){  -webkit-animation: anim2 5s linear infinite;  }
+    .scrolltext{height:100px;overflow:hidden; position: relative; top: 70px;}
+    /* quotation */
+    #quotation{height: 70px; overflow: hidden;}
+    #quotation li{line-height:28px;padding-bottom:35px;}
+    #quotation li .a-r{text-align:right;}
 
     h2{
       font-size: 30px;
@@ -135,7 +113,7 @@
       }
     }
     p{
-      padding-top: 80px;
+      padding-top: 50px;
       font-size: 18px;
       color: #fff;
       small{
