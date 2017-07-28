@@ -122,33 +122,6 @@
     float: left;
     margin-top: 180px;
 
-    .wrap{
-      height: 50px;
-      overflow: hidden;
-      position: absolute;
-      top: 224px;
-      width: 480px;
-    }
-    h2{margin:0;height: 30px;width: 100%}
-    .content h2{
-      position: absolute;
-    }
-    @-webkit-keyframes anim1{
-      0% {top: 50px;opacity: 1}
-      50% {top: -50px;opacity: 1}
-      75% {top: -50px ;opacity: 0}
-      100%{top:50px;opacity: 0}
-    }
-    @-webkit-keyframes anim2{
-      0% {top: -50px;opacity: 0}
-      25% {top: 50px;opacity: 0}
-      50% {top: 50px;opacity: 1}
-      100%{top: -50px;opacity: 1}
-    }
-
-    .content h2:nth-child(1){  -webkit-animation: anim1 5s linear infinite;  }
-    .content h2:nth-child(2){  -webkit-animation: anim2 5s linear infinite;  }
-
     h2{
       font-size: 40px;
       color: #ffffff;

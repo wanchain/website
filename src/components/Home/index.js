@@ -139,15 +139,7 @@ class Home extends Component {
 
                 <div className="container">
                     <div className="homeHeaderBodyDiv1">
-                        {language === 'zn' &&
-                        <div className="wrap">
-                            <div className="content">
-                                <h2>分布式未来"<span>银行</span>"</h2>
-                                <h2>区块链的"<span>互联网</span>"</h2>
-                            </div>
-                        </div>
-                        }
-                        {/*{language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}*/}
+                        {language === 'zn' && <h2>分布式未来"<span>银行</span>"</h2>}
                         {language === 'en' && Number(clientWidth) > 767 && <h2>Building A Distributed "<span>Super Financial Market</span>"</h2>}
                         {language === 'en' && Number(clientWidth) <= 767 && <h2>Building A Distributed<br/> "<span>Super Financial Market</span>"</h2>}
                         {language === 'zn' &&
