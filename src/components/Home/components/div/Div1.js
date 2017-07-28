@@ -41,10 +41,10 @@ class Div1 extends React.Component {
                 }
 
                 {language === 'zn' &&
-                <img src={div1Img} className="div1HeaderImg2"/>
+                <img src={div1Img} className="div1HeaderImg2" id="div1HeaderImg2"/>
                 }
                 {language === 'en' &&
-                <img src={imgEn} className="div1HeaderImg2"/>
+                <img src={imgEn} className="div1HeaderImg2" id="div1HeaderImg2"/>
                 }
 
             </div>

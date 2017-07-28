@@ -26,7 +26,7 @@ class Div2 extends React.Component {
                 {language === 'en' && <p>Wanchain aims to establish a distributed financial infrastructure capable of connecting blockchain networks together to exchange value.</p>}
 
                 <div className="astroModule2">
-                    <img src={wanchain} className="astroModule2Img" />
+                    <img src={wanchain} className="astroModule2Img" id="astroModule2Img"/>
 
                     {language === 'zn' &&
                     <div className= "astroModule2word col-lg-4">

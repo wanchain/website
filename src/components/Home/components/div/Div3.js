@@ -28,7 +28,7 @@ class Div3 extends React.Component {
             <div className="div3Header">
                 <div className="officalModule3">
                     <div className="container">
-                        <img src={part1} className="officalModule3Img"/>
+                        <img src={part1} className="officalModule3Img" id="officalModule3Img"/>
                         {language === 'zn' &&
                         <div className="officalModule3Div col-lg-8">
                             <img src={one}/>
@@ -79,13 +79,13 @@ class Div3 extends React.Component {
                             </p>
                         </div>
                         }
-                        <img src={part2} className="officalModule3Img"/>
+                        <img src={part2} className="officalModule3Img" id="officalModule4"/>
                     </div>
                 </div>
 
                 <div className="officalModule3">
                     <div className="container">
-                        <img src={part3} className="officalModule3Img"/>
+                        <img src={part3} className="officalModule3Img" id="officalModule5"/>
                         {language === 'zn' &&
                         <div className="officalModule3Div col-lg-8" id="officalModule3Div2">
                             <img src={three}/>
@@ -134,7 +134,7 @@ class Div3 extends React.Component {
                             </p>
                         </div>
                         }
-                        <img src={part4} className="officalModule3Img"/>
+                        <img src={part4} className="officalModule3Img" id="officalModule6"/>
                     </div>
                 </div>
 
