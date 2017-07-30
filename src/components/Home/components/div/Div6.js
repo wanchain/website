@@ -18,9 +18,10 @@ class Div6 extends React.Component {
 
         return (
             <div className="div6">
+                {language === 'zn' &&
                 <div className="div6Header" style={{background: `url(${'image/homeFooter.webp'})`}}>
                     <div className="container div6Title">
-                        {language === 'zn' && <h2><hr className="div1HeaderImg"/>我们的优势<hr className="div1HeaderImg"/></h2>}
+                        <h2><hr className="div1HeaderImg"/>我们的优势<hr className="div1HeaderImg"/></h2>
                     </div>
 
                     <div className="div6Body container">
@@ -58,6 +59,7 @@ class Div6 extends React.Component {
                         </div>
                     </div>
                 </div>
+                }
             </div>
         );
     }
