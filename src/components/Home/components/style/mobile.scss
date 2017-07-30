@@ -283,40 +283,32 @@
 
   //+++++++++++ div3 style+++++++++++++++++++++++++++++++++++++++++++++++++
 
-  .div3Header{
-
-  }
-
-  .officalModule3Img{
+  #div3img1, #div3img2, #div3img3, #div3img4 {
     display: block;
     margin: 0 auto;
-    width: 70%;
     padding-bottom: 0;
-    padding-top: 200px;
+    margin-top: 30px;
+    width: 70%;
+  }
+
+  #div3img4 {
+    padding-bottom: 30px;
   }
 
   .officalModule3{
     background: #f7fafe;
     margin-top: 60px;
-    position: relative;
+    //position: relative;
     padding-bottom: 30px;
 
     img {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-    .officalModule3Img{
-      display: block;
-      margin: 0 auto;
-      width: 70%;
-      padding-bottom: 0;
-      padding-top: 220px;
+      padding-top: 0;
+      //padding-bottom: 100px;
     }
   }
 
   .officalModule3Div{
-    position: absolute;
-    top: 20px;
+    margin-top: 20px;
 
     img {
       padding: 0;
@@ -328,9 +320,8 @@
       font-size: 15px;
       color: #2b363d;
       font-weight: 600;
-      position: absolute;
-      top: 10px;
-      left: 17%;
+      display: inline-block;
+      margin-left: 20px;
     }
 
     span {
@@ -347,13 +338,12 @@
 
   //==========1
   .officalModule4{
-    position: relative;
-    padding-bottom: 30px;
+    //position: relative;
+    //padding-bottom: 30px;
   }
 
   .officalModule4Div{
-    position: absolute;
-    top: 20px;
+    margin-top: 20px;
 
     img {
       padding: 0;
@@ -364,9 +354,8 @@
       font-size: 15px;
       color: #2b363d;
       font-weight: 600;
-      position: absolute;
-      top: 10px;
-      left: 17%;
+      display: inline-block;
+      margin-left: 20px;
     }
 
     span {

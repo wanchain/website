@@ -18,17 +18,19 @@ class Div3 extends React.Component {
 
     static propTypes = {
         language: PropTypes.string,
+        clientWidth: PropTypes.number,
     };
 
     render() {
 
-        const {language} = this.props;
+        const {language, clientWidth} = this.props;
 
         return (
             <div className="div3Header">
                 <div className="officalModule3">
+                    {Number(clientWidth) > 1119 &&
                     <div className="container">
-                        <img src={part1} className="officalModule3Img" id="officalModule3Img"/>
+                        <img src={part1} id="div3img1"/>
                         {language === 'zn' &&
                         <div className="officalModule3Div col-lg-8">
                             <img src={one}/>
@@ -52,6 +54,35 @@ class Div3 extends React.Component {
                         </div>
                         }
                     </div>
+                    }
+                    {Number(clientWidth) <= 1119 &&
+                    <div className="container">
+                        {language === 'zn' &&
+                        <div className="officalModule3Div col-lg-8">
+                            <img src={one}/>
+                            <h2>去中心化的跨链机制</h2>
+                            {/*<span>DECENTRALIZED CHAIN MECHANISM</span>*/}
+                            <p>
+                                在万维链上，我们将支持主流公链的跨链交易（如BTC、ETH）、联盟链之间的资产跨链交易，以及公链与联盟链的跨链交易。
+                                通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。
+                            </p>
+                        </div>
+                        }
+
+                        {language === 'en' &&
+                        <div className="officalModule3Div col-lg-8">
+                            <img src={one}/>
+                            <h2>Distributed Cross-Chain Mechanism</h2>
+                            {/*<span>DECENTRALIZED CHAIN MECHANISM</span>*/}
+                            <p>
+                                Wanchain supports cross-chain transactions of mainstream public chains (such as Bitcoin and Ethereum), cross-chain transactions  among consortium chains as well as cross-chain transactions between public chains and consortium chains. The distributive cryptographic key management is achieved by  the threshold secret key sharing mechanism, joint anchoring, multiparty computation, and multi-role node design.
+                            </p>
+                        </div>
+                        }
+
+                        <img src={part1} id="div3img1"/>
+                    </div>
+                    }
                 </div>
 
                 <div className="officalModule4">
@@ -79,13 +110,14 @@ class Div3 extends React.Component {
                             </p>
                         </div>
                         }
-                        <img src={part2} className="officalModule3Img" id="officalModule4"/>
+                        <img src={part2} id="div3img2"/>
                     </div>
                 </div>
 
                 <div className="officalModule3">
+                    {Number(clientWidth) > 1119 &&
                     <div className="container">
-                        <img src={part3} className="officalModule3Img" id="officalModule5"/>
+                        <img src={part3} id="div3img3"/>
                         {language === 'zn' &&
                         <div className="officalModule3Div col-lg-8" id="officalModule3Div2">
                             <img src={three}/>
@@ -107,8 +139,34 @@ class Div3 extends React.Component {
                             </p>
                         </div>
                         }
-
                     </div>
+                    }
+                    {Number(clientWidth) <= 1119 &&
+                    <div className="container">
+                        {language === 'zn' &&
+                        <div className="officalModule3Div col-lg-8" id="officalModule3Div2">
+                            <img src={three}/>
+                            <h2>交易隐私保护</h2>
+                            {/*<span>TRANSACTION PRIVACY PROTECTION</span>*/}
+                            <p>
+                                万维链上本身及同构链支持基于智能合约的资产的交易隐私保护。利用环签名和一次性地址，万维链实现智能合约代币的隐私保护，
+                                万维链不但是全球第一个实现智能合约代币交易的隐私保护，更让万维链及同构联盟链更好的适用于金融等应用场景。
+                            </p>
+                        </div>
+                        }
+                        {language === 'en' &&
+                        <div className="officalModule3Div col-lg-8" id="officalModule3Div2">
+                            <img src={three}/>
+                            <h2>Privacy Protection</h2>
+                            {/*<span>TRANSACTION PRIVACY PROTECTION</span>*/}
+                            <p>
+                                Wanchain and homogeneous chains support privacy protection based on smart contract assets. Wanchain achieves the privacy protection of smart contract token transactions by using ring signatures and one-time addresses. Wanchain is the first to achieve privacy protection for smart contract token transactions, which makes Wanchain and blockchains more applicable to financial applications.
+                            </p>
+                        </div>
+                        }
+                        <img src={part3} id="div3img3"/>
+                    </div>
+                    }
                 </div>
 
                 <div className="officalModule4">
@@ -134,7 +192,7 @@ class Div3 extends React.Component {
                             </p>
                         </div>
                         }
-                        <img src={part4} className="officalModule3Img" id="officalModule6"/>
+                        <img src={part4} id="div3img4"/>
                     </div>
                 </div>
 
@@ -152,6 +210,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => ({
     language : state.lang.language,
+    clientWidth: state.lang.clientWidth,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Div3)

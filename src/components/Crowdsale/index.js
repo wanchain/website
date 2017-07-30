@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 import Div1 from './components/div/Div1';
 import Div2 from './components/div/Div2';
-import Div3 from './components/div/Div3';
 
 import './Crowdsale.scss';
 
