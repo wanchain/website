@@ -6,10 +6,12 @@ import { IndexLink, Link } from 'react-router';
 import { changeLanguage } from '../../store/lang';
 
 import Div1 from './components/div/Div1';
+import Div1o from './components/div/Div1o';
 import Div2 from './components/div/Div2';
 import Div3 from './components/div/Div3';
 import Div4 from './components/div/Div4';
 import Div5 from './components/div/Div5';
+import Div6 from './components/div/Div6';
 
 
 import './Home.scss'
@@ -221,9 +223,11 @@ class Home extends Component {
             </div>
 
                 <Div1 />
+                <Div1o/>
                 <Div2 />
                 <Div3 />
                 <Div5 />
+                <Div6 />
 
             </div>
     )

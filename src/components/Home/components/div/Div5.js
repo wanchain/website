@@ -21,7 +21,7 @@ class Div5 extends React.Component {
         return (
             <div className="div5Header">
                 <div className="div5HeaderDiv container" >
-                    <h2><hr className="div5HeaderImg"/>ROADMAP<hr className="div5HeaderImg"/></h2>
+                    <h2><hr className="div1HeaderImg"/>ROADMAP<hr className="div1HeaderImg"/></h2>
                 </div>
 
                 {language === 'zn' &&

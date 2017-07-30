@@ -19,7 +19,7 @@ class Div2 extends React.Component {
 
         return (
             <div className="container div2Header">
-                {language === 'zn' && <h2><hr className="div2HeaderImg"/>万维链整体架构<hr className="div2HeaderImg"/></h2>}
+                {language === 'zn' && <h2><hr className="div1HeaderImg"/>万维链整体架构<hr className="div1HeaderImg"/></h2>}
                 {language === 'zn' && <p>万维链旨在建立一个基础设施--能够以去中心化的方式完成不同区块链网络的连接及价值的交换</p>}
 
                 {language === 'en' && <h2><hr className="div2HeaderImg"/>Overall Architecture of Wanchain<hr className="div2HeaderImg"/></h2>}

@@ -1,4 +1,9 @@
 @media screen and (min-width: 768px) and (max-width: 1119px) {
+
+  .div1HeaderImg{
+    display: none;
+  }
+
   // +++++++++++++++++++++div1 style++++++++++++++++++++++++++++++++++++
   .div1Header {
     margin: 0 auto;
@@ -13,9 +18,7 @@
       color: #2c313a;
     }
 
-    .div1HeaderImg{
-      display: none;
-    }
+
 
     .div1HeaderImg2{
       display: block;
@@ -31,8 +34,91 @@
       text-align: center;
       padding-top: 5px;
     }
+  }
 
+  // ++++++++++++++++++div1o style+++++++++++++++++++++++++++++++++++++++++++++
+  .div1o{
+    background: #f7fafe;
 
+    .div1oHeader {
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 30px;
+
+      h2{
+        margin: 0;
+        padding: 80px 0 0 0;
+        font-family: "Microsoft YaHei";
+        font-size: 24px;
+        text-align: center;
+        color: #2c313a;
+      }
+
+      .div1oBody{
+        margin-top: 60px;
+        .div1oBodyCard{
+          border-radius: 4px;
+          background: #fff;
+          box-shadow: 0 3px 6px 0 rgba(5,13,208,.05);
+          width: 284px;
+          height: 381px;
+          display: inline-block;
+          margin: 0 10px;
+          position: relative;
+          margin-bottom: 20px;
+
+          .div1oBodyCardModule{
+            position: absolute;
+            top: 50px;
+
+            img{padding-left: 30px}
+            p{
+              display: inline-block;
+              font-size: 20px;
+              font-weight: 600;
+              color: #2b363d;
+              padding-left: 20px;
+              padding-right: 50px;
+              position: relative;
+              top: 10px;
+              span{
+                color: #3680f8;
+              }
+            }
+          }
+
+          .div1oBodyCardLine{
+            left: 35px;
+            top: 185px;
+            position: absolute;
+          }
+
+          ul {
+            margin-top: 35px;
+            margin-bottom: 20px;
+            left: 35px;
+            top: 185px;
+            position: absolute;
+            line-height: 15px;
+            img{
+              padding-right: 10px;
+              width: 17px;
+              margin-top: -11px;
+            }
+            li{
+              color: #688499;
+              font-size: 14px;
+              position: relative;
+              top: -20px;
+              left: 20px;
+              margin-bottom: -10px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+
+    }
   }
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
@@ -60,10 +146,6 @@
        text-align: center;
        padding-top: 5px;
      }
-
-    .div2HeaderImg{
-      display: none;
-    }
   }
 
   .astroModule2Img{
@@ -386,10 +468,64 @@
 
     }
   }
-
-
   .module8Div2{
     display: none;
   }
+
+  //+++++++++++ div6 style+++++++++++++++++++++++++++++++++++++++++++++++++
+  .div6Header{
+    //height: 520px;
+    .div6Title{
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 30px;
+
+      h2{
+        margin: 0;
+        padding: 80px 0 0 0;
+        font-family: "Microsoft YaHei";
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    .div6Body{
+      margin-top: 50px;
+      padding: 0;
+      .div6BodyCard{
+        display: inline-block;
+        img{
+          display: block;
+          margin: 0 auto;
+          height: 67px;
+        }
+        p{
+          padding-top: 30px;
+          padding-bottom: 20px;
+          font-size: 18px;
+          color: #ffffff;
+          font-weight: 600;
+          text-align: center;
+        }
+        span{
+          font-size: 14px;
+          color: #ffffff;
+          text-align: left;
+          height: 100px;
+          display: block;
+        }
+        b{
+          color: #3680f8;
+        }
+      }
+
+      #div6Card2{
+        padding-left: 120px;
+        //padding-right: 140px;
+      }
+    }
+  }
+
 }
 
