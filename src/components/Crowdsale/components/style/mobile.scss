@@ -1,4 +1,16 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .crowd-div1HeaderImg{
+    width: 20px;
+    display: inline-block;
+    height: 1px;
+    border: 0;
+    background-color: #d5d5d5;
+    color: #d5d5d5;
+    position: relative;
+    top: 3px;
+    margin: 10px;
+  }
+
   // +++++++++++++++++++++div1 style++++++++++++++++++++++++++++++++++++
   .crowd-div1Header {
     margin: 0 auto;
@@ -13,18 +25,6 @@
       text-align: center;
       color: #2c313a;
       margin-bottom: 40px;
-    }
-
-    .crowd-div1HeaderImg{
-      width: 20px;
-      display: inline-block;
-      height: 1px;
-      border: 0;
-      background-color: #d5d5d5;
-      color: #d5d5d5;
-      position: relative;
-      top: 3px;
-      margin: 10px;
     }
 
     span{
@@ -65,32 +65,21 @@
       font-size: 24px;
       text-align: center;
       color: #2c313a;
-    }
-
-    .crowd-div2HeaderImg{
-      width: 20px;
-      display: inline-block;
-      height: 1px;
-      border: 0;
-      background-color: #d5d5d5;
-      color: #d5d5d5;
-      position: relative;
-      top: 3px;
-      margin: 10px;
+      margin-bottom: 40px;
     }
 
     .crowd-div2HeaderDiv{
       margin-top: 40px;
-      margin-bottom: 60px;
       text-align: center;
 
       .crowd-div2HeaderDivLeft{
-        width: 570px;
+        width: 300px;
         height: 360px;
         border: 1px solid #ededed;
         display: inline-block;
         margin-right: 25px;
         position: relative;
+        top: 0px;
 
         hr{
           width: 2px;
@@ -106,9 +95,9 @@
 
         h4{
           position: absolute;
-          top: 30px;
-          left: 24px;
-          font-size: 20px;
+          top: 35px;
+          left: 20px;
+          font-size: 16px;
           color: #353b47;
           strong{
             color: #3c85ff;
@@ -117,10 +106,10 @@
 
         small{
           position: absolute;
-          top: 93px;
-          left: 24px;
+          top: 70px;
+          left: 20px;
           text-align: left;
-          font-size: 14px;
+          font-size: 12px;
           color: #353b47;
         }
 
@@ -128,10 +117,10 @@
           border: 1px solid #d2e1f9;
           background: #f5f9ff;
           width: 90%;
-          height: 110px;
+          height: 135px;
           text-align: left;
           margin-top: 150px;
-          margin-left: 24px;
+          margin-left: 15px;
 
           .crowd-div2HeaderDivLeft-Div1{
             position: relative;
@@ -153,17 +142,152 @@
             }
           }
         }
+
+        #crowd-div2HeaderDivLeft-foot{
+          text-align: left;
+          padding-left: 24px;
+          padding-top: 20px;
+          font-size: 15px;
+          font-weight: 600;
+          color: #353b47;
+          span{
+            font-weight: 500;
+          }
+        }
       }
 
       .crowd-div2HeaderDivRight{
-        width: 570px;
+        width: 300px;
         height: 360px;
-        background: #16d1c8;
+        border: 1px solid #ededed;
         display: inline-block;
-        margin-left: 25px;
+        margin-right: 25px;
+        position: relative;
+        margin-top: 30px;
+        hr{
+          width: 2px;
+          height: 20px;
+          display: inline-block;
+          border: 0;
+          background-color: #16d1c8;
+          color: #16d1c8;
+          position: absolute;
+          top: 32px;
+          left: 0;
+        }
+        h4{
+          position: absolute;
+          top: 35px;
+          left: 20px;
+          font-size: 16px;
+          color: #353b47;
+          strong{
+            color: #16d1c8;
+          }
+        }
+        small{
+          position: absolute;
+          top: 70px;
+          left: 20px;
+          text-align: left;
+          font-size: 12px;
+          color: #353b47;
+        }
+
+        .rowd-div2HeaderDivRight-Div{
+          position: absolute;
+          margin-top: 150px;
+          margin-left: 24px;
+          text-align: left;
+          img{
+            padding: 10px 30px;
+            border: 1px solid #ededed;
+            border-radius: 4px;
+            margin: 0 auto;
+            display: block;
+          }
+          #img1{padding: 7px 38px;}
+          #img2{ padding: 7px 60px; margin: 20px;}
+
+        }
       }
     }
+  }
 
+  // ++++++++++++++++++div3 style+++++++++++++++++++++++++++++++++++++++++++++
+  .crowd-div3Header {
+    margin: 0 auto;
+    padding-bottom: 0;
+
+    h2{
+      margin: 0;
+      padding: 40px 0 0 0;
+      font-family: "Microsoft YaHei";
+      font-size: 24px;
+      text-align: center;
+      color: #2c313a;
+      margin-bottom: 30px;
+    }
+
+    .crowd-div3HeaderFaq{
+      margin-bottom: 50px;
+      b{
+        font-size: 16px;
+        color: #353b47;
+        margin-bottom: 7px;
+        display: block;
+      }
+      p{
+        color: #688499;
+      }
+    }
+  }
+
+  // ++++++++++++++++++div4 style+++++++++++++++++++++++++++++++++++++++++++++
+  .crowd-div4Header {
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    .crowd-div4HeaderImg{
+      width: 20px;
+      display: inline-block;
+      height: 1px;
+      border: 0;
+      background-color: #ff7800;
+      color: #ff7800;
+      position: relative;
+      top: 3px;
+      margin: 10px;
+    }
+
+    h2{
+      margin: 0;
+      padding: 30px 0 0 0;
+      font-family: "Microsoft YaHei";
+      font-size: 24px;
+      text-align: center;
+      color: #ff7800;
+      margin-bottom: 20px;
+    }
+
+    .crowd-div4Header-pot{
+      width: 5px;
+      height: 5px;
+      background: #ff7800;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 3px;
+      margin-right: 11px;
+      position: relative;
+      top:20px;
+    }
+
+    p{
+      display: block;
+      font-size: 12px;
+      color: #353b47;
+      margin-left: 11px;
+    }
   }
 }
 

@@ -19,7 +19,7 @@ class Div6 extends React.Component {
         return (
             <div className="div6">
                 {language === 'zn' &&
-                <div className="div6Header" style={{background: `url(${'image/homeFooter.webp'})`}}>
+                <div className="div6Header" style={{background: `url(${'image/homeFooter.jpg'})`}}>
                     <div className="container div6Title">
                         <h2><hr className="div1HeaderImg"/>我们的优势<hr className="div1HeaderImg"/></h2>
                     </div>

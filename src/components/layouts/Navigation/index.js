@@ -52,7 +52,7 @@ class Navigation extends Component {
                         {language === 'zn' &&
                         <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" id="navbar-brand">
                             <li><IndexLink to='/'>首页</IndexLink></li>
-                            <li><Link to='/'>众筹</Link></li>
+                            <li><Link to='/crowdsale'>众筹</Link></li>
                             <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank" onClick={this.onClick}>白皮书</a></li>
                             <li><Link to='/about'>关于</Link></li>
                             <li><Link to='/'>博客</Link></li>

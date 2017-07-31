@@ -93,6 +93,7 @@ class Home extends Component {
 
     render() {
         const {language, clientWidth} = this.props;
+        const style = {width: '890px'};
 
         return (
             <div className="homeRoot">
@@ -115,7 +116,7 @@ class Home extends Component {
                         {language === 'zn' &&
                         <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
                             <li><IndexLink to='/'>首页</IndexLink></li>
-                            <li><Link to='/'>众筹</Link></li>
+                            <li><Link to='/crowdsale'>众筹</Link></li>
                             <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a></li>
                             <li><Link to='/about'>关于</Link></li>
                             <li><Link to='/'>博客</Link></li>
@@ -156,9 +157,9 @@ class Home extends Component {
                         {language === 'en' && Number(clientWidth) > 767 &&
                         <div className="scrolltext">
                             <div id="quotation">
-                                <ul>
-                                    <li><h2>Building A Distributed "<span>Super Financial Market</span>"</h2></li>
-                                    <li><h2>Internet of "<span>Blockchain</span>"</h2></li>
+                                <ul style={style}>
+                                    <li><h2>A Distributed "<span>Super Financial Market</span>"</h2></li>
+                                    <li><h2>Internet of "<span>Blockchains</span>"</h2></li>
                                 </ul>
                             </div>
                         </div>
@@ -167,8 +168,8 @@ class Home extends Component {
                         <div className="scrolltext">
                             <div id="quotation">
                                 <ul>
-                                    <li><h2>Building A Distributed<br/> "<span>Super Financial Market</span>"</h2></li>
-                                    <li><h2>Internet of "<span>Blockchain</span>"</h2></li>
+                                    <li><h2>A Distributed<br/> "<span>Super Financial Market</span>"</h2></li>
+                                    <li><h2>Internet of "<span>Blockchains</span>"</h2></li>
                                 </ul>
                             </div>
                         </div>

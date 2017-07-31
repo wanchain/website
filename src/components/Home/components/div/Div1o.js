@@ -20,14 +20,14 @@ class Div1o extends React.Component {
         const {language} = this.props;
 
         return (
-            <div className="div1o">
+            <div className="div1o" id="div1o">
                 {language === 'zn' &&
                 <div className="container div1oHeader">
                     <h2><hr className="div1HeaderImg"/>万维链应用场景<hr className="div1HeaderImg"/></h2>
                     <div className="div1oBody">
                         <div className="div1oBodyCard" id="card1">
                             <div className="div1oBodyCardModule">
-                                <img src={card1} />
+                                <img src={card1} id="div1oimg1" />
                                 <p>数字货币<br/>交易<span>兑换</span></p>
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
@@ -39,7 +39,7 @@ class Div1o extends React.Component {
                         </div>
                         <div className="div1oBodyCard">
                             <div className="div1oBodyCardModule">
-                                <img src={card2} />
+                                <img src={card2} id="div1oimg2"/>
                                 <p>数字货币<br/><span>借贷</span></p>
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
@@ -51,7 +51,7 @@ class Div1o extends React.Component {
                         </div>
                         <div className="div1oBodyCard">
                             <div className="div1oBodyCardModule">
-                                <img src={card3} />
+                                <img src={card3} id="div1oimg3"/>
                                 <p>数字货币<br/><span>投资</span></p>
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
@@ -63,7 +63,7 @@ class Div1o extends React.Component {
                         </div>
                         <div className="div1oBodyCard" id="card4">
                             <div className="div1oBodyCardModule">
-                                <img src={card4} />
+                                <img src={card4} id="div1oimg4"/>
                                 <p>数字货币<br/><span>众筹</span></p>
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />

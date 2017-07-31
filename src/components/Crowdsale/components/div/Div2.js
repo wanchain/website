@@ -4,18 +4,40 @@ import { connect } from 'react-redux';
 import { changeLanguage } from '../../../../store/lang';
 import '../div.scss';
 
+import bizhongchou1 from '../../../../image/bizhongchou.png';
+import bizhongchou2 from '../../../../image/bizhongchou2.png';
+
+import icoage1 from '../../../../image/icoage.png';
+import icoage2 from '../../../../image/icoage2.png';
+
+import token1 from '../../../../image/token.png';
+import token2 from '../../../../image/token2.png';
+
 class Div2 extends React.Component {
     static propTypes = {
         language: PropTypes.string,
     };
 
+    onEnter(name) {
+        const img = document.getElementById(name);
+        if (name === 'img1') {img.src = bizhongchou2;}
+        if (name === 'img2') {img.src = icoage2;}
+        if (name === 'img3') {img.src = token2;}
+    }
+
+    onLeave(name) {
+        const img = document.getElementById(name);
+        if (name === 'img1') {img.src = bizhongchou1;}
+        if (name === 'img2') {img.src = icoage1;}
+        if (name === 'img3') {img.src = token1;}
+    }
     render() {
         const {language} = this.props;
 
         return (
             <div className="crowd-div2Header">
-                {language === 'zn' && <h2><hr className="crowd-div2HeaderImg"/>参与方式<hr className="crowd-div2HeaderImg"/></h2>}
-                {language === 'en' && <h2><hr className="crowd-div2HeaderImg"/>参与方式<hr className="crowd-div2HeaderImg"/></h2>}
+                {language === 'zn' && <h2><hr className="crowd-div1HeaderImg"/>参与方式<hr className="crowd-div1HeaderImg"/></h2>}
+                {language === 'en' && <h2><hr className="crowd-div1HeaderImg"/>参与方式<hr className="crowd-div1HeaderImg"/></h2>}
 
                 <div className="crowd-div2HeaderDiv">
                     <div className="crowd-div2HeaderDivLeft">
@@ -35,10 +57,20 @@ class Div2 extends React.Component {
                             </div>
                         </div>
 
-                        <p>token购买的以太坊地址为 : <br/><span>1234567890</span></p>
+                        <p id="crowd-div2HeaderDivLeft-foot">token购买的以太坊地址为 : <br/><span>合约上线前公布</span></p>
                     </div>
-                    {/*<div className="crowd-div2HeaderDivRight">*/}
-                    {/*</div>*/}
+                    <div className="crowd-div2HeaderDivRight">
+                        <hr/>
+                        <h4><strong>参与方式 2 : </strong>通过指定平台购买</h4>
+                        <small>以下平台是与万维链官方合作的平台，平台将代用户完成认购的操作，认购结束后，由平台将对应的token发送到认购者的以太坊钱包。</small>
+
+                        <div className="rowd-div2HeaderDivRight-Div">
+                            <h2>指定平台待定</h2>
+                            {/*<img src={bizhongchou1} id="img1" onMouseEnter={() => this.onEnter('img1')} onMouseLeave={() => this.onLeave('img1')}/>*/}
+                            {/*<img src={icoage1} id="img2" onMouseEnter={() => this.onEnter('img2')} onMouseLeave={() => this.onLeave('img2')}/>*/}
+                            {/*<img src={token1} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>*/}
+                        </div>
+                    </div>
                 </div>
             </div>
         );
@@ -58,7 +90,3 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Div2)
-
-// <a className="div2-submit-button btn" href="http://localhost:3001/white_paper/database.sql" download="database1.sql">
-//    白皮书<img src={download} />
-// </a>

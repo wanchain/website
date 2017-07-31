@@ -29,18 +29,21 @@ class Div1 extends React.Component {
                     <tbody>
                     <tr>
                         <td>第一阶段</td>
-                        <td>1 ETH : <span>400</span> wancoin</td>
-                        <td>2017 09-23 12:00 -- 09-19 12:00 <small>UTC</small></td>
+                        {/*<td>1 ETH : <span>400</span> wancoin</td>*/}
+                        <td><span>8.5折</span></td>
+                        <td>2017 09-06 12:00 -- 09-13 11:59 <small>UTC</small></td>
                     </tr>
                     <tr>
                         <td>第二阶段</td>
-                        <td>1 ETH : <span>450</span> wancoin</td>
-                        <td>2017 09-23 12:00 -- 09-19 12:00 <small>UTC</small></td>
+                        {/*<td>1 ETH : <span>450</span> wancoin</td>*/}
+                        <td><span>9.5折</span></td>
+                        <td>2017 09-13 12:00 -- 09-20 11:59 <small>UTC</small></td>
                     </tr>
                     <tr>
                         <td>第三阶段</td>
-                        <td>1 ETH : <span>600</span> wancoin</td>
-                        <td>2017 09-23 12:00 -- 09-19 12:00 <small>UTC</small></td>
+                        {/*<td>1 ETH : <span>600</span> wancoin</td>*/}
+                        <td><span>原价</span></td>
+                        <td>2017 09-20 12:00 -- 09-27 11:59 <small>UTC</small></td>
                     </tr>
                     </tbody>
                 </table>
@@ -48,10 +51,12 @@ class Div1 extends React.Component {
                 <div className="crowd-div1HeaderDiv">
                     <h4><img src={mark}/>说明:</h4>
                     <p>
-                        当1亿个token销售完毕或者众筹时间结束智能合约将自动关闭。<br/>
+                        以太坊作价的兑换比例将在销售开始前根据当时以太坊价格情况进行公布。<br/>
+                        当1亿个token销售完毕或者众筹时间结束智能合约将自动关闭,<br/>
+                        如果时间结束但未销售完所有的tokens，代币发行数量减少，其他非公开发行部分同比减少。<br/>
                         每笔交易的最小购买额度为0.1ETH，最大ETH账号的最大购买额度为100ETH。<br/>
                         众筹结束后，智能合约将分配token到每个众筹地址，这些token可以通过以太坊钱包进行转账。<br/>
-                        项目上线时，用户根据所持token的份额等比例兑换为万维链原生币 wancoin，1.0版本的预计上线日期为2017年11月
+                        项目上线时，用户根据所持token的份额等比例兑换为万维链原生币 wancoin，1.0版本的预计上线日期为2017年11月。
                     </p>
                 </div>
             </div>
