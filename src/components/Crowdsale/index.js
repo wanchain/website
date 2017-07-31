@@ -12,17 +12,26 @@ import './Crowdsale.scss';
 class Crowdsale extends Component {
     static propTypes = {
         language: PropTypes.string,
+        clientWidth: PropTypes.number,
     };
 
     render() {
-        const {language} = this.props;
-        const blog1 = require('../../image/crowdsale.jpg');
+        const {language, clientWidth} = this.props;
+        const blog1 = require('../../image/crowdLogo.jpg');
         const corwdLogo = require('../../image/corwdLogo.png');
+        const cor2 = require('../../image/crowdsale.jpg');
+        const num = require('../../image/crowdNum.png');
         return (
             <div className="crowdsaleDiv">
                 {language === 'zn' &&
                 <div className="crowdsaleHeader">
-                    <img src={blog1} className="crowdsaleHeaderDivImg" style={{width: '100%'}}/>
+                    {Number(clientWidth) > 767 &&
+                    <img src={blog1} className="crowdsaleHeaderDivImg" style={{width: '100%'}}/>}
+                    {Number(clientWidth) <= 767 &&
+                    <img src={cor2} className="crowdsaleHeaderDivImg" style={{width: '100%'}}/>}
+                    {Number(clientWidth) <= 767 &&
+                    <img src={num} style={{position: 'relative', top: '-80px', width: '100%'}}/>
+                    }
                     <div className="crowdsaleHeaderDiv">
                         <h2><img src={corwdLogo}/>万维链代币分配</h2>
                         <p>万维链总共发行代币2.1亿个，融资目标3000万美金，公开销售的代币以万维链ERC-20 tokens进行，<br/>最终上线的代币与众筹token比例为1:1<br/>
@@ -47,6 +56,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => ({
     language : state.lang.language,
+    clientWidth: state.lang.clientWidth,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Crowdsale)

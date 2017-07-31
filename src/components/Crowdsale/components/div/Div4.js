@@ -36,8 +36,8 @@ class Div4 extends React.Component {
 
         return (
             <div className="crowd-div4Header container">
-                {language === 'zn' && <h2><hr className="crowd-div4HeaderImg"/>万链申明<hr className="crowd-div4HeaderImg"/></h2>}
-                {language === 'en' && <h2><hr className="crowd-div4HeaderImg"/>万链申明<hr className="crowd-div4HeaderImg"/></h2>}
+                {language === 'zn' && <h2><hr className="crowd-div4HeaderImg"/>万维链申明<hr className="crowd-div4HeaderImg"/></h2>}
+                {language === 'en' && <h2><hr className="crowd-div4HeaderImg"/>万维链申明<hr className="crowd-div4HeaderImg"/></h2>}
 
                 {statementList}
             </div>
