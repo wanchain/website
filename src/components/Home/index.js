@@ -39,7 +39,7 @@ class Home extends Component {
     }
 
     tick() {
-        var target_date = new Date('09/20/2017 12:20:00'), // set target date
+        var target_date = new Date('09/06/2017 20:00:00'), // set target date
             current_date = currentDate(+10); // get fixed current date
 
         // difference of dates
@@ -116,7 +116,7 @@ class Home extends Component {
                         {language === 'zn' &&
                         <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
                             <li><IndexLink to='/'>首页</IndexLink></li>
-                            <li><Link to='/crowdsale'>众筹</Link></li>
+                            <li><Link to='/crowdsale'>ICO</Link></li>
                             <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a></li>
                             <li><Link to='/about'>关于</Link></li>
                             <li><Link to='/'>博客</Link></li>
@@ -211,13 +211,13 @@ class Home extends Component {
                     {language === 'zn' &&
                     <div className="homeHeaderBodyDiv2">
                         <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank">白皮书</a>
-                        <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">众筹</a>
+                        <Link to="/crowdsale"><a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg">ICO</a></Link>
                     </div>
                     }
                     {language === 'en' &&
                     <div className="homeHeaderBodyDiv2En">
                         <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-EN-version.pdf' target="_blank">Whitepaper</a>
-                        <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">Crowdsale</a>
+                        <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">ICO</a>
                     </div>
                     }
                 </div>

@@ -64,7 +64,7 @@ class Div1o extends React.Component {
                         <div className="div1oBodyCard" id="card4">
                             <div className="div1oBodyCardModule">
                                 <img src={card4} id="div1oimg4"/>
-                                <p>数字货币<br/><span>众筹</span></p>
+                                <p>数字货币<br/><span>ICO</span></p>
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
                             <ul>

@@ -52,7 +52,7 @@ class Navigation extends Component {
                         {language === 'zn' &&
                         <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" id="navbar-brand">
                             <li><IndexLink to='/'>首页</IndexLink></li>
-                            <li><Link to='/crowdsale'>众筹</Link></li>
+                            <li><Link to='/crowdsale'>ICO</Link></li>
                             <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank" onClick={this.onClick}>白皮书</a></li>
                             <li><Link to='/about'>关于</Link></li>
                             <li><Link to='/'>博客</Link></li>
@@ -61,7 +61,7 @@ class Navigation extends Component {
                         {language === 'en' &&
                         <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp" id="navbar-brand">
                             <li><IndexLink to='/'>Home</IndexLink></li>
-                            <li><Link to='/'>Crowdsale</Link></li>
+                            <li><Link to='/'>ICO</Link></li>
                             <li><a href='/files/Wanchain-Whitepaper-CH-version.pdf' target="_blank" onClick={this.onClick}>Whitepaper</a></li>
                             <li><Link to='/about'>About</Link></li>
                             <li><Link to='/'>Blog</Link></li>
