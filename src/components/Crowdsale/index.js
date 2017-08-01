@@ -34,7 +34,7 @@ class Crowdsale extends Component {
                     }
                     <div className="crowdsaleHeaderDiv">
                         <h2><img src={corwdLogo}/>万维链代币分配</h2>
-                        <p>万维链代币总量为2.1亿个，ICO预期目标为3000万美元等值的以太币，公开销售的代币以万维链ERC-20 tokens进行，<br/>最终上线的代币与ICO token比例为1:1<br/>
+                        <p>万维链代币（万币Wancoin）总量为2.1亿个，ICO预期目标为3000万美元等值的以太币，公开销售的代币以万维链ERC-20 tokens进行，<br/>最终上线的代币与ICO token比例为1:1<br/>
                         公开销售开始日期为2017年9月06日 12:00 UTC</p>
                     </div>
                 </div>

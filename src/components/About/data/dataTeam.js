@@ -15,6 +15,7 @@ const t14 = require('../../../image/14.png');
 const t15 = require('../../../image/15.png');
 const t16 = require('../../../image/t16.png');
 const t25 = require('../../../image/25.png');
+const t29 = require('../../../image/29.png');
 
 const data = [
   {title: '吕旭军',
@@ -101,6 +102,11 @@ const data = [
     img: t25,
     position: '',
     describe: '曾就职于IBM多伦多实验室，蒙特利尔银行，数据技术及数据模型规范专家。加入区块链后参与以太坊Parity开发工作。'
+  },
+  {title: '孙震',
+    img: t29,
+    position: '',
+    describe: '国内知名互联网公司开发经历。javascript全栈工程师，精通React，Angularjs和node服务开发。对浏览器运行机理有深入研究，擅长前端性能优化。主要负责万维链钱包的开发。'
   },
 ];
 

@@ -8,14 +8,15 @@ import { warningOpenFunc, warningCloseFunc, warningMsgFunc} from '../../../store
 import './Footer.scss';
 
 import email from '../../../image/email.png';
-import robot1 from '../../../image/share/robot1.png';
-import slack1 from '../../../image/share/slack1.png';
-import twitter1 from '../../../image/share/twitter1.png';
+import robot1 from '../../../image/share/reddit.png';
+import slack1 from '../../../image/share/slack.png';
+import twitter1 from '../../../image/share/twitter.png';
 import webo1 from '../../../image/share/webo1.png';
-import wechat1 from '../../../image/share/wechat1.png';
-import qq1 from '../../../image/share/qq1.png';
+import wechat1 from '../../../image/share/webcat.png';
+import qq1 from '../../../image/share/qq.png';
 
-import wecater from '../../../image/share/wecater.png';
+import wecater from '../../../image/share/wecatZn.png';
+import wecaterEn from '../../../image/share/wecatEn.png';
 import qqer from '../../../image/share/qqer.png';
 
 function emailCheck (email) {
@@ -31,6 +32,7 @@ class Footer extends React.Component {
         language: PropTypes.string,
         subscribe: PropTypes.func,
         subscribeState: PropTypes.object,
+        clientWidth: PropTypes.number,
 
         warningOpenFunc: PropTypes.func,
         warningCloseFunc: PropTypes.func,
@@ -45,7 +47,9 @@ class Footer extends React.Component {
 
     onSubmit = () => {
       document.getElementById("wechat").style.position="absolute";
-      document.getElementById("wechat").style.top="-90px";
+      if ( this.props.clientWidth >= 320 && this.props.clientWidth <= 767) {document.getElementById("wechat").style.top="-170px";}
+      else if (this.props.clientWidth >= 1025) {document.getElementById("wechat").style.top="-90px";}
+      else {document.getElementById("wechat").style.top="-118px"; document.getElementById("wechat").style.left="-28px";}
       document.getElementById("wechat").style.display="inline-block";
     };
 
@@ -122,7 +126,8 @@ class Footer extends React.Component {
                     </div>
 
                     <div className="formGroupDiv form-group col-lg-4">
-                        <img src={wecater} className="wechat" id="wechat"/>
+                        {language === 'zn' && <img src={wecater} className="wechat" id="wechat"/>}
+                        {language === 'en' && <img src={wecaterEn} className="wechat" id="wechat"/>}
                         <img src={qqer} className="qq" id="qq"/>
                         <a ><img src={robot1}/></a>
                         <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
@@ -163,6 +168,7 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = (state) => ({
     language : state.lang.language,
     subscribeState: state.home.subscribeState,
+    clientWidth: state.lang.clientWidth,
 
     warningModal: state.warning.warningModal,
     warningMsg: state.warning.warningMsg,
