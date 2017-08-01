@@ -17,6 +17,9 @@ export default function home(state = initialState, action = {}) {
         language: action.reload,
       };
     case SUBSCRIBE:
+      setTimeout(()=>{
+        global.dataFeedback.emit('onSubscribeComplete');
+      }, 50);
       return {
         ...state,
         subscribeState: action.data,

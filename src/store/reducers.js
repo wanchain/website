@@ -5,6 +5,7 @@ import home from './home';
 import counterReducer from './counter';
 
 import lang from './lang';
+import warning from './warning';
 
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
@@ -14,6 +15,7 @@ export const makeRootReducer = (asyncReducers) => {
     counterReducer,
 
     lang,
+    warning,
     ...asyncReducers
   })
 };

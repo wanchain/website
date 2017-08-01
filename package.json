@@ -45,6 +45,7 @@
     "promise": "^7.1.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.31.1",
     "react-cookie": "^0.4.7",
     "react-dom": "^15.5.4",
     "react-helmet": "^2.0.0",

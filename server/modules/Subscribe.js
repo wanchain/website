@@ -60,7 +60,7 @@ var SubscribeRouter = express.Router();
 // ----------------------------------------------------
 SubscribeRouter.route('/subscribe')
 
-// create a user (accessed at POST http://localhost:8080/api/users)
+// create
     .post(function(req, res) {
 
         var email = req.body.email; //bodyParser does the magic
@@ -69,14 +69,14 @@ SubscribeRouter.route('/subscribe')
         var subscribe = Subscribe.build({ email: email, create_time: create_time });
 
         subscribe.add(function(success){
-                res.json({ message: 'Subscribe created!' });
+                res.json({ message: 'Subscribe created!', status: 1 });
             },
             function(err) {
-                res.send(err);
+                res.json({ message: 'Subscribe failed!', status: 0 });
             });
     })
 
-    // get all the users (accessed at GET http://localhost:3001/api/users)
+    // get
     .get(function(req, res) {
         var user = Subscribe.build();
 

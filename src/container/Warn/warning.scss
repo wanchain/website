@@ -1,0 +1,35 @@
+.astro-warning-modal{
+  h4{
+    text-align: center;
+    background: #f6f6f6;
+    height: 50px;
+    line-height: 45px;
+    margin: 0;
+  }
+}
+
+.astro-warning-modal-button{
+  button{
+    background: #0588fa;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid #0588fa;
+    text-align: center;
+    line-height: 28px;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 25%;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  p{
+    text-align: center;
+    /* color: #cccccc; */
+    margin-top: 20px;
+    font-size: 28px;
+  }
+}
