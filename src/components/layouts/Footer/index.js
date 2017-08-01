@@ -74,9 +74,12 @@ class Footer extends React.Component {
               <input type="text" className="form-control" id="name" ref="wanchain_subscribe"
                      placeholder="Please enter the email address" />
               <div className="submit-area">
-                  <a className="btn submit-button" data-toggle="modal" data-target=".bs-example-modal-lg" onClick={this.onClick.bind(this)}>
-                      {' + '}Subscribe
-                  </a>
+                  {language === 'zn' &&
+                  <a className="btn submit-button" data-toggle="modal" data-target=".bs-example-modal-lg" onClick={this.onClick.bind(this)}>{' + '}订阅</a>
+                  }
+                  {language === 'en' &&
+                  <a className="btn submit-button" data-toggle="modal" data-target=".bs-example-modal-lg" onClick={this.onClick.bind(this)}>{' + '}Subscribe</a>
+                  }
               </div>
               {language === 'zn' &&
               <p>更多项目请咨询：<span>info@wanchain.org</span></p>
@@ -91,8 +94,8 @@ class Footer extends React.Component {
                 <img src={qqer} className="qq" id="qq"/>
                 <a ><img src={robot1}/></a>
                 <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
-                <a><img src={twitter1}/></a>
-                <a><img src={webo1}/></a>
+                <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
+                <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
                 <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
                 <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
             </div>
