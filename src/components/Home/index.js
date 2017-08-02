@@ -125,7 +125,7 @@ class Home extends Component {
                         {language === 'en' &&
                         <ul className="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
                             <li><IndexLink to='/'>Home</IndexLink></li>
-                            <li><Link to='/'>Crowdsale</Link></li>
+                            <li><Link to='/crowdsale'>ICO</Link></li>
                             <li><a href='/files/Wanchain-Whitepaper-EN-version.pdf' target="_blank">Whitepaper</a></li>
                             <li><Link to='/about'>About</Link></li>
                             <li><Link to='/'>Blog</Link></li>
@@ -217,7 +217,7 @@ class Home extends Component {
                     {language === 'en' &&
                     <div className="homeHeaderBodyDiv2En">
                         <a className="btn home-submit-button" href='/files/Wanchain-Whitepaper-EN-version.pdf' target="_blank">Whitepaper</a>
-                        <a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg" disabled="disabled">ICO</a>
+                        <Link to="/crowdsale"><a className="btn home-submit-button2" data-toggle="modal" data-target=".bs-example-modal-lg">ICO</a></Link>
                     </div>
                     }
                 </div>

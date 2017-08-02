@@ -11,15 +11,23 @@
     margin: 10px;
   }
 
+  .crowdsaleHeaderDivNumPC{
+    position: relative;
+    top: -100px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
   // +++++++++++++++++++++div1 style++++++++++++++++++++++++++++++++++++
   .crowd-div1Header {
     margin: 0 auto;
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
     font-size: 16px;
 
     h2{
       margin: 0;
-      padding: 80px 0 0 0;
+      padding: 40px 0 0 0;
       font-family: "Microsoft YaHei";
       font-size: 24px;
       text-align: center;
@@ -195,6 +203,147 @@
         }
 
         .rowd-div2HeaderDivRight-Div{
+          position: absolute;
+          margin-top: 150px;
+          margin-left: 24px;
+          text-align: left;
+          img{
+            padding: 10px 30px;
+            border: 1px solid #ededed;
+            border-radius: 4px;
+            margin: 0 auto;
+            display: block;
+          }
+          #img1{padding: 7px 38px;}
+          #img2{ padding: 7px 60px; margin: 20px;}
+
+        }
+      }
+
+      .crowd-div2HeaderDivLeftEn{
+        width: 300px;
+        height: 460px;
+        border: 1px solid #ededed;
+        display: inline-block;
+        margin-right: 25px;
+        position: relative;
+        top: 0;
+
+        hr{
+          width: 2px;
+          height: 20px;
+          display: inline-block;
+          border: 0;
+          background-color: #3c85ff;
+          color: #3c85ff;
+          position: absolute;
+          top: 32px;
+          left: 0;
+        }
+
+        h4{
+          position: absolute;
+          top: 35px;
+          left: 5px;
+          font-size: 15px;
+          color: #353b47;
+          strong{
+            color: #3c85ff;
+          }
+        }
+
+        small{
+          position: absolute;
+          top: 60px;
+          left: 8px;
+          text-align: center;
+          font-size: 12px;
+          color: #353b47;
+        }
+
+        .crowd-div2HeaderDivLeftEn-Div{
+          border: 1px solid #d2e1f9;
+          background: #f5f9ff;
+          width: 90%;
+          height: 190px;
+          text-align: left;
+          margin-top: 150px;
+          margin-left: 15px;
+
+          .crowd-div2HeaderDivLeftEn-Div1{
+            position: relative;
+            height: 75px;
+            span{
+              position: absolute;
+              font-size: 14px;
+              color: #3c85ff;
+              font-weight: 600;
+              top: 10px;
+              left: 10px;
+            }
+            p{
+              position: absolute;
+              font-size: 12px;
+              color: #688499;
+              top: 10px;
+              left: 25px;
+            }
+          }
+        }
+
+        #crowd-div2HeaderDivLeftEn-foot{
+          text-align: center;
+          padding-left: 5px;
+          padding-top: 20px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #353b47;
+          padding-right: 10px;
+          span{
+            font-weight: 500;
+          }
+        }
+      }
+
+      .crowd-div2HeaderDivRightEn{
+        width: 300px;
+        height: 360px;
+        border: 1px solid #ededed;
+        display: inline-block;
+        margin-right: 25px;
+        position: relative;
+        margin-top: 30px;
+        hr{
+          width: 2px;
+          height: 20px;
+          display: inline-block;
+          border: 0;
+          background-color: #16d1c8;
+          color: #16d1c8;
+          position: absolute;
+          top: 32px;
+          left: 0;
+        }
+        h4{
+          position: absolute;
+          top: 35px;
+          left: 5px;
+          font-size: 15px;
+          color: #353b47;
+          strong{
+            color: #16d1c8;
+          }
+        }
+        small{
+          position: absolute;
+          top: 70px;
+          left: 8px;
+          text-align: center;
+          font-size: 12px;
+          color: #353b47;
+        }
+
+        .rowd-div2HeaderDivRightEn-Div{
           position: absolute;
           margin-top: 150px;
           margin-left: 24px;

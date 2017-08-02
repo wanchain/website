@@ -24,7 +24,7 @@ class Div6 extends React.Component {
                         <h2><hr className="div1HeaderImg"/>我们的优势<hr className="div1HeaderImg"/></h2>
                     </div>
 
-                    <div className="div6Body container">
+                    <div className="div6Body">
                         <div className="div6BodyCard">
                             <img src={team1}/>
                             <p>核心团队区块链底层技术的多年积累</p>
@@ -54,6 +54,56 @@ class Div6 extends React.Component {
                             <span>运营团队在中国、美国、新加坡等多地均有丰富的<br/>
                                 商业经验和资源，在区块链社区中多年的积累，众<br/>
                                 多资深人士均支持，投资及指导万维链项目。
+                            </span>
+                            <p><b>C </b>A P A C I T Y</p>
+                        </div>
+                    </div>
+                </div>
+                }
+
+                {language === 'en' &&
+                <div className="div6Header" style={{background: `url(${'image/homeFooter.jpg'})`}}>
+                    <div className="container div6Title">
+                        <h2><hr className="div1HeaderImg"/>Wanchain Advantage<hr className="div1HeaderImg"/></h2>
+                    </div>
+
+                    <div className="div6BodyEn">
+                        <div className="div6BodyCard">
+                            <img src={team1}/>
+                            <p>Years of Accumulation of Blockchain</p>
+                            <span>The concept of cross-blockchain transactions started<br/>
+                                during the development of FACTOM. Wanchain project<br/>
+                                has been  developed for a long time from concepts<br/>
+                                to technologies. The core team members' accumulation<br/>
+                                of blockchain underlying echnologies has led to <br/>
+                                their advantages in consensus algorithms, smart<br/>
+                                contracts, wallets, and etc.
+                            </span>
+                            <p><b>T </b>E A M</p>
+                        </div>
+
+                        <div className="div6BodyCard" id="div6Card2">
+                            <img src={expert}/>
+                            <p>Top Experts in Cryptography </p>
+                            <span>Continuous work on blockchain underlying technologies<br/>
+                                requires supports from theories of cryptology. Three<br/>
+                                applied mathematics PhDs in the Wanchain team are<br/>
+                                responsible for innovation, verification and algorithms<br/>
+                                about cryptography applications involved in the Wanchain<br/>
+                                 project. Such a strong team is rare in global blockchain<br/>
+                                projects.
+                            </span>
+                            <p><b>E </b>X P E R T S</p>
+                        </div>
+
+                        <div className="div6BodyCard">
+                            <img src={community}/>
+                            <p>Capacity for Global Commercialization</p>
+                            <span>With years of experience in the blockchain community,<br/>
+                                 our operation team has rich commercial experience and <br/>
+                                resources in countries such as China, US and Singapore. <br/>
+                                A lot of senior members in this community support,<br/>
+                                invest in and guide the Wanchain project.
                             </span>
                             <p><b>C </b>A P A C I T Y</p>
                         </div>

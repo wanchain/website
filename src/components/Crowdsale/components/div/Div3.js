@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { changeLanguage } from '../../../../store/lang';
 import '../div.scss';
 import question from '../../data/question';
+import questionEn from '../../data/questionEn';
 
 class Div3 extends React.Component {
     static propTypes = {
@@ -24,7 +25,7 @@ class Div3 extends React.Component {
                 )
             });
         } else if (language === 'en') {
-            questionList = question.map((value, index) => {
+            questionList = questionEn.map((value, index) => {
                 return (
                     <div className="crowd-div3HeaderFaq" key={index}>
                         <b>{value.title}</b>
@@ -37,7 +38,7 @@ class Div3 extends React.Component {
         return (
             <div className="crowd-div3Header container">
                 {language === 'zn' && <h2><hr className="crowd-div1HeaderImg"/>常见问题<hr className="crowd-div1HeaderImg"/></h2>}
-                {language === 'en' && <h2><hr className="crowd-div1HeaderImg"/>常见问题<hr className="crowd-div1HeaderImg"/></h2>}
+                {language === 'en' && <h2><hr className="crowd-div1HeaderImg"/>FAQ<hr className="crowd-div1HeaderImg"/></h2>}
                 {questionList}
             </div>
         );

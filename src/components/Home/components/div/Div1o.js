@@ -69,7 +69,64 @@ class Div1o extends React.Component {
                             <img className="div1oBodyCardLine" src={divo1Line} />
                             <ul>
                                 <img src={pot}/><li>支持多币种智能合约进行ICO</li>
-                                <img src={pot}/><li>ICO tokens转换代币 自动化<br/>ICO过程完全 去中心化</li>
+                                <img src={pot}/><li>ICO tokens转换代币 自动化</li>
+                                <img src={pot}/><li>ICO过程完全 去中心化</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                }
+
+                {language === 'en' &&
+                <div className="container div1oHeaderEn">
+                    <h2><hr className="div1HeaderImg"/>Application Scenarios<hr className="div1HeaderImg"/></h2>
+                    <div className="div1oBody">
+                        <div className="div1oBodyCard" id="card1">
+                            <div className="div1oBodyCardModule">
+                                <img src={card1} id="div1oimg1" />
+                                <p><span>Exchanges</span> of<br/>Cryptocurrencies</p>
+                            </div>
+                            <img className="div1oBodyCardLine" src={divo1Line} />
+                            <ul>
+                                <img src={pot}/><li>Exchanges of multiple crypto-<br/>currencies</li>
+                                <img src={pot}/><li>Institutions or individuals provide<br/> Wanchain-based distributed exch-<br/>ange services for cryptocurrencies</li>
+                                <img src={pot}/><li>Wanchain offers a distributed<br/> cross-blockchain trzansaction mechanism</li>
+                            </ul>
+                        </div>
+                        <div className="div1oBodyCard">
+                            <div className="div1oBodyCardModule">
+                                <img src={card2} id="div1oimg2"/>
+                                <p><span>Loans</span> of<br/>Cryptocurrencies</p>
+                            </div>
+                            <img className="div1oBodyCardLine" src={divo1Line} />
+                            <ul>
+                                <img src={pot}/><li>All transaction processes are executed by computer programs based on the cross-chain<br/> mechanism and smart contracts</li>
+                                <img src={pot}/><li>Users hold their assets and debts<br/> in a decentralized manner<br/> （different tokens）</li>
+                                <img src={pot}/><li>Wanchain ensures asset safety<br/> and objectiveness throughout the<br/> process</li>
+                            </ul>
+                        </div>
+                        <div className="div1oBodyCard">
+                            <div className="div1oBodyCardModule">
+                                <img src={card3} id="div1oimg3"/>
+                                <p id="div1oP3"><span>Investment</span><br/> Through <br/>Cryptocurrencies</p>
+                            </div>
+                            <img className="div1oBodyCardLine" src={divo1Line} />
+                            <ul>
+                                <img src={pot}/><li>Transactions between two<br/> different blockchains can be executed via Wanchain</li>
+                                <img src={pot}/><li>An automated transaction<br/> process makes " Payment on Delivery" possible</li>
+                                <img src={pot}/><li>Wanchain ensures asset safety throughout the process</li>
+                            </ul>
+                        </div>
+                        <div className="div1oBodyCard" id="card4">
+                            <div className="div1oBodyCardModule">
+                                <img src={card4} id="div1oimg4"/>
+                                <p id="div1oP3"><span>Crowd-Funding</span> <br/>Through <br/>Cryptocurrencies</p>
+                            </div>
+                            <img className="div1oBodyCardLine" src={divo1Line} />
+                            <ul>
+                                <img src={pot}/><li>It supports ICOs by smart contra-<br/>cts with multiple cryptocurrencies</li>
+                                <img src={pot}/><li>Automated conversion from ICO tokens to real cryptocurrencies</li>
+                                <img src={pot}/><li>The ICO process is completely decentralized</li>
                             </ul>
                         </div>
                     </div>

@@ -120,6 +120,91 @@
       }
 
     }
+
+    .div1oHeaderEn {
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 30px;
+      width: 100%;
+
+      h2{
+        margin: 0;
+        padding: 80px 0 0 0;
+        font-family: "Microsoft YaHei";
+        font-size: 24px;
+        text-align: center;
+        color: #2c313a;
+      }
+
+      .div1oBody{
+        margin-top: 60px;
+        .div1oBodyCard{
+          border-radius: 4px;
+          background: #fff;
+          box-shadow: 0 3px 6px 0 rgba(5,13,208,.05);
+          width: 284px;
+          height: 440px;
+          display: inline-block;
+          margin: 0 10px;
+          position: relative;
+          margin-bottom: 30px;
+
+          .div1oBodyCardModule{
+            position: absolute;
+            top: 50px;
+
+            img{    margin-left: 20px;}
+            p{
+              display: inline-block;
+              font-size: 14px;
+              font-weight: 600;
+              color: #2b363d;
+              padding-left: 18px;
+              padding-right: 0;
+              position: relative;
+              top: 0;
+              span{
+                color: #3680f8;
+              }
+            }
+          }
+
+          .div1oBodyCardLine{
+            left: 35px;
+            top: 185px;
+            position: absolute;
+          }
+
+          ul {
+            margin-top: 35px;
+            margin-bottom: 20px;
+            left: 35px;
+            top: 185px;
+            position: absolute;
+            line-height: 15px;
+            img{
+              padding-right: 10px;
+              width: 17px;
+              margin-top: -11px;
+            }
+            li{
+              color: #688499;
+              font-size: 14px;
+              position: relative;
+              top: -20px;
+              left: 14px;
+              margin-bottom: -10px;
+              line-height: 20px;
+            }
+          }
+        }
+
+        #card1{margin-left: 0}
+        #card4{margin-right: 0}
+        #div1oP3, #div1oP3 { top: 16px; }
+      }
+
+    }
   }
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
@@ -482,9 +567,10 @@
       }
     }
 
-    .div6Body{
+    .div6Body, .div6BodyEn{
       margin-top: 50px;
       padding: 0;
+      text-align: center;
       .div6BodyCard{
         display: inline-block;
         img{

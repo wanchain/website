@@ -16,3 +16,4 @@ tests
 port.js
 
 build/cert
+src/index.html
