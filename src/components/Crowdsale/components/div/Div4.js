@@ -21,15 +21,16 @@ class Div4 extends React.Component {
                 return (
                     <div key={index}>
                         <div className="crowd-div4Header-pot"></div>
-                        <p>{value.describe}</p>
+                        <p >{value.describe}</p>
                     </div>
                 )
             });
         } else if (language === 'en') {
             statementList = statementEn.map((value, index) => {
                 let style;
-                let style1;
-                if (index === 0 && clientWidth > 767) { style = {position: 'relative', top: '18px'}; style1={marginLeft: '17px'}}
+                let style1 = {fontSize: '14px'};
+                if (index === 0 && clientWidth > 767) { style = {position: 'relative', top: '18px'}; style1={marginLeft: '17px', fontSize: '14px'}}
+                if (index === 3 && clientWidth > 767) { style = {position: 'relative', top: '0'}; style1={marginLeft: '17px', fontSize: '14px', marginTop: '-20px'}}
                 return (
                     <div key={index}>
                         <div className="crowd-div4Header-pot" style={style}></div>

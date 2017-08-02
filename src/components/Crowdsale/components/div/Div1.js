@@ -51,9 +51,13 @@ class Div1 extends React.Component {
                 <div className="crowd-div1HeaderDiv">
                     <h4><img src={mark}/>说明:</h4>
                     <p>
+                        <div className="crowd-div4Header-pot"></div>
                         以太坊作价的兑换比例将在销售开始前根据当时以太坊价格情况进行公布。<br/>
+                        <div className="crowd-div4Header-pot"></div>
                         当公开销售部分完毕或者ICO时间结束智能合约将自动关闭。每笔交易的最小购买额度为0.1ETH。<br/>
+                        <div className="crowd-div4Header-pot"></div>
                         ICO结束后，智能合约将分配token到每个ICO地址，这些token可以通过以太坊钱包进行转账。<br/>
+                        <div className="crowd-div4Header-pot"></div>
                         项目上线时，用户根据所持token的份额等比例兑换为万维链原生币 wancoin，1.0版本的预计上线日期为2017年11月。
                     </p>
                 </div>

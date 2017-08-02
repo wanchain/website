@@ -52,9 +52,9 @@ class Crowdsale extends Component {
                     {Number(clientWidth) > 1024 &&
                     <div className="crowdsaleHeaderDiv">
                         <h2><img src={corwdLogo}/>Tokens Allocation</h2>
-                        <p>The total supply of WAN coins is 210 million. The ICO target is to raise 30 million USD equivalent in Ether. <br/>
+                        <p>The total supply of Wancoins is 210 million. The ICO target is to raise 30 million USD equivalent in Ether. <br/>
                             The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens. <br/>
-                            The eventually online tokens will be equal to the crowd-funding tokens in quantity.<br/>
+                            The eventually online Wancoins will be equal to the crowd-funding tokens in quantity.<br/>
                             ICO will start on September 6th, 2017, 12:00 UTC </p>
                     </div>
                     }
@@ -63,10 +63,10 @@ class Crowdsale extends Component {
                     {Number(clientWidth) <= 1024 &&
                     <div className="crowdsaleHeaderDiv">
                         <h2><img src={corwdLogo}/>Tokens Allocation</h2>
-                        <p style={{fontSize: '15px'}}>The total supply of WAN coins is 210 million.
+                        <p style={{fontSize: '15px'}}>The total supply of Wancoins is 210 million.
                             The ICO target is to raise 30 million USD equivalent in Ether.
                             The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens.
-                            The eventually online tokens will be equal to the crowd-funding tokens in quantity.
+                            The eventually online Wancoins will be equal to the crowd-funding tokens in quantity.
                             ICO will start on September 6th, 2017, 12:00 UTC</p>
                     </div>
                     }
