@@ -14,3 +14,5 @@ email.config.js
 test.js
 tests
 port.js
+
+build/cert

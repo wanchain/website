@@ -8,6 +8,8 @@ import Crowdsale from '../components/Crowdsale/index';
 
 import Blog from '../components/Blog/index';
 
+import Login from '../components/Login/index';
+
 import CounterRoute from '../components/Counter/index'
 
 
@@ -18,6 +20,8 @@ export default () => {
           <Route path="/about" component={About}/>
           <Route path="/crowdsale" component={Crowdsale}/>
           <Route path="/blog" component={Blog}/>
+
+          <Route path="/login" component={Login}/>
 
           <Route path="/counter" component={CounterRoute}/>
       </Route>

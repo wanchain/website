@@ -16,6 +16,11 @@ var User = sequelize.define('users', {
         retrieveById: function(user_id, onSuccess, onError) {
             User.find({where: {id: user_id}}, {raw: true}).success(onSuccess).error(onError);
         },
+
+        retrieveByPasswd: function(username, passwd, onSuccess, onError) {
+            User.find({where: {username: username, password: passwd}}, {raw: true}).success(onSuccess).error(onError);
+        },
+
         add: function(onSuccess, onError) {
             var username = this.username;
             var password = this.password;
@@ -67,6 +72,26 @@ UserRouter.route('/users')
             function(err) {
                 res.send(err);
             });
+    })
+
+
+// on routes that end in /users
+// ----------------------------------------------------
+UserRouter.route('/users/detail')
+
+// create a user (accessed at POST http://localhost:8080/api/users)
+    .post(function(req, res) {
+        var user = User.build();
+
+        user.retrieveByPasswd(req.body.username, req.body.password, function(users) {
+            if (users) {
+                res.json(users);
+            } else {
+                res.send(401, "User not found");
+            }
+        }, function(error) {
+            res.send("User not found");
+        });
     })
 
     // get all the users (accessed at GET http://localhost:3001/api/users)

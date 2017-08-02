@@ -38,6 +38,6 @@ export function login () {
     }
 }
 
-export function users() {
-    return fetchData('users', USER);
+export function users(data) {
+    return fetchData('users/detail', USER, data);
 }

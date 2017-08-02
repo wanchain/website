@@ -11,7 +11,7 @@ import email from '../../../image/email.png';
 import robot1 from '../../../image/share/reddit.png';
 import slack1 from '../../../image/share/slack.png';
 import twitter1 from '../../../image/share/twitter.png';
-import webo1 from '../../../image/share/webo1.png';
+import webo1 from '../../../image/share/web.png';
 import wechat1 from '../../../image/share/webcat.png';
 import qq1 from '../../../image/share/qq.png';
 
