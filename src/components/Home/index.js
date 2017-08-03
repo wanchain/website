@@ -98,10 +98,10 @@ class Home extends Component {
         return (
             <div className="homeRoot">
                 {language === 'en' &&
-                <Helmet title="wanchain"/>
+                <Helmet title="wanchain-A Distributed 'Super Financial Market' "/>
                 }
                 {language === 'zn' &&
-                <Helmet title="万维链"/>
+                <Helmet title="万维链-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>
                 }
             <div className="homeDiv" style={{background: `url(${'image/homeHeader.jpg'})`}}>
                 <nav className="homeHeader container">
@@ -227,6 +227,7 @@ class Home extends Component {
                 <Div1o/>
                 <Div2 />
                 <Div3 />
+                <Div4 />
                 <Div5 />
                 <Div6 />
 

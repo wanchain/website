@@ -17,3 +17,5 @@ port.js
 
 build/cert
 src/index.html
+.ejs
+.old.js

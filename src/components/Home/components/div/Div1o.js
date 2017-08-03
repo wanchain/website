@@ -52,7 +52,7 @@ class Div1o extends React.Component {
                         <div className="div1oBodyCard">
                             <div className="div1oBodyCardModule">
                                 <img src={card3} id="div1oimg3"/>
-                                <p>数字货币<br/><span>投资</span></p>
+                                <p>数字资产<br/><span>投资</span></p>
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
                             <ul>
@@ -64,7 +64,7 @@ class Div1o extends React.Component {
                         <div className="div1oBodyCard" id="card4">
                             <div className="div1oBodyCardModule">
                                 <img src={card4} id="div1oimg4"/>
-                                <p>数字货币<br/><span>ICO</span></p>
+                                <p>多币种ICO<br/><span>众筹</span></p>
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
                             <ul>

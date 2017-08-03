@@ -5,9 +5,6 @@ import { changeLanguage } from '../../../../store/lang';
 
 import '../div.scss';
 
-import line from '../../../../image/蓝色分割线.png';
-
-
 class Div4 extends React.Component {
 
     static propTypes = {
@@ -20,84 +17,31 @@ class Div4 extends React.Component {
 
         return (
             <div className="div4Header">
-                {language === 'zn' &&
+
                 <div className="div4HeaderDiv container">
-                    <h2>最新通告</h2>
-                    <img src={line} />
+                    {language === 'zn' && <h2><hr className="div1HeaderImg"/>最新通告<hr className="div1HeaderImg"/></h2>}
+                    {language === 'en' && <h2><hr className="div1HeaderImg"/>News<hr className="div1HeaderImg"/></h2>}
                     <div className="col-lg-12">
                         <div className="col-lg-4">
+                            <a href="https://finance.yahoo.com/news/wanchain-public-blockchain-project-releases-084300788.html" target="_blank">
                             <div className="AstroModule7" >
-                                <h2>算法推荐 + 场景结合</h2>
-                                <p>万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                    万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                </p>
-                                <h4>2017-01-02</h4>
-                            </div>
+                                <h2>Wanchain, a Public Blockchain Project, Releases Its White Paper</h2>
+                                <p>Wanchain, the first public blockchain project envisioned by the Chinese firm Wanglu Tech, recently released a white paper. Wanchain is a blockchain-based distributed financial infrastructure which allows the exchange of assets among different blockchain networks in a decentralized way. With Wanchain, more organizations are able to develop their own services and innovate in the distributed finance space.</p>
+                                <h4>August 3, 2017</h4>
+                            </div></a>
                         </div>
 
-
-                        <div className="col-lg-4">
-                            <div className="AstroModule7">
-                                <h2>算法推荐 + 场景结合</h2>
-                                <p>万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                    万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                </p>
-                                <h4>2017-01-02</h4>
-                            </div>
-                        </div>
-
+                        <a href="http://chainb.com/?P=mpost&id=5425" target="_blank">
                         <div className="col-lg-4">
                             <div className="AstroModule7" >
-                                <h2>算法推荐 + 场景结合</h2>
-                                <p>万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                    万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
+                                <h2>搭建数字新经济的金融基础设施 —万维链wanchain发布白皮书</h2>
+                                <p>万维链是一个基于区块链的分布式金融基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换。基于该设施，更多的机构能够开发自己的服务，通过万维链wanchain进行分布式金融创新。
                                 </p>
-                                <h4>2017-01-02</h4>
+                                <h4>2017-8-1</h4>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
-                }
-
-                {language === 'en' &&
-                <div className="div4HeaderDiv container">
-                    <h2>最新通告</h2>
-                    <img src={line} />
-                    <div className="col-lg-12">
-                        <div className="col-lg-4">
-                            <div className="AstroModule7" >
-                                <h2>算法推荐 + 场景结合</h2>
-                                <p>万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                    万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                </p>
-                                <h4>2017-01-02</h4>
-                            </div>
-                        </div>
-
-
-                        <div className="col-lg-4">
-                            <div className="AstroModule7">
-                                <h2>算法推荐 + 场景结合</h2>
-                                <p>万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                    万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                </p>
-                                <h4>2017-01-02</h4>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4">
-                            <div className="AstroModule7" >
-                                <h2>算法推荐 + 场景结合</h2>
-                                <p>万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                    万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。
-                                </p>
-                                <h4>2017-01-02</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                }
-
             </div>
         );
     }
