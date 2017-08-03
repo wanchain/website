@@ -14,16 +14,16 @@ export default function authReducer(state = initialState, action = {}) {
         default:
             return state;
         case LOGIN:
-            cookie.save('token', 'JWT ' + action.reload, { path: '/' });
-            setTimeout(()=>{
-                global.dataFeedback.emit('onLoginComplete');
-            }, 50);
             return {
                 ...state,
                 loginState: action.reload,
             };
 
         case USER:
+            cookie.save('token', 'JWT ' + 'xxxaaaasdsdeaaaa', { path: '/' });
+            setTimeout(()=>{
+                global.dataFeedback.emit('onLoginComplete');
+            }, 50);
             return {
                 ...state,
                 user: action.data,

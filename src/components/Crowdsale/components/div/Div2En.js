@@ -43,18 +43,18 @@ class Div2 extends React.Component {
                 <div className="crowd-div2HeaderDiv">
                     <div className="crowd-div2HeaderDivLeft">
                         <hr/>
-                        <h4><strong>Participation 1 : </strong>Contribute using Ethereum wallets</h4>
-                        <small>Participants need to have their own Ethereum wallets and send ETH to a smart contract address for contribution. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
+                        <h4><strong>1st Participation Method: </strong>using Ethereum wallets</h4>
+                        <small>Participants need to have their own Ethereum wallets and contribute ETH to a smart contract address. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
 
                         <div className="crowd-div2HeaderDivLeft-Div">
                             <div className="crowd-div2HeaderDivLeft-Div1">
                                 <span> * </span>
-                                <p>An Ethereum wallet refers to a wallet that can be totally controlled by user to export private keys. The following Ethereum wallets are recommended</p>
+                                <p>An Ethereum wallet refers to a wallet that is totally controlled by the user and can export private keys. The following Ethereum wallets are recommended.</p>
                             </div>
 
                             <div className="crowd-div2HeaderDivLeft-Div1">
                                 <span> * </span>
-                                <p>It is not allowed to transfer from accounts on third-party platforms such as exchanges or centralized wallets directly to smart contract addresses because if so, the Wanchain tokens will be sent to their addresses</p>
+                                <p>Transferring ETH from accounts on third-party platforms, such as exchanges or centralized wallets, directly to smart contract addresses, is not allowed, because by doing so, the Wanchain tokens will be sent to those addresses.</p>
                             </div>
                         </div>
 
@@ -62,8 +62,8 @@ class Div2 extends React.Component {
                     </div>
                     <div className="crowd-div2HeaderDivRight">
                         <hr/>
-                        <h4><strong>Participation 2 : </strong>Contribute on the following platforms</h4>
-                        <small>The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, platforms will send corresponding tokens to contributors’ Ethereum wallets</small>
+                        <h4><strong>2nd Participation Method: </strong>the following platforms</h4>
+                        <small>The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.</small>
 
                         <div className="rowd-div2HeaderDivRight-Div">
                             <h2>Released Later</h2>
@@ -79,18 +79,18 @@ class Div2 extends React.Component {
                 <div className="crowd-div2HeaderDiv">
                     <div className="crowd-div2HeaderDivLeftEn">
                         <hr/>
-                        <h4><strong>Participation 1 : </strong>using Ethereum wallets</h4>
-                        <small>Participants need to have their own Ethereum wallets and send ETH to a smart contract address for contribution. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
+                        <h4><strong>1st Participation Method: </strong>using Ethereum wallets</h4>
+                        <small>Participants need to have their own Ethereum wallets and contribute ETH to a smart contract address. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
 
                         <div className="crowd-div2HeaderDivLeftEn-Div">
                             <div className="crowd-div2HeaderDivLeftEn-Div1">
                                 <span> * </span>
-                                <p>An Ethereum wallet refers to a wallet that can be totally controlled by user to export private keys. The following Ethereum wallets are recommended</p>
+                                <p>An Ethereum wallet refers to a wallet that is totally controlled by the user and can export private keys. The following Ethereum wallets are recommended.</p>
                             </div>
 
                             <div className="crowd-div2HeaderDivLeftEn-Div1">
                                 <span> * </span>
-                                <p>It is not allowed to transfer from accounts on third-party platforms such as exchanges or centralized wallets directly to smart contract addresses because if so, the Wanchain tokens will be sent to their addresses</p>
+                                <p>Transferring ETH from accounts on third-party platforms, such as exchanges or centralized wallets, directly to smart contract addresses, is not allowed, because by doing so, the Wanchain tokens will be sent to those addresses.</p>
                             </div>
                         </div>
                         <p id="crowd-div2HeaderDivLeftEn-foot">The Ethereum address for contribution will be released when the contribution contract is deployed</p>
@@ -98,8 +98,8 @@ class Div2 extends React.Component {
 
                     <div className="crowd-div2HeaderDivRightEn">
                         <hr/>
-                        <h4><strong>Participation 2 : </strong>the following platforms</h4>
-                        <small>The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, platforms will send corresponding tokens to contributors’ Ethereum wallets</small>
+                        <h4><strong>2nd Participation Method: </strong>the following platforms</h4>
+                        <small>The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.</small>
 
                         <div className="rowd-div2HeaderDivRightEn-Div">
                             <h2>Released Later</h2>

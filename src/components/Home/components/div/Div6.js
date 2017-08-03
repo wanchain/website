@@ -73,11 +73,11 @@ class Div6 extends React.Component {
                             <p>Years of Accumulation of Blockchain</p>
                             <span>The concept of cross-blockchain transactions started<br/>
                                 during the development of FACTOM. Wanchain project<br/>
-                                has been  developed for a long time from concepts<br/>
-                                to technologies. The core team members' accumulation<br/>
-                                of blockchain underlying echnologies has led to <br/>
-                                their advantages in consensus algorithms, smart<br/>
-                                contracts, wallets, and etc.
+                                has long been in development from initial concept to<br/>
+                                technological implementation. The core team members' <br/>
+                                accumulated experience in the the underlying blockchain <br/>
+                                technologies has led to an advantage in implementing<br/>
+                                smart contracts, consensus algorithms, wallets, etc.
                             </span>
                             <p><b>T </b>E A M</p>
                         </div>
@@ -85,13 +85,13 @@ class Div6 extends React.Component {
                         <div className="div6BodyCard" id="div6Card2">
                             <img src={expert}/>
                             <p>Top Experts in Cryptography </p>
-                            <span>Continuous work on blockchain underlying technologies<br/>
-                                requires supports from theories of cryptology. Three<br/>
-                                applied mathematics PhDs in the Wanchain team are<br/>
-                                responsible for innovation, verification and algorithms<br/>
-                                about cryptography applications involved in the Wanchain<br/>
-                                 project. Such a strong team is rare in global blockchain<br/>
-                                projects.
+                            <span>Continuing work on the underlying blockchain technologies<br/>
+                                requires support from cryptographic theories. There are<br/>
+                                three PhDs with applied mathematics degrees on the<br/>
+                                Wanchain team who are responsible for innovation,<br/>
+                                algorithm verification and cryptographic applications used<br/>
+                                in the Wanchain project. Such a strong team is rare in<br/>
+                                global blockchain projects.
                             </span>
                             <p><b>E </b>X P E R T S</p>
                         </div>
@@ -100,8 +100,8 @@ class Div6 extends React.Component {
                             <img src={community}/>
                             <p>Capacity for Global Commercialization</p>
                             <span>With years of experience in the blockchain community,<br/>
-                                 our operation team has rich commercial experience and <br/>
-                                resources in countries such as China, US and Singapore. <br/>
+                                 our development team has rich commercial expertise and<br/>
+                                resources in countries such as China, the U.S. and Singapore.<br/>
                                 A lot of senior members in this community support,<br/>
                                 invest in and guide the Wanchain project.
                             </span>

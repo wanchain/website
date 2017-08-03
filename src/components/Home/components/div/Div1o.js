@@ -88,8 +88,8 @@ class Div1o extends React.Component {
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
                             <ul>
-                                <img src={pot}/><li>Exchanges of multiple crypto-<br/>currencies</li>
-                                <img src={pot}/><li>Institutions or individuals provide<br/> Wanchain-based distributed exch-<br/>ange services for cryptocurrencies</li>
+                                <img src={pot}/><li>Exchanges of multiple cryptocurrencies</li>
+                                <img src={pot}/><li>Institutions or individuals rely<br/> on Wanchain for distributed cryptocurrency exchange services</li>
                                 <img src={pot}/><li>Wanchain offers a distributed<br/> cross-blockchain trzansaction mechanism</li>
                             </ul>
                         </div>
@@ -100,9 +100,9 @@ class Div1o extends React.Component {
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
                             <ul>
-                                <img src={pot}/><li>All transaction processes are executed by computer programs based on the cross-chain<br/> mechanism and smart contracts</li>
-                                <img src={pot}/><li>Users hold their assets and debts<br/> in a decentralized manner<br/> （different tokens）</li>
-                                <img src={pot}/><li>Wanchain ensures asset safety<br/> and objectiveness throughout the<br/> process</li>
+                                <img src={pot}/><li>All transaction processes are executed by computer programs based on smart contracts and<br/> the cross-chain mechanism</li>
+                                <img src={pot}/><li>Users hold their assets and <br/> debts in a decentralized way<br/> （different tokens）</li>
+                                <img src={pot}/><li>Wanchain ensures asset safety<br/> and transparency throughout the<br/> process</li>
                             </ul>
                         </div>
                         <div className="div1oBodyCard">
@@ -124,7 +124,7 @@ class Div1o extends React.Component {
                             </div>
                             <img className="div1oBodyCardLine" src={divo1Line} />
                             <ul>
-                                <img src={pot}/><li>It supports ICOs by smart contra-<br/>cts with multiple cryptocurrencies</li>
+                                <img src={pot}/><li>Supports ICOs with multi-cryptocurrency smart contracts</li>
                                 <img src={pot}/><li>Automated conversion from ICO tokens to real cryptocurrencies</li>
                                 <img src={pot}/><li>The ICO process is completely decentralized</li>
                             </ul>
