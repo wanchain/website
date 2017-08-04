@@ -21,7 +21,7 @@ const data = [
     img: t1,
     position: 'Founder',
     describe: `
-    Graduated from Peking University and the Ohio State University.
+    Graduated from Peking University and Ohio State University.
 Blockchain entrepreneur and technical expert. 
 Cofounded Factom in 2014; founded Wanglutech, which brings Blockchain technology to a greater range of applications.`
   },

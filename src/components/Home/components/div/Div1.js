@@ -37,7 +37,7 @@ class Div1 extends React.Component {
                 <h2> <hr className="div1HeaderImg"/>What is wanchain？<hr className="div1HeaderImg"/></h2>
                 }
                 {language === 'en' &&
-                <p>Distributed financial infrastructure based on digital assets</p>
+                <p>Wanchain is a distributed financial infrastructure based on digital assets</p>
                 }
 
                 {language === 'zn' &&
