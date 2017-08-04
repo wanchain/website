@@ -1,13 +1,46 @@
 .cmsHeader{
   margin-top: 60px;
   margin-bottom: 60px;
+  position: relative;
 
   h2{
     text-align: center;
     margin-bottom: 60px;
   }
 
+  a{
+    width: 160px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    vertical-align: middle;
+    padding-top: 12px;
+    background: #1f6ce9;
+    position: absolute;
+    left: 900px;
+    top: 0;
+    text-align: center;
+  }
+
   .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     text-align: left;
+  }
+
+  table{
+    tbody{
+      tr{
+        td{
+          a{
+            position: relative;
+            color: #1f6ce9;
+            left: 0;
+            background: white;
+            padding: 0;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }

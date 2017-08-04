@@ -10,6 +10,7 @@ import Blog from '../components/Blog/index';
 
 import Login from '../components/Login/index';
 import Cms from '../components/Cms/index';
+import Cmsadd from '../components/Cmsadd/index';
 
 import CounterRoute from '../components/Counter/index'
 
@@ -23,7 +24,8 @@ export default () => {
           <Route path="/blog" component={Blog}/>
 
           <Route path="/login" component={Login}/>
-          <Route path="/cms" component={Cms}/>
+          <Route path="/cms" component={Cms} />
+          <Route path="/cms/add" component={Cmsadd}/>
 
           <Route path="/counter" component={CounterRoute}/>
       </Route>
