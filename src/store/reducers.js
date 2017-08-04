@@ -4,6 +4,7 @@ import auth from './auth';
 import home from './home';
 import counterReducer from './counter';
 
+import cms from './cms';
 import lang from './lang';
 import warning from './warning';
 
@@ -14,6 +15,7 @@ export const makeRootReducer = (asyncReducers) => {
     home,
     counterReducer,
 
+    cms,
     lang,
     warning,
     ...asyncReducers

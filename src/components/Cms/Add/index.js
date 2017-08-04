@@ -1,30 +1,64 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import {cmsAddFunc} from '../../store/cms';
+import {cmsAddFunc} from '../../../store/cms';
+import WarningModal from '../../../container/Warn';
+import { warningOpenFunc, warningCloseFunc, warningMsgFunc} from '../../../store/warning';
+import Ueditor from '../../../container/Ueditor';
 
 import './Cmsadd.scss';
 
 class Cmsadd extends Component {
     static propTypes = {
-        language: PropTypes.string,
-        clientWidth: PropTypes.number,
-
+        cmsAddData: PropTypes.object,
         cmsAddFunc: PropTypes.func,
+        changeStepFunc: PropTypes.func,
+
+        warningOpenFunc: PropTypes.func,
+        warningCloseFunc: PropTypes.func,
+        warningMsgFunc: PropTypes.func,
+        warningModal: PropTypes.bool,
+        warningMsg: PropTypes.string,
     };
+
+    componentWillMount() {
+        this.props.warningCloseFunc();
+    }
 
     onClick() {
         const {title, news_link, des, best_time, details} = this.refs;
 
         const data={title: title.value, news_link: news_link.value, des: des.value, best_time: best_time.value, details: details.value};
-        console.log('data', data);
         this.props.cmsAddFunc(data);
+
+        let msg;
+        const self = this;
+        global.dataFeedback.once('onCmsAddComplete', () => {
+            if (self.props.cmsAddData && self.props.cmsAddData.status === 1) {
+                msg = '新增成功';
+                self.props.warningMsgFunc(msg);
+            } else {
+                msg = '新增失败';
+                self.props.warningMsgFunc(msg);
+            }
+            self.props.warningOpenFunc();
+        });
 
     }
 
-    render() {
-        const {language, clientWidth} = this.props;
+    showWarn = () => {
+        this.props.warningOpenFunc();
+    };
+    closeWarn = () => {
+        this.props.warningMsgFunc('');
+        this.props.warningCloseFunc();
 
+        setTimeout(() => {
+            this.props.changeStepFunc(0);
+        }, 500);
+    };
+
+    render() {
         return (
             <div className="container addHeader">
                 <h2>新增新闻</h2>
@@ -64,8 +98,9 @@ class Cmsadd extends Component {
                     </div>
 
                 </form>
-
                 <a onClick={this.onClick.bind(this)}>提交</a>
+
+                <WarningModal show={this.props.warningModal} onHide={this.showWarn} onClose={this.closeWarn} message={this.props.warningMsg}/>
             </div>
         )
     }
@@ -76,12 +111,24 @@ const mapDispatchToProps = (dispatch) => {
         cmsAddFunc: (data) => {
             dispatch(cmsAddFunc(data))
         },
+
+        warningOpenFunc: () => {
+            dispatch(warningOpenFunc());
+        },
+        warningCloseFunc: () => {
+            dispatch(warningCloseFunc());
+        },
+        warningMsgFunc: (msg) => {
+            dispatch(warningMsgFunc(msg));
+        },
     };
 };
 
 const mapStateToProps = (state) => ({
-    language : state.lang.language,
-    clientWidth: state.lang.clientWidth,
+    cmsAddData: state.cms.cmsAddData,
+
+    warningModal: state.warning.warningModal,
+    warningMsg: state.warning.warningMsg,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cmsadd)

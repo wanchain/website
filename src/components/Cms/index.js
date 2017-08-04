@@ -1,52 +1,26 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 
+import Add from './Add';
+import Table from './Table';
+
+import {changeStep} from '../../store/cms';
 import './Cms.scss';
 
 class Cms extends Component {
     static propTypes = {
-        language: PropTypes.string,
-        clientWidth: PropTypes.number,
+        changeStep: PropTypes.func,
+        step: PropTypes.number,
     };
 
     render() {
-        const {language, clientWidth} = this.props;
+
+        const {step} = this.props;
 
         return (
-            <div className="container cmsHeader">
-                <h2>新闻列表</h2>
-                <Link to="cms/add">新增</Link>
-                <table className="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>标题</th>
-                        <th>创建日期</th>
-                        <th>配置日期</th>
-                        <th>修改配置日期</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Tanmay</td>
-                        <td>Bangalore</td>
-                        <td>560001</td>
-                        <td><a>修改</a></td>
-                    </tr>
-                    <tr>
-                        <td>Sachin</td>
-                        <td>Mumbai</td>
-                        <td>400003</td>
-                        <td><a>修改</a></td>
-                    </tr>
-                    <tr>
-                        <td>Uma</td>
-                        <td>Pune</td>
-                        <td>411027</td>
-                        <td><a>修改</a></td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div>
+                {step === 0 && <Table changeStepFunc = {this.props.changeStep}/>}
+                {step === 1 && <Add changeStepFunc = {this.props.changeStep}/>}
             </div>
         )
     }
@@ -54,13 +28,14 @@ class Cms extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-
+        changeStep: (data) => {
+            dispatch(changeStep(data))
+        },
     };
 };
 
 const mapStateToProps = (state) => ({
-    language : state.lang.language,
-    clientWidth: state.lang.clientWidth,
+    step : state.cms.step,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cms)

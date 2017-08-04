@@ -20,10 +20,13 @@ import wecaterEn from '../../../image/share/wecatEn.png';
 import qqer from '../../../image/share/qqer.png';
 
 function emailCheck (email) {
-    var emailPat=/^(.+)@(.+)$/;
-    var matchArray=email.match(emailPat);
-    if (matchArray==null) {return false;}
-    return true;
+    var regu = "^(([0-9a-zA-Z]+)|([0-9a-zA-Z]+[_.0-9a-zA-Z-]*[0-9a-zA-Z]+))@([a-zA-Z0-9-]+[.])+([a-zA-Z]{2}|net|NET|com|COM|gov|GOV|mil|MIL|org|ORG|edu|EDU|int|INT)$";
+    var re = new RegExp(regu);
+    if (email.search(re) != -1) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 class Footer extends React.Component {

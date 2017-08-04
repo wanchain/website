@@ -1,8 +1,11 @@
-export const CMS_ADD = 'Astro/CMS_ADD';
 import fetchData from '../fetch/fetchData';
 
+export const CMS_ADD = 'Astro/CMS_ADD';
+export const CMS_STEP = 'Astro/CMS_STEP';
+
 const initialState = {
-    cmsAddData: null,
+    cmsAddData: {status: 0},
+    step: 0,
 };
 
 export default function cms(state = initialState, action = {}) {
@@ -17,9 +20,21 @@ export default function cms(state = initialState, action = {}) {
                 ...state,
                 cmsAddData: action.data,
             };
+        case CMS_STEP:
+            return{
+                ...state,
+                step: action.reload,
+            }
     }
 }
 
 export function cmsAddFunc(data) {
     return fetchData('news', CMS_ADD, data);
+}
+
+export function changeStep(data) {
+    return {
+        type: CMS_STEP,
+        reload: data,
+    }
 }

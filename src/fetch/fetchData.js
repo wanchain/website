@@ -11,7 +11,7 @@ const fetchData = (api, type, data) => {
                 });
         };
     } else if (data) {
-        console.log('true', data);
+        console.log('true');
         return dispatch => {
             return fetch(`${portId}/${api}`,
                 {
