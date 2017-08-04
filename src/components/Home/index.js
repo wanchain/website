@@ -94,18 +94,22 @@ class Home extends Component {
     componentWillMount() {
         const {hash, language} = this.props;
 
-        // console.log('curr', getLange());
         const curr = getLange();
+        console.log('curr', curr);
 
-        if (curr !== 'zh-CN') {this.props.changeLanguage('en')}
+        if (curr !== 'zh-CN') {
+            this.props.changeLanguage('en');
 
-        if (language === 'zn') {
-            if (hash === '#en') { this.props.changeLanguage('en')}
-            else { this.props.changeLanguage('zn')}
+            console.log(language);
 
-            global.dataFeedback.once('onchangeLangComplete', () => {
-                browserHistory.push('/');
-            });
+            // if (language === 'zn') {
+            //     if (hash === '#en') { this.props.changeLanguage('en')}
+            //     else { this.props.changeLanguage('zn')}
+            //
+            //     global.dataFeedback.once('onchangeLangComplete', () => {
+            //         browserHistory.push('/');
+            //     });
+            // }
         }
     }
 
