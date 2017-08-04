@@ -13,6 +13,9 @@ export default function lang(state = initialState, action = {}) {
         default:
             return state;
         case LANGUAGE_CHANGE:
+            setTimeout(()=>{
+                global.dataFeedback.emit('onchangeLangComplete');
+            }, 50);
             return {
                 ...state,
                 language: action.reload,

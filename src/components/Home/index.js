@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
 import Helmet from 'react-helmet';
-import { IndexLink, Link } from 'react-router';
+import { IndexLink, Link, browserHistory } from 'react-router';
 
 import { changeLanguage } from '../../store/lang';
 
@@ -26,6 +26,8 @@ class Home extends Component {
     static propTypes = {
         language: PropTypes.string,
         changeLanguage: PropTypes.func,
+
+        hash: PropTypes.string,
     };
 
     constructor(props) {
@@ -78,6 +80,18 @@ class Home extends Component {
         }));
     }
 
+    componentWillMount() {
+        const {hash, language} = this.props;
+
+        if (language === 'zn') {
+            if (hash === '#en') { this.props.changeLanguage('en')}
+            else { this.props.changeLanguage('zn')}
+        }
+
+        global.dataFeedback.once('onchangeLangComplete', () => {
+            browserHistory.push('/');
+        });
+    }
 
     componentDidMount() {
         this.interval = setInterval(() => this.tick(), 1000);
@@ -244,9 +258,11 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, ownProps) => ({
     language : state.lang.language,
     clientWidth: state.lang.clientWidth,
+
+    hash: state.location.hash,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
