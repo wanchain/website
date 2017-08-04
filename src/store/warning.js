@@ -17,6 +17,9 @@ export default function warning(state = initialState, action = {}) {
                 warningModal: true,
             };
         case WARNING_CLOSE:
+            setTimeout(()=>{
+                global.dataFeedback.emit('onWarnCloseComplete');
+            }, 50);
             return {
                 ...state,
                 warningModal: false,

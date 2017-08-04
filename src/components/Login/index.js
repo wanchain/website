@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
 import Helmet from 'react-helmet';
-import { IndexLink, Link } from 'react-router';
+import { browserHistory } from 'react-router';
 
 import { changeLanguage } from '../../store/lang';
 import { users } from '../../store/auth';
@@ -22,6 +22,11 @@ class Login extends Component {
         console.log(email, passwd);
         const data = {username: email, password: passwd};
         this.props.users(data);
+
+        const self = this;
+        global.dataFeedback.once('onLoginComplete', () => {
+            browserHistory.push('/cms');
+        });
     }
 
 

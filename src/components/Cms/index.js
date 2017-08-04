@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import cookie from 'react-cookie';
+import { browserHistory} from 'react-router';
 
 import Add from './Add';
 import Table from './Table';
@@ -13,14 +15,26 @@ class Cms extends Component {
         step: PropTypes.number,
     };
 
+    componentWillMount() {
+        const tokenId = cookie.load('token');
+        // console.log('tokenId', tokenId);
+        if (!tokenId || tokenId !== 'JWT@5Wn3O012n=+9d') {
+            browserHistory.push('/')
+        }
+    }
+
+    onChange(step) {
+        this.props.changeStep(step);
+    }
+
     render() {
 
         const {step} = this.props;
 
         return (
             <div>
-                {step === 0 && <Table changeStepFunc = {this.props.changeStep}/>}
-                {step === 1 && <Add changeStepFunc = {this.props.changeStep}/>}
+                {step === 1 && <Table changeStepFunc = {this.onChange.bind(this)}/>}
+                {step === 2 && <Add changeStepFunc = {this.onChange.bind(this)}/>}
             </div>
         )
     }

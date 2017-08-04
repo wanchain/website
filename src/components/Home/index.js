@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
 import Helmet from 'react-helmet';
-import { IndexLink, Link, browserHistory } from 'react-router';
+import { IndexLink, Link, } from 'react-router';
 
 import { changeLanguage } from '../../store/lang';
 

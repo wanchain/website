@@ -20,7 +20,7 @@ export default function authReducer(state = initialState, action = {}) {
             };
 
         case USER:
-            cookie.save('token', 'JWT ' + 'xxxaaaasdsdeaaaa', { path: '/' });
+            cookie.save('token', 'JWT' + '@5Wn3O012n=+9d', { path: '/' });
             setTimeout(()=>{
                 global.dataFeedback.emit('onLoginComplete');
             }, 50);

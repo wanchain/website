@@ -5,7 +5,7 @@ export const CMS_STEP = 'Astro/CMS_STEP';
 
 const initialState = {
     cmsAddData: {status: 0},
-    step: 0,
+    step: 1,
 };
 
 export default function cms(state = initialState, action = {}) {

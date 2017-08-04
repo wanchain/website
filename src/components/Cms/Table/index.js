@@ -9,7 +9,7 @@ class Cms extends Component {
     };
 
     onClick() {
-        this.props.changeStepFunc(1);
+        this.props.changeStepFunc(2);
     }
 
     render() {
