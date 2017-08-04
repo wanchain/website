@@ -34,12 +34,22 @@ class Div4 extends React.Component {
                         <a href="http://chainb.com/?P=mpost&id=5425" target="_blank">
                         <div className="col-lg-4">
                             <div className="AstroModule7" >
-                                <h2>搭建数字新经济的金融基础设施 —万维链...</h2>
-                                <p>万维链是一个基于区块链的分布式金融基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换。基于该设施，更多的机构能够开发自己的服务，通过万维链wanchain进行分布式金融创新。
+                                <h2>Wanchain Developed To Spur Inter-Blockchain...</h2>
+                                <p>Wanchain's architecture is built on the Ethereum blockchain. As stated in the whitepaper, Wanchain will act as a decentralized bank, allowing individuals to interact across the existing blockchain ecosystem by providing an intermediary platform that makes use of executable distributed code contracts (EDCCs).
                                 </p>
-                                <h4>2017-8-1</h4>
+                                <h4>August 4, 2017</h4>
                             </div>
                         </div></a>
+
+                        <a href="http://chainb.com/?P=mpost&id=5425" target="_blank">
+                            <div className="col-lg-4">
+                                <div className="AstroModule7" >
+                                    <h2>Wanchain To Enable Interoperability Between...</h2>
+                                    <p>Wanchain, a public blockchain project by Chinese firm Wanglu Tech, is building a distributed financial infrastructure on the Ethereum network that allows for the exchange of assets among different blockchain networks. The initiative aims to enable more organizations to easily develop their own services and innovate in the “distributed finance space.”
+                                    </p>
+                                    <h4>August 3, 2017</h4>
+                                </div>
+                            </div></a>
                     </div>
                 </div>
             </div>

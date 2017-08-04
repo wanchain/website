@@ -22,6 +22,17 @@ import nav from '../../image/nav1.png';
 import currentDate from './helpers/currentDate';
 
 
+var getLange = () => {
+    var currentLang = navigator.language;   //判断除IE外其他浏览器使用语言
+    if(!currentLang){//判断IE浏览器使用语言
+        currentLang = navigator.browserLanguage;
+    } else {
+        currentLang = navigator.language;   //判断除IE外其他浏览器使用语言
+    }
+
+    return currentLang;
+};
+
 class Home extends Component {
     static propTypes = {
         language: PropTypes.string,
@@ -83,14 +94,19 @@ class Home extends Component {
     componentWillMount() {
         const {hash, language} = this.props;
 
+        // console.log('curr', getLange());
+        const curr = getLange();
+
+        if (curr !== 'zh-CN') {this.props.changeLanguage('en')}
+
         if (language === 'zn') {
             if (hash === '#en') { this.props.changeLanguage('en')}
             else { this.props.changeLanguage('zn')}
-        }
 
-        global.dataFeedback.once('onchangeLangComplete', () => {
-            browserHistory.push('/');
-        });
+            global.dataFeedback.once('onchangeLangComplete', () => {
+                browserHistory.push('/');
+            });
+        }
     }
 
     componentDidMount() {
