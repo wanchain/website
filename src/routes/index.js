@@ -9,6 +9,7 @@ import Crowdsale from '../components/Crowdsale/index';
 import Blog from '../components/Blog/index';
 
 import Login from '../components/Login/index';
+import Cms from '../components/Cms/index';
 
 import CounterRoute from '../components/Counter/index'
 
@@ -22,10 +23,10 @@ export default () => {
           <Route path="/blog" component={Blog}/>
 
           <Route path="/login" component={Login}/>
+          <Route path="/cms" component={Cms}/>
 
           <Route path="/counter" component={CounterRoute}/>
       </Route>
   );
 };
 // <Route path="/detail/:id" component={UserDetail}/>
-

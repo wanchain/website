@@ -72,7 +72,7 @@ UserRouter.route('/users')
             function(err) {
                 res.send(err);
             });
-    })
+    });
 
 
 // on routes that end in /users
