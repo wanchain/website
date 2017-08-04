@@ -31,7 +31,7 @@ class Div4 extends React.Component {
                             </div></a>
                         </div>
 
-                        <a href="http://chainb.com/?P=mpost&id=5425" target="_blank">
+                        <a href="https://www.ethnews.com/wanchain-developed-to-spur-inter-blockchain-cooperation" target="_blank">
                         <div className="col-lg-4">
                             <div className="AstroModule7" >
                                 <h2>Wanchain Developed To Spur Inter-Blockchain...</h2>
@@ -41,7 +41,7 @@ class Div4 extends React.Component {
                             </div>
                         </div></a>
 
-                        <a href="http://chainb.com/?P=mpost&id=5425" target="_blank">
+                        <a href="https://coinjournal.net/wanchain-enable-interoperability-blockchains/" target="_blank">
                             <div className="col-lg-4">
                                 <div className="AstroModule7" >
                                     <h2>Wanchain To Enable Interoperability Between...</h2>
