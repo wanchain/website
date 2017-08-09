@@ -45,7 +45,6 @@ export default class Html extends Component {
 
           <script type="text/javascript" src="/jquery/jquery.min.js" />
           <script type="text/javascript" src="/scroll/scroll.js" />
-          <script type="text/javascript" src="/animation/home-div1.js" />
 
           <script type="text/javascript" src="/baidu/baidu.js" />
 

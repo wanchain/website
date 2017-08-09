@@ -10,6 +10,29 @@ class Div1 extends React.Component {
       clientWidth: PropTypes.number,
     };
 
+    componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll.bind(this));
+    }
+
+    handleScroll() {
+      const div1HeaderImg2 = document.getElementById('div1HeaderImg2');
+      if (div1HeaderImg2) {
+        document.styleSheets[0].insertRule('@-webkit-keyframes fadeTop {0% {opacity: 0; transform: translateY(-10%);} 100% {opacity: 1; transform: translateX(0);}}', 0);
+
+        const off = div1HeaderImg2.offsetTop;
+        const scrollTop = document.body.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+
+        if (off >= scrollTop && off < (scrollTop + clientHeight)) {
+          div1HeaderImg2.style.cssText = 'opacity: 1; -webkit-animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+      }
+    }
+
     render() {
       const {language, clientWidth} = this.props;
       const div1Img = require('../../image/div1.png');

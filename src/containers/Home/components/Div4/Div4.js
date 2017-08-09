@@ -11,6 +11,46 @@ class Div4 extends React.Component {
       clientWidth: PropTypes.number,
     };
 
+    componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll.bind(this));
+    }
+
+    handleScroll() {
+      const div3img1 = document.getElementById('div3img1');
+      const div3img2 = document.getElementById('div3img2');
+      const div3img3 = document.getElementById('div3img3');
+      const div3img4 = document.getElementById('div3img4');
+
+      if (div3img1) {
+        document.styleSheets[4].insertRule('@-webkit-keyframes fadeLeft {0% {opacity: 0; transform: translateX(10%);} 100% {opacity: 1; transform: translateX(0);}}', 0);
+
+        const off1 = div3img1.offsetTop;
+        const off2 = div3img2.offsetTop;
+        const off3 = div3img3.offsetTop;
+        const off4 = div3img4.offsetTop;
+
+        const scrollTop = document.body.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+
+        if (off1 >= scrollTop && off1 < (scrollTop + clientHeight)) {
+          div3img1.style.cssText = 'opacity: 1; -webkit-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+        if (off2 >= scrollTop && off2 < (scrollTop + clientHeight)) {
+          div3img2.style.cssText = 'opacity: 1; -webkit-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+        if (off3 >= scrollTop && off3 < (scrollTop + clientHeight)) {
+          div3img3.style.cssText = 'opacity: 1; -webkit-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+        if (off4 >= scrollTop && off4 < (scrollTop + clientHeight)) {
+          div3img4.style.cssText = 'opacity: 1; -webkit-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+      }
+    }
+
     render() {
       const {clientWidth, language} = this.props;
       const part1 = require('../../image/part1.png');
