@@ -11,29 +11,6 @@ class Div3 extends React.Component {
       clientWidth: PropTypes.number,
     };
 
-    componentDidMount() {
-      window.addEventListener('scroll', this.handleScroll.bind(this));
-    }
-
-    componentWillUnmount() {
-      window.removeEventListener('scroll', this.handleScroll.bind(this));
-    }
-
-    handleScroll() {
-      const astroModule2Img = document.getElementById('astroModule2Img');
-      if (astroModule2Img) {
-        document.styleSheets[3].insertRule('@-webkit-keyframes fadeRight {0% {opacity: 0; transform: translateX(-10%);} 100% {opacity: 1; transform: translateX(0);}}', 0);
-
-        const off = astroModule2Img.offsetTop;
-        const scrollTop = document.body.scrollTop;
-        const clientHeight = document.documentElement.clientHeight;
-
-        if (off >= scrollTop && off < (scrollTop + clientHeight)) {
-          astroModule2Img.style.cssText = 'opacity: 1; -webkit-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
-        }
-      }
-    }
-
     render() {
       const {language} = this.props;
       const styles = require('./Div3.scss');

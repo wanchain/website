@@ -10,46 +10,6 @@ class Div2 extends React.Component {
       clientWidth: PropTypes.number,
     };
 
-    componentDidMount() {
-      window.addEventListener('scroll', this.handleScroll.bind(this));
-    }
-
-    componentWillUnmount() {
-      window.removeEventListener('scroll', this.handleScroll.bind(this));
-    }
-
-    handleScroll() {
-      const div1oimg1 = document.getElementById('div1oimg1');
-      const div1oimg2 = document.getElementById('div1oimg2');
-      const div1oimg3 = document.getElementById('div1oimg3');
-      const div1oimg4 = document.getElementById('div1oimg4');
-      if (div1oimg1) {
-        const tt = document.styleSheets[1];
-        tt.insertRule('@-webkit-keyframes fadeRotate {0% {-webkit-transform:rotate(0deg);} 100% {-webkit-transform:rotate(360deg);}}', 1);
-
-        const off1 = div1oimg1.offsetTop + 1500;
-        const off2 = div1oimg2.offsetTop + 1500;
-        const off3 = div1oimg3.offsetTop + 1500;
-        const off4 = div1oimg4.offsetTop + 1500;
-
-        const scrollTop = document.body.scrollTop;
-        const clientHeight = document.documentElement.clientHeight;
-
-        if (off1 >= scrollTop && off1 < (scrollTop + clientHeight)) {
-          div1oimg1.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
-        }
-        if (off2 >= scrollTop && off2 < (scrollTop + clientHeight)) {
-          div1oimg2.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
-        }
-        if (off3 >= scrollTop && off3 < (scrollTop + clientHeight)) {
-          div1oimg3.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
-        }
-        if (off4 >= scrollTop && off4 < (scrollTop + clientHeight)) {
-          div1oimg4.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
-        }
-      }
-    }
-
     render() {
       const {language} = this.props;
       const card1 = require('../../image/car1.png');

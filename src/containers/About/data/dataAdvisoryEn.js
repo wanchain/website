@@ -1,4 +1,4 @@
-const t16 = require('./image/16.png');
+// const t16 = require('./image/16.png');
 const t17 = require('./image/17.png');
 const t18 = require('./image/18.png');
 const t19 = require('./image/19.png');
@@ -12,11 +12,11 @@ const t27 = require('./image/27.png');
 const t28 = require('./image/28.png');
 
 const data = [
-    {title: 'Bo Shen',
-        img: t16,
-        position: '',
-        describe: 'FenBuShi Capital, Founding Partner'
-    },
+    // {title: 'Bo Shen',
+    //     img: t16,
+    //     position: '',
+    //     describe: 'FenBuShi Capital, Founding Partner'
+    // },
     {title: 'Feng Han',
         img: t17,
         position: '',

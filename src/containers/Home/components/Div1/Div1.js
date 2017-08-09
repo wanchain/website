@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 
 @connect(
     state => ({language: state.auth.language, clientWidth: state.auth.clientWidth, }),
-)
+    )
 class Div1 extends React.Component {
     static propTypes = {
       language: PropTypes.string,
       clientWidth: PropTypes.number,
+      getNaminationFunc: PropTypes.func,
     };
 
     componentDidMount() {
@@ -19,9 +20,13 @@ class Div1 extends React.Component {
     }
 
     handleScroll() {
+      // div1
       const div1HeaderImg2 = document.getElementById('div1HeaderImg2');
+      document.styleSheets[0].insertRule('@-webkit-keyframes fadeTop {0% {opacity: 0; transform: translateY(-10%);} 100% {opacity: 1; transform: translateX(0);}}');
+      document.styleSheets[0].insertRule(' @-webkit-keyframes fadeRotate {0% {-webkit-transform:rotate(0deg);} 100% {-webkit-transform:rotate(360deg);}}');
+      document.styleSheets[0].insertRule('@-webkit-keyframes fadeRight {0% {opacity: 0; transform: translateX(-10%);} 100% {opacity: 1; transform: translateX(0);}}');
+      document.styleSheets[0].insertRule('@-webkit-keyframes fadeLeft {0% {opacity: 0; transform: translateX(10%);} 100% {opacity: 1; transform: translateX(0);}}');
       if (div1HeaderImg2) {
-        document.styleSheets[0].insertRule('@-webkit-keyframes fadeTop {0% {opacity: 0; transform: translateY(-10%);} 100% {opacity: 1; transform: translateX(0);}}', 0);
 
         const off = div1HeaderImg2.offsetTop;
         const scrollTop = document.body.scrollTop;
@@ -29,6 +34,75 @@ class Div1 extends React.Component {
 
         if (off >= scrollTop && off < (scrollTop + clientHeight)) {
           div1HeaderImg2.style.cssText = 'opacity: 1; -webkit-animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeTop 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+      }
+
+      // div2
+      const div1oimg1 = document.getElementById('div1oimg1');
+      const div1oimg2 = document.getElementById('div1oimg2');
+      const div1oimg3 = document.getElementById('div1oimg3');
+      const div1oimg4 = document.getElementById('div1oimg4');
+      if (div1oimg1) {
+        const off1 = div1oimg1.offsetTop + 1500;
+        const off2 = div1oimg2.offsetTop + 1500;
+        const off3 = div1oimg3.offsetTop + 1500;
+        const off4 = div1oimg4.offsetTop + 1500;
+
+        const scrollTop = document.body.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+
+        if (off1 >= scrollTop && off1 < (scrollTop + clientHeight)) {
+          div1oimg1.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
+        }
+        if (off2 >= scrollTop && off2 < (scrollTop + clientHeight)) {
+          div1oimg2.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
+        }
+        if (off3 >= scrollTop && off3 < (scrollTop + clientHeight)) {
+          div1oimg3.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
+        }
+        if (off4 >= scrollTop && off4 < (scrollTop + clientHeight)) {
+          div1oimg4.style.cssText = '-webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); transform: translate3d(0,0,0); -webkit-animation: fadeRotate 2s linear; -moz-animation: fadeRotate 2s linear; animation: fadeRotate 2s linear;';
+        }
+      }
+
+      // div3
+      const astroModule2Img = document.getElementById('astroModule2Img');
+      if (astroModule2Img) {
+        const off = astroModule2Img.offsetTop;
+        const scrollTop = document.body.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+
+        if (off >= scrollTop && off < (scrollTop + clientHeight)) {
+          astroModule2Img.style.cssText = 'opacity: 1; -webkit-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+      }
+
+      // div4
+      const div3img1 = document.getElementById('div3img1');
+      const div3img2 = document.getElementById('div3img2');
+      const div3img3 = document.getElementById('div3img3');
+      const div3img4 = document.getElementById('div3img4');
+
+      if (div3img1) {
+        const off1 = div3img1.offsetTop;
+        const off2 = div3img2.offsetTop;
+        const off3 = div3img3.offsetTop;
+        const off4 = div3img4.offsetTop;
+
+        const scrollTop = document.body.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+
+        if (off1 >= scrollTop && off1 < (scrollTop + clientHeight)) {
+          div3img1.style.cssText = 'opacity: 1; -webkit-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+        if (off2 >= scrollTop && off2 < (scrollTop + clientHeight)) {
+          div3img2.style.cssText = 'opacity: 1; -webkit-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+        if (off3 >= scrollTop && off3 < (scrollTop + clientHeight)) {
+          div3img3.style.cssText = 'opacity: 1; -webkit-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeRight 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
+        }
+        if (off4 >= scrollTop && off4 < (scrollTop + clientHeight)) {
+          div3img4.style.cssText = 'opacity: 1; -webkit-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -moz-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); -o-animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1); animation: fadeLeft 2s 1 cubic-bezier(0.77, 0, 0.175, 1);';
         }
       }
     }
@@ -68,18 +142,4 @@ class Div1 extends React.Component {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         changeLanguage: (data) => {
-//             dispatch(changeLanguage(data))
-//         },
-//     };
-// };
-//
-// const mapStateToProps = (state) => ({
-//     language : state.lang.language,
-//     clientWidth: state.lang.clientWidth,
-// });
-//
-// export default connect(mapStateToProps, mapDispatchToProps)(Div1)
 export default Div1;

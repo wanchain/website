@@ -1,4 +1,4 @@
-const t16 = require('./image/16.png');
+// const t16 = require('./image/16.png');
 const t17 = require('./image/17.png');
 const t18 = require('./image/18.png');
 const t19 = require('./image/19.png');
@@ -13,11 +13,11 @@ const t28 = require('./image/28.png');
 
 
 const data = [
-    {title: '沈波',
-        img: t16,
-        position: '',
-        describe: '分布式基金合伙人'
-    },
+    // {title: '沈波',
+    //     img: t16,
+    //     position: '',
+    //     describe: '分布式基金合伙人'
+    // },
     {title: '韩锋',
         img: t17,
         position: '',
