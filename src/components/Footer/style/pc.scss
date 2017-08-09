@@ -1,0 +1,134 @@
+@media screen and (min-width: 1025px) {
+  .FooterRoot {
+    background: #1e2736;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  .FooterContainer {
+    margin: 0 auto;
+    text-align: center;
+    height:190px;
+    position: relative;
+  }
+
+  .FooterformGroup{
+    float: left;
+    padding-top: 60px;
+    padding-left: 20px;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 30px;
+      top: 67px;
+      margin: 0;
+    }
+
+    input {
+      background-color: #1e2736;
+      padding-left: 40px;
+    }
+
+    p {
+      padding-top: 15px;
+      padding-left: 10px;
+      text-align: left;
+      color: #ffffff;
+      font-size: 12px;
+    }
+
+    span {
+      color: #3680f8;
+      font-size: 12px;
+    }
+
+  }
+
+  .FooterEnd{
+    background: #2b3139;
+    color: #fff;
+
+    span{
+      padding: 5px;
+      font-size: 12px;
+      color: #999999;
+      text-align: center;
+      display: block;
+    }
+  }
+
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    margin-left: 20px;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    margin-left: 20px;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    margin-left: 20px;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    margin-left: 20px;
+  }
+
+  .submit-area{
+    position: absolute;
+    top: 38px;
+    left: 395px;
+    span{
+      color: #FFF;
+      font-size: 22px;
+      vertical-align: middle;
+    }
+  }
+
+  .submit-button{
+    width: 153px;
+    height: 36px;
+    margin-top: 20px;
+    background-color: #3680f8;
+    padding-top: 1px;
+
+    img {
+      padding: 0;
+      padding-left: 7px;
+      margin-bottom: 9px;
+    }
+  }
+
+  .submit-button:focus,
+  .submit-button:hover{
+    color: #FFF;
+    border-color: transparent;
+  }
+
+  .formGroupDiv{
+    padding-right: 20px;
+    float: right;
+    padding-top: 60px;
+
+    a{
+      cursor: pointer;
+      img{
+        float: left;
+        padding: 10px;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .formGroupDiv > a > img:hover{
+    opacity: 1;
+  }
+
+  .wechat{
+    display: none;
+    left: -95px;
+  }
+
+  .qq{
+    display: none;
+  }
+}
+

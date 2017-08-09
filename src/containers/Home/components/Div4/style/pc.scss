@@ -1,0 +1,97 @@
+
+@media screen and (min-width: 1025px) {
+  //+++++++++++ div3 style+++++++++++++++++++++++++++++++++++++++++++++++++
+  .officalModule3{
+    background: #f7fafe;
+    //margin-top: 60px;
+
+    img {
+      padding-top: 100px;
+      margin-bottom: 60px;
+      float: left;
+    }
+  }
+
+  .officalModule3Div{
+    position: relative;
+    top: 200px;
+
+    img {
+      padding: 0;
+      padding-left: 60px;
+      margin-bottom: 0;
+    }
+
+    h2{
+      font-size: 18px;
+      color: #2b363d;
+      font-weight: 600;
+      position: absolute;
+      top: 10px;
+      left: 19%
+    }
+
+    span {
+      padding-top: 6px;
+      font-size: 12px;
+      color: #96b1c5;
+      position: absolute;
+      top: 29px;
+      left: 19%;
+    }
+
+    p {
+      font-size: 14px;
+      color: #688499;
+      text-align: left;
+      margin-top: 60px;
+      padding-left: 66px;
+    }
+  }
+
+  //==========1
+  .officalModule4{
+    img {
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .officalModule4Div{
+    position: relative;
+    top: 200px;
+
+    img {
+      padding: 0;
+      padding-left: 60px;
+    }
+
+    h2{
+      font-size: 18px;
+      color: #2b363d;
+      font-weight: 600;
+      position: absolute;
+      top: 10px;
+      left: 21%;
+    }
+
+    span {
+      padding-top: 6px;
+      font-size: 12px;
+      color: #96b1c5;
+      position: absolute;
+      top: 29px;
+      left: 21%;
+    }
+
+    p {
+      font-size: 14px;
+      color: #688499;
+      text-align: left;
+      padding-top: 10px;
+      padding-left: 66px;
+    }
+  }
+
+}
+

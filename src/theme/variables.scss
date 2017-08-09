@@ -1,0 +1,44 @@
+// Custom Colors
+$cyan: #33e0ff;
+$humility: #777;
+
+// Bootstrap Variables
+$brand-primary: darken(#428bca, 6.5%);
+$brand-secondary: #e25139;
+$brand-success: #5cb85c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$brand-info: #5bc0de;
+
+$text-color: #333;
+
+$font-size-base: 14px;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+
+body{
+  padding: 0;
+  margin: 0;
+  a{
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+  ul{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .div1HeaderImg{
+    width: 20px;
+    display: inline-block;
+    height: 1px;
+    border: 0;
+    background-color: #d5d5d5;
+    color: #d5d5d5;
+    position: relative;
+    top: 3px;
+    margin: 10px;
+  }
+}

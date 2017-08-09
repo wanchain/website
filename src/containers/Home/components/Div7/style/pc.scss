@@ -1,0 +1,80 @@
+
+@media screen and (min-width: 1025px) {
+
+  //+++++++++++ div6 style+++++++++++++++++++++++++++++++++++++++++++++++++
+  .div6Header{
+
+    .div6Title{
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 30px;
+
+      h2{
+        margin: 0;
+        padding: 80px 0 0 0;
+        font-family: "Microsoft YaHei";
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    .div6Body, .div6BodyEn{
+      padding: 0;
+      margin: 0 auto;
+      margin-top: 50px;
+      display: block;
+      text-align: center;
+
+      .div6BodyCard{
+        display: inline-block;
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+        p{
+          padding-top: 30px;
+          padding-bottom: 20px;
+          font-size: 18px;
+          color: #ffffff;
+          font-weight: 600;
+          text-align: center;
+        }
+        small{
+          font-size: 14px;
+          color: #ffffff;
+          text-align: left;
+          height: 100px;
+          display: block;
+        }
+        b{
+          color: #3680f8;
+        }
+        span{
+          display: inline-block;
+        }
+      }
+
+      #div6Card2{
+        padding-left: 140px;
+        padding-right: 140px;
+      }
+    }
+
+    .div6BodyEn{
+      margin-top: 15px;
+      .div6BodyCard{
+        small{
+          height: 130px;
+        }
+      }
+
+      #div6Card2{
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,178 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .homeDiv {
+    height: 660px;
+  }
+
+  .homeHeader{
+    img{
+      float: left;
+      padding-left: 0;
+    }
+
+    .navbarImg{
+     float: right;
+      margin-right: 3px;
+      margin-top: 10px;
+    }
+
+    .homeHeaderUl{
+      padding-top: 10px;
+      float: right;
+      position: relative;
+      top: 35px;
+      left: 60px;
+
+      ul{
+        li{
+          margin: 13px;
+          a{
+            color: #fff;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+          }
+        }
+        a:hover{
+          border-bottom: 1px solid #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .homeGit{
+      float: left;
+      color: #fff;
+      line-height: 26px;
+      position: absolute;
+      top: 20px;
+      left: 136px;
+      p{
+        color: #fff;
+        float: right;
+        padding-left: 20px;
+        padding-top: 23px;
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px;
+      }
+      img{
+        padding-top: 0;
+        margin: 0;
+      }
+    }
+
+    .homeGit a:hover{
+      color: #1f6ce9;
+    }
+  }
+
+  .homeHeaderBodyDiv1{
+    margin-top: -20px;
+    text-align: center;
+
+    .scrolltext{height:80px;overflow:hidden; position: relative; top: 60px;}
+    /* quotation */
+    .quotation{height: 86px; overflow: hidden;}
+    .quotation li{line-height:28px;padding-bottom:35px;}
+    .quotation li .a-r{text-align:right;}
+
+    h2{
+      font-size: 30px;
+      color: #ffffff;
+
+      small{
+        font-size: 30px;
+        color: #008aff;
+      }
+    }
+    p{
+      padding-top: 70px;
+      font-size: 18px;
+      color: #ffffff;
+      small{
+        display: block;
+        font-size: 12px;
+        opacity: 0.65;
+        padding-top: 5px;
+        width: 290px;
+        margin: 0 auto;
+      }
+    }
+
+    .countdown{
+      padding-top: 15px;
+      width: 100%;
+      li{
+        display: inline-block;
+        span{
+          font-family: BebasNeue;
+          font-size: 30px;
+          color: #fff;
+          padding: 6px;
+          background: #201f1f;
+        }
+        small{
+          padding-left: 10px;
+          padding-right: 10px;
+          color: #3680f8;
+          font-size: 30px;
+        }
+        p{
+          padding-top: 5px;
+          font-size: 10px;
+          color: #fff;
+          opacity: .65;
+          text-align: left;
+          font-family: BebasNeue;
+        }
+      }
+    }
+  }
+
+  .homeHeaderBodyDiv2{
+
+    .home-submit-button{
+      width: 210px;
+      height: 50px;
+      background-color: #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .home-submit-button2{
+      width: 210px;
+      height: 50px;
+      border: 1px solid #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .home-submit-button .home-submit-button2:focus,
+    .home-submit-button2:hover{
+      color: #FFF;
+      border-color: transparent;
+    }
+
+    .home-submit-button:hover{
+      background: #1f6ce9;
+    }
+  }
+}
+

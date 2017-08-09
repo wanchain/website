@@ -1,0 +1,85 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  //+++++++++++ div5 style+++++++++++++++++++++++++++++++++++++++++++++++++
+  .div4Header {
+    margin: 0 auto;
+    width: 100%;
+    background: #f7fafe;
+  }
+
+  .div4HeaderDiv {
+    margin: 0 auto;
+
+    h2{
+      margin: 0;
+      padding: 40px 0 0;
+      font-family: Microsoft YaHei;
+      font-size: 24px;
+      text-align: center;
+      color: #2c313a;
+    }
+
+    img{
+      width: 98%;
+      margin: 0;
+      padding-top: 11px;
+      padding-bottom: 0;
+    }
+
+    p{
+      font-family: "Microsoft YaHei";
+      color: #688499;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 5px;
+    }
+
+    .AstroModule7{
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 6px 6px 16px 10px #ececec;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      padding-bottom: 80px;
+      position: relative;
+
+      h2 {
+        padding-left: 0;
+        padding-bottom: 10px;
+        font-size: 20px;
+        color: #468af9;
+        padding-top: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: left;
+      }
+
+      p {
+        margin: 10px;
+        font-size: 14px;
+        text-align: left;
+        color: #2b363d;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      h4 {
+        font-size: 24px;
+        color: #468af9;
+        font-family: BebasNeue;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 30px;
+        padding-left: 20px;
+      }
+    }
+
+    .AstroModule7:hover{
+      box-shadow: 0px 6px 10px 0px rgba(54, 128, 248, 0.12);
+    }
+  }
+}

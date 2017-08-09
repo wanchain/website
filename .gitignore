@@ -1,21 +1,15 @@
-.DS_STORE
-*.log
-node_modules
-dist
-coverage
 .idea/
-.yarn-cache
-.npm-debug.log
-*.js.map
-*-compiled.js
+node_modules/
+dist/
+*.iml
+webpack-assets.json
+webpack-stats.json
+npm-debug.log
+*.swp
 
-database.json
-email.config.js
-test.js
-tests
-port.js
+src/cert/
 
-build/cert
-src/index.html
-.ejs
-.old.js
+*compiled.js
+*compiled.js.map
+api/mysql
+

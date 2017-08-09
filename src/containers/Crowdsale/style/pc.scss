@@ -1,0 +1,46 @@
+@media screen and (min-width: 1025px) {
+  .crowdsaleDiv {
+
+    .crowdsaleHeader{
+      position: relative;
+
+      .crowdsaleHeaderDivNumPC{
+        position: relative;
+        top: -100px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .crowdsaleHeaderDivImg{
+        width: 100%;
+        height: 380px;
+        margin: 0;
+      }
+      .crowdsaleHeaderDiv {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        padding-top: 60px;
+        img{
+          margin-right: 20px;
+        }
+        h2 {
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 36px;
+          color: #ffffff;
+          margin: 0;
+        }
+
+        p {
+          font-size: 16px;
+          color: #ffffff;
+          padding-top: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+

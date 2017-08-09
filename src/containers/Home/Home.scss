@@ -1,0 +1,23 @@
+@import '../../theme/variables';
+
+@import './style/pc';
+@import './style/mobile';
+@import './style/pro';
+
+@font-face {
+  /* font-properties */
+  font-family: BebasNeue;
+  src: url('/image/BEBAS___.ttf');
+}
+
+.homeDiv {
+ background: url("./image/homeHeader.jpg") no-repeat center center;
+}
+
+.countdown{
+  li{
+    span{
+      background: url("./image/radius2.png");
+    }
+  }
+}

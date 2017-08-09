@@ -1,0 +1,151 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .aboutDiv {
+    position: relative;
+    margin-top: 25px;
+
+    .aboutHeader{
+      padding-top: 0;
+      position: relative;
+      background: #f7fafd;
+      height: 100px;
+      top: -20px;
+
+      .aboutHeaderImg1{
+        position: absolute;
+        top: 37%;
+        left: 37%;
+        width: 120px;
+      }
+
+      .aboutHeaderImg2{
+        position: absolute;
+        top: 25%;
+        left: 32%;
+        width: 160px;
+      }
+
+      h2 {
+        font-family: MicrosoftYaHeiLight;
+        font-size: 22px;
+        color: #fff;
+        position: absolute;
+        top: 34%;
+        left: 38%;
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .aboutHeaderEn{
+      padding-top: 0;
+      position: relative;
+      background: #f7fafd;
+      height: 100px;
+      top: -20px;
+
+      .aboutHeaderImg1{
+        position: absolute;
+        top: 35%;
+        left: 34%;
+        width: 150px;
+      }
+
+
+      .aboutHeaderImg2{
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        width: 180px;
+      }
+
+      h2 {
+        font-family: MicrosoftYaHeiLight;
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        top: 39%;
+        left: 33%;
+      }
+    }
+
+    .aboutBody{
+      padding-bottom: 30px;
+    }
+
+    .aboutTitle{
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      h2{
+        font-size: 20px;
+        color: #012037;
+        margin: 0;
+      }
+      p{
+        font-size: 10px;
+        color: #688499;
+        padding-top: 3px;
+      }
+    }
+
+    .aboutTitleDiv{
+
+      img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+      }
+
+      h4{
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        color: #153259;
+        text-align: center;
+        small{
+          padding-left: 2px;
+          font-size: 10px;
+          color: #7b7e84;
+        }
+      }
+
+      p{
+        font-size: 12px;
+        color: #688499;
+        text-align: left;
+        margin-bottom: 30px;
+        //word-wrap: break-word;
+        //word-break: break-all;
+      }
+    }
+
+    .aboutTitleDiv2{
+      text-align: center;
+      padding-top: 20px;
+
+      img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+      }
+
+      h4{
+        display: block;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 12px;
+        color: #153259;
+        text-align: center;
+      }
+      p{
+        font-size: 12px;
+        color: #688499;
+        text-align: center;
+      }
+    }
+  }
+}
+

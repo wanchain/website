@@ -1,0 +1,53 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  //+++++++++++ div7 style+++++++++++++++++++++++++++++++++++++++++++++++++
+  .div6Header{
+    //background: url("../../../image/homeFooter.jpg") no-repeat center center;
+    .div6Title{
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 15px;
+
+      h2{
+        margin: 0;
+        padding: 80px 0 0 0;
+        font-family: "Microsoft YaHei";
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    .div6Body, .div6BodyEn{
+      margin-top: 20px;
+      padding: 0;
+      text-align: center;
+      .div6BodyCard{
+        //display: inline-block;
+        margin-bottom: 30px;
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+        p{
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 600;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+        }
+        span{
+          font-size: 14px;
+          color: #fff;
+          text-align: center;
+          display: inline-block;
+        }
+        b{
+          color: #3680f8;
+        }
+      }
+    }
+  }
+}

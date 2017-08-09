@@ -1,0 +1,115 @@
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  // ++++++++++++++++++div3 style+++++++++++++++++++++++++++++++++++++++++++++
+  .div2Header {
+    margin: 0 auto;
+    padding-bottom: 30px;
+    h2{
+      margin: 0;
+      padding: 30px 0 0 0;
+      font-family: "Microsoft YaHei";
+      font-size: 24px;
+      text-align: center;
+      color: #2c313a;
+    }
+
+    img{
+      margin: 0;
+      padding-top: 11px;
+      padding-bottom: 0;
+
+    }p{
+       font-family: "Microsoft YaHei";
+       color: #688499;
+       font-size: 12px;
+       text-align: center;
+       padding-top: 5px;
+     }
+  }
+
+  .astroModule2Img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 70%;
+    padding-bottom: 30px;
+  }
+
+  .astroModule2 img{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+
+  .astroModule2word {
+    margin: 0 auto;
+    display: block;
+
+    p {
+      font-size: 14px;
+      color: #688499;
+      text-align: left;
+      padding-top: 10px;
+    }
+  }
+
+
+  .astroModule2wordDiv {
+    position: relative;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid #eff4fb;
+    margin-bottom: 20px;
+
+    img{
+      display: inline-block;
+      padding: 0;
+      padding-top: 20px;
+      padding-left: 60px;
+    }
+
+    p {
+      display: inline-block;
+      text-align: left;
+      position: absolute;
+      top: 15px;
+      left: 100px;
+      font-size: 20px;
+      padding: 0;
+    }
+
+    small {
+      color: #296de9;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .div2-submit-area{
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .div2-submit-button{
+    width: 116px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #3680f8;
+    color: #fff;
+    font-size: 15px;
+    vertical-align: middle;
+    padding-top: 0;
+  }
+
+  .div2-submit-button img {
+    padding: 0;
+    padding-left: 7px;
+    margin-bottom: 9px;
+  }
+
+  .div2-submit-button:focus,
+  .div2-submit-button:hover{
+    color: #FFF;
+    border-color: transparent;
+  }
+
+}

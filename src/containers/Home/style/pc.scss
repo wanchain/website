@@ -1,0 +1,200 @@
+
+@media screen and (min-width: 1025px) {
+  .homeDiv {
+    height: 800px;
+    //background: url("../image/homeHeader.jpg") no-repeat center center;
+
+    .homeHeader{
+      img{
+        float: left;
+        padding-right: 10px;
+      }
+
+      .navbarImg{
+        display: none;
+      }
+
+      .homeHeaderUl{
+        padding-top: 20px;
+        float: left;
+        padding-left: 60px;
+
+        ul{
+          li{
+            float: left;
+            padding-left: 10px;
+            margin-left: 20px;
+            a{
+              color: #fff;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-bottom: 10px;
+            }
+          }
+          a:hover{
+            border-bottom: 1px solid #ffffff;
+            text-decoration: none;
+          }
+        }
+
+        .homeDropdown{
+          position: relative;
+          display: inline-block;
+
+          .homeDropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            text-align: center;
+            letter-spacing: 3px;
+            left: -30px;
+            a{
+              display: block;
+
+            }
+          }
+        }
+
+        .homeDropdown:hover .homeDropdown-content {
+          display: block;
+        }
+      }
+
+      .homeGit{
+        float: right;
+        color: #fff;
+        padding-top: 20px;
+        line-height: 26px;
+        p{
+          color: #fff;
+          float: right;
+          padding-left: 20px;
+          padding-top: 23px;
+        }
+        a{
+          color: #fff;
+          text-decoration: none;
+          cursor: pointer;
+          padding: 5px;
+        }
+        img{
+          padding-top: 0;
+          float: left;
+          margin: 0;
+        }
+      }
+
+      .homeGit a:hover{
+        color: #1f6ce9;
+      }
+    }
+
+    .homeHeaderBodyDiv1{
+      float: left;
+      margin-top: 180px;
+
+      .scrolltext{height:60px;overflow:hidden;}
+      /* quotation */
+      .quotation{height: 65px; overflow: hidden;}
+      .quotation li{line-height:28px;padding-bottom:35px;}
+      .quotation li .a-r{text-align:right;}
+
+      h2{
+        font-size: 40px;
+        color: #ffffff;
+
+        small{
+          color: #008aff;
+          font-size: 40px;
+        }
+      }
+      p{
+        padding-top: 10px;
+        font-size: 24px;
+        color: #ffffff;
+        small{
+          display: block;
+          font-size: 14px;
+          opacity: 0.65;
+          padding-top: 5px;
+          width: 500px;
+        }
+      }
+
+      .countdown{
+        padding-top: 10px;
+        width: 540px;
+        li{
+          display: inline-block;
+          span{
+            font-family: BebasNeue;
+            font-size: 48px;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            text-align: center;
+            line-height: 55px;
+          }
+          small{
+            padding-left: 30px;
+            padding-right: 30px;
+            color: #3680f8;
+            font-size: 48px;
+          }
+          p{
+            padding-top: 0;
+            font-size: 16px;
+            color: #ffffff;
+            opacity: 0.65;
+            font-family: BebasNeue;
+          }
+        }
+      }
+    }
+
+    .homeHeaderBodyDiv2{
+      float: left;
+      margin-top: 220px;
+      margin-left: 200px;
+
+      .home-submit-button{
+        width: 210px;
+        height: 50px;
+        margin-top: 20px;
+        background-color: #008aff;
+        color: #FFF;
+        font-size: 18px;
+        vertical-align: middle;
+        padding-top: 12px;
+        display: block;
+      }
+
+      .home-submit-button2{
+        width: 210px;
+        height: 50px;
+        margin-top: 20px;
+        border: 1px solid #008aff;
+        color: #FFF;
+        font-size: 18px;
+        vertical-align: middle;
+        padding-top: 12px;
+        display: block;
+        opacity: 0.6;
+      }
+
+      .home-submit-button .home-submit-button2:focus,
+      .home-submit-button2:hover{
+        color: #FFF;
+        border-color: transparent;
+      }
+
+      .home-submit-button:hover{
+        background: #1f6ce9;
+      }
+    }
+  }
+}
+

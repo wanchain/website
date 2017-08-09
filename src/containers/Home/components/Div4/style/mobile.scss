@@ -1,0 +1,58 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  //+++++++++++ div4 style+++++++++++++++++++++++++++++++++++++++++++++++++
+
+  .div3img1, .div3img2, .div3img3, .div3img4 {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0;
+    margin-top: 30px;
+  }
+
+  .div3img4 {
+    padding-bottom: 30px;
+  }
+
+  .officalModule{
+    margin-top: 60px;
+  }
+
+  .officalModule3{
+    background: #f7fafe;
+    //position: relative;
+    padding-bottom: 30px;
+
+    img {
+      padding-top: 0;
+      //padding-bottom: 100px;
+    }
+  }
+
+  .officalModule3Div{
+    margin-top: 20px;
+
+    img {
+      padding: 0;
+      padding-left: 0;
+      width: 10%;
+    }
+
+    h2{
+      font-size: 15px;
+      color: #2b363d;
+      font-weight: 600;
+      display: inline-block;
+      margin: 0;
+      margin-left: 15px;
+    }
+
+    span {
+      display: none;
+    }
+
+    p {
+      font-size: 10px;
+      color: #688499;
+      text-align: left;
+    }
+  }
+}

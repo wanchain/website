@@ -1,0 +1,33 @@
+@media screen and (min-width: 1025px) {
+  // +++++++++++++++++++++div1 style++++++++++++++++++++++++++++++++++++
+  .div1Header {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 30px;
+
+    h2{
+      margin: 0;
+      padding: 80px 0 0 0;
+      font-family: "Microsoft YaHei";
+      font-size: 24px;
+      text-align: center;
+      color: #2c313a;
+    }
+
+    .div1HeaderImg2{
+      display: block;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
+
+    p{
+      font-family: "Microsoft YaHei";
+      color: #688499;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 5px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
