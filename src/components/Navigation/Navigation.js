@@ -116,8 +116,8 @@ class Navigation extends Component {
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
                             <li><Link to="/crowdsale">ICO</Link></li>
-                            <li><a href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="/files/Wanchain-Yellowpaper-CH-version.pdf" target="_blank">Yellowpaper</a></li>
+                            <li><a href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">Whitepaper</a></li>
+                            <li><a href="/files/Wanchain-Yellowpaper-EN-version.pdf" target="_blank">Yellowpaper</a></li>
                             <li><Link to="/about">Team</Link></li>
                         </ul>
                     </div>
@@ -128,8 +128,8 @@ class Navigation extends Component {
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
                             <li><Link to="/crowdsale">ICO</Link></li>
-                            <li><a href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="/files/Wanchain-Yellowpaper-CH-version.pdf" target="_blank">Yellowpaper</a></li>
+                            <li><a href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">Whitepaper</a></li>
+                            <li><a href="/files/Wanchain-Yellowpaper-EN-version.pdf" target="_blank">Yellowpaper</a></li>
                             <li><Link to="/about">Team</Link></li>
                         </ul>
                     </div>
@@ -144,8 +144,8 @@ class Navigation extends Component {
                                 <div className={styles.navDropdown}>
                                     <a>Docs</a>
                                     <div className={styles['navDropdown-content']}>
-                                        <a href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">Whitepaper</a>
-                                        <a href="/files/Wanchain-Yellowpaper-CH-version.pdf" target="_blank">Yellowpaper</a>
+                                        <a href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">Whitepaper</a>
+                                        <a href="/files/Wanchain-Yellowpaper-EN-version.pdf" target="_blank">Yellowpaper</a>
                                     </div>
                                 </div>
                             </li>
