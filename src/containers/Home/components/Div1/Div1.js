@@ -27,7 +27,6 @@ class Div1 extends React.Component {
       document.styleSheets[0].insertRule('@-webkit-keyframes fadeRight {0% {opacity: 0; transform: translateX(-10%);} 100% {opacity: 1; transform: translateX(0);}}');
       document.styleSheets[0].insertRule('@-webkit-keyframes fadeLeft {0% {opacity: 0; transform: translateX(10%);} 100% {opacity: 1; transform: translateX(0);}}');
       if (div1HeaderImg2) {
-
         const off = div1HeaderImg2.offsetTop;
         const scrollTop = document.body.scrollTop;
         const clientHeight = document.documentElement.clientHeight;

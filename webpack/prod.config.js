@@ -15,7 +15,7 @@ var WebpackIsomorphicToolsPlugin = require('webpack-isomorphic-tools/plugin');
 var webpackIsomorphicToolsPlugin = new WebpackIsomorphicToolsPlugin(require('./webpack-isomorphic-tools'));
 
 module.exports = {
-  devtool: 'source-map',
+  // devtool: 'cheap-module-eval-source-map',
   context: path.resolve(__dirname, '..'),
   entry: {
     'main': [

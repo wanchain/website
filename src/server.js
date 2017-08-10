@@ -22,17 +22,17 @@ import {Provider} from 'react-redux';
 import getRoutes from './routes';
 
 
-const mysite = ('/root/wanchainWeb/src/cert/wanchain.org.key'); //key
-const mysiteCrt = ('/root/wanchainWeb/src/cert/3bb55a3526ededcc.crt'); //
-const gd1 = ('/root/wanchainWeb/src/cert/gd_bundle-g2-g1.crt');
+const mysite = ('/root/wanchain/website/src/cert/wanchain.org.key'); //key
+const mysiteCrt = ('/root/wanchain/website/src/cert/3bb55a3526ededcc.crt'); //
+const gd1 = ('/root/wanchain/website/src/cert/gd_bundle-g2-g1.crt');
 
 const targetUrl = 'http://' + config.apiHost + ':' + config.apiPort;
 const pretty = new PrettyError();
 
 const app = new Express();
 
-const debug = true;
-// const debug = false;
+// const debug = true;
+const debug = false;
 
 if (!debug) {
   const httpapp = new Express();
@@ -242,12 +242,12 @@ if (!debug) {
   });
 
   if (config.port) {
-    server.listen(config.port, (err) => {
+    server.listen(8080, (err) => {
       if (err) {
         console.error(err);
       }
       console.info('----\n==> ✅  %s is running in localhost, talking to API server on %s.', config.app.title, config.apiPort);
-      console.info('==> 💻  Open http://%s:%s in a browser to view the app.', config.host, config.port);
+      console.info('==> 💻  Open http://%s:%s in a browser to view the app.', config.host, 8080);
     });
   } else {
     console.error('==>     ERROR: No PORT environment variable has been specified');
