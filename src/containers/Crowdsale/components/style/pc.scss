@@ -59,6 +59,7 @@
         line-height: 25px;
         color: #688499;
         display: inline-block;
+        margin-bottom: 0;
       }
       .crowd-div4Header-pot{
         width: 5px;
@@ -96,7 +97,7 @@
         display: inline-block;
         margin-right: 25px;
         position: relative;
-        top: -8px;
+        top: -13px;
 
         hr{
           width: 2px;
@@ -170,13 +171,14 @@
             font-size: 16px;
             font-weight: 600;
             color: #353b47;
+            margin-bottom: 5px;
           }
           span{
             font-weight: 500;
             text-align: left;
             display: block;
             padding-left: 32px;
-            padding-top: 10px;
+            padding-top: 0;
           }
         }
       }

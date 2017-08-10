@@ -1,8 +1,8 @@
 {
-  "name": "react-redux-universal-hot-example",
-  "description": "Example of an isomorphic (universal) webapp using react redux and hot reloading",
-  "repository": "https://github.com/erikras/react-redux-universal-hot-example",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "name": "Wanchian",
+  "description": "Wanchain websitr",
+  "repository": "https://github.com/wanchain/website",
+  "logo": "",
   "keywords": [
     "react",
     "isomorphic",
