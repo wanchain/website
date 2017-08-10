@@ -33,6 +33,12 @@ module.exports = Object.assign({
         {property: 'og:image:width', content: '200'},
         {property: 'og:image:height', content: '200'}
       ]
+    },
+    files: {
+      WhitepaperCH: '/files/Wanchain-Whitepaper-CH-version.pdf',
+      WhitepaperEN: '/files/Wanchain-Whitepaper-EN-version.pdf',
+      YellowpaperCH: '/files/Wanchain-Yellowpaper-CH-version.pdf',
+      YellowpaperEN: '/files/Wanchain-Yellowpaper-EN-version.pdf',
     }
   },
 

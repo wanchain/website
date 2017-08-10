@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
+import config from '../../config';
 import { getClientWidthFunc, getNavButtonFunc, changeLangFunc } from 'redux/modules/auth';
 
 import currentDate from './utils/currentDate';
@@ -129,8 +130,8 @@ export default class Home extends Component {
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
                             <li><Link to="/crowdsale">ICO</Link></li>
-                            <li><a href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">白皮书</a></li>
-                            <li><a href="/files/Wanchain-l-CH-version.pdf" target="_blank">黄皮书</a></li>
+                            <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
+                            <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                             <li><Link to="/about">团队</Link></li>
                         </ul>
                     </div>
@@ -141,8 +142,8 @@ export default class Home extends Component {
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
                             <li><Link to="/crowdsale">ICO</Link></li>
-                            <li><a href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">白皮书</a></li>
-                            <li><a href="/files/Wanchain-Yellowpaper-CH-version.pdf" target="_blank">黄皮书</a></li>
+                            <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
+                            <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                             <li><Link to="/about">团队</Link></li>
                         </ul>
                     </div>
@@ -157,8 +158,8 @@ export default class Home extends Component {
                                 <div className={styles.homeDropdown}>
                                     <a>文档</a>
                                     <div className={styles['homeDropdown-content']}>
-                                        <a href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">白皮书</a>
-                                        <a href="/files/Wanchain-Yellowpaper-CH-version.pdf" target="_blank">黄皮书</a>
+                                        <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
+                                        <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                                     </div>
                                 </div>
                             </li>
@@ -196,7 +197,7 @@ export default class Home extends Component {
                         </ul>
                     </div>
                     <div className={styles.homeHeaderBodyDiv2}>
-                        <a className={styles['home-submit-button'] + ' btn'} href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">白皮书</a>
+                        <a className={styles['home-submit-button'] + ' btn'} href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                         <Link to="/crowdsale" className={styles['home-submit-button2'] + ' btn'}>ICO</Link>
                     </div>
                 </div>
@@ -213,8 +214,8 @@ export default class Home extends Component {
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
                             <li><Link to="/crowdsale">ICO</Link></li>
-                            <li><a href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="/files/Wanchain-Yellowpaper-EN-version.pdf" target="_blank">Yellowpaper</a></li>
+                            <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
+                            <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                             <li><Link to="/about">Team</Link></li>
                         </ul>
                     </div>
@@ -225,8 +226,8 @@ export default class Home extends Component {
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
                             <li><Link to="/crowdsale">ICO</Link></li>
-                            <li><a href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="/files/Wanchain-Yellowpaper-EN-version.pdf" target="_blank">Yellowpaper</a></li>
+                            <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
+                            <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                             <li><Link to="/about">Team</Link></li>
                         </ul>
                     </div>
@@ -241,8 +242,8 @@ export default class Home extends Component {
                                 <div className={styles.homeDropdown}>
                                     <a>Docs</a>
                                     <div className={styles['homeDropdown-content']}>
-                                        <a href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">Whitepaper</a>
-                                        <a href="/files/Wanchain-Yellowpaper-EN-version.pdf" target="_blank">Yellowpaper</a>
+                                        <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
+                                        <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
                                     </div>
                                 </div>
                             </li>
@@ -287,7 +288,7 @@ export default class Home extends Component {
                         </ul>
                     </div>
                     <div className={styles.homeHeaderBodyDiv2}>
-                        <a className={styles['home-submit-button'] + ' btn'} href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">Whitepaper</a>
+                        <a className={styles['home-submit-button'] + ' btn'} href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
                         <Link to="/crowdsale" className={styles['home-submit-button2'] + ' btn'}>ICO</Link>
                     </div>
                 </div>
