@@ -31,8 +31,8 @@ const pretty = new PrettyError();
 
 const app = new Express();
 
-// const debug = true;
-const debug = false;
+const debug = true;
+// const debug = false;
 
 if (!debug) {
   const httpapp = new Express();
