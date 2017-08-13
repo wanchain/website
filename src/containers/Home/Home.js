@@ -149,7 +149,7 @@ export default class Home extends Component {
                     </div>
                     }
 
-                    {!navButton && clientWidth >= 1024 &&
+                    {!navButton && clientWidth > 1024 &&
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style1}>
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
@@ -233,7 +233,7 @@ export default class Home extends Component {
                     </div>
                     }
 
-                    {!navButton && clientWidth >= 1024 &&
+                    {!navButton && clientWidth > 1024 &&
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style1}>
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>

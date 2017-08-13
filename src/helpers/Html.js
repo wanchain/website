@@ -19,7 +19,7 @@ export default class Html extends Component {
       <html lang="en-us">
         <head>
           {head.base.toComponent()}
-          { /*{head.title.toComponent()}*/ }
+          {head.title.toComponent()}
           {head.meta.toComponent()}
           {head.link.toComponent()}
           {head.script.toComponent()}
