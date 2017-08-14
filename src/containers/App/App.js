@@ -75,7 +75,7 @@ class App extends Component {
 
     return (
       <div className={styles.app}>
-        {language === 'zn' && <Helmet title="万维链-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
+        {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
         {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>}
         {transition.pathname !== '/' && <Navigation/>}
         <div className={styles.appContent}>
