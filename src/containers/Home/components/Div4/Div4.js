@@ -55,7 +55,7 @@ class Div4 extends React.Component {
                                       通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。
                                   </p>
                               </div>
-                              <img src={part2} id="div3img2"/>
+                              <img src={part2} id="div3img2" />
                           </div>
                       </div>
 

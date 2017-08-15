@@ -37,11 +37,12 @@ class Div1 extends React.Component {
       }
 
       // div2
+      const {clientWidth} = this.props;
       const div1oimg1 = document.getElementById('div1oimg1');
       const div1oimg2 = document.getElementById('div1oimg2');
       const div1oimg3 = document.getElementById('div1oimg3');
       const div1oimg4 = document.getElementById('div1oimg4');
-      if (div1oimg1) {
+      if (div1oimg1 && clientWidth > 1024) {
         const off1 = div1oimg1.offsetTop + 1500;
         const off2 = div1oimg2.offsetTop + 1500;
         const off3 = div1oimg3.offsetTop + 1500;

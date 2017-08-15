@@ -92,13 +92,12 @@
       text-align: center;
 
       .crowd-div2HeaderDivLeft{
-        width: 100%;
+        width: 90%;
         border: 1px solid #ededed;
         display: inline-block;
-        margin-right: 25px;
         position: relative;
         top: -28px;
-        margin: 0;
+        margin: 0 auto;
 
         hr{
           width: 2px;
@@ -113,21 +112,17 @@
         }
 
         h4{
-          position: absolute;
-          top: 30px;
-          left: 15px;
           font-size: 16px;
           color: #353b47;
-          margin: 0;
+          margin-left: 10px;
+          margin-top: 30px;
+          text-align: left;
           strong{
             color: #3c85ff;
           }
         }
 
         small{
-          position: absolute;
-          top: 60px;
-          left: 5px;
           text-align: left;
           font-size: 10px;
           color: #353b47;
@@ -138,15 +133,14 @@
           border: 1px solid #d2e1f9;
           background: #f5f9ff;
           text-align: left;
-          margin-top: 120px;
+          margin-top: 20px;
           padding-bottom: 10px;
           margin-left: 10px;
           margin-right: 10px;
 
           .crowd-div2HeaderDivLeft-Div1{
             position: relative;
-            height: 50px;
-            width: 400px;
+            height: 55px;
             span{
               position: absolute;
               font-size: 14px;
@@ -174,6 +168,7 @@
             font-size: 15px;
             font-weight: 600;
             color: #353b47;
+            margin: 0;
           }
           span{
             font-weight: 500;
@@ -187,13 +182,12 @@
       }
 
       .crowd-div2HeaderDivRight{
-        width: 100%;
+        width: 90%;
         height: 215px;
         border: 1px solid #ededed;
         display: inline-block;
-        margin-right: 25px;
         position: relative;
-        margin: 0;
+        margin: 0 auto;
         hr{
           width: 2px;
           height: 20px;
@@ -206,12 +200,13 @@
           left: 0;
         }
         h4{
-          position: absolute;
-          top: 30px;
-          left: 15px;
           font-size: 16px;
           color: #353b47;
           margin: 0;
+          margin-top: 30px;
+          margin-left: 15px;
+          text-align: left;
+          margin-bottom: 10px;
           strong{
             color: #16d1c8;
           }
@@ -227,10 +222,8 @@
         }
 
         .rowd-div2HeaderDivRight-Div{
-          position: absolute;
-          margin-top: 150px;
-          margin-left: 24px;
-          text-align: left;
+          margin-top: 80px;
+          text-align: center;
           img{
             padding: 10px 30px;
             border: 1px solid #ededed;
@@ -248,9 +241,9 @@
         height: 460px;
         border: 1px solid #ededed;
         display: inline-block;
-        margin-right: 25px;
         position: relative;
         top: 0;
+        margin: 0 auto;
 
         hr{
           width: 2px;
@@ -266,20 +259,17 @@
         }
 
         h4{
-          position: absolute;
-          top: 35px;
-          left: -10px;
           font-size: 15px;
           color: #353b47;
+          text-align: left;
+          margin-left: 15px;
+          margin-top: 40px;
           strong{
             color: #3c85ff;
           }
         }
 
         small{
-          position: absolute;
-          top: 78px;
-          left: 8px;
           text-align: center;
           font-size: 12px;
           color: #353b47;
@@ -291,8 +281,8 @@
           width: 90%;
           height: 190px;
           text-align: left;
-          margin-top: 150px;
-          margin-left: 15px;
+          margin: 0 auto;
+          margin-top: 20px;
 
           .crowd-div2HeaderDivLeftEn-Div1{
             position: relative;
@@ -334,7 +324,7 @@
         height: 360px;
         border: 1px solid #ededed;
         display: inline-block;
-        margin-right: 25px;
+        margin: 0 auto;
         position: relative;
         margin-top: 30px;
         hr{
@@ -350,29 +340,24 @@
           margin: 0;
         }
         h4{
-          position: absolute;
-          top: 35px;
-          left: 1px;
           font-size: 15px;
           color: #353b47;
+          text-align: left;
+          margin-left: 15px;
+          margin-top: 40px;
           strong{
             color: #16d1c8;
           }
         }
         small{
-          position: absolute;
-          top: 78px;
-          left: 1px;
-          text-align: center;
+          text-align: left;
           font-size: 12px;
           color: #353b47;
         }
 
         .rowd-div2HeaderDivRightEn-Div{
-          position: absolute;
-          margin-top: 150px;
-          margin-left: 24px;
-          text-align: left;
+          margin-top: 40px;
+          text-align: center;
           img{
             padding: 10px 30px;
             border: 1px solid #ededed;

@@ -118,8 +118,8 @@ export default class Home extends Component {
     const style1 = {display: 'inline_block'};
     return (
         <div>
-            {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施" script={[{src: 'scroll/scroll.js'}, {src: '/jquery/jquery.min.js'}]}/>}
-            {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'" script={[{src: 'scroll/scroll.js'}, {src: '/jquery/jquery.min.js'}]}/>}
+            {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施" script={[{src: '/jquery/jquery.min.js'}, {src: 'scroll/scroll.js'}]}/>}
+            {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'" script={[{src: '/jquery/jquery.min.js'}, {src: 'scroll/scroll.js'}]}/>}
             {language === 'zn' &&
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>
