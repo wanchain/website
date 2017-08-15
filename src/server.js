@@ -40,8 +40,7 @@ if (!debug) {
 
   httpapp.use('*', function(req, res) {
     console.log("HTTP: " + req.url);
-    res.writeHead(301, {'content-type': 'text/html'});
-    return res.redirect("https://" + req.headers["host"] + req.url);
+    return res.redirect(301, "https://" + req.headers["host"] + req.url);
   });
   httpapp.listen(80);
 

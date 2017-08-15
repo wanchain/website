@@ -64,6 +64,7 @@ class Navigation extends Component {
                             <li><Link to="/crowdsale">ICO</Link></li>
                             <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
                             <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
+                            <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
                             <li><Link to="/about">团队</Link></li>
                         </ul>
                     </div>
@@ -76,6 +77,7 @@ class Navigation extends Component {
                             <li><Link to="/crowdsale">ICO</Link></li>
                             <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
                             <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
+                            <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
                             <li><Link to="/about">团队</Link></li>
                         </ul>
                     </div>
@@ -92,6 +94,7 @@ class Navigation extends Component {
                                     <div className={styles['navDropdown-content']}>
                                         <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                                         <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
+                                        <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
                                     </div>
                                 </div>
                             </li>
@@ -119,6 +122,7 @@ class Navigation extends Component {
                             <li><Link to="/crowdsale">ICO</Link></li>
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
+                            <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                             <li><Link to="/about">Team</Link></li>
                         </ul>
                     </div>
@@ -131,6 +135,7 @@ class Navigation extends Component {
                             <li><Link to="/crowdsale">ICO</Link></li>
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
+                            <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                             <li><Link to="/about">Team</Link></li>
                         </ul>
                     </div>
@@ -147,6 +152,7 @@ class Navigation extends Component {
                                     <div className={styles['navDropdown-content']}>
                                         <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
                                         <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
+                                        <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>
                                     </div>
                                 </div>
                             </li>

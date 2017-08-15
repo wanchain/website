@@ -39,6 +39,8 @@ module.exports = Object.assign({
       WhitepaperEN: '/files/Wanchain-Whitepaper-EN-version.pdf',
       YellowpaperCH: '/files/Wanchain-Yellowpaper-CH-version.pdf',
       YellowpaperEN: '/files/Wanchain-Yellowpaper-EN-version.pdf',
+      CommercialCH: '/files/Wanchain-Commercial-Whitepaper-CH-version.pdf',
+      CommercialEN: '/files/Wanchain-Commercial-Whitepaper-EN-version.pdf',
     }
   },
 
