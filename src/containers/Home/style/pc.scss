@@ -95,22 +95,18 @@
     .homeHeaderBodyDiv1{
       float: left;
       margin-top: 180px;
-
-      .scrolltext{height:65px;overflow:hidden;}
-      /* quotation */
-      .quotation{height: 65px; overflow: hidden;}
-      .quotation li{line-height:28px;padding-bottom:35px;}
-      .quotation li .a-r{text-align:right;}
-
-      h2{
-        font-size: 40px;
-        color: #ffffff;
-
-        small{
-          color: #008aff;
+      #scroll{
+        h2{
           font-size: 40px;
+          color: #ffffff;
+
+          small{
+            color: #008aff;
+            font-size: 40px;
+          }
         }
       }
+
       p{
         padding-top: 10px;
         font-size: 24px;

@@ -118,8 +118,8 @@ export default class Home extends Component {
     const style1 = {display: 'inline_block'};
     return (
         <div>
-            {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施" script={[{src: '/jquery/jquery.min.js'}, {src: 'scroll/scroll.js'}]}/>}
-            {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'" script={[{src: '/jquery/jquery.min.js'}, {src: 'scroll/scroll.js'}]}/>}
+            {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施" script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
+            {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'" script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
             {language === 'zn' &&
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>
@@ -177,14 +177,10 @@ export default class Home extends Component {
 
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
-                        <div className={styles.scrolltext}>
-                            <div className={styles.quotation} id="quotation" >
-                                <ul>
-                                    <li><h2>分布式未来"<small>银行</small>"</h2></li>
-                                    <li><h2>数字经济超级"<small>金融市场</small>"</h2></li>
-                                    <li><h2>区块链的"<small>互联网</small>"</h2></li>
-                                </ul>
-                            </div>
+                        <div className="rw-words rw-words-2" id={styles.scroll}>
+                            <h2>分布式未来"<small>银行</small>"</h2>
+                            <h2>数字经济超级"<small>金融市场</small>"</h2>
+                            <h2>区块链的"<small>互联网</small>"</h2>
                         </div>
                         <p>连接不同数字资产，连接现在与未来
                             <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
@@ -261,22 +257,21 @@ export default class Home extends Component {
 
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
-                        <div className={styles.scrolltext}>
-                            <div className={styles.quotation} id="quotation" >
-                                {language === 'en' && Number(clientWidth) > 767 &&
-                                <ul>
-                                    <li><h2>A Distributed "<small>Super Financial Market</small>"</h2></li>
-                                    <li><h2>Internet of "<small>Blockchains</small>"</h2></li>
-                                </ul>
-                                }
-                                {language === 'en' && Number(clientWidth) <= 767 &&
-                                <ul>
-                                    <li><h2>A Distributed <br/>"<small>Super Financial Market</small>"</h2></li>
-                                    <li><h2>Internet of "<small>Blockchains</small>"</h2></li>
-                                </ul>
-                                }
-                            </div>
+                        {language === 'en' && Number(clientWidth) > 767 &&
+                        <div className="rw-words rw-words-2" id={styles.scroll}>
+                            <h2>A Distributed "<small>Super Financial Market</small>"</h2>
+                            <h2>Internet of "<small>Blockchains</small>"</h2>
+                            <h2>A Distributed "<small>Super Financial Market</small>"</h2>
                         </div>
+                        }
+
+                        {language === 'en' && Number(clientWidth) <= 767 &&
+                        <div className="rw-words rw-words-2" id={styles.scroll}>
+                            <h2>A Distributed <br/>"<small>Super Financial Market</small>"</h2>
+                            <h2>Internet of "<small>Blockchains</small>"</h2>
+                            <h2>A Distributed <br/>"<small>Super Financial Market</small>"</h2>
+                        </div>
+                        }
                         <p>Links different digital assets,connecting the present and future
                             <small>Wanchain seeks to create a new distributed financial infrastructure, connecting different blockchain networks together to exchange value.</small>
                         </p>

@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import * as authActions from 'redux/modules/auth';
+import Helmet from 'react-helmet';
 
 @connect(
     state => ({user: state.auth.user}),
@@ -10,26 +11,18 @@ class LoginSuccess extends Component {
   static propTypes = {
     user: PropTypes.object,
     logout: PropTypes.func
-  }
+  };
 
   render() {
-    const {user, logout} = this.props;
+    const {user} = this.props;
     return (user &&
       <div className="container">
+        <Helmet title="万维链(Wanchain)-后台管理系统" script={[{src: '/wangeditor/js/require.js', 'data-main': '/wangeditor/js/main'}]} link ={[{href: '/wangeditor/editor/css/wangEditor.min.css', type: 'text/css', rel: 'stylesheet'}]}/>
         <h1>Login Success</h1>
 
         <div>
-          <p>Hi, {user.name}. You have just successfully logged in, and were forwarded here
-            by <code>componentWillReceiveProps()</code> in <code>App.js</code>, which is listening to
-            the auth reducer via redux <code>@connect</code>. How exciting!
-          </p>
-
-          <p>
-            The same function will forward you to <code>/</code> should you chose to log out. The choice is yours...
-          </p>
-
-          <div>
-            <button className="btn btn-danger" onClick={logout}><i className="fa fa-sign-out"/>{' '}Log Out</button>
+          <div id="wanchainEditor" style={{height: '500px', width: '1000px'}}>
+            <p>文章内容</p>
           </div>
         </div>
       </div>

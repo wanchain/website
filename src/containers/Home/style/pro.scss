@@ -73,20 +73,16 @@
   .homeHeaderBodyDiv1{
     margin-top: 60px;
     text-align: center;
-
-    .scrolltext{height:70px;overflow:hidden; position: relative; top: 60px;}
-    /* quotation */
-    #quotation{height: 68px; overflow: hidden;}
-    #quotation li{line-height:28px;padding-bottom:35px;}
-    #quotation li .a-r{text-align:right;}
-
-    h2{
-      font-size: 30px;
-      color: #ffffff;
-
-      small{
+    #scroll{
+      h2{
         font-size: 30px;
-        color: #008aff;
+        color: #ffffff;
+        margin-left: 320px;
+        margin-top: 50px;
+        small{
+          font-size: 30px;
+          color: #008aff;
+        }
       }
     }
     p{

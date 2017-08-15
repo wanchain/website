@@ -10,44 +10,38 @@ export default class Login extends Component {
   static propTypes = {
     user: PropTypes.object,
     login: PropTypes.func,
-    logout: PropTypes.func
-  }
+    logout: PropTypes.func,
+    getUserFunc: PropTypes.func,
+  };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const input = this.refs.username;
-    this.props.login(input.value);
-    input.value = '';
-  }
+    const {email, passwd} = this.refs;
+    const data = {username: email.value, password: passwd.value};
+    // console.log('data', data);
+    this.props.getUserFunc(data);
+    email.value = '';
+    passwd.value = '';
+  };
 
   render() {
-    const {user, logout} = this.props;
+    // const {user, logout} = this.props;
+    const location = require('./images/location.png');
     const styles = require('./Login.scss');
     return (
-      <div className={styles.loginPage + ' container'}>
-        <Helmet title="Login"/>
-        <h1>Login</h1>
-        {!user &&
-        <div>
-          <form className="login-form form-inline" onSubmit={this.handleSubmit}>
-            <div className="form-group">
-              <input type="text" ref="username" placeholder="Enter a username" className="form-control"/>
-            </div>
-            <button className="btn btn-success" onClick={this.handleSubmit}><i className="fa fa-sign-in"/>{' '}Log In
-            </button>
-          </form>
-          <p>This will "log you in" as this user, storing the username in the session of the API server.</p>
-        </div>
-        }
-        {user &&
-        <div>
-          <p>You are currently logged in as {user.name}.</p>
-
-          <div>
-            <button className="btn btn-danger" onClick={logout}><i className="fa fa-sign-out"/>{' '}Log Out</button>
+      <div className={styles['app-location'] + ' container'}>
+        <Helmet title="Wanchain-Login"/>
+        <h2>Welcome to Wanchian</h2>
+        <div className={styles.line}><span></span></div>
+        <div className={styles.location}><img src={location} className={styles['img-responsive']} alt="" /></div>
+        <form>
+          <input type="text" className={styles.text} placeholder="E-mail address" ref="email"/>
+          <input type="password" placeholder="Password" ref="passwd"/>
+          <div className={styles.submit}>
+            <a id="mySubmit" onClick={this.handleSubmit.bind(this)}>Login</a>
           </div>
-        </div>
-        }
+          <div className="clear"></div>
+        </form>
       </div>
     );
   }

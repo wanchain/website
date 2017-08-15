@@ -13,11 +13,15 @@ var connection = mysql.createConnection({
 export default function users(req) {
     connection.connect();
 
-    var  userGetSql = 'SELECT * FROM users';
+    var username = req.body.username;
+    var password = req.body.password;
+
+    var  userGetSql = 'SELECT * FROM users where username = ? and password= ? ';
+    console.log('sql', userGetSql);
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             //查 query
-            connection.query(userGetSql,function (err, result) {
+            connection.query(userGetSql, [username, password], function (err, result) {
                 if(err){
                     reject(errors);
                     console.log('[SELECT ERROR] - ',err.message);

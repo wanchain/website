@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
     database: mysqlConfig.database,
 });
 
-export default function users(req) {
+export default function subscribe(req) {
     connection.connect();
 
     var email = req.body.email; //bodyParser does the magic

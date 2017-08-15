@@ -74,19 +74,16 @@
     margin-top: -20px;
     text-align: center;
 
-    .scrolltext{height:80px;overflow:hidden; position: relative; top: 60px;}
-    /* quotation */
-    .quotation{height: 86px; overflow: hidden;}
-    .quotation li{line-height:28px;padding-bottom:35px;}
-    .quotation li .a-r{text-align:right;}
-
-    h2{
-      font-size: 30px;
-      color: #ffffff;
-
-      small{
+    #scroll{
+      h2{
         font-size: 30px;
-        color: #008aff;
+        color: #ffffff;
+        margin-top: 50px;
+        margin-left: 30px;
+        small{
+          font-size: 30px;
+          color: #008aff;
+        }
       }
     }
     p{

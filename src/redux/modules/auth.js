@@ -8,10 +8,6 @@ const LOGOUT = 'redux-example/auth/LOGOUT';
 const LOGOUT_SUCCESS = 'redux-example/auth/LOGOUT_SUCCESS';
 const LOGOUT_FAIL = 'redux-example/auth/LOGOUT_FAIL';
 
-const USERS = 'redux-example/auth/USERS';
-const USERS_SUCCESS = 'redux-example/auth/LOGOUT_SUCCESS';
-const USERS_FAIL = 'redux-example/auth/LOGOUT_FAIL';
-
 const CLIENT_WIDTH = 'redux-example/auth/CLIENT_WIDTH';
 const HOME_NAV = 'redux-example/auth/HOME_NAV';
 const HOME_LANG = 'redux-example/auth/HOME_LANG';
@@ -123,17 +119,6 @@ export function load() {
   };
 }
 
-export function login(name) {
-  return {
-    types: [LOGIN, LOGIN_SUCCESS, LOGIN_FAIL],
-    promise: (client) => client.post('/login', {
-      data: {
-        name: name
-      }
-    })
-  };
-}
-
 export function logout() {
   return {
     types: [LOGOUT, LOGOUT_SUCCESS, LOGOUT_FAIL],
@@ -142,10 +127,12 @@ export function logout() {
 }
 
 
-export function getUserFunc() {
+export function getUserFunc(data) {
   return {
-    types: [USERS, USERS_SUCCESS, USERS_FAIL],
-    promise: (client) => client.get('/users')
+    types: [LOGIN, LOGIN_SUCCESS, LOGIN_FAIL],
+    promise: (client) => client.post('/users', {
+      data: data,
+    })
   };
 }
 

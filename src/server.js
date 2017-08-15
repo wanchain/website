@@ -31,8 +31,8 @@ const pretty = new PrettyError();
 
 const app = new Express();
 
-// const debug = true;
-const debug = false;
+const debug = true;
+// const debug = false;
 
 if (!debug) {
   const httpapp = new Express();
@@ -40,6 +40,7 @@ if (!debug) {
 
   httpapp.use('*', function(req, res) {
     console.log("HTTP: " + req.url);
+    res.writeHead(301, {'content-type': 'text/html'});
     return res.redirect("https://" + req.headers["host"] + req.url);
   });
   httpapp.listen(80);
