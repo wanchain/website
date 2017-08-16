@@ -40,15 +40,37 @@
 	white-space: nowrap;
 	overflow: hidden;
 }
+/*.rw-words-1 h2{*/
+	/*font-size: 500%;*/
+	/*line-height: 82%;*/
+	/*-webkit-animation: rotateWordsFirst 18s linear infinite 0s;*/
+	/*-moz-animation: rotateWordsFirst 18s linear infinite 0s;*/
+	/*-o-animation: rotateWordsFirst 18s linear infinite 0s;*/
+	/*-ms-animation: rotateWordsFirst 18s linear infinite 0s;*/
+	/*animation: rotateWordsFirst 18s linear infinite 0s;*/
+/*}*/
+
 .rw-words-1 h2{
-	font-size: 500%;
-	line-height: 82%;
-	-webkit-animation: rotateWordsFirst 18s linear infinite 0s;
-	-moz-animation: rotateWordsFirst 18s linear infinite 0s;
-	-o-animation: rotateWordsFirst 18s linear infinite 0s;
-	-ms-animation: rotateWordsFirst 18s linear infinite 0s;
-	animation: rotateWordsFirst 18s linear infinite 0s;
+	font-size: 300%;
+	/*font-style: italic;*/
+	text-indent: 5px;
+	line-height: 90%;
+	/*color: #da0a0a;	*/
+	-webkit-animation: rotateWordsSecond 6s ease-in infinite 0s;
+	-moz-animation: rotateWordsSecond 6s ease-in infinite 0s;
+	-o-animation: rotateWordsSecond 6s ease-in infinite 0s;
+	-ms-animation: rotateWordsSecond 6s ease-in infinite 0s;
+	animation: rotateWordsSecond 6s ease-in infinite 0s;
 }
+.rw-words-1 h2:nth-child(2) {
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	animation-delay: 3s;
+}
+
+
 .rw-words-2 h2{
 	font-size: 300%;
 	/*font-style: italic;*/
@@ -61,14 +83,14 @@
 	-ms-animation: rotateWordsSecond 9s ease-in infinite 0s;
 	animation: rotateWordsSecond 9s ease-in infinite 0s;
 }
-.rw-words h2:nth-child(2) {
+.rw-words-2 h2:nth-child(2) {
     -webkit-animation-delay: 3s;
 	-moz-animation-delay: 3s;
 	-o-animation-delay: 3s;
 	-ms-animation-delay: 3s;
 	animation-delay: 3s;
 }
-.rw-words h2:nth-child(3) {
+.rw-words-2 h2:nth-child(3) {
     -webkit-animation-delay: 6s;
 	-moz-animation-delay: 6s;
 	-o-animation-delay: 6s;

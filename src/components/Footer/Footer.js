@@ -58,12 +58,6 @@ class Footer extends React.Component {
       document.getElementById('qq').style.display = 'none';
     };
 
-    // onClick = () => {
-    //   const {wanchain_subscribe} = this.refs;
-    //   const data = {email: wanchain_subscribe.value};
-    //   this.props.insertSubscribeFunc(data);
-    // };
-
     onClick = () => {
       const {wanchain_subscribe} = this.refs;
 
@@ -106,7 +100,7 @@ class Footer extends React.Component {
       const {language, warningModal} = this.props;
 
       const styles = require('./Footer.scss');
-      const email = require('./image/email.png');
+      // const email = require('./image/email.png');
       // const robot1 = require('./image/reddit.png');
       const slack1 = require('./image/slack.png');
 
@@ -123,7 +117,7 @@ class Footer extends React.Component {
                 <div className={styles.FooterContainer + ' container'}>
                     {language === 'zn' &&
                     <div className={styles.FooterformGroup + ' form-group col-lg-4'}>
-                        <img src={email}/>
+                        {/* <img src={email}/> */}
                         <input type="text" className="form-control" id="name" ref="wanchain_subscribe" placeholder="Please enter the email address" />
                         <div className={styles['submit-area']}>
                             <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
@@ -135,7 +129,7 @@ class Footer extends React.Component {
 
                     {language === 'en' &&
                     <div className={styles.FooterformGroup + ' form-group col-lg-4'}>
-                        <img src={email}/>
+                        {/* <img src={email}/> */}
                         <input type="text" className="form-control" id="name" ref="wanchain_subscribe" placeholder="Please enter the email address" />
                         <div className={styles['submit-area']}>
                             <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"

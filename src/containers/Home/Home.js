@@ -264,18 +264,16 @@ export default class Home extends Component {
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
                         {language === 'en' && Number(clientWidth) > 767 &&
-                        <div className="rw-words rw-words-2" id={styles.scroll}>
+                        <div className="rw-words rw-words-1" id={styles.scroll}>
                             <h2>A Distributed "<small>Super Financial Market</small>"</h2>
                             <h2>Internet of "<small>Blockchains</small>"</h2>
-                            <h2>A Distributed "<small>Super Financial Market</small>"</h2>
                         </div>
                         }
 
                         {language === 'en' && Number(clientWidth) <= 767 &&
-                        <div className="rw-words rw-words-2" id={styles.scroll}>
+                        <div className="rw-words rw-words-1" id={styles.scroll}>
                             <h2>A Distributed <br/>"<small>Super Financial Market</small>"</h2>
                             <h2>Internet of "<small>Blockchains</small>"</h2>
-                            <h2>A Distributed <br/>"<small>Super Financial Market</small>"</h2>
                         </div>
                         }
                         <p>Links different digital assets,connecting the present and future
