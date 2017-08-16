@@ -29,6 +29,7 @@
       background-color: #1e2736;
       padding-left: 20px;
       border-radius: 50px;
+      height: 40px;
     }
 
     p {
@@ -85,12 +86,13 @@
   }
 
   .submit-button{
-    width: 153px;
-    height: 36px;
+    width: 154px;
+    height: 40px;
     margin-top: 20px;
     background-color: #3680f8;
-    padding-top: 1px;
+    padding-top: 3px;
     border-radius: 50px;
+    padding-left: 0;
     img {
       padding: 0;
       padding-left: 7px;
