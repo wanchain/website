@@ -288,7 +288,7 @@ export default class Home extends Component {
                             <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
                         </ul>
                       <div className={styles.bannerBtn}>
-                        <Link to="/crowdsale">crowdfunding</Link>
+                        <Link to="/crowdsale">ICO</Link>
                         <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
                         <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
                         <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>

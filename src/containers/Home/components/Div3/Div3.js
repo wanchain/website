@@ -63,7 +63,7 @@ class Div3 extends React.Component {
                           </div>
                           <div className={styles.astroModule2wordDivEn}>
                               <img src={two} />
-                              <p>The ledger not only supports<span>smart contracts,</span> but also supports <span>privacy protection</span></p>
+                              <p>The ledger not only supports <span>smart contracts,</span> but also supports <span>privacy protection</span></p>
                           </div>
 
                           <div className={styles['div2-submit-area']}>
