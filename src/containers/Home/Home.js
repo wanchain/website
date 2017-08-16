@@ -185,7 +185,7 @@ export default class Home extends Component {
                             <h2>数字经济超级"<small>金融市场</small>"</h2>
                             <h2>区块链的"<small>互联网</small>"</h2>
                         </div>
-                        <p>连接不同数字资产，连接现在与未来
+                        <p className={styles.bannerp}>连接不同数字资产，连接现在与未来
                             <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
                         </p>
                         <ul className={styles.countdown}>
@@ -194,10 +194,12 @@ export default class Home extends Component {
                             <li><span >{this.state.date.minutes}</span><small>:</small><p>{this.state.date.ref_minutes}</p></li>
                             <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
                         </ul>
-                    </div>
-                    <div className={styles.homeHeaderBodyDiv2}>
-                        <a className={styles['home-submit-button'] + ' btn'} href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
-                        <Link to="/crowdsale" className={styles['home-submit-button2'] + ' btn'}>ICO</Link>
+                      <div className={styles.bannerBtn}>
+                        <Link to="/crowdsale">众筹</Link>
+                        <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
+                        <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
+                        <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -276,7 +278,7 @@ export default class Home extends Component {
                             <h2>Internet of "<small>Blockchains</small>"</h2>
                         </div>
                         }
-                        <p>Links different digital assets,connecting the present and future
+                        <p className={styles.bannerp}>Links different digital assets,connecting the present and future
                             <small>Wanchain seeks to create a new distributed financial infrastructure, connecting different blockchain networks together to exchange value.</small>
                         </p>
                         <ul className={styles.countdown}>
@@ -285,10 +287,12 @@ export default class Home extends Component {
                             <li><span >{this.state.date.minutes}</span><small>:</small><p>{this.state.date.ref_minutes}</p></li>
                             <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
                         </ul>
-                    </div>
-                    <div className={styles.homeHeaderBodyDiv2}>
-                        <a className={styles['home-submit-button'] + ' btn'} href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
-                        <Link to="/crowdsale" className={styles['home-submit-button2'] + ' btn'}>ICO</Link>
+                      <div className={styles.bannerBtn}>
+                        <Link to="/crowdsale">crowdfunding</Link>
+                        <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
+                        <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
+                        <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>
+                      </div>
                     </div>
                 </div>
             </div>

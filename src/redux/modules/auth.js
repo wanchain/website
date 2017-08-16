@@ -1,3 +1,5 @@
+import cookie from 'react-cookie';
+
 const LOAD = 'redux-example/auth/LOAD';
 const LOAD_SUCCESS = 'redux-example/auth/LOAD_SUCCESS';
 const LOAD_FAIL = 'redux-example/auth/LOAD_FAIL';
@@ -49,6 +51,7 @@ export default function reducer(state = initialState, action = {}) {
         loggingIn: true
       };
     case LOGIN_SUCCESS:
+      cookie.save('token', action.result[0].username, { path: '/' });
       return {
         ...state,
         loggingIn: false,

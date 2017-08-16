@@ -170,4 +170,32 @@
       background: #1f6ce9;
     }
   }
+
+  //banner 8.16
+  .bannerBtn{
+    height: 36px;
+    margin:60px auto 0 19%;
+    text-align: center;
+  }
+  .bannerBtn a{
+    width:130px;
+    height:36px;
+    line-height: 36px;
+    display: block;
+    float:left;
+    border-radius: 150px;
+    color:#fff;
+    margin-right:20px;
+    background: rgba(5,17,43,0.5);
+    transition:background 1s;
+  }
+  .bannerBtn a:hover{
+    text-decoration: none;
+    background-color: #008aff!important;
+
+  }
+
+  .bannerp{
+    text-align: center;}
+
 }

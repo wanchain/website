@@ -13,3 +13,4 @@ src/cert/
 *compiled.js.map
 api/mysql
 
+static/upload/

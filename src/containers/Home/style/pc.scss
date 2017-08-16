@@ -94,13 +94,19 @@
 
     .homeHeaderBodyDiv1{
       float: left;
-      margin-top: 180px;
-      width: 66%;
+      margin-top: 140px;
+      //8.16
+      width:1040px;
+      height:451px;
+      background: rgba(4, 13, 36, 0.4);
+      margin-left: 5.5%;
       #scroll{
         h2{
           font-size: 40px;
           color: #ffffff;
           height: 45px;
+          margin-top: 60px;
+          text-align: center;
           small{
             color: #008aff;
             font-size: 40px;
@@ -109,21 +115,23 @@
       }
 
       p{
-        padding-top: 10px;
+        padding-top: 60px;
         font-size: 24px;
         color: #ffffff;
         small{
           display: block;
           font-size: 14px;
           opacity: 0.65;
-          padding-top: 5px;
-          width: 500px;
+          padding-top: 10px;
+          width: 100%;
+          margin: 0 auto;
         }
       }
 
       .countdown{
-        padding-top: 10px;
+        padding-top: 30px;
         width: 540px;
+        margin: 0 auto;
         li{
           display: inline-block;
           span{
@@ -194,5 +202,31 @@
       }
     }
   }
+  //banner 8.16
+  .bannerBtn{
+    height: 36px;
+    margin:60px auto 0 19%;
+    text-align: center;
+  }
+  .bannerBtn a{
+    width:130px;
+    height:36px;
+    line-height: 36px;
+    display: block;
+    float:left;
+    border-radius: 150px;
+    color:#fff;
+    margin-right:20px;
+    background: rgba(5,17,43,0.5);
+    transition:background 1s;
+  }
+  .bannerBtn a:hover{
+    text-decoration: none;
+    background-color: #008aff!important;
+
+  }
+
+  .bannerp{
+    text-align: center;}
 }
 

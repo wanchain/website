@@ -41,7 +41,16 @@ module.exports = Object.assign({
       YellowpaperEN: '/files/Wanchain-Yellowpaper-EN-version.pdf',
       CommercialCH: '/files/Wanchain-Commercial-Whitepaper-CH-version.pdf',
       CommercialEN: '/files/Wanchain-Commercial-Whitepaper-EN-version.pdf',
-    }
+    },
+    upload: {
+      devpath: 'D:/zsunData/myPro/WanChainNode/website/websiteVersion2.0/static/upload/',
+      devserver: 'http://localhost:8080/',
+      devuploadDir: 'D:/image',
+
+      prodpath: '/root/wanchain/website/static/upload/',
+      prodserver: 'https://www.wanchain.org/',
+      produploadDir: '/root/wanchain/image',
+    },
   },
 
 }, environment);

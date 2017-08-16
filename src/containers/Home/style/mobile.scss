@@ -1,3 +1,27 @@
+@media screen and (max-width: 320px) {
+  .homeHeaderBodyDiv1{
+    margin-top: 25px !important;
+  }
+  .bannerBtn{
+    height: 36px !important;
+    margin: 60px auto 0 0!important;
+    text-align: center !important;
+
+    a {
+      width: 50% !important;
+      height: 36px !important;
+      line-height: 36px !important;
+      display: block !important;
+      float: left !important;
+      border-radius: 150px !important;
+      color: #fff !important;
+      margin-right: 0 !important;
+      background: rgba(5, 17, 43, 0.5) !important;
+      transition: background 1s !important;
+      margin-bottom: 10px !important;
+    }
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .homeDiv {
     height: 660px;
@@ -71,17 +95,17 @@
   }
 
   .homeHeaderBodyDiv1{
-    margin-top: -20px;
+    margin-top: 0;
     text-align: center;
 
     #scroll{
       h2{
-        font-size: 29px;
+        font-size: 25px;
         color: #ffffff;
         margin-top: 50px;
         text-align: center;
         small{
-          font-size: 29px;
+          font-size: 25px;
           color: #008aff;
         }
       }
@@ -171,5 +195,33 @@
       background: #1f6ce9;
     }
   }
+
+  //banner 8.16
+  .bannerBtn{
+    height: 36px;
+    margin:60px auto 0 12%;
+    text-align: center;
+  }
+  .bannerBtn a{
+    width:130px;
+    height:36px;
+    line-height: 36px;
+    display: block;
+    float:left;
+    border-radius: 150px;
+    color:#fff;
+    margin-right:20px;
+    background: rgba(5,17,43,0.5);
+    transition:background 1s;
+    margin-bottom: 10px;
+  }
+  .bannerBtn a:hover{
+    text-decoration: none;
+    background-color: #008aff!important;
+
+  }
+
+  .bannerp{
+    text-align: center;}
 }
 
