@@ -265,24 +265,26 @@ td{ vertical-align: middle;}
             margin-top: 10px;
           }
           .img5{
-            padding: 2px 25px;
+            padding: 3px 35px;
             text-align: center;
             margin: 0 auto;
             display: block;
             margin-top: 10px;
-            width: 53%;
+            width: 200px;
           }
 
           .img3{
             margin-top: 10px;
             padding: 6px 30px;
           }
+
+          .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover{background: #16d1c8; box-shadow: 0px 6px 6px 0px rgba(22, 209, 200, 0.2);}
         }
       }
 
       .crowd-div2HeaderDivLeftEn{
         width: 300px;
-        height: 460px;
+        height: 495px;
         border: 1px solid #ededed;
         display: inline-block;
         position: relative;
@@ -430,17 +432,18 @@ td{ vertical-align: middle;}
             margin-top: 10px;
           }
           .img5{
-            padding: 2px 25px;
+            padding: 3px 35px;
             text-align: center;
             margin: 0 auto;
             display: block;
             margin-top: 10px;
-            width: 53%;
+            width: 200px;
           }
           .img3{
             margin-top: 10px;
             padding: 6px 30px;
           }
+          .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover{background: #16d1c8; box-shadow: 0px 6px 6px 0px rgba(22, 209, 200, 0.2);}
         }
       }
     }
