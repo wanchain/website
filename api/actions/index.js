@@ -7,3 +7,5 @@ export * as survey from './survey/index';
 
 export users from './users/users';
 export subscribe from './subscribe/subscribe';
+export news from './news/news';
+export querynews from './news/querynews';

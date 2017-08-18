@@ -18,10 +18,21 @@ const SUBSCRIBE = 'redux-example/auth/SUBSCRIBE';
 const SUBSCRIBE_SUCCESS = 'redux-example/auth/SUBSCRIBE_SUCCESS';
 const SUBSCRIBE_FAIL = 'redux-example/auth/SUBSCRIBE_FAIL';
 
+const NEWS = 'redux-example/auth/NEWS';
+const NEWS_SUCCESS = 'redux-example/auth/NEWS_SUCCESS';
+const NEWS_FAIL = 'redux-example/auth/NEWS_FAIL';
+
+const TABLE_STATE = 'redux-example/auth/TABLE_STATE';
+
+const QUERY_NEWS = 'redux-example/auth/QUERY_NEWS';
+const QUERY_NEWS_SUCCESS = 'redux-example/auth/QUERY_NEWS_SUCCESS';
+const QUERY_NEWS_FAIL = 'redux-example/auth/QUERY_NEWS_FAIL';
+
 const initialState = {
   loaded: false,
   navButton: false,
   language: 'zn',
+  tableState: 0,
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -106,6 +117,56 @@ export default function reducer(state = initialState, action = {}) {
         subscribeState: action.result,
       };
 
+    case NEWS:
+      return {
+        ...state,
+        insertState: true
+      };
+    case NEWS_SUCCESS:
+      setTimeout(()=>{
+        global.dataFeedback.emit('onNewsComplete');
+      }, 50);
+      return {
+        ...state,
+        insertResult: action.result,
+      };
+    case NEWS_FAIL:
+      setTimeout(()=>{
+        global.dataFeedback.emit('onNewsComplete');
+      }, 50);
+      return {
+        ...state,
+        insertResult: action.error,
+      };
+
+    case TABLE_STATE:
+      return {
+        ...state,
+        tableState: action.reload,
+      };
+
+    case QUERY_NEWS:
+      return {
+        ...state,
+        queryNewsState: true
+      };
+    case QUERY_NEWS_SUCCESS:
+      setTimeout(()=>{
+        global.dataFeedback.emit('onQueryNewsComplete');
+      }, 50);
+      return {
+        ...state,
+        queryNewsResult: action.result,
+      };
+    case QUERY_NEWS_FAIL:
+      setTimeout(()=>{
+        global.dataFeedback.emit('onQueryNewsComplete');
+      }, 50);
+      return {
+        ...state,
+        queryNewsResult: action.error,
+      };
+
     default:
       return state;
   }
@@ -168,3 +229,29 @@ export function insertSubscribeFunc(data) {
     })
   };
 }
+
+export function insertNewsFunc(data) {
+  return {
+    types: [NEWS, NEWS_SUCCESS, NEWS_FAIL],
+    promise: (client) => client.post('/news', {
+      data: data,
+    })
+  };
+}
+
+export function getTableStateFunc(data) {
+  return {
+    type: TABLE_STATE,
+    reload: data,
+  };
+}
+
+export function queryNewsFunc(data) {
+  return {
+    types: [QUERY_NEWS, QUERY_NEWS_SUCCESS, QUERY_NEWS_FAIL],
+    promise: (client) => client.post('/querynews', {
+      data: data,
+    })
+  };
+}
+
