@@ -22,19 +22,19 @@ class Div1 extends React.Component {
                 <table className="table table-striped">
                     <tbody>
                     <tr>
-                        <td>第一阶段</td>
+                        <td style={{verticalAlign: 'middle'}}>第一阶段</td>
                         <td><h4>8.5折</h4></td>
-                        <td>2017 09-06 12:00 -- 09-13 11:59 <small>UTC</small></td>
+                        <td style={{verticalAlign: 'middle'}}>2017 09-06 12:00 -- 09-13 11:59 <small>UTC</small></td>
                     </tr>
                     <tr>
-                        <td>第二阶段</td>
+                        <td style={{verticalAlign: 'middle'}}>第二阶段</td>
                         <td><h4>9.5折</h4></td>
-                        <td>2017 09-13 12:00 -- 09-20 11:59 <small>UTC</small></td>
+                        <td style={{verticalAlign: 'middle'}}>2017 09-13 12:00 -- 09-20 11:59 <small>UTC</small></td>
                     </tr>
                     <tr>
-                        <td>第三阶段</td>
+                        <td style={{verticalAlign: 'middle'}}>第三阶段</td>
                         <td><h4>原价</h4></td>
-                        <td>2017 09-20 12:00 -- 09-27 11:59 <small>UTC</small></td>
+                        <td style={{verticalAlign: 'middle'}}>2017 09-20 12:00 -- 09-27 11:59 <small>UTC</small></td>
                     </tr>
                     </tbody>
                 </table>

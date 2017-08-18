@@ -1,33 +1,36 @@
 import React from 'react';
 import {IndexRoute, Route} from 'react-router';
-import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
+// import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
     App,
     Home,
     About,
     Login,
-    LoginSuccess,
+    // LoginSuccess,
     NotFound,
     Crowdsale,
   } from 'containers';
 
-export default (store) => {
-  const requireLogin = (nextState, replace, cb) => {
-    function checkAuth() {
-      const { auth: { user }} = store.getState();
-      if (!user) {
-        // oops, not logged in, so can't be here!
-        replace('/');
-      }
-      cb();
-    }
+import Table from './containers/LoginSuccess/Table';
+import Add from './containers/LoginSuccess/Add';
 
-    if (!isAuthLoaded(store.getState())) {
-      store.dispatch(loadAuth()).then(checkAuth);
-    } else {
-      checkAuth();
-    }
-  };
+export default () => {
+  // const requireLogin = (nextState, replace, cb) => {
+  //   function checkAuth() {
+  //     const { auth: { user }} = store.getState();
+  //     if (!user) {
+  //       // oops, not logged in, so can't be here!
+  //       replace('/');
+  //     }
+  //     cb();
+  //   }
+  //
+  //   if (!isAuthLoaded(store.getState())) {
+  //     store.dispatch(loadAuth()).then(checkAuth);
+  //   } else {
+  //     checkAuth();
+  //   }
+  // };
 
   /**
    * Please keep routes in alphabetical order
@@ -38,10 +41,13 @@ export default (store) => {
       <IndexRoute component={Home}/>
 
       { /* Routes requiring login */ }
-      <Route onEnter={requireLogin}>
+      { /* <Route onEnter={requireLogin}> */ }
         { /* <Route path="chat" component={Chat}/> */ }
-        <Route path="loginSuccess" component={LoginSuccess}/>
-      </Route>
+        {/* <Route path="table" component={Table}/> */}
+        {/* <Route path="add" component={Add}/> */}
+      {/* </Route> */}
+        <Route path="table" component={Table}/>
+        <Route path="add" component={Add}/>
 
       { /* Routes */ }
       <Route path="about" component={About}/>

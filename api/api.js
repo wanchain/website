@@ -8,6 +8,10 @@ import PrettyError from 'pretty-error';
 import http from 'http';
 import SocketIo from 'socket.io';
 
+import connectMysql from './mysql/connectMysql';
+
+connectMysql.connect();
+
 const pretty = new PrettyError();
 const app = express();
 

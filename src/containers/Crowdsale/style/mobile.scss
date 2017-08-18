@@ -37,17 +37,19 @@
           padding-left: 5px;
           padding-right: 5px;
         }
-
+        span{
+          font-size: 16px;
+        }
         p {
           font-size: 14px;
           color: #ffffff;
-          padding-top: 20px;
           line-height: 25px;
-          padding-left: 10px;
-          margin-right: 10px;
+          padding: 0 20px;
+          margin-top: 10px;
         }
       }
     }
   }
+
 }
 

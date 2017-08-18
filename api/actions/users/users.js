@@ -1,18 +1,6 @@
-var mysql  = require('mysql');
-
-import mysqlConfig from '../../mysql/mysql.config';
-
-var connection = mysql.createConnection({
-    host     : mysqlConfig.host,
-    user     : mysqlConfig.user,
-    password : mysqlConfig.password,
-    port: mysqlConfig.port,
-    database: mysqlConfig.database,
-});
+import mysqlConfig from '../../mysql/connectMysql';
 
 export default function users(req) {
-    connection.connect();
-
     var username = req.body.username;
     var password = req.body.password;
 
@@ -21,7 +9,7 @@ export default function users(req) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             //查 query
-            connection.query(userGetSql, [username, password], function (err, result) {
+            mysqlConfig.query(userGetSql, [username, password], function (err, result) {
                 if(err){
                     reject(errors);
                     console.log('[SELECT ERROR] - ',err.message);
@@ -32,7 +20,7 @@ export default function users(req) {
                 console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$');
             });
 
-            connection.end();
+            // connection.end();
         }, 1000);
     });
 }

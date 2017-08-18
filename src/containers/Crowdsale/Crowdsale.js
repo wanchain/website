@@ -72,7 +72,7 @@ class Crowdsale extends Component {
                     {Number(clientWidth) <= 1024 &&
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>Token Distribution</h2>
-                        <p style={{fontSize: '15px'}}>The total supply of Wancoins is 210 million.
+                        <p style={{fontSize: '14px'}}>The total supply of Wancoins is 210 million.
                             The ICO target is to raise 30 million USD equivalent in Ether.
                             The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens.
                             Eventually the online tokens will be equal to the crowd-funding tokens in quantity.

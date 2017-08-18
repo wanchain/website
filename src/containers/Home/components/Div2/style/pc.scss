@@ -34,7 +34,11 @@
             position: absolute;
             top: 50px;
 
-            img{    margin-left: 20px;}
+            img{
+              margin-left: 20px;
+              display: block;
+              float: left;
+            }
             p{
               display: inline-block;
               font-size: 20px;
@@ -122,14 +126,15 @@
 
             img{    margin-left: 20px;}
             p{
-              display: inline-block;
               font-size: 17px;
               font-weight: 600;
               color: #2b363d;
-              padding-left: 18px;
+              padding: 15px 0 0 10px;
               padding-right: 0;
               position: relative;
               top: 0;
+              display: block;
+              float: left;
               small{
                 color: #3680f8;
                 font-size: 17px;
@@ -171,7 +176,6 @@
 
         #card1{margin-left: 0}
         #card4{margin-right: 0}
-        #div1oP3, #div1oP4 { top: 16px; }
       }
 
     }

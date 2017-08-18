@@ -23,12 +23,12 @@
   .crowd-div1Header {
     margin: 0 auto;
     padding-bottom: 30px;
-    font-size: 16px;
-
+    font-size: 11px;
+td{ vertical-align: middle;}
     h2{
       margin: 0;
       font-family: "Microsoft YaHei";
-      font-size: 24px;
+      font-size: 18px;
       text-align: center;
       color: #2c313a;
       margin-bottom: 40px;
@@ -36,6 +36,7 @@
 
     h4{
       color: #ff7800;
+      font-size: 14px;
     }
     small{
       color: #3c85ff;
@@ -56,7 +57,7 @@
         margin-top: -22px;
         font-size: 14px;
         font-weight: 500;
-        line-height: 25px;
+        line-height: 1.5em;
         color: #688499;
         display: inline-block;
         margin-left: 10px;
@@ -75,6 +76,19 @@
   }
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
+  .leftImg{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .leftImgEn{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
   .crowd-div2Header {
     margin: 0 auto;
     //padding-bottom: 30px;
@@ -183,7 +197,7 @@
 
       .crowd-div2HeaderDivRight{
         width: 90%;
-        height: 215px;
+        height: 355px;
         border: 1px solid #ededed;
         display: inline-block;
         position: relative;
@@ -229,10 +243,34 @@
             border: 1px solid #ededed;
             border-radius: 4px;
           }
-          #img1{padding: 7px 38px;}
-          #img2{ padding: 7px 60px; margin: 20px;}
-          #img1:hover, #img2:hover, #img3:hover{background: #16d1c8;}
 
+          .img1{
+            padding: 11px 29px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+          }
+          .img2{
+            padding: 3px 57px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+          }
+          .img4{
+            padding: 2px 37px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+          }
+          .img5{
+            padding: 2px 25px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+          }
         }
       }
 
@@ -279,7 +317,7 @@
           border: 1px solid #d2e1f9;
           background: #f5f9ff;
           width: 90%;
-          height: 190px;
+          height: 200px;
           text-align: left;
           margin: 0 auto;
           margin-top: 20px;
@@ -321,7 +359,7 @@
 
       .crowd-div2HeaderDivRightEn{
         width: 300px;
-        height: 360px;
+        height: 460px;
         border: 1px solid #ededed;
         display: inline-block;
         margin: 0 auto;
@@ -365,9 +403,33 @@
             margin: 0 auto;
             display: block;
           }
-          #img1{padding: 7px 38px;}
-          #img2{ padding: 7px 60px; margin: 20px;}
-
+          .img1{
+            padding: 11px 29px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+          }
+          .img2{
+            padding: 3px 57px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+          }
+          .img4{
+            padding: 2px 37px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+          }
+          .img5{
+            padding: 2px 25px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+          }
         }
       }
     }
@@ -398,6 +460,7 @@
       }
       p{
         color: #688499;
+        line-height: 1.5em;
       }
     }
   }
@@ -443,7 +506,7 @@
       margin-top: -22px;
       font-size: 14px;
       font-weight: 500;
-      line-height: 25px;
+      line-height: 1.5em;
       color: #688499;
       display: inline-block;
       position: relative;

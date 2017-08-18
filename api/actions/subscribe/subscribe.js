@@ -1,18 +1,7 @@
-var mysql  = require('mysql');
-
-import mysqlConfig from '../../mysql/mysql.config';
+import mysqlConfig from '../../mysql/connectMysql';
 import Date from '../../utils/Date';
 
-var connection = mysql.createConnection({
-    host     : mysqlConfig.host,
-    user     : mysqlConfig.user,
-    password : mysqlConfig.password,
-    port: mysqlConfig.port,
-    database: mysqlConfig.database,
-});
-
 export default function subscribe(req) {
-    connection.connect();
 
     var email = req.body.email; //bodyParser does the magic
     var create_time = new Date().Format("yyyy-MM-dd hh:mm:ss");
@@ -23,7 +12,7 @@ export default function subscribe(req) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             //增
-            connection.query(insertSubscribeSql, insertSubscrbeParams,function (err, result) {
+            mysqlConfig.query(insertSubscribeSql, insertSubscrbeParams,function (err, result) {
                 if(err){
                     reject({errors: err.message, status: 0});
                     console.log('[SELECT ERROR] - ',err.message);
@@ -33,8 +22,6 @@ export default function subscribe(req) {
                 resolve({result: 'insert success', status: 1});
                 console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$');
             });
-
-            connection.end();
         }, 1000);
     });
 }

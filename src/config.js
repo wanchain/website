@@ -51,6 +51,19 @@ module.exports = Object.assign({
       prodserver: 'https://www.wanchain.org/',
       produploadDir: '/root/wanchain/image',
     },
+    JS: {
+      wangeditor: {
+        script: {
+          src: '/wangeditor/js/require.js',
+          dataMain: '/wangeditor/js/main',
+        },
+        link: {
+          href: '/wangeditor/editor/css/wangEditor.min.css',
+          type: 'text/css',
+          rel: 'stylesheet',
+        }
+      }
+    },
   },
 
 }, environment);

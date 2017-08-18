@@ -1,17 +1,7 @@
-var mysql  = require('mysql');
-import mysqlConfig from '../../mysql/mysql.config';
+import mysqlConfig from '../../mysql/connectMysql';
 import Date from '../../utils/Date';
 
-var connection = mysql.createConnection({
-    host     : mysqlConfig.host,
-    user     : mysqlConfig.user,
-    password : mysqlConfig.password,
-    port: mysqlConfig.port,
-    database: mysqlConfig.database,
-});
-
 export default function news(req) {
-    connection.connect();
 
     var title = req.body.title;
     var des = req.body.des;
@@ -26,7 +16,7 @@ export default function news(req) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             //增
-            connection.query(newsSql, insertNews, function (err, result) {
+            mysqlConfig.query(newsSql, insertNews, function (err, result) {
                 if(err){
                     reject({errors: err.message, status: 0});
                     console.log('[INSERT NEWS ERROR] - ',err.message);
@@ -36,8 +26,6 @@ export default function news(req) {
                 resolve({result: 'insert news success', status: 1});
                 console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$');
             });
-
-            connection.end();
         }, 1000);
     });
 }
