@@ -84,6 +84,7 @@ class Div2 extends React.Component {
                             <img src={icoage1} className={styles.img2} id="img2" onMouseEnter={() => this.onEnter('img2')} onMouseLeave={() => this.onLeave('img2')}/>
                             <img src={bizhongchou1} className={styles.img4} id="img4" onMouseEnter={() => this.onEnter('img4')} onMouseLeave={() => this.onLeave('img4')}/>
                             <img src={race1} className={styles.img5} id="img5" onMouseEnter={() => this.onEnter('img5')} onMouseLeave={() => this.onLeave('img5')}/>
+                            <img src={token1} className={styles.img3} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>
                         </div>
                     </div>
                 </div>
@@ -107,4 +108,3 @@ class Div2 extends React.Component {
 // export default connect(mapStateToProps, mapDispatchToProps)(Div2)
 export default Div2;
 
-// <img src={token1} className={styles.img3} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>
