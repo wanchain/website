@@ -101,7 +101,7 @@ class Footer extends React.Component {
 
       const styles = require('./Footer.scss');
       // const email = require('./image/email.png');
-      // const robot1 = require('./image/reddit.png');
+      const robot1 = require('./image/reddit.png');
       const slack1 = require('./image/slack.png');
 
       const twitter1 = require('./image/twitter.png');
@@ -142,7 +142,7 @@ class Footer extends React.Component {
                     <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
                         <img src={wecater} className={styles.wechat} id="wechat"/>
                         <img src={qqer} className={styles.qq} id="qq"/>
-
+                        <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
                         <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
                         <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
                         <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
@@ -162,4 +162,3 @@ class Footer extends React.Component {
 
 export default Footer;
 
-// <a ><img src={robot1}/></a>
