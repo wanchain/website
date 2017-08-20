@@ -33,7 +33,7 @@ const APP_TITLE = 'redux-example/auth/APP_TITLE';
 const initialState = {
   loaded: false,
   navButton: false,
-  // language: 'zn',
+  language: 'zn',
   tableState: 0,
 };
 
