@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 // import { IndexLink } from 'react-router';
 import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
-import { isLoaded as isAuthLoaded, load as loadAuth, logout, changeLangFunc } from 'redux/modules/auth';
+import { isLoaded as isAuthLoaded, load as loadAuth, logout, changeLangFunc, getTitleFunc } from 'redux/modules/auth';
 // import { logout } from 'redux/modules/auth';
 import { Navigation, Footer } from 'components';
 import { push } from 'react-router-redux';
@@ -28,8 +28,8 @@ import { asyncConnect } from 'redux-async-connect';
 }])
 
 @connect(
-    state => ({user: state.auth.user, transition: state.routing.locationBeforeTransitions, language: state.auth.language, }),
-    {logout, pushState: push, changeLangFunc})
+    state => ({user: state.auth.user, transition: state.routing.locationBeforeTransitions, language: state.auth.language, appTitle: state.auth.appTitle}),
+    {logout, pushState: push, changeLangFunc, getTitleFunc})
 class App extends Component {
   static propTypes = {
     children: PropTypes.object.isRequired,
@@ -39,7 +39,10 @@ class App extends Component {
     changeLangFunc: PropTypes.func,
 
     transition: PropTypes.object,
-    pushState: PropTypes.func.isRequired
+    pushState: PropTypes.func.isRequired,
+
+    appTitle: PropTypes.string,
+    getTitleFunc: PropTypes.func,
   };
 
   static contextTypes = {
@@ -48,6 +51,11 @@ class App extends Component {
 
   componentWillMount() {
     this.props.changeLangFunc(global.language);
+    if (global.language === 'zh-CN') {
+      this.props.getTitleFunc('万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施');
+    } else {
+      this.props.getTitleFunc("wanchain-A Distributed 'Super Financial Market'");
+    }
   }
 
   // componentDidMount() {
@@ -75,12 +83,11 @@ class App extends Component {
 
   render() {
     const styles = require('./App.scss');
-    const {transition, language} = this.props;
+    const {transition, appTitle} = this.props;
 
     return (
       <div className={styles.app}>
-        {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
-        {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>}
+        <Helmet title={appTitle}/>
         {transition.pathname !== '/' && <Navigation/>}
         <div className={styles.appContent}>
           {this.props.children}
@@ -91,20 +98,5 @@ class App extends Component {
   }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     logout: () => {
-//       dispatch(logout());
-//     },
-//   };
-// };
-//
-// const mapStateToProps = (state) => ({
-//   user: state.auth.user,
-//   transition: state.routing.locationBeforeTransitions,
-//   language: state.auth.language,
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(App);
 export default App;
-//  <Helmet {...config.app.head}/>
+

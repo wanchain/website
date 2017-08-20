@@ -28,6 +28,8 @@ const QUERY_NEWS = 'redux-example/auth/QUERY_NEWS';
 const QUERY_NEWS_SUCCESS = 'redux-example/auth/QUERY_NEWS_SUCCESS';
 const QUERY_NEWS_FAIL = 'redux-example/auth/QUERY_NEWS_FAIL';
 
+const APP_TITLE = 'redux-example/auth/APP_TITLE';
+
 const initialState = {
   loaded: false,
   navButton: false,
@@ -166,6 +168,11 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         queryNewsResult: action.error,
       };
+    case APP_TITLE:
+      return {
+        ...state,
+        appTitle: action.reload,
+      };
 
     default:
       return state;
@@ -255,3 +262,10 @@ export function queryNewsFunc(data) {
   };
 }
 
+
+export function getTitleFunc(data) {
+  return {
+    type: APP_TITLE,
+    reload: data,
+  };
+}
