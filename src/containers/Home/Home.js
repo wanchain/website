@@ -17,7 +17,7 @@ import Div6 from './components/Div6/Div6';
 import Div7 from './components/Div7/Div7';
 
 @connect(
-    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, appTitle: state.auth.appTitle}),
+    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, }),
     {getClientWidthFunc, getNavButtonFunc, changeLangFunc})
 export default class Home extends Component {
     static propTypes = {
@@ -27,7 +27,6 @@ export default class Home extends Component {
       getNavButtonFunc: PropTypes.func,
       changeLangFunc: PropTypes.func,
       language: PropTypes.string,
-      appTitle: PropTypes.string,
     };
 
     constructor(props) {
@@ -113,13 +112,14 @@ export default class Home extends Component {
     const logo = require('./image/logo.png');
     const nav = require('./image/nav1.png');
     const github = require('./image/github.png');
-    const {navButton, clientWidth, language, appTitle} = this.props;
+    const {navButton, clientWidth, language} = this.props;
 
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
     return (
         <div>
-            <Helmet title={appTitle} script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>
+            {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施" script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
+            {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'" script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
             {language === 'zn' &&
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>

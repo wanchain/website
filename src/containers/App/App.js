@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 // import { IndexLink } from 'react-router';
 import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
-import { isLoaded as isAuthLoaded, load as loadAuth, logout, changeLangFunc, getTitleFunc } from 'redux/modules/auth';
+import { isLoaded as isAuthLoaded, load as loadAuth, logout, changeLangFunc } from 'redux/modules/auth';
 // import { logout } from 'redux/modules/auth';
 import { Navigation, Footer } from 'components';
 import { push } from 'react-router-redux';
 // import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
 
-// import getLange from '../Home/utils/getLange';
+import getLange from '../Home/utils/getLange';
 
 @asyncConnect([{
   promise: ({store: {dispatch, getState}}) => {
@@ -28,8 +28,8 @@ import { asyncConnect } from 'redux-async-connect';
 }])
 
 @connect(
-    state => ({user: state.auth.user, transition: state.routing.locationBeforeTransitions, language: state.auth.language, appTitle: state.auth.appTitle}),
-    {logout, pushState: push, changeLangFunc, getTitleFunc})
+    state => ({user: state.auth.user, transition: state.routing.locationBeforeTransitions, language: state.auth.language, }),
+    {logout, pushState: push, changeLangFunc})
 class App extends Component {
   static propTypes = {
     children: PropTypes.object.isRequired,
@@ -39,32 +39,20 @@ class App extends Component {
     changeLangFunc: PropTypes.func,
 
     transition: PropTypes.object,
-    pushState: PropTypes.func.isRequired,
-
-    appTitle: PropTypes.string,
-    getTitleFunc: PropTypes.func,
+    pushState: PropTypes.func.isRequired
   };
 
   static contextTypes = {
     store: PropTypes.object.isRequired
   };
 
-  componentWillMount() {
-    this.props.changeLangFunc(global.language);
-    if (global.language === 'zn') {
-      this.props.getTitleFunc('万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施');
-    } else {
-      this.props.getTitleFunc("wanchain-A Distributed 'Super Financial Market'");
+  componentDidMount() {
+    const curr = getLange();
+
+    if (curr !== 'zh-CN') {
+      this.props.changeLangFunc('en');
     }
   }
-
-  // componentDidMount() {
-  //   const curr = getLange();
-  //
-  //   if (curr !== 'zh-CN') {
-  //     this.props.changeLangFunc('en');
-  //   }
-  // }
 
   componentWillReceiveProps(nextProps) {
     if (!this.props.user && nextProps.user) {
@@ -83,11 +71,12 @@ class App extends Component {
 
   render() {
     const styles = require('./App.scss');
-    const {transition, appTitle} = this.props;
+    const {transition, language} = this.props;
 
     return (
       <div className={styles.app}>
-        <Helmet title={appTitle}/>
+        {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
+        {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>}
         {transition.pathname !== '/' && <Navigation/>}
         <div className={styles.appContent}>
           {this.props.children}
@@ -98,5 +87,20 @@ class App extends Component {
   }
 }
 
-export default App;
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     logout: () => {
+//       dispatch(logout());
+//     },
+//   };
+// };
+//
+// const mapStateToProps = (state) => ({
+//   user: state.auth.user,
+//   transition: state.routing.locationBeforeTransitions,
+//   language: state.auth.language,
+// });
 
+// export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
+//  <Helmet {...config.app.head}/>
