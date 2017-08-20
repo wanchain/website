@@ -51,7 +51,7 @@ class App extends Component {
 
   componentWillMount() {
     this.props.changeLangFunc(global.language);
-    if (global.language === 'zh-CN') {
+    if (global.language === 'zn') {
       this.props.getTitleFunc('万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施');
     } else {
       this.props.getTitleFunc("wanchain-A Distributed 'Super Financial Market'");
