@@ -31,7 +31,7 @@ const QUERY_NEWS_FAIL = 'redux-example/auth/QUERY_NEWS_FAIL';
 const initialState = {
   loaded: false,
   navButton: false,
-  language: 'zn',
+  // language: 'zn',
   tableState: 0,
 };
 

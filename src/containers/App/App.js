@@ -10,7 +10,7 @@ import { push } from 'react-router-redux';
 // import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
 
-import getLange from '../Home/utils/getLange';
+// import getLange from '../Home/utils/getLange';
 
 @asyncConnect([{
   promise: ({store: {dispatch, getState}}) => {
@@ -46,13 +46,17 @@ class App extends Component {
     store: PropTypes.object.isRequired
   };
 
-  componentDidMount() {
-    const curr = getLange();
-
-    if (curr !== 'zh-CN') {
-      this.props.changeLangFunc('en');
-    }
+  componentWillMount() {
+    this.props.changeLangFunc(global.language);
   }
+
+  // componentDidMount() {
+  //   const curr = getLange();
+  //
+  //   if (curr !== 'zh-CN') {
+  //     this.props.changeLangFunc('en');
+  //   }
+  // }
 
   componentWillReceiveProps(nextProps) {
     if (!this.props.user && nextProps.user) {
