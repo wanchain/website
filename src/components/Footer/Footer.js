@@ -50,7 +50,7 @@ class Footer extends React.Component {
 
     onQQ = () => {
       document.getElementById('qq').style.position = 'absolute';
-      document.getElementById('qq').style.top = '-90px';
+      document.getElementById('qq').style.top = '-70px';
       document.getElementById('qq').style.display = 'inline-block';
     };
 
@@ -103,7 +103,7 @@ class Footer extends React.Component {
       // const email = require('./image/email.png');
       const robot1 = require('./image/reddit.png');
       const slack1 = require('./image/slack.png');
-
+      const facebook = require('./image/facebook.png');
       const twitter1 = require('./image/twitter.png');
       const webo1 = require('./image/web.png');
       const wechat1 = require('./image/webcat.png');
@@ -144,6 +144,7 @@ class Footer extends React.Component {
                         <img src={qqer} className={styles.qq} id="qq"/>
                         <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
                         <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
+                        <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
                         <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
                         <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
                         <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
