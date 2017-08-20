@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 // import { IndexLink } from 'react-router';
-// import Helmet from 'react-helmet';
+import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout, changeLangFunc, getTitleFunc } from 'redux/modules/auth';
 // import { logout } from 'redux/modules/auth';
@@ -83,10 +83,11 @@ class App extends Component {
 
   render() {
     const styles = require('./App.scss');
-    const {transition} = this.props;
+    const {transition, appTitle} = this.props;
 
     return (
       <div className={styles.app}>
+        <Helmet title={appTitle}/>
         {transition.pathname !== '/' && <Navigation/>}
         <div className={styles.appContent}>
           {this.props.children}
@@ -98,7 +99,4 @@ class App extends Component {
 }
 
 export default App;
-
-// <Helmet title={appTitle}/>
-
 
