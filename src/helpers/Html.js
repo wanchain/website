@@ -3,18 +3,29 @@ import ReactDOM from 'react-dom/server';
 import serialize from 'serialize-javascript';
 import Helmet from 'react-helmet';
 
+import reAgent from '../utils/reAgent';
+
 export default class Html extends Component {
   static propTypes = {
     assets: PropTypes.object,
     component: PropTypes.node,
     store: PropTypes.object,
-    title: PropTypes.string,
   };
 
   render() {
-    const {assets, component, store, title} = this.props;
+    const {assets, component, store} = this.props;
     const content = component ? ReactDOM.renderToString(component) : '';
     const head = Helmet.rewind();
+
+    console.log('global.navigator ', global.navigator.userAgent );
+    const agent = global.navigator.userAgent;
+
+    let title;
+    if (reAgent('google', agent)) {
+      title = "wanchain-A Distributed Super Financial Market";
+    } else {
+      title = "万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施";
+    }
 
     return (
       <html lang="en-us">

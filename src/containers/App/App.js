@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 // import { IndexLink } from 'react-router';
-// import Helmet from 'react-helmet';
+import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout, changeLangFunc, getTitleFunc } from 'redux/modules/auth';
 // import { logout } from 'redux/modules/auth';
@@ -10,7 +10,7 @@ import { push } from 'react-router-redux';
 // import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
 
-// import getLange from '../Home/utils/getLange';
+import getLange from '../Home/utils/getLange';
 
 @asyncConnect([{
   promise: ({store: {dispatch, getState}}) => {
@@ -49,17 +49,17 @@ class App extends Component {
     store: PropTypes.object.isRequired
   };
 
-  componentWillMount() {
-    this.props.changeLangFunc(global.language);
-  }
+  // componentWillMount() {
+  //   // console.log('global.language==>', getLange());
+  //   this.props.changeLangFunc(global.language);
+  // }
 
   componentDidMount() {
-    // if (this.props.language === 'zn') {
-    //   this.props.getTitleFunc('万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施');
-    // } else if (this.props.language === 'en') {
-    //   this.props.getTitleFunc("wanchain-A Distributed 'Super Financial Market'");
-    // }
-    this.props.changeLangFunc(global.language);
+    const curr = getLange();
+
+    if (curr !== 'zh-CN') {
+      this.props.changeLangFunc('en');
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -79,12 +79,12 @@ class App extends Component {
 
   render() {
     const styles = require('./App.scss');
-    const {transition} = this.props;
+    const {transition, language} = this.props;
 
-    // console.log('titleState', titleState);
     return (
       <div className={styles.app}>
-        {/* {titleState && <Helmet title={titleState}/>} */}
+        {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
+        {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>}
         {transition.pathname !== '/' && <Navigation/>}
         <div className={styles.appContent}>
           {this.props.children}
@@ -95,5 +95,20 @@ class App extends Component {
   }
 }
 
-export default App;
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     logout: () => {
+//       dispatch(logout());
+//     },
+//   };
+// };
+//
+// const mapStateToProps = (state) => ({
+//   user: state.auth.user,
+//   transition: state.routing.locationBeforeTransitions,
+//   language: state.auth.language,
+// });
 
+// export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
+//  <Helmet {...config.app.head}/>
