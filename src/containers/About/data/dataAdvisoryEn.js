@@ -10,6 +10,7 @@ const t24 = require('./image/t24.png');
 const t26 = require('./image/26.png');
 const t27 = require('./image/27.png');
 const t28 = require('./image/28.png');
+const t30 = require('./image/t30.png');
 
 const data = [
     // {title: 'Bo Shen',
@@ -71,6 +72,11 @@ const data = [
         img: t28,
         position: '',
         describe: ' Research Fellow, China Information and Communication Research Institute(CAICT)'
+    },
+    {title: 'Binsheng Wang',
+        img: t30,
+        position: '',
+        describe: 'Professor of CASS，Advisor of the Blockchain Joint Development Organization'
     },
 ];
 
