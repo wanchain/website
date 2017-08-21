@@ -17,7 +17,7 @@ import Div6 from './components/Div6/Div6';
 import Div7 from './components/Div7/Div7';
 
 @connect(
-    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, }),
+    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, titleState: state.auth.titleState}),
     {getClientWidthFunc, getNavButtonFunc, changeLangFunc})
 export default class Home extends Component {
     static propTypes = {
@@ -27,6 +27,8 @@ export default class Home extends Component {
       getNavButtonFunc: PropTypes.func,
       changeLangFunc: PropTypes.func,
       language: PropTypes.string,
+
+      titleState: PropTypes.string,
     };
 
     constructor(props) {
@@ -44,12 +46,6 @@ export default class Home extends Component {
 
       const width = document.documentElement.clientWidth;
       this.props.getClientWidthFunc(width);
-
-      // const curr = getLange();
-      //
-      // if (curr !== 'zh-CN') {
-      //   this.props.changeLangFunc('en');
-      // }
     }
 
     componentWillUnmount() {
@@ -72,7 +68,7 @@ export default class Home extends Component {
 
     tick() {
       // difference of dates
-      const difference = new Date('09/06/2017 20:00:00') - currentDate(+10);
+      const difference = new Date('09/06/2017 22:00:00') - currentDate(+10);
 
       // basic math variables
       const _second = 1000;
@@ -110,20 +106,27 @@ export default class Home extends Component {
   render() {
     const styles = require('./Home.scss');
     const logo = require('./image/logo.png');
+    const logo2 = require('./image/icoLoho2.png');
     const nav = require('./image/nav1.png');
     const github = require('./image/github.png');
+    const github2 = require('./image/icoLog4.png');
     const {navButton, clientWidth, language} = this.props;
 
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
     return (
         <div>
-            {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施" script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
-            {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'" script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
+            {language === 'zn' && <Helmet script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
+            {language === 'en' && <Helmet script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
             {language === 'zn' &&
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>
-                    <IndexLink to="/"><img src={logo} /></IndexLink>
+                  {clientWidth > 320 &&
+                  <IndexLink to="/"><img src={logo} /></IndexLink>
+                  }
+                  {clientWidth <= 320 &&
+                  <IndexLink to="/"><img src={logo2} /></IndexLink>
+                  }
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
                     {!navButton && clientWidth <= 1024 &&
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style}>
@@ -172,8 +175,14 @@ export default class Home extends Component {
                     }
 
                     <div className={styles.homeGit}>
-                        <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-                        <a onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
+                      {clientWidth > 767 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
+                      }
+                      {clientWidth <= 767 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github2} /></a>
+                      }
+
+                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
                         <a onClick={() => {this.onChangeEn();}}>English</a>
                     </div>
                 </div>
@@ -208,7 +217,13 @@ export default class Home extends Component {
             {language === 'en' &&
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>
-                    <IndexLink to="/"><img src={logo} /></IndexLink>
+                  {clientWidth > 320 &&
+                  <IndexLink to="/"><img src={logo} /></IndexLink>
+                  }
+                  {clientWidth <= 320 &&
+                  <IndexLink to="/"><img src={logo2} /></IndexLink>
+                  }
+
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
                     {!navButton && clientWidth <= 1024 &&
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style}>
@@ -257,8 +272,13 @@ export default class Home extends Component {
                     }
 
                     <div className={styles.homeGit}>
-                        <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-                        <a onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
+                      {clientWidth > 767 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
+                      }
+                      {clientWidth <= 767 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github2} /></a>
+                      }
+                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
                         <a onClick={() => {this.onChangeEn();}}>English</a>
                     </div>
                 </div>
@@ -267,8 +287,8 @@ export default class Home extends Component {
                     <div className={styles.homeHeaderBodyDiv1}>
                         {language === 'en' && Number(clientWidth) > 767 &&
                         <div className="rw-words rw-words-1" id={styles.scroll}>
-                            <h2>A Distributed "<small>Super Financial Market</small>"</h2>
-                            <h2>Internet of "<small>Blockchains</small>"</h2>
+                            <h2 className={styles.indexH2size}>A Distributed "<small className={styles.indexH2size}>Super Financial Market</small>"</h2>
+                            <h2 className={styles.indexH2size}>Internet of "<small className={styles.indexH2size}>Blockchains</small>"</h2>
                         </div>
                         }
 

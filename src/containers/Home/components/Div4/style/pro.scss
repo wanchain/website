@@ -13,7 +13,6 @@
   }
 
   .officalModule3{
-    background: #f7fafe;
     margin-top: 60px;
     //position: relative;
     padding-bottom: 30px;
@@ -46,9 +45,11 @@
     }
 
     p {
-      font-size: 25px;
+      font-size: 20px;
       color: #688499;
       text-align: left;
+      line-height: 1.5em;
+      margin-top: 10px;
     }
   }
 }

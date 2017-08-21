@@ -1,3 +1,14 @@
+@media screen and (min-width: 768px) and (max-width: 769px) {
+  .submit-area{
+    position: absolute;
+    top: 38px;
+    left: 369px!important;
+  }
+  .submit-button{
+    width:120px!important;
+    font-size:12px!important;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .FooterRoot {
     background: #1e2736;
@@ -8,16 +19,18 @@
   .FooterContainer {
     margin: 0 auto;
     text-align: center;
-    height:190px;
+    display: inline-block;
     position: relative;
     width: 100%;
   }
 
   .FooterformGroup{
-    float: left;
     padding-top: 60px;
     padding-left: 20px;
     position: relative;
+    width: 585px;
+    margin: 0 auto;
+    display: inline-block;
 
     img {
       position: absolute;
@@ -27,6 +40,7 @@
     }
 
     input {
+      width: 58%;
       background-color: #1e2736;
       padding-left: 20px;
       border-radius: 50px;
@@ -77,10 +91,10 @@
   .submit-area{
     position: absolute;
     top: 38px;
-    left: 460px;
+    left: 415px;
     span{
       color: #FFF;
-      font-size: 22px;
+      font-size: 16px;
       vertical-align: middle;
     }
   }
@@ -111,14 +125,19 @@
 
   .formGroupDiv{
     padding-right: 20px;
-    float: right;
-    padding-top: 60px;
+    width: 585px;
+    margin: 20px auto;
+    display: inline-block;
+    padding-bottom: 20px;
+    clear: both;
 
     a{
       cursor: pointer;
+      display: inline-block;
       img{
         float: left;
         padding: 10px;
+        margin-left: 10px;
       }
     }
   }
@@ -129,6 +148,17 @@
 
   .qq{
     display: none;
+  }
+  .footMenu{
+    width: 25%;
+    float: left;
+    margin: 6px 0;
+  }
+  .footMenu span{
+    color: #999;
+    font-size: 10px;
+    margin-top: 5px;
+    display: block;
   }
 }
 

@@ -33,7 +33,7 @@
           .div1oBodyCardModule{
             position: absolute;
             top: 50px;
-
+            float: left;
             img{
               margin-left: 20px;
               display: block;
@@ -124,7 +124,7 @@
             position: absolute;
             top: 50px;
 
-            img{    margin-left: 20px;}
+            img{    margin-left: 20px; float: left;}
             p{
               font-size: 17px;
               font-weight: 600;

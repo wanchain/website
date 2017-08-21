@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Helmet from 'react-helmet';
+// import Helmet from 'react-helmet';
 import { getNavButtonFunc } from 'redux/modules/auth';
 
 import Div1 from './components/div/Div1';
@@ -39,8 +39,8 @@ class Crowdsale extends Component {
 
       return (
             <div className={styles.crowdsaleDiv}>
-                {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
-                {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>}
+                {/* {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>} */}
+                {/* {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>} */}
                 {language === 'zn' &&
                 <div className={styles.crowdsaleHeader}>
                     <img src={cor2} className={styles.crowdsaleHeaderDivImg} style={{width: '100%'}}/>
@@ -72,7 +72,7 @@ class Crowdsale extends Component {
                     {Number(clientWidth) <= 1024 &&
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>Token Distribution</h2>
-                        <p style={{fontSize: '14px'}}>The total supply of Wancoins is 210 million.
+                        <p style={{fontSize: '13px'}}>The total supply of Wancoins is 210 million.
                             The ICO target is to raise 30 million USD equivalent in Ether.
                             The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens.
                             Eventually the online tokens will be equal to the crowd-funding tokens in quantity.

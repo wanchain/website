@@ -45,6 +45,7 @@
   }
 
   .FooterEnd{
+    margin-top: 20px;
     background: #2b3139;
     color: #fff;
 
@@ -116,7 +117,7 @@
     a{
       cursor: pointer;
       img{
-        padding: 5px;
+        padding: 5px 3px;;
       }
     }
   }
@@ -124,11 +125,30 @@
   .wechat{
     display: none;
   }
-
   .qq{
     display: none;
     left: 200px;
     margin-top: -77px;
+  }
+  .footMenu{
+    width: 25%;
+    float: left;
+    margin: 6px 0;
+  }
+  .footMenu:hover{
+    color: #FFF;
+    border-color: transparent;
+    padding: 0;
+  }
+.footMenuBox{
+  width:100%;
+  margin: 0 auto;
+  display: inline-block;
+}
+  .footMenu span{
+    color: #999;
+    font-size: 10px;
+    display: block;
   }
 }
 

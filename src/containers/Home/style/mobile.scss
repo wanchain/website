@@ -2,6 +2,11 @@
   .homeHeaderBodyDiv1{
     margin-top: 25px !important;
   }
+  .navGitaTit{
+  }
+  .homeHeader .homeGit{
+    right: 60px!important;
+  }
   .bannerBtn{
     height: 36px !important;
     margin: 60px auto 0 6%!important;
@@ -19,6 +24,13 @@
       background: rgba(5, 17, 43, 0.5) !important;
       transition: background 1s !important;
       margin-bottom: 10px !important;
+    }
+  }
+
+  .homeHeaderBodyDiv1 #scroll {
+    h2{
+      font-size: 24px !important;
+      small{ font-size: 24px !important;}
     }
   }
 }
@@ -61,21 +73,24 @@
     .navbarImg{
       float: right;
       margin-right: 0;
-      margin-top: 14px;
+      margin-top: 20px;
     }
 
     .homeHeaderUl{
       padding-top: 10px;
-      float: right;
-      position: relative;
-      top: 35px;
-      left: 47px;
-
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      z-index: 9;
+      opacity: .95;
       ul{
+        text-align: center;
         li{
           margin: 13px;
           a{
-            color: #fff;
+            color: #000;
             padding-left: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
@@ -94,7 +109,7 @@
       line-height: 26px;
       position: absolute;
       top: 20px;
-      left: 136px;
+      right: 60px;
       p{
         color: #fff;
         float: right;
@@ -121,7 +136,9 @@
   .homeHeaderBodyDiv1{
     margin-top: 27px;
     text-align: center;
-
+    //.indexH2size{
+    //  font-size:18px!important;
+    //}
     #scroll{
       h2{
         font-size: 25px;

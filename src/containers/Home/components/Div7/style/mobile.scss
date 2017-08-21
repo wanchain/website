@@ -39,14 +39,16 @@
           margin: 0 auto;
         }
         span{
-          font-size: 14px;
+          font-size: 12px;
           color: #fff;
           text-align: center;
           display: inline-block;
+          padding: 6px 20px;
         }
         b{
           color: #3680f8;
         }
+	p{  span {padding-left: 0}}
       }
     }
   }

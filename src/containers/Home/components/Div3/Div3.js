@@ -51,7 +51,7 @@ class Div3 extends React.Component {
 
               {language === 'en' &&
               <div className={styles.div2Header + ' container'}>
-                  <h2><hr className={styles.div1HeaderImg}/>Overall Architecture of Wanchain<hr className={styles.div1HeaderImg}/></h2>
+                  <h2 className={styles.h2En}><hr className={styles.div1HeaderImg}/>Overall Architecture of Wanchain<hr className={styles.div1HeaderImg}/></h2>
                   <p>Wanchain aims to establish a distributed financial infrastructure capable of connecting blockchain networks together to exchange value.</p>
 
                   <div className={styles.astroModule2}>
@@ -59,7 +59,7 @@ class Div3 extends React.Component {
                       <div className= {styles.astroModule2word + ' col-lg-4'}>
                           <div className={styles.astroModule2wordDivEn}>
                               <img src={one} />
-                              <p>Wanchain is not merely a <small>universal cross-chain protocol,</small>it is a<small> distributed ledger </small>that records cross-chain and intra-chain transactions.</p>
+                              <p>Wanchain is not merely a universal cross-chain protocol,it is a distributed ledger that records cross-chain and intra-chain transactions.</p>
                           </div>
                           <div className={styles.astroModule2wordDivEn}>
                               <img src={two} />

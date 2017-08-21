@@ -1,4 +1,8 @@
 @media screen and (min-width: 1025px) {
+  td{
+    padding-left:120px!important;
+    border: none!important;
+  }
   .crowd-div1HeaderImg{
     width: 20px;
     display: inline-block;
@@ -91,7 +95,7 @@
       text-align: center;
 
       .crowd-div2HeaderDivLeft{
-        width: 570px;
+        width: 558px;
         height: 420px;
         border: 1px solid #ededed;
         display: inline-block;
@@ -102,7 +106,7 @@
         .leftImg{
           position: relative;
           top:130px;
-          left: -20px;
+          left: -16px;
         }
         .leftImgEn{
           position: relative;
@@ -140,6 +144,7 @@
           text-align: left;
           font-size: 14px;
           color: #353b47;
+          padding-right: 14px;
         }
 
         .crowd-div2HeaderDivLeft-Div{
@@ -194,11 +199,10 @@
       }
 
       .crowd-div2HeaderDivRight{
-        width: 570px;
+        width: 558px;
         height: 420px;
         border: 1px solid #ededed;
         display: inline-block;
-        margin-right: 25px;
         position: relative;
         hr{
           width: 2px;
@@ -229,6 +233,7 @@
           text-align: left;
           font-size: 14px;
           color: #353b47;
+          padding-right: 14px;
         }
 
         .rowd-div2HeaderDivRight-Div{

@@ -215,7 +215,7 @@ class Div4 extends React.Component {
                           <div className="container">
                               <div className={styles.officalModule3Div + ' col-lg-8'}>
                                   <img src={one}/>
-                                  <h2>Distributed Cross-Chain Mechanism</h2>
+                                  <h2 className={styles.officalModule31}>Distributed Cross-Chain Mechanism</h2>
                                   <p>
                                       Wanchain supports cross-chain transactions of mainstream public chains (such as Bitcoin and Ethereum), cross-chain transactions  among consortium chains as well as cross-chain transactions between public chains and consortium chains. The distributive cryptographic key management is achieved by  the threshold secret key sharing mechanism, joint anchoring, multiparty computation, and multi-role node design.
                                   </p>
@@ -228,7 +228,7 @@ class Div4 extends React.Component {
                           <div className="container">
                               <div className={styles.officalModule3Div + ' col-lg-8'}>
                                   <img src={two}/>
-                                  <h2>Universal cross-chain protocol</h2>
+                                  <h2 className={styles.officalModule31}>Universal cross-chain protocol</h2>
                                   <p>
                                       The universal cross-chain protocol between the Wanchain and the Wanchain wallet, and the communication protocol between Wanchain and its homogeneous chain, provide request and confirmation communication for cross-chain transactions. Community developers can develop independent multi-asset wallets and set up chains according to their application requirements.
                                   </p>
@@ -241,7 +241,7 @@ class Div4 extends React.Component {
                           <div className="container">
                               <div className={styles.officalModule3Div + ' col-lg-8'} id="officalModule3Div2">
                                   <img src={three}/>
-                                  <h2>Privacy Protection</h2>
+                                  <h2 className={styles.officalModule31}>Privacy Protection</h2>
                                   <p>
                                       Wanchain and homogeneous chains support privacy protection based on smart contract assets. Wanchain achieves the privacy protection of smart contract token transactions by using ring signatures and one-time addresses. Wanchain is the first to achieve privacy protection for smart contract token transactions, which makes Wanchain and blockchains more applicable to financial applications.
                                   </p>
@@ -254,7 +254,7 @@ class Div4 extends React.Component {
                           <div className="container">
                               <div className={styles.officalModule3Div + ' col-lg-8'}>
                                   <img src={four}/>
-                                  <h2>Complex Application Support</h2>
+                                  <h2 className={styles.officalModule31}>Complex Application Support</h2>
                                   <p>
                                       Based on the smart contract and universal protocols, community developers can develop more complicated applications, such as multi-currency applications. The connections between the consortium chains and the public chains, as well as the connections among the consortium chains, provide more options for further application development.
                                   </p>

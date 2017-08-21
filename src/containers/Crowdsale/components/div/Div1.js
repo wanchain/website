@@ -19,7 +19,7 @@ class Div1 extends React.Component {
             <div className={styles['crowd-div1Header'] + ' container'}>
                 <h2><hr className={styles['crowd-div1HeaderImg']}/>公开销售计划<hr className={styles['crowd-div1HeaderImg']}/></h2>
 
-                <table className="table table-striped">
+                <table className="table table-striped" id={styles.tablesizeId}>
                     <tbody>
                     <tr>
                         <td style={{verticalAlign: 'middle'}}>第一阶段</td>

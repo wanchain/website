@@ -138,18 +138,80 @@ class Footer extends React.Component {
                         <p>for more information, please contact: <span>info@wanchain.org</span></p>
                     </div>
                     }
-
+                  { language === 'zn' &&
                     <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
                         <img src={wecater} className={styles.wechat} id="wechat"/>
                         <img src={qqer} className={styles.qq} id="qq"/>
+                      <div className={styles.footMenuBox}>
+                      <div className={styles.footMenu}>
                         <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
+                        <span>reddit</span>
+                      </div>
+
+                      <div className={styles.footMenu}>
                         <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
+                        <span>slack</span>
+                      </div>
+                      <div className={styles.footMenu}>
                         <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
+                        <span>facebook</span>
+                      </div>
+                      <div className={styles.footMenu}>
                         <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
+                        <span>推特</span>
+                      </div>
+                      <div className={styles.footMenu}>
                         <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
+                        <span>微博</span>
+                      </div>
+                      <div className={styles.footMenu}>
                         <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
+                        <span>微信</span>
+                      </div>
+                      <div className={styles.footMenu}>
                         <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
+                        <span>QQ群</span>
+                      </div>
+                      </div>
                     </div>
+                  }
+                  { language === 'en' &&
+                  <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
+                    <img src={wecater} className={styles.wechat} id="wechat"/>
+                    <img src={qqer} className={styles.qq} id="qq"/>
+                    <div className={styles.footMenuBox}>
+                      <div className={styles.footMenu}>
+                        <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
+                        <span>reddit</span>
+                      </div>
+
+                      <div className={styles.footMenu}>
+                        <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
+                        <span>slack</span>
+                      </div>
+                      <div className={styles.footMenu}>
+                        <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
+                        <span>facebook</span>
+                      </div>
+                      <div className={styles.footMenu}>
+                        <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
+                        <span>twitter</span>
+                      </div>
+                      <div className={styles.footMenu}>
+                        <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
+                        <span>weibo</span>
+                      </div>
+                      <div className={styles.footMenu}>
+                        <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
+                        <span>wechat</span>
+                      </div>
+                      <div className={styles.footMenu}>
+                        <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
+                        <span>QQ group</span>
+                      </div>
+                    </div>
+                  </div>
+                  }
                 </div>
                 <div className={styles.FooterEnd}>
                     { language === 'zn' && <span>©wanchain 2017 版权所有 all rights reserved</span>}

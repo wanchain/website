@@ -20,6 +20,7 @@ import { ReduxAsyncConnect, loadOnServer } from 'redux-async-connect';
 import createHistory from 'react-router/lib/createMemoryHistory';
 import {Provider} from 'react-redux';
 import getRoutes from './routes';
+import reAgent from './utils/reAgent';
 
 var formidable = require('formidable');
 var util = require('util');
@@ -226,6 +227,18 @@ if (!debug) {
       // hot module replacement is enabled in the development env
       webpackIsomorphicTools.refresh();
     }
+
+    console.log('req', req.headers['user-agent']);
+    const agent = String(req.headers['user-agent']);
+
+    // !debug
+    let title;
+    if (reAgent('google', agent)) {
+      title = "wanchain-A Distributed Super Financial Market";
+    } else {
+      title = "万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施";
+    }
+
     const client = new ApiClient(req);
     const memoryHistory = createHistory(req.originalUrl);
     const store = createStore(memoryHistory, client);
@@ -233,7 +246,7 @@ if (!debug) {
 
     function hydrateOnClient() {
       res.send('<!doctype html>\n' +
-          ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} store={store}/>));
+          ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} store={store} title={title}/>));
     }
 
     if (__DISABLE_SSR__) {
@@ -261,7 +274,7 @@ if (!debug) {
           global.navigator = {userAgent: req.headers['user-agent']};
 
           res.send('<!doctype html>\n' +
-              ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} component={component} store={store}/>));
+              ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} component={component} store={store} title={title}/>));
         });
       } else {
         res.status(404).send('Not found');
@@ -456,6 +469,17 @@ if (!debug) {
       // hot module replacement is enabled in the development env
       webpackIsomorphicTools.refresh();
     }
+
+    // debug
+    console.log('req', req.headers['user-agent']);
+    const agent = String(req.headers['user-agent']);
+
+    let title;
+    if (reAgent('google', agent)) {
+      title = "wanchain-A Distributed Super Financial Market";
+    } else {
+      title = "万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施";
+    }
     const client = new ApiClient(req);
     const memoryHistory = createHistory(req.originalUrl);
     const store = createStore(memoryHistory, client);
@@ -463,7 +487,7 @@ if (!debug) {
 
     function hydrateOnClient() {
       res.send('<!doctype html>\n' +
-          ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} store={store}/>));
+          ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} store={store} title={title}/>));
     }
 
     if (__DISABLE_SSR__) {
@@ -491,7 +515,7 @@ if (!debug) {
           global.navigator = {userAgent: req.headers['user-agent']};
 
           res.send('<!doctype html>\n' +
-              ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} component={component} store={store}/>));
+              ReactDOM.renderToString(<Html assets={webpackIsomorphicTools.assets()} component={component} store={store} title={title}/>));
         });
       } else {
         res.status(404).send('Not found');

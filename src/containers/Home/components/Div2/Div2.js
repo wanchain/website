@@ -29,7 +29,7 @@ class Div2 extends React.Component {
                         <div className={styles.div1oBodyCard} id={styles.card1}>
                             <div className={styles.div1oBodyCardModule}>
                                 <img src={card1} id="div1oimg1" />
-                                <p>数字货币<br/>交易<small>兑换</small></p>
+                                <p className={styles.psize}>数字货币<br/>交易<small>兑换</small></p>
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
                             <ul>
@@ -92,7 +92,7 @@ class Div2 extends React.Component {
                             <ul>
                                 <img src={pot}/><li>Exchanges of multiple cryptocurrencies</li>
                                 <img src={pot}/><li>Institutions or individuals rely<br/> on Wanchain for distributed cryptocurrency exchange services</li>
-                                <img src={pot}/><li>Wanchain offers a distributed<br/> cross-blockchain trzansaction mechanism</li>
+                                <img src={pot}/><li>Wanchain offers a distributed<br/> cross-blockchain transaction mechanism</li>
                             </ul>
                         </div>
 

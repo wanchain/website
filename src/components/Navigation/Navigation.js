@@ -43,8 +43,10 @@ class Navigation extends Component {
       const styles = require('./Navigation.scss');
 
       const logo = require('./image/logo2.png');
+      const logoMo = require('./image/icoLoho3.png');
       const nav = require('./image/nav2.png');
       const github = require('./image/github2.png');
+      const github2 = require('./image/icoLoho1.png');
 
       const {navButton, clientWidth} = this.props;
 
@@ -55,7 +57,12 @@ class Navigation extends Component {
             <div className={styles.navRoot}>
                 {language === 'zn' &&
                 <div className={styles.navHeader + ' container'}>
-                    <IndexLink to="/"><img src={logo} /></IndexLink>
+                  {clientWidth > 320 &&
+                  <IndexLink to="/"><img src={logo} /></IndexLink>
+                  }
+                  {clientWidth <= 320 &&
+                  <IndexLink to="/"><img src={logoMo} /></IndexLink>
+                  }
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
                     {!navButton && clientWidth <= 1024 &&
                     <div className={styles.navHeaderUl} id="navbar-menu" style={style}>
@@ -104,8 +111,14 @@ class Navigation extends Component {
                     }
 
                     <div className={styles.navGit}>
-                        <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-                        <a onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
+                      {clientWidth > 320 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
+                      }
+                      {clientWidth <= 320 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github2} /></a>
+                      }
+
+                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
                         <a onClick={() => {this.onChangeEn();}}>English</a>
                     </div>
                 </div>
@@ -113,7 +126,12 @@ class Navigation extends Component {
 
                 {language === 'en' &&
                 <div className={styles.navHeader + ' container'}>
-                    <IndexLink to="/"><img src={logo} /></IndexLink>
+                  {clientWidth > 320 &&
+                  <IndexLink to="/"><img src={logo} /></IndexLink>
+                  }
+                  {clientWidth <= 320 &&
+                  <IndexLink to="/"><img src={logoMo} /></IndexLink>
+                  }
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
                     {!navButton && clientWidth <= 1024 &&
                     <div className={styles.navHeaderUl} id="navbar-menu" style={style}>
@@ -162,8 +180,13 @@ class Navigation extends Component {
                     }
 
                     <div className={styles.navGit}>
-                        <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-                        <a onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
+                      {clientWidth > 320 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
+                      }
+                      {clientWidth <= 320 &&
+                      <a href="https://github.com/wanchain" target="_blank"><img src={github2} /></a>
+                      }
+                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
                         <a onClick={() => {this.onChangeEn();}}>English</a>
                     </div>
                 </div>

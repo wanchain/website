@@ -10,6 +10,7 @@ const t24 = require('./image/t24.png');
 const t26 = require('./image/26.png');
 const t27 = require('./image/27.png');
 const t28 = require('./image/28.png');
+const t30 = require('./image/t30.png');
 
 
 const data = [
@@ -72,6 +73,11 @@ const data = [
         img: t28,
         position: '',
         describe: '中国信息通信研究院研究员'
+    },
+    {title: '王彬生',
+        img: t30,
+        position: '',
+        describe: '中国社会科学院研究生院特聘教授 区块链联合发展组织顾问'
     },
 ];
 

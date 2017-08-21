@@ -1,3 +1,11 @@
+@media screen and (max-width: 320px) {
+  .navGitaTit{
+    margin-left: 10px;
+  }
+  .navHeader .navGit{
+    right: 60px!important;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .navRoot {
     background: #ffffff;
@@ -19,18 +27,21 @@
     .navbarImg{
       float: right;
       margin-right: 3px;
-      margin-top: 14px;
+      margin-top: 20px;
     }
 
     .navHeaderUl{
       padding-top: 10px;
-      float: right;
-      position: relative;
-      top: 35px;
-      left: 47px;
-      height: 249px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      z-index: 9;
+      opacity: .95;
 
       ul{
+        text-align: center;
         li{
           margin: 13px;
           a{
@@ -53,7 +64,7 @@
       line-height: 26px;
       position: absolute;
       top: 20px;
-      left: 136px;
+      right: 60px;
       p{
         color: #000000;
         float: right;

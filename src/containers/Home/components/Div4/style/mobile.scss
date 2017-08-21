@@ -23,7 +23,6 @@
   }
 
   .officalModule3{
-    background: #f7fafe;
     //position: relative;
     padding-bottom: 30px;
 
@@ -41,24 +40,28 @@
       padding-left: 0;
       width: 10%;
     }
+    .officalModule31{
+      font-size: 12px;
+    }
 
     h2{
-      font-size: 12px;
+      font-size: 14px;
       color: #2b363d;
       font-weight: 600;
       display: inline-block;
       margin: 0;
       margin-left: 15px;
     }
-
     span {
       display: none;
     }
 
     p {
-      font-size: 10px;
+      font-size: 12px;
       color: #688499;
       text-align: left;
+      line-height: 1.6em;
+      margin-top: 10px;
     }
   }
 }

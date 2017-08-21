@@ -1,3 +1,10 @@
+@media screen and (min-width: 768px) and (max-width: 769px) {
+  .div1oBody23{
+    margin: 60px auto 0 auto;
+    width: 608px!important;
+    text-align: left;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1119px) {
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
@@ -14,19 +21,20 @@
         margin: 0;
         padding: 80px 0 0 0;
         font-family: "Microsoft YaHei";
-        font-size: 24px;
+        font-size: 22px;
         text-align: center;
         color: #2c313a;
       }
 
       .div1oBody{
-        margin-top: 60px;
-        text-align: center;
+        margin: 60px auto 0 auto;
+        width: 100%;
+        text-align: left;
         .div1oBodyCard{
           border-radius: 4px;
           background: #fff;
           box-shadow: 0 3px 6px 0 rgba(5,13,208,.05);
-          width: 284px;
+          width: 46%;
           height: 381px;
           display: inline-block;
           margin: 0 10px;
@@ -37,7 +45,7 @@
             position: absolute;
             top: 50px;
 
-            img{padding-left: 30px}
+            img{padding-left: 24px}
             p{
               display: inline-block;
               font-size: 20px;
@@ -49,7 +57,7 @@
               top: 10px;
               small{
                 color: #3680f8;
-                font-size: 20px;
+                font-size: 18px;
               }
             }
           }
@@ -71,7 +79,7 @@
             img{
               padding-right: 10px;
               width: 17px;
-              margin-top: -11px;
+              margin-top: -20px;
             }
             li{
               color: #688499;
@@ -99,18 +107,20 @@
         margin: 0;
         padding: 80px 0 0 0;
         font-family: "Microsoft YaHei";
-        font-size: 24px;
+        font-size: 22px;
         text-align: center;
         color: #2c313a;
       }
 
       .div1oBody{
-        margin-top: 60px;
+        margin: 60px auto 0 auto;
+        width: 100%;
+        text-align: left;
         .div1oBodyCard{
           border-radius: 4px;
           background: #fff;
           box-shadow: 0 3px 6px 0 rgba(5,13,208,.05);
-          width: 284px;
+          width: 46%;
           height: 440px;
           display: inline-block;
           margin: 0 10px;
@@ -121,19 +131,22 @@
             position: absolute;
             top: 50px;
 
-            img{    margin-left: 20px;}
+            img{    margin-left: 18px;
+              float: left;
+            }
             p{
+              float: left;
               display: inline-block;
               font-size: 14px;
               font-weight: 600;
               color: #2b363d;
-              padding-left: 18px;
+              padding-left: 10px;
               padding-right: 0;
               position: relative;
-              top: 0;
+              top: 17px;
               small{
                 color: #3680f8;
-                font-size: 20px;
+                font-size: 18px;
               }
             }
           }
@@ -151,6 +164,7 @@
             top: 185px;
             position: absolute;
             line-height: 15px;
+            padding-right: 20px;
             img{
               padding-right: 10px;
               width: 17px;

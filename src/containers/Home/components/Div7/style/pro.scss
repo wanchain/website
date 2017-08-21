@@ -22,10 +22,12 @@
       margin: 0 auto;
       margin-top: 30px;
       display: block;
-      text-align: center;
+      text-align: left;
 
       .div6BodyCard{
         display: inline-block;
+        margin-bottom: 20px;
+        width:100%;
         img{
           display: block;
           margin: 0 auto;
@@ -41,19 +43,24 @@
         small{
           font-size: 14px;
           color: #ffffff;
-          text-align: left;
-          height: 100px;
+          text-align: center;
           display: block;
+        }
+        .psizeTop{
+          margin-top:10px;
         }
         b{
           color: #3680f8;
         }
         span{
           display: inline-block;
+          line-height: 24px;
         }
+	p{  span {padding-left: 0}}
       }
 
       #div6Card2{
+        width: 100%;
         padding-left: 140px;
         padding-right: 140px;
       }
@@ -61,11 +68,6 @@
 
     .div6BodyEn{
       margin-top: 15px;
-      .div6BodyCard{
-        span{
-          height: 130px;
-        }
-      }
 
       #div6Card2{
         padding-left: 80px;

@@ -84,6 +84,40 @@
     }
   }
 
+
+  .astroModule2wordDivEn {
+    position: relative;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid #eff4fb;
+    margin-bottom: 20px;
+
+    img{
+      display: inline-block;
+      padding: 0;
+      padding-top: 20px;
+      padding-left: 60px;
+    }
+
+    p {
+      display: inline-block;
+      text-align: left;
+      position: absolute;
+      top: 15px;
+      left: 100px;
+      font-size: 20px;
+      padding: 0;
+    }
+
+    small {
+      color: #296de9;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+
+
   .div2-submit-area{
     padding-top: 20px;
     text-align: center;
@@ -91,7 +125,8 @@
 
   .div2-submit-button{
     width: 116px;
-    height: 40px;
+    height: 44px;
+    line-height: 44px;
     margin-top: 10px;
     background-color: #3680f8;
     color: #fff;
@@ -111,5 +146,33 @@
     color: #FFF;
     border-color: transparent;
   }
+
+
+
+
+  .div2-submit-buttonEn{
+    width: 300px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 10px;
+    background-color: #3680f8;
+    color: #fff;
+    font-size: 15px;
+    vertical-align: middle;
+    padding-top: 0;
+  }
+
+  .div2-submit-buttonEn img {
+    padding: 0;
+    padding-left: 7px;
+    margin-bottom: 9px;
+  }
+
+  .div2-submit-buttonEn:focus,
+  .div2-submit-buttonEn:hover{
+    color: #FFF;
+    border-color: transparent;
+  }
+
 
 }
