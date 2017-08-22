@@ -58,7 +58,7 @@ const data = [
         position: '',
         describe: 'River Capital Partner'
     },
-    {title: 'GANG WU',
+    {title: 'Gang WU',
         img: t26,
         position: '',
         describe: 'Founder of Bixin'

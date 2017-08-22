@@ -22,17 +22,17 @@ class Div1En extends React.Component {
                   <tbody>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 1 </td>
-                      <td><h4>15% off</h4></td>
+                      <td><h4>1 ETH= 885WAN</h4></td>
                       <td style={{verticalAlign: 'middle'}}>Sep 06, 2017 12:00 -- Sep 13, 2017 11:59 <small>UTC</small></td>
                   </tr>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 2 </td>
-                      <td><h4>5% off</h4></td>
+                      <td><h4>1 ETH= 790 WAN</h4></td>
                       <td style={{verticalAlign: 'middle'}}>Sep 13, 2017 12:00 -- Sep 20, 2017 11:59 <small>UTC</small></td>
                   </tr>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 3 </td>
-                      <td><h4>Original Cost</h4></td>
+                      <td><h4>1ETH =750 WAN</h4></td>
                       <td style={{verticalAlign: 'middle'}}>Sep 20, 2017 12:00 -- Sep 27, 2017 11:59 <small>UTC</small></td>
                   </tr>
                   </tbody>

@@ -23,17 +23,17 @@ class Div1 extends React.Component {
                     <tbody>
                     <tr>
                         <td style={{verticalAlign: 'middle'}}>第一阶段</td>
-                        <td><h4>8.5折</h4></td>
+                        <td><h4>1 ETH= 885WAN</h4></td>
                         <td style={{verticalAlign: 'middle'}}>2017 09-06 12:00 -- 09-13 11:59 <small>UTC</small></td>
                     </tr>
                     <tr>
                         <td style={{verticalAlign: 'middle'}}>第二阶段</td>
-                        <td><h4>9.5折</h4></td>
+                        <td><h4>1 ETH= 790 WAN</h4></td>
                         <td style={{verticalAlign: 'middle'}}>2017 09-13 12:00 -- 09-20 11:59 <small>UTC</small></td>
                     </tr>
                     <tr>
                         <td style={{verticalAlign: 'middle'}}>第三阶段</td>
-                        <td><h4>原价</h4></td>
+                        <td><h4>1ETH =750 WAN</h4></td>
                         <td style={{verticalAlign: 'middle'}}>2017 09-20 12:00 -- 09-27 11:59 <small>UTC</small></td>
                     </tr>
                     </tbody>
@@ -55,20 +55,5 @@ class Div1 extends React.Component {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         changeLanguage: (data) => {
-//             dispatch(changeLanguage(data))
-//         },
-//     };
-// };
-//
-// const mapStateToProps = (state) => ({
-//     language : state.lang.language,
-//     clientWidth: state.lang.clientWidth,
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Div1)
 export default Div1;
 
-// <img src={line} className="div1HeaderImg" />
