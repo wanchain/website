@@ -298,7 +298,7 @@ export default class Home extends Component {
                             <h2>Internet of "<small>Blockchains</small>"</h2>
                         </div>
                         }
-                        <p className={styles.bannerp}>Links different digital assets,connecting the present and future
+                        <p className={styles.bannerp}>Links different digital assets, connecting the present and future
                             <small>Wanchain seeks to create a new distributed financial infrastructure, connecting different blockchain networks together to exchange value.</small>
                         </p>
                         <ul className={styles.countdown}>
