@@ -48,7 +48,7 @@ class Crowdsale extends Component {
                     {Number(clientWidth) <= 1024 && <img src={num} style={{position: 'relative', top: '-80px', width: '100%'}}/>}
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>万维链代币分配</h2>
-                        <p>万维链代币（万币Wancoin）总量为2.1亿个，ICO预期目标为3000万美元等值的以太币，公开销售的代币以万维链ERC-20 tokens进行，<br/>最终上线的代币与ICO token比例为1:1<br/>
+                        <p>万维链代币（万币Wancoin）总量为2.1亿个，公开销售的代币以万维链ERC-20 tokens进行，<br/>最终上线的代币与ICO token比例为1:1<br/>
                             公开销售开始日期为2017年9月06日 12:00 UTC</p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ class Crowdsale extends Component {
                     {Number(clientWidth) > 1024 &&
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>Token Distribution</h2>
-                        <p>The total supply of Wancoins is 210 million. The ICO target is to raise 30 million USD equivalent in Ether. <br/>
+                        <p>The total supply of Wancoins is 210 million.
                             The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens. <br/>
                             Eventually the online tokens will be equal to the crowd-funding tokens in quantity.<br/>
                             The ICO will start on September 6th, 2017, 12:00 UTC</p>
@@ -73,7 +73,6 @@ class Crowdsale extends Component {
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>Token Distribution</h2>
                         <p style={{fontSize: '13px'}}>The total supply of Wancoins is 210 million.
-                            The ICO target is to raise 30 million USD equivalent in Ether.
                             The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens.
                             Eventually the online tokens will be equal to the crowd-funding tokens in quantity.
                             The ICO will start on September 6th, 2017, 12:00 UTC</p>
