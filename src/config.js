@@ -14,9 +14,9 @@ const debug = false;
 
 let ICO;
 if (debug) {
-  ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1ETH = 750 WAN'];
-} else {
   ICO = ['8.5折', '9.5折', '原价'];
+} else {
+  ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1ETH = 750 WAN'];
 }
 
 module.exports = Object.assign({
