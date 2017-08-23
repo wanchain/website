@@ -43,8 +43,8 @@ class Div1En extends React.Component {
                   <h4><img src={mark}/>notes:</h4>
                   {clientWidth > 767 &&
                   <div>
-                      <div className={styles['crowd-div4Header-pot']}></div>
-                      <p> Before the ICO starts, exchange ratio based on Ether will be published in accordance with the Ether price.</p><br/>
+                      {/* <div className={styles['crowd-div4Header-pot']}></div> */}
+                      {/* <p> Before the ICO starts, exchange ratio based on Ether will be published in accordance with the Ether price.</p><br/> */}
                       <div className={styles['crowd-div4Header-pot']}></div>
                       <p>When either 107.1 million tokens are sold or when the crowd-funding time ends, the smart contract will be automatically closed.</p><br/>
                       <div className={styles['crowd-div4Header-pot']}></div>
@@ -59,8 +59,8 @@ class Div1En extends React.Component {
 
                   {clientWidth <= 767 &&
                   <div>
-                      <div className={styles['crowd-div4Header-pot']}></div>
-                      <p> Before the ICO starts, exchange ratio based on Ether will be published in accordance with the Ether price.</p>
+                      {/* <div className={styles['crowd-div4Header-pot']}></div> */}
+                      {/* <p> Before the ICO starts, exchange ratio based on Ether will be published in accordance with the Ether price.</p> */}
                       <div className={styles['crowd-div4Header-pot']}></div>
                       <p> When either 107.1 million tokens are sold or when the crowd-funding time ends, the smart contract will be automatically closed.</p>
                       <div className={styles['crowd-div4Header-pot']}></div>

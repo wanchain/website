@@ -41,8 +41,8 @@ class Div1 extends React.Component {
 
                 <div className={styles['crowd-div1HeaderDiv']}>
                     <h4><img src={mark}/>说明:</h4>
-                    <div className={styles['crowd-div4Header-pot']}></div>
-                    <p>以太坊作价的兑换比例将在销售开始前根据当时以太坊价格情况进行公布。</p><br/>
+                    {/* <div className={styles['crowd-div4Header-pot']}></div> */}
+                    {/* <p>以太坊作价的兑换比例将在销售开始前根据当时以太坊价格情况进行公布。</p><br/> */}
                     <div className={styles['crowd-div4Header-pot']}></div>
                     <p>当公开销售部分完毕或者ICO时间结束智能合约将自动关闭。每笔交易的最小购买额度为0.1ETH。</p><br/>
                     <div className={styles['crowd-div4Header-pot']}></div>
