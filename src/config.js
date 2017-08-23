@@ -12,12 +12,8 @@ const environment = {
 // const debug = true;
 const debug = false;
 
-let ICO;
-if (debug) {
-  ICO = ['8.5折', '9.5折', '原价'];
-} else {
-  ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1ETH = 750 WAN'];
-}
+const ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1 ETH = 750 WAN'];
+// ICO = ['8.5折', '9.5折', '原价'];
 
 module.exports = Object.assign({
   debug: debug,
