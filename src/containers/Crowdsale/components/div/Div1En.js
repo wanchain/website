@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import { connect } from 'react-redux';
+import config from '../../../../config';
 
 @connect(
     state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, }),
@@ -22,17 +23,17 @@ class Div1En extends React.Component {
                   <tbody>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 1 </td>
-                      <td><h4>1 ETH= 880 WAN</h4></td>
+                      <td><h4>{config.app.ICO[0]}</h4></td>
                       <td style={{verticalAlign: 'middle'}}>Sep 06, 2017 12:00 -- Sep 13, 2017 11:59 <small>UTC</small></td>
                   </tr>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 2 </td>
-                      <td><h4>1 ETH= 790 WAN</h4></td>
+                      <td><h4>{config.app.ICO[1]}</h4></td>
                       <td style={{verticalAlign: 'middle'}}>Sep 13, 2017 12:00 -- Sep 20, 2017 11:59 <small>UTC</small></td>
                   </tr>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 3 </td>
-                      <td><h4>1ETH =750 WAN</h4></td>
+                      <td><h4>{config.app.ICO[2]}</h4></td>
                       <td style={{verticalAlign: 'middle'}}>Sep 20, 2017 12:00 -- Sep 27, 2017 11:59 <small>UTC</small></td>
                   </tr>
                   </tbody>

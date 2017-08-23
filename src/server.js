@@ -33,10 +33,7 @@ const pretty = new PrettyError();
 
 const app = new Express();
 
-// const debug = true;
-const debug = false;
-
-if (!debug) {
+if (!config.debug) {
   const httpapp = new Express();
   const httpserver = new http.Server(httpapp);
 

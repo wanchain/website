@@ -9,7 +9,18 @@ const environment = {
   }
 }[process.env.NODE_ENV || 'development'];
 
+// const debug = true;
+const debug = false;
+
+let ICO;
+if (debug) {
+  ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1ETH = 750 WAN'];
+} else {
+  ICO = ['8.5折', '9.5折', '原价'];
+}
+
 module.exports = Object.assign({
+  debug: debug,
   host: process.env.HOST || 'localhost',
   port: process.env.PORT,
   apiHost: process.env.APIHOST || 'localhost',
@@ -64,6 +75,7 @@ module.exports = Object.assign({
         }
       }
     },
+    ICO: ICO,
   },
 
 }, environment);
