@@ -23,7 +23,7 @@ class Div1 extends React.Component {
                     <tbody>
                     <tr>
                         <td style={{verticalAlign: 'middle'}}>第一阶段</td>
-                        <td><h4>1 ETH= 885WAN</h4></td>
+                        <td><h4>1 ETH= 880WAN</h4></td>
                         <td style={{verticalAlign: 'middle'}}>2017 09-06 12:00 -- 09-13 11:59 <small>UTC</small></td>
                     </tr>
                     <tr>
