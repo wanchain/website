@@ -28,6 +28,8 @@
         display: inline-block;
         margin-bottom: 20px;
         width:100%;
+        padding-left: 140px;
+        padding-right: 140px;
         img{
           display: block;
           margin: 0 auto;
@@ -43,8 +45,10 @@
         small{
           font-size: 14px;
           color: #ffffff;
-          text-align: center;
+          text-align: left;
           display: block;
+          width: 500px;
+          margin: 0 auto;
         }
         .psizeTop{
           margin-top:10px;
