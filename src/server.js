@@ -53,7 +53,7 @@ if (!config.debug) {
 
   const proxy = httpProxy.createProxyServer({
     target: targetUrl,
-    ws: false
+    ws: true
   });
 
 
@@ -195,13 +195,13 @@ if (!config.debug) {
     proxy.web(req, res, {target: targetUrl});
   });
 
-  // app.use('/ws', (req, res) => {
-  //   proxy.web(req, res, {target: targetUrl + '/ws'});
-  // });
-  //
-  // server.on('upgrade', (req, socket, head) => {
-  //   proxy.ws(req, socket, head);
-  // });
+  app.use('/ws', (req, res) => {
+    proxy.web(req, res, {target: targetUrl + '/ws'});
+  });
+
+  server.on('upgrade', (req, socket, head) => {
+    proxy.ws(req, socket, head);
+  });
 
 // added the error handling to avoid https://github.com/nodejitsu/node-http-proxy/issues/527
   proxy.on('error', (error, req, res) => {
@@ -284,7 +284,7 @@ if (!config.debug) {
 
   const proxy = httpProxy.createProxyServer({
     target: targetUrl,
-    ws: false
+    ws: true
   });
 
 
@@ -426,13 +426,13 @@ if (!config.debug) {
     proxy.web(req, res, {target: targetUrl});
   });
 
-  // app.use('/ws', (req, res) => {
-  //   proxy.web(req, res, {target: targetUrl + '/ws'});
-  // });
-  //
-  // server.on('upgrade', (req, socket, head) => {
-  //   proxy.ws(req, socket, head);
-  // });
+  app.use('/ws', (req, res) => {
+    proxy.web(req, res, {target: targetUrl + '/ws'});
+  });
+
+  server.on('upgrade', (req, socket, head) => {
+    proxy.ws(req, socket, head);
+  });
 
 // added the error handling to avoid https://github.com/nodejitsu/node-http-proxy/issues/527
   proxy.on('error', (error, req, res) => {
