@@ -17,7 +17,7 @@ export default class Html extends Component {
     const content = component ? ReactDOM.renderToString(component) : '';
     const head = Helmet.rewind();
 
-    console.log('global.navigator ', global.navigator.userAgent );
+    // console.log('global.navigator ', global.navigator.userAgent );
     const agent = global.navigator.userAgent;
 
     let title;
