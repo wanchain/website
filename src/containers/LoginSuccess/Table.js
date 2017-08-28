@@ -19,7 +19,7 @@ export default class Table extends Component {
     };
 
     componentWillMount() {
-      console.log('Table');
+      // console.log('Table');
       const data = {limit: 10};
       this.props.queryNewsFunc(data);
     }

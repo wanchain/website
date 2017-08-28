@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import createStore from './redux/create';
 import ApiClient from './helpers/ApiClient';
-import io from 'socket.io-client';
+// import io from 'socket.io-client';
 import {Provider} from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -33,20 +33,20 @@ if (lan === 'zh-CN') {
 }
 console.log('lan', lan);
 
-function initSocket() {
-  const socket = io('', {path: '/ws'});
-  socket.on('news', (data) => {
-    console.log(data);
-    socket.emit('my other event', { my: 'data from client' });
-  });
-  socket.on('msg', (data) => {
-    console.log(data);
-  });
-
-  return socket;
-}
-
-global.socket = initSocket();
+// function initSocket() {
+//   const socket = io('', {path: '/ws'});
+//   socket.on('news', (data) => {
+//     console.log(data);
+//     socket.emit('my other event', { my: 'data from client' });
+//   });
+//   socket.on('msg', (data) => {
+//     console.log(data);
+//   });
+//
+//   return socket;
+// }
+//
+// global.socket = initSocket();
 global.dataFeedback = new EventEmitter();
 
 const component = (

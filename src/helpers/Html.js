@@ -23,7 +23,7 @@ export default class Html extends Component {
     let title;
     let description;
     if (reAgent('google', agent)) {
-      title = "wanchain-A Distributed Super Financial Market";
+      title = "Wanchain- A Distributed Super Financial Market";
       description = 'Wanchain aims to build a super financial market of digital assets.  It is an infrastructure connecting different digital assets.';
     } else {
       title = "万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施";
