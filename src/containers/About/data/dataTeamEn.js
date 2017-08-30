@@ -15,6 +15,7 @@ const t14 = require('./image/14.png');
 const t15 = require('./image/15.png');
 const t16 = require('./image/t16.png');
 const t25 = require('./image/25.png');
+const t29 = require('./image/29.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -113,6 +114,11 @@ An organizer in the blockchain community, affiliations and conferences.`
     img: t25,
     position: '',
     describe: `A member of the IBM Toronto Software Lab DB2 engine infrastructure team, focused on database protocols, the Bank of Montreal VaR engine, the Manulife retirement service engine, 401K, and now blockchain platform development in Beijing.`
+  },
+  {title: 'Astro Sun',
+    img: t29,
+    position: '',
+    describe: 'Proficient in javascript, React, Angularjs and node. Mainly responsible for the development of the wallet.'
   },
 ];
 

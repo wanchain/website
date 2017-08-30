@@ -40,7 +40,7 @@ class Crowdsale extends Component {
       return (
             <div className={styles.crowdsaleDiv}>
                 {/* {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>} */}
-                {/* {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>} */}
+                {/* {language === 'en' && <Helmet title="wanchain- A Distributed 'Super Financial Market'"/>} */}
                 {language === 'zn' &&
                 <div className={styles.crowdsaleHeader}>
                     <img src={cor2} className={styles.crowdsaleHeaderDivImg} style={{width: '100%'}}/>

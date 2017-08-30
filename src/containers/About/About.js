@@ -31,7 +31,7 @@ class About extends Component {
       return (
             <div className={styles.aboutDiv}>
                 {/* {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>} */}
-                {/* {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>} */}
+                {/* {language === 'en' && <Helmet title="wanchain- A Distributed 'Super Financial Market'"/>} */}
                 <div className={styles.aboutHeader}>
                     <img className={styles.aboutHeaderImg1} src={blog1} />
                     <img className={styles.aboutHeaderImg2} src={blog2} />

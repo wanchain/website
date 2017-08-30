@@ -96,20 +96,5 @@ class App extends Component {
   }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     logout: () => {
-//       dispatch(logout());
-//     },
-//   };
-// };
-//
-// const mapStateToProps = (state) => ({
-//   user: state.auth.user,
-//   transition: state.routing.locationBeforeTransitions,
-//   language: state.auth.language,
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(App);
 export default App;
 //  <Helmet {...config.app.head}/>
