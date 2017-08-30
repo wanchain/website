@@ -189,8 +189,8 @@ export default class Home extends Component {
 
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
-                        <div className="rw-words rw-words-2" id={styles.scroll}>
-                            <h2>分布式未来"<small>银行</small>"</h2>
+                        <div className="rw-words rw-words-1" id={styles.scroll}>
+                            {/* <h2>分布式未来"<small>银行</small>"</h2> */}
                             <h2>数字经济超级"<small>金融市场</small>"</h2>
                             <h2>区块链的"<small>互联网</small>"</h2>
                         </div>
