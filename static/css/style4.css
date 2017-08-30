@@ -177,14 +177,10 @@
 /*////////////////////////////////////////////////////////////////////////////*/
 
 .progress{
-	height: 25px;
-	background: #262626;
-	padding: 5px;
-	overflow: visible;
-	border-radius: 20px;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #7992a8;
-	margin-top: 50px;
+  border-radius: 8px;
+  background-color: rgba(74, 142, 255,.2);
+  margin-top:20px;
+  padding: 9px;
 }
 .progress .progress-bar{
 	border-radius: 20px;
@@ -212,8 +208,21 @@
 	bottom: -6px;
 	left: 26%;
 }
+.progress-bar-info{
+  border-radius: 8px;
+  background-image: -moz-linear-gradient(to right, rgb(0,135,255) 0%, rgb(72,240,255) 100%);
+  background-image: -webkit-linear-gradient(to right, rgb(0,135,255) 0%, rgb(72,240,255) 100%);
+  background-image: -ms-linear-gradient(to right, rgb(0,135,255) 0%, rgb(72,240,255) 100%);
+  background-image: linear-gradient(to right, rgb(0,135,255) 0%, rgb(72,240,255) 100%);
+}
 .progress-bar.active{
-	animation: reverse progress-bar-stripes 0.40s linear infinite, animate-positive 2s;
+  padding: 9px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #0087ff;
+  background-size: 100%;
+  border-radius: 8px;
+  margin-top: -38px;
+	animation: reverse progress-bar-stripes -0.40s linear infinite, animate-positive 2s;
 }
 @-webkit-keyframes animate-positive{
 	0% { width: 0; }
@@ -221,3 +230,13 @@
 @keyframes animate-positive{
 	0% { width: 0; }
 }
+.row{
+  margin: 0px!important;
+}
+.col-md-offset-2{
+  margin-top:10px;
+  background-color: rgba(3, 11, 27,0.502);
+  border-radius: 100px;
+  padding: 1px 30px;
+}
+

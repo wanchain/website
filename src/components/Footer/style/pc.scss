@@ -77,7 +77,7 @@
   .submit-area{
     position: absolute;
     top: 38px;
-    left: 486px;
+    left: 405px;
     span{
       color: #FFF;
       font-size: 22px;
@@ -115,6 +115,9 @@
     a{
       cursor: pointer;
       display: block;
+      img:hover{
+        opacity: 1;
+      }
       img{
         float: left;
         padding: 10px;

@@ -61,6 +61,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .homeDiv {
     height: 660px;
+    position: relative;
   }
 
   .homeHeader{
@@ -241,7 +242,7 @@
   //banner 8.16
   .bannerBtn{
     height: 36px;
-    margin:60px auto 0 12%;
+    margin:30px auto 0 12%;
     text-align: center;
   }
   .bannerBtn a{
@@ -265,5 +266,65 @@
 
   .bannerp{
     text-align: center;}
+  .ingBox{
+    width: 100%;
+    background-color: rgba(3, 11, 27, 0.502);
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    h2{
+      color: #fff;
+      font-size: 22px;
+      text-align: center;
+      margin: 30px 0;
+    }
+    .ingDetal{
+      color: #fff;
+      text-align: center;
+      padding-bottom: 10px;
+      font-family: BebasNeue;
+      font-size:16px;
+      margin-top: 12px;
+    }
+    .ingDetalSpan{
+      margin-left:20px;
+    }
+    em{
+      font-style: normal;
+    }
+    .col-md-offset-2{
+      margin-top:10px;
+      padding: 0 30px;
+    }
+    .countdown{
+      padding-top: 15px;
+      width: 85%;
+      margin: 0 auto;
+      text-align: center;
+      li{
+        display: inline-block;
+        span{
+          font-family: BebasNeue;
+          font-size: 30px;
+          color: #fff;
+          padding: 6px;
+        }
+        small{
+          padding-left: 10px;
+          padding-right: 10px;
+          color: #3680f8;
+          font-size: 30px;
+        }
+        p{
+          padding-top: 5px;
+          font-size: 10px;
+          color: #fff;
+          opacity: .65;
+          text-align: left;
+          font-family: BebasNeue;
+        }
+      }
+    }
+  }
 }
 

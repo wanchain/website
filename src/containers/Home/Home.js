@@ -197,22 +197,13 @@ export default class Home extends Component {
                         <p className={styles.bannerp}>连接不同数字资产，连接现在与未来
                             <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
                         </p>
+                        {/* ul 众筹开始倒计时 */}
                         <ul className={styles.countdown}>
                             <li><span >{this.state.date.days}</span><small>:</small><p>{this.state.date.ref_days}</p></li>
                             <li><span >{this.state.date.hours}</span><small>:</small><p>{this.state.date.ref_hours}</p></li>
                             <li><span >{this.state.date.minutes}</span><small>:</small><p>{this.state.date.ref_minutes}</p></li>
                             <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
                         </ul>
-
-                        {/* <div className="row"> */}
-                            {/* <div className="col-md-offset-2 col-md-8"> */}
-                                {/* <div className="progress"> */}
-                                    {/* <div className="progress-bar progress-bar-info progress-bar-striped active" style={{width: config.app.icoBar.bar}}> */}
-                                        {/* <div className="progress-value">{config.app.icoBar.bar}</div> */}
-                                    {/* </div> */}
-                                {/* </div> */}
-                            {/* </div> */}
-                        {/* </div> */}
 
                       <div className={styles.bannerBtn}>
                         <Link to="/crowdsale">众筹</Link>
@@ -222,6 +213,9 @@ export default class Home extends Component {
                       </div>
                     </div>
                 </div>
+
+                {/* div 众筹结束倒计时 */}
+
             </div>
             }
 
@@ -312,12 +306,15 @@ export default class Home extends Component {
                         <p className={styles.bannerp}>Links different digital assets, connecting the present and future
                             <small>Wanchain seeks to create a new distributed financial infrastructure, connecting different blockchain networks together to exchange value.</small>
                         </p>
+
+                        {/* ul 众筹开始倒计时 */}
                         <ul className={styles.countdown}>
                             <li><span >{this.state.date.days}</span><small>:</small><p>{this.state.date.ref_days}</p></li>
                             <li><span >{this.state.date.hours}</span><small>:</small><p>{this.state.date.ref_hours}</p></li>
                             <li><span >{this.state.date.minutes}</span><small>:</small><p>{this.state.date.ref_minutes}</p></li>
                             <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
                         </ul>
+
                       <div className={styles.bannerBtn}>
                         <Link to="/crowdsale">ICO</Link>
                         <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
@@ -326,6 +323,9 @@ export default class Home extends Component {
                       </div>
                     </div>
                 </div>
+
+                {/* div 众筹结束倒计时 */}
+
             </div>
             }
 

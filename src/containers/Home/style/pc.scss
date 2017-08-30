@@ -2,6 +2,7 @@
 @media screen and (min-width: 1025px) {
   .homeDiv {
     height: 800px;
+    position: relative;
     //background: url("../image/homeHeader.jpg") no-repeat center center;
 
     .homeHeader{
@@ -33,7 +34,7 @@
             }
           }
           a:hover{
-            border-bottom: 1px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
             text-decoration: none;
           }
         }
@@ -94,11 +95,11 @@
 
     .homeHeaderBodyDiv1{
       float: left;
-      margin-top: 120px;
+      margin-top: 80px;
       //8.16
       width:1040px;
       height:451px;
-      background: rgba(4, 13, 36, 0.4);
+      //background: rgba(4, 13, 36, 0.4);
       margin-left: 5.5%;
       #scroll{
         h2{
@@ -229,6 +230,85 @@
 
   .bannerp{
     text-align: center;}
+.ingBox{
+  width: 100%;
+  background-color: rgba(3, 11, 27,0.502);
+  position: absolute;
+  bottom: 0;
+  h2{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin: 40px 0 30px 0;
+  }
+  .ingDetal{
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    font-family: BebasNeue;
+    font-size:18px;
+    padding-bottom: 10px;
+  }
+  .ingDetalSpan{
+    margin-left:20px;
+  }
+  em{
+    font-style: normal;
+  }
+  .row{
+    width:54%;
+  }
+  ul{
+    li{
+      float: left;
+      padding-left: 10px;
+      //margin-left: 20px;
+      a{
+        color: #fff;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    a:hover{
+      border-bottom: 1px solid #ffffff;
+      text-decoration: none;
+    }
+  }
 
+}
+
+  .countdown{
+    width: 60px;
+    //padding-top: 30px;
+    width: 570px;
+    margin: 0 auto;
+    li{
+      display: inline-block;
+      span{
+        font-family: BebasNeue;
+        font-size: 48px;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        text-align: center;
+        line-height: 55px;
+      }
+      small{
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #3680f8;
+        font-size: 48px;
+      }
+      p{
+        padding-top: 0;
+        font-size: 16px;
+        color: #ffffff;
+        opacity: 0.65;
+        font-family: BebasNeue;
+      }
+    }
+  }
 }
 

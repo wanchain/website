@@ -12,7 +12,7 @@ const environment = {
 // const debug = true;
 const debug = false;
 
-const icoBar = {amount: '100000ETH', bar: '70%'};
+const icoBar = {amount: '107100000 WAN', bar: '70%'};
 
 const ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1 ETH = 750 WAN'];
 // ICO = ['8.5折', '9.5折', '原价'];
