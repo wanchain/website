@@ -201,7 +201,7 @@ td{ vertical-align: middle;}
 
       .crowd-div2HeaderDivRight{
         width: 90%;
-        height: 370px;
+        height: 410px;
         border: 1px solid #ededed;
         display: inline-block;
         position: relative;
@@ -249,7 +249,7 @@ td{ vertical-align: middle;}
           }
 
           .img1{
-            padding: 11px 29px;
+            padding: 8px 29px;
             text-align: center;
             margin: 0 auto;
             display: block;
@@ -282,7 +282,14 @@ td{ vertical-align: middle;}
             padding: 6px 30px;
           }
 
-          .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover{background: #16d1c8; box-shadow: 0px 6px 6px 0px rgba(22, 209, 200, 0.2);}
+          .img6{
+            padding: 5px 33px;
+            margin-top: 10px;
+          }
+
+          .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover{
+            background: #16d1c8; box-shadow: 0px 6px 6px 0px rgba(22, 209, 200, 0.2);
+          }
         }
       }
 

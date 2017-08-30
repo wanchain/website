@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout, changeLangFunc, getTitleFunc } from 'redux/modules/auth';
 // import { logout } from 'redux/modules/auth';
-import { Navigation, Footer } from 'components';
+import { Navigation, Footer, Carousel } from 'components';
 import { push } from 'react-router-redux';
 // import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
@@ -84,11 +84,12 @@ class App extends Component {
     return (
       <div className={styles.app}>
         {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
-        {language === 'en' && <Helmet title="wanchain-A Distributed 'Super Financial Market'"/>}
+        {language === 'en' && <Helmet title="wanchain- A Distributed 'Super Financial Market'"/>}
         {transition.pathname !== '/' && <Navigation/>}
         <div className={styles.appContent}>
           {this.props.children}
         </div>
+        <Carousel/>
         <Footer/>
       </div>
     );

@@ -203,6 +203,17 @@ export default class Home extends Component {
                             <li><span >{this.state.date.minutes}</span><small>:</small><p>{this.state.date.ref_minutes}</p></li>
                             <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
                         </ul>
+
+                        {/* <div className="row"> */}
+                            {/* <div className="col-md-offset-2 col-md-8"> */}
+                                {/* <div className="progress"> */}
+                                    {/* <div className="progress-bar progress-bar-info progress-bar-striped active" style={{width: config.app.icoBar.bar}}> */}
+                                        {/* <div className="progress-value">{config.app.icoBar.bar}</div> */}
+                                    {/* </div> */}
+                                {/* </div> */}
+                            {/* </div> */}
+                        {/* </div> */}
+
                       <div className={styles.bannerBtn}>
                         <Link to="/crowdsale">众筹</Link>
                         <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
