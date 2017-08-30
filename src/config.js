@@ -9,8 +9,8 @@ const environment = {
   }
 }[process.env.NODE_ENV || 'development'];
 
-const debug = true;
-// const debug = false;
+// const debug = true;
+const debug = false;
 
 const icoBar = {amount: '100000ETH', bar: '70%'};
 
