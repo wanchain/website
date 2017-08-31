@@ -12,7 +12,8 @@ const environment = {
 // const debug = true;
 const debug = false;
 
-const icoBar = {amount: '107100000 WAN', bar: '70%'};
+// state = 'after'
+const icoBar = {state: 'before', time: '09/06/2017 22:00:00', amount: '107100000 WAN', bar: '70%'};
 
 const ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1 ETH = 750 WAN'];
 // ICO = ['8.5折', '9.5折', '原价'];
@@ -29,9 +30,9 @@ if (debug) {
   mysiteCrt = '/root/wanchain/website/src/cert/3bb55a3526ededcc.crt';
   gd1 = '/root/wanchain/website/src/cert/gd_bundle-g2-g1.crt';
 
-  // mysite = '/root/website/src/cert/server.key';
-  // mysiteCrt = '/root/website/src/cert/server.csr';
-  // gd1 = '/root/website/src/cert/server.crt';
+  // mysite = '/root/website/src/cert/wanchain.org.key';
+  // mysiteCrt = '/root/website/src/cert/3bb55a3526ededcc.crt';
+  // gd1 = '/root/website/src/cert/gd_bundle-g2-g1.crt';
 }
 
 module.exports = Object.assign({

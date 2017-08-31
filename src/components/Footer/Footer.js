@@ -140,8 +140,8 @@ class Footer extends React.Component {
                     }
                   { language === 'zn' &&
                     <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
-                        <img src={wecater} className={styles.wechat} id="wechat"/>
-                        <img src={qqer} className={styles.qq} id="qq"/>
+                        {/* <img src={wecater} className={styles.wechat} id="wechat"/> */}
+                        {/* <img src={qqer} className={styles.qq} id="qq"/> */}
                       <div className={styles.footMenuBox}>
                       <div className={styles.footMenu}>
                         <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
@@ -167,18 +167,20 @@ class Footer extends React.Component {
                       <div className={styles.footMenu}>
                         <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
                         <span>微信</span>
+                        <img src={wecater} className={styles.wechat} id="wechat"/>
                       </div>
                       <div className={styles.footMenu}>
                         <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
                         <span>QQ群</span>
+                        <img src={qqer} className={styles.qq} id="qq"/>
                       </div>
                       </div>
                     </div>
                   }
                   { language === 'en' &&
                   <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
-                    <img src={wecater} className={styles.wechat} id="wechat"/>
-                    <img src={qqer} className={styles.qq} id="qq"/>
+                    {/* <img src={wecater} className={styles.wechat} id="wechat"/> */}
+                    {/* <img src={qqer} className={styles.qq} id="qq"/> */}
                     <div className={styles.footMenuBox}>
                       <div className={styles.footMenu}>
                         <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
@@ -204,10 +206,12 @@ class Footer extends React.Component {
                       <div className={styles.footMenu}>
                         <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
                         <span>wechat</span>
+                        <img src={wecater} className={styles.wechat} id="wechat"/>
                       </div>
                       <div className={styles.footMenu}>
                         <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
                         <span>QQ group</span>
+                        <img src={qqer} className={styles.qq} id="qq"/>
                       </div>
                     </div>
                   </div>

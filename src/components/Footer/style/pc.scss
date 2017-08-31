@@ -134,15 +134,19 @@
   }
   .wechat{
     display: none;
-    left: -20px;
+    left: -124px;
+    top: -170px!important;
   }
 
   .qq{
     display: none;
+    right: -20px;
+    top: -151px !important;
   }
   .footMenu{
     width:60px;
     float: left;
+    position:relative;
   }
   .footMenu span{
     color: #999;

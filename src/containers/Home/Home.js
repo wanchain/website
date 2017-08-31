@@ -8,6 +8,8 @@ import { getClientWidthFunc, getNavButtonFunc, changeLangFunc } from 'redux/modu
 import currentDate from './utils/currentDate';
 // import getLange from './utils/getLange';
 
+import {ulFunc, divEnFunc, divZnFunc} from './utils/homeFunc';
+
 import Div1 from './components/Div1/Div1';
 import Div2 from './components/Div2/Div2';
 import Div3 from './components/Div3/Div3';
@@ -68,7 +70,7 @@ export default class Home extends Component {
 
     tick() {
       // difference of dates
-      const difference = new Date('09/06/2017 22:00:00') - currentDate(+10);
+      const difference = new Date(config.app.icoBar.time) - currentDate(+10);
 
       // basic math variables
       const _second = 1000;
@@ -118,6 +120,7 @@ export default class Home extends Component {
         <div>
             {language === 'zn' && <Helmet script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
             {language === 'en' && <Helmet script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>}
+
             {language === 'zn' &&
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>
@@ -197,13 +200,12 @@ export default class Home extends Component {
                         <p className={styles.bannerp}>连接不同数字资产，连接现在与未来
                             <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
                         </p>
+
                         {/* ul 众筹开始倒计时 */}
-                        <ul className={styles.countdown}>
-                            <li><span >{this.state.date.days}</span><small>:</small><p>{this.state.date.ref_days}</p></li>
-                            <li><span >{this.state.date.hours}</span><small>:</small><p>{this.state.date.ref_hours}</p></li>
-                            <li><span >{this.state.date.minutes}</span><small>:</small><p>{this.state.date.ref_minutes}</p></li>
-                            <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
-                        </ul>
+                        { config.app.icoBar.state === 'before' &&
+                            ulFunc(styles.countdown, this.state.date.days, this.state.date.ref_days, this.state.date.hours, this.state.date.ref_hours,
+                                this.state.date.minutes, this.state.date.ref_minutes, this.state.date.seconds, this.state.date.ref_seconds)
+                        }
 
                       <div className={styles.bannerBtn}>
                         <Link to="/crowdsale">众筹</Link>
@@ -215,6 +217,12 @@ export default class Home extends Component {
                 </div>
 
                 {/* div 众筹结束倒计时 */}
+                { config.app.icoBar.state === 'after' &&
+                divZnFunc(styles.ingBox, styles.ingTitle, styles.countdown, this.state.date.days, this.state.date.ref_days,
+                    this.state.date.hours, this.state.date.ref_hours, this.state.date.minutes, this.state.date.ref_minutes,
+                    this.state.date.seconds, this.state.date.ref_seconds, styles.ingDetal, styles.ingDetalSpan)
+                }
+
 
             </div>
             }
@@ -308,12 +316,10 @@ export default class Home extends Component {
                         </p>
 
                         {/* ul 众筹开始倒计时 */}
-                        <ul className={styles.countdown}>
-                            <li><span >{this.state.date.days}</span><small>:</small><p>{this.state.date.ref_days}</p></li>
-                            <li><span >{this.state.date.hours}</span><small>:</small><p>{this.state.date.ref_hours}</p></li>
-                            <li><span >{this.state.date.minutes}</span><small>:</small><p>{this.state.date.ref_minutes}</p></li>
-                            <li><span>{this.state.date.seconds}</span><small style={{opacity: 0}}>:</small><p>{this.state.date.ref_seconds}</p></li>
-                        </ul>
+                        {
+                            ulFunc(styles.countdown, this.state.date.days, this.state.date.ref_days, this.state.date.hours, this.state.date.ref_hours,
+                                this.state.date.minutes, this.state.date.ref_minutes, this.state.date.seconds, this.state.date.ref_seconds)
+                        }
 
                       <div className={styles.bannerBtn}>
                         <Link to="/crowdsale">ICO</Link>
@@ -325,7 +331,11 @@ export default class Home extends Component {
                 </div>
 
                 {/* div 众筹结束倒计时 */}
-
+                { config.app.icoBar.state === 'after' &&
+                divEnFunc(styles.ingBox, styles.ingTitle, styles.countdown, this.state.date.days, this.state.date.ref_days,
+                    this.state.date.hours, this.state.date.ref_hours, this.state.date.minutes, this.state.date.ref_minutes,
+                    this.state.date.seconds, this.state.date.ref_seconds, styles.ingDetal, styles.ingDetalSpan)
+                }
             </div>
             }
 

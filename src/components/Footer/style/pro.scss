@@ -144,15 +144,20 @@
 
   .wechat{
     display: none;
+    left: -124px;
+    top: -170px!important;
   }
 
   .qq{
     display: none;
+    right: -20px;
+    top: -151px !important;
   }
   .footMenu{
     width: 25%;
     float: left;
     margin: 6px 0;
+    position: relative;
   }
   .footMenu span{
     color: #999;
