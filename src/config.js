@@ -15,7 +15,8 @@ const debug = false;
 // state = 'after'
 const icoBar = {state: 'before', time: '09/06/2017 22:00:00', amount: '107100000 WAN', bar: '70%'};
 
-const ICO = ['1 ETH = 880 WAN', '1 ETH = 790 WAN', '1 ETH = 750 WAN'];
+const ICO = ['1 ETH = 880 WAN (8.5折)', '1 ETH = 790 WAN (9.5折)', '1 ETH = 750 WAN (原价)'];
+const ICOEn = ['1 ETH = 880 WAN (15% off)', '1 ETH = 790 WAN (5% off)', '1 ETH = 750 WAN (Original Cost)'];
 // ICO = ['8.5折', '9.5折', '原价'];
 
 let mysite;
@@ -92,6 +93,7 @@ module.exports = Object.assign({
       }
     },
     ICO: ICO,
+    ICOEn: ICOEn,
     icoBar: icoBar,
     cert: {
       mysite: mysite,
