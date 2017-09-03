@@ -100,8 +100,8 @@ export default class ICOwarningModal extends Component {
                   </div>
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
                     <label><input type="checkbox" name="warn" value="" />Check here to comfirm that you have read and understand the
-                      <a href={config.app.files.WhitepaperCH} target="_blank">Wanchain White Paper </a>and
-                      <a href={config.app.files.CommercialCH} target="_blank"> Wanchain Commecial White Paper</a>.
+                      <a href={config.app.files.WhitepaperEN} target="_blank">Wanchain White Paper </a>and
+                      <a href={config.app.files.CommercialEN} target="_blank"> Wanchain Commecial White Paper</a>.
                     </label>
                   </div>
                 </div>

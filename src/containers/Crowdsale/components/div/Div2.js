@@ -89,8 +89,7 @@ class Div2 extends React.Component {
                         <div className={styles['crowd-div2HeaderDivLeft-Div']}>
                             <div className={styles['crowd-div2HeaderDivLeft-Div1']}>
                                 <span> * </span>
-                                <p>以太坊钱包是指能够由用户完全控制能够导出私钥的钱包，推荐如下
-                                以太坊钱包：以太坊官方钱包（Mist）</p>
+                                <p>以太坊钱包是指能够由用户完全控制能够导出私钥的钱包，推荐如上以太坊钱包</p>
                             </div>
 
                             <div className={styles['crowd-div2HeaderDivLeft-Div1']}>
@@ -125,15 +124,9 @@ class Div2 extends React.Component {
 
                         <div className={styles['rowd-div2HeaderDivRight-Div']}>
                             {/* <h2>指定平台待定</h2> */}
-                            <a href="http://bizhongchou.com/deal-show/id-845.html" target="_blank">
-                                <img src={bizhongchou1} className={styles.img4} id="img4" onMouseEnter={() => this.onEnter('img4')} onMouseLeave={() => this.onLeave('img4')}/>
-                            </a>
-                            <a href="https://www.icorace.com/product/detail/12" target="_blank">
-                                <img src={race1} className={styles.img5} id="img5" onMouseEnter={() => this.onEnter('img5')} onMouseLeave={() => this.onLeave('img5')}/>
-                            </a>
-                            <a href="https://renrenico.com/ico/31" target="_blank">
-                                <img src={ren1} className={styles.img6} id="img6" onMouseEnter={() => this.onEnter('img6')} onMouseLeave={() => this.onLeave('img6')}/>
-                            </a>
+                            <img src={bizhongchou1} className={styles.img4} id="img4" />
+                            <img src={race1} className={styles.img5} id="img5" />
+                            <img src={ren1} className={styles.img6} id="img6" />
                         </div>
                         <p>平台锁定已经结束</p>
                     </div>
@@ -155,3 +148,4 @@ export default Div2;
     <img src={token1} className={styles.img3} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>
 </a>
  */
+// onMouseEnter={() => this.onEnter('img4')} onMouseLeave={() => this.onLeave('img4')}
