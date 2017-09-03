@@ -13,7 +13,8 @@ const environment = {
 const debug = false;
 
 // state = 'after'
-const icoBar = {state: 'before', time: '09/06/2017 22:00:00', amount: '107100000 WAN', bar: '70%'};
+const icoBar = {state: 'before', time: '09/06/2017 22:00:00', amount: '107100000 WAN', bar: '70%',
+address: '0x00361e21af719c3a5e1946Af627438a57B3B8DBc'};
 
 const ICO = ['1 ETH = 880 WAN (8.5折)', '1 ETH = 790 WAN (9.5折)', '1 ETH = 750 WAN (原价)'];
 const ICOEn = ['1 ETH = 880 WAN (15% off)', '1 ETH = 790 WAN (5% off)', '1 ETH = 750 WAN (Original Cost)'];

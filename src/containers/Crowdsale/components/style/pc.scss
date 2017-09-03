@@ -96,12 +96,12 @@
 
       .crowd-div2HeaderDivLeft{
         width: 558px;
-        height: 420px;
+        height: 430px;
         border: 1px solid #ededed;
         display: inline-block;
         margin-right: 25px;
         position: relative;
-        top: -32px;
+        top: -67px;
 
         .leftImg{
           position: relative;
@@ -191,16 +191,51 @@
           span{
             font-weight: 500;
             text-align: left;
-            display: block;
-            padding-left: 32px;
+            padding-left: 15px;
             padding-top: 0;
+            display: inline-block;
+          }
+
+          .submit-area{
+            float: left;
+            margin: -20px auto;
+            width: 100%;
+          }
+
+          .submit-button{
+            background-color: #3680f8;
+            border-radius: 4px;
+            color: #FFF;
+            font-size: 18px;
+            vertical-align: middle;
+            width: 240px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0;
+          }
+
+          .submit-button:hover{
+            box-shadow: 0px 4px 8px 0px rgba(54, 128, 248, 0.4);
+            border-radius: 4px;
+          }
+          .submit-area-p{
+            float: left;
+            margin-left: 30px;
+            margin-top: 0;
+          }
+
+          .submit-button-p{
+            color: #3680f8;
+            font-size: 18px;
+            padding: 0;
+            font-weight: 500;
           }
         }
       }
 
       .crowd-div2HeaderDivRight{
         width: 558px;
-        height: 420px;
+        height: 430px;
         border: 1px solid #ededed;
         display: inline-block;
         position: relative;
@@ -234,6 +269,15 @@
           font-size: 14px;
           color: #353b47;
           padding-right: 14px;
+        }
+        p{
+          position: absolute;
+          bottom: 30px;
+          font-size: 20px;
+          color: #16d1c8;
+          text-align: center;
+          width: 100%;
+          //font-weight: 600;
         }
 
         .rowd-div2HeaderDivRight-Div{

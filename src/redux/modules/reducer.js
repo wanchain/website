@@ -8,12 +8,14 @@ import auth from './auth';
 import warning from './warning';
 import {reducer as form} from 'redux-form';
 import info from './info';
+import icoWarning from './icoWarning';
 
 export default combineReducers({
   routing: routerReducer,
   reduxAsyncConnect,
   auth,
   warning,
+  icoWarning,
   form,
   // multireducer: multireducer({
   //   counter1: counter,

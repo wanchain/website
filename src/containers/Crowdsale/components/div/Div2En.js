@@ -1,5 +1,7 @@
 import React, {PropTypes} from 'react';
 import { connect } from 'react-redux';
+import ICOwarningModal from '../../../../components/IcoWarn';
+import { icoOpenFunc, icoCloseFunc, icoMsgFunc} from 'redux/modules/icoWarning';
 
 const mist = require('../../image/mist.png');
 const bizhongchou1 = require('../../image/bizhongchou.png');
@@ -19,13 +21,29 @@ const ren1 = require('../../image/ren.png');
 const ren2 = require('../../image/ren2.png');
 
 @connect(
-    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, }),
+    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language,
+        icoMsg: state.icoWarning.icoMsg, icoWarningModal: state.icoWarning.icoWarningModal, }),
+    {icoOpenFunc, icoCloseFunc, icoMsgFunc},
 )
 class Div2 extends React.Component {
     static propTypes = {
       language: PropTypes.string,
       clientWidth: PropTypes.number,
+      icoMsg: PropTypes.string,
+      icoCloseFunc: PropTypes.func,
+      icoOpenFunc: PropTypes.func,
+      icoWarningModal: PropTypes.bool,
+      icoMsgFunc: PropTypes.func,
     };
+
+    componentWillMount() {
+      this.props.icoCloseFunc();
+      this.props.icoMsgFunc(null);
+    }
+
+    onClick() {
+      this.props.icoOpenFunc();
+    }
 
     onEnter(name) {
       const img = document.getElementById(name);
@@ -47,9 +65,20 @@ class Div2 extends React.Component {
       if (name === 'img5') {img.src = race1;}
       if (name === 'img6') {img.src = ren1;}
     }
+
+    showWarns = () => {
+      this.props.icoOpenFunc();
+    };
+    closeWarns = () => {
+      this.props.icoCloseFunc();
+    };
+
     render() {
-      const {clientWidth} = this.props;
+      const {clientWidth, icoMsg, icoWarningModal} = this.props;
       const styles = require('../div.scss');
+
+      let theTop = {};
+      if (clientWidth >= 1025) { theTop = {top: '-68px'}; }
 
       return (
           <div className={styles['crowd-div2Header']}>
@@ -57,7 +86,7 @@ class Div2 extends React.Component {
 
               {clientWidth > 767 &&
               <div className={styles['crowd-div2HeaderDiv']}>
-                  <div className={styles['crowd-div2HeaderDivLeft']} style={{top: '-36px'}}>
+                  <div className={styles['crowd-div2HeaderDivLeft']} style={theTop}>
                       <hr/>
                       <h4><strong>1st Participation Method: </strong>using Ethereum wallets</h4>
                       <small>Participants need to have their own Ethereum wallets and contribute ETH to a smart contract address. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
@@ -74,9 +103,23 @@ class Div2 extends React.Component {
                           </div>
                       </div>
 
+                      { !icoMsg &&
                       <div id={styles['crowd-div2HeaderDivLeft-foot']}>
-                          <p>The Ethereum address for contribution will be released when the contribution contract is deployed</p>
+                          <p style={{opacity: '0', position: 'relative', top: '-20px'}} >token购买的以太坊地址为 : </p>
+                          <div className={styles['submit-area']}>
+                              <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
+                                 onClick={this.onClick.bind(this)}>Click to show the address</a>
+                          </div>
                       </div>
+                      }
+                      { icoMsg &&
+                      <div id={styles['crowd-div2HeaderDivLeft-foot']}>
+                          <p >The Ethereum address for the token distribution is: </p>
+                          <div className={styles['submit-area-p']}>
+                              <p className={styles['submit-button-p']}>{icoMsg}</p>
+                          </div>
+                      </div>
+                      }
                   </div>
 
                   <div className={styles['crowd-div2HeaderDivRight']}>
@@ -86,13 +129,6 @@ class Div2 extends React.Component {
 
                       <div className={styles['rowd-div2HeaderDivRight-Div']}>
                           {/* <h2>指定平台待定</h2> */}
-                          <a href="https://ico.info/projects/17" target="_blank">
-                              <img src={info1} className={styles.img1} id="img1" onMouseEnter={() => this.onEnter('img1')} onMouseLeave={() => this.onLeave('img1')}/>
-                          </a>
-                          {/* <img src={icoage1} className={styles.img2} id="img2" onMouseEnter={() => this.onEnter('img2')} onMouseLeave={() => this.onLeave('img2')}/> */}
-                          <a href="https://ico.token.im/wanchain?r=87d577bc" target="_blank">
-                              <img src={token1} className={styles.img3} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>
-                          </a>
                           <a href="http://bizhongchou.com/deal-show/id-845.html" target="_blank">
                               <img src={bizhongchou1} className={styles.img4} id="img4" onMouseEnter={() => this.onEnter('img4')} onMouseLeave={() => this.onLeave('img4')}/>
                           </a>
@@ -103,6 +139,7 @@ class Div2 extends React.Component {
                               <img src={ren1} className={styles.img6} id="img6" onMouseEnter={() => this.onEnter('img6')} onMouseLeave={() => this.onLeave('img6')}/>
                           </a>
                       </div>
+                      <p>Presale on platforms is complete</p>
                   </div>
               </div>
               }
@@ -125,7 +162,23 @@ class Div2 extends React.Component {
                               <p>Transferring ETH from accounts on third-party platforms, such as exchanges or centralized wallets, directly to smart contract addresses, is not allowed, because by doing so, the Wanchain tokens will be sent to those addresses.</p>
                           </div>
                       </div>
-                      <p id={styles['crowd-div2HeaderDivLeftEn-foot']}>The Ethereum address for contribution will be released when the contribution contract is deployed</p>
+                      { !icoMsg &&
+                      <div id={styles['crowd-div2HeaderDivLeftEn-foot']}>
+                          <p style={{opacity: '0', position: 'relative', top: '-20px'}} >token购买的以太坊地址为 : </p>
+                          <div className={styles['submit-area']}>
+                              <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
+                                 onClick={this.onClick.bind(this)}>Click to show the address</a>
+                          </div>
+                      </div>
+                      }
+                      { icoMsg &&
+                      <div id={styles['crowd-div2HeaderDivLeftEn-foot']}>
+                          <p >The Ethereum address for the token distribution is: </p>
+                          <div className={styles['submit-area-p']}>
+                              <p className={styles['submit-button-p']}>{icoMsg}</p>
+                          </div>
+                      </div>
+                      }
                   </div>
 
                   <div className={styles['crowd-div2HeaderDivRightEn']}>
@@ -134,13 +187,6 @@ class Div2 extends React.Component {
                       <small>The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.</small>
                        <div className={styles['rowd-div2HeaderDivRightEn-Div']}>
                            {/* <h2>指定平台待定</h2> */}
-                           <a href="https://ico.info/projects/17" target="_blank">
-                               <img src={info1} className={styles.img1} id="img1" onMouseEnter={() => this.onEnter('img1')} onMouseLeave={() => this.onLeave('img1')}/>
-                           </a>
-                           {/* <img src={icoage1} className={styles.img2} id="img2" onMouseEnter={() => this.onEnter('img2')} onMouseLeave={() => this.onLeave('img2')}/> */}
-                           <a href="https://ico.token.im/wanchain?r=87d577bc" target="_blank">
-                               <img src={token1} className={styles.img3} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>
-                           </a>
                            <a href="http://bizhongchou.com/deal-show/id-845.html" target="_blank">
                                <img src={bizhongchou1} className={styles.img4} id="img4" onMouseEnter={() => this.onEnter('img4')} onMouseLeave={() => this.onLeave('img4')}/>
                            </a>
@@ -151,9 +197,11 @@ class Div2 extends React.Component {
                                <img src={ren1} className={styles.img6} id="img6" onMouseEnter={() => this.onEnter('img6')} onMouseLeave={() => this.onLeave('img6')}/>
                            </a>
                        </div>
+                      <p>Presale on platforms is complete</p>
                   </div>
               </div>
               }
+              <ICOwarningModal show={icoWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
           </div>
       );
     }
@@ -161,3 +209,12 @@ class Div2 extends React.Component {
 
 export default Div2;
 
+/*
+ <a href="https://ico.info/projects/17" target="_blank">
+ <img src={info1} className={styles.img1} id="img1" onMouseEnter={() => this.onEnter('img1')} onMouseLeave={() => this.onLeave('img1')}/>
+ </a>
+ // <img src={icoage1} className={styles.img2} id="img2" onMouseEnter={() => this.onEnter('img2')} onMouseLeave={() => this.onLeave('img2')}/>
+<a href="https://ico.token.im/wanchain?r=87d577bc" target="_blank">
+    <img src={token1} className={styles.img3} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>
+</a>
+ */
