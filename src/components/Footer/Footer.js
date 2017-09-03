@@ -115,31 +115,10 @@ class Footer extends React.Component {
       return (
             <div className={styles.FooterRoot}>
                 <div className={styles.FooterContainer + ' container'}>
-                    {language === 'zn' &&
-                    <div className={styles.FooterformGroup + ' form-group col-lg-4'}>
-                        {/* <img src={email}/> */}
-                        <input type="text" className="form-control" id="name" ref="wanchain_subscribe" placeholder="Please enter the email address" />
-                        <div className={styles['submit-area']}>
-                            <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
-                               onClick={this.onClick.bind(this)}>{' + '}订阅</a>
-                        </div>
-                        <p>更多项目请咨询：<span>info@wanchain.org</span></p>
-                    </div>
-                    }
+                    {/* subscribe */}
 
-                    {language === 'en' &&
-                    <div className={styles.FooterformGroup + ' form-group col-lg-4'}>
-                        {/* <img src={email}/> */}
-                        <input type="text" className="form-control" id="name" ref="wanchain_subscribe" placeholder="Please enter the email address" />
-                        <div className={styles['submit-area']}>
-                            <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
-                               onClick={this.onClick.bind(this)}>{' + '}Subscribe</a>
-                        </div>
-                        <p>for more information, please contact: <span>info@wanchain.org</span></p>
-                    </div>
-                    }
                   { language === 'zn' &&
-                    <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
+                    <div className={styles.formGroupDiv + ' form-group'}>
                         {/* <img src={wecater} className={styles.wechat} id="wechat"/> */}
                         {/* <img src={qqer} className={styles.qq} id="qq"/> */}
                       <div className={styles.footMenuBox}>

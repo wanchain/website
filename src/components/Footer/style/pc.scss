@@ -107,11 +107,14 @@
   }
 
   .formGroupDiv{
-    padding-right: 10px;
-    float: right;
-    padding-top: 60px;
-    width: 40%;
+    //padding-right: 10px;
+    //float: right;
+    //padding-top: 60px;
+    //width: 40%;
 
+    padding-right: 10px;
+    padding-top: 60px;
+    text-align: center;
     a{
       cursor: pointer;
       display: block;
@@ -143,10 +146,13 @@
     right: -20px;
     top: -151px !important;
   }
+
   .footMenu{
     width:60px;
-    float: left;
-    position:relative;
+    //float: left;
+    //position:relative;
+
+    display: inline-block;
   }
   .footMenu span{
     color: #999;
