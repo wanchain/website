@@ -9,8 +9,8 @@ const environment = {
   }
 }[process.env.NODE_ENV || 'development'];
 
-const debug = true;
-// const debug = false;
+// const debug = true;
+const debug = false;
 
 // state = 'after'
 const icoBar = {state: 'before', time: '09/06/2017 22:00:00', amount: '107100000 WAN', bar: '70%',
