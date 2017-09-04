@@ -47,7 +47,7 @@ export default class Carousel extends React.Component {
       }
       return (
           <a href={value.url} target="_blank" key={index} style={style}>
-            <img src={value.img} />
+            {value.img && <img src={value.img} />}
           </a>
       );
     });

@@ -37,21 +37,21 @@ export default class Home extends Component {
       super(props);
       this.state = {
         date: {
-          days: '00', hours: '00', minutes: '00', seconds: '00',
+          days: '02', hours: '03', minutes: '01', seconds: '30',
           ref_days: 'DAY', ref_hours: 'HOUR', ref_minutes: 'MINUTE', ref_seconds: 'SECOND'
         },
       };
     }
 
     componentDidMount() {
-      this.interval = setInterval(() => this.tick(), 1000);
+      // this.interval = setInterval(() => this.tick(), 1000);
 
       const width = document.documentElement.clientWidth;
       this.props.getClientWidthFunc(width);
     }
 
     componentWillUnmount() {
-      clearInterval(this.interval);
+      // clearInterval(this.interval);
       this.props.getNavButtonFunc(false);
     }
 
@@ -135,7 +135,7 @@ export default class Home extends Component {
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style}>
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
-                            <li><Link to="/crowdsale">ICO</Link></li>
+                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
                             <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
                             <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                             <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
@@ -148,7 +148,7 @@ export default class Home extends Component {
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style1}>
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
-                            <li><Link to="/crowdsale">ICO</Link></li>
+                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
                             <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
                             <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                             <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
@@ -161,7 +161,7 @@ export default class Home extends Component {
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style1}>
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
-                            <li><Link to="/crowdsale">ICO</Link></li>
+                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
                             <li>
                                 <div className={styles.homeDropdown}>
                                     <a>文档</a>
@@ -208,7 +208,7 @@ export default class Home extends Component {
                         }
 
                       <div className={styles.bannerBtn}>
-                        <Link to="/crowdsale">众筹</Link>
+                        <Link to="/" >众筹</Link>
                         <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                         <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                         <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
@@ -242,7 +242,7 @@ export default class Home extends Component {
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style}>
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
-                            <li><Link to="/crowdsale">ICO</Link></li>
+                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
@@ -255,7 +255,7 @@ export default class Home extends Component {
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style1}>
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
-                            <li><Link to="/crowdsale">ICO</Link></li>
+                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
@@ -268,7 +268,7 @@ export default class Home extends Component {
                     <div className={styles.homeHeaderUl} id="navbar-menu" style={style1}>
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
-                            <li><Link to="/crowdsale">ICO</Link></li>
+                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
                             <li>
                                 <div className={styles.homeDropdown}>
                                     <a>Docs</a>
@@ -322,7 +322,7 @@ export default class Home extends Component {
                         }
 
                       <div className={styles.bannerBtn}>
-                        <Link to="/crowdsale">ICO</Link>
+                         <Link to="/">ICO</Link>
                         <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
                         <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
                         <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>

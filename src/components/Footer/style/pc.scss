@@ -107,14 +107,11 @@
   }
 
   .formGroupDiv{
-    //padding-right: 10px;
-    //float: right;
-    //padding-top: 60px;
-    //width: 40%;
-
     padding-right: 10px;
+    float: right;
     padding-top: 60px;
-    text-align: center;
+    width: 40%;
+
     a{
       cursor: pointer;
       display: block;
@@ -137,26 +134,19 @@
   }
   .wechat{
     display: none;
-    //left: -124px;
-    //top: -170px!important;
-    left: 545px;
-    top: -110px!important;
+    left: -124px;
+    top: -170px!important;
   }
 
   .qq{
     display: none;
-    //right: -20px;
-    //top: -151px !important;
-    right: 353px;
-    top: -110px!important;
+    right: -20px;
+    top: -151px !important;
   }
-
   .footMenu{
     width:60px;
-    //float: left;
-    //position:relative;
-
-    display: inline-block;
+    float: left;
+    position:relative;
   }
   .footMenu span{
     color: #999;
