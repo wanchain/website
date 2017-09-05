@@ -9,8 +9,6 @@ const environment = {
   }
 }[process.env.NODE_ENV || 'development'];
 
-// const debug = true;
-const debug = false;
 
 // state = 'after'
 const icoBar = {state: 'before', time: '09/06/2017 22:00:00', amount: '107100000 WAN', bar: '70%',
@@ -20,25 +18,12 @@ const ICO = ['1 ETH = 880 WAN (8.5折)', '1 ETH = 790 WAN (9.5折)', '1 ETH = 75
 const ICOEn = ['1 ETH = 880 WAN (15% off)', '1 ETH = 790 WAN (5% off)', '1 ETH = 750 WAN (Original Cost)'];
 // ICO = ['8.5折', '9.5折', '原价'];
 
-let mysite;
-let mysiteCrt;
-let gd1;
-if (debug) {
-  mysite = 'D:/zsunData/myPro/WanChainNode/website/websiteVersion2.0/src/cert/wanchain.org.key';
-  mysiteCrt = 'D:/zsunData/myPro/WanChainNode/website/websiteVersion2.0/src/cert/3bb55a3526ededcc.crt';
-  gd1 = 'D:/zsunData/myPro/WanChainNode/website/websiteVersion2.0/src/cert/gd_bundle-g2-g1.crt';
-} else {
-  mysite = '/root/wanchain/website/src/cert/wanchain.org.key';
-  mysiteCrt = '/root/wanchain/website/src/cert/3bb55a3526ededcc.crt';
-  gd1 = '/root/wanchain/website/src/cert/gd_bundle-g2-g1.crt';
 
-  // mysite = '/root/website/src/cert/wanchain.org.key';
-  // mysiteCrt = '/root/website/src/cert/3bb55a3526ededcc.crt';
-  // gd1 = '/root/website/src/cert/gd_bundle-g2-g1.crt';
-}
+const mysite = './src/cert/wanchain.org.key';
+const mysiteCrt = './src/cert/3bb55a3526ededcc.crt';
+const gd1 = './src/cert/gd_bundle-g2-g1.crt';
 
 module.exports = Object.assign({
-  debug: debug,
   host: process.env.HOST || 'localhost',
   port: process.env.PORT,
   apiHost: process.env.APIHOST || 'localhost',
