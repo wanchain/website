@@ -35,7 +35,11 @@ class Navigation extends Component {
 
     getNav() {
       const navButton = this.props.navButton;
-      this.props.getNavButtonFunc(!navButton);
+      const navbar = document.getElementById('navbar-menu');
+      if (this.props.clientWidth <= 1024) {
+        this.props.getNavButtonFunc(!navButton);
+        if ( navButton ) {navbar.style.display = 'none'; } else {navbar.style.display = 'inline-block'; }
+      }
     }
 
     render() {
@@ -48,24 +52,16 @@ class Navigation extends Component {
       const github = require('./image/github2.png');
       const github2 = require('./image/icoLoho1.png');
 
-      const {navButton, clientWidth} = this.props;
-
-      const style = {display: 'none'};
-      const style1 = {display: 'inline_block'};
+      const {clientWidth} = this.props;
 
       return (
             <div className={styles.navRoot}>
                 {language === 'zn' &&
                 <div className={styles.navHeader + ' container'}>
-                  {clientWidth > 320 &&
-                  <IndexLink to="/"><img src={logo} /></IndexLink>
-                  }
-                  {clientWidth <= 320 &&
-                  <IndexLink to="/"><img src={logoMo} /></IndexLink>
-                  }
+                    <IndexLink to="/"><img src={clientWidth > 320 ? logo : logoMo} /></IndexLink>
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
-                    {!navButton && clientWidth <= 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={style}>
+                    {clientWidth <= 1024 ?
+                    <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
                             {/* <li><Link to="/crowdsale">ICO</Link></li> */}
@@ -75,23 +71,8 @@ class Navigation extends Component {
                             <li><Link to="/about">团队</Link></li>
                         </ul>
                     </div>
-                    }
-
-                    {navButton && clientWidth <= 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={style1}>
-                        <ul>
-                            <li><IndexLink to="/">首页</IndexLink></li>
-                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
-                            <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
-                            <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
-                            <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
-                            <li><Link to="/about">团队</Link></li>
-                        </ul>
-                    </div>
-                    }
-
-                    {!navButton && clientWidth > 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={style1}>
+                    :
+                    <div className={styles.navHeaderUl} id="navbar-menu">
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
                             {/* <li><Link to="/crowdsale">ICO</Link></li> */}
@@ -109,15 +90,8 @@ class Navigation extends Component {
                         </ul>
                     </div>
                     }
-
                     <div className={styles.navGit}>
-                      {clientWidth > 320 &&
-                      <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-                      }
-                      {clientWidth <= 320 &&
-                      <a href="https://github.com/wanchain" target="_blank"><img src={github2} /></a>
-                      }
-
+                        <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 320 ? github : github2} /></a>
                         <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
                         <a onClick={() => {this.onChangeEn();}}>English</a>
                     </div>
@@ -126,15 +100,10 @@ class Navigation extends Component {
 
                 {language === 'en' &&
                 <div className={styles.navHeader + ' container'}>
-                  {clientWidth > 320 &&
-                  <IndexLink to="/"><img src={logo} /></IndexLink>
-                  }
-                  {clientWidth <= 320 &&
-                  <IndexLink to="/"><img src={logoMo} /></IndexLink>
-                  }
+                    <IndexLink to="/"><img src={clientWidth > 320 ? logo : logoMo} /></IndexLink>
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
-                    {!navButton && clientWidth <= 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={style}>
+                    {clientWidth <= 1024 ?
+                    <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
                             {/* <li><Link to="/crowdsale">ICO</Link></li> */}
@@ -144,23 +113,8 @@ class Navigation extends Component {
                             <li><Link to="/about">Team</Link></li>
                         </ul>
                     </div>
-                    }
-
-                    {navButton && clientWidth <= 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={style1}>
-                        <ul>
-                            <li><IndexLink to="/">Home</IndexLink></li>
-                            {/* <li><Link to="/crowdsale">ICO</Link></li> */}
-                            <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
-                            <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
-                            <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
-                            <li><Link to="/about">Team</Link></li>
-                        </ul>
-                    </div>
-                    }
-
-                    {!navButton && clientWidth > 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={style1}>
+                    :
+                    <div className={styles.navHeaderUl} id="navbar-menu">
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
                             {/* <li><Link to="/crowdsale">ICO</Link></li> */}
@@ -178,20 +132,13 @@ class Navigation extends Component {
                         </ul>
                     </div>
                     }
-
                     <div className={styles.navGit}>
-                      {clientWidth > 320 &&
-                      <a href="https://github.com/wanchain" target="_blank"><img src={github} /></a>
-                      }
-                      {clientWidth <= 320 &&
-                      <a href="https://github.com/wanchain" target="_blank"><img src={github2} /></a>
-                      }
+                        <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 320 ? github : github2} /></a>
                         <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
                         <a onClick={() => {this.onChangeEn();}}>English</a>
                     </div>
                 </div>
                 }
-
             </div>
         );
     }

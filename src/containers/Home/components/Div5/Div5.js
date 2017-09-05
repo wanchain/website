@@ -44,8 +44,10 @@ class Div5 extends React.Component {
             <div className={styles.div4Header}>
 
                 <div className={styles.div4HeaderDiv + ' container'}>
-                    {language === 'zn' && <h2><hr className={styles.div1HeaderImg}/>最新通告<hr className={styles.div1HeaderImg}/></h2>}
-                    {language === 'en' && <h2><hr className={styles.div1HeaderImg}/>News<hr className={styles.div1HeaderImg}/></h2>}
+                    <h2><hr className={styles.div1HeaderImg}/>
+                        {language === 'zn' ? '最新通告' : 'News'}
+                        <hr className={styles.div1HeaderImg}/>
+                    </h2>
                     <div className="col-lg-12">
                         {newsResult}
                     </div>

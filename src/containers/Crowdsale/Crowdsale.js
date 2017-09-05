@@ -44,8 +44,10 @@ class Crowdsale extends Component {
                 {language === 'zn' &&
                 <div className={styles.crowdsaleHeader}>
                     <img src={cor2} className={styles.crowdsaleHeaderDivImg} style={{width: '100%'}}/>
-                    {Number(clientWidth) > 1024 && <img src={num} className={styles.crowdsaleHeaderDivNumPC}/>}
-                    {Number(clientWidth) <= 1024 && <img src={num} style={{position: 'relative', top: '-80px', width: '100%'}}/>}
+                    {clientWidth > 1024 ?
+                      <img src={num} className={styles.crowdsaleHeaderDivNumPC}/> :
+                      <img src={num} style={{position: 'relative', top: '-80px', width: '100%'}}/>
+                    }
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>万维链代币分配</h2>
                         <p>万维链代币（万币Wancoin）总量为2.1亿个，公开销售的代币以万维链ERC-20 tokens进行，<br/>最终上线的代币与ICO token比例为1:1<br/>
@@ -57,35 +59,24 @@ class Crowdsale extends Component {
                 {language === 'en' &&
                 <div className={styles.crowdsaleHeader}>
                     <img src={cor2} className={styles.crowdsaleHeaderDivImg} style={{width: '100%'}}/>
-                    {Number(clientWidth) > 1024 && <img src={crowdNumEn} className={styles.crowdsaleHeaderDivNumPC}/>}
-                    {Number(clientWidth) > 1024 &&
-                    <div className={styles.crowdsaleHeaderDiv}>
-                        <h2><img src={corwdLogo}/>Token Distribution</h2>
-                        <p>The total supply of Wancoins is 210 million.
-                            The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens. <br/>
-                            Eventually the online tokens will be equal to the crowd-funding tokens in quantity.<br/>
-                            The ICO will start on September 6th, 2017, 12:00 UTC</p>
-                    </div>
+                    {clientWidth > 1024 ?
+                      <img src={crowdNumEn} className={styles.crowdsaleHeaderDivNumPC}/> :
+                      <img src={crowdNumEn} style={{position: 'relative', top: '-80px', width: '100%'}}/>
                     }
-
-                    {Number(clientWidth) <= 1024 && <img src={crowdNumEn} style={{position: 'relative', top: '-80px', width: '100%'}}/>}
-                    {Number(clientWidth) <= 1024 &&
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>Token Distribution</h2>
-                        <p style={{fontSize: '13px'}}>The total supply of Wancoins is 210 million.
+                        <p style={clientWidth > 1024 ? '' : {fontSize: '13px'}}>The total supply of Wancoins is 210 million.
                             The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens.
+                            {clientWidth > 1024 ? <br/> : ''}
                             Eventually the online tokens will be equal to the crowd-funding tokens in quantity.
+                            {clientWidth > 1024 ? <br/> : ''}
                             The ICO will start on September 6th, 2017, 12:00 UTC</p>
                     </div>
-                    }
                 </div>
                 }
 
-                {language === 'zn' && <Div1/>}
-                {language === 'en' && <Div1En/>}
-
-                {language === 'zn' && <Div2/>}
-                {language === 'en' && <Div2En/>}
+                {language === 'zn' ? <Div1/> : <Div1En/>}
+                {language === 'zn' ? <Div2/> : <Div2En/>}
                 <Div3/>
                 <Div4/>
             </div>
@@ -93,17 +84,5 @@ class Crowdsale extends Component {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//
-//     };
-// };
-//
-// const mapStateToProps = (state) => ({
-//     language : state.lang.language,
-//     clientWidth: state.lang.clientWidth,
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Crowdsale)
 export default Crowdsale;
 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import WarningModal from '../../components/Warn';
 import { warningOpenFunc, warningCloseFunc, warningMsgFunc} from 'redux/modules/warning';
-
+import comConfig from '../comConfig';
 import emailCheck from './utils/emailCheck';
 
 import { insertSubscribeFunc } from 'redux/modules/auth';
@@ -110,116 +110,60 @@ class Footer extends React.Component {
       const qq1 = require('./image/qq.png');
 
       const wecater = require('./image/wecatZn.png');
+      const wecaterEn = require('./image/wecatEn.png');
       const qqer = require('./image/qqer.png');
 
       return (
             <div className={styles.FooterRoot}>
                 <div className={styles.FooterContainer + ' container'}>
-                    {language === 'zn' &&
                     <div className={styles.FooterformGroup + ' form-group col-lg-4'}>
-                        {/* <img src={email}/> */}
                         <input type="text" className="form-control" id="name" ref="wanchain_subscribe" placeholder="Please enter the email address" />
                         <div className={styles['submit-area']}>
                             <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
-                               onClick={this.onClick.bind(this)}>{' + '}订阅</a>
+                               onClick={this.onClick.bind(this)}>
+                                <span>{language === 'zn' ? ' + 订阅' : ' + Subscribe'}</span>
+                            </a>
                         </div>
-                        <p>更多项目请咨询：<span>info@wanchain.org</span></p>
+                        <p>{language === 'zn' ? '更多项目请咨询：' : 'for more information, please contact: '}<span>info@wanchain.org</span></p>
                     </div>
-                    }
-
-                    {language === 'en' &&
-                    <div className={styles.FooterformGroup + ' form-group col-lg-4'}>
-                        {/* <img src={email}/> */}
-                        <input type="text" className="form-control" id="name" ref="wanchain_subscribe" placeholder="Please enter the email address" />
-                        <div className={styles['submit-area']}>
-                            <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
-                               onClick={this.onClick.bind(this)}>{' + '}Subscribe</a>
-                        </div>
-                        <p>for more information, please contact: <span>info@wanchain.org</span></p>
-                    </div>
-                    }
-                  { language === 'zn' &&
                     <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
-                        {/* <img src={wecater} className={styles.wechat} id="wechat"/> */}
-                        {/* <img src={qqer} className={styles.qq} id="qq"/> */}
-                      <div className={styles.footMenuBox}>
-                      <div className={styles.footMenu}>
-                        <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
-                        <span>reddit</span>
-                      </div>
+                        <div className={styles.footMenuBox}>
+                            <div className={styles.footMenu}>
+                                <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
+                                <span>reddit</span>
+                            </div>
 
-                      <div className={styles.footMenu}>
-                        <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
-                        <span>slack</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
-                        <span>facebook</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
-                        <span>推特</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
-                        <span>微博</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
-                        <span>微信</span>
-                        <img src={wecater} className={styles.wechat} id="wechat"/>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
-                        <span>QQ群</span>
-                        <img src={qqer} className={styles.qq} id="qq"/>
-                      </div>
-                      </div>
+                            <div className={styles.footMenu}>
+                                <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
+                                <span>slack</span>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
+                                <span>facebook</span>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
+                                <span>{language === 'zn' ? '推特' : 'twitter'}</span>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
+                                <span>{language === 'zn' ? '微博' : 'weibo'}</span>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
+                                <span>{language === 'zn' ? '微信' : 'wechat'}</span>
+                                <img src={language === 'zn' ? wecater : wecaterEn} className={styles.wechat} id="wechat"/>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
+                                <span>{language === 'zn' ? 'QQ群' : 'QQ group'}</span>
+                                <img src={qqer} className={styles.qq} id="qq"/>
+                            </div>
+                        </div>
                     </div>
-                  }
-                  { language === 'en' &&
-                  <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
-                    {/* <img src={wecater} className={styles.wechat} id="wechat"/> */}
-                    {/* <img src={qqer} className={styles.qq} id="qq"/> */}
-                    <div className={styles.footMenuBox}>
-                      <div className={styles.footMenu}>
-                        <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
-                        <span>reddit</span>
-                      </div>
-
-                      <div className={styles.footMenu}>
-                        <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
-                        <span>slack</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
-                        <span>facebook</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
-                        <span>twitter</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>
-                        <span>weibo</span>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
-                        <span>wechat</span>
-                        <img src={wecater} className={styles.wechat} id="wechat"/>
-                      </div>
-                      <div className={styles.footMenu}>
-                        <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
-                        <span>QQ group</span>
-                        <img src={qqer} className={styles.qq} id="qq"/>
-                      </div>
-                    </div>
-                  </div>
-                  }
                 </div>
                 <div className={styles.FooterEnd}>
-                    { language === 'zn' && <span>©wanchain 2017 版权所有 all rights reserved</span>}
-                    { language === 'en' && <span>©WANCHAIN FOUNDATION LTD 2017 all rights reserved</span>}
+                    <span>{language === 'zn' ? comConfig.Footer.footEnd.zn : comConfig.Footer.footEnd.en}</span>
                 </div>
                 <WarningModal show={warningModal} onHide={this.showWarn.bind(this)} onClose={this.closeWarn.bind(this)} message={this.props.warningMsg}/>
             </div>

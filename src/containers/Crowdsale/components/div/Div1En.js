@@ -41,36 +41,22 @@ class Div1En extends React.Component {
 
               <div className={styles['crowd-div1HeaderDiv']}>
                   <h4><img src={mark}/>notes:</h4>
-                  {clientWidth > 767 &&
                   <div>
                       {/* <div className={styles['crowd-div4Header-pot']}></div> */}
                       {/* <p> Before the ICO starts, exchange ratio based on Ether will be published in accordance with the Ether price.</p><br/> */}
                       <div className={styles['crowd-div4Header-pot']}></div>
-                      <p>When either 107.1 million tokens are sold or when the crowd-funding time ends, the smart contract will be automatically closed.</p><br/>
+                      <p>When either 107.1 million tokens are sold or when the crowd-funding time ends, the smart contract will be automatically closed.</p>
+                      {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
-                      <p>The minimum contribution limit for each transaction is 0.1ETH. </p><br/>
+                      <p>The minimum contribution limit for each transaction is 0.1ETH. </p>
+                      {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
                       <p >After the crowd-funding ends, the smart contracts will allocate the tokens to every crowd-funding address,</p>
-                      <p style={{marginTop: 0}}>and these tokens will be transferred via Ethereum wallets.</p><br/>
+                      <p style={{marginTop: 0}}>and these tokens will be transferred via Ethereum wallets.</p>
+                      {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
                       <p>When Wanchain is live, users may exchange their tokens for Wancoins at a 1:1 ratio. Wanchain version 1.0 is expected to go online in November 2017.</p>
                   </div>
-                  }
-
-                  {clientWidth <= 767 &&
-                  <div>
-                      {/* <div className={styles['crowd-div4Header-pot']}></div> */}
-                      {/* <p> Before the ICO starts, exchange ratio based on Ether will be published in accordance with the Ether price.</p> */}
-                      <div className={styles['crowd-div4Header-pot']}></div>
-                      <p> When either 107.1 million tokens are sold or when the crowd-funding time ends, the smart contract will be automatically closed.</p>
-                      <div className={styles['crowd-div4Header-pot']}></div>
-                      <p>The minimum contribution limit for each transaction is 0.1ETH. </p>
-                      <div className={styles['crowd-div4Header-pot']}></div>
-                      <p> After the crowd-funding ends, the smart contracts will allocate the tokens to every crowd-funding address, and these tokens will be transferred via Ethereum wallets.</p>
-                      <div className={styles['crowd-div4Header-pot']}></div>
-                      <p> When Wanchain is live, users may exchange their tokens for Wancoins at a 1:1 ratio. Wanchain version 1.0 is expected to go online in November 2017.</p>
-                  </div>
-                  }
                </div>
           </div>
       );

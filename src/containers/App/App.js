@@ -80,11 +80,15 @@ class App extends Component {
   render() {
     const styles = require('./App.scss');
     const {transition, language} = this.props;
-
+    let title;
+    if (language === 'zn') {
+      title = '万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施';
+    } else {
+      title = "wanchain- A Distributed 'Super Financial Market'";
+    }
     return (
       <div className={styles.app}>
-        {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>}
-        {language === 'en' && <Helmet title="wanchain- A Distributed 'Super Financial Market'"/>}
+        <Helmet title={title}/>
         {transition.pathname !== '/' && <Navigation/>}
         <div className={styles.appContent}>
           {this.props.children}
@@ -97,4 +101,3 @@ class App extends Component {
 }
 
 export default App;
-//  <Helmet {...config.app.head}/>

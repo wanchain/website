@@ -3,6 +3,7 @@ import {Modal} from 'react-bootstrap';
 import { connect } from 'react-redux';
 import {icoMsgFunc} from 'redux/modules/icoWarning';
 
+import comConfig from '../comConfig';
 import config from '../../config';
 
 @connect(
@@ -63,49 +64,37 @@ export default class ICOwarningModal extends Component {
     return (
         <Modal show={this.props.show} onHide={this.props.onHide}>
             <div className={styles['astro-warning-modal']}>
-              {language === 'zn' && <h4>万维链Token购买申明</h4>}
-              {language === 'zn' && <p>请仔细阅读如下内容，并确保您理解了足够的信息</p>}
-
-              {language === 'en' && <h4>Wanchain Tokens Purchase Statement</h4>}
-              {language === 'en' && <p>Please read the following carefully and confrm you understand enough information</p>}
+              <h4>{language === 'zn' ? comConfig.IcoWarn.titleH4.zn : comConfig.IcoWarn.titleH4.en}</h4>
+              <p>{language === 'zn' ? comConfig.IcoWarn.titleP.zn : comConfig.IcoWarn.titleP.en}</p>
               <hr/>
               <span className="glyphicon glyphicon-remove" id={styles['astro-warning-gly']} onClick={this.onCloseFunc.bind(this)}></span>
               <div className={styles['astro-warning-modal-button']}>
-                {language === 'zn' &&
                 <div className={styles['astro-warning-modal-div']}>
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
                     <label><input type="checkbox" name="warn" value="" />
-                      请点击确定您不是美国或者新加坡公民、居民或者实体，并切不代表任何美国或新加坡人购买WAN Tokens。</label>
+                      {language === 'zn' ? comConfig.IcoWarn.checkIn.one.zn : comConfig.IcoWarn.checkIn.one.en}</label>
                   </div>
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
-                    <label><input type="checkbox" name="warn" value="" />请点击确定您已经阅读、理解并且同意了
-                      <a>WAN Token的购买协议</a>。</label>
+                    <label><input type="checkbox" name="warn" value="" />
+                      {language === 'zn' ? comConfig.IcoWarn.checkIn.two.zn : comConfig.IcoWarn.checkIn.two.en}
+                      <a>{language === 'zn' ? ' WAN Token的购买协议' : ' WAN Token Purchase Agreement'}</a>
+                    </label>
                   </div>
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
+                    { language === 'zn' &&
                     <label><input type="checkbox" name="warn" value="" />请点击确定您已经阅读、理解了万维链的
                       <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>和
                       <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>。
                     </label>
-                  </div>
-                </div>
-                }
-                {language === 'en' &&
-                <div className={styles['astro-warning-modal-div']}>
-                  <div className="checkbox" id={styles['astro-warning-checkbox']}>
-                    <label><input type="checkbox" name="warn" value="" />Check here to confim that you are not a U.S. and Singapore citizen, resident or entity nor are you purchasing WAN Tokens or signing on behalf of a U.S. and Singapore Person.</label>
-                  </div>
-                  <div className="checkbox" id={styles['astro-warning-checkbox']}>
-                    <label><input type="checkbox" name="warn" value="" />Check here to comfirm that you have read, understand and agree to the terms of the
-                      <a> WAN Token Purchase Agreement</a>.</label>
-                  </div>
-                  <div className="checkbox" id={styles['astro-warning-checkbox']}>
+                    }
+                    { language === 'en' &&
                     <label><input type="checkbox" name="warn" value="" />Check here to comfirm that you have read and understand the
-                      <a href={config.app.files.WhitepaperEN} target="_blank">Wanchain White Paper </a>and
+                      <a href={config.app.files.WhitepaperEN} target="_blank"> Wanchain White Paper </a>and
                       <a href={config.app.files.CommercialEN} target="_blank"> Wanchain Commecial White Paper</a>.
                     </label>
+                    }
                   </div>
                 </div>
-                }
                 {language === 'zn' && <button key="1" onClick={this.onCheck.bind(this)} id="theText">确定</button>}
                 {language === 'en' && <button key="1" onClick={this.onCheck.bind(this)} id="theText">Ok</button>}
               </div>

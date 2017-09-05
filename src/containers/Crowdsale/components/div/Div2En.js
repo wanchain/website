@@ -84,27 +84,26 @@ class Div2 extends React.Component {
           <div className={styles['crowd-div2Header']}>
               <h2><hr className={styles['crowd-div1HeaderImg']}/>How to Participate<hr className={styles['crowd-div1HeaderImg']}/></h2>
 
-              {clientWidth > 767 &&
               <div className={styles['crowd-div2HeaderDiv']}>
-                  <div className={styles['crowd-div2HeaderDivLeft']} style={theTop}>
+                  <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft'] : styles['crowd-div2HeaderDivLeftEn']} style={theTop}>
                       <hr/>
                       <h4><strong>1st Participation Method: </strong>using Ethereum wallets</h4>
                       <small>Participants need to have their own Ethereum wallets and contribute ETH to a smart contract address. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
                       <img src={mist} className={styles.leftImgEn}/>
-                      <div className={styles['crowd-div2HeaderDivLeft-Div']}>
-                          <div className={styles['crowd-div2HeaderDivLeft-Div1']}>
+                      <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div'] : styles['crowd-div2HeaderDivLeftEn-Div']}>
+                          <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div1'] : styles['crowd-div2HeaderDivLeftEn-Div1']}>
                               <span> * </span>
                               <p>An Ethereum wallet refers to a wallet that is totally controlled by the user and can export private keys. The above Ethereum wallets are recommended.</p>
                           </div>
 
-                          <div className={styles['crowd-div2HeaderDivLeft-Div1']}>
+                          <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div1'] : styles['crowd-div2HeaderDivLeftEn-Div1']}>
                               <span> * </span>
                               <p>Transferring ETH from accounts on third-party platforms, such as exchanges or centralized wallets, directly to smart contract addresses, is not allowed, because by doing so, the Wanchain tokens will be sent to those addresses.</p>
                           </div>
                       </div>
 
                       { !icoMsg &&
-                      <div id={styles['crowd-div2HeaderDivLeft-foot']}>
+                      <div id={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-foot'] : styles['crowd-div2HeaderDivLeftEn-foot']}>
                           <p style={{opacity: '0', position: 'relative', top: '-20px'}} >token购买的以太坊地址为 : </p>
                           <div className={styles['submit-area']}>
                               <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
@@ -113,7 +112,7 @@ class Div2 extends React.Component {
                       </div>
                       }
                       { icoMsg &&
-                      <div id={styles['crowd-div2HeaderDivLeft-foot']}>
+                      <div id={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-foot'] : styles['crowd-div2HeaderDivLeftEn-foot']}>
                           <p >The Ethereum address for the token distribution is: </p>
                           <div className={styles['submit-area-p']}>
                               <p className={styles['submit-button-p']}>{icoMsg}</p>
@@ -122,12 +121,14 @@ class Div2 extends React.Component {
                       }
                   </div>
 
-                  <div className={styles['crowd-div2HeaderDivRight']}>
+                  <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivRight'] : styles['crowd-div2HeaderDivRightEn']}>
                       <hr/>
                       <h4><strong>2nd Participation Method: </strong>the following platforms</h4>
-                      <small style={{marginRight: '10px'}}>The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.</small>
+                      <small style={clientWidth > 767 ? {marginRight: '10px'} : ''}>
+                          The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.
+                      </small>
 
-                      <div className={styles['rowd-div2HeaderDivRight-Div']}>
+                      <div className={clientWidth > 767 ? styles['rowd-div2HeaderDivRight-Div'] : styles['crowd-div2HeaderDivRightEn-Div']}>
                           {/* <h2>指定平台待定</h2> */}
                           <img src={bizhongchou1} className={styles.img4} id="img4" />
                           <img src={race1} className={styles.img5} id="img5" />
@@ -136,59 +137,6 @@ class Div2 extends React.Component {
                       <p>Presale on platforms is complete</p>
                   </div>
               </div>
-              }
-
-              {clientWidth <= 767 &&
-              <div className={styles['crowd-div2HeaderDiv']}>
-                  <div className={styles['crowd-div2HeaderDivLeftEn']}>
-                      <hr/>
-                      <h4><strong>1st Participation Method: </strong>using Ethereum wallets</h4>
-                      <small>Participants need to have their own Ethereum wallets and contribute ETH to a smart contract address. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
-                      <img src={mist} className={styles.leftImgEn}/>
-                      <div className={styles['crowd-div2HeaderDivLeftEn-Div']}>
-                          <div className={styles['crowd-div2HeaderDivLeftEn-Div1']}>
-                              <span> * </span>
-                              <p>An Ethereum wallet refers to a wallet that is totally controlled by the user and can export private keys. The above Ethereum wallets are recommended.</p>
-                          </div>
-
-                          <div className={styles['crowd-div2HeaderDivLeftEn-Div1']}>
-                              <span> * </span>
-                              <p>Transferring ETH from accounts on third-party platforms, such as exchanges or centralized wallets, directly to smart contract addresses, is not allowed, because by doing so, the Wanchain tokens will be sent to those addresses.</p>
-                          </div>
-                      </div>
-                      { !icoMsg &&
-                      <div id={styles['crowd-div2HeaderDivLeftEn-foot']}>
-                          <p style={{opacity: '0', position: 'relative', top: '-20px'}} >token购买的以太坊地址为 : </p>
-                          <div className={styles['submit-area']}>
-                              <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
-                                 onClick={this.onClick.bind(this)}>Click to show the address</a>
-                          </div>
-                      </div>
-                      }
-                      { icoMsg &&
-                      <div id={styles['crowd-div2HeaderDivLeftEn-foot']}>
-                          <p >The Ethereum address for the token distribution is: </p>
-                          <div className={styles['submit-area-p']}>
-                              <p className={styles['submit-button-p']}>{icoMsg}</p>
-                          </div>
-                      </div>
-                      }
-                  </div>
-
-                  <div className={styles['crowd-div2HeaderDivRightEn']}>
-                      <hr/>
-                      <h4><strong>2nd Participation Method: </strong>the following platforms</h4>
-                      <small>The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.</small>
-                       <div className={styles['rowd-div2HeaderDivRightEn-Div']}>
-                           {/* <h2>指定平台待定</h2> */}
-                           <img src={bizhongchou1} className={styles.img4} id="img4" />
-                           <img src={race1} className={styles.img5} id="img5" />
-                           <img src={ren1} className={styles.img6} id="img6" />
-                       </div>
-                      <p>Presale on platforms is complete</p>
-                  </div>
-              </div>
-              }
               <ICOwarningModal show={icoWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
           </div>
       );

@@ -16,23 +16,15 @@ class Div3 extends React.Component {
       const {language} = this.props;
       const styles = require('../div.scss');
 
+      let ques;
+      if (language === 'zn') { ques = question; } else { ques = questionEn; }
       return (
             <div className={styles['crowd-div3Header'] + ' container'}>
-                {language === 'zn' && <h2><hr className={styles['crowd-div1HeaderImg']}/>常见问题<hr className={styles['crowd-div1HeaderImg']}/></h2>}
-                {language === 'zn' &&
-                question.map((value, index) => {
-                  return (
-                        <div className={styles['crowd-div3HeaderFaq']} key={index}>
-                            <b>{value.title}</b>
-                            <p>{value.describe}</p>
-                        </div>
-                  );
-                })
-                }
-
-                {language === 'en' && <h2><hr className={styles['crowd-div1HeaderImg']}/>FAQ<hr className={styles['crowd-div1HeaderImg']}/></h2>}
-                {language === 'en' &&
-                questionEn.map((value, index) => {
+                <h2><hr className={styles['crowd-div1HeaderImg']}/>{language === 'zn' ? '常见问题' : 'FAQ'}
+                    <hr className={styles['crowd-div1HeaderImg']}/>
+                </h2>
+                {
+                ques.map((value, index) => {
                   return (
                         <div className={styles['crowd-div3HeaderFaq']} key={index}>
                             <b>{value.title}</b>
@@ -46,18 +38,5 @@ class Div3 extends React.Component {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         changeLanguage: (data) => {
-//             dispatch(changeLanguage(data))
-//         },
-//     };
-// };
-
-// const mapStateToProps = (state) => ({
-//     language : state.lang.language,
-// });
-//
-// export default connect(mapStateToProps, mapDispatchToProps)(Div3)
 export default Div3;
 

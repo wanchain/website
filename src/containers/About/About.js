@@ -28,6 +28,11 @@ class About extends Component {
       const blog2 = require('./image/team.png');
       const styles = require('./About.scss');
 
+      let team;
+      if (language === 'zn') { team = teamData; } else {team = teamDataEn; }
+      let advisory;
+      if (language === 'zn') { advisory = advisoryData; } else {advisory = dataAdvisoryEn; }
+
       return (
             <div className={styles.aboutDiv}>
                 {/* {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>} */}
@@ -35,19 +40,17 @@ class About extends Component {
                 <div className={styles.aboutHeader}>
                     <img className={styles.aboutHeaderImg1} src={blog1} />
                     <img className={styles.aboutHeaderImg2} src={blog2} />
-                    {language === 'zn' && <h2>项目团队</h2>}
-                    {language === 'en' && <h2>Wanchain</h2>}
+                    <h2>{language === 'zn' ? '项目团队' : 'Wanchain'}</h2>
                 </div>
 
                 <div className={styles.aboutBody + ' container'}>
                     <div className={styles.aboutTitle}>
-                        {language === 'zn' && <h2>核心团队</h2>}
-                        {language === 'en' && <h2>Wanchain Team</h2>}
+                        <h2>{language === 'zn' ? '核心团队' : 'Wanchain Team'}</h2>
                     </div>
 
                     <div className="col-lg-12" style={{marginBottom: '20px'}}>
-                        {language === 'zn' &&
-                        teamData.map((value, index) => {
+                      {
+                        team.map((value, index) => {
                           return (
                               <div className={styles.aboutTitleDiv + ' col-lg-4'} key={index}>
                                   <img src={value.img} />
@@ -56,28 +59,16 @@ class About extends Component {
                               </div>
                           );
                         })
-                        }
-                        {language === 'en' &&
-                        teamDataEn.map((value, index) => {
-                          return (
-                              <div className={styles.aboutTitleDiv + ' col-lg-4'} key={index}>
-                                  <img src={value.img} />
-                                  <h4>{value.title}<small>{value.position}</small></h4>
-                                  <p>{value.describe}</p>
-                              </div>
-                          );
-                        })
-                        }
+                      }
                     </div>
 
                     <div className={styles.aboutTitle}>
-                        {language === 'zn' && <h2>顾问团队</h2>}
-                        {language === 'en' && <h2>Advisory Group</h2>}
+                        <h2>{language === 'zn' ? '顾问团队' : 'Advisory Group'}</h2>
                     </div>
 
                     <div className="col-lg-12">
-                        {language === 'zn' &&
-                        advisoryData.map((value, index) => {
+                      {
+                        advisory.map((value, index) => {
                           return (
                               <div className={styles.aboutTitleDiv2 + ' col-lg-4'} key={index}>
                                   <img src={value.img} />
@@ -86,18 +77,7 @@ class About extends Component {
                               </div>
                           );
                         })
-                        }
-                        {language === 'en' &&
-                        dataAdvisoryEn.map((value, index) => {
-                          return (
-                              <div className={styles.aboutTitleDiv2 + ' col-lg-4'} key={index}>
-                                  <img src={value.img} />
-                                  <h4>{value.title}</h4>
-                                  <p>{value.describe}</p>
-                              </div>
-                          );
-                        })
-                        }
+                      }
                     </div>
                 </div>
             </div>
@@ -105,16 +85,4 @@ class About extends Component {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//
-//     };
-// };
-//
-// const mapStateToProps = (state) => ({
-//     language : state.lang.language,
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(About)
 export default About;
-
