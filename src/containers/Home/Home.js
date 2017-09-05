@@ -121,112 +121,91 @@ export default class Home extends Component {
         <div>
             <Helmet script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>
 
-            {language === 'zn' &&
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>
                     <IndexLink to="/"><img src={clientWidth > 320 ? logo : logo2} /></IndexLink>
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
 
-                    { !navButton && clientWidth <= 1024 && homeUl(styles.homeHeaderUl, style) }
-                    { navButton && clientWidth <= 1024 && homeUl(styles.homeHeaderUl, style1) }
-                    {!navButton && clientWidth > 1024 && homePcUl(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
+                    { !navButton && clientWidth <= 1024 && language === 'zn' && homeUl(styles.homeHeaderUl, style)}
+                    { !navButton && clientWidth <= 1024 && language === 'en' && homeUlEn(styles.homeHeaderUl, style)}
+                    { navButton && clientWidth <= 1024 && language === 'zn' && homeUl(styles.homeHeaderUl, style1)}
+                    { navButton && clientWidth <= 1024 && language === 'en' && homeUlEn(styles.homeHeaderUl, style1)}
+
+                    {!navButton && clientWidth > 1024 && language === 'zn' &&
+                    homePcUl(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
+                    {!navButton && clientWidth > 1024 && language === 'en' &&
+                    homePcUlEn(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
 
                     <div className={styles.homeGit}>
                         <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 767 ? github : github2} /></a>
-                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
-                        <a onClick={() => {this.onChangeEn();}}>English</a>
+                        {/* <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '} */}
+                        {/* <a onClick={() => {this.onChangeEn();}}>English</a> */}
                     </div>
                 </div>
 
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
+                        {language === 'zn' &&
                         <div className="rw-words rw-words-1" id={styles.scroll}>
                             {/* <h2>分布式未来"<small>银行</small>"</h2> */}
                             <h2>数字经济超级"<small>金融市场</small>"</h2>
                             <h2>区块链的"<small>互联网</small>"</h2>
                         </div>
-                        <p className={styles.bannerp}>连接不同数字资产，连接现在与未来
-                            <small>万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换</small>
+                        }
+                        {language === 'en' &&
+                        <div className="rw-words rw-words-1" id={styles.scroll}>
+                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
+                                A Distributed{clientWidth <= 767 ? <br/> : ' '}"
+                                <small className={clientWidth > 767 ? styles.indexH2size : ''}>Super Financial Market</small>"
+                            </h2>
+                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>Internet of "
+                                <small className={clientWidth > 767 ? styles.indexH2size : ''}>Blockchains</small>"
+                            </h2>
+                        </div>
+                        }
+                        <p className={styles.bannerp}>
+                            {language === 'zn' ? '连接不同数字资产，连接现在与未来' :
+                                'Links different digital assets, connecting the present and future'}
+                            <small>
+                                {language === 'zn' ? '万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换' :
+                                    'Wanchain seeks to create a new distributed financial infrastructure, connecting different blockchain networks together to exchange value.'}
+                            </small>
                         </p>
 
                         {/* ul 众筹开始倒计时 */}
                         { config.app.icoBar.state === 'before' &&
-                            ulFunc(styles.countdown, this.state.date.days, this.state.date.ref_days, this.state.date.hours, this.state.date.ref_hours,
-                                this.state.date.minutes, this.state.date.ref_minutes, this.state.date.seconds, this.state.date.ref_seconds)
+                        ulFunc(styles.countdown, this.state.date.days, this.state.date.ref_days, this.state.date.hours, this.state.date.ref_hours,
+                            this.state.date.minutes, this.state.date.ref_minutes, this.state.date.seconds, this.state.date.ref_seconds)
                         }
-
-                      <div className={styles.bannerBtn}>
-                        <Link to="/" >众筹</Link>
-                        <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
-                        <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
-                        <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
-                      </div>
+                        {language === 'zn' ?
+                            <div className={styles.bannerBtn}>
+                                <Link to="/" >众筹</Link>
+                                <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
+                                <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
+                                <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
+                            </div>
+                        :
+                            <div className={styles.bannerBtn}>
+                                <Link to="/">ICO</Link>
+                                <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
+                                <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
+                                <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>
+                            </div>
+                        }
                     </div>
                 </div>
 
                 {/* div 众筹结束倒计时 */}
-                { config.app.icoBar.state === 'after' &&
-                divZnFunc(styles.ingBox, styles.ingTitle, styles.countdown, this.state.date.days, this.state.date.ref_days,
-                    this.state.date.hours, this.state.date.ref_hours, this.state.date.minutes, this.state.date.ref_minutes,
-                    this.state.date.seconds, this.state.date.ref_seconds, styles.ingDetal, styles.ingDetalSpan)
+                { config.app.icoBar.state === 'after' && language === 'zn' &&
+                    divZnFunc(styles.ingBox, styles.ingTitle, styles.countdown, this.state.date.days, this.state.date.ref_days,
+                        this.state.date.hours, this.state.date.ref_hours, this.state.date.minutes, this.state.date.ref_minutes,
+                        this.state.date.seconds, this.state.date.ref_seconds, styles.ingDetal, styles.ingDetalSpan)}
+                { config.app.icoBar.state === 'after' && language === 'en' &&
+                    divEnFunc(styles.ingBox, styles.ingTitle, styles.countdown, this.state.date.days, this.state.date.ref_days,
+                        this.state.date.hours, this.state.date.ref_hours, this.state.date.minutes, this.state.date.ref_minutes,
+                        this.state.date.seconds, this.state.date.ref_seconds, styles.ingDetal, styles.ingDetalSpan)
                 }
             </div>
-            }
-
-            {language === 'en' &&
-            <div className={styles.homeDiv}>
-                <div className={styles.homeHeader + ' container'}>
-                    <IndexLink to="/"><img src={clientWidth > 320 ? logo : logo2} /></IndexLink>
-                    <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
-                    {!navButton && clientWidth <= 1024 && homeUlEn(styles.homeHeaderUl, style)}
-                    {navButton && clientWidth <= 1024 && homeUlEn(styles.homeHeaderUl, style1)}
-                    {!navButton && clientWidth > 1024 && homePcUlEn(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
-
-                    <div className={styles.homeGit}>
-                        <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 767 ? github : github2} /></a>
-                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
-                        <a onClick={() => {this.onChangeEn();}}>English</a>
-                    </div>
-                </div>
-
-                <div className="container">
-                    <div className={styles.homeHeaderBodyDiv1}>
-                        <div className="rw-words rw-words-1" id={styles.scroll}>
-                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
-                                A Distributed{clientWidth > 767 ? ' ' : <br/>}"
-                                <small className={styles.indexH2size}>Super Financial Market</small>"
-                            </h2>
-                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>Internet of "
-                                <small className={styles.indexH2size}>Blockchains</small>"
-                            </h2>
-                        </div>
-                        <p className={styles.bannerp}>Links different digital assets, connecting the present and future
-                            <small>Wanchain seeks to create a new distributed financial infrastructure, connecting different blockchain networks together to exchange value.</small>
-                        </p>
-
-                        {/* ul 众筹开始倒计时 */}
-                        {
-                            ulFunc(styles.countdown, this.state.date.days, this.state.date.ref_days, this.state.date.hours, this.state.date.ref_hours,
-                                this.state.date.minutes, this.state.date.ref_minutes, this.state.date.seconds, this.state.date.ref_seconds)
-                        }
-
-                      <div className={styles.bannerBtn}>
-                         <Link to="/">ICO</Link>
-                        <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
-                        <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
-                        <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>
-                      </div>
-                    </div>
-                </div>
-
-                {/* div 众筹结束倒计时 */}
-                { config.app.icoBar.state === 'after' &&
-                divEnFunc(styles.ingBox, styles.ingTitle, styles.countdown, this.state.date.days, this.state.date.ref_days,
-                    this.state.date.hours, this.state.date.ref_hours, this.state.date.minutes, this.state.date.ref_minutes,
-                    this.state.date.seconds, this.state.date.ref_seconds, styles.ingDetal, styles.ingDetalSpan)
-                }
-            </div>
-            }
 
             <Div1/>
             <Div2/>

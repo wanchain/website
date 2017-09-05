@@ -92,8 +92,8 @@ class Navigation extends Component {
                     }
                     <div className={styles.navGit}>
                         <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 320 ? github : github2} /></a>
-                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
-                        <a onClick={() => {this.onChangeEn();}}>English</a>
+                        {/* <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '} */}
+                        {/* <a onClick={() => {this.onChangeEn();}}>English</a> */}
                     </div>
                 </div>
                 }
@@ -134,8 +134,8 @@ class Navigation extends Component {
                     }
                     <div className={styles.navGit}>
                         <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 320 ? github : github2} /></a>
-                        <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '}
-                        <a onClick={() => {this.onChangeEn();}}>English</a>
+                        {/* <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '} */}
+                        {/* <a onClick={() => {this.onChangeEn();}}>English</a> */}
                     </div>
                 </div>
                 }

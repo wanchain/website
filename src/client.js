@@ -26,11 +26,13 @@ import getLange from './containers/Home/utils/getLange';
 
 const lan = getLange();
 
-if (lan === 'zh-CN') {
-  global.language = 'zn';
-} else {
-  global.language = 'en';
-}
+// if (lan === 'zh-CN') {
+//   global.language = 'zn';
+// } else {
+//   global.language = 'en';
+// }
+global.language = 'en';
+
 console.log('lan', lan);
 
 // function initSocket() {
