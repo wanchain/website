@@ -35,6 +35,7 @@ const initialState = {
   // language: 'zn',
   language: 'en',
   tableState: 0,
+  clientWidth: 321,
 };
 
 export default function reducer(state = initialState, action = {}) {

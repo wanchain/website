@@ -117,6 +117,7 @@ export default class Home extends Component {
 
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
+
     return (
         <div>
             <Helmet script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>
