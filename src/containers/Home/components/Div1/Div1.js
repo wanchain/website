@@ -125,10 +125,10 @@ class Div1 extends React.Component {
           <div>
             <div className={styles.div1Header + ' container'}>
               <h2> <hr className={styles.div1HeaderImg}/>
-                {language === 'zn' ? '万维链是什么？' : 'What is wanchain？'}
+                {language === 'zn' ? '万维链是什么？' : 'What is Wanchain？'}
                 <hr className={styles.div1HeaderImg}/>
               </h2>
-              <p>{language === 'zn' ? '基于数字资产的分布式金融基础设施' : 'Wanchain is a distributed financial infrastructure based on digital assets'}</p>
+              <p>{language === 'zn' ? '基于数字资产的分布式金融基础设施' : 'Wanchain is a distributed financial platform that enables private, cross-blockchain smart contract execution'}</p>
               <img src={language === 'zn' ? div1Img : imgEn} className={styles.div1HeaderImg2} id="div1HeaderImg2"/>
             </div>
           </div>

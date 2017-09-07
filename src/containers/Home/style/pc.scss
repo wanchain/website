@@ -101,17 +101,25 @@
       height:451px;
       //background: rgba(4, 13, 36, 0.4);
       margin-left: 5.5%;
+
+      img{
+        margin: 0 auto;
+        display: block;
+        margin-top: 35px;
+      }
+
       #scroll{
         h2{
           font-size: 40px;
           color: #ffffff;
-          height: 45px;
-          margin-top: 60px;
+          height: 90px;
+          margin-top: 25px;
           text-align: center;
           width: 100%;
           small{
             color: #008aff;
             font-size: 40px;
+            line-height: 60px;
           }
         }
       }
@@ -206,9 +214,12 @@
   }
   //banner 8.16
   .bannerBtn{
-    height: 36px;
-    margin:60px auto 0 19%;
+    //height: 36px;
+    //margin:60px auto 0 19%;
+    //text-align: center;
+    margin: -70px auto 0 28%;
     text-align: center;
+    position: relative;
   }
   .bannerBtn a{
     width:130px;

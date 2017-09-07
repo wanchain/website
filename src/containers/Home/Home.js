@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
+import { IndexLink } from 'react-router';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import config from '../../config';
@@ -113,6 +113,7 @@ export default class Home extends Component {
     const nav = require('./image/nav1.png');
     const github = require('./image/github.png');
     const github2 = require('./image/icoLog4.png');
+    const soon = require('./image/soon.png');
     const {navButton, clientWidth, language} = this.props;
 
     const style = {display: 'none'};
@@ -156,11 +157,12 @@ export default class Home extends Component {
                         {language === 'en' &&
                         <div className="rw-words rw-words-1" id={styles.scroll}>
                             <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
-                                A Distributed{clientWidth <= 767 ? <br/> : ' '}"
-                                <small className={clientWidth > 767 ? styles.indexH2size : ''}>Super Financial Market</small>"
+                                A Distributed Uniting{clientWidth <= 767 ? <br/> : ' '}
+                                <small className={clientWidth > 767 ? styles.indexH2size : ''}>the World's Blockchains</small>
                             </h2>
-                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>Internet of "
-                                <small className={clientWidth > 767 ? styles.indexH2size : ''}>Blockchains</small>"
+                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
+                                A Global Financial Platform for<br/>
+                                <small className={clientWidth > 767 ? styles.indexH2size : ''}> Private, Cross-Chain Smart Contracts</small>
                             </h2>
                         </div>
                         }
@@ -174,20 +176,21 @@ export default class Home extends Component {
                         </p>
 
                         {/* ul 众筹开始倒计时 */}
-                        { config.app.icoBar.state === 'before' &&
+                        { config.app.icoBar.state === 'None' &&
                         ulFunc(styles.countdown, this.state.date.days, this.state.date.ref_days, this.state.date.hours, this.state.date.ref_hours,
                             this.state.date.minutes, this.state.date.ref_minutes, this.state.date.seconds, this.state.date.ref_seconds)
                         }
+                        <img src={soon}/>
                         {language === 'zn' ?
                             <div className={styles.bannerBtn}>
-                                <Link to="/" >众筹</Link>
+                                {/* <Link to="/" >众筹</Link> */}
                                 <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                                 <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                                 <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
                             </div>
                         :
                             <div className={styles.bannerBtn}>
-                                <Link to="/">ICO</Link>
+                                {/* <Link to="/">ICO</Link> */}
                                 <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
                                 <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
                                 <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>

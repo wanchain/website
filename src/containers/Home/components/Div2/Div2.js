@@ -45,9 +45,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Exchanges of multiple cryptocurrencies</li>
-                                    <img src={pot}/><li>Institutions or individuals rely<br/> on Wanchain for distributed cryptocurrency exchange services</li>
-                                    <img src={pot}/><li>Wanchain offers a distributed<br/> cross-blockchain transaction mechanism</li>
+                                    <img src={pot}/><li>Transact across multiple token<br/>exchanges through private smart contracts</li>
+                                    <img src={pot}/><li>Utilize Wanchain for distributed<br/>cryptocurrency exchange services</li>
+                                    <img src={pot}/><li>Wanchain offers a distributed<br/>cross-blockchain transaction mechanism</li>
                                 </ul>
                             }
                         </div>
@@ -71,9 +71,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>All transaction processes are executed by computer programs based on smart contracts and<br/> the cross-chain mechanism</li>
-                                    <img src={pot}/><li>Users hold their assets and <br/> debts in a decentralized way<br/> （different tokens）</li>
-                                    <img src={pot}/><li>Wanchain ensures asset safety<br/> and transparency throughout the<br/> process</li>
+                                    <img src={pot}/><li>a.Eliminate loan paperwork and inefficiency through cross-chain smart contract execution</li>
+                                    <img src={pot}/><li>Users hold their assets and debts in a decentralized way (different tokens)</li>
+                                    <img src={pot}/><li>c.Wanchain ensures asset safety and transparency throughout the process</li>
                                 </ul>
                             }
                         </div>
@@ -95,9 +95,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Transactions between two<br/> different blockchains can be executed via Wanchain</li>
-                                    <img src={pot}/><li>An automated transaction<br/> process makes " Payment on Delivery" possible</li>
-                                    <img src={pot}/><li>Wanchain ensures asset safety throughout the process</li>
+                                    <img src={pot}/><li>Offer a wide variety of investment options through the implementation of cross-chain transactions via smart contract</li>
+                                    <img src={pot}/><li>Automated approval process makes " Payment on Delivery" possible and effective</li>
+                                    <img src={pot}/><li>Ensure stability, security, and compliance all through one platform</li>
                                 </ul>
                             }
                         </div>
@@ -121,8 +121,8 @@ class Div2 extends React.Component {
                             :
                                 <ul>
                                     <img src={pot}/><li>Supports ICOs with multi-cryptocurrency smart contracts</li>
-                                    <img src={pot}/><li>Automated conversion from ICO tokens to real cryptocurrencies</li>
-                                    <img src={pot}/><li>The ICO process is completely decentralized</li>
+                                    <img src={pot}/><li>Converts ICO tokens to real cryptocurrencies for ease of use</li>
+                                    <img src={pot}/><li>Completely decentralized ICO process; create and participate in token events</li>
                                 </ul>
                             }
                         </div>

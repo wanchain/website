@@ -24,14 +24,14 @@ class Div3 extends React.Component {
       if (language === 'zn') {
         pValue = '万维链旨在建立一个基础设施--能够以去中心化的方式完成不同区块链网络的连接及价值的交换';
       } else {
-        pValue = 'Wanchain aims to establish a distributed financial infrastructure capable of connecting blockchain networks together to exchange value';
+        pValue = 'A distributed financial infrastructure that seamlessly connects blockchain networks together';
       }
       return (
           <div className={styles.div2Header + ' container'}>
               {language === 'zn' ?
                   <h2><hr className={styles.div1HeaderImg}/>万维链整体架构<hr className={styles.div1HeaderImg}/></h2>
               :
-                  <h2 className={styles.h2En}><hr className={styles.div1HeaderImg}/>Overall Architecture of Wanchain<hr className={styles.div1HeaderImg}/></h2>
+                  <h2 className={styles.h2En}><hr className={styles.div1HeaderImg}/>Wanchain Architecture<hr className={styles.div1HeaderImg}/></h2>
               }
               <p>{pValue}</p>
               <div className={styles.astroModule2}>

@@ -140,15 +140,21 @@
     //.indexH2size{
     //  font-size:18px!important;
     //}
+
+    img{
+      width: 100%;
+      margin-top: 25px;
+    }
     #scroll{
       h2{
-        font-size: 25px;
+        font-size: 20px;
         color: #ffffff;
         margin-top: 50px;
         text-align: center;
         width: 100%;
+        line-height: 24px;
         small{
-          font-size: 25px;
+          font-size: 20px;
           color: #008aff;
         }
       }

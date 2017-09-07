@@ -29,7 +29,7 @@ export default class Html extends Component {
     //   title = "万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施";
     //   description = '万维链Wanchain旨在建立一个分布式的未来“银行”,通过建立不同区块链账本之间的连接，实现资产的跨账本转移，为基于数字货币和数字资产的金融应用提供一个基础设施。万维链Wanchain不只是一个实现跨链交易和多资产互通的连接平台，在实现跨链交易功能的同时，也是一个可以独立运行的区块链网络：它包含原生币，支持智能合约，并且拥有智能合约代币交易的隐私保护机制。任何开发者，均可根据应用场景，在万维链上开发出满足需求的金融应用';
     // }
-    title = "Wanchain- A Distributed Super Financial Market";
+    title = "Wanchain- Cross-Chain Smart Contracts with Privacy Protection";
     description = 'Wanchain aims to build a super financial market of digital assets.  It is an infrastructure connecting different digital assets.';
 
     return (
