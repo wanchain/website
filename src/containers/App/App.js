@@ -95,7 +95,7 @@ class App extends Component {
           {this.props.children}
         </div>
         {/* <Carousel/> */}
-        <Footer/>
+        {transition.pathname !== '/ico' && <Footer/>}
       </div>
     );
   }

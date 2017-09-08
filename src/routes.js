@@ -8,7 +8,7 @@ import {
     Login,
     // LoginSuccess,
     NotFound,
-    // Crowdsale,
+    IcoNotice,
   } from 'containers';
 
 import Table from './containers/LoginSuccess/Table';
@@ -51,7 +51,7 @@ export default () => {
 
       { /* Routes */ }
       <Route path="about" component={About}/>
-      {/* <Route path="crowdsale" component={Crowdsale}/> */}
+       <Route path="ico" component={IcoNotice}/>
 
       <Route path="login" component={Login}/>
       { /* <Route path="pagination" component={Pagination}/> */ }
