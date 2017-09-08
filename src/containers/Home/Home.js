@@ -157,8 +157,8 @@ export default class Home extends Component {
                         {language === 'en' &&
                         <div className="rw-words rw-words-1" id={styles.scroll}>
                             <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
-                                A Distributed Uniting{clientWidth <= 767 ? <br/> : ' '}
-                                <small className={clientWidth > 767 ? styles.indexH2size : ''}>the World's Blockchains</small>
+                                Uniting
+                                <small className={clientWidth > 767 ? styles.indexH2size : ''}> the World's Blockchains</small>
                             </h2>
                             <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
                                 A Global Financial Platform for<br/>
