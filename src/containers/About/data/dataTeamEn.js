@@ -58,20 +58,19 @@ const data = [
     describe: `
     Senior engineer from Huawei and served as CAO and CTO of several companies. A senior developer of Ethereum with a deep understanding of, and engineering experience with, blockchain architecture, smart contracts and consensus algorithms.`
   },
-  {title: 'Shi Liu',
+  {title: 'Tony Zhang',
     img: t4,
     position: '',
     url: '',
     describe: `
-    Double major in Science and Computer Software with a PhD in Applied Mathematics from Peking University. Specializing in elliptic curve cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology.`
+    Specializing in elliptic curve cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology.`
   },
-  {title: 'Demmon Zhao',
+  {title: 'Demmon Bai',
     img: t5,
     position: '',
     url: '',
     describe: `
-    PhD in Applied Mathematics from Peking University. Specializes in elliptic curve cryptography and security analysis of cryptographic algorithms.
-In charge of designing the privacy and anonymity algorithms of blockchain technology.`
+   Specializes in elliptic curve cryptography and security analysis of cryptographic algorithms.In charge of designing the privacy and anonymity algorithms of blockchain technology.`
   },
   {title: 'Michael Y.',
     img: t6,

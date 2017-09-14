@@ -1,7 +1,15 @@
-#wufooFormzccmpzw1ve8srz{
-    margin-top: 60px;
+/*.wufoo .info h2 {*/
+    /*color: red;*/
+/*}*/
+
+.wufoo li.focused {
+    background-color: #ffffff;
 }
 
-#header h2{
-    text-align: center;
+.wufoo .instruct {
+    background-color: #ffffff;
+}
+
+.wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {
+    background: #ffffff url(/images/fieldbg.gif) repeat-x top;
 }

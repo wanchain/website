@@ -54,7 +54,7 @@ export default () => {
       { /* Routes */ }
       <Route path="about" component={About}/>
        <Route path="tokensale" component={IcoNotice}/>
-        <Route path="whiteform" component={WhiteForm}/>
+        <Route path="whitelist" component={WhiteForm}/>
 
       <Route path="login" component={Login}/>
       { /* <Route path="pagination" component={Pagination}/> */ }
