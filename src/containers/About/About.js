@@ -48,12 +48,12 @@ class About extends Component {
                         <h2>{language === 'zn' ? '核心团队' : 'Wanchain Team'}</h2>
                     </div>
 
-                    <div className="col-lg-12" style={{marginBottom: '20px'}}>
+                    <div className={styles.aboutTeam + ' col-lg-12'}>
                       {
                         team.map((value, index) => {
                           return (
                               <div className={styles.aboutTitleDiv + ' col-lg-4'} key={index}>
-                                  <img src={value.img} />
+                                  {value.url ? <a href={value.url} target="_blank"><img src={value.img} /></a> : <img src={value.img} />}
                                   <h4>{value.title}<small>{value.position}</small></h4>
                                   <p>{value.describe}</p>
                               </div>
@@ -71,7 +71,7 @@ class About extends Component {
                         advisory.map((value, index) => {
                           return (
                               <div className={styles.aboutTitleDiv2 + ' col-lg-4'} key={index}>
-                                  <img src={value.img} />
+                                  {value.url ? <a href={value.url} target="_blank"><img src={value.img} /></a> : <img src={value.img} />}
                                   <h4>{value.title}</h4>
                                   <p>{value.describe}</p>
                               </div>

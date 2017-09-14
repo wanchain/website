@@ -9,3 +9,4 @@ export NotFound from './NotFound/NotFound';
 
 export Crowdsale from './Crowdsale/Crowdsale';
 export IcoNotice from './Crowdsale/IcoNotice';
+export WhiteForm from './WhiteForm/WhiteForm';

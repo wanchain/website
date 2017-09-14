@@ -1,6 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+// import { insertWhiteFunc } from 'redux/modules/white';
+import { getNavButtonFunc } from 'redux/modules/auth';
 
+// insertWhiteState: state.white.insertWhiteState,
+@connect(
+    state => ({clientWidth: state.auth.clientWidth, }),
+    {getNavButtonFunc})
+// insertWhiteFunc,
 class IcoNotice extends Component {
+    static propTypes = {
+      // insertWhiteState: PropTypes.object,
+      // insertWhiteFunc: PropTypes.func,
+      getNavButtonFunc: PropTypes.func,
+      clientWidth: PropTypes.string,
+    };
+
+    componentWillUnmount() {
+      this.props.getNavButtonFunc(false);
+    }
+
+    onSubmit = () => {
+      // const {whiteEmail, whitePass} = this.refs;
+      // const data = {white_mail: whiteEmail.value, };
+    };
     render() {
       const styles = require('./ico.scss');
 
@@ -21,3 +44,6 @@ class IcoNotice extends Component {
 
 export default IcoNotice;
 
+// <input placeholder="输入邮箱" ref="whiteEmail"/>
+              // <input placeholder="验证码" ref="whitePass"/>
+              // <a onClick={this.onSubmit.bind(this)}>提交验证</a>

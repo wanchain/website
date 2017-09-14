@@ -24,7 +24,7 @@ class Div5 extends React.Component {
       const {language} = this.props;
 
       const styles = require('./Div5.scss');
-      const style = { textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 5, WebkitBoxOrient: 'vertical', overflow: 'hidden'};
+      const style = { textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', overflow: 'hidden'};
 
       let newsResult;
       newsResult = newsData.map((value, index) => {

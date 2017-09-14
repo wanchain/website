@@ -33,7 +33,7 @@ class Div2 extends React.Component {
                                 {language === 'zn' ?
                                     <p className={styles.psize}>数字货币<br/>交易<small>兑换</small></p>
                                  :
-                                    <p><small>Exchanges</small>of<br/>Cryptocurrencies</p>
+                                    <p><small>Exchanges</small> of<br/>Cryptocurrencies</p>
                                 }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
@@ -71,9 +71,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>a.Eliminate loan paperwork and inefficiency through cross-chain smart contract execution</li>
+                                    <img src={pot}/><li>Eliminate loan paperwork and inefficiency through cross-chain smart contract execution</li>
                                     <img src={pot}/><li>Users hold their assets and debts in a decentralized way (different tokens)</li>
-                                    <img src={pot}/><li>c.Wanchain ensures asset safety and transparency throughout the process</li>
+                                    <img src={pot}/><li>Wanchain ensures asset safety and transparency throughout the process</li>
                                 </ul>
                             }
                         </div>

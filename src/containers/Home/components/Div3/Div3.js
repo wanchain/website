@@ -42,7 +42,7 @@ class Div3 extends React.Component {
                           {language === 'zn' ?
                               <p>万维链不仅仅是一个<small>通用的跨链协议<br/></small>同时是一个记录跨链交易、链内交易的<small>分布式账本</small></p>
                           :
-                              <p>Wanchain is not merely a universal cross-chain protocol,it is a distributed ledger that records cross-chain and intra-chain transactions.</p>
+                              <p>Wanchain is not merely a universal cross-chain protocol, it is a distributed ledger that records cross-chain and intra-chain transactions.</p>
                           }
                       </div>
                       <div className={ language === 'zn' ? styles.astroModule2wordDiv : styles.astroModule2wordDivEn}>

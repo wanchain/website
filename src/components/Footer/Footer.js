@@ -112,6 +112,7 @@ class Footer extends React.Component {
       const wecater = require('./image/wecatZn.png');
       const wecaterEn = require('./image/wecatEn.png');
       const qqer = require('./image/qqer.png');
+      const tm = require('./image/tm.png');
 
       return (
             <div className={styles.FooterRoot}>
@@ -129,21 +130,24 @@ class Footer extends React.Component {
                     <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
                         <div className={styles.footMenuBox}>
                             <div className={styles.footMenu}>
-                                <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
-                                <span>reddit</span>
+                                <a href="https://t.me/WanchainANN" target="_blank"><img src={tm}/></a>
+                                <span>Telegram</span>
                             </div>
-
                             <div className={styles.footMenu}>
                                 <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
-                                <span>slack</span>
-                            </div>
-                            <div className={styles.footMenu}>
-                                <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
-                                <span>facebook</span>
+                                <span>Slack</span>
                             </div>
                             <div className={styles.footMenu}>
                                 <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
-                                <span>{language === 'zn' ? '推特' : 'twitter'}</span>
+                                <span>{language === 'zn' ? '推特' : ' Twitter'}</span>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={robot1}/></a>
+                                <span>Reddit</span>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={facebook}/></a>
+                                <span>Facebook</span>
                             </div>
                             <div className={styles.footMenu}>
                                 <a href="http://weibo.com/wanchain" target="_blank"><img src={webo1}/></a>

@@ -9,6 +9,7 @@ import warning from './warning';
 import {reducer as form} from 'redux-form';
 import info from './info';
 import icoWarning from './icoWarning';
+import white from './white';
 
 export default combineReducers({
   routing: routerReducer,
@@ -16,6 +17,7 @@ export default combineReducers({
   auth,
   warning,
   icoWarning,
+  white,
   form,
   // multireducer: multireducer({
   //   counter1: counter,

@@ -1,7 +1,7 @@
 // const t16 = require('./image/16.png');
 const t17 = require('./image/17.png');
 const t18 = require('./image/18.png');
-const t19 = require('./image/19.png');
+// const t19 = require('./image/19.png');
 const t20 = require('./image/20.png');
 const t21 = require('./image/21.png');
 const t22 = require('./image/22.png');
@@ -29,11 +29,11 @@ const data = [
         position: '',
         describe: 'Factom（公证通）董事长'
     },
-    {title: 'Dustin Byington',
-        img: t19,
-        position: '',
-        describe: 'Stokens Venture Capital 创始人兼总裁 Tendermint 联合创始人 比特币大学创始人'
-    },
+    // {title: 'Dustin Byington',
+    //     img: t19,
+    //     position: '',
+    //     describe: 'Stokens Venture Capital 创始人兼总裁 Tendermint 联合创始人 比特币大学创始人'
+    // },
     {title: 'Albert Ching',
         img: t20,
         position: '',

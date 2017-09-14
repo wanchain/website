@@ -64,7 +64,8 @@ class Navigation extends Component {
                     <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
-                             <li><Link to="/ico">ICO</Link></li>
+                             <li><Link to="/tokensale">Tokensale</Link></li>
+                            <li><Link to="/whiteform">Whiteform</Link></li>
                             <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
                             <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                             <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
@@ -75,7 +76,8 @@ class Navigation extends Component {
                     <div className={styles.navHeaderUl} id="navbar-menu">
                         <ul>
                             <li><IndexLink to="/">首页</IndexLink></li>
-                             <li><Link to="/ico">ICO</Link></li>
+                             <li><Link to="/tokensale">Tokensale</Link></li>
+                            <li><Link to="/whiteform">Whiteform</Link></li>
                             <li>
                                 <div className={styles.navDropdown}>
                                     <a>文档</a>
@@ -105,19 +107,21 @@ class Navigation extends Component {
                     {clientWidth <= 1024 ?
                     <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
                         <ul>
-                            <li><IndexLink to="/">Home</IndexLink></li>
-                             <li><Link to="/ico">ICO</Link></li>
+                            <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li>
+                             <li><Link to="/tokensale" onClick={this.getNav.bind(this)}>Tokensale</Link></li>
+                            <li><Link to="/whiteform">Whiteform</Link></li>
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
-                            <li><Link to="/about">Team</Link></li>
+                            <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                         </ul>
                     </div>
                     :
                     <div className={styles.navHeaderUl} id="navbar-menu">
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
-                             <li><Link to="/ico">ICO</Link></li>
+                             <li><Link to="/tokensale">Tokensale</Link></li>
+                            <li><Link to="/whiteform">Whiteform</Link></li>
                             <li>
                                 <div className={styles.navDropdown}>
                                     <a>Docs</a>

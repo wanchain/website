@@ -124,7 +124,7 @@ class Div2 extends React.Component {
                   <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivRight'] : styles['crowd-div2HeaderDivRightEn']}>
                       <hr/>
                       <h4><strong>2nd Participation Method: </strong>the following platforms</h4>
-                      <small style={clientWidth > 767 ? {marginRight: '10px'} : ''}>
+                      <small style={clientWidth > 767 ? {marginRight: '10px'} : {}}>
                           The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.
                       </small>
 
