@@ -66,6 +66,11 @@ export default class Html extends Component {
           <script src={assets.javascript.main} charSet="UTF-8"/>
 
           <script type="text/javascript" src="/baidu/baidu.js" />
+
+          <script type="text/javascript" src="/facebook/facebook.js" />
+          <noscript>
+            < img height="1" width="1" style={{display: 'none'}} src="https://www.facebook.com/tr?id=1773079876322445&ev=PageView&noscript=1"/>
+          </noscript>
         </body>
       </html>
     );
