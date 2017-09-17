@@ -54,7 +54,7 @@ class Div7 extends React.Component {
               <div className={styles.div6BodyEn + ' clearfix'}>
                   <div className={styles.div6BodyCard}>
                       <img src={team1}/>
-                      <p>Years of Accumulation of Blockchain</p>
+                      <p>Years of Blockchain Experience</p>
                       <small>The concept of cross-blockchain transactions started
                           during the development of FACTOM. Wanchain project
                           has long been in development from initial concept to
