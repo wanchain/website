@@ -7,7 +7,7 @@ class WhiteForm extends Component {
 
     return (
         <div id="wufoo-zccmpzw1ve8srz" className={styles.whiteForm}>
-          <Helmet script={[{src: '/whiteForm/whiteForm.js'}]}/>
+          <Helmet script={[{src: '/whiteForm/whiteForm.js'}, {src: '/whiteForm/saveForm.js'}]}/>
         </div>
     );
   }

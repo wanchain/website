@@ -35,7 +35,7 @@ const data = [
     img: t19,
     url: 'https://www.linkedin.com/in/dbyington/',
     position: '',
-    describe: `Graduated from Coumbia University. MBA from University of Michigan. Veteran entrepreneur in the blockchain space. Founded Bitcoin College in 2014, Cofounded Tendermint in 2015. Founded Satoshi Talent and Stokens Venture Capital.`
+    describe: `Graduated from Columbia University . MBA from University of Michigan. Veteran entrepreneur in the blockchain space. Founded Bitcoin College in 2014, Cofounded Tendermint in 2015. Founded Satoshi Talent and Stokens Venture Capital.`
   },
   {title: 'Welch Zhou',
     img: t31,
