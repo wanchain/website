@@ -24,6 +24,9 @@ import getRoutes from './routes';
 var formidable = require('formidable');
 var util = require('util');
 
+var getIP = require('ipware')().get_ip;
+var geoIp = require('geoip-lite');
+
 const mysite = (config.app.cert.mysite); //key
 const mysiteCrt = (config.app.cert.mysiteCrt); //
 const gd1 = (config.app.cert.gd1);
@@ -61,6 +64,22 @@ const proxy = httpProxy.createProxyServer({
 });
 
 app.use(compression());
+
+app.use(function(req, res, next) {
+  var ipInfo = getIP(req);
+  // console.log(ipInfo);
+  // { clientIp: '127.0.0.1', clientIpRoutable: false }
+  var geo = geoIp.lookup(ipInfo.clientIp);
+
+  if (geo !== null && geo['country'] !== 'CN') {
+    next();
+  } else {
+    res.writeHead(404,{'Content-Type':'text/plain'});
+    res.write('404 Not Found');
+    res.end();
+  }
+});
+
 app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
 app.use(Express.static(path.join(__dirname, '..', 'static')));

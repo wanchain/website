@@ -14,3 +14,5 @@ src/cert/
 api/mysql
 
 static/upload/
+
+test/
