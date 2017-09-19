@@ -169,6 +169,24 @@
           }
         }
       }
+
+      .bannerShare{
+        display: block;
+        margin-top: 60px;
+        text-align: center;
+        img{
+          display: inline-block;
+          margin: 20px;
+          opacity: 0.6;
+        }
+        p{
+          font-size: 14px;
+          padding-top: 0;
+        }
+        img:hover{
+          opacity: 1;
+        }
+      }
     }
 
     .homeHeaderBodyDiv2{

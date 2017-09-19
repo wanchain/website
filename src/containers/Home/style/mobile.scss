@@ -200,6 +200,21 @@
         }
       }
     }
+
+    .bannerShare{
+      display: block;
+      margin-top: 60px;
+      text-align: center;
+      img{
+        display: inline-block;
+        margin: 15px;
+        width: 9%;
+      }
+      p{
+        font-size: 14px;
+        padding-top: 0;
+      }
+    }
   }
 
   .homeHeaderBodyDiv2{

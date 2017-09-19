@@ -67,11 +67,11 @@ app.use(compression());
 
 app.use(function(req, res, next) {
   var ipInfo = getIP(req);
-  // console.log(ipInfo);
+  console.log(ipInfo);
   // { clientIp: '127.0.0.1', clientIpRoutable: false }
   var geo = geoIp.lookup(ipInfo.clientIp);
 
-  if (geo !== null && geo['country'] !== 'CN') {
+  if ((geo !== null && geo['country'] !== 'CN') || geo === null) {
     next();
   } else {
     res.writeHead(404,{'Content-Type':'text/plain'});

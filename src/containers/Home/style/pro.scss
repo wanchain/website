@@ -136,6 +136,22 @@
         }
       }
     }
+
+    .bannerShare{
+      display: block;
+      margin-top: 0;
+      text-align: center;
+      img{
+        display: inline-block;
+        margin: 15px;
+        width: 5%;
+      }
+      p{
+        font-size: 14px;
+        padding-top: 0;
+      }
+    }
+
   }
 
   .homeHeaderBodyDiv2{
@@ -185,7 +201,7 @@
   .bannerBtn{
     width: 490px;
     height: 36px;
-    margin: 40px auto;
+    margin: 0 auto;
   }
   .bannerBtn a{
     width:130px;
