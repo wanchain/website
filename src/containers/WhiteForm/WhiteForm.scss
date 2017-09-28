@@ -1,15 +1,22 @@
-@media screen and (min-width: 768px){
-  .whiteForm{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 60px;
-  }
-}
+@import '../../theme/variables';
 
-@media screen and (max-width: 767px) {
-  .whiteForm{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 60px;
-  }
-}
+@import './style/pc';
+@import './style/mobile';
+@import './style/pro';
+
+
+//@media screen and (min-width: 768px){
+//  .whiteForm{
+//    width: 80%;
+//    margin: 0 auto;
+//    margin-top: 60px;
+//  }
+//}
+//
+//@media screen and (max-width: 767px) {
+//  .whiteForm{
+//    width: 100%;
+//    margin: 0 auto;
+//    margin-top: 60px;
+//  }
+//}

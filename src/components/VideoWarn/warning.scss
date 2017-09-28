@@ -1,0 +1,61 @@
+.astro-warning-modal{
+  padding: 30px 40px;
+  color: #353b47;
+  h4{
+    text-align: center;
+    //line-height: 45px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  p{
+    text-align: left;
+    font-size: 18px;
+    color: #688499;
+    padding-top: 5px;
+  }
+  hr{
+    color: #688499;
+    margin: 10px 0;
+  }
+  #astro-warning-gly{
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 4px;
+    color: #688499;
+  }
+}
+
+.astro-warning-modal-button{
+  margin-top: 30px;
+
+  button{
+    background: #3680f8;
+    color: #ffffff;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid #3680f8;
+    text-align: center;
+    line-height: 28px;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 30%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    height: 50px;
+  }
+}
+
+video::-internal-media-controls-download-button {
+  display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+  overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+  width: calc(100% + 30px);
+}

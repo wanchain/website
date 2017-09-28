@@ -71,7 +71,7 @@ export default class Html extends Component {
           <noscript>
             < img height="1" width="1" style={{display: 'none'}} src="https://www.facebook.com/tr?id=1773079876322445&ev=PageView&noscript=1"/>
           </noscript>
-          <script type="text/javascript" src="/whiteForm/saveForm.js" />
+          {/* <script type="text/javascript" src="/whiteForm/saveForm.js" /> */}
 
           <script type="text/javascript" src="/monitor/click.js" />
         </body>
