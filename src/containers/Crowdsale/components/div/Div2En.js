@@ -141,6 +141,9 @@ class Div2 extends React.Component {
                               <p className={ styles['common-p']}>
                                   <a className={ styles['font-color'] } onClick={this.onSubmit.bind(this)}>Click to watch the Video</a>
                               </p>
+                              <video src="/upload/video.mp4" style={{width: '100%'}} controls="controls">
+                                  your browser does not support the video tag
+                              </video>
                           </div>
                           <VideoWarningModal show={videoWarningModal} onHide={this.showVideoWarns.bind(this)} onClose={this.closeVideoWarns.bind(this)}/>
                       </div>
