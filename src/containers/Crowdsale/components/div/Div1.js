@@ -1,6 +1,6 @@
 // import React, {PropTypes} from 'react';
 import React from 'react';
-import config from '../../../../config';
+import config from '../../../../../test/config';
 // import { connect } from 'react-redux';
 
 

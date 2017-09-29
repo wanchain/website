@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import { connect } from 'react-redux';
-import conConfig from '../../../conConfig';
+import conConfig from '../../../../../test/conConfig';
 
 @connect(
     state => ({language: state.auth.language, clientWidth: state.auth.clientWidth, }),

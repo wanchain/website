@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { IndexLink, Link } from 'react-router';
 import { connect } from 'react-redux';
 // import cookie from 'react-cookie';
-import config from '../../config';
+import config from '../../../test/config';
 
 import { joinOpenFunc, joinCloseFunc, joinMsgFunc } from 'redux/modules/joinWarning';
 import JoinwarningModal from '../JoinWarn';

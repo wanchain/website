@@ -3,8 +3,8 @@ import {Modal} from 'react-bootstrap';
 import { connect } from 'react-redux';
 import {icoMsgFunc} from 'redux/modules/icoWarning';
 
-import comConfig from '../comConfig';
-import config from '../../config';
+import comConfig from '../../../test/comConfig';
+import config from '../../../test/config';
 
 @connect(
     state => ({ language: state.auth.language, }),

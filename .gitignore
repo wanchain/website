@@ -17,5 +17,5 @@ static/upload/
 
 test/
 config.js
-comConfig.js
-conConfig.js
+test/comConfig.js
+test/conConfig.js

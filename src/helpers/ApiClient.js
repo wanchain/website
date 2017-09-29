@@ -1,5 +1,5 @@
 import superagent from 'superagent';
-import config from '../config';
+import config from '../../test/config';
 
 const methods = ['get', 'post', 'put', 'patch', 'del'];
 
