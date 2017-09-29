@@ -110,7 +110,7 @@ class Div2 extends React.Component {
               <div className={styles['crowd-div2HeaderDiv']}>
                   <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft'] : styles['crowd-div2HeaderDivLeftEn']} style={theTop}>
                       <hr/>
-                      <h4><strong>1st Participation Method: </strong>using Ethereum wallets</h4>
+                      <h4><strong>Participation Method: </strong>using Ethereum wallets</h4>
                       <small>Participants need to have their own Ethereum wallets and contribute ETH to a smart contract address. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
                       <img src={mist} className={styles.leftImgEn}/>
                       <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div'] : styles['crowd-div2HeaderDivLeftEn-Div']}>

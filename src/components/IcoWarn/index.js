@@ -77,7 +77,8 @@ export default class ICOwarningModal extends Component {
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
                     <label><input type="checkbox" name="warn" value="" />
                       {language === 'zn' ? comConfig.IcoWarn.checkIn.two.zn : comConfig.IcoWarn.checkIn.two.en}
-                      <a href={config.app.files.ConfirmEn} target="_blank">{language === 'zn' ? ' WAN Token的购买协议' : ' WAN Token Purchase Agreement'}</a>
+                      <a href={config.app.files.ConfirmEn} target="_blank">
+                        {language === 'zn' ? ' WAN Token的购买协议' : ' Wanchain Risk Factor Statement & Disclaimer'}</a>.
                     </label>
                   </div>
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>

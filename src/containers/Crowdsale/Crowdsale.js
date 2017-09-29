@@ -70,7 +70,7 @@ class Crowdsale extends Component {
                             {clientWidth > 1024 ? <br/> : ''}
                             Eventually the online tokens will be equal to the crowd-funding tokens in quantity.
                             {clientWidth > 1024 ? <br/> : ''}
-                            The ICO will start on September 6th, 2017, 12:00 UTC</p>
+                            The ICO will start on October 3th, 2017, 16:00 UTC</p>
                     </div>
                 </div>
                 }

@@ -37,6 +37,11 @@
       color: #2c313a;
       margin-bottom: 40px;
     }
+    .table-p{
+      padding-top: 15px;
+      color: #353b47;
+      font-size: 16px;
+    }
 
     h4{
       color: #ff7800;
@@ -105,6 +110,7 @@
         margin-right: 25px;
         position: relative;
         margin-top: 85px;
+        text-align: left;
 
         .leftImg{
           position: relative;
@@ -114,7 +120,7 @@
         .leftImgEn{
           position: relative;
           top:140px;
-          left: -20px;
+          left: 25px;
         }
         hr{
           width: 2px;
@@ -200,9 +206,9 @@
           }
 
           .submit-area{
-            float: left;
             margin: 23px auto;
             width: 100%;
+            text-align: center;
           }
 
           .common-p{

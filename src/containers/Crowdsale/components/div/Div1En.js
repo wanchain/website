@@ -21,20 +21,35 @@ class Div1En extends React.Component {
               <h2> <hr className={styles['crowd-div1HeaderImg']}/> Distribution Schedule<hr className={styles['crowd-div1HeaderImg']}/></h2>
               <table className="table table-striped">
                   <tbody>
+                  <p>For participants in the gold whitelist with a cap at 6 ETH
+                      <span className="glyphicon glyphicon-arrow-down" aria-hidden="true" style={{paddingLeft: '10px'}}></span>
+                  </p>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 1 </td>
                       <td><h4>{config.app.ICOEn[0]}</h4></td>
-                      <td style={{verticalAlign: 'middle'}}>Sep 06, 2017 12:00 -- Sep 13, 2017 11:59 <small>UTC</small></td>
+                      <td style={{verticalAlign: 'middle'}}>Oct 03, 2017 16:00--Oct 04, 2017 15:59 <small>UTC</small></td>
                   </tr>
+                  </tbody>
+              </table>
+            <table className="table table-striped">
+              <tbody>
+                  <p className={styles['table-p']}>For all whitelisted participants (gold and silver) with no cap
+                      <span className="glyphicon glyphicon-arrow-down" aria-hidden="true" style={{paddingLeft: '10px'}}></span>
+                  </p>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 2 </td>
-                      <td><h4>{config.app.ICOEn[1]}</h4></td>
-                      <td style={{verticalAlign: 'middle'}}>Sep 13, 2017 12:00 -- Sep 20, 2017 11:59 <small>UTC</small></td>
+                      <td><h4>{config.app.ICOEn[0]}</h4></td>
+                      <td style={{verticalAlign: 'middle'}}>Oct 04, 2017 16:00--Oct 11, 2017 15:59 <small>UTC</small></td>
                   </tr>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 3 </td>
-                      <td><h4>{config.app.ICOEn[2]}</h4></td>
-                      <td style={{verticalAlign: 'middle'}}>Sep 20, 2017 12:00 -- Sep 27, 2017 11:59 <small>UTC</small></td>
+                      <td><h4>{config.app.ICOEn[1]}</h4></td>
+                      <td style={{verticalAlign: 'middle'}}>Oct 11, 2017 16:00--Oct 18, 2017 15:59 <small>UTC</small></td>
+                  </tr>
+                  <tr>
+                    <td style={{verticalAlign: 'middle'}}> 4 </td>
+                    <td><h4>{config.app.ICOEn[2]}</h4></td>
+                    <td style={{verticalAlign: 'middle'}}>Oct 18, 2017 16:00--Oct 25, 2017 15:59 <small>UTC</small></td>
                   </tr>
                   </tbody>
               </table>
@@ -48,11 +63,13 @@ class Div1En extends React.Component {
                       <p>When either 107.1 million tokens are sold or when the crowd-funding time ends, the smart contract will be automatically closed.</p>
                       {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
-                      <p>The minimum contribution limit for each transaction is 0.1ETH. </p>
+                      <p>The minimum and maximum contribution limit for each transaction are 0.1ETH and 65 ETH.</p>
                       {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
-                      <p >After the crowd-funding ends, the smart contracts will allocate the tokens to every crowd-funding address,</p>
-                      <p style={{marginTop: 0}}>and these tokens will be transferred via Ethereum wallets.</p>
+                      <p >There will be a maximum limit of 50 GWEI and a recommended gas limit of 150,000 in the second round of the ICO (after the 24-hour gold contribution period).</p>
+                      {clientWidth > 767 ? <br/> : ''}
+                      <div className={styles['crowd-div4Header-pot']}></div>
+                      <p>After the crowd-funding ends, you can claim tokens from the smart contract by your address.</p>
                       {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
                       <p>When Wanchain is live, users may exchange their tokens for Wancoins at a 1:1 ratio. Wanchain version 1.0 is expected to go online in November 2017.</p>
