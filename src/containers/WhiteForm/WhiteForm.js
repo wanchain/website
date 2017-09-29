@@ -4,23 +4,23 @@ import { connect } from 'react-redux';
 
 const whiteList = require('../../../static/upload/whiteForm.json');
 import WhiteWarningModal from '../../components/WhiteWarn';
-import { icoOpenFunc, icoCloseFunc, icoMsgFunc} from 'redux/modules/whiteWarning';
+import { whiteOpenFunc, whiteCloseFunc, whiteMsgFunc} from 'redux/modules/whiteWarning';
 
 @connect(
-    state => ({icoWarningModal: state.whiteWarning.icoWarningModal, }),
-    {icoOpenFunc, icoCloseFunc, icoMsgFunc},
+    state => ({whiteWarningModal: state.whiteWarning.whiteWarningModal, }),
+    {whiteOpenFunc, whiteCloseFunc, whiteMsgFunc},
 )
 class WhiteForm extends Component {
   static propTypes = {
-    icoCloseFunc: PropTypes.func,
-    icoOpenFunc: PropTypes.func,
-    icoWarningModal: PropTypes.bool,
-    icoMsgFunc: PropTypes.func,
+    whiteCloseFunc: PropTypes.func,
+    whiteOpenFunc: PropTypes.func,
+    whiteWarningModal: PropTypes.bool,
+    whiteMsgFunc: PropTypes.func,
   };
 
   componentWillMount() {
-    this.props.icoCloseFunc();
-    this.props.icoMsgFunc(null);
+    this.props.whiteCloseFunc();
+    this.props.whiteMsgFunc(null);
   }
 
   onSubmit = () => {
@@ -36,35 +36,40 @@ class WhiteForm extends Component {
     const addressHash = whiteList[`${hash}`];
     let mesage;
     if (addressHash) {
-      const results = whiteList[`${hash}`][0];
-      const type = whiteList[`${hash}`][1];
+      let results = whiteList[`${hash}`][0];
+      let type = whiteList[`${hash}`][1];
+
+      results = results.toLowerCase();
+      type = type.toLowerCase();
+      console.log('result', results);
+      console.log('type', type);
       if (results === 'approval') {
         if (type === 'gold') {
           mesage = 'Congratulations! Your address is in the Gold whitelist. You can join both phases of ICO (Gold and Silver). As Gold you will be have up to 24 hours on the first day of the ICO, along with an individual cap to contribute. After 24 hours, Gold may contribute along with Silver until all tokens are sold.';
-          this.props.icoMsgFunc(mesage);
+          this.props.whiteMsgFunc(mesage);
         } else if (type === 'silver') {
           mesage = 'Congratulations! Your address is in the Silver whitelist. You can contribute in the second phase of the ICO (24 hours after Gold).';
-          this.props.icoMsgFunc(mesage);
+          this.props.whiteMsgFunc(mesage);
         }
       } else if (results === 'unapproval') {
         mesage = 'Your address has not been whitelisted. Please check your email.';
-        this.props.icoMsgFunc(mesage);
+        this.props.whiteMsgFunc(mesage);
       } else if (results === 'in progress') {
         mesage = 'Your registration form is currently in the verification process. Please check back later.';
-        this.props.icoMsgFunc(mesage);
+        this.props.whiteMsgFunc(mesage);
       }
     } else {
-      this.props.icoMsgFunc('Your address has not been found, please make sure the correct ethereum address was registered.');
+      this.props.whiteMsgFunc('Your address has not been found, please make sure the correct ethereum address was registered.');
     }
 
-    this.props.icoOpenFunc();
+    this.props.whiteOpenFunc();
   };
 
   showWarns = () => {
-    this.props.icoOpenFunc();
+    this.props.whiteOpenFunc();
   };
   closeWarns = () => {
-    this.props.icoCloseFunc();
+    this.props.whiteCloseFunc();
   };
 
   render() {
@@ -72,7 +77,7 @@ class WhiteForm extends Component {
     const titlePic = require('./images/img1.png');
     const bgPic = require('./images/bgImg2.jpg');
 
-    const {icoWarningModal} = this.props;
+    const {whiteWarningModal} = this.props;
 
     return (
         <div className={styles.whiteForm}>
@@ -84,7 +89,7 @@ class WhiteForm extends Component {
               <input type="button" className={styles.checkBtn} value="check" onClick={this.onSubmit.bind(this)}/>
             </div>
           </div>
-          <WhiteWarningModal show={icoWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
+          <WhiteWarningModal show={whiteWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
         </div>
     );
   }

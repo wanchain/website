@@ -1,49 +1,49 @@
-const ICO_OPEN = 'Astro/ICO_OPEN';
-const ICO_CLOSE = 'Astro/ICO_CLOSE';
-const ICO_MSG = 'Astro/ICO_MSG';
+const WHITE_OPEN = 'Astro/WHITE_OPEN';
+const WHITE_CLOSE = 'Astro/WHITE_CLOSE';
+const WHITE_MSG = 'Astro/WHITE_MSG';
 
 const initialState = {
-  icoWarningModal: false,
+  whiteWarningModal: false,
 };
 
 export default function whiteWarning(state = initialState, action = {}) {
   switch (action.type) {
     default:
       return state;
-    case ICO_OPEN:
+    case WHITE_OPEN:
       return {
         ...state,
-        icoWarningModal: true,
+        whiteWarningModal: true,
       };
-    case ICO_CLOSE:
+    case WHITE_CLOSE:
       return {
         ...state,
-        icoWarningModal: false,
+        whiteWarningModal: false,
       };
 
-    case ICO_MSG:
+    case WHITE_MSG:
       return {
         ...state,
-        icoMsg: action.reload,
+        whiteMsg: action.reload,
       };
   }
 }
 
-export function icoOpenFunc() {
+export function whiteOpenFunc() {
   return {
-    type: ICO_OPEN,
+    type: WHITE_OPEN,
   };
 }
 
-export function icoCloseFunc() {
+export function whiteCloseFunc() {
   return {
-    type: ICO_CLOSE,
+    type: WHITE_CLOSE,
   };
 }
 
-export function icoMsgFunc(msg) {
+export function whiteMsgFunc(msg) {
   return {
-    type: ICO_MSG,
+    type: WHITE_MSG,
     reload: msg,
   };
 }
