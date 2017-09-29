@@ -1,6 +1,6 @@
 import React from 'react';
 
-import config from '../../../../test/config';
+import config from '../../../config';
 
 export function ulFunc(styles, days, refDays, hours, refHours, min, refMin, sec, refSec) {
   return (

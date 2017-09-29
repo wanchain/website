@@ -26,9 +26,9 @@ class Div4 extends React.Component {
                 <hr className={styles['crowd-div4HeaderImg']}/></h2>
             {stat.map((value, index) => {
               return (
-                    <div key={index}>
+                    <div key={index} className={styles['crowd-diveHeader-div']}>
                         <div className={styles['crowd-div4Header-pot']}></div>
-                        <p >{value.describe}</p>
+                        <p className={styles['crowd-diveHeader-p']}>{value.describe}</p>
                     </div>
               );
             })

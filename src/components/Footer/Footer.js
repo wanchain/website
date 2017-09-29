@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import WarningModal from '../../components/Warn';
 import { warningOpenFunc, warningCloseFunc, warningMsgFunc} from 'redux/modules/warning';
-import comConfig from '../../../test/comConfig';
+import comConfig from '../comConfig';
 import emailCheck from './utils/emailCheck';
 
 import { insertSubscribeFunc } from 'redux/modules/auth';

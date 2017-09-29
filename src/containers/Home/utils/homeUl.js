@@ -1,6 +1,6 @@
 import React from 'react';
 
-import config from '../../../../test/config';
+import config from '../../../config';
 import { Link, IndexLink } from 'react-router';
 
 

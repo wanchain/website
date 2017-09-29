@@ -1,7 +1,7 @@
 import Express from 'express';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
-import config from '../test/config';
+import config from './config';
 import favicon from 'serve-favicon';
 import compression from 'compression';
 import httpProxy from 'http-proxy';
@@ -65,20 +65,20 @@ const proxy = httpProxy.createProxyServer({
 
 app.use(compression());
 
-// app.use(function(req, res, next) {
-//   var ipInfo = getIP(req);
-//   console.log(ipInfo);
-//   // { clientIp: '127.0.0.1', clientIpRoutable: false }
-//   var geo = geoIp.lookup(ipInfo.clientIp);
-//
-//   if ((geo !== null && geo['country'] !== 'CN') || geo === null) {
-//     next();
-//   } else {
-//     res.writeHead(404,{'Content-Type':'text/plain'});
-//     res.write('404 Not Found');
-//     res.end();
-//   }
-// });
+app.use(function(req, res, next) {
+  var ipInfo = getIP(req);
+  // console.log(ipInfo);
+  // { clientIp: '127.0.0.1', clientIpRoutable: false }
+  var geo = geoIp.lookup(ipInfo.clientIp);
+
+  if ((geo !== null && geo['country'] !== 'CN') || geo === null) {
+    next();
+  } else {
+    res.writeHead(404,{'Content-Type':'text/plain'});
+    res.write('404 Not Found');
+    res.end();
+  }
+});
 
 app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 

@@ -5,7 +5,7 @@ import {insertNewsFunc, getTableStateFunc} from 'redux/modules/auth';
 import Helmet from 'react-helmet';
 import cookie from 'react-cookie';
 
-import config from '../../../test/config';
+import config from '../../config';
 
 import WarningModal from '../../components/Warn';
 import { warningOpenFunc, warningCloseFunc, warningMsgFunc} from 'redux/modules/warning';

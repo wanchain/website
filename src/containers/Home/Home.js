@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { IndexLink } from 'react-router';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
-import config from '../../../test/config';
+import config from '../../config';
 import { getClientWidthFunc, getNavButtonFunc, changeLangFunc} from 'redux/modules/auth';
 import { joinOpenFunc, joinCloseFunc, joinMsgFunc } from 'redux/modules/joinWarning';
 import JoinwarningModal from '../../components/JoinWarn';
