@@ -74,7 +74,7 @@ export default class Html extends Component {
           {/* <script type="text/javascript" src="/whiteForm/saveForm.js" /> */}
 
           <script type="text/javascript" src="/monitor/click.js" />
-          {/* <script src="/google/html5media.min.js"></script> */}
+           <script src="/google/html5media.min.js"></script>
         </body>
       </html>
     );
