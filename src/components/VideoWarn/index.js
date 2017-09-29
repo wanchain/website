@@ -30,7 +30,8 @@ export default class VideoWarningModal extends Component {
               <h4>Address Check</h4>
               <hr/>
               <span className="glyphicon glyphicon-remove" id={styles['astro-warning-gly']} onClick={this.onCloseFunc.bind(this)}></span>
-              <video src="/upload/video.mp4" controls="controls" style={{width: '100%'}} autobuffer>
+              <video controls="controls" style={{width: '100%'}} autobuffer>
+                <source src="/upload/video.mp4" type="video/mp4" />
                 your browser does not support the video tag
               </video>
               <div className={styles['astro-warning-modal-button']}>
