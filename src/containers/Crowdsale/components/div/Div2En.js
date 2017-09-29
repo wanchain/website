@@ -138,16 +138,9 @@ class Div2 extends React.Component {
                           <div className={styles['submit-area-p']}>
                               <p className={styles['submit-button-p']}>{icoMsg}</p>
 
-                              {clientWidth > 767 &&
                               <p className={ styles['common-p']}>
                                   <a className={ styles['font-color'] } onClick={this.onSubmit.bind(this)}>Click to watch the Video</a>
                               </p>
-                              }
-                              {clientWidth <= 767 &&
-                              <p className={ styles['common-p']}>
-                                  <a className={ styles['font-color'] } href="/html/video.html" target="_blank">Click to watch the Video</a>
-                              </p>
-                              }
 
                           </div>
                           <VideoWarningModal show={videoWarningModal} onHide={this.showVideoWarns.bind(this)} onClose={this.closeVideoWarns.bind(this)}/>
@@ -174,4 +167,16 @@ export default Div2;
 <a href="https://ico.token.im/wanchain?r=87d577bc" target="_blank">
     <img src={token1} className={styles.img3} id="img3" onMouseEnter={() => this.onEnter('img3')} onMouseLeave={() => this.onLeave('img3')}/>
 </a>
+
+ {clientWidth > 767 &&
+ <p className={ styles['common-p']}>
+ <a className={ styles['font-color'] } onClick={this.onSubmit.bind(this)}>Click to watch the Video</a>
+ </p>
+ }
+ {clientWidth <= 767 &&
+ <p className={ styles['common-p']}>
+ <a className={ styles['font-color'] } href="/html/video.html" target="_blank">Click to watch the Video</a>
+ </p>
+ }
+
  */
