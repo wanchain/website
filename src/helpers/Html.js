@@ -59,7 +59,7 @@ export default class Html extends Component {
           {/* ideally one could also include here the style for the current page (Home.scss, About.scss, etc) */}
           { Object.keys(assets.styles).length === 0 ?
               <style dangerouslySetInnerHTML={{__html: require('../theme/bootstrap.config.js') + require('../containers/App/App.scss')._style}}/> : null }
-          <script src="/google/html5media.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
         </head>
         <body>
           <div id="content" dangerouslySetInnerHTML={{__html: content}}/>
