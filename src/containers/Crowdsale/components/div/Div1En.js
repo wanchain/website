@@ -26,7 +26,7 @@ class Div1En extends React.Component {
                   </p>
                   <tr>
                       <td style={{verticalAlign: 'middle'}}> 1 </td>
-                      <td><h4>{config.app.ICOEn[0]}</h4></td>
+                      <td><h4 style={{marginRight: '40px'}}>{config.app.ICOEn[0]}</h4></td>
                       <td style={{verticalAlign: 'middle'}}>Oct 03, 2017 16:00--Oct 04, 2017 15:59 <small>UTC</small></td>
                   </tr>
                   </tbody>
