@@ -136,7 +136,7 @@ export default class Home extends Component {
     const nav = require('./image/nav1.png');
     const github = require('./image/github.png');
     const github2 = require('./image/icoLog4.png');
-    const soon = require('./image/soon.png');
+    // const soon = require('./image/soon.png');
 
     const Telegram = require('./image/Telegram.png');
     const Reddit = require('./image/Reddit.png');
@@ -210,7 +210,7 @@ export default class Home extends Component {
                         ulFunc(styles.countdown, this.state.date.days, this.state.date.ref_days, this.state.date.hours, this.state.date.ref_hours,
                             this.state.date.minutes, this.state.date.ref_minutes, this.state.date.seconds, this.state.date.ref_seconds)
                         }
-                        <img src={soon}/>
+                        {/* <img src={soon}/> */}
                         {language === 'zn' ?
                             <div className={styles.bannerBtn}>
                                 {/* <Link to="/" >众筹</Link> */}
@@ -232,7 +232,7 @@ export default class Home extends Component {
                             <a href="https://twitter.com/wanchain_org" target="_blank"><img src={Twitter}/></a>
                             <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={Slack}/></a>
                             <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={Facebook}/></a>
-                            <p>Join our Slack and Telegram for Crowdsale date Announcements</p>
+                            {/* <p>Join our Slack and Telegram for Crowdsale date Announcements</p> */}
                         </div>
                     </div>
                 </div>
