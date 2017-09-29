@@ -8,8 +8,8 @@ import {
     Login,
     // LoginSuccess,
     NotFound,
-    IcoNotice,
-    // Crowdsale,
+    // IcoNotice,
+    Crowdsale,
     WhiteForm,
   } from 'containers';
 
@@ -53,7 +53,7 @@ export default () => {
 
       { /* Routes */ }
       <Route path="about" component={About}/>
-       <Route path="tokensale" component={IcoNotice}/>
+       <Route path="tokensale" component={Crowdsale}/>
         <Route path="whitelist" component={WhiteForm}/>
 
       <Route path="login" component={Login}/>

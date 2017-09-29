@@ -1,50 +1,36 @@
-const ICO_OPEN = 'Astro/ICO_OPEN';
-const ICO_CLOSE = 'Astro/ICO_CLOSE';
-const ICO_MSG = 'Astro/ICO_MSG';
+const VIDEO_OPEN = 'Astro/VIDEO_OPEN';
+const VIDEO_CLOSE = 'Astro/VIDEO_CLOSE';
 
 const initialState = {
-  icoWarningModal: false,
+  videoWarningModal: false,
 };
 
 export default function videoWarning(state = initialState, action = {}) {
   switch (action.type) {
     default:
       return state;
-    case ICO_OPEN:
+    case VIDEO_OPEN:
       return {
         ...state,
-        icoWarningModal: true,
+        videoWarningModal: true,
       };
-    case ICO_CLOSE:
+    case VIDEO_CLOSE:
       return {
         ...state,
-        icoWarningModal: false,
-      };
-
-    case ICO_MSG:
-      return {
-        ...state,
-        icoMsg: action.reload,
+        videoWarningModal: false,
       };
   }
 }
 
-export function icoOpenFunc() {
+export function videoOpenFunc() {
   return {
-    type: ICO_OPEN,
+    type: VIDEO_OPEN,
   };
 }
 
-export function icoCloseFunc() {
+export function videoCloseFunc() {
   return {
-    type: ICO_CLOSE,
-  };
-}
-
-export function icoMsgFunc(msg) {
-  return {
-    type: ICO_MSG,
-    reload: msg,
+    type: VIDEO_CLOSE,
   };
 }
 

@@ -1,6 +1,6 @@
 @media screen and (min-width: 1025px) {
   td{
-    padding-left:120px!important;
+    padding-left:103px!important;
     border: none!important;
   }
   .crowd-div1HeaderImg{
@@ -78,6 +78,10 @@
   }
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
+  .crowd-h2{
+    text-align: center;
+  }
+
   .crowd-div2Header {
     margin: 0 auto;
     //padding-bottom: 30px;
@@ -89,19 +93,18 @@
       text-align: center;
       color: #2c313a;
     }
-
     .crowd-div2HeaderDiv{
       margin-top: 40px;
       text-align: center;
 
       .crowd-div2HeaderDivLeft{
-        width: 558px;
+        width: 1170px;
         height: 430px;
         border: 1px solid #ededed;
         display: inline-block;
         margin-right: 25px;
         position: relative;
-        top: -67px;
+        margin-top: 85px;
 
         .leftImg{
           position: relative;
@@ -198,10 +201,18 @@
 
           .submit-area{
             float: left;
-            margin: -20px auto;
+            margin: 23px auto;
             width: 100%;
           }
 
+          .common-p{
+            position: relative;
+            top: -53px;
+            left: 120%;
+            a{
+              text-decoration: none;
+            }
+          }
           .submit-button{
             background-color: #3680f8;
             border-radius: 4px;
@@ -401,6 +412,13 @@
       position: absolute;
     }
   }
-
+.font-weight{
+  color: #353b47;
+  font-size: 16px;
+  font-weight: normal;
+}
+  .font-color{
+    color: #4c8eff;
+  }
 }
 

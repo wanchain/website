@@ -40,7 +40,7 @@ class WhiteForm extends Component {
       const type = whiteList[`${hash}`][1];
       if (results === 'approval') {
         if (type === 'gold') {
-          mesage = 'Congratulations! Your address is in the Gold whitelist. You can join the all phases of ICO. especially 1stphase only for Gold whitelist';
+          mesage = 'Congratulations! Your address is in the Gold whitelist. You can join the all phases of ICO, especially 1st phase only for the Gold whitelist';
           this.props.icoMsgFunc(mesage);
         } else if (type === 'silver') {
           mesage = 'Congratulations! Your address is in the Silver whitelist. You can join the ICO from 2nd phase.';
@@ -82,10 +82,6 @@ class WhiteForm extends Component {
               <img src={titlePic} className={styles.titleImg} />
               <input type="text" className={styles.inp} placeholder="Pls input your ETH address submited before" ref="address"/>
               <input type="button" className={styles.checkBtn} value="check" onClick={this.onSubmit.bind(this)}/>
-              <h3 className={styles.h3Title}>
-                <span className={styles.circular}></span>
-                <span className={styles.h3Text}>Get the verification code from your Email</span>
-              </h3>
             </div>
           </div>
           <WhiteWarningModal show={icoWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
@@ -97,3 +93,7 @@ class WhiteForm extends Component {
 export default WhiteForm;
 // <Helmet script={[{src: '/whiteForm/whiteForm.js'}]}/>
 // id="wufoo-zccmpzw1ve8srz"
+// <h3 className={styles.h3Title}>
+// <span className={styles.circular}></span>
+// <span className={styles.h3Text}>Get the verification code from your Email</span>
+// </h3>

@@ -95,7 +95,7 @@ class App extends Component {
           {this.props.children}
         </div>
         {/* <Carousel/> */}
-        {transition.pathname !== '/tokensale' && <Footer/>}
+        <Footer/>
       </div>
     );
   }

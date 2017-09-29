@@ -77,6 +77,9 @@
   }
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
+  .crowd-h2{
+    text-align: center;
+  }
   .leftImg{
     position: relative;
     top: 140px;
@@ -201,7 +204,7 @@
 
           .submit-area{
             float: left;
-            margin-top: -17px;
+            margin-top: 20px;
             width: 100%;
           }
 
@@ -401,6 +404,14 @@
       margin-bottom: 10px;
     }
   }
-
+  .font-color{
+    color: #4c8eff;
+    display: block;
+    text-align: center;
+  }
+  .common-p{
+    padding-top: 0!important;
+    margin-top: 10px;
+  }
 }
 

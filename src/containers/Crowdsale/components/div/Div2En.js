@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import ICOwarningModal from '../../../../components/IcoWarn';
 import { icoOpenFunc, icoCloseFunc, icoMsgFunc} from 'redux/modules/icoWarning';
 
+import VideoWarningModal from '../../../../components/VideoWarn';
+import { videoOpenFunc, videoCloseFunc } from 'redux/modules/videoWarning';
+
 const mist = require('../../image/mist.png');
 const bizhongchou1 = require('../../image/bizhongchou.png');
 const bizhongchou2 = require('../../image/bizhongchou2.png');
@@ -22,8 +25,9 @@ const ren2 = require('../../image/ren2.png');
 
 @connect(
     state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language,
-        icoMsg: state.icoWarning.icoMsg, icoWarningModal: state.icoWarning.icoWarningModal, }),
-    {icoOpenFunc, icoCloseFunc, icoMsgFunc},
+        icoMsg: state.icoWarning.icoMsg, icoWarningModal: state.icoWarning.icoWarningModal,
+        videoWarningModal: state.videoWarning.videoWarningModal, }),
+    {icoOpenFunc, icoCloseFunc, icoMsgFunc, videoOpenFunc, videoCloseFunc},
 )
 class Div2 extends React.Component {
     static propTypes = {
@@ -34,9 +38,15 @@ class Div2 extends React.Component {
       icoOpenFunc: PropTypes.func,
       icoWarningModal: PropTypes.bool,
       icoMsgFunc: PropTypes.func,
+
+      videoCloseFunc: PropTypes.func,
+      videoOpenFunc: PropTypes.func,
+      videoWarningModal: PropTypes.bool,
     };
 
     componentWillMount() {
+      this.props.videoCloseFunc();
+
       this.props.icoCloseFunc();
       this.props.icoMsgFunc(null);
     }
@@ -66,6 +76,11 @@ class Div2 extends React.Component {
       if (name === 'img6') {img.src = ren1;}
     }
 
+    onSubmit = () => {
+      console.log('onSubmit');
+      this.props.videoOpenFunc();
+    };
+
     showWarns = () => {
       this.props.icoOpenFunc();
     };
@@ -73,16 +88,24 @@ class Div2 extends React.Component {
       this.props.icoCloseFunc();
     };
 
+    showVideoWarns = () => {
+      this.props.videoOpenFunc();
+    };
+    closeVideoWarns = () => {
+      this.props.videoCloseFunc();
+    };
+
     render() {
-      const {clientWidth, icoMsg, icoWarningModal} = this.props;
+      const {clientWidth, icoMsg, icoWarningModal, videoWarningModal} = this.props;
       const styles = require('../div.scss');
 
       let theTop = {};
       if (clientWidth >= 1025) { theTop = {top: '-68px'}; }
 
       return (
+        <div>
+      <h2 className={ styles['crowd-h2']}><hr className={styles['crowd-div1HeaderImg']}/>How to Participate<hr className={styles['crowd-div1HeaderImg']}/></h2>
           <div className={styles['crowd-div2Header']}>
-              <h2><hr className={styles['crowd-div1HeaderImg']}/>How to Participate<hr className={styles['crowd-div1HeaderImg']}/></h2>
 
               <div className={styles['crowd-div2HeaderDiv']}>
                   <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft'] : styles['crowd-div2HeaderDivLeftEn']} style={theTop}>
@@ -104,10 +127,8 @@ class Div2 extends React.Component {
 
                       { !icoMsg &&
                       <div id={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-foot'] : styles['crowd-div2HeaderDivLeftEn-foot']}>
-                          <p style={{opacity: '0', position: 'relative', top: '-20px'}} >token购买的以太坊地址为 : </p>
                           <div className={styles['submit-area']}>
-                              <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
-                                 onClick={this.onClick.bind(this)}>Click to show the address</a>
+                            <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg" onClick={this.onClick.bind(this)}>Click to show the address</a>
                           </div>
                       </div>
                       }
@@ -116,29 +137,21 @@ class Div2 extends React.Component {
                           <p >The Ethereum address for the token distribution is: </p>
                           <div className={styles['submit-area-p']}>
                               <p className={styles['submit-button-p']}>{icoMsg}</p>
+
+                              <p className={ styles['common-p']}>
+                                  <a className={ styles['font-color'] } onClick={this.onSubmit.bind(this)}>Click to watch the Video</a>
+                              </p>
                           </div>
+                          <VideoWarningModal show={videoWarningModal} onHide={this.showVideoWarns.bind(this)} onClose={this.closeVideoWarns.bind(this)}/>
                       </div>
                       }
-                  </div>
+                </div>
 
-                  <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivRight'] : styles['crowd-div2HeaderDivRightEn']}>
-                      <hr/>
-                      <h4><strong>2nd Participation Method: </strong>the following platforms</h4>
-                      <small style={clientWidth > 767 ? {marginRight: '10px'} : {}}>
-                          The following platforms are official partners of Wanchain and will contribute on behalf of users. After the ICO ends, the platforms will send the corresponding tokens to the contributors’ Ethereum wallets.
-                      </small>
 
-                      <div className={clientWidth > 767 ? styles['rowd-div2HeaderDivRight-Div'] : styles['crowd-div2HeaderDivRightEn-Div']}>
-                          {/* <h2>指定平台待定</h2> */}
-                          <img src={bizhongchou1} className={styles.img4} id="img4" />
-                          <img src={race1} className={styles.img5} id="img5" />
-                          <img src={ren1} className={styles.img6} id="img6" />
-                      </div>
-                      <p>Presale on platforms is complete</p>
-                  </div>
               </div>
               <ICOwarningModal show={icoWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
           </div>
+        </div>
       );
     }
 }

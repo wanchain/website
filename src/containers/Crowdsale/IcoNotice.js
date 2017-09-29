@@ -4,12 +4,12 @@ import { connect } from 'react-redux';
 import { getNavButtonFunc } from 'redux/modules/auth';
 
 import VideoWarningModal from '../../components/VideoWarn';
-import { icoOpenFunc, icoCloseFunc } from 'redux/modules/videoWarning';
+import { videoOpenFunc, videoCloseFunc } from 'redux/modules/videoWarning';
 
 // insertWhiteState: state.white.insertWhiteState,
 @connect(
-    state => ({clientWidth: state.auth.clientWidth, icoWarningModal: state.whiteWarning.icoWarningModal, }),
-    {getNavButtonFunc, icoOpenFunc, icoCloseFunc})
+    state => ({clientWidth: state.auth.clientWidth, videoWarningModal: state.videoWarning.videoWarningModal, }),
+    {getNavButtonFunc, videoOpenFunc, videoCloseFunc})
 // insertWhiteFunc,
 class IcoNotice extends Component {
     static propTypes = {
@@ -18,31 +18,31 @@ class IcoNotice extends Component {
       getNavButtonFunc: PropTypes.func,
       clientWidth: PropTypes.string,
 
-      icoCloseFunc: PropTypes.func,
-      icoOpenFunc: PropTypes.func,
-      icoWarningModal: PropTypes.bool,
+      videoCloseFunc: PropTypes.func,
+      videoOpenFunc: PropTypes.func,
+      videoWarningModal: PropTypes.bool,
     };
     componentWillMount() {
-      this.props.icoCloseFunc();
+      this.props.videoCloseFunc();
     }
     componentWillUnmount() {
       this.props.getNavButtonFunc(false);
     }
 
     onSubmit = () => {
-      this.props.icoOpenFunc();
+      this.props.videoOpenFunc();
     };
 
-    showWarns = () => {
-      this.props.icoOpenFunc();
+    showVideoWarns = () => {
+      this.props.videoOpenFunc();
     };
-    closeWarns = () => {
-      this.props.icoCloseFunc();
+    closeVideoWarns = () => {
+      this.props.videoCloseFunc();
     };
 
     render() {
       const styles = require('./ico.scss');
-      const {icoWarningModal} = this.props;
+      const {videoWarningModal} = this.props;
 
       return (
           <div className={styles.ico + ' container'}>
@@ -57,7 +57,7 @@ class IcoNotice extends Component {
 
               <input type="button" className={styles.checkBtn} value="check" onClick={this.onSubmit.bind(this)}/>
 
-              <VideoWarningModal show={icoWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
+              <VideoWarningModal show={videoWarningModal} onHide={this.showVideoWarns} onClose={this.closeVideoWarns}/>
           </div>
       );
     }

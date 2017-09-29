@@ -80,6 +80,9 @@ td{ vertical-align: middle;}
   }
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
+  .crowd-h2{
+    text-align: center;
+  }
   .leftImg{
     width: 80%;
     display: block;
@@ -200,7 +203,7 @@ td{ vertical-align: middle;}
 
           .submit-area{
             float: left;
-            margin: -20px auto;
+            margin: 0 auto;
             width: 100%;
           }
 
@@ -344,7 +347,7 @@ td{ vertical-align: middle;}
 
       .crowd-div2HeaderDivLeftEn{
         width: 300px;
-        height: 521px;
+        height: 560px;
         border: 1px solid #ededed;
         display: inline-block;
         position: relative;
@@ -430,7 +433,7 @@ td{ vertical-align: middle;}
 
           .submit-area{
             float: left;
-            margin: -20px auto;
+            margin: 0 auto;
             width: 100%;
           }
 
@@ -646,6 +649,14 @@ td{ vertical-align: middle;}
       left: 10px;
     }
   }
-
+  .font-color{
+    color: #4c8eff;
+    text-align: center;
+    display: block;
+  }
+  .common-p{
+    padding-top: 0!important;
+    margin-top: 10px;
+  }
 }
 

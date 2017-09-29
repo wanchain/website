@@ -44,6 +44,7 @@ module.exports = Object.assign({
       YellowpaperEN: '/files/Wanchain-Yellowpaper-EN-version.pdf',
       CommercialCH: '/files/Wanchain-Commercial-Whitepaper-CH-version.pdf',
       CommercialEN: '/files/Wanchain-Commercial-Whitepaper-EN-version.pdf',
+      ConfirmEn: '/files/Wanchain-Risk_Factor_Statement&Disclaimer.pdf'
     },
     upload: {
       devpath: 'D:/zsunData/myPro/WanChainNode/website/websiteVersion2.0/static/upload/',
