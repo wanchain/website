@@ -16,3 +16,6 @@ api/mysql
 static/upload/
 
 test/
+config.js
+comConfig.js
+conConfig.js
