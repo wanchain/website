@@ -13,7 +13,20 @@
         margin-top: 15px;
         margin-bottom: 10px;
       }
-
+      .navJoin{
+        color: #688499;
+        padding-top: 20px;
+        padding-bottom: 18px;
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 25px;
+      }
+      .navJoin:hover{
+        border-bottom: 3px solid #296de9;
+        text-decoration: none;
+        color: #353b47;
+        font-weight: bold;
+      }
       .navbarImg{
         display: none;
       }

@@ -3,7 +3,9 @@ import { IndexLink } from 'react-router';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import config from '../../config';
-import { getClientWidthFunc, getNavButtonFunc, changeLangFunc, } from 'redux/modules/auth';
+import { getClientWidthFunc, getNavButtonFunc, changeLangFunc} from 'redux/modules/auth';
+import { joinOpenFunc, joinCloseFunc, joinMsgFunc } from 'redux/modules/joinWarning';
+import JoinwarningModal from '../../components/JoinWarn';
 
 import currentDate from './utils/currentDate';
 // import getLange from './utils/getLange';
@@ -20,8 +22,9 @@ import Div6 from './components/Div6/Div6';
 import Div7 from './components/Div7/Div7';
 
 @connect(
-    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, titleState: state.auth.titleState}),
-    {getClientWidthFunc, getNavButtonFunc, changeLangFunc})
+    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, titleState: state.auth.titleState,
+        icoMsg: state.joinWarning.icoMsg, joinWarningModal: state.joinWarning.joinWarningModal, }),
+    {getClientWidthFunc, getNavButtonFunc, changeLangFunc, joinOpenFunc, joinCloseFunc, joinMsgFunc})
 export default class Home extends Component {
     static propTypes = {
       clientWidth: PropTypes.number,
@@ -32,6 +35,12 @@ export default class Home extends Component {
       language: PropTypes.string,
 
       titleState: PropTypes.string,
+
+      icoMsg: PropTypes.string,
+      joinCloseFunc: PropTypes.func,
+      joinOpenFunc: PropTypes.func,
+      joinWarningModal: PropTypes.bool,
+      joinMsgFunc: PropTypes.func,
     };
 
     constructor(props) {
@@ -44,6 +53,9 @@ export default class Home extends Component {
       };
     }
 
+    componentWillMount() {
+      this.props.joinCloseFunc();
+    }
     componentDidMount() {
       // this.interval = setInterval(() => this.tick(), 1000);
 
@@ -54,6 +66,10 @@ export default class Home extends Component {
     componentWillUnmount() {
       // clearInterval(this.interval);
       this.props.getNavButtonFunc(false);
+    }
+
+    onClick() {
+      this.props.joinOpenFunc();
     }
 
     onChangeEn() {
@@ -68,6 +84,13 @@ export default class Home extends Component {
       const navButton = this.props.navButton;
       this.props.getNavButtonFunc(!navButton);
     }
+
+    showWarns = () => {
+      this.props.joinOpenFunc();
+    };
+    closeWarns = () => {
+      this.props.joinCloseFunc();
+    };
 
     tick() {
       // difference of dates
@@ -120,7 +143,7 @@ export default class Home extends Component {
     const Twitter = require('./image/Twitter.png');
     const Slack = require('./image/Slack.png');
     const Facebook = require('./image/Facebook.png');
-    const {navButton, clientWidth, language} = this.props;
+    const {navButton, clientWidth, language, joinWarningModal} = this.props;
 
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
@@ -144,6 +167,7 @@ export default class Home extends Component {
                     {!navButton && clientWidth > 1024 && language === 'en' &&
                     homePcUlEn(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
 
+                    <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a>
                     <div className={styles.homeGit}>
                         <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 767 ? github : github2} /></a>
                         {/* <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '} */}
@@ -223,6 +247,8 @@ export default class Home extends Component {
                         this.state.date.hours, this.state.date.ref_hours, this.state.date.minutes, this.state.date.ref_minutes,
                         this.state.date.seconds, this.state.date.ref_seconds, styles.ingDetal, styles.ingDetalSpan)
                 }
+
+                <JoinwarningModal show={joinWarningModal} onHide={this.showWarns} onClose={this.closeWarns}/>
             </div>
 
             <Div1/>

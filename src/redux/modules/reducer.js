@@ -12,6 +12,7 @@ import icoWarning from './icoWarning';
 import white from './white';
 import whiteWarning from './whiteWarning';
 import videoWarning from './videoWarning';
+import joinWarning from './joinWarning';
 
 export default combineReducers({
   routing: routerReducer,
@@ -22,6 +23,7 @@ export default combineReducers({
   white,
   whiteWarning,
   videoWarning,
+  joinWarning,
   form,
   // multireducer: multireducer({
   //   counter1: counter,

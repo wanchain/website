@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import { connect } from 'react-redux';
 // import Helmet from 'react-helmet';
 
-const whiteList = require('../../../static/files/whiteForm.json');
+const whiteList = require('../../../static/upload/whiteForm.json');
 import WhiteWarningModal from '../../components/WhiteWarn';
 import { icoOpenFunc, icoCloseFunc, icoMsgFunc} from 'redux/modules/whiteWarning';
 
@@ -40,21 +40,21 @@ class WhiteForm extends Component {
       const type = whiteList[`${hash}`][1];
       if (results === 'approval') {
         if (type === 'gold') {
-          mesage = 'Congratulations! Your address is in the Gold whitelist. You can join the all phases of ICO, especially 1st phase only for the Gold whitelist';
+          mesage = 'Congratulations! Your address is in the Gold whitelist. You can join both phases of ICO (Gold and Silver). As Gold you will be have up to 24 hours on the first day of the ICO, along with an individual cap to contribute. After 24 hours, Gold may contribute along with Silver until all tokens are sold.';
           this.props.icoMsgFunc(mesage);
         } else if (type === 'silver') {
-          mesage = 'Congratulations! Your address is in the Silver whitelist. You can join the ICO from 2nd phase.';
+          mesage = 'Congratulations! Your address is in the Silver whitelist. You can contribute in the second phase of the ICO (24 hours after Gold).';
           this.props.icoMsgFunc(mesage);
         }
       } else if (results === 'unapproval') {
-        mesage = 'Your address has been rejected by some reason. Please check your email.';
+        mesage = 'Your address has not been whitelisted. Please check your email.';
         this.props.icoMsgFunc(mesage);
       } else if (results === 'in progress') {
-        mesage = 'Your information is in verification progress now. Please check later.';
+        mesage = 'Your registration form is currently in the verification process. Please check back later.';
         this.props.icoMsgFunc(mesage);
       }
     } else {
-      this.props.icoMsgFunc('Your address is not found, please make sure the address was submitted before.');
+      this.props.icoMsgFunc('Your address has not been found, please make sure the correct ethereum address was registered.');
     }
 
     this.props.icoOpenFunc();

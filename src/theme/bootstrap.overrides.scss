@@ -14,3 +14,10 @@
   color: #33e0ff;
   background-color: transparent;
 }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 220px auto;
+  }
+}

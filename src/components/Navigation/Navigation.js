@@ -4,11 +4,15 @@ import { connect } from 'react-redux';
 // import cookie from 'react-cookie';
 import config from '../../config';
 
+import { joinOpenFunc, joinCloseFunc, joinMsgFunc } from 'redux/modules/joinWarning';
+import JoinwarningModal from '../JoinWarn';
+
 import { getClientWidthFunc, getNavButtonFunc, changeLangFunc } from 'redux/modules/auth';
 
 @connect(
-    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, }),
-    {getClientWidthFunc, getNavButtonFunc, changeLangFunc})
+    state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language,
+        icoMsg: state.joinWarning.icoMsg, joinWarningModal: state.joinWarning.joinWarningModal, }),
+    {getClientWidthFunc, getNavButtonFunc, changeLangFunc, joinOpenFunc, joinCloseFunc, joinMsgFunc })
 class Navigation extends Component {
     static propTypes = {
       clientWidth: PropTypes.number,
@@ -18,11 +22,23 @@ class Navigation extends Component {
       getNavButtonFunc: PropTypes.func,
       changeLangFunc: PropTypes.func,
       language: PropTypes.string,
-    };
 
+      icoMsg: PropTypes.string,
+      joinCloseFunc: PropTypes.func,
+      joinOpenFunc: PropTypes.func,
+      joinWarningModal: PropTypes.bool,
+      joinMsgFunc: PropTypes.func,
+    };
+    componentWillMount() {
+      this.props.joinCloseFunc();
+    }
     componentDidMount() {
       const width = document.documentElement.clientWidth;
       this.props.getClientWidthFunc(width);
+    }
+
+    onClick() {
+      this.props.joinOpenFunc();
     }
 
     onChangeEn() {
@@ -42,8 +58,15 @@ class Navigation extends Component {
       }
     }
 
+    showWarnsFunc = () => {
+      this.props.joinOpenFunc();
+    };
+    closeWarnsFunc = () => {
+      this.props.joinCloseFunc();
+    };
+
     render() {
-      const {language} = this.props;
+      const {language, joinWarningModal} = this.props;
       const styles = require('./Navigation.scss');
 
       const logo = require('./image/logo2.png');
@@ -136,6 +159,7 @@ class Navigation extends Component {
                         </ul>
                     </div>
                     }
+                    <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a>
                     <div className={styles.navGit}>
                         <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 320 ? github : github2} /></a>
                         {/* <a className={styles.navGitaTit} onClick={() => {this.onChangeZn();}}>中文</a>{' | '} */}
@@ -143,6 +167,7 @@ class Navigation extends Component {
                     </div>
                 </div>
                 }
+                <JoinwarningModal show={joinWarningModal} onHide={this.showWarnsFunc} onClose={this.closeWarnsFunc}/>
             </div>
         );
     }

@@ -138,9 +138,17 @@ class Div2 extends React.Component {
                           <div className={styles['submit-area-p']}>
                               <p className={styles['submit-button-p']}>{icoMsg}</p>
 
+                              {clientWidth > 767 &&
                               <p className={ styles['common-p']}>
                                   <a className={ styles['font-color'] } onClick={this.onSubmit.bind(this)}>Click to watch the Video</a>
                               </p>
+                              }
+                              {clientWidth <= 767 &&
+                              <p className={ styles['common-p']}>
+                                  <a className={ styles['font-color'] } href="/html/video.html" target="_blank">Click to watch the Video</a>
+                              </p>
+                              }
+
                           </div>
                           <VideoWarningModal show={videoWarningModal} onHide={this.showVideoWarns.bind(this)} onClose={this.closeVideoWarns.bind(this)}/>
                       </div>
