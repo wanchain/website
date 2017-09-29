@@ -21,7 +21,7 @@ class Div1En extends React.Component {
               <h2> <hr className={styles['crowd-div1HeaderImg']}/> Distribution Schedule<hr className={styles['crowd-div1HeaderImg']}/></h2>
               <table className="table table-striped">
                   <tbody>
-                  <p>For participants in the gold whitelist with a cap at 6 ETH
+                  <p>For participants in the gold whitelist with a cap at 6.8 ETH
                       <span className="glyphicon glyphicon-arrow-down" aria-hidden="true" style={{paddingLeft: '10px'}}></span>
                   </p>
                   <tr>
