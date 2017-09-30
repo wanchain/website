@@ -29,7 +29,7 @@ class WhiteForm extends Component {
     const len = str.length;
     let hash = 0;
     for ( let ii = 1; ii <= len; ii++ ) {
-      const char = str.charCodeAt((ii - 1));
+      const char = str.toLowerCase.charCodeAt((ii - 1));
       hash += char * Math.pow(31, (len - ii));
       hash = hash & hash;
     }

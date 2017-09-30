@@ -17,5 +17,5 @@ static/upload/
 
 test/
 config.js
-src/components/comConfig.js
-src/containers/conConfig.js
+comConfig.js
+conConfig.js
