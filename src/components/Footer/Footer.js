@@ -117,16 +117,7 @@ class Footer extends React.Component {
       return (
             <div className={styles.FooterRoot}>
                 <div className={styles.FooterContainer + ' container'}>
-                    <div className={styles.FooterformGroup + ' form-group col-lg-4'}>
-                        <input type="text" className="form-control" id="name" ref="wanchain_subscribe" placeholder="Please enter the email address" />
-                        <div className={styles['submit-area']}>
-                            <a className={styles['submit-button'] + ' btn'} data-toggle="modal" data-target=".bs-example-modal-lg"
-                               onClick={this.onClick.bind(this)}>
-                                <span>{language === 'zn' ? ' + 订阅' : ' + Subscribe'}</span>
-                            </a>
-                        </div>
-                        <p>{language === 'zn' ? '更多项目请咨询：' : 'for more information, please contact: '}<span>info@wanchain.org</span></p>
-                    </div>
+
                     <div className={styles.formGroupDiv + ' form-group col-lg-4'}>
                         <div className={styles.footMenuBox}>
                             <div className={styles.footMenu}>

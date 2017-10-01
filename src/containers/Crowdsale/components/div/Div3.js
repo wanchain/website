@@ -15,7 +15,7 @@ class Div3 extends React.Component {
       const {language} = this.props;
       const styles = require('../div.scss');
 
-      let ques = questionEn;
+      const ques = questionEn;
       return (
             <div className={styles['crowd-div3Header'] + ' container'}>
                 <h2><hr className={styles['crowd-div1HeaderImg']}/>{language === 'zn' ? '常见问题' : 'FAQ'}

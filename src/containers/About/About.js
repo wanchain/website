@@ -25,8 +25,8 @@ class About extends Component {
       const blog2 = require('./image/team.png');
       const styles = require('./About.scss');
 
-      let team = teamDataEn;
-      let advisory = dataAdvisoryEn;
+      const team = teamDataEn;
+      const advisory = dataAdvisoryEn;
 
       return (
             <div className={styles.aboutDiv}>

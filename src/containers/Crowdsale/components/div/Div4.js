@@ -16,7 +16,7 @@ class Div4 extends React.Component {
       const {language} = this.props;
       const styles = require('../div.scss');
 
-      let stat = statementEn;
+      const stat = statementEn;
 
       return (
         <div className={styles['crowd-div4Header'] + ' container'}>
