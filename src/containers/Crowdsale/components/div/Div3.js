@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import question from '../../data/question';
 import questionEn from '../../data/questionEn';
 
 @connect(
@@ -16,8 +15,7 @@ class Div3 extends React.Component {
       const {language} = this.props;
       const styles = require('../div.scss');
 
-      let ques;
-      if (language === 'zn') { ques = question; } else { ques = questionEn; }
+      let ques = questionEn;
       return (
             <div className={styles['crowd-div3Header'] + ' container'}>
                 <h2><hr className={styles['crowd-div1HeaderImg']}/>{language === 'zn' ? '常见问题' : 'FAQ'}

@@ -1,16 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-// import Helmet from 'react-helmet';
 import { getNavButtonFunc } from 'redux/modules/auth';
 
-import Div1 from './components/div/Div1';
 import Div1En from './components/div/Div1En';
-
-import Div2 from './components/div/Div2';
 import Div2En from './components/div/Div2En';
 
 import Div3 from './components/div/Div3';
 import Div4 from './components/div/Div4';
+
+const unComplieConfig = require('../../../static/upload/unCompileConfig.json');
 
 @connect(
     state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, }),
@@ -29,39 +27,20 @@ class Crowdsale extends Component {
     }
 
     render() {
-      const {language, clientWidth} = this.props;
-      // const blog1 = require('./image/crowdLogo.jpg');
+      const { clientWidth} = this.props;
       const corwdLogo = require('./image/corwdLogo.png');
       const cor2 = require('./image/crowdsale.jpg');
-      const num = require('./image/crowdNum.png');
       const crowdNumEn = require('./image/crowdNumEn.png');
       const styles = require('./Crowdsale.scss');
 
+      const stylesHome = require('../Home/Home.scss');
       return (
             <div className={styles.crowdsaleDiv}>
-                {/* {language === 'zn' && <Helmet title="万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施"/>} */}
-                {/* {language === 'en' && <Helmet title="wanchain- A Distributed 'Super Financial Market'"/>} */}
-                {language === 'zn' &&
                 <div className={styles.crowdsaleHeader}>
                     <img src={cor2} className={styles.crowdsaleHeaderDivImg} style={{width: '100%'}}/>
-                    {clientWidth > 1024 ?
-                      <img src={num} className={styles.crowdsaleHeaderDivNumPC}/> :
-                      <img src={num} style={{position: 'relative', top: '-80px', width: '100%'}}/>
-                    }
-                    <div className={styles.crowdsaleHeaderDiv}>
-                        <h2><img src={corwdLogo}/>万维链代币分配</h2>
-                        <p>万维链代币（万币Wancoin）总量为2.1亿个，公开销售的代币以万维链ERC-20 tokens进行，<br/>最终上线的代币与ICO token比例为1:1<br/>
-                            公开销售开始日期为2017年9月06日 12:00 UTC</p>
-                    </div>
-                </div>
-                }
-
-                {language === 'en' &&
-                <div className={styles.crowdsaleHeader}>
-                    <img src={cor2} className={styles.crowdsaleHeaderDivImg} style={{width: '100%'}}/>
-                    {clientWidth > 1024 ?
-                      <img src={crowdNumEn} className={styles.crowdsaleHeaderDivNumPC}/> :
-                      <img src={crowdNumEn} style={{position: 'relative', top: '-80px', width: '100%'}}/>
+                    { clientWidth > 1024 ?
+                        <img src={crowdNumEn} className={styles.crowdsaleHeaderDivNumPC}/> :
+                        <img src={crowdNumEn} style={{position: 'relative', top: '-80px', width: '100%'}}/>
                     }
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>Token Distribution</h2>
@@ -73,10 +52,24 @@ class Crowdsale extends Component {
                             The ICO will start on October 3th, 2017, 16:00 UTC</p>
                     </div>
                 </div>
+                { unComplieConfig.isBar === 'True' &&
+                <div className={stylesHome.ingBox}>
+                    <h2 className={stylesHome.ingTitle}>The distribution is ongoing: </h2>
+                    <div className="row" style={{width: '100%'}}>
+                        <div className="col-md-offset-2 col-md-8">
+                            <div className="progress" style={{position: 'relative', marginBottom: '0'}}></div>
+                            <div className="progress-bar progress-bar-info progress-bar-striped active"
+                                 style={{width: `${unComplieConfig.rate}`, position: 'absolute', top: '0px'}}>
+                            </div>
+                        </div>
+                    </div>
+                    <p className={stylesHome.ingDetal}>Total amount: {unComplieConfig.amount}
+                        <span className={stylesHome.ingDetalSpan}><em className="progress-value">{unComplieConfig.rate}</em></span>
+                    </p>
+                </div>
                 }
-
-                {language === 'zn' ? <Div1/> : <Div1En/>}
-                {language === 'zn' ? <Div2/> : <Div2En/>}
+                <Div1En/>
+                <Div2En/>
                 <Div3/>
                 <Div4/>
             </div>

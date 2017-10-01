@@ -302,14 +302,14 @@
   .ingBox{
     width: 100%;
     background-color: rgba(3, 11, 27, 0.502);
-    position: absolute;
     display: inline-block;
-    bottom: 0;
+    position: relative;
+    top: -29px;
     h2{
       color: #fff;
       font-size: 22px;
       text-align: center;
-      margin: 30px 0;
+      margin: 10px 0;
     }
     .ingDetal{
       color: #fff;
