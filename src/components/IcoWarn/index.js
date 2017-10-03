@@ -91,7 +91,7 @@ export default class ICOwarningModal extends Component {
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
                     <label>
                       <input type="checkbox" name="warn" value="" />
-                      Check here to confirm that you will not buy/sell WAN Tokens after the crowdsale until the Wanchain mainnet is
+                      Check here to confirm that you will not buy/sell Wanchain Tokens after the crowdsale until the Wanchain mainnet is
                       launched, which is expected in Nov, 2017.
                     </label>
                   </div>

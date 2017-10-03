@@ -23,7 +23,7 @@ const data = [
     describe: 'The tokens will be transformed to the primary currency when Wanchain officially goes online. It is expected that Wanchain version 1.0 will go live by the end of 2017.'
   },
   {title: 'What can Wancoin, the primary currency of Wanchain, be used for after Wanchain is online?',
-    describe: `Two main roles for the Wancoin are: 1) process fees for Wanchain transactions and cross-chain transactions and, 2) bond deposits at each node for ensuring cross-chain transactions. In terms of applications, as more and more cross-chain transactions are processed by Wanchain and as Wancoin appreciates in value, Wancoin will become an intermediate currency for currency exchanges. This is similar to being the transaction medium for other currencies or digital assets.`
+    describe: `Two main roles for the Wancoin are: 1) process fees for Wanchain transactions and cross-chain transactions and, 2) bond deposits at each node for ensuring cross-chain transactions.`
   },
 ];
 

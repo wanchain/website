@@ -5,7 +5,7 @@ const comConfig = {
     checkIn: {
       one: {
         zn: '请点击确定您不是美国或者新加坡公民、居民或者实体，并切不代表任何美国或新加坡人购买WAN Tokens。',
-        en: 'Check here to confim that you are not a U.S., China and Singapore citizen, resident or entity nor are you purchasing WAN Tokens or signing on behalf of a U.S., China and Singapore Person.'
+        en: 'Check here to confim that you are not a U.S., China and Singapore citizen, resident or entity nor are you purchasing Wanchain Tokens or signing on behalf of a U.S., China and Singapore Person.'
       },
       two: {
         zn: '请点击确定您已经阅读、理解并且同意了',

@@ -48,9 +48,7 @@ class Crowdsale extends Component {
                     <div className={styles.crowdsaleHeaderDiv}>
                         <h2><img src={corwdLogo}/>Token Distribution</h2>
                         <p style={clientWidth > 1024 ? {} : {fontSize: '13px'}}>The total supply of Wancoins is 210 million.
-                            The publicly offered digital tokens will be in the form of Wanchain ERC-20 tokens.
-                            {clientWidth > 1024 ? <br/> : ''}
-                            Eventually the online tokens will be equal to the crowd-funding tokens in quantity.
+                            The publicly offered digital tokens will be in the form of Wanchain tokens.
                             {clientWidth > 1024 ? <br/> : ''}
                             The ICO will start on October 3th, 2017, 16:00 UTC</p>
                     </div>
