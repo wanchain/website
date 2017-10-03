@@ -115,6 +115,10 @@ class Div2 extends React.Component {
                       <h4><strong>Participation Method: </strong>using Ethereum wallets</h4>
                       <small>Participants need to have their own Ethereum wallets and contribute ETH to a smart contract address. After the ICO ends, the corresponding tokens will be sent to their Ethereum wallets.</small>
                       <img src={mist} className={styles.leftImgEn}/>
+                      { unComplieConfig.isInstruction === 'True' &&
+                      <a className={styles['crowd-div2HeaderDiv-href']} href="/files/Wanchain_distribution_guide.pdf" target="_blank">
+                          Instruction for the distribution</a>
+                      }
                       <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div'] : styles['crowd-div2HeaderDivLeftEn-Div']}>
                           <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div1'] : styles['crowd-div2HeaderDivLeftEn-Div1']}>
                               <span> * </span>

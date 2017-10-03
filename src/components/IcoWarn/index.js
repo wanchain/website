@@ -78,23 +78,15 @@ export default class ICOwarningModal extends Component {
                     <label><input type="checkbox" name="warn" value="" />
                       {language === 'zn' ? comConfig.IcoWarn.checkIn.two.zn : comConfig.IcoWarn.checkIn.two.en}
                       <a href={config.app.files.ConfirmEn} target="_blank">
-                        {language === 'zn' ? ' WAN Token的购买协议' : ' Wanchain Risk Factor Statement & Disclaimer'}</a>.
+                        Wancoin Purchase Agreement and Risk Disclaimer</a>.
                     </label>
                   </div>
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
-                    { language === 'zn' &&
-                    <label><input type="checkbox" name="warn" value="" />请点击确定您已经阅读、理解了万维链的
-                      <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>和
-                      <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>。
-                    </label>
-                    }
-                    { language === 'en' &&
                     <label>
                       <input type="checkbox" name="warn" value="" />Check here to comfirm that you have read and understand the
                       <a href={config.app.files.WhitepaperEN} target="_blank"> Wanchain White Paper </a>and
                       <a href={config.app.files.CommercialEN} target="_blank"> Wanchain Commecial White Paper</a>.
                     </label>
-                    }
                   </div>
                 </div>
                 {language === 'zn' && <button key="1" onClick={this.onCheck.bind(this)} id="theText">确定</button>}

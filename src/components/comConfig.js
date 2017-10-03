@@ -9,7 +9,7 @@ const comConfig = {
       },
       two: {
         zn: '请点击确定您已经阅读、理解并且同意了',
-        en: 'Check here to comfirm that you have read, understand and agree to the terms of the'
+        en: 'Check here to comfirm that you have read, understand and agree to the terms of the '
       }
     },
 

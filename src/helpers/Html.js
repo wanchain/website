@@ -44,6 +44,9 @@ export default class Html extends Component {
           <title>{title}</title>
           <meta name="keywords" content="wanchain, Wanchain, wanchan.org, 万维链, 区块链，blockchain" />
           <meta name="description" content={description} />
+          <meta httpEquiv="pragma" content="no-cache" />
+          <meta httpEquiv="cache-control" content="no-cache" />
+          <meta httpEquiv="expires" content="0" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
