@@ -84,6 +84,8 @@ app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
 app.use(Express.static(path.join(__dirname, '..', 'static')));
 
+
+
 /* 上传*/
 app.post('/upload',function(req, res){
   var reqMethod = req.method.toLowerCase();

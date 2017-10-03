@@ -66,7 +66,7 @@ class Div1En extends React.Component {
                       <p>The minimum and maximum contribution limit for each transaction are 0.1ETH and 65 ETH.</p>
                       {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
-                      <p >There will be a maximum limit of 50 GWEI and a recommended gas limit of 150,000 in the second round of the ICO (after the 24-hour gold contribution period).</p>
+                      <p >There will be a maximum limit of 50 GWEI and a recommended gas limit of 120,000 in the second round of the ICO (after the 24-hour gold contribution period).</p>
                       {clientWidth > 767 ? <br/> : ''}
                       <div className={styles['crowd-div4Header-pot']}></div>
                       <p>After the crowd-funding ends, you can claim tokens from the smart contract by your address.</p>
