@@ -117,7 +117,7 @@ class Div2 extends React.Component {
                       <img src={mist} className={styles.leftImgEn}/>
                       { unComplieConfig.isInstruction === 'True' &&
                       <a className={styles['crowd-div2HeaderDiv-href']} href="/files/Wanchain_distribution_guide.pdf" target="_blank">
-                          Instruction for the distribution</a>
+                          Instruction for contribution</a>
                       }
                       <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div'] : styles['crowd-div2HeaderDivLeftEn-Div']}>
                           <div className={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-Div1'] : styles['crowd-div2HeaderDivLeftEn-Div1']}>
@@ -140,7 +140,7 @@ class Div2 extends React.Component {
                       }
                       { icoMsg && unComplieConfig.isVideo === 'True' &&
                       <div id={clientWidth > 767 ? styles['crowd-div2HeaderDivLeft-foot'] : styles['crowd-div2HeaderDivLeftEn-foot']}>
-                          <p >The Ethereum address for the token distribution is: </p>
+                          <p >The Ethereum address for the token contribution is: </p>
                           <div className={styles['submit-area-p']}>
                               <p className={styles['submit-button-p']}>{icoMsg}</p>
 
