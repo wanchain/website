@@ -148,6 +148,10 @@ class Div2 extends React.Component {
                                   <a className={ styles['font-color'] } onClick={this.onSubmit.bind(this)}>Click to watch the Video</a>
                               </p>
 
+                              <p className={ styles['common-p2']}>
+                                  <a className={ styles['font-color'] } href=" https://github.com/wanchain/token-sale" target="_blank">Check the address on Github</a>
+                              </p>
+
                           </div>
                           <VideoWarningModal show={videoWarningModal} onHide={this.showVideoWarns.bind(this)} onClose={this.closeVideoWarns.bind(this)}/>
                       </div>
