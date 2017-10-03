@@ -78,7 +78,7 @@ export default class ICOwarningModal extends Component {
                     <label><input type="checkbox" name="warn" value="" />
                       {language === 'zn' ? comConfig.IcoWarn.checkIn.two.zn : comConfig.IcoWarn.checkIn.two.en}
                       <a href={config.app.files.ConfirmEn} target="_blank">
-                        Wancoin Purchase Agreement and Risk Disclaimer</a>.
+                        Risk Factor and Disclaimer Statement</a>.
                     </label>
                   </div>
                   <div className="checkbox" id={styles['astro-warning-checkbox']}>
@@ -86,6 +86,13 @@ export default class ICOwarningModal extends Component {
                       <input type="checkbox" name="warn" value="" />Check here to comfirm that you have read and understand the
                       <a href={config.app.files.WhitepaperEN} target="_blank"> Wanchain White Paper </a>and
                       <a href={config.app.files.CommercialEN} target="_blank"> Wanchain Commecial White Paper</a>.
+                    </label>
+                  </div>
+                  <div className="checkbox" id={styles['astro-warning-checkbox']}>
+                    <label>
+                      <input type="checkbox" name="warn" value="" />
+                      Check here to confirm that you will not buy/sell WAN Tokens after the crowdsale until the Wanchain mainnet is
+                      launched, which is expected in Nov, 2017.
                     </label>
                   </div>
                 </div>

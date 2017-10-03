@@ -1,7 +1,7 @@
 const comConfig = {
   IcoWarn: {
     titleH4: {zn: '万维链Token购买申明', en: 'Wanchain Tokens Purchase Statement'},
-    titleP: {zn: '请仔细阅读如下内容，并确保您理解了足够的信息', en: 'Please read the following carefully and confrm you understand enough information'},
+    titleP: {zn: '请仔细阅读如下内容，并确保您理解了足够的信息', en: 'Please read the following information carefully and confirm accordingly'},
     checkIn: {
       one: {
         zn: '请点击确定您不是美国或者新加坡公民、居民或者实体，并切不代表任何美国或新加坡人购买WAN Tokens。',
