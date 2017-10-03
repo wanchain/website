@@ -5,10 +5,11 @@ import { connect } from 'react-redux';
 const whiteList = require('../../../static/upload/whiteForm.json');
 import WhiteWarningModal from '../../components/WhiteWarn';
 import { whiteOpenFunc, whiteCloseFunc, whiteMsgFunc} from 'redux/modules/whiteWarning';
+import {getNavButtonFunc} from 'redux/modules/auth';
 
 @connect(
     state => ({whiteWarningModal: state.whiteWarning.whiteWarningModal, }),
-    {whiteOpenFunc, whiteCloseFunc, whiteMsgFunc},
+    {whiteOpenFunc, whiteCloseFunc, whiteMsgFunc, getNavButtonFunc},
 )
 class WhiteForm extends Component {
   static propTypes = {
@@ -16,11 +17,17 @@ class WhiteForm extends Component {
     whiteOpenFunc: PropTypes.func,
     whiteWarningModal: PropTypes.bool,
     whiteMsgFunc: PropTypes.func,
+    getNavButtonFunc: PropTypes.func,
   };
 
   componentWillMount() {
     this.props.whiteCloseFunc();
     this.props.whiteMsgFunc(null);
+    this.props.getNavButtonFunc(false);
+  }
+
+  componentWillUnmount() {
+    this.props.getNavButtonFunc(false);
   }
 
   onSubmit = () => {

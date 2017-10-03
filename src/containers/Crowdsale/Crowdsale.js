@@ -22,6 +22,9 @@ class Crowdsale extends Component {
       getNavButtonFunc: PropTypes.func,
     };
 
+    componentWillMount() {
+      this.props.getNavButtonFunc(false);
+    }
     componentWillUnmount() {
       this.props.getNavButtonFunc(false);
     }
