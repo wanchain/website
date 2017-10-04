@@ -2,15 +2,15 @@
   .crowdsaleDiv {
 
     .homeHeaderDiv{
-      img{
-        width: 100%;
-      }
+      height: 800px;
+      position: relative;
+
       h2{
         position: absolute;
         display: block;
         width: 100%;
         text-align: center;
-        top: 400px;
+        top: 357px;
         color: #fff;
       }
       p{
@@ -18,7 +18,7 @@
         display: block;
         width: 100%;
         text-align: center;
-        top: 460px;
+        top: 416px;
         color: #fff;
         font-size: 22px;
       }

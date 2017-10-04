@@ -28,12 +28,12 @@ class Crowdsale extends Component {
     }
 
     render() {
-      const homeHeader = require('../Home/image/homeHeader.jpg');
+      // const homeHeader = require('../Home/image/homeHeader.jpg');
       const styles = require('./Crowdsale.scss');
       return (
             <div className={styles.crowdsaleDiv}>
                 <div className={styles.homeHeaderDiv}>
-                    <img src={homeHeader}/>
+                    {/* <img src={homeHeader}/> */}
                     <h2>The token sale has successfully ended.</h2>
                     <p>Thank you for your participation!</p>
                 </div>
