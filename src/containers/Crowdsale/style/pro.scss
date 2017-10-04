@@ -1,6 +1,29 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .crowdsaleDiv {
 
+    .homeHeaderDiv{
+      img{
+        width: 100%;
+      }
+      h2{
+        position: absolute;
+        display: block;
+        width: 100%;
+        text-align: center;
+        top: 170px;
+        color: #fff;
+      }
+      p{
+        position: absolute;
+        display: block;
+        width: 100%;
+        text-align: center;
+        top: 230px;
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+
     .crowdsaleHeader{
       position: relative;
       img{
