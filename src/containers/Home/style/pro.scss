@@ -235,7 +235,7 @@
     text-align: center;}
   .ingBox{
     width: 100%;
-    background-color: rgba(3, 11, 27, 0.502);
+    background-color: #030b1b;
     display: inline-block;
     position: relative;
     top: -72px;
@@ -245,13 +245,32 @@
       text-align: center;
       margin: 20px 0;
     }
+
+    .arrow{
+      color: #fff;
+      position: absolute;
+      top: 14px;
+      left: 30%;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .arrow2{
+      color: #fff;
+      position: absolute;
+      top: 14px;
+      left: 65.5%;
+      display: inline-block;
+      text-align: center;
+    }
+
     .ingDetal{
       color: #fff;
       text-align: center;
       padding-bottom: 10px;
       font-family: BebasNeue;
       font-size:18px;
-      margin-top: 12px;
+      margin-top: 60px;
     }
     .ingDetalSpan{
       margin-left:20px;
@@ -262,6 +281,7 @@
     .col-md-offset-2{
       margin:10px 20px 0 20px!important;
     }
+
     .countdown{
       padding-top: 15px;
       width: 40%;

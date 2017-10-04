@@ -301,7 +301,7 @@
     text-align: center;}
   .ingBox{
     width: 100%;
-    background-color: rgba(3, 11, 27, 0.502);
+    background-color: #030b1b;
     display: inline-block;
     position: relative;
     top: -29px;
@@ -311,13 +311,32 @@
       text-align: center;
       margin: 10px 0;
     }
+
+    .arrow{
+      color: #fff;
+      position: absolute;
+      top: 14px;
+      left: 25%;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .arrow2{
+      color: #fff;
+      position: absolute;
+      top: 14px;
+      left: 63.5%;
+      display: inline-block;
+      text-align: center;
+    }
+
     .ingDetal{
       color: #fff;
       text-align: center;
       padding-bottom: 10px;
       font-family: BebasNeue;
-      font-size:16px;
-      margin-top: 12px;
+      font-size: 16px;
+      margin-top: 72px;
     }
     .ingDetalSpan{
       margin-left:20px;
@@ -329,6 +348,7 @@
       margin-top:10px;
       padding: 0 30px;
     }
+
     .countdown{
       padding-top: 15px;
       width: 85%;

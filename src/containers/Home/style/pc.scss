@@ -285,13 +285,32 @@
     margin: 40px 0 15px;
     padding-top: 15px;
   }
+
+  .arrow{
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    left: 30%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .arrow2{
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    left: 70.5%;
+    display: inline-block;
+    text-align: center;
+  }
+
   .ingDetal{
     color: #fff;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 60px;
     font-family: BebasNeue;
-    font-size:18px;
-    padding-bottom: 10px;
+    font-size: 18px;
+    padding-bottom: 20px;
   }
   .ingDetalSpan{
     margin-left:20px;
@@ -319,7 +338,6 @@
       text-decoration: none;
     }
   }
-
 }
 
   .countdown{

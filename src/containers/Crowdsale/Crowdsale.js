@@ -62,10 +62,20 @@ class Crowdsale extends Component {
                             <div className="progress-bar progress-bar-info progress-bar-striped active"
                                  style={{width: `${unComplieConfig.rate}`, position: 'absolute', top: '0px'}}>
                             </div>
+
+                            <div className={stylesHome.arrow}>
+                                <span className="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+                                <p>Sold in presales</p>
+                            </div>
+                            <div className={stylesHome.arrow2}>
+                                <span className="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+                                <p>Reservation for the gold whitelist</p>
+                            </div>
+
                         </div>
                     </div>
                     <p className={stylesHome.ingDetal}>Total amount: {unComplieConfig.amount}
-                        <span className={stylesHome.ingDetalSpan}><em className="progress-value">{unComplieConfig.rate}</em></span>
+                        <span className={stylesHome.ingDetalSpan}>Sold out: <em className="progress-value">{unComplieConfig.rate}</em></span>
                     </p>
                 </div>
                 }
