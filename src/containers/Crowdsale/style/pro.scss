@@ -1,16 +1,62 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .crowdsaleDiv {
-
+    width: 750px;
+    margin: 0 auto;
     .homeHeaderDiv{
       height: 660px;
       position: relative;
+      .titleH3{
+      font-size: 48px;
+      color: #353b47;
+      margin-top: 60px;
+      margin-left: 20px;
+    }
+      .contentDiv{
+        font-size: 14px;
+        color: #353b47;
+        margin: 40px 20px 30px 20px;
+        h6{
+          font-size: 14px;
+          color: #353b47;
+        }
+      }
+      .contentDiv2{
+        border-top: 1px solid #e4e9ef;
+        border-bottom: 1px solid #e4e9ef;
+        padding:30px 0;
+        margin:20px;
+        display: inline-block;
+        h6{
+          font-size: 14px;
+          color: #353b47;
+          line-height: 18px;
+        }
+        .icoColor{
+          color: #296de9;
+        }
+        .titleH4{
+          margin-top: 0;
+          font-size: 18px;
+          color: #353b47;
+          font-weight: bold;
+        }
+      }
+      .contentDiv3{
+        margin:30px 20px 60px 20px;
+        display: inline-block;
+        h6{
+          font-size: 14px;
+          color: #353b47;
+          line-height: 18px;
+        }
+      }
       h2{
         position: absolute;
         display: block;
         width: 100%;
         text-align: center;
         top: 276px;
-        color: #fff;
+        color: #000;
       }
       p{
         position: absolute;
@@ -18,7 +64,7 @@
         width: 100%;
         text-align: center;
         top: 335px;
-        color: #fff;
+        color: #000;
         font-size: 22px;
       }
     }

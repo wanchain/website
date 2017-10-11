@@ -10,7 +10,7 @@ import {
     NotFound,
     // IcoNotice,
     Crowdsale,
-    WhiteForm,
+    // WhiteForm,
   } from 'containers';
 
 import Table from './containers/LoginSuccess/Table';
@@ -54,7 +54,7 @@ export default () => {
       { /* Routes */ }
       <Route path="about" component={About}/>
        <Route path="tokensale" component={Crowdsale}/>
-        <Route path="whitelist" component={WhiteForm}/>
+        {/* <Route path="whitelist" component={WhiteForm}/> */}
 
       <Route path="login" component={Login}/>
       { /* <Route path="pagination" component={Pagination}/> */ }

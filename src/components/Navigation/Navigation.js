@@ -87,7 +87,7 @@ class Navigation extends Component {
                     <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
                         <ul>
                             <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li>
-                            {/* <li><Link to="/tokensale" onClick={this.getNav.bind(this)}>Tokensale</Link></li> */}
+                             <li><Link to="/tokensale" onClick={this.getNav.bind(this)}>Tokensale</Link></li>
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
@@ -100,7 +100,7 @@ class Navigation extends Component {
                     <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'inline-block'}}>
                         <ul>
                             <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li>
-                            {/* <li><Link to="/tokensale" onClick={this.getNav.bind(this)}>Tokensale</Link></li> */}
+                             <li><Link to="/tokensale" onClick={this.getNav.bind(this)}>Tokensale</Link></li>
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
@@ -114,7 +114,7 @@ class Navigation extends Component {
                     <div className={styles.navHeaderUl} id="navbar-menu">
                         <ul>
                             <li><IndexLink to="/">Home</IndexLink></li>
-                            {/* <li><Link to="/tokensale">Tokensale</Link></li> */}
+                             <li><Link to="/tokensale">Tokensale</Link></li>
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                             <li>
                                 <div className={styles.navDropdown}>
