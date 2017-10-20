@@ -7,7 +7,6 @@ const t6 = require('./image/6.png');
 const t7 = require('./image/7.png');
 const t8 = require('./image/8.png');
 const t9 = require('./image/9.png');
-const t10 = require('./image/10.png');
 const t11 = require('./image/11.png');
 const t12 = require('./image/12.png');
 const t13 = require('./image/13.png');
@@ -96,13 +95,6 @@ const data = [
     // url: 'https://www.linkedin.com/in/jian-shen-197bb943/',
     position: '',
     describe: 'BS in Computer Science from the University of Texas. Lead engineer at General Motors and HP. Entered into the blockchain space in 2011 as a senior blockchain miner and developer.'
-  },
-  {title: 'Shanfeng Chen',
-    img: t10,
-    url: 'https://www.linkedin.com/in/sfcheng/ ',
-    position: '',
-    describe: `BS and MS from Fudan University, PhD from Texas A&M University.
-Served as the head of product design at Ericsson; Analog design engineer at NXP Semiconductors.`
   },
   {title: 'Richard Zhang',
     img: t11,
