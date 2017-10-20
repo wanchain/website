@@ -80,7 +80,7 @@ export default class Home extends Component {
     const Telegram = require('./image/Telegram.png');
     const Reddit = require('./image/Reddit.png');
     const Twitter = require('./image/Twitter.png');
-    const Slack = require('./image/Slack.png');
+    const Discord = require('./image/Discord.png');
     const Facebook = require('./image/Facebook.png');
     const {navButton, clientWidth, language, joinWarningModal} = this.props;
 
@@ -136,7 +136,7 @@ export default class Home extends Component {
                             <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram}/></a>
                             <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={Reddit}/></a>
                             <a href="https://twitter.com/wanchain_org" target="_blank"><img src={Twitter}/></a>
-                            <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={Slack}/></a>
+                            <a href="https://discord.gg/3DpeV6W" target="_blank"><img src={Discord}/></a>
                             <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={Facebook}/></a>
                         </div>
                     </div>

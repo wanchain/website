@@ -102,7 +102,7 @@ class Footer extends React.Component {
       const styles = require('./Footer.scss');
       // const email = require('./image/email.png');
       const robot1 = require('./image/reddit.png');
-      const slack1 = require('./image/slack.png');
+      const discord1 = require('./image/discord.png');
       const facebook = require('./image/facebook.png');
       const twitter1 = require('./image/twitter.png');
       const webo1 = require('./image/web.png');
@@ -125,8 +125,8 @@ class Footer extends React.Component {
                                 <span>Telegram</span>
                             </div>
                             <div className={styles.footMenu}>
-                                <a href="https://wanchain.herokuapp.com/" target="_blank"><img src={slack1}/></a>
-                                <span>Slack</span>
+                                <a href="https://discord.gg/3DpeV6W" target="_blank"><img src={discord1}/></a>
+                                <span>Discord</span>
                             </div>
                             <div className={styles.footMenu}>
                                 <a href="https://twitter.com/wanchain_org" target="_blank"><img src={twitter1}/></a>
