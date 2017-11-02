@@ -21,6 +21,8 @@ const t31 = require('./image/t31.png');
 const t32 = require('./image/t32.png');
 const t33 = require('./image/t33.png');
 const t34 = require('./image/t34.png');
+const t35 = require('./image/t35.png');
+const t36 = require('./image/t36.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -159,6 +161,19 @@ An organizer in the blockchain community, affiliations and conferences.`
     url: 'https://www.linkedin.com/in/ethaneparker/',
     position: '',
     describe: `With over 15 years of Silicon Valley experience in media relations, Treble founder Ethan Parker has successfully secured press coverage for technology startups in publications including Forbes, VentureBeat, TechCrunch, GigaOM, ReadWrite, New York Times, Wall Street Journal, Bloomberg and many more.`
+  },
+
+  {title: 'Germán Palau',
+      img: t35,
+      url: '',
+      position: '',
+      describe: 'CEO of Prymtech Ltd., specializes in full digital marketing solutions'
+  },
+  {title: 'Trung Seng',
+      img: t36,
+      url: 'http://www.gscass.cn/html/news/2016-09-20/14620.html',
+      position: '',
+      describe: 'Founder and Director of Prymtech Ltd, a performance driven marketing agency.  A serial entrepreneur with over 10 years experience in digital marketing strategies and business development'
   },
 
 ];

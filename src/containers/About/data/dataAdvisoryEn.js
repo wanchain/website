@@ -12,9 +12,6 @@ const t27 = require('./image/27.png');
 const t28 = require('./image/28.png');
 const t30 = require('./image/t30.png');
 
-// const t35 = require('./image/t35.png');
-// const t36 = require('./image/t36.png');
-
 const data = [
     // {title: 'Bo Shen',
     //     img: t16,
@@ -92,18 +89,6 @@ const data = [
         position: '',
         describe: 'Professor of CASS，Advisor of the Blockchain Joint Development Organization'
     },
-    // {title: 'Germán Palau',
-    //     img: t35,
-    //     url: '',
-    //     position: '',
-    //     describe: 'CEO of Prymtech Ltd., specializes in full digital marketing solutions'
-    // },
-    // {title: 'Trung Seng',
-    //     img: t36,
-    //     url: 'http://www.gscass.cn/html/news/2016-09-20/14620.html',
-    //     position: '',
-    //     describe: 'Founder and Director of Prymtech Ltd, a performance driven marketing agency.  A serial entrepreneur with over 10 years experience in digital marketing strategies and business development'
-    // },
 ];
 
 
