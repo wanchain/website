@@ -102,7 +102,7 @@ export default class Home extends Component {
                     {!navButton && clientWidth > 1024 && language === 'en' &&
                     homePcUlEn(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
 
-                    <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a>
+                    {/* <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a> */}
                     <div className={styles.homeGit}>
                         <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 767 ? github : github2} /></a>
                     </div>

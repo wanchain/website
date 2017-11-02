@@ -56,6 +56,7 @@ export function homeUlEn(styles, style) {
                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                 <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                 <li><Link to="/about">Team</Link></li>
+                <li><Link to="/career">Career</Link></li>
             </ul>
         </div>
   );
@@ -79,6 +80,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
                 </div>
             </li>
             <li><Link to="/about">Team</Link></li>
+            <li><Link to="/career">Career</Link></li>
         </ul>
     </div>
   );

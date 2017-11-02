@@ -10,6 +10,7 @@ import {
     NotFound,
     // IcoNotice,
     Crowdsale,
+    Career,
     // WhiteForm,
   } from 'containers';
 
@@ -54,6 +55,7 @@ export default () => {
       { /* Routes */ }
       <Route path="about" component={About}/>
        <Route path="tokensale" component={Crowdsale}/>
+        <Route path="career" component={Career}/>
         {/* <Route path="whitelist" component={WhiteForm}/> */}
 
       <Route path="login" component={Login}/>

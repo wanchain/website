@@ -1,0 +1,190 @@
+@media screen and (min-width: 1025px) {
+.bandiv{
+  width:100%;
+  height: 380px;
+  .w{
+    width:1170px;
+    margin: 0 auto;
+  }
+  .banLeft{
+    float: left;
+    margin-right: 50px;
+    width:449px;
+    height: 200px;
+    margin-top:90px;
+    .carimg1{
+    }
+  }
+  .banRight{
+    float: right;
+    width: 564px;
+    height: auto;
+    display: inline-block;
+    margin-top:90px;
+  div{
+    width:262px;
+    height:91px;
+    float: left;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    margin: 0 20px 20px 0;
+    span{
+      width:177px;
+      height:37px;
+      position: absolute;
+      left: 66px;
+      top: 19px;
+    }
+    .brdSpand{
+      top:30px;
+    }
+  }
+  }
+}
+.content{
+  width:100%;
+  height: auto;
+  display: inline-block;
+  .cH2{
+    font-size: 30px;
+    color: #353b47;
+    margin: 70px auto 45px auto;
+    width: 1170px;
+    .chsColor{
+      color: #1483ff;
+    }
+  }
+  #messageBox2{
+    display: none;
+  }
+  .messageBox{
+    .mbUl{
+      width: 1170px;
+      height: 46px;
+      line-height: 46px;
+      border-bottom: solid 2px #f6f6f6;
+      margin: 0 auto;
+    li{
+      float: left;
+      font-size: 16px;
+      cursor: pointer;
+      .liBor{
+        border-bottom: 2px solid #1483ff;
+        height: 45px;
+        line-height: 45px;
+        display: block;
+        width: 87px;
+      }
+    }
+      .mbuLi1{
+        width:50%;
+      }
+      .mbuLi2{
+        width:30%;
+      }
+      .mbuLi3{
+        width:20%;
+      }
+     .cur{
+      border-bottom: solid 2px rgba(20, 131, 255, 1);
+    }
+    }
+    .comDiv{
+      #comcdpBox:hover{
+        color: #1483ff;
+      }
+      #comcdpBox{
+        color: #688499;
+        font-size: 14px;
+        cursor: pointer;
+        width: 1170px;
+        margin: 0 auto;
+        padding: 30px 0;
+        span{
+          display: block;
+          float: left;
+        }
+        .cdpSpan1{
+          width: 50%;
+        }
+        .cdpSpan2{
+          width: 30%;
+        }
+        .cdpSpan3{
+          width: 20%;
+          .cdpXia{
+            float: right;
+          }
+        }
+      }
+      #toggleBox{
+        display: none;
+        background-color: rgba(249, 250, 255, 1);
+        box-shadow: inset 0px 4px 8px 0px rgba(8, 78, 192, 0.05);
+        .w{
+          width:1170px;
+          margin: 0 auto;
+        .tbDiv{
+          width:100%;
+          display: inline-block;
+          margin-bottom: 10px;
+          margin-top:15px;
+          h1{
+            margin-bottom:10px;
+            margin-top:0;
+            display: inline-block;
+          }
+          .icoSan{
+            width: 0;
+            height: 0;
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: white transparent;
+            background: rgba(20, 131, 255, 1);
+            display: block;
+            float: left;
+            margin-right:10px;
+          }
+          .comtdH1{
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            float: left;
+          }
+          .comtdP{
+            font-size: 14px;
+            clear: both;
+            margin-left: 16px;
+            span{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    }
+  }
+}
+.footer{
+  width:100%;
+  height:183px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+  .fDiv{
+    width:1170px;
+    margin: 12px auto;
+    display: inline-block;
+  h2{
+    font-size: 24px;
+  }
+  p{
+    font-size: 16px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  }
+}
+}

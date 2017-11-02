@@ -9,3 +9,5 @@ export NotFound from './NotFound/NotFound';
 
 export Crowdsale from './Crowdsale/Crowdsale';
 export WhiteForm from './WhiteForm/WhiteForm';
+export Career from './Career/Career';
+

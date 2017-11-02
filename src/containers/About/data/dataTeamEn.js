@@ -5,7 +5,6 @@ const t4 = require('./image/4.png');
 const t5 = require('./image/5.png');
 const t6 = require('./image/6.png');
 const t7 = require('./image/7.png');
-const t8 = require('./image/8.png');
 const t9 = require('./image/9.png');
 const t11 = require('./image/11.png');
 const t12 = require('./image/12.png');
@@ -82,12 +81,6 @@ const data = [
     img: t7,
     position: '',
     describe: 'BS in Computer Science from Southwestern University. Software test engineer and technical writer, employed at Novell, VTEL, Xtreme Power, etc.'
-  },
-  {title: 'Piyush Mehta',
-    img: t8,
-    url: 'https://www.linkedin.com/in/piyushmehtaaustin/',
-    position: '',
-    describe: 'Graduated from the Indian Institute of Technology and the University of Southern California. Former senior engineer at Dell, AT&T and the Loss Recovery Company.'
   },
   {title: 'James Shen',
     img: t9,
