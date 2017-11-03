@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/server';
 import serialize from 'serialize-javascript';
 import Helmet from 'react-helmet';
 
-import reAgent from '../utils/reAgent';
+// import reAgent from '../utils/reAgent';
 
 export default class Html extends Component {
   static propTypes = {
@@ -17,8 +17,8 @@ export default class Html extends Component {
     const content = component ? ReactDOM.renderToString(component) : '';
     const head = Helmet.rewind();
 
-    const agent = global.navigator.userAgent;
-    console.log('userAgent ', agent);
+    // const agent = global.navigator.userAgent;
+    // console.log('userAgent ', agent);
 
     let title;
     let description;
@@ -68,6 +68,8 @@ export default class Html extends Component {
           <script dangerouslySetInnerHTML={{__html: `window.__data=${serialize(store.getState())};`}} charSet="UTF-8"/>
           <script src={assets.javascript.main} charSet="UTF-8"/>
 
+          <script type="text/javascript" src="/jquery/jquery.min.js" />
+          <script type="text/javascript" src="/js/career/career.js" />
           <script type="text/javascript" src="/baidu/baidu.js" />
 
           <script type="text/javascript" src="/facebook/facebook.js" />

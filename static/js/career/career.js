@@ -30,10 +30,10 @@ $(document).ready(function(){
     $(".toggleBox5").slideToggle();
   });
 });
-window.onload = function(){
-  var current = 0;
-  document.getElementById('comcdpBox').onclick = function(){
-    current = (current+90)%180;
-    document.getElementById('img').style.transform = 'rotate('+current+'deg)';
-  }
-};
+// window.onload = function(){
+//   var current = 0;
+//   document.getElementById('comcdpBox').onclick = function(){
+//     current = (current+90)%180;
+//     document.getElementById('target').style.transform = 'rotate('+current+'deg)';
+//   }
+// };

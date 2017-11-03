@@ -22,9 +22,9 @@ const dest = document.getElementById('content');
 const store = createStore(_browserHistory, client, window.__data);
 const history = syncHistoryWithStore(_browserHistory, store);
 
-import getLange from './containers/Home/utils/getLange';
+// import getLange from './containers/Home/utils/getLange';
 
-const lan = getLange();
+// const lan = getLange();
 
 // if (lan === 'zh-CN') {
 //   global.language = 'zn';
@@ -33,7 +33,7 @@ const lan = getLange();
 // }
 global.language = 'en';
 
-console.log('lan', lan);
+// console.log('lan', lan);
 
 // function initSocket() {
 //   const socket = io('', {path: '/ws'});
