@@ -35,7 +35,7 @@ export default class Career extends Component {
             <h2 className={styles.cH2}><span className={styles.chsColor}>C</span><span>URRENT OPPORTUNITIES</span></h2>
             <div className={styles.messageBox} id="pcBox">
               <ul className={styles.mbUl}>
-                <li className={styles.mbuLi1}><span className={styles.liBor}>POSLTLON</span></li>
+                <li className={styles.mbuLi1}><span className={styles.liBor}>POSITION</span></li>
                 <li className={styles.mbuLi2}>LOCATION</li>
                 <li className={styles.mbuLi3}>NUMBER</li>
               </ul>
@@ -199,7 +199,7 @@ export default class Career extends Component {
               <div className={styles.comDiv}>
                 <p className="cdPBox4" id="comcdpBox">
                   <span className="cdpSpan1">Local Community Manager</span>
-                  <span className="cdpSpan2">All.</span>
+                  <span className="cdpSpan2">All</span>
                   <span className="cdpSpan3"><span>12</span><em className="cdpXia"><img src={sanjiao} /></em></span>
                 </p>
                 <div className="toggleBox4" id="toggleBox">
@@ -251,7 +251,7 @@ export default class Career extends Component {
               <div className={styles.comDiv}>
                 <p className="cdPBox5" id="comcdpBox">
                   <span className="cdpSpan1">Virtual Community Manager</span>
-                  <span className="cdpSpan2">All.</span>
+                  <span className="cdpSpan2">All</span>
                   <span className="cdpSpan3"><span>12</span><em className="cdpXia"><img src={sanjiao} /></em></span>
                 </p>
                 <div className="toggleBox5" id="toggleBox">
@@ -305,7 +305,7 @@ export default class Career extends Component {
             <div className={styles.comMobDiv}>
               <div className="comMobileP">
               <ul className={styles.mbUl}>
-                <li className={styles.mbuLi1}><span className={styles.liBor}>POSLTLON</span></li>
+                <li className={styles.mbuLi1}><span className={styles.liBor}>POSITION</span></li>
                 <li className={styles.mbuLi2}><em className="cdpXia"><img src={sanjiao} /></em></li>
               </ul>
               <div className={styles.mobTitle}>Blockchain Technical Development Leadership (CTO/VP/Director)</div>
@@ -372,7 +372,7 @@ export default class Career extends Component {
             <div className={styles.comMobDiv}>
               <div className="comMobileP2">
                 <ul className={styles.mbUl}>
-                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSLTLON</span></li>
+                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSITION</span></li>
                   <li className={styles.mbuLi2}><em className="cdpXia"><img src={sanjiao} /></em></li>
                 </ul>
                 <div className={styles.mobTitle}>Blockchain Software Engineer</div>
@@ -434,7 +434,7 @@ export default class Career extends Component {
             <div className={styles.comMobDiv}>
               <div className="comMobileP3">
                 <ul className={styles.mbUl}>
-                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSLTLON</span></li>
+                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSITION</span></li>
                   <li className={styles.mbuLi2}><em className="cdpXia"><img src={sanjiao} /></em></li>
                 </ul>
                 <div className={styles.mobTitle}>Automation Test Engineer</div>
@@ -498,7 +498,7 @@ export default class Career extends Component {
             <div className={styles.comMobDiv}>
               <div className="comMobileP4">
                 <ul className={styles.mbUl}>
-                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSLTLON</span></li>
+                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSITION</span></li>
                   <li className={styles.mbuLi2}><em className="cdpXia"><img src={sanjiao} /></em></li>
                 </ul>
                 <div className={styles.mobTitle}>Local Community Manager</div>
@@ -562,7 +562,7 @@ export default class Career extends Component {
             <div className={styles.comMobDiv}>
               <div className="comMobileP5">
                 <ul className={styles.mbUl}>
-                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSLTLON</span></li>
+                  <li className={styles.mbuLi1}><span className={styles.liBor}>POSITION</span></li>
                   <li className={styles.mbuLi2}><em className="cdpXia"><img src={sanjiao} /></em></li>
                 </ul>
                 <div className={styles.mobTitle}>Virtual Community Manager</div>
