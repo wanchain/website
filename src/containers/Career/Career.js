@@ -9,7 +9,8 @@ class Career extends Component {
     const sanjiao = require('./image/sanj.png');
     return (
         <div>
-          <Helmet script={[{src: '/jquery/jquery.min.js'}, {src: '/js/career/career.js'}]} link={[{rel: 'stylesheet', href: '/css/career.css'}]}/>
+          {/* <Helmet script={[{src: '/jquery/jquery.min.js'}, {src: '/js/career/career.js'}]} link={[{rel: 'stylesheet', href: '/css/career.css'}]}/> */}
+           <Helmet link={[{rel: 'stylesheet', href: '/css/career.css'}]}/>
           <div className={styles.bandiv}>
             <div className={styles.w} >
               <div className={styles.banLeft}>
