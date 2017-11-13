@@ -66,8 +66,8 @@ const proxy = httpProxy.createProxyServer({
 app.use(compression());
 
 let debug;
-// debug = true;
-debug = false;
+debug = true;
+// debug = false;
 
 if (debug === false) {
   app.use(function(req, res, next) {

@@ -171,7 +171,7 @@ An organizer in the blockchain community, affiliations and conferences.`
   },
   {title: 'Trung Seng',
       img: t36,
-      url: 'http://www.gscass.cn/html/news/2016-09-20/14620.html',
+      url: '',
       position: '',
       describe: 'Founder and Director of Prymtech Ltd, a performance driven marketing agency.  A serial entrepreneur with over 10 years experience in digital marketing strategies and business development'
   },
