@@ -50,9 +50,10 @@ if (__DEVELOPMENT__) {
   httpapp.listen(80);
 
   server = https.createServer({
-    key: fs.readFileSync(mysite),
-    cert: fs.readFileSync(mysiteCrt),
-    ca: [fs.readFileSync(gd1)],
+    key: fs.readFileSync(path.join(__dirname, 'cert/wanchain.org.key')),
+    cert: fs.readFileSync(path.join(__dirname,'cert/3bb55a3526ededcc.crt')),
+    ca: [fs.readFileSync(path.join(__dirname,'cert/gd_bundle-g2-g1.crt'))
+    ],
     requestCert: false,
     rejectUnauthorized: false
   }, app);
