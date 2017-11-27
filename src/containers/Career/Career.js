@@ -179,7 +179,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -231,7 +231,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -283,7 +283,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -352,7 +352,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -414,7 +414,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -478,7 +478,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -542,7 +542,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -606,7 +606,7 @@ class Career extends Component {
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">About Us:</span></h1>
-                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit www.wanchain.org</p>
+                      <p className="comtdP">Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit www.wanchain.org</p>
                     </div>
                     <div className="tbDiv">
                       <h1><span className="icoSan"></span><span className="comtdH1">Benefits of Working at Wanchain</span></h1>
@@ -629,7 +629,7 @@ class Career extends Component {
           <div className={styles.footer}>
             <div className={styles.fDiv}>
               <h2>About Us</h2>
-              <p>Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million in an ICO. For more information please visit </p>
+              <p>Wanchain is developing next generation cross-chain blockchain architecture with privacy protection. Their mission is to re-build the financial services industry and recently raised $35 million tokensale. For more information please visit </p>
               <h3>www.wanchain.org</h3>
             </div>
           </div>
