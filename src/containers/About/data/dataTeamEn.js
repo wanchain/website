@@ -139,7 +139,7 @@ Published various articles on blockchain and currency.`
   },
   {title: 'Lizzie Lu',
     img: t16,
-    url: 'https://www.linkedin.com/in/利华-陆-84ab4bbb/',
+    url: 'https://www.linkedin.com/in/lizzielu/',
     position: '',
     describe: `Graduated from China Communication University. Years of television, magazine and press  experience. Former marketing director at ZCODesign.
 An organizer in the blockchain community, affiliations and conferences.`
