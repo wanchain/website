@@ -107,23 +107,24 @@
   }
 
   .formGroupDiv{
-    padding-right: 10px;
-    float: right;
     padding-top: 60px;
-    width: 40%;
-
-    a{
-      cursor: pointer;
-      display: block;
-      img:hover{
-        opacity: 1;
-      }
-      img{
-        float: left;
-        padding: 10px;
-        opacity: 0.6;
+    width: 100%;
+    .footMenuBox{
+      display: inline-block;
+      a{
+        overflow: hidden;
+        cursor: pointer;
+        display: block;
+        img:hover{
+          opacity: 1;
+        }
+        img{
+          padding: 10px;
+          opacity: 0.6;
+        }
       }
     }
+
   }
 
   .formGroupDiv >div > a > img:hover{
@@ -140,11 +141,11 @@
 
   .qq{
     display: none;
-    right: -20px;
+    right: -35px;
     top: -151px !important;
   }
   .footMenu{
-    width:52px;
+    width:69px;
     float: left;
     position:relative;
   }
@@ -154,4 +155,3 @@
     margin-top: 5px;
   }
 }
-

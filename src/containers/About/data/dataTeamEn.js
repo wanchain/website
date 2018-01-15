@@ -23,6 +23,13 @@ const t33 = require('./image/t33.png');
 const t34 = require('./image/t34.png');
 const t35 = require('./image/t35.png');
 const t36 = require('./image/t36.png');
+const t37 = require('./image/t37.png');
+const t38 = require('./image/t38.png');
+const t39 = require('./image/t39.png');
+const t40 = require('./image/t40.png');
+const t41 = require('./image/t41.png');
+const t42 = require('./image/t42.png');
+const t43 = require('./image/t43.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -36,12 +43,6 @@ const data = [
     url: 'https://www.linkedin.com/in/dbyington/',
     position: '',
     describe: `Graduated from Columbia University . MBA from University of Michigan. Veteran entrepreneur in the blockchain space. Founded Bitcoin College in 2014, Cofounded Tendermint in 2015. Founded Satoshi Talent and Stokens Venture Capital.`
-  },
-  {title: 'Welch Zhou',
-    img: t31,
-    url: '',
-    position: '',
-    describe: ` Founded Hishare Exchange. Security Advisor of Hyperledger. Deputy Secretary-General of Europe-China Culture & Economy Commission. 20 years of experience in investment, business management, and government relationship.`
   },
   {title: 'Zane Liang',
     img: t2,
@@ -175,7 +176,48 @@ An organizer in the blockchain community, affiliations and conferences.`
       position: '',
       describe: 'Founder and Director of Prymtech Ltd, a performance driven marketing agency.  A serial entrepreneur with over 10 years experience in digital marketing strategies and business development'
   },
-
+  {title: 'Zhihui Liu',
+      img: t37,
+      url: '',
+      position: '',
+      describe: 'More than 10 years of software development experience. Good at developing languages such as C++ and golang. Most of the time engaged in the Internet industry. Having rich programming experience in network transmission, software optimization, distributed architecture and large concurrent.'
+  },
+  {title: 'Crane Lv',
+      img: t38,
+      url: '',
+      position: '',
+      describe: 'Graduated from Tsinghua University. More than 15 years of software development experience. Proficient in C/C++, Golang, Node.js, Java and other languages.'
+  },
+  {title: 'Mengfei Liu',
+      img: t39,
+      url: '',
+      position: '',
+      describe: '14 years of c++ developing experience， strong interest on python， golang， js,  java. Believe in the  cleanliness, simpleness of code. Have strong interest on the blockchain industry, and look forward to becoming a expert in blockchain.'
+  },
+  {title: 'Gabriel Guo',
+      img: t40,
+      url: '',
+      position: '',
+      describe: 'BS and MS in Electronic Engineering from Peking University. Proficient in C/C++, Python, Golang and Node.js. Considerable expertise in networking and encryption algorithms. 14 years of experience in software development.'
+  },
+  {title: 'Hantao Jia',
+      img: t41,
+      url: '',
+      position: '',
+      describe: 'Former senior global product manager from Lenovo & Moto, 9 years indepth experiences in IoT, Smart Hardware & Software product delivery and portfolio management. Graduate from National University of Ireland with MA in Finance and BA from Athlone Institute of Technology.  Hantao also was a co-founder of a Saas company received million investment from top Angel investors. Advance in MD, Python language'
+  },
+  {title: 'Aaron Zhan',
+      img: t42,
+      url: '',
+      position: '',
+      describe: 'Graduated from Beijing Institute of Technology. Years of software development experience. Proficient in C/C++, python, shell. Employed at Alcatel, Nokia, etc. '
+  },
+  {title: 'Sean Chai',
+      img: t43,
+      url: '',
+      position: '',
+      describe: 'Proficient in java, javascript. Be in charge of  alliance chain and superstratum development.'
+  },
 ];
 
 

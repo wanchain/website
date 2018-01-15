@@ -16,6 +16,16 @@
         font-size: 24px;
         text-align: center;
         color: #2c313a;
+
+        span{
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 14px;
+          letter-spacing: 1px;
+          color: #2b363d;
+        }
       }
 
       .div1oBody{
@@ -40,7 +50,7 @@
               float: left;
             }
             p{
-              display: inline-block;
+              display: block;
               font-size: 20px;
               font-weight: 600;
               color: #2b363d;
@@ -109,7 +119,7 @@
       }
 
       .div1oBody{
-        margin-top: 60px;
+        margin-top: 40px;
         .div1oBodyCard{
           border-radius: 4px;
           background: #fff;
@@ -121,11 +131,18 @@
           position: relative;
 
           .div1oBodyCardModule{
-            position: absolute;
-            top: 50px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            .p{
+              width: 100%;
+              margin: 0 auto;
+              text-align: center;
+            }
 
-            img{    margin-left: 20px; float: left;}
             p{
+              width: 100%;
+              margin: 0 auto;
               font-size: 17px;
               font-weight: 600;
               color: #2b363d;
@@ -134,7 +151,6 @@
               position: relative;
               top: 0;
               display: block;
-              float: left;
               small{
                 color: #3680f8;
                 font-size: 17px;
@@ -144,7 +160,7 @@
 
           .div1oBodyCardLine{
             left: 35px;
-            top: 185px;
+            top: 195px;
             position: absolute;
           }
 
@@ -182,4 +198,3 @@
   }
 
 }
-

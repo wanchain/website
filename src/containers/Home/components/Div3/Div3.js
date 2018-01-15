@@ -31,7 +31,7 @@ class Div3 extends React.Component {
               {language === 'zn' ?
                   <h2><hr className={styles.div1HeaderImg}/>万维链整体架构<hr className={styles.div1HeaderImg}/></h2>
               :
-                  <h2 className={styles.h2En}><hr className={styles.div1HeaderImg}/>Wanchain Architecture<hr className={styles.div1HeaderImg}/></h2>
+                  <h2 className={styles.h2En}><hr className={styles.div1HeaderImg}/>WANCHAIN ARCHITECTURE<hr className={styles.div1HeaderImg}/></h2>
               }
               <p>{pValue}</p>
               <div className={styles.astroModule2}>

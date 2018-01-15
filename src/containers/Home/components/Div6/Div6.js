@@ -40,7 +40,7 @@ class Div6 extends React.Component {
                           <div className={styles.module8DivUp + ' col-lg-3'}>
                               <img src={down} />
                               <h4>{language === 'zn' ? conConfig.HomeDiv6.part5.zn : conConfig.HomeDiv6.part5.en}</h4>
-                              <p>2017<small>{' / '}11</small></p>
+                              <p>2018<small>{' / '}01</small></p>
                           </div>
                           <div className={styles.module8DivUp + ' col-lg-3'}>
                               <img src={down} />
@@ -68,7 +68,7 @@ class Div6 extends React.Component {
                           </div>
                           <div className={styles.module8DivUp2 + ' col-lg-3'}>
                               <img src={up} />
-                              <p>2019</p>
+                              <p>2019<small>{' / '}12</small></p>
                               <h4>{language === 'zn' ? conConfig.HomeDiv6.part8.zn : conConfig.HomeDiv6.part8.en}</h4>
                           </div>
                       </div>

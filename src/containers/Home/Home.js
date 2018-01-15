@@ -13,9 +13,9 @@ import Div1 from './components/Div1/Div1';
 import Div2 from './components/Div2/Div2';
 import Div3 from './components/Div3/Div3';
 import Div4 from './components/Div4/Div4';
-import Div5 from './components/Div5/Div5';
 import Div6 from './components/Div6/Div6';
 import Div7 from './components/Div7/Div7';
+import Div8 from './components/Div8/Div8';
 
 @connect(
     state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, titleState: state.auth.titleState,
@@ -110,19 +110,10 @@ export default class Home extends Component {
 
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
-
-                        {language === 'en' &&
-                        <div className="rw-words rw-words-1" id={styles.scroll}>
-                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
-                                Uniting
-                                <small className={clientWidth > 767 ? styles.indexH2size : ''}> the World's Blockchains</small>
-                            </h2>
-                            <h2 className={clientWidth > 767 ? styles.indexH2size : ''}>
-                                A Global Financial Platform for<br/>
-                                <small className={clientWidth > 767 ? styles.indexH2size : ''}> Private, Cross-Chain Smart Contracts</small>
-                            </h2>
+                        <div>
+                          <p className={styles.bannerTitle}>PRIVATE CROSS-CHAIN</p>
+                          <p className={styles.bannerTitleSmall}>SMART CONTRACTS</p>
                         </div>
-                        }
                         <p className={styles.bannerp}>
                             {language === 'zn' ? '连接不同数字资产，连接现在与未来' :
                                 'Links different digital assets, connecting the present and future'}
@@ -148,8 +139,8 @@ export default class Home extends Component {
             <Div1/>
             <Div2/>
             <Div3/>
+            <Div8/>
             <Div4/>
-            <Div5/>
             <Div6/>
             <Div7/>
         </div>

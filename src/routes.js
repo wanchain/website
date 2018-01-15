@@ -11,6 +11,7 @@ import {
     // IcoNotice,
     Crowdsale,
     Career,
+    Product,
     // WhiteForm,
   } from 'containers';
 
@@ -57,6 +58,8 @@ export default () => {
        <Route path="tokensale" component={Crowdsale}/>
         <Route path="career" component={Career}/>
         {/* <Route path="whitelist" component={WhiteForm}/> */}
+
+        <Route path="product" component={Product}/>
 
       <Route path="login" component={Login}/>
       { /* <Route path="pagination" component={Pagination}/> */ }

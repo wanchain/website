@@ -23,18 +23,22 @@ class Div2 extends React.Component {
       return (
             <div className={styles.div1o} id="div1o">
                 <div className={language === 'zn' ? styles.div1oHeader : styles.div1oHeaderEn + ' container'}>
-                    <h2><hr className={styles.div1HeaderImg}/>
-                        {language === 'zn' ? '万维链应用场景' : 'Application Scenarios'}
-                        <hr className={styles.div1HeaderImg}/></h2>
+                    <h2>
+                      <hr className={styles.div1HeaderImg}/>
+                      <span>{language === 'zn' ? '万维链应用场景' : 'APPLICATION SCENARIOS'}</span>
+                      <hr className={styles.div1HeaderImg}/>
+                    </h2>
                     <div className={styles.div1oBody}>
                         <div className={styles.div1oBodyCard} id={styles.card1}>
                             <div className={styles.div1oBodyCardModule}>
+                              <p className={styles.p}>
                                 <img src={card1} id="div1oimg1" />
-                                {language === 'zn' ?
-                                    <p className={styles.psize}>数字货币<br/>交易<small>兑换</small></p>
-                                 :
-                                    <p><small>Exchanges</small> of<br/>Cryptocurrencies</p>
-                                }
+                              </p>
+                              {language === 'zn' ?
+                                  <p className={styles.psize}>数字货币<br/>交易<small>兑换</small></p>
+                               :
+                                  <p><small>Exchanges</small> of<br/>Cryptocurrencies</p>
+                              }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
                             {language === 'zn' ?
@@ -54,7 +58,9 @@ class Div2 extends React.Component {
 
                         <div className={styles.div1oBodyCard}>
                             <div className={styles.div1oBodyCardModule}>
+                              <p className={styles.p}>
                                 <img src={card2} id="div1oimg2"/>
+                              </p>
                                 {language === 'zn' ?
                                     <p>数字货币<br/><small>借贷</small></p>
                                 :
@@ -79,11 +85,13 @@ class Div2 extends React.Component {
                         </div>
                         <div className={styles.div1oBodyCard}>
                             <div className={styles.div1oBodyCardModule}>
+                              <p className={styles.p}>
                                 <img src={card3} id="div1oimg3"/>
+                              </p>
                                 {language === 'zn' ?
                                     <p>数字资产<br/><small>投资</small></p>
                                 :
-                                    <p id={styles.div1oP3}><small>Investment</small><br/> Through <br/>Cryptocurrencies</p>
+                                    <p id={styles.div1oP3}><small>Investment</small> Through <br/>Cryptocurrencies</p>
                                 }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
@@ -104,11 +112,13 @@ class Div2 extends React.Component {
 
                         <div className={styles.div1oBodyCard} id={styles.card4}>
                             <div className={styles.div1oBodyCardModule}>
-                                <img src={card4} id="div1oimg4"/>
+                              <p className={styles.p}>
+                                <img src={card3} id="div1oimg4"/>
+                              </p>
                                 {language === 'zn' ?
                                     <p>多币种ICO<br/><small>众筹</small></p>
                                 :
-                                    <p id={styles.div1oP4}><small>Crowd-Funding</small> <br/>Through <br/>Cryptocurrencies</p>
+                                    <p id={styles.div1oP4}><small>Crowd-Funding</small> Through <br/>Cryptocurrencies</p>
                                 }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />

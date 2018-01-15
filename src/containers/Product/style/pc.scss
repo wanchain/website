@@ -1,0 +1,533 @@
+@media screen and (min-width: 1025px) {
+  .homeDiv {
+    height:140px;
+    position: relative;
+  .homeHeader{
+    img{
+      float: left;
+      padding-right: 10px;
+      margin-top: 15px;
+    }
+    .navbarImg{
+      display: none;
+    }
+
+    .homeHeaderUl{
+      padding-top: 20px;
+      float: left;
+      padding-left: 60px;
+
+      ul{
+        li{
+          float: left;
+          padding-left: 10px;
+          margin-left: 20px;
+          a{
+            color: #fff;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+          }
+        }
+        a:hover{
+          border-bottom: 2px solid #ffffff;
+          text-decoration: none;
+        }
+      }
+
+      .homeDropdown{
+        position: relative;
+        display: inline-block;
+
+        .homeDropdown-content {
+          display: none;
+          position: absolute;
+          min-width: 140px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          padding: 12px 16px;
+          text-align: center;
+          //letter-spacing: 3px;
+          left: -44px;
+          a{
+            display: block;
+
+          }
+        }
+      }
+
+      .homeDropdown:hover .homeDropdown-content {
+        display: block;
+      }
+    }
+
+    .homeGit{
+      float: right;
+      color: #fff;
+      padding-top: 20px;
+      line-height: 26px;
+      p{
+        color: #fff;
+        float: right;
+        padding-left: 20px;
+        padding-top: 23px;
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px;
+      }
+      img{
+        padding-top: 0;
+        float: left;
+        margin: 0;
+      }
+    }
+    .homeGit a:hover{
+      color: #1f6ce9;
+    }
+  }
+
+  .homeHeaderBodyDiv1{
+    float: left;
+    margin-top: 130px;
+    //8.16
+    width:1040px;
+    height:451px;
+    //background: rgba(4, 13, 36, 0.4);
+    margin-left: 5.5%;
+
+    img{
+      margin: 0 auto;
+      display: block;
+      margin-top: 35px;
+    }
+
+    #scroll{
+      h2{
+        font-size: 40px;
+        color: #ffffff;
+        height: 90px;
+        margin-top: 25px;
+        text-align: center;
+        width: 100%;
+        small{
+          color: #008aff;
+          font-size: 40px;
+          line-height: 60px;
+        }
+      }
+    }
+
+    p{
+      padding-top: 60px;
+      font-size: 24px;
+      color: #ffffff;
+      small{
+        display: block;
+        font-size: 14px;
+        opacity: 0.65;
+        padding-top: 10px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .countdown{
+      padding-top: 30px;
+      width: 540px;
+      margin: 0 auto;
+      li{
+        display: inline-block;
+        span{
+          font-family: BebasNeue;
+          font-size: 48px;
+          color: #fff;
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          text-align: center;
+          line-height: 55px;
+        }
+        small{
+          padding-left: 30px;
+          padding-right: 30px;
+          color: #3680f8;
+          font-size: 48px;
+        }
+        p{
+          padding-top: 0;
+          font-size: 16px;
+          color: #ffffff;
+          opacity: 0.65;
+          font-family: BebasNeue;
+        }
+      }
+    }
+
+    .bannerShare{
+      display: block;
+      margin-top: 120px;
+      text-align: center;
+      img{
+        display: inline-block;
+        margin: 20px;
+        opacity: 0.6;
+      }
+      p{
+        font-size: 14px;
+        padding-top: 0;
+      }
+      img:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+  .homeHeaderBodyDiv2{
+    float: left;
+    margin-top: 220px;
+    margin-left: 135px;
+
+    .home-submit-button{
+      width: 210px;
+      height: 50px;
+      margin-top: 20px;
+      background-color: #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+    }
+
+    .home-submit-button2{
+      width: 210px;
+      height: 50px;
+      margin-top: 20px;
+      border: 1px solid #008aff;
+      color: #FFF;
+      font-size: 18px;
+      vertical-align: middle;
+      padding-top: 12px;
+      display: block;
+      opacity: 0.6;
+    }
+
+    .home-submit-button .home-submit-button2:focus,
+    .home-submit-button2:hover{
+      color: #FFF;
+      border-color: transparent;
+    }
+
+    .home-submit-button:hover{
+      background: #1f6ce9;
+    }
+  }
+  }
+.productBox{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 90px;
+  background-image: linear-gradient(135deg, #10192f 0%, #233050 100%);
+  .proCont{
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    .bannerLeft{
+      width: 540px;
+      float: left;
+      h1{
+        font-weight: bold;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 30px;
+            display: inline-block;
+            float: left;
+            .icoCircle{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+      .downloadBox{
+        h2{
+          font-size: 16px;
+          text-transform : uppercase;
+          font-weight: bold;
+        }
+        ul{
+          li{
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            margin-right: 20px;
+            text-align: center;
+            border-radius: 100%;
+            background: rgba(250, 251, 253, 0.04);
+            img{
+              width: 21px;
+            }
+          }
+          .gitBtn{
+            width: 135px;
+            height: 45px;
+            line-height: 45px;
+            margin-right: 18px;
+            text-align: center;
+            border-radius: 25px;
+            background: rgba(250, 251, 253, 0.04);
+            img{
+              width: 102px;
+            }
+          }
+          .gitBtn:hover{
+            cursor: pointer;
+            background-image: linear-gradient(to right, #1a90fc, #00d2ff);
+          }
+        }
+      }
+    }
+    .bannerRight{
+      float: right;
+      width: 800px;
+      .banRbg{
+        width: 100%;
+      }
+      .banRico{
+        width: 180px;
+        margin-left: 100px;
+      }
+    }
+  }
+}
+.whiteBox{
+  width: 100%;
+  background: #fff;
+  padding: 50px 0 40px;
+  display: inline-block;
+  .whiteCont{
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    .whiteLeft{
+      float: left;
+      .proimg1{
+        width: 670px;
+      }
+    }
+    .whiteRight{
+      float: right;
+      width: 700px;
+      margin-top: 80px;
+      h1{
+        font-weight: bold;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 30px;
+            display: inline-block;
+            float: left;
+            .icoCircle2{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+    }
+  }
+}
+}
+.grayBox{
+  width: 100%;
+  background: #f7f9fa;
+  display: inline-block;
+  padding-top:  60px;
+  .grayCont{
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    .grayLeft{
+      float: left;
+      width: 480px;
+      margin-top: 70px;
+      h1{
+        font-weight: bold;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 30px;
+            display: inline-block;
+            float: left;
+            .icoCircle2{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+    .grayRight{
+      float: right;
+      .proimg2{
+        width: 740px;
+      }
+    }
+  }
+}
+.comBtn{
+  width: 165px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 0 0 30px;
+  text-align: center;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-image: linear-gradient(to right, #1a90fc, #00d2ff);
+  box-shadow: 0px 6px 24px 0px rgba(25, 145, 252, 0.4);
+}
+.comBtn:hover{
+  transition: all 1s ease 2s;
+  background-image: linear-gradient(to left, #1a90fc, #00d2ff);
+}
+.whiteBox2{
+  width: 100%;
+  background: #fff;
+  padding: 50px 0 40px;
+  display: inline-block;
+  .whiteCont{
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+    .whiteLeft{
+      float: left;
+      .proimg3{
+        width: 500px;
+        border-radius: 5px;
+      }
+    }
+    .whiteRight{
+      float: right;
+      width: 700px;
+      margin-top: 30px;
+      h1{
+        font-weight: bold;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 30px;
+            display: inline-block;
+            float: left;
+            .icoCircle2{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+    }
+  }
+}
+}
+}
+
+.downloadBox{
+  h2{
+    font-size: 16px;
+    text-transform : uppercase;
+    font-weight: bold;
+  }
+  ul{
+    li{
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: 20px;
+      text-align: center;
+      border-radius: 100%;
+      background: rgba(250, 251, 253, 0.04);
+      img{
+        width: 21px;
+      }
+    }
+    .gitBtn{
+      width: 135px;
+      height: 45px;
+      line-height: 45px;
+      margin-right: 18px;
+      text-align: center;
+      border-radius: 25px;
+      background: rgba(250, 251, 253, 0.04);
+      img{
+        width: 102px;
+      }
+    }
+  }
+}

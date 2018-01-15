@@ -4,7 +4,7 @@
   .div5Header {
     margin: 0 auto;
     width: 100%;
-    //background: #f7fafe;
+    background: #f7fafe;
   }
 
   .div5HeaderDiv {
@@ -27,7 +27,6 @@
 
   .module8Div{
     border-bottom: 1px solid #f1f5fb;
-    padding-top: 30px;
 
     .module8DivUp{
       padding-left: 0;
@@ -91,6 +90,7 @@
         padding-left: 25px;
         margin-top: 122px;
         max-width: 300px;
+        margin-right: -33px;
       }
 
       p{
@@ -110,4 +110,3 @@
     }
   }
 }
-

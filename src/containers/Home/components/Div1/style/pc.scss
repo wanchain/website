@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 0;
     padding-bottom: 30px;
+    height:800px;
 
     h2{
       margin: 0;
@@ -14,10 +15,61 @@
       color: #2c313a;
     }
 
+    .div1HeaderImg{
+      span{
+        font-family: MicrosoftYaHei-Bold;
+      	font-size: 24px;
+      	font-weight: normal;
+      	font-stretch: normal;
+      	line-height: 14px;
+      	letter-spacing: 1px;
+      	color: #2b363d;
+      }
+    }
+
     .div1HeaderImg2{
-      display: block;
-      margin: 0 auto;
-      padding-top: 60px;
+      float: left;
+      margin-top: 50px;
+      margin-right: 100px;
+      img{
+        width: 445px;
+        display: inline-block;
+      }
+    }
+
+    .divTextContent{
+      float:left;
+      width: 550px;
+      margin-top: 100px;
+
+      li{
+        float: left;
+        width: 263px;
+        margin: 0 10px 25px 0;
+        img{
+          width:60px;
+          display: block;
+        }
+        p{
+          text-align: left;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 14px;
+          letter-spacing: 0px;
+          color: #2b363d;
+          margin: 15px auto;
+          font-family: MicrosoftYaHei-Bold;
+        }
+        span{
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 18px;
+          letter-spacing: 0px;
+          color: #8392a6;
+        }
+      }
     }
 
     p{
@@ -30,4 +82,3 @@
     }
   }
 }
-

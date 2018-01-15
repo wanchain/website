@@ -11,7 +11,7 @@
 
       h2{
         margin: 0;
-        padding: 80px 0 0 0;
+        padding: 50px 0 0 0;
         font-family: "Microsoft YaHei";
         font-size: 24px;
         text-align: center;
@@ -65,19 +65,20 @@
       }
     }
 
-    .div6BodyEn{
-      margin-top: 15px;
-      .div6BodyCard{
-        small{
-          height: 130px;
+    .iconStyle{
+      margin-top: 30px;
+      text-align: center;
+      ul{
+        display: inline-block;
+        li{
+          margin-right: 40px;
+          float:left;
+          img{
+            width:192px;
+          }
         }
-      }
-
-      #div6Card2{
-        padding: 0px 35px;
       }
     }
   }
 
 }
-

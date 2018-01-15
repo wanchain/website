@@ -107,13 +107,27 @@
 
     .homeHeaderBodyDiv1{
       float: left;
-      margin-top: 130px;
+      margin-top: 180px;
       //8.16
       width:1040px;
       height:451px;
-      //background: rgba(4, 13, 36, 0.4);
-      margin-left: 5.5%;
 
+      .bannerTitle{
+        font-family: MicrosoftYaHei-Bold;
+      	font-size: 50px;
+      	font-weight: normal;
+      	font-stretch: normal;
+      	line-height: 10px;
+      	letter-spacing: 2px;
+      	color: #ffffff;
+      }
+      .bannerTitleSmall{
+        font-family: MicrosoftYaHei;
+      	font-size: 24px;
+      	font-weight: normal;
+      	letter-spacing: 1px;
+      	color: #ffffff;
+      }
       img{
         margin: 0 auto;
         display: block;
@@ -137,16 +151,17 @@
       }
 
       p{
-        padding-top: 60px;
+        padding-top: 34px;
         font-size: 24px;
         color: #ffffff;
         small{
-          display: block;
-          font-size: 14px;
+          display: inline-block;
+          font-size: 16px;
           opacity: 0.65;
           padding-top: 10px;
-          width: 100%;
+          width: 64%;
           margin: 0 auto;
+        	letter-spacing: 0px;          
         }
       }
 
@@ -184,11 +199,10 @@
 
       .bannerShare{
         display: block;
-        margin-top: 120px;
-        text-align: center;
+        text-align: left;
         img{
           display: inline-block;
-          margin: 20px;
+          margin: 20px 20px 20px 0;
           opacity: 0.6;
         }
         p{
@@ -271,8 +285,6 @@
 
   }
 
-  .bannerp{
-    text-align: center;}
 .ingBox{
   width: 100%;
   background-color: rgba(3, 11, 27, 1.502);
@@ -372,4 +384,3 @@
     }
   }
 }
-

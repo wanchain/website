@@ -93,7 +93,8 @@ class Navigation extends Component {
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                             <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
-                            <li><a href="/career" onClick={this.getNav.bind(this)}>Career</a></li>
+                            <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li>
+                            <li><a href="/" onClick={this.getNav.bind(this)}>Explorer</a></li>
                         </ul>
                     </div>
                     }
@@ -107,7 +108,8 @@ class Navigation extends Component {
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                             <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
-                            <li><a href="/career" onClick={this.getNav.bind(this)}>Career</a></li>
+                            <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li>
+                            <li><Link to="/product" onClick={this.getNav.bind(this)}>Product</Link></li>
                         </ul>
                     </div>
                     }
@@ -129,7 +131,8 @@ class Navigation extends Component {
                                 </div>
                             </li>
                             <li><Link to="/about">Team</Link></li>
-                            <li><a href="/career">Career</a></li>
+                            <li><Link to="/career">Career</Link></li>
+                            <li><Link to="/product">Product</Link></li>
                         </ul>
                     </div>
                     }

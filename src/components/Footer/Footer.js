@@ -113,7 +113,7 @@ class Footer extends React.Component {
       const wecaterEn = require('./image/wecatEn.png');
       const qqer = require('./image/qqer.png');
       const tm = require('./image/tm.png');
-
+      const text = {display: 'inline_block', width: '112px'};
       return (
             <div className={styles.FooterRoot}>
                 <div className={styles.FooterContainer + ' container'}>
@@ -151,7 +151,7 @@ class Footer extends React.Component {
                             </div>
                             <div className={styles.footMenu}>
                                 <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
-                                <span>{language === 'zn' ? 'QQ群' : 'QQ group'}</span>
+                                <span className={text}>{language === 'zn' ? 'QQ群' : 'QQ group'}</span>
                                 <img src={qqer} className={styles.qq} id="qq"/>
                             </div>
                         </div>
@@ -167,4 +167,3 @@ class Footer extends React.Component {
 }
 
 export default Footer;
-

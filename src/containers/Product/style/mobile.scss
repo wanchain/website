@@ -1,0 +1,361 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+.homeDiv {
+  height: 140px;
+  position: relative;
+}
+
+.homeHeader{
+  img{
+    float: left;
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  .navJoin{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 25px;
+    float: right;
+    margin-right: 65px;
+    margin-top: 2px;
+    font-weight: 600;
+  }
+  .navbarImg{
+    float: right;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .homeHeaderUl{
+    padding-top: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 9;
+    opacity: .95;
+    ul{
+      text-align: center;
+      li{
+        margin: 13px;
+        a{
+          color: #000;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      a:hover{
+        border-bottom: 1px solid #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .homeGit{
+    float: left;
+    color: #fff;
+    line-height: 26px;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    p{
+      color: #fff;
+      float: right;
+      padding-left: 20px;
+      padding-top: 23px;
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 3px;
+    }
+    img{
+      padding-top: 0;
+      margin: 0;
+    }
+  }
+
+  .homeGit a:hover{
+    color: #1f6ce9;
+  }
+}
+
+.productBox{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 90px;
+  background-image: linear-gradient(135deg, #10192f 0%, #233050 100%);
+  .proCont{
+    padding: 0 20px;
+    margin: 0 auto;
+    .bannerLeft{
+      width: 96%;
+      margin: 0 auto;
+      h1{
+        font-weight: bold;
+        font-size:22px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 50px;
+            display: inline-block;
+            float: left;
+            .icoCircle{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+      .downloadBox{
+        h2{
+          font-size: 16px;
+          text-transform : uppercase;
+          font-weight: bold;
+        }
+        ul{
+          li{
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            margin-right: 18px;
+            text-align: center;
+            border-radius: 100%;
+            background: rgba(250, 251, 253, 0.04);
+            img{
+              width: 20px;
+            }
+          }
+          .gitBtn{
+            width: 125px;
+            height: 45px;
+            line-height: 45px;
+            margin-right: 0px;
+            text-align: center;
+            border-radius: 25px;
+            background: rgba(250, 251, 253, 0.04);
+            img{
+              width: 102px;
+            }
+          }
+          .gitBtn:hover{
+            cursor: pointer;
+            background-image: linear-gradient(to right, #1a90fc, #00d2ff);
+          }
+        }
+      }
+    }
+    .bannerRight{
+      width: 96%;
+      margin: 0 auto;
+      .comimgBox{
+        text-align: center;
+        .banRbg{
+        width: 100%;
+        text-align: center;
+        }
+      }
+      .banRico{
+        width: 180px;
+        margin-left: 100px;
+      }
+    }
+  }
+}
+.whiteBox{
+  width: 100%;
+  background: #fff;
+  padding: 30px 0;
+  display: inline-block;
+  .whiteCont{
+    padding: 0 20px;
+    margin: 0 auto;
+    .whiteLeft{
+      width: 96%;
+      margin: 0 auto;
+      .proimg1{
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+    .whiteRight{
+      width: 96%;
+      margin: 0 auto;
+      h1{
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 80px;
+            display: inline-block;
+            float: left;
+            .icoCircle2{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+    }
+  }
+}
+}
+.grayBox{
+  width: 100%;
+  background: #f7f9fa;
+  display: inline-block;
+  padding: 30px 0;
+  .grayCont{
+    padding: 0 20px;
+    margin: 0 auto;
+    .grayLeft{
+      width: 96%;
+      margin: 0 auto;
+      h1{
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 50px;
+            display: inline-block;
+            float: left;
+            .icoCircle2{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+    .grayRight{
+      width: 96%;
+      margin: 0 auto;
+      .proimg2{
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+.comBtn{
+  width: 165px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 0 0 -15px;
+  text-align: center;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-image: linear-gradient(to right, #1a90fc, #00d2ff);
+  box-shadow: 0px 6px 24px 0px rgba(25, 145, 252, 0.4);
+}
+.comBtn:hover{
+  transition: all 1s ease 2s;
+  background-image: linear-gradient(to left, #1a90fc, #00d2ff);
+}
+.whiteBox2{
+  width: 100%;
+  background: #fff;
+  padding: 30px 0;
+  display: inline-block;
+  .whiteCont{
+    padding: 0 20px;
+    margin: 0 auto;
+    .whiteLeft{
+      width: 96%;
+      margin: 0 auto;
+      .proimg3{
+        width: 100%;
+      }
+    }
+    .whiteRight{
+      width: 96%;
+      margin: 0 auto;
+      margin-top: 20px;
+      h1{
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0;
+        margin: 0;
+      }
+      h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0 0;
+        text-transform : uppercase;
+      }
+      ul{
+        margin-top: 35px;
+        display:inline-block;
+        li{
+          float: left;
+          font-size: 12px;
+          em{
+            height: 50px;
+            display: inline-block;
+            float: left;
+            .icoCircle2{
+              width: 12px;
+              height: 12px;
+              margin-right: 15px;
+            }
+          }
+        }
+    }
+  }
+}
+}
+}

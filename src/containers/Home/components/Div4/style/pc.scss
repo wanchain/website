@@ -2,24 +2,26 @@
 @media screen and (min-width: 1200px) {
   //+++++++++++ div3 style+++++++++++++++++++++++++++++++++++++++++++++++++
   .officalModule3{
-    background: #f7fafe;
+    // background: #f7fafe;
     //margin-top: 60px;
+    height:520px;
 
     img {
       padding-top: 100px;
-      margin-bottom: 60px;
       float: left;
+      width:353px;
     }
   }
 
   .officalModule3Div{
     position: relative;
-    top: 200px;
-
+    top: 150px;
+    padding-left:5%;
     img {
-      padding: 0;
-      padding-left: 60px;
-      margin-bottom: 0;
+      display: inline-block;
+      width: 8px;
+      padding-top: 6px;
+      margin-right:8px;
     }
 
     h2{
@@ -27,16 +29,6 @@
       color: #2b363d;
       position: absolute;
       top: -10px;
-      left: 18%;
-    }
-
-    span {
-      padding-top: 6px;
-      font-size: 12px;
-      color: #96b1c5;
-      position: absolute;
-      top: 29px;
-      left: 19%;
     }
 
     p {
@@ -44,25 +36,40 @@
       color: #688499;
       text-align: left;
       margin-top: 60px;
-      padding-left: 66px;
+    }
+    ul{
+      li{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 21px;
+        letter-spacing: 0px;
+        color: #3680f8;
+        margin-bottom: 7px;
+      }
     }
   }
 
   //==========1
   .officalModule4{
+    background: #f7fafe;
+    height:520px;
     img {
       padding-top: 100px;
-      padding-bottom: 60px;
+      float: left;
+      width:353px;
     }
   }
 
   .officalModule4Div{
     position: relative;
-    top: 200px;
-
+    top: 150px;
     img {
-      padding: 0;
-      padding-left: 60px;
+      display: inline-block;
+      width: 8px;
+      padding-top: 6px;
+      margin-right:8px;
     }
 
     h2{
@@ -70,26 +77,34 @@
       color: #2b363d;
       position: absolute;
       top: -10px;
-      left: 21%;
     }
 
-    span {
-      padding-top: 6px;
-      font-size: 12px;
-      color: #96b1c5;
-      position: absolute;
-      top: 29px;
-      left: 21%;
-    }
+    // span {
+    //   padding-top: 6px;
+    //   font-size: 12px;
+    //   color: #96b1c5;
+    //   position: absolute;
+    //   top: 29px;
+    // }
 
     p {
       font-size: 14px;
       color: #688499;
       text-align: left;
-      padding-top: 10px;
-      padding-left: 66px;
+      padding-top: 50px;
+    }
+    ul{
+      li{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 21px;
+        letter-spacing: 0px;
+        color: #3680f8;
+        margin-bottom: 7px;
+      }
     }
   }
 
 }
-
