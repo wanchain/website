@@ -117,6 +117,7 @@ class Div1 extends React.Component {
       const vision2 = require('../../image/vision2.png');
       const vision3 = require('../../image/vision3.png');
       const vision4 = require('../../image/vision4.png');
+      const clear = {clear: 'both'};
 
       let imgEn;
       if ( Number(clientWidth) >= 320 && Number(clientWidth) <= 767) {
@@ -147,7 +148,7 @@ class Div1 extends React.Component {
                     <p>Digitization of Assets</p>
                     <span>Digitization of assets will fundamentally change the financial services industry. </span>
                   </li>
-                  <li>
+                  <li style={clear}>
                     <img src={vision3} />
                     <p>New Business Models</p>
                     <span>We’ve been here before. Old business models were destroyed and new business models were created when photographs and media were digitized.</span>
