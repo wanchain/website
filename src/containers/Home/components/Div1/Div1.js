@@ -144,18 +144,18 @@ class Div1 extends React.Component {
                   </li>
                   <li>
                     <img src={vision2} />
-                    <p>DIGITAL ECONOMY</p>
-                    <span>Bitcoin was the first natively digital asset, tens of thousands of more have already followed. The digital economy is expanding rapidly</span>
+                    <p>Digitization of Assets</p>
+                    <span>Digitization of assets will fundamentally change the financial services industry. </span>
                   </li>
                   <li>
                     <img src={vision3} />
-                    <p>DIGITAL ECONOMY</p>
-                    <span>Bitcoin was the first natively digital asset, tens of thousands of more have already followed. The digital economy is expanding rapidly</span>
+                    <p>New Business Models</p>
+                    <span>We’ve been here before. Old business models were destroyed and new business models were created when photographs and media were digitized.</span>
                   </li>
                   <li>
                     <img src={vision4} />
-                    <p>DIGITAL ECONOMY</p>
-                    <span>Bitcoin was the first natively digital asset, tens of thousands of more have already followed. The digital economy is expanding rapidly</span>
+                    <p>Digital Economy</p>
+                    <span>The problem is that these digital assets are currently isolated on their respective chains. Their true potential to flow quickly, for near zero cost, and minimal counterparty risk has yet to be realized.</span>
                   </li>
                 </ul>
               </div>
