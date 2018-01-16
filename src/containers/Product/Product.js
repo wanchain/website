@@ -203,7 +203,7 @@ class Product extends Component {
                <li><img className={styles.icoWin} src={win2}/></li>
                <li><img className={styles.icoMac} src={mac2}/></li>
                <li><img className={styles.icoGLINUX} src={linux2}/></li>
-               <li><a href={this.state.href}><button className={styles.comBtn}>download1</button></a></li>
+               <li><a href={this.state.href}><button className={styles.comBtn}>download</button></a></li>
              </ul>
             </div>
           </div>
