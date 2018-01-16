@@ -110,6 +110,7 @@ class Navigation extends Component {
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                             <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                             <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li>
+                            <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
                         </ul>
                     </div>
                     }
@@ -133,6 +134,7 @@ class Navigation extends Component {
                             </li>
                             <li><Link to="/about">Team</Link></li>
                             <li><Link to="/career">Career</Link></li>
+                            <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
                         </ul>
                     </div>
                     }
