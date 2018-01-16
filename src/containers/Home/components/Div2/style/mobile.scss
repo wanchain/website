@@ -1,6 +1,14 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   // ++++++++++++++++++div2 style+++++++++++++++++++++++++++++++++++++++++++++
+  .mainbg{
+   height: 250px;
+   background: url("../../image/bg1.jpg") no-repeat center center;
+   background-color: #0f1a37;
+   text-align: center;
+   display: flex;
+   align-items: center;
+  }
   .div1o{
     background: #f7fafe;
 
@@ -99,6 +107,9 @@
         font-size: 24px;
         text-align: center;
         color: #2c313a;
+        span{
+          font-size: 22px;
+        }
       }
 
       .div1oBody{
@@ -107,7 +118,7 @@
           border-radius: 4px;
           background: #fff;
           box-shadow: 0 3px 6px 0 rgba(5,13,208,.05);
-          width: 284px;
+          width: 90%;
           height: 430px;
           position: relative;
           display: block;
@@ -118,7 +129,9 @@
             position: absolute;
             top: 30px;
 
-            img{    margin-left: 20px;}
+            img{
+              width: 80px; margin-left: 20px;
+            }
             p{
               display: inline-block;
               font-size: 14px;
@@ -173,4 +186,3 @@
     }
   }
 }
-

@@ -19,6 +19,8 @@ class Div3 extends React.Component {
       const one = require('../../image/1.png');
       const two = require('../../image/2.png');
       const download = require('../../image/download.png');
+      const widthPic = {width: '40px'};
+      const downLoad = {width: '29px', padding: '0', margin: '6px'};
 
       let pValue;
       if (language === 'zn') {
@@ -38,7 +40,7 @@ class Div3 extends React.Component {
                   <img src={wanchain} className={styles.astroModule2Img} id="astroModule2Img"/>
                   <div className= {styles.astroModule2word + ' col-lg-4'}>
                       <div className={ language === 'zn' ? styles.astroModule2wordDiv : styles.astroModule2wordDivEn}>
-                          <img src={one} />
+                          <img src={one} style={widthPic} />
                           {language === 'zn' ?
                               <p>万维链不仅仅是一个<small>通用的跨链协议<br/></small>同时是一个记录跨链交易、链内交易的<small>分布式账本</small></p>
                           :
@@ -46,7 +48,7 @@ class Div3 extends React.Component {
                           }
                       </div>
                       <div className={ language === 'zn' ? styles.astroModule2wordDiv : styles.astroModule2wordDivEn}>
-                          <img src={two} />
+                          <img src={two} style={widthPic} />
                           {language === 'zn' ?
                               <p>这个账本不但支持<small>智能合约虚拟机<br/></small>而且能支持智能合约下的<small>交易隐私保护</small></p>
                               :
@@ -57,11 +59,11 @@ class Div3 extends React.Component {
                       <div className={styles['div2-submit-area']}>
                           {language === 'zn' ?
                               <a className={styles['div2-submit-button'] + ' btn'} href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">
-                                  白皮书<img src={download} />
+                                  白皮书<img src={download} style={downLoad} />
                               </a>
                           :
                               <a className={styles['div2-submit-buttonEn'] + ' btn'} href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">
-                                  Whitepaper<img src={download} />
+                                  Whitepaper<img src={download} style={downLoad} />
                               </a>
                           }
                       </div>

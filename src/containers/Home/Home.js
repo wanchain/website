@@ -114,6 +114,7 @@ export default class Home extends Component {
                           <p className={styles.bannerTitle}>PRIVATE CROSS-CHAIN</p>
                           <p className={styles.bannerTitleSmall}>SMART CONTRACTS</p>
                         </div>
+                        <div className={styles.divLine}></div>
                         <p className={styles.bannerp}>
                             {language === 'zn' ? '连接不同数字资产，连接现在与未来' :
                                 'Links different digital assets, connecting the present and future'}

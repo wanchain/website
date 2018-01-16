@@ -20,13 +20,11 @@ class Product extends Component {
     changeLangFunc: PropTypes.func,
     language: PropTypes.string,
     titleState: PropTypes.string,
-    src: PropTypes.string,
   };
 
   componentDidMount() {
     const width = document.documentElement.clientWidth;
     this.props.getClientWidthFunc(width);
-    this.systemFun();
   }
   componentWillUnmount() {
     // clearInterval(this.interval);
@@ -36,16 +34,6 @@ class Product extends Component {
   getNav() {
     const navButton = this.props.navButton;
     this.props.getNavButtonFunc(!navButton);
-  }
-
-  systemFun() {
-    console.log(navigator.userAgent);
-    const str = navigator.userAgent;
-    if (str.indexOf('Windows1') !== -1) {
-      this.props.src = 'www.baidu.com';
-    }else {
-      this.props.src = 'www.sina.com';
-    }
   }
 
   render() {
@@ -71,6 +59,7 @@ class Product extends Component {
     const nav = require('../Home/image/nav1.png');
     const github = require('../Home/image/github.png');
     const github2 = require('../Home/image/icoLog4.png');
+    const bannBg = require('./image/bannBg.png');
 
     const {navButton, clientWidth, language} = this.props;
 
@@ -98,20 +87,21 @@ class Product extends Component {
         </div>
         <div className={styles.proCont}>
           <div className={styles.bannerLeft}>
-            <h1>WAN WALLET CONNECTING</h1>
-            <h3>different blockchain networks</h3>
+            <img className={styles.bannBg} src={bannBg} />
+            <h1>WAN WALLET</h1>
+            <h3>Transfer your assets with privacy protection</h3>
             <ul>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>Wan Wallet allows any blockchain network, whether a public, private or consortium chain,  and perform low-cost inter-ledger asset transfers. </span>
+                <span>Wan Wallet help you to manage different assets including WAN and other tokens on Wanchain</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>The asset transfer is achieved through a decentralized cross-chain mechanism and a universal cross-chain protocol.</span>
+                <span> You can transfer your assets either in ordinary(public transactions)  or in private (stealth transactions)</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>Multiple blockchains will be connected for the purpose of transferring value across networks.</span>
+                <span>We will support multi-cryptocurrencies in later version.</span>
               </li>
             </ul>
              <div className={styles.downloadBox}>
@@ -137,15 +127,18 @@ class Product extends Component {
           </div>
           <div className={styles.whiteRight}>
             <h1>WAN smart contracts</h1>
-            <h3>are self-executing contracts</h3>
+            <h3>With provicy protection</h3>
             <ul>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>WAN Smart contracts permit trusted transactions and agreements to be carried out among disparate,</span>
-                <span>anonymous parties without the need for a central authority, legal system, or external enforcement mechanism.</span>
+                <span>You can deploy smart contract like Ethereum.</span>
               </li>
+                <li>
+                  <em><img className={styles.icoCircle2} src={circle}/></em>
+                  <span>Wanchain supply a special character which you can issue a token with privacy protection. How to deploy a smart contract with privacy protection, please click button below</span>
+                </li>
             </ul>
-            <button className={styles.comBtn}>Issue your token</button>
+            <a target="_blank" href="https://github.com/wanchain/go-wanchain/wiki/How--to-deploy-smart-contract" className={styles.comBtn}>Issue your token</a>
           </div>
         </div>
       </div>

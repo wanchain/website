@@ -23,8 +23,26 @@
       margin: 0 auto;
       padding-top: 40px;
       width: 100%;
+      img{
+        width: 100%;
+      }
     }
-
+    .divTextContent{
+      ul{
+        li{
+          text-align: center;margin: 30px 0;
+          img{
+            width: 100px;
+          }
+          p{
+            margin: 15px 0;
+          }
+          span{
+            text-align: left; display: inline-block;
+          }
+        }
+      }
+    }
     p{
       font-family: "Microsoft YaHei";
       color: #688499;
@@ -34,4 +52,3 @@
     }
   }
 }
-

@@ -24,7 +24,20 @@
       display: block;
       margin: 0 auto;
       padding-top: 40px;
-      width: 70%;
+      width: 90%;
+      img{
+        width: 100%;
+      }
+    }
+    .divTextContent{
+      ul{
+        li{
+          text-align: center; display: inline-block; margin: 24px 0;
+          p{
+            margin: 10px 0;
+          }
+        }
+      }
     }
 
     p{
@@ -36,4 +49,3 @@
     }
   }
 }
-

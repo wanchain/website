@@ -97,11 +97,17 @@
     .bannerLeft{
       width: 96%;
       margin: 0 auto;
+      position: relative; z-index: 2;
+      .bannBg{
+        position: absolute; top: -50px;
+        width: 330px; z-index: -1;
+      }
       h1{
         font-weight: bold;
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;
@@ -207,6 +213,7 @@
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;
@@ -252,6 +259,7 @@
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;
@@ -292,6 +300,7 @@
   width: 165px;
   height: 45px;
   line-height: 45px;
+  display: inline-block;
   margin: 0 0 0 30px;
   text-align: center;
   border-radius: 25px;
@@ -319,6 +328,10 @@
     .whiteLeft{
       width: 96%;
       margin: 0 auto;
+        border: solid 2px #dbdbdb;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 2px 4px 10px 0px rgba(16, 25, 47, 0.08), 10px 16px 24px 0px rgba(16, 25, 47, 0.2);
       .proimg3{
         width: 100%;
       }
@@ -332,6 +345,7 @@
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;

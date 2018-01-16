@@ -51,5 +51,18 @@
 	p{  span {padding-left: 0}}
       }
     }
+    .iconStyle{
+      margin-top: 30px;
+      text-align: center;
+      ul{
+        width: 100%; display: inline-block;
+        li{
+          width: 44%; text-align: center; margin: 0 0 20px 4%; float: left;
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
   }
 }

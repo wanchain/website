@@ -1,8 +1,9 @@
 @media screen and (min-width: 1025px) {
   .homeDiv {
-    height:140px;
+    height:100px;
     position: relative;
   .homeHeader{
+    width: 1300px;
     img{
       float: left;
       padding-right: 10px;
@@ -233,17 +234,23 @@
   padding-bottom: 90px;
   background-image: linear-gradient(135deg, #10192f 0%, #233050 100%);
   .proCont{
-    width: 1440px;
-    padding: 0 20px;
+    width: 1300px;
     margin: 0 auto;
     .bannerLeft{
       width: 540px;
       float: left;
+      margin-top: 60px;
+      position: relative; z-index: 2;
+      .bannBg{
+        position: absolute; top: -50px;
+        width: 330px; z-index: -1;
+      }
       h1{
         font-weight: bold;
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;
@@ -309,7 +316,7 @@
     }
     .bannerRight{
       float: right;
-      width: 800px;
+      width: 700px;
       .banRbg{
         width: 100%;
       }
@@ -326,24 +333,24 @@
   padding: 50px 0 40px;
   display: inline-block;
   .whiteCont{
-    width: 1440px;
-    padding: 0 20px;
+    width: 1300px;
     margin: 0 auto;
     .whiteLeft{
       float: left;
       .proimg1{
-        width: 670px;
+        width: 570px;
       }
     }
     .whiteRight{
       float: right;
-      width: 700px;
+      width: 680px;
       margin-top: 80px;
       h1{
         font-weight: bold;
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;
@@ -352,7 +359,7 @@
         text-transform : uppercase;
       }
       ul{
-        margin-top: 35px;
+        margin: 35px 0 15px;
         display:inline-block;
         li{
           float: left;
@@ -378,8 +385,7 @@
   display: inline-block;
   padding-top:  60px;
   .grayCont{
-    width: 1440px;
-    padding: 0 20px;
+    width: 1300px;
     margin: 0 auto;
     .grayLeft{
       float: left;
@@ -390,6 +396,7 @@
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;
@@ -428,7 +435,8 @@
   width: 165px;
   height: 45px;
   line-height: 45px;
-  margin: 0 0 0 30px;
+  display: inline-block;
+  margin: 30px 0 0 30px;
   text-align: center;
   border-radius: 25px;
   color: #fff;
@@ -441,6 +449,7 @@
 }
 .comBtn:hover{
   transition: all 1s ease 2s;
+  text-decoration: none;
   background-image: linear-gradient(to left, #1a90fc, #00d2ff);
 }
 .whiteBox2{
@@ -449,10 +458,13 @@
   padding: 50px 0 40px;
   display: inline-block;
   .whiteCont{
-    width: 1440px;
-    padding: 0 20px;
+    width: 1300px;
     margin: 0 auto;
     .whiteLeft{
+      border: solid 2px #dbdbdb;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 2px 4px 10px 0px rgba(16, 25, 47, 0.08), 10px 16px 24px 0px rgba(16, 25, 47, 0.2);
       float: left;
       .proimg3{
         width: 500px;
@@ -461,13 +473,14 @@
     }
     .whiteRight{
       float: right;
-      width: 700px;
+      width: 650px;
       margin-top: 30px;
       h1{
         font-weight: bold;
         font-size: 30px;
         padding: 0;
         margin: 0;
+        text-transform: uppercase;
       }
       h3{
         font-size: 18px;
@@ -481,6 +494,11 @@
         li{
           float: left;
           font-size: 12px;
+          a{
+            .comBtn{
+              margin-top: 0;
+            }
+          }
           em{
             height: 30px;
             display: inline-block;

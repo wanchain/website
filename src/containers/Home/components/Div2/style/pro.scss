@@ -37,9 +37,8 @@
           width: 46%;
           height: 381px;
           display: inline-block;
-          margin: 0 10px;
+          margin: 0 0 30px 2.5%;
           position: relative;
-          margin-bottom: 20px;
 
           .div1oBodyCardModule{
             position: absolute;
@@ -123,15 +122,16 @@
           width: 46%;
           height: 440px;
           display: inline-block;
-          margin: 0 10px;
           position: relative;
-          margin-bottom: 30px;
+          margin: 0 0 30px 2.5%;
 
           .div1oBodyCardModule{
             position: absolute;
             top: 50px;
 
-            img{    margin-left: 18px;
+            img{
+              width: 80px;
+              margin-left: 18px;
               float: left;
             }
             p{
@@ -183,7 +183,7 @@
           }
         }
 
-        #card1{margin-left: 0}
+
         #card4{margin-right: 0}
         #div1oP3, #div1oP3 { top: 16px; }
       }
@@ -192,4 +192,3 @@
   }
 
 }
-

@@ -19,7 +19,6 @@
   }
 
   .officalModule{
-    margin-top: 60px;
   }
 
   .officalModule3{
@@ -38,22 +37,44 @@
     img {
       padding: 0;
       padding-left: 0;
-      width: 10%;
+      width: 3%;
+    }
+    h2{
+      font-size: 26px;
+      color: #2b363d;
+    }
+
+    p {
+      font-size: 14px;
+      color: #688499;
+      text-align: left;
+      margin-top: 60px;
+    }
+    ul{
+      li{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 21px;
+        letter-spacing: 0px;
+        color: #3680f8;
+        margin-bottom: 7px;
+      }
     }
     .officalModule31{
       font-size: 12px;
     }
 
     h2{
-      font-size: 14px;
+      font-size: 28px;
       color: #2b363d;
       font-weight: 600;
       display: inline-block;
-      margin: 0;
-      margin-left: 15px;
+      margin: 20px 0;
     }
     span {
-      display: none;
+      margin-left: 10px;
     }
 
     p {

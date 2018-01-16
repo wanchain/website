@@ -1,6 +1,41 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   //+++++++++++ div4 style+++++++++++++++++++++++++++++++++++++++++++++++++
+  .mainbg{
+    height: 250px;
+    background: url("../../image/bg1.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: #0f1a37;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
 
+    .main{
+      margin: 0 auto;
+      .title{
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 28px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        margin-bottom: 23px;
+      }
+      .content{
+        margin: 0 auto;
+        width: 100%;
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 20px;
+        letter-spacing: 1px;
+        color: rgba(255,255,255,0.76);
+      }
+    }
+
+  }
   .div3img1, .div3img2, .div3img3, .div3img4 {
     display: block;
     margin: 0 auto;

@@ -50,14 +50,14 @@ export function homeUlEn(styles, style) {
         <div className={styles} id="navbar-menu" style={style}>
             <ul>
                 <li><IndexLink to="/">Home</IndexLink></li>
-                  <li><Link to="/tokensale">Tokensale</Link></li>
+                <li><Link to="/product">Product</Link></li>
+                  <li><Link to="/tokensale" target="_blank">Tokenswap</Link></li>
                 {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                 <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                 <li><Link to="/about">Team</Link></li>
                 <li><Link to="/career">Career</Link></li>
-                <li><Link to="/product">Product</Link></li>
             </ul>
         </div>
   );
@@ -68,7 +68,8 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
     <div className={styles} id="navbar-menu" style={style}>
         <ul>
             <li><IndexLink to="/">Home</IndexLink></li>
-              <li><Link to="/tokensale">Tokensale</Link></li>
+            <li><Link to="/product">Product</Link></li>
+              <li><Link to="/Tokensale" target="_blank">Tokenswap</Link></li>
             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
             <li>
                 <div className={homeDropdown}>
@@ -82,7 +83,6 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
             </li>
             <li><Link to="/about">Team</Link></li>
             <li><Link to="/career">Career</Link></li>
-            <li><Link to="/product">Product</Link></li>
         </ul>
     </div>
   );

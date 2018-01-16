@@ -89,6 +89,18 @@
     width: 90%;
     margin: 60px auto 0 auto;
     padding-bottom:40px;
+    div{
+      margin-top: 80px;
+      .bannerTitle{
+        font-weight: bold; font-size: 50px;
+      }
+      .bannerTitleSmall{
+        font-size: 34px;
+      }
+      p{
+        padding-top: 0;
+      }
+    }
     img{
       width: 100%;
       margin-top: 30px;
@@ -106,15 +118,15 @@
       }
     }
     p{
-      padding-top: 50px;
-      font-size: 18px;
+      padding-top: 0px;
+      font-size: 33px;
       color: #ffffff;
       small{
         display: block;
         font-size: 12px;
         opacity: 0.65;
-        padding-top: 5px;
-        width: 290px;
+        padding: 25px 0;
+        width: 100%;
         margin: 0 auto;
       }
     }

@@ -12,7 +12,7 @@ class Div2 extends React.Component {
 
     render() {
       const {language} = this.props;
-      const card1 = require('../../image/car1.png');
+      const card1 = require('../../image/card1.png');
       const card2 = require('../../image/card2.png');
       const card3 = require('../../image/card3.png');
       const card4 = require('../../image/card4.png');
@@ -37,7 +37,7 @@ class Div2 extends React.Component {
                               {language === 'zn' ?
                                   <p className={styles.psize}>数字货币<br/>交易<small>兑换</small></p>
                                :
-                                  <p><small>Exchanges</small> of<br/>Cryptocurrencies</p>
+                                  <p><small>Decentralized</small><br/> Exchange</p>
                               }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
@@ -49,9 +49,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Transact across multiple token<br/>exchanges through private smart contracts</li>
-                                    <img src={pot}/><li>Utilize Wanchain for distributed<br/>cryptocurrency exchange services</li>
-                                    <img src={pot}/><li>Wanchain offers a distributed<br/>cross-blockchain transaction mechanism</li>
+                                    <img src={pot}/><li>Exchange the world's digital<br/>assets on-chain</li>
+                                    <img src={pot}/><li>Transact using Wanchain's<br/>multi-asset wallet</li>
+                                    <img src={pot}/><li>Build decentralized exchange<br/>applications like Ether Delta with protocol tokens</li>
                                 </ul>
                             }
                         </div>
@@ -64,7 +64,7 @@ class Div2 extends React.Component {
                                 {language === 'zn' ?
                                     <p>数字货币<br/><small>借贷</small></p>
                                 :
-                                    <p><small>Loans</small> of<br/>Cryptocurrencies</p>
+                                    <p><small>Digital Asset</small> of<br/>Management</p>
                                 }
 
                             </div>
@@ -77,9 +77,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Eliminate loan paperwork and inefficiency through cross-chain smart contract execution</li>
-                                    <img src={pot}/><li>Users hold their assets and debts in a decentralized way (different tokens)</li>
-                                    <img src={pot}/><li>Wanchain ensures asset safety and transparency throughout the process</li>
+                                    <img src={pot}/><li>Minimize exchange counterparty risk</li>
+                                    <img src={pot}/><li>Master address provides simplified and trusted audit</li>
+                                    <img src={pot}/><li>Privacy protection for trades and positions</li>
                                 </ul>
                             }
                         </div>
@@ -118,7 +118,7 @@ class Div2 extends React.Component {
                                 {language === 'zn' ?
                                     <p>多币种ICO<br/><small>众筹</small></p>
                                 :
-                                    <p id={styles.div1oP4}><small>Crowd-Funding</small> Through <br/>Cryptocurrencies</p>
+                                    <p id={styles.div1oP4}><small>ICO</small><br/>Platform</p>
                                 }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
@@ -130,9 +130,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Supports ICOs with multi-cryptocurrency smart contracts</li>
-                                    <img src={pot}/><li>Converts ICO tokens to real cryptocurrencies for ease of use</li>
-                                    <img src={pot}/><li>Completely decentralized ICO process; create and participate in token events</li>
+                                    <img src={pot}/><li>Streamlined process to launch ICO</li>
+                                    <img src={pot}/><li>Access to Wanchain's exuberant community</li>
+                                    <img src={pot}/><li>Collect funds from multiple assets</li>
                                 </ul>
                             }
                         </div>

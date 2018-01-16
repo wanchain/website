@@ -151,6 +151,15 @@
     //.indexH2size{
     //  font-size:18px!important;
     //}
+    div{
+      margin-top: 80px;
+      .bannerTitle{
+        font-weight: bold; font-size: 28px;
+      }
+      p{
+        padding-top: 0;
+      }
+    }
 
     img{
       width: 100%;
@@ -171,15 +180,14 @@
       }
     }
     p{
-      padding-top: 70px;
-      font-size: 18px;
+      font-size: 20px;
       color: #ffffff;
       small{
         display: block;
         font-size: 12px;
         opacity: 0.65;
-        padding-top: 5px;
-        width: 290px;
+        padding-top: 15px;
+        width: 100%;
         margin: 0 auto;
       }
     }
@@ -380,4 +388,3 @@
     }
   }
 }
-

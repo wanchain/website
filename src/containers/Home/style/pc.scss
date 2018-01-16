@@ -111,11 +111,10 @@
       //8.16
       width:1040px;
       height:451px;
-
       .bannerTitle{
         font-family: MicrosoftYaHei-Bold;
       	font-size: 50px;
-      	font-weight: normal;
+      	font-weight: bold;
       	font-stretch: normal;
       	line-height: 10px;
       	letter-spacing: 2px;
@@ -161,7 +160,7 @@
           padding-top: 10px;
           width: 64%;
           margin: 0 auto;
-        	letter-spacing: 0px;          
+        	letter-spacing: 0px;
         }
       }
 
@@ -196,7 +195,13 @@
           }
         }
       }
-
+      .divLine{
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        border-radius: 30%;
+        margin-top: 20px;
+      }
       .bannerShare{
         display: block;
         text-align: left;
@@ -204,6 +209,7 @@
           display: inline-block;
           margin: 20px 20px 20px 0;
           opacity: 0.6;
+          width:21px;
         }
         p{
           font-size: 14px;
