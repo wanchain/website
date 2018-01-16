@@ -20,11 +20,18 @@ class Product extends Component {
     changeLangFunc: PropTypes.func,
     language: PropTypes.string,
     titleState: PropTypes.string,
+    href: PropTypes.string,
   };
 
+  constructor() {
+    super();
+    this.state = {href: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanchainWalletCli-win64-1.0.0.zip'};
+    this.getSystem = this.getSystem.bind(this);
+  }
   componentDidMount() {
     const width = document.documentElement.clientWidth;
     this.props.getClientWidthFunc(width);
+    this.getSystem();
   }
   componentWillUnmount() {
     // clearInterval(this.interval);
@@ -34,6 +41,15 @@ class Product extends Component {
   getNav() {
     const navButton = this.props.navButton;
     this.props.getNavButtonFunc(!navButton);
+  }
+
+  getSystem() {
+    const str = navigator.userAgent.toLowerCase();
+    if (str.indexOf('windows') === -1) {
+      this.setState({
+        href: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanchainWalletCli-linux64-1.0.0.tar.gz'
+      });
+    }
   }
 
   render() {
@@ -187,7 +203,7 @@ class Product extends Component {
                <li><img className={styles.icoWin} src={win2}/></li>
                <li><img className={styles.icoMac} src={mac2}/></li>
                <li><img className={styles.icoGLINUX} src={linux2}/></li>
-               <li><a><button className={styles.comBtn}>download</button></a></li>
+               <li><a href={this.state.href}><button className={styles.comBtn}>download1</button></a></li>
              </ul>
             </div>
           </div>
