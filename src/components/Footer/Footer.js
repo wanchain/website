@@ -114,6 +114,8 @@ class Footer extends React.Component {
       const qqer = require('./image/qqer.png');
       const tm = require('./image/tm.png');
       const text = {display: 'inline_block', width: '112px'};
+      const widthWechat = {width: '120px'};
+
       return (
             <div className={styles.FooterRoot}>
                 <div className={styles.FooterContainer + ' container'}>
@@ -147,12 +149,12 @@ class Footer extends React.Component {
                             <div className={styles.footMenu}>
                                 <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
                                 <span>{language === 'zn' ? '微信' : 'wechat'}</span>
-                                <img src={language === 'zn' ? wecater : wecaterEn} className={styles.wechat} id="wechat"/>
+                                <img style={widthWechat} src={language === 'zn' ? wecater : wecaterEn} className={styles.wechat} id="wechat"/>
                             </div>
                             <div className={styles.footMenu}>
                                 <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
                                 <span className={text}>{language === 'zn' ? 'QQ群' : 'QQ group'}</span>
-                                <img src={qqer} className={styles.qq} id="qq"/>
+                                <img style={widthWechat} src={qqer} className={styles.qq} id="qq"/>
                             </div>
                         </div>
                     </div>
