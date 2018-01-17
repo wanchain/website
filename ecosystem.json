@@ -15,7 +15,7 @@
   "deploy": {
     "production": {
       "user": "root",
-      "host": "121.42.8.74",
+      "host": "114.215.28.21",
       "repo": "git@github.com:wanchain/website.git",
       "ref": "origin/master",
       "path": "/root/website",
