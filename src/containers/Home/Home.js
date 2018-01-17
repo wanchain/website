@@ -111,16 +111,16 @@ export default class Home extends Component {
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
                         <div>
-                          <p className={styles.bannerTitle}>PRIVATE CROSS-CHAIN</p>
-                          <p className={styles.bannerTitleSmall}>SMART CONTRACTS</p>
+                          <p className={styles.bannerTitle}>REBUILDING FINANCE</p>
+                          <p className={styles.bannerTitleSmall}>With Private Cross-Chain Smart Contracts</p>
                         </div>
                         <div className={styles.divLine}></div>
                         <p className={styles.bannerp}>
                             {language === 'zn' ? '连接不同数字资产，连接现在与未来' :
-                                'Links different digital assets, connecting the present and future'}
+                                'Connecting the World\'s Digital Assets'}
                             <small>
                                 {language === 'zn' ? '万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换' :
-                                    'Wanchain seeks to create a new distributed financial infrastructure, connecting different blockchain networks together to exchange value.'}
+                                    'Wanchain is creating new distributed financial infrastructure. Cross-chain smart contracts built on Wanchain will power the new digital economy.'}
                             </small>
                         </p>
 

@@ -1,0 +1,25 @@
+{
+  "apps":[
+    {
+      "name": "wanchain",
+      "script": "./bin/server.js",
+      "env_production": {
+        "NODE_ENV": "production",
+        "HOST": "localhost",
+        "NODE_PATH": "./src",
+        "PORT": 443,
+        "APIPORT": 3000
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "root",
+      "host": "121.42.8.74",
+      "repo": "git@github.com:wanchain/website.git",
+      "ref": "origin/master",
+      "path": "/root/website",
+      "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json"
+    }
+  }
+}
