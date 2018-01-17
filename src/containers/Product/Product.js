@@ -151,7 +151,7 @@ class Product extends Component {
               </li>
                 <li>
                   <em><img className={styles.icoCircle2} src={circle}/></em>
-                  <span>Wanchain supply a special character which you can issue a token with privacy protection. How to deploy a smart contract with privacy protection, please click button below</span>
+                  <span>Wanchain supply a special character which you can issue a token with privacy protection. Please click button below, see how to deploy a smart contract with privacy protection</span>
                 </li>
             </ul>
             <a target="_blank" href="https://github.com/wanchain/go-wanchain/wiki/How--to-deploy-smart-contract" className={styles.comBtn}>Issue your token</a>

@@ -151,7 +151,7 @@ class Div1 extends React.Component {
                   <li style={clear}>
                     <img src={vision3} />
                     <p>New Business Models</p>
-                    <span>We’ve been here before. Old business models were destroyed and new business models were created when photographs and media were digitized.</span>
+                    <span>We've been here before. Old business models were destroyed and new business models were created when photographs and media were digitized.</span>
                   </li>
                   <li>
                     <img src={vision4} />

@@ -103,8 +103,8 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Offer a wide variety of investment options through the implementation of cross-chain transactions via smart contract</li>
-                                    <img src={pot}/><li>Automated approval process makes " Payment on Delivery" possible and effective</li>
+                                    <img src={pot}/><li>Offer a wide variety of investment options through the implement-<br/>ation of cross-chain transactions via smart contract</li>
+                                    <img src={pot}/><li>Automated approval process makes "Payment on Delivery" possible and effective</li>
                                     <img src={pot}/><li>Ensure stability, security, and compliance all through one platform</li>
                                 </ul>
                             }
@@ -130,7 +130,7 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Streamlined process to launch ICO</li>
+                                    <img src={pot}/><li>Streamlined process to launch <br/> ICO</li>
                                     <img src={pot}/><li>Access to Wanchain's exuberant community</li>
                                     <img src={pot}/><li>Collect funds from multiple assets</li>
                                 </ul>

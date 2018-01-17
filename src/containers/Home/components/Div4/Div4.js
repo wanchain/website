@@ -61,7 +61,7 @@ class Div4 extends React.Component {
                           <h2>{language === 'zn' ? '交易隐私保护' : 'SMART CONTRACTS'}</h2>
                           <p>{language === 'zn' ? conConfig.HomeDiv4.part3.zn : conConfig.HomeDiv4.part3.en}</p>
                           <ul>
-                            <li><img style={styles.dot} src={dot} />Implementation based on Ethereum’s Codebase </li>
+                            <li><img style={styles.dot} src={dot} />Implementation based on Ethereum's Codebase </li>
                             <li><img style={styles.dot} src={dot} />Leverage all existing Development Tools</li>
                             <li><img style={styles.dot} src={dot} />Build compelling distributed cross-chain dApps</li>
                           </ul>

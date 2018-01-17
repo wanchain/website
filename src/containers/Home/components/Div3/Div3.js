@@ -63,7 +63,7 @@ class Div3 extends React.Component {
                               </a>
                           :
                               <a className={styles['div2-submit-buttonEn'] + ' btn'} href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">
-                                  Whitepaper<img src={download} style={downLoad} />
+                                  White Paper<img src={download} style={downLoad} />
                               </a>
                           }
                       </div>
