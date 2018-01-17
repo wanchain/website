@@ -19,7 +19,7 @@
       "repo": "git@github.com:wanchain/website.git",
       "ref": "origin/master",
       "path": "/root/website",
-      "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json"
+      "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }
