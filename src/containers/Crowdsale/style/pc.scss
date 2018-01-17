@@ -1,6 +1,13 @@
 @media screen and (min-width: 1025px) {
   .crowdsaleDiv {
-
+     padding: 143px 0;
+     text-align: center;
+    h1{
+      font-size: 72px;
+      padding: 49px 100px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
     .homeHeaderDiv{
       height: 800px;
       position: relative;
@@ -118,4 +125,3 @@
     border: none;
   }
 }
-
