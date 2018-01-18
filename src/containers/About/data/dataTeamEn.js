@@ -195,7 +195,7 @@ An organizer in the blockchain community, affiliations and conferences.`
       img: t39,
       url: '',
       position: '',
-      describe: '14 years of c++ developing experience， strong interest on python， golang， js,  java. Believe in the  cleanliness, simpleness of code. Have strong interest on the blockchain industry, and look forward to becoming a expert in blockchain.'
+      describe: '14 years of c++ developing experience， strong interest on python， golang， js,  java. Believe in the  cleanliness, simpleness of code. Have strong interest on the blockchain industry, and look forward to becoming a expert in blockchain.'
   },
   {title: 'Gabriel Guo',
       img: t40,
@@ -207,7 +207,7 @@ An organizer in the blockchain community, affiliations and conferences.`
       img: t41,
       url: '',
       position: '',
-      describe: 'Former senior global product manager from Lenovo & Moto, 9 years indepth experiences in IoT, Smart Hardware & Software product delivery and portfolio management. Graduate from National University of Ireland with MA in Finance and BA from Athlone Institute of Technology.  Hantao also was a co-founder of a Saas company received million investment from top Angel investors. Advance in MD, Python language'
+      describe: 'Former senior global product manager from Lenovo & Moto, 9 years indepth experiences in IoT, Smart Hardware & Software product delivery and portfolio management. Graduate from National University of Ireland with MA in Finance.'
   },
   {title: 'Aaron Zhan',
       img: t42,
