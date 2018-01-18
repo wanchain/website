@@ -92,7 +92,7 @@ class Div6 extends React.Component {
                           <h4>{language === 'zn' ? conConfig.HomeDiv6.part4.zn : conConfig.HomeDiv6.part4.en}</h4>
                       </div>
                       <div className={styles.module8Div1Up + ' col-lg-3'}>
-                          <p>2017<small>{' / '}11</small></p>
+                          <p>2018<small>{' / '}01</small></p>
                           <h4>{language === 'zn' ? conConfig.HomeDiv6.part5.zn : conConfig.HomeDiv6.part5.en}</h4>
                       </div>
                       <div className={styles.module8Div1Up + ' col-lg-3'}>
