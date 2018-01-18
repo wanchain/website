@@ -143,7 +143,7 @@ class Product extends Component {
           </div>
           <div className={styles.whiteRight}>
             <h1>WAN smart contracts</h1>
-            <h3>With provicy protection</h3>
+            <h3>With privacy protection</h3>
             <ul>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
