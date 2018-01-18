@@ -2,6 +2,11 @@
   .crowdsaleDiv {
     width: 750px;
     margin: 0 auto;
+    min-height: 1008px;
+    text-align: center;
+    h1{
+      line-height: 1000px!important;
+    }
     .homeHeaderDiv{
       height: 660px;
       position: relative;

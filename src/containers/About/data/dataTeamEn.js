@@ -30,6 +30,9 @@ const t40 = require('./image/t40.png');
 const t41 = require('./image/t41.png');
 const t42 = require('./image/t42.png');
 const t43 = require('./image/t43.png');
+const t44 = require('./image/t44.png');
+const t45 = require('./image/t45.png');
+const t46 = require('./image/t46.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -217,6 +220,24 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Proficient in java, javascript. Be in charge of  alliance chain and superstratum development.'
+  },
+  {title: 'Rajesh Gopi',
+      img: t44,
+      url: '',
+      position: '',
+      describe: 'MBA from UT Austin and Post Graduate degree from NIT Calicut, India. Multiple startup and large corporation experience with responsibilities ranging from product development, product management, business operations and engineering management.'
+  },
+  {title: 'Benn Godenzi',
+      img: t45,
+      url: '',
+      position: '',
+      describe: 'Bitcoin Entrepreneur since 2010. Director of Marketing for Aion, STK Token and CryptoCurve. ICO sale structure and fundraising specialist. Co-Founder Interoperability Alliance, Founded Outlast Nutrition.'
+  },
+  {title: 'LI NI',
+      img: t46,
+      url: '',
+      position: '',
+      describe: 'Graduated from Peking University with BA dgree and Acquired Master Degree of Sciecen (MSc) in Computer Sciecne with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommuicaiton, Delta Electronics and SuperMap Software as team leader in business teams. Also served as IT consultant for FECC, Ministry of Agriculture of China and FAO.'
   },
 ];
 

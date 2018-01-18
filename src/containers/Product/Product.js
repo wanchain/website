@@ -117,7 +117,7 @@ class Product extends Component {
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>We will support multi-cryptocurrencies in later version.</span>
+                <span>We will support multi-cryptocurrencies in later version</span>
               </li>
             </ul>
              <div className={styles.downloadBox}>
@@ -147,7 +147,7 @@ class Product extends Component {
             <ul>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>You can deploy smart contract like Ethereum.</span>
+                <span>You can deploy smart contract like Ethereum</span>
               </li>
                 <li>
                   <em><img className={styles.icoCircle2} src={circle}/></em>

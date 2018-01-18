@@ -141,22 +141,22 @@ class Div1 extends React.Component {
                   <li>
                     <img src={vision1} />
                     <p>Digital Economy</p>
-                    <span>Bitcoin was the first natively digital asset, tens of thousands have followed.The digital economy is expanding exponentially and will soon become 'the economy'.</span>
+                    <span>Bitcoin was the first natively digital asset, tens of thousands have followed.The digital economy is expanding exponentially and will soon become 'the economy'</span>
                   </li>
                   <li>
                     <img src={vision2} />
                     <p>Digitization of Assets</p>
-                    <span>These digital assets now operate in the domain of 0s, 1s, Moore's law, and exponential scale.The impacts on the financial services industry will be profound. Historical example: digitization of photographs.</span>
+                    <span>These digital assets now operate in the domain of 0s, 1s, Moore's law, and exponential scale.The impacts on the financial services industry will be profound. Historical example: digitization of photographs</span>
                   </li>
                   <li style={clear}>
                     <img src={vision3} />
                     <p>New Opportunities</p>
-                    <span>Tell your local banker to stop focusing on repairing finance and their bottom line.Instead create banking applications and services for the digital economy, rebuildFinance, expand top-line revenue, and change the world.</span>
+                    <span>Tell your local banker to stop focusing on repairing finance and their bottom line.Instead create banking applications and services for the digital economy, #rebuildFinance, expand top-line revenue, &change the world</span>
                   </li>
                   <li>
                     <img src={vision4} />
                     <p>Financial Infrastructure</p>
-                    <span>The problem is that today's digital assets are isolated on their respective chains.Wanchain connects these assets and enables banking applications to be developed that guide their flows on-chain, removing centralized couterparty risk.</span>
+                    <span>The problem is that today's digital assets are isolated on their respective chains.Wanchain connects these assets and enables banking applications to be developed that guide their flows on-chain, removing centralized couterparty risk</span>
                   </li>
                 </ul>
               </div>

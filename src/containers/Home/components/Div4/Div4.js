@@ -63,7 +63,7 @@ class Div4 extends React.Component {
                           <ul>
                             <li><img style={styles.dot} src={dot} />Implementation based on Ethereum's Codebase </li>
                             <li><img style={styles.dot} src={dot} />Leverage all existing Development Tools</li>
-                            <li><img style={styles.dot} src={dot} />Build compelling distributed cross-chain dApps</li>
+                            <li><img style={styles.dot} src={dot} />Build compelling distributed cross-chain Dapps</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? '' : <img src={part3} id="div3img3" className={styles.div3img3}/>}

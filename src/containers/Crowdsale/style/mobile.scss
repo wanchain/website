@@ -1,6 +1,10 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .crowdsaleDiv {
-
+    min-height: 400px;
+    h1{
+      text-align: center;
+      line-height: 400px;
+    }
     .homeHeaderDiv{
       position: relative;
       .titleH3{
@@ -120,4 +124,3 @@
   }
 
 }
-

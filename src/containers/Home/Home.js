@@ -120,7 +120,7 @@ export default class Home extends Component {
                                 'Connecting the World\'s Digital Assets'}
                             <small>
                                 {language === 'zn' ? '万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换' :
-                                    'Wanchain is creating new distributed financial infrastructure. Cross-chain smart contracts built on Wanchain will power the new digital economy.'}
+                                    'Wanchain is creating new distributed financial infrastructure. Cross-chain smart contracts built on Wanchain will power the new digital economy'}
                             </small>
                         </p>
 
