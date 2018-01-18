@@ -143,7 +143,6 @@ export default class Home extends Component {
             <Div8/>
             <Div4/>
             <Div6/>
-            <Div7/>
         </div>
     );
   }

@@ -30,9 +30,9 @@ class Div4 extends React.Component {
                             {language === 'zn' ? conConfig.HomeDiv4.part1.zn : conConfig.HomeDiv4.part1.en}
                           </p>
                           <ul>
-                            <li><img style={styles.dot} src={dot} />Ring Signature</li>
-                            <li><img style={styles.dot} src={dot} />One-Time Addresses</li>
-                            <li><img style={styles.dot} src={dot} />Private Send</li>
+                            <li>-> Ring Signature</li>
+                            <li>-> One-Time Addresses</li>
+                            <li>-> Private Send</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? '' : <img src={part1} id="div3img1" className={styles.div3img1}/>}
@@ -45,9 +45,8 @@ class Div4 extends React.Component {
                           <h2>{language === 'zn' ? '通用跨链协议' : 'CROSS-CHAIN'}</h2>
                           <p>{language === 'zn' ? conConfig.HomeDiv4.part2.zn : conConfig.HomeDiv4.part2.en}</p>
                           <ul>
-                            <li><img style={styles.dot} src={dot} />Locked Accounts with Secure Multi-Party Compute (SMPC)</li>
-                            <li><img style={styles.dot} src={dot} />Never lose control of your private keys</li>
-                            <li><img style={styles.dot} src={dot} />Support for all ERC20 and non-ERC20 tokens</li>
+                            <li>-> Locked accounts with Secure Multi-Party Compute (SMPC)</li>
+                            <li>-> Support for all ERC20 and protocol tokens</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? <img src={part2} id="div3img2" /> : <img src={part2} id="div3img2" className={styles.div3img2}/>}
@@ -61,9 +60,9 @@ class Div4 extends React.Component {
                           <h2>{language === 'zn' ? '交易隐私保护' : 'SMART CONTRACTS'}</h2>
                           <p>{language === 'zn' ? conConfig.HomeDiv4.part3.zn : conConfig.HomeDiv4.part3.en}</p>
                           <ul>
-                            <li><img style={styles.dot} src={dot} />Implementation based on Ethereum's Codebase </li>
-                            <li><img style={styles.dot} src={dot} />Leverage all existing Development Tools</li>
-                            <li><img style={styles.dot} src={dot} />Build compelling distributed cross-chain Dapps</li>
+                            <li>-> Implementation based on Ethereum's Codebase </li>
+                            <li>-> Leverage all existing Development Tools</li>
+                            <li>-> Build compelling distributed cross-chain Dapps</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? '' : <img src={part3} id="div3img3" className={styles.div3img3}/>}

@@ -64,7 +64,7 @@ class Div2 extends React.Component {
                                 {language === 'zn' ?
                                     <p>数字货币<br/><small>借贷</small></p>
                                 :
-                                    <p><small>Digital Asset</small> of<br/>Management</p>
+                                    <p><small>Asset</small><br/>Management Tools</p>
                                 }
 
                             </div>
@@ -80,32 +80,6 @@ class Div2 extends React.Component {
                                     <img src={pot}/><li>Minimize exchange counterparty risk</li>
                                     <img src={pot}/><li>Master address provides simplified and trusted audit</li>
                                     <img src={pot}/><li>Privacy protection for trades and positions</li>
-                                </ul>
-                            }
-                        </div>
-                        <div className={styles.div1oBodyCard}>
-                            <div className={styles.div1oBodyCardModule}>
-                              <p className={styles.p}>
-                                <img src={card3} id="div1oimg3"/>
-                              </p>
-                                {language === 'zn' ?
-                                    <p>数字资产<br/><small>投资</small></p>
-                                :
-                                    <p id={styles.div1oP3}><small>Investment</small> Through <br/>Cryptocurrencies</p>
-                                }
-                            </div>
-                            <img className={styles.div1oBodyCardLine} src={divo1Line} />
-                            {language === 'zn' ?
-                                <ul>
-                                    <img src={pot}/><li>通过万维链实现两种不同区块<br/>链资产的交易</li>
-                                    <img src={pot}/><li>自动化执行交易过程，实现<br/>"一手交钱一手交货"</li>
-                                    <img src={pot}/><li>万维链确保过程中资产的<br/>安全性</li>
-                                </ul>
-                            :
-                                <ul>
-                                    <img src={pot}/><li>Offer a wide variety of investment options through the implement-<br/>ation of cross-chain transactions via smart contract</li>
-                                    <img src={pot}/><li>Automated approval process makes "Payment on Delivery" possible and effective</li>
-                                    <img src={pot}/><li>Ensure stability, security, and compliance all through one platform</li>
                                 </ul>
                             }
                         </div>

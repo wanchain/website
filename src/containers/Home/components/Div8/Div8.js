@@ -10,7 +10,7 @@ class Div8 extends React.Component {
           <div className={styles.mainbg}>
             <div className={styles.main}>
               <p className={styles.title}>WANCHAIN - REBUILDING FINANCE</p>
-              <p className={styles.content}>At Wanchain, we're passionate about rebuilding finance by connecting the world's digital assets onto a single blockchain</p>
+              <p className={styles.content}>At Wanchain, we passionate about rebuilding finance by connecting the world's digital assets onto a single blockchain</p>
             </div>
           </div>
         );

@@ -2,11 +2,11 @@ const conConfig = {
   HomeDiv4: {
     part1: {
       zn: '在万维链上，我们将支持主流公链的跨链交易（如BTC、ETH）、联盟链之间的资产跨链交易，以及公链与联盟链的跨链交易。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',
-      en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses(OTA) provides complete anonymity for the receiver of every transaction. Private Send capability breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
+      en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send capability breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
     },
     part2: {
       zn: '万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',
-      en: 'Based on complex algebra, Locked accounts with SMPC enables low threshold to convert any digital asset from any blockchain into a corresponding proxy asset on Wanchain\'s blockchain. This unleashes the power to build compelling distributed cross-chain Dapps, without ever losing control of your private keys. Wanchain will support bringing any ERC20 and non-ERC20 tokens into its blockchain'
+      en: 'Based on complex algebra, locked accounts with SMPC enables low threshold to convert any digital asset from any blockchain into a corresponding proxy asset on Wanchain\'s blockchain. This unleashes the power to build compelling distributed cross-chain Dapps and removes centralized counterparty risk. Wanchain will support ERC20 and protocol tokens'
     },
     part3: {
       zn: '万维链上本身及同构链支持基于智能合约的资产的交易隐私保护。利用环签名和一次性地址，万维链实现智能合约代币的隐私保护，万维链不但是全球第一个实现智能合约代币交易的隐私保护，更让万维链及同构联盟链更好的适用于金融等应用场景。',

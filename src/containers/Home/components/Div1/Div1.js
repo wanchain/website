@@ -151,12 +151,12 @@ class Div1 extends React.Component {
                   <li style={clear}>
                     <img src={vision3} />
                     <p>New Opportunities</p>
-                    <span>Tell your local banker to stop focusing on repairing finance and their bottom line.Instead create banking applications and services for the digital economy, #rebuildFinance, expand top-line revenue, &change the world</span>
+                    <span>Tell your local banker to stop focusing on repairing finance and their bottom line. Instead create banking applications and services for the digital economy, #rebuildFinance, expand top-line revenue, & change the world</span>
                   </li>
                   <li>
                     <img src={vision4} />
                     <p>Financial Infrastructure</p>
-                    <span>The problem is that today's digital assets are isolated on their respective chains.Wanchain connects these assets and enables banking applications to be developed that guide their flows on-chain, removing centralized couterparty risk</span>
+                    <span>The problem is that today's digital assets are isolated on their respective chains. Wanchain connects these assets and enables banking applications to be developed that guide their flows on-chain, removing centralized couterparty risk</span>
                   </li>
                 </ul>
               </div>
