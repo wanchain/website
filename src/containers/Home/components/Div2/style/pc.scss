@@ -127,7 +127,7 @@
           background: #fff;
           box-shadow: 0 3px 6px 0 rgba(5,13,208,.05);
           width: 284px;
-          height: 440px;
+          height: 460px;
           display: inline-block;
           margin: 0 10px;
           position: relative;
@@ -136,6 +136,7 @@
             text-align: center;
             margin: 0 auto;
             margin-bottom: 10px;
+            padding-top: 29px;
             .p{
               width: 100%;
               margin: 0 auto;
@@ -148,7 +149,7 @@
             p{
               width: 100%;
               margin: 0 auto;
-              font-size: 17px;
+              font-size: 18px;
               font-weight: 600;
               color: #2b363d;
               padding: 15px 0 0 10px;
@@ -158,22 +159,24 @@
               display: block;
               small{
                 color: #3680f8;
-                font-size: 17px;
+                font-size: 18px;
               }
             }
           }
 
           .div1oBodyCardLine{
             left: 35px;
-            top: 195px;
+            top: 229px;
             position: absolute;
+            width: 314px;
+            height: 2px;
           }
 
           ul {
             margin-top: 35px;
             margin-bottom: 20px;
             left: 35px;
-            top: 185px;
+            top: 220px;
             position: absolute;
             line-height: 15px;
             margin-right: 8px;
