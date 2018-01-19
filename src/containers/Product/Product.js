@@ -113,7 +113,7 @@ class Product extends Component {
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span> You can transfer your assets either in ordinary(public transactions)  or in private (stealth transactions)</span>
+                <span> You can transfer your assets either in ordinary (public transactions)  or in private (stealth transactions)</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
@@ -166,7 +166,7 @@ class Product extends Component {
             <ul>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>Use our block explorer to check every transaction details</span>
+                <span>Use our block Explorer to check every transaction details</span>
               </li>
                 <li>
                   <em><img className={styles.icoCircle2} src={circle}/></em>
