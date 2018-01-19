@@ -20,6 +20,7 @@ class Div2 extends React.Component {
       const pot = require('../../image/pot.png');
 
       const styles = require('./Div2.scss');
+      const widthL = {width: '380px'};
       return (
             <div className={styles.div1o} id="div1o">
                 <div className={language === 'zn' ? styles.div1oHeader : styles.div1oHeaderEn + ' container'}>
@@ -29,7 +30,7 @@ class Div2 extends React.Component {
                       <hr className={styles.div1HeaderImg}/>
                     </h2>
                     <div className={styles.div1oBody}>
-                        <div className={styles.div1oBodyCard} id={styles.card1}>
+                        <div style={widthL} className={styles.div1oBodyCard} id={styles.card1}>
                             <div className={styles.div1oBodyCardModule}>
                               <p className={styles.p}>
                                 <img src={card1} id="div1oimg1" />
@@ -49,14 +50,14 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Exchange the world's digital<br/>assets on-chain</li>
-                                    <img src={pot}/><li>Transact using Wanchain's<br/>multi-asset wallet</li>
-                                    <img src={pot}/><li>Build decentralized exchange<br/>applications like Ether Delta with protocol tokens</li>
+                                    <img src={pot}/><li>Exchange the world's digital assets on-chain</li>
+                                    <img src={pot}/><li>Transact using Wanchain's multi-asset wallet</li>
+                                    <img src={pot}/><li>Build decentralized exchange applications like Ether Delta with protocol tokens</li>
                                 </ul>
                             }
                         </div>
 
-                        <div className={styles.div1oBodyCard}>
+                        <div style={widthL} className={styles.div1oBodyCard}>
                             <div className={styles.div1oBodyCardModule}>
                               <p className={styles.p}>
                                 <img src={card2} id="div1oimg2"/>
@@ -84,7 +85,7 @@ class Div2 extends React.Component {
                             }
                         </div>
 
-                        <div className={styles.div1oBodyCard} id={styles.card4}>
+                        <div style={widthL} className={styles.div1oBodyCard} id={styles.card4}>
                             <div className={styles.div1oBodyCardModule}>
                               <p className={styles.p}>
                                 <img src={card3} id="div1oimg4"/>
@@ -104,7 +105,7 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Streamlined process to launch <br/> ICO</li>
+                                    <img src={pot}/><li>Streamlined process to launch ICO</li>
                                     <img src={pot}/><li>Access to Wanchain's exuberant community</li>
                                     <img src={pot}/><li>Collect funds from multiple assets</li>
                                 </ul>
