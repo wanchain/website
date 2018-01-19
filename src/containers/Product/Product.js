@@ -173,7 +173,7 @@ class Product extends Component {
                   <span>From dates to fees, block heights to amounts, you can track them all and more</span>
                 </li>
             </ul>
-            <a href="https://explorer.wanchain.org" target="_blank"><button className={styles.comBtn}>wanchan exlporer</button></a>
+            <a href="https://explorer.wanchain.org" target="_blank"><button className={styles.comBtn}>wanchain explorer</button></a>
           </div>
           <div className={styles.grayRight}>
             <div><img className={styles.proimg2} src={proimg2}/></div>
