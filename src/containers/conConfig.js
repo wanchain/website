@@ -2,7 +2,7 @@ const conConfig = {
   HomeDiv4: {
     part1: {
       zn: '在万维链上，我们将支持主流公链的跨链交易（如BTC、ETH）、联盟链之间的资产跨链交易，以及公链与联盟链的跨链交易。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',
-      en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send capability breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
+      en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send capability breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
     },
     part2: {
       zn: '万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',
@@ -36,7 +36,7 @@ const conConfig = {
     },
     part5: {
       zn: '万维链1.0上线，实现万维链钱包及带隐私保护的智能合约功能，WAN Coin发行',
-      en: 'Wanchain 1.0 goes live (Privacy Protection, WANCoin，Wallet, Block chain Explorer)'
+      en: 'Wanchain 1.0 goes live (Privacy Protection, WANCoin, Wallet, Block chain Explorer)'
     },
     part6: {
       zn: '万维链2.0上线，支持以太坊跨链交易，万维链跨链协议1.0上线，多币种万维链钱包1.0上线',
