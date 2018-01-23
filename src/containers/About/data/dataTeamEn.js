@@ -33,6 +33,7 @@ const t43 = require('./image/t43.png');
 const t44 = require('./image/t44.png');
 const t45 = require('./image/t45.png');
 const t46 = require('./image/t46.png');
+const t47 = require('./image/t47.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -238,6 +239,12 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Graduated from Peking University with BA dgree and Acquired Master Degree of Sciecen (MSc) in Computer Sciecne with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommuicaiton, Delta Electronics and SuperMap Software as team leader in business teams. Also served as IT consultant for FECC, Ministry of Agriculture of China and FAO.'
+  },
+  {title: 'Justin Liao',
+      img: t47,
+      url: '',
+      position: '',
+      describe: 'Graduated from Vanderbilt University with a degree in Human & Organizational Development, Financial Economics, and Corporate Strategy. Founded Shorewood Ventures, a multi-strategy hedge fund that specializes in digital assets and derivative products, as well as the Daily Bit, a cryptocurrency newsletter. Heading Strategic Corporate Alliances.'
   },
 ];
 
