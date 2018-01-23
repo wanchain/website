@@ -146,7 +146,7 @@ class Product extends Component {
             <h3>With privacy protection</h3>
             <ul>
               <li>
-                <em><img className={styles.icoCircle2} src={circle}/></em>
+                <em className={styles.emHeight}><img className={styles.icoCircle2} src={circle}/></em>
                 <span>You can deploy smart contract like Ethereum</span>
               </li>
                 <li>

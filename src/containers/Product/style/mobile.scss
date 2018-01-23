@@ -227,6 +227,9 @@
         li{
           float: left;
           font-size: 12px;
+          .emHeight{
+            height: 35px!important;
+          }
           em{
             height: 80px;
             display: inline-block;
