@@ -2,7 +2,7 @@ const conConfig = {
   HomeDiv4: {
     part1: {
       zn: '在万维链上，我们将支持主流公链的跨链交易（如BTC、ETH）、联盟链之间的资产跨链交易，以及公链与联盟链的跨链交易。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',
-      en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send capability breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
+      en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send function breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
     },
     part2: {
       zn: '万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',

@@ -109,7 +109,7 @@ class Product extends Component {
             <ul>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>Wan Wallet help you to manage different assets including WAN and other tokens on Wanchain</span>
+                <span>WAN wallet help you to manage different assets including WAN and other tokens on Wanchain</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
