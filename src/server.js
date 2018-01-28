@@ -13,6 +13,9 @@ import PrettyError from 'pretty-error';
 import http from 'http';
 import https from 'https';
 import fs from 'fs';
+import helmet from 'helmet'
+import referrerPolicy from 'referrer-policy'
+import csp from 'helmet-csp'
 
 import { match } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -35,6 +38,16 @@ const targetUrl = 'http://' + config.apiHost + ':' + config.apiPort;
 const pretty = new PrettyError();
 
 const app = new Express();
+
+app.use(helmet())
+app.use(referrerPolicy({ policy: 'same-origin' }))
+app.use(csp({
+  // Specify directives as normal.
+  directives: {
+    scriptSrc: ["'self'", "'unsafe-inline'", '*'],
+    imgSrc: ['img.com', 'data:', '*'],
+  },
+}))
 
 let server;
 if (__DEVELOPMENT__) {

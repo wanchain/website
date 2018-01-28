@@ -5,6 +5,8 @@ import { getClientWidthFunc, getNavButtonFunc, changeLangFunc} from 'redux/modul
 
 
 import {homeUlEn, homePcUlEn} from '../Home/utils/homeUl';
+import Content from './Content';
+
 
 @connect(
     state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, titleState: state.auth.titleState,
@@ -25,8 +27,12 @@ class Product extends Component {
 
   constructor() {
     super();
-    this.state = {href: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanchainWalletCli-win64-1.0.0.zip'};
+    this.state = {
+      href: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanchainWalletCli-win64-1.0.0.zip',
+      pop: 'false'
+    };
     this.getSystem = this.getSystem.bind(this);
+    this.popContent = this.popContent.bind(this);
   }
   componentDidMount() {
     const width = document.documentElement.clientWidth;
@@ -49,6 +55,19 @@ class Product extends Component {
       this.setState({
         href: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanchainWalletCli-linux64-1.0.0.tar.gz'
       });
+    }
+  }
+  popContent() {
+    if (this.state.pop === 'true') {
+      this.setState({
+        pop: 'false'
+      });
+      // document.body.style.overflow = 'auto';
+    } else {
+      this.setState({
+        pop: 'true'
+      });
+      // document.body.style.overflow = 'hidden';
     }
   }
 
@@ -126,8 +145,9 @@ class Product extends Component {
                 <li><img src={win}/></li>
                 <li><img src={mac}/></li>
                 <li><img src={Glinux}/></li>
-                <li className={styles.gitBtn}><a href="https://github.com/wanchain/go-wanchain/releases" target="_blank"><img className={styles.icoGit} src={git}/></a></li>
+                <li className={styles.gitBtn}><a onClick={this.popContent}><img className={styles.icoGit} src={git}/></a></li>
               </ul>
+              <Content isShow={this.state.pop} isPopFunc={this.popContent} />
              </div>
           </div>
           <div className={styles.bannerRight}>

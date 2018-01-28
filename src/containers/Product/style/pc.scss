@@ -313,6 +313,45 @@
           }
         }
       }
+      .shadeBox{
+        width: 100%; height: 100%; background: #000; opacity: .5; position: fixed; top: 0; left: 0; z-index: 6;
+      }
+      .aggreePopBox{
+         text-align: center; background: #fff; border-radius: 5px; padding: 30px 40px 20px 40px!important; width: 1000px; margin-top: -343px; margin-left: -480px; display: inline-block; position: fixed; top: 50%; left: 50%; z-index: 999;
+        h1{
+          font-size: 22px; color: #484848; text-align: center; padding-bottom: 20px;
+          em{
+            color: #21d4fd; font-style: normal;
+          }
+        }
+        h2{
+          font-size:18px; text-align: center; margin-bottom: 18px;
+        }
+        .popupCont{
+          height: 475px; overflow-y: auto;
+        }
+        .closeBtn{
+          position: absolute; top: 18px; right: 20px; font-size: 30px; cursor: pointer; color: #636279;
+        }
+        span:hover{
+          color: #8482a2;
+        }
+        div{
+          line-height: 24px; font-size: 14px; color: #666; text-align: left; margin-bottom: 10px;
+          b{
+            font-weight: bold;
+          }
+          p{
+            margin: 10px 0 0 28px;
+          }
+        }
+        a{
+          padding: 8px 50px; text-align: center; font-size: 18px; margin: 15px 0 0 0 0; cursor: pointer; font-weight: normal; background-image: linear-gradient(70deg, #21d4fd 0%, #9549ff 100%), linear-gradient( #ffffff, #ffffff); border-radius: 20px; color: #fff; display: inline-block;
+        }
+        a:hover{
+          background-image: linear-gradient(70deg, #9549ff 0%, #21d4fd 100%), linear-gradient( #ffffff, #ffffff);
+        }
+      }
     }
     .bannerRight{
       float: right;
