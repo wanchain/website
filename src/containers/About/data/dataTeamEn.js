@@ -34,6 +34,7 @@ const t44 = require('./image/t44.png');
 const t45 = require('./image/t45.png');
 const t46 = require('./image/t46.png');
 const t47 = require('./image/t47.png');
+const t48 = require('./image/t48.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -245,6 +246,12 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Graduated from Vanderbilt University with a degree in Human & Organizational Development, Financial Economics, and Corporate Strategy. Founded Shorewood Ventures, a multi-strategy hedge fund that specializes in digital assets and derivative products, as well as the Daily Bit, a cryptocurrency newsletter. Heading Strategic Corporate Alliances.'
+  },
+  {title: 'Eli Wong',
+      img: t48,
+      url: '',
+      position: '',
+      describe: 'Early Bitcoin investor, VC/angel investor in new technologies, fintech and blockchain startups. Founder of Blockchain Association of HK/Organizer of blockchain events. 20+ years of investment experiences. Worked at ING Barings, Merrill Lynch, GAM and Elixir Capital.'
   },
 ];
 
