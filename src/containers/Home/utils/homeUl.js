@@ -10,7 +10,7 @@ export function homeUl(styles, style) {
       <div className={styles} id="navbar-menu" style={style}>
           <ul>
               <li><IndexLink to="/">首页</IndexLink></li>
-                <li><Link to="/tokensale">Tokesale</Link></li>
+                <li><Link to="https://swap.wanchain.org">Tokesale</Link></li>
               {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
               <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
               <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
@@ -26,7 +26,7 @@ export function homePcUl(styles, style, homeDropdown, content) {
         <div className={styles} id="navbar-menu" style={style}>
             <ul>
                 <li><IndexLink to="/">首页</IndexLink></li>
-                  <li><Link to="/tokensale">Tokensale</Link></li>
+                  <li><Link to="https://swap.wanchain.org">Tokensale</Link></li>
                 {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                 <li>
                     <div className={homeDropdown}>
@@ -51,7 +51,7 @@ export function homeUlEn(styles, style) {
             <ul>
                 <li><IndexLink to="/">Home</IndexLink></li>
                 <li><Link to="/product">Product</Link></li>
-                  <li><Link to="/tokensale">Tokenswap</Link></li>
+                  <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
                 {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
@@ -70,7 +70,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
         <ul>
             <li><IndexLink to="/">Home</IndexLink></li>
             <li><Link to="/product">Product</Link></li>
-              <li><Link to="/tokensale">Tokenswap</Link></li>
+              <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
             <li>
                 <div className={homeDropdown}>
