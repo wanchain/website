@@ -120,7 +120,7 @@ class Content extends Component {
               <b>31. </b>These Terms shall be governed by and construed in accordance with Singapore law. You submit to the exclusive jurisdiction of the Singapore courts with regards to all proceedings relating to this these Terms and any of your dealings in the WAN ERC-20 tokens and WAN. Nothing herein shall limit the right of Wanchain to bring proceedings against you or your assets in the courts of any other jurisdiction.
             </div>
           </div>
-          <a href="https://github.com/wanchain/go-wanchain/releases" target="_blank">Got it</a>
+          <a onClick={this.props.isPopFunc} href="https://github.com/wanchain/go-wanchain/releases" target="_blank">Got it</a>
         </div>
       </div>
     );

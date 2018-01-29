@@ -145,7 +145,7 @@ class Product extends Component {
                 <li><img src={win}/></li>
                 <li><img src={mac}/></li>
                 <li><img src={Glinux}/></li>
-                <li className={styles.gitBtn}><a onClick={this.popContent}><img className={styles.icoGit} src={git}/></a></li>
+                <li className={styles.gitBtn} onClick={this.popContent}><a><img className={styles.icoGit} src={git}/></a></li>
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} />
              </div>
