@@ -35,6 +35,7 @@ const t45 = require('./image/t45.png');
 const t46 = require('./image/t46.png');
 const t47 = require('./image/t47.png');
 const t48 = require('./image/t48.png');
+const t49 = require('./image/t49.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -252,6 +253,12 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Early Bitcoin investor, VC/angel investor in new technologies, fintech and blockchain startups. Founder of Blockchain Association of HK/Organizer of blockchain events. 20+ years of investment experiences. Worked at ING Barings, Merrill Lynch, GAM and Elixir Capital.'
+  },
+  {title: 'Bryan YE',
+      img: t49,
+      url: '',
+      position: '',
+      describe: 'Graduated from Zhengzhou University with Master Degree of Science. Over 8 years of IT business  in international market. Previously worked at SuperMap Software as sales director and at APUS Group as BD manager.'
   },
 ];
 
