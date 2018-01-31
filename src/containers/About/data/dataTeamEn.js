@@ -240,7 +240,7 @@ An organizer in the blockchain community, affiliations and conferences.`
       img: t46,
       url: '',
       position: '',
-      describe: 'Graduated from Peking University with BA dgree and Acquired Master Degree of Sciecen (MSc) in Computer Sciecne with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommuicaiton, Delta Electronics and SuperMap Software as team leader in business teams. Also served as IT consultant for FECC, Ministry of Agriculture of China and FAO.'
+      describe: 'Graduated from Peking University with BA degree and acquired Master Degree of Science (MSc) in Computer Science with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommunication, Delta Electronics and SuperMap Software as directors and principals in business teams. Currently vice president of Wanchain and Wanglu Tech for BD, marketing, PR and sales. Also served as IT consultant for FECC, Ministry of Agriculture (MOA) of China and Food and Agriculture Organization (FAO).'
   },
   {title: 'Justin Liao',
       img: t47,
