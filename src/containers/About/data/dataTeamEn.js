@@ -36,6 +36,7 @@ const t46 = require('./image/t46.png');
 const t47 = require('./image/t47.png');
 const t48 = require('./image/t48.png');
 const t49 = require('./image/t49.png');
+const t50 = require('./image/t50.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -259,6 +260,12 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Graduated from Zhengzhou University with Master Degree of Science. Over 8 years of IT business  in international market. Previously worked at SuperMap Software as sales director and at APUS Group as BD manager.'
+  },
+  {title: 'Han Kao',
+      img: t50,
+      url: '',
+      position: '',
+      describe: 'Grew up in New York City and graduated from Columbia University with a B.A. in Economics. He enjoys building amazing products and growing tech businesses from 0 to 1. In his spare time he enjoys rock climbing, golfing, and investing in Bitcoin, Blockchain and Cryptocurrencies. His latest venture is a crypto media property focused on deep ICO Review & Analysis. Also he is the founder of Cryptobriefing.'
   },
 ];
 
