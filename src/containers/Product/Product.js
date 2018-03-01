@@ -23,12 +23,18 @@ class Product extends Component {
     language: PropTypes.string,
     titleState: PropTypes.string,
     href: PropTypes.string,
+    walletWin: PropTypes.string,
+    walletMac: PropTypes.string,
+    walletLinux: PropTypes.string,
   };
 
   constructor() {
     super();
     this.state = {
       href: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanchainWalletCli-win64-1.0.0.zip',
+      walletWin: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-win64-1.0.0.zip',
+      walletMac: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-mac-1.0.0.zip',
+      walletLinux: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-linux64-1.0.0.zip',
       pop: 'false'
     };
     this.getSystem = this.getSystem.bind(this);
@@ -142,9 +148,9 @@ class Product extends Component {
              <div className={styles.downloadBox}>
               <h2>download :</h2>
               <ul>
-                <li><img src={win}/></li>
-                <li><img src={mac}/></li>
-                <li><img src={Glinux}/></li>
+                <li><a href={this.state.walletWin}><img src={win}/></a></li>
+                <li><a href={this.state.walletMac}><img src={mac}/></a></li>
+                <li><a href={this.state.walletLinux}><img src={Glinux}/></a></li>
                 <li className={styles.gitBtn} onClick={this.popContent}><a><img className={styles.icoGit} src={git}/></a></li>
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} />
