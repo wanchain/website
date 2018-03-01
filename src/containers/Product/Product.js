@@ -23,18 +23,13 @@ class Product extends Component {
     language: PropTypes.string,
     titleState: PropTypes.string,
     href: PropTypes.string,
-    walletWin: PropTypes.string,
-    walletMac: PropTypes.string,
-    walletLinux: PropTypes.string,
   };
 
   constructor() {
     super();
     this.state = {
+      download: '',
       href: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanchainWalletCli-win64-1.0.0.zip',
-      walletWin: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-win64-1.0.0.zip',
-      walletMac: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-mac-1.0.0.zip',
-      walletLinux: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-linux64-1.0.0.zip',
       pop: 'false'
     };
     this.getSystem = this.getSystem.bind(this);
@@ -63,7 +58,15 @@ class Product extends Component {
       });
     }
   }
-  popContent() {
+  popContent(urlData) {
+    if (urlData === 'win') {
+      this.setState({download: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-win64-1.0.0.zip'});
+    } else if (urlData === 'mac') {
+      this.setState({download: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-mac-1.0.0.zip'});
+    } else if (urlData === 'linux') {
+      this.setState({download: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-linux64-1.0.0.zip'});
+    }
+
     if (this.state.pop === 'true') {
       this.setState({
         pop: 'false'
@@ -148,12 +151,12 @@ class Product extends Component {
              <div className={styles.downloadBox}>
               <h2>download :</h2>
               <ul>
-                <li><a href={this.state.walletWin}><img src={win}/></a></li>
-                <li><a href={this.state.walletMac}><img src={mac}/></a></li>
-                <li><a href={this.state.walletLinux}><img src={Glinux}/></a></li>
-                <li className={styles.gitBtn} onClick={this.popContent}><a><img className={styles.icoGit} src={git}/></a></li>
+                <li onClick={(event) => this.popContent('win', event)}><img src={win}/></li>
+                <li onClick={(event) => this.popContent('mac', event)}><img src={mac}/></li>
+                <li onClick={(event) => this.popContent('linux', event)}><img src={Glinux}/></li>
+                {/* <li className={styles.gitBtn} onClick={this.popContent}><a><img className={styles.icoGit} src={git}/></a></li> */}
               </ul>
-              <Content isShow={this.state.pop} isPopFunc={this.popContent} />
+              <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div>
           </div>
           <div className={styles.bannerRight}>
