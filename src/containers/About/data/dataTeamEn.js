@@ -37,6 +37,8 @@ const t47 = require('./image/t47.png');
 const t48 = require('./image/t48.png');
 const t49 = require('./image/t49.png');
 const t50 = require('./image/t50.png');
+const t51 = require('./image/t51.png');
+const t52 = require('./image/t52.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -266,6 +268,18 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Grew up in New York City and graduated from Columbia University with a B.A. in Economics. He enjoys building amazing products and growing tech businesses from 0 to 1. In his spare time he enjoys rock climbing, golfing, and investing in Bitcoin, Blockchain and Cryptocurrencies. His latest venture is a crypto media property focused on deep ICO Review & Analysis. Also he is the founder of Cryptobriefing.'
+  },
+  {title: 'Qinggang Jia',
+      img: t51,
+      url: '',
+      position: '',
+      describe: 'Gradudate from Chinese Academy of Sciences.More than 15 years software development experience.Experience in java card,N3 card VM development and related crypto libary implementation.Employed at oracle,watchdata,gameloft,etc.'
+  },
+  {title: 'Anson Lee',
+      img: t52,
+      url: '',
+      position: '',
+      describe: 'MS in Telecom Engineering from RWTH-AACHEN University, Germany Served as a senior software developer in Ericsson, Huawei and some startups. Anson is a CPA, blockchain enthusiastic, Go and JavaScript developer.'
   },
 ];
 
