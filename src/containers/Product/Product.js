@@ -154,7 +154,6 @@ class Product extends Component {
                 <li onClick={(event) => this.popContent('win', event)}><img src={win}/></li>
                 <li onClick={(event) => this.popContent('mac', event)}><img src={mac}/></li>
                 <li onClick={(event) => this.popContent('linux', event)}><img src={Glinux}/></li>
-                {/* <li className={styles.gitBtn} onClick={this.popContent}><a><img className={styles.icoGit} src={git}/></a></li> */}
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div>

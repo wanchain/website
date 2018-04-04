@@ -107,7 +107,15 @@ app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
 app.use(Express.static(path.join(__dirname, '..', 'static')));
 
-
+app.use('/download/gwanLinux', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.gwanLinux));
+});
+app.use('/download/gwanWin', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.gwanWin));
+});
+app.use('/download/gwanMac', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.gwanMac));
+});
 
 /* 上传*/
 app.post('/upload',function(req, res){
