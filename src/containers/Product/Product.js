@@ -182,7 +182,7 @@ class Product extends Component {
                   <span>Wanchain supply a special character which you can issue a token with privacy protection. Please click button below, see how to deploy a smart contract with privacy protection</span>
                 </li>
             </ul>
-            <a target="_blank" href="https://github.com/wanchain/go-wanchain/wiki/How--to-deploy-smart-contract" className={styles.comBtn}>Issue your token</a>
+            <a target="_blank" href="https://github.com/wanchain/go-wanchain/wiki/How--to-deploy-smart-contracts-on-Wanchain" className={styles.comBtn}>Issue your token</a>
           </div>
         </div>
       </div>
