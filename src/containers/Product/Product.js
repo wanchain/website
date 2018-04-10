@@ -220,7 +220,7 @@ class Product extends Component {
               </li>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>Check here for more information on How to Use Cli Guide</span>
+                <span>Check <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">here</a> for more information on How to Use Cli Guide</span>
               </li>
             </ul>
             <div className={styles.downloadBox}>
