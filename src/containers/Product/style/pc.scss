@@ -589,3 +589,41 @@
     }
   }
 }
+.cmdDload{
+  margin: 20px 0 0;
+  float: left;
+  p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  a{
+    margin: 0;
+    .comBtn{
+      margin: 0;
+    }
+  }
+}
+.GwanDload{
+  float: left;
+  margin: 20px 0 0 80px;
+  p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  a{
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 100%;
+    background:#f7f9fa;
+    display: inline-block;
+    padding: 10px 12px;
+    em{
+      display: inline-block;
+    }
+  }
+  a:hover{
+    background-image: linear-gradient(to right, #1a90fc, #00d2ff);
+  }
+}

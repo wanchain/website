@@ -1,3 +1,39 @@
 @import './style/pro';
 @import './style/pc';
 @import './style/mobile';
+.icoWin em{
+    background: url(./image/win2.png) no-repeat 0 0;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+  }
+  .icoMac em{
+    background: url(./image/mac2.png) no-repeat center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+  }
+  .icoGLINUX em{
+    background: url(./image/linux2.png) no-repeat center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+  }
+  .icoWin:hover em{
+    background: url(./image/win.png) no-repeat center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+  }
+  .icoMac:hover em{
+    background: url(./image/mac.png) no-repeat center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+  }
+  .icoGLINUX:hover em{
+    background: url(./image/Glinux.png) no-repeat center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+  }

@@ -86,9 +86,6 @@ class Product extends Component {
     const win = require('./image/win.png');
     const mac = require('./image/mac.png');
     const Glinux = require('./image/Glinux.png');
-    const win2 = require('./image/win2.png');
-    const mac2 = require('./image/mac2.png');
-    const linux2 = require('./image/linux2.png');
     const git = require('./image/git.png');
     const banRbg = require('./image/proimg4.png');
     const coin = require('./image/coin.png');
@@ -227,12 +224,16 @@ class Product extends Component {
               </li>
             </ul>
             <div className={styles.downloadBox}>
-             <ul>
-               <li><img className={styles.icoWin} src={win2}/></li>
-               <li><img className={styles.icoMac} src={mac2}/></li>
-               <li><img className={styles.icoGLINUX} src={linux2}/></li>
-               <li><a href={this.state.href}><button className={styles.comBtn}>download</button></a></li>
-             </ul>
+            <div className={styles.cmdDload}>
+              <p>CMD Download:</p>
+              <a href={this.state.href}><button className={styles.comBtn}>download</button></a>
+            </div>
+             <div className={styles.GwanDload}>
+               <p>Gwan Download:</p>
+               <a href="/download/gwanWin" className={styles.icoWin}><em></em></a>
+               <a href="/download/gwanMac" className={styles.icoMac}><em></em></a>
+               <a href="/download/gwanLinux" className={styles.icoGLINUX}><em></em></a>
+             </div>
             </div>
           </div>
         </div>
