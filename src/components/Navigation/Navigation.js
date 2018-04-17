@@ -126,9 +126,10 @@ class Navigation extends Component {
                                 <div className={styles.navDropdown}>
                                     <a>Docs</a>
                                     <div className={styles['navDropdown-content']}>
-                                        <a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a>
-                                        <a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a>
-                                        <a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a>
+                                        <a href={config.app.files.WhitepaperEN} target="_blank">White paper</a>
+                                        <a href={config.app.files.YellowpaperEN} target="_blank">Yellow paper</a>
+                                        <a href={config.app.files.CommercialEN} target="_blank">Commercial paper</a>
+                                        <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a>                                        
                                     </div>
                                 </div>
                             </li>
