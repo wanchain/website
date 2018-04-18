@@ -64,8 +64,8 @@ if (__DEVELOPMENT__) {
 
   server = https.createServer({
     key: fs.readFileSync(path.join(__dirname, 'cert/wanchain.org.key')),
-    cert: fs.readFileSync(path.join(__dirname,'cert/3bb55a3526ededcc.crt')),
-    ca: [fs.readFileSync(path.join(__dirname,'cert/gd_bundle-g2-g1.crt'))
+    cert: fs.readFileSync(path.join(__dirname, 'cert/3bb55a3526ededcc.crt')),
+    ca: [fs.readFileSync(path.join(__dirname, 'cert/gd_bundle-g2-g1.crt'))
     ],
     requestCert: false,
     rejectUnauthorized: false
@@ -108,6 +108,7 @@ app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 app.use(Express.static(path.join(__dirname, '..', 'static')));
 
 app.use('/download/gwanLinux', function(req, res) {
+  console.log(path.join(__dirname, '..', 'static', config.app.files.gwanLinux));
   res.download(path.join(__dirname, '..', 'static', config.app.files.gwanLinux));
 });
 app.use('/download/gwanWin', function(req, res) {

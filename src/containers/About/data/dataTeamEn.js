@@ -9,7 +9,6 @@ const t9 = require('./image/9.png');
 const t11 = require('./image/11.png');
 const t12 = require('./image/12.png');
 const t13 = require('./image/13.png');
-const t14 = require('./image/14.png');
 const t15 = require('./image/15.png');
 const t16 = require('./image/t16.png');
 const t25 = require('./image/25.png');
@@ -118,14 +117,6 @@ const data = [
     url: 'https://www.linkedin.com/in/ning-luo-%E7%BD%97%E5%AE%81-b8a3904/',
     position: '',
     describe: 'PhD in Physics and Computer Science from the University of Clemson. Served as the chief software engineer at MaxPoint and Lumeris.'
-  },
-  {title: 'Cathy Niu',
-    img: t14,
-    url: '',
-    position: '',
-    describe: `MS in Computer Science from The Ohio State University.
-Served as lead engineer and architect at HP and R&R.
-Participated in the core development of Factom.`
   },
   {title: 'Wenyan Qin',
     img: t25,
