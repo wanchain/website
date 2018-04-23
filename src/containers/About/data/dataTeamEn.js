@@ -6,7 +6,6 @@ const t11 = require('./image/11.png');
 const t12 = require('./image/12.png');
 const t15 = require('./image/15.png');
 const t16 = require('./image/t16.png');
-const t25 = require('./image/25.png');
 const t29 = require('./image/29.png');
 
 const t19 = require('./image/19.png');
@@ -78,12 +77,6 @@ const data = [
     url: 'https://www.linkedin.com/in/jeffrey-gu-703548/',
     position: '',
     describe: 'BS from Tsinghua University and MS in Computer Science from the University of Maryland. Served as a senior engineer at Cisco and Dell, specializing in network communications and information security.'
-  },
-  {title: 'Wenyan Qin',
-    img: t25,
-    url: '',
-    position: '',
-    describe: `A member of the IBM Toronto Software Lab DB2 engine infrastructure team, focused on database protocols, the Bank of Montreal VaR engine, the Manulife retirement service engine, 401K, and now blockchain platform development in Beijing.`
   },
   {title: 'Astro Sun',
     img: t29,
