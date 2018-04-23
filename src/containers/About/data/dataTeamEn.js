@@ -1,14 +1,9 @@
 const t1 = require('./image/t1.png');
 const t2 = require('./image/t2.png');
 const t3 = require('./image/3.png');
-const t4 = require('./image/4.png');
-const t5 = require('./image/5.png');
 const t6 = require('./image/6.png');
-const t7 = require('./image/7.png');
-const t9 = require('./image/9.png');
 const t11 = require('./image/11.png');
 const t12 = require('./image/12.png');
-const t13 = require('./image/13.png');
 const t15 = require('./image/15.png');
 const t16 = require('./image/t16.png');
 const t25 = require('./image/25.png');
@@ -26,7 +21,6 @@ const t37 = require('./image/t37.png');
 const t38 = require('./image/t38.png');
 const t39 = require('./image/t39.png');
 const t40 = require('./image/t40.png');
-const t41 = require('./image/t41.png');
 const t42 = require('./image/t42.png');
 const t43 = require('./image/t43.png');
 const t44 = require('./image/t44.png');
@@ -52,12 +46,12 @@ const data = [
     position: '',
     describe: `Graduated from Columbia University . MBA from University of Michigan. Veteran entrepreneur in the blockchain space. Founded Bitcoin College in 2014, Cofounded Tendermint in 2015. Founded Satoshi Talent and Stokens Venture Capital.`
   },
-  {title: 'Zane Liang',
+  {title: 'Weijia Zhang',
     img: t2,
     position: '',
     url: '',
     describe: `
-    Applied Mathematics degree from Peking University and PhD from the University of Massachusetts. Specializes in high performance computing, cryptographic algorithms and cryptographic security.
+    Weijia has published over 30 research/technical papers and is named as an inventor on 20 patents. He worked for 14 years at Dell as a software engineer and has a great deal of expertise in the area of network security. Weijia has a PhD in Physics and graduated from Tesinghua university in China.
    `
   },
   {title: 'Ying Zhang',
@@ -67,38 +61,11 @@ const data = [
     describe: `
     Senior engineer from Huawei and served as CAO and CTO of several companies. A senior developer of Ethereum with a deep understanding of, and engineering experience with, blockchain architecture, smart contracts and consensus algorithms.`
   },
-  {title: 'Tony Zhang',
-    img: t4,
-    position: '',
-    url: '',
-    describe: `
-    Specializing in elliptic curve cryptography, ID-based public key cryptography, homomorphic encryption theory and blockchain technology.`
-  },
-  {title: 'Demmon Bai',
-    img: t5,
-    position: '',
-    url: '',
-    describe: `
-   Specializes in elliptic curve cryptography and security analysis of cryptographic algorithms.In charge of designing the privacy and anonymity algorithms of blockchain technology.`
-  },
   {title: 'Michael Y.',
     img: t6,
     position: '',
     url: '',
     describe: 'Entered into the blockchain space in 2012, specializing in Bitcoin related development. Core developer of Master Coin, Omni and Factom.'
-  },
-  {title: 'Eric Swartz',
-    url: 'https://www.linkedin.com/in/ericswartz/',
-    img: t7,
-    position: '',
-    describe: 'BS in Computer Science from Southwestern University. Software test engineer and technical writer, employed at Novell, VTEL, Xtreme Power, etc.'
-  },
-  {title: 'James Shen',
-    img: t9,
-    url: '',
-    // url: 'https://www.linkedin.com/in/jian-shen-197bb943/',
-    position: '',
-    describe: 'BS in Computer Science from the University of Texas. Lead engineer at General Motors and HP. Entered into the blockchain space in 2011 as a senior blockchain miner and developer.'
   },
   {title: 'Richard Zhang',
     img: t11,
@@ -111,12 +78,6 @@ const data = [
     url: 'https://www.linkedin.com/in/jeffrey-gu-703548/',
     position: '',
     describe: 'BS from Tsinghua University and MS in Computer Science from the University of Maryland. Served as a senior engineer at Cisco and Dell, specializing in network communications and information security.'
-  },
-  {title: 'Ning Luo',
-    img: t13,
-    url: 'https://www.linkedin.com/in/ning-luo-%E7%BD%97%E5%AE%81-b8a3904/',
-    position: '',
-    describe: 'PhD in Physics and Computer Science from the University of Clemson. Served as the chief software engineer at MaxPoint and Lumeris.'
   },
   {title: 'Wenyan Qin',
     img: t25,
@@ -199,12 +160,6 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'BS and MS in Electronic Engineering from Peking University. Proficient in C/C++, Python, Golang and Node.js. Considerable expertise in networking and encryption algorithms. 14 years of experience in software development.'
-  },
-  {title: 'Hantao Jia',
-      img: t41,
-      url: '',
-      position: '',
-      describe: 'Former senior global product manager from Lenovo & Moto, 9 years indepth experiences in IoT, Smart Hardware & Software product delivery and portfolio management. Graduate from National University of Ireland with MA in Finance.'
   },
   {title: 'Aaron Zhan',
       img: t42,
