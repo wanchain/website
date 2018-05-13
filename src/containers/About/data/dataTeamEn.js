@@ -8,7 +8,6 @@ const t15 = require('./image/15.png');
 const t16 = require('./image/t16.png');
 const t29 = require('./image/29.png');
 
-const t19 = require('./image/19.png');
 const t31 = require('./image/t31.png');
 
 const t32 = require('./image/t32.png');
@@ -22,7 +21,6 @@ const t39 = require('./image/t39.png');
 const t40 = require('./image/t40.png');
 const t42 = require('./image/t42.png');
 const t43 = require('./image/t43.png');
-const t44 = require('./image/t44.png');
 const t45 = require('./image/t45.png');
 const t46 = require('./image/t46.png');
 const t47 = require('./image/t47.png');
@@ -31,6 +29,12 @@ const t49 = require('./image/t49.png');
 const t50 = require('./image/t50.png');
 const t51 = require('./image/t51.png');
 const t52 = require('./image/t52.png');
+const t53 = require('./image/t53.png');
+const t54 = require('./image/t54.png');
+const t55 = require('./image/t55.png');
+const t56 = require('./image/t56.png');
+const t57 = require('./image/t57.png');
+
 
 const data = [
   {title: 'Jack Lu',
@@ -39,11 +43,29 @@ const data = [
     position: 'Founder',
     describe: `Graduated from Peking University and The Ohio State University. Blockchain entrepreneur and technical expert. Cofounded Factom in 2014. Founded Wanglutech, which brings Blockchain technology to a greater range of applications.`
   },
-  {title: 'Dustin Byington',
-    img: t19,
-    url: 'https://www.linkedin.com/in/dbyington/',
+  {title: 'LI NI',
+    img: t46,
+    url: '',
     position: '',
-    describe: `Graduated from Columbia University . MBA from University of Michigan. Veteran entrepreneur in the blockchain space. Founded Bitcoin College in 2014, Cofounded Tendermint in 2015. Founded Satoshi Talent and Stokens Venture Capital.`
+    describe: 'Graduated from Peking University with BA degree and acquired Master Degree of Science (MSc) in Computer Science with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommunication, Delta Electronics and SuperMap Software as directors and principals in business teams. Currently vice president of Wanchain and Wanglu Tech for BD, marketing, PR and sales. Also served as IT consultant for FECC, Ministry of Agriculture (MOA) of China and Food and Agriculture Organization (FAO).'
+  },
+  {title: 'Oliver Birch',
+    img: t33,
+    url: 'https://www.linkedin.com/in/oliver-birch-08ba8a44/',
+    position: '',
+    describe: `Also known as 'machinayz', Oliver is Wanchain's community manager. He is a project manager for several start-up companies and has years of experience working in the altcoin crypto space community: advising, blogging and admin work for several slack, reddit and telegram groups.`
+  },
+  {title: 'Dynal Patel',
+    img: t53,
+    url: '',
+    position: '',
+    describe: 'PhD - Director of Strategic Partnerships.Accomplished executive with a strong track record of delivering innovative products and solutions to the market and developing market leading partner ecosystems. Leads the development and execution of strategic partnerships at Wanchain. Has over 15 years of management experience in leading technology and telecommunication companies such as Vodafone, Altran Technologies and Microsoft. Holds a PhD in Computer Science from the University of Cape Town and is a certified Project Management Professional.'
+  },
+  {title: 'Scott Trowbridge',
+    img: t54,
+    url: 'https://www.linkedin.com/in/scottbtrowbridge/',
+    position: '',
+    describe: 'Degree in Computer Science, Business & Marketing. 7+ years experience in technology startup growth. Experience project managing several global business development teams. Expert in accelerating early-stage companies.'
   },
   {title: 'Weijia Zhang',
     img: t2,
@@ -105,12 +127,6 @@ An organizer in the blockchain community, affiliations and conferences.`
     position: '',
     describe: `Co-Founder of DecentraNet. Customer engagement specialist who develops creative and compelling ways to build Wanchain's Twitter and Facebook communities.`
   },
-  {title: 'Oliver Birch',
-    img: t33,
-    url: 'https://www.linkedin.com/in/oliver-birch-08ba8a44/',
-    position: '',
-    describe: `Also known as 'machinayz', Oliver is Wanchain's community manager. He is a project manager for several start-up companies and has years of experience working in the altcoin crypto space community: advising, blogging and admin work for several slack, reddit and telegram groups.`
-  },
   {title: 'Ethan Parker',
     img: t32,
     url: 'https://www.linkedin.com/in/ethaneparker/',
@@ -166,23 +182,11 @@ An organizer in the blockchain community, affiliations and conferences.`
       position: '',
       describe: 'Proficient in java, javascript. Be in charge of  alliance chain and superstratum development.'
   },
-  {title: 'Rajesh Gopi',
-      img: t44,
-      url: '',
-      position: '',
-      describe: 'MBA from UT Austin and Post Graduate degree from NIT Calicut, India. Multiple startup and large corporation experience with responsibilities ranging from product development, product management, business operations and engineering management.'
-  },
   {title: 'Benn Godenzi',
       img: t45,
       url: '',
       position: '',
       describe: 'Bitcoin Entrepreneur since 2010. Director of Marketing for Aion, STK Token and CryptoCurve. ICO sale structure and fundraising specialist. Co-Founder Interoperability Alliance, Founded Outlast Nutrition.'
-  },
-  {title: 'LI NI',
-      img: t46,
-      url: '',
-      position: '',
-      describe: 'Graduated from Peking University with BA degree and acquired Master Degree of Science (MSc) in Computer Science with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommunication, Delta Electronics and SuperMap Software as directors and principals in business teams. Currently vice president of Wanchain and Wanglu Tech for BD, marketing, PR and sales. Also served as IT consultant for FECC, Ministry of Agriculture (MOA) of China and Food and Agriculture Organization (FAO).'
   },
   {title: 'Justin Liao',
       img: t47,
@@ -201,6 +205,24 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Graduated from Zhengzhou University with Master Degree of Science. Over 8 years of IT business  in international market. Previously worked at SuperMap Software as sales director and at APUS Group as BD manager.'
+  },
+  {title: 'Mimi Chu',
+    img: t55,
+    url: '',
+    position: '',
+    describe: 'Graduated from Aalborg University, Denmark with BSc and MSc degrees in Medialogy. Academic background in HCI and innovative design. Over 7 years in international marketing especially BD and project management. Lived in Denmark for 15 years and work in cross functional teams and international circumstance. Detail-oriented and structured in planning and implementation. Marathon runner.'
+  },
+  {title: 'Ruby Wang',
+    img: t56,
+    url: '',
+    position: '',
+    describe: 'Graduated from Beijing University of Chemcial Technology with Master degree of Chemical Engineering. 4 years of general industry in marketing and consulting experience. Love playing Guqin and Yoga in spare time.'
+  },
+  {title: 'Sonia Xu',
+    img: t57,
+    url: '',
+    position: '',
+    describe: 'Graduated from Peking University, China with Bachelor in HR management. Over 6 years in Human Resource industry, specialized in HR management and event planning. Strong communication skills and good understanding of client\'s needs, especially in Chinese market. Curious about new challenges. Loves cooking and enjoy the process from 0 to completion.'
   },
   {title: 'Han Kao',
       img: t50,

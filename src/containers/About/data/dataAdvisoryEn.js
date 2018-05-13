@@ -11,6 +11,7 @@ const t26 = require('./image/26.png');
 const t27 = require('./image/27.png');
 const t28 = require('./image/28.png');
 const t30 = require('./image/t30.png');
+const t58 = require('./image/t58.png');
 
 const data = [
     // {title: 'Bo Shen',
@@ -88,6 +89,12 @@ const data = [
         url: 'http://www.gscass.cn/html/news/2016-09-20/14620.html',
         position: '',
         describe: 'Professor of CASS，Advisor of the Blockchain Joint Development Organization'
+    },
+    {title: 'Loi Luu',
+        img: t58,
+        url: '',
+        position: '',
+        describe: 'CEO and CoFounder of Kyber Network'
     },
 ];
 
