@@ -21,7 +21,6 @@ const t39 = require('./image/t39.png');
 const t40 = require('./image/t40.png');
 const t42 = require('./image/t42.png');
 const t43 = require('./image/t43.png');
-const t45 = require('./image/t45.png');
 const t46 = require('./image/t46.png');
 const t47 = require('./image/t47.png');
 const t48 = require('./image/t48.png');
@@ -181,12 +180,6 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Proficient in java, javascript. Be in charge of  alliance chain and superstratum development.'
-  },
-  {title: 'Benn Godenzi',
-      img: t45,
-      url: '',
-      position: '',
-      describe: 'Bitcoin Entrepreneur since 2010. Director of Marketing for Aion, STK Token and CryptoCurve. ICO sale structure and fundraising specialist. Co-Founder Interoperability Alliance, Founded Outlast Nutrition.'
   },
   {title: 'Justin Liao',
       img: t47,
