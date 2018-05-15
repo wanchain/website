@@ -58,7 +58,7 @@ const data = [
     img: t53,
     url: '',
     position: '',
-    describe: 'PhD - Director of Strategic Partnerships.Accomplished executive with a strong track record of delivering innovative products and solutions to the market and developing market leading partner ecosystems. Leads the development and execution of strategic partnerships at Wanchain. Has over 15 years of management experience in leading technology and telecommunication companies such as Vodafone, Altran Technologies and Microsoft. Holds a PhD in Computer Science from the University of Cape Town and is a certified Project Management Professional.'
+    describe: 'Accomplished executive with a strong track record of delivering innovative products and solutions to the market and developing market leading partner ecosystems. Leads the development and execution of strategic partnerships at Wanchain. Has over 15 years of management experience in leading technology and telecommunication companies such as Vodafone, Altran Technologies and Microsoft. Holds a PhD in Computer Science from the University of Cape Town and is a certified Project Management Professional.'
   },
   {title: 'Scott Trowbridge',
     img: t54,
@@ -71,7 +71,7 @@ const data = [
     position: '',
     url: '',
     describe: `
-    Weijia has published over 30 research/technical papers and is named as an inventor on 20 patents. He worked for 14 years at Dell as a software engineer and has a great deal of expertise in the area of network security. Weijia has a PhD in Physics and graduated from Tesinghua university in China.
+    Weijia has published over 30 research/technical papers and is named as an inventor on 20 patents. He worked for 14 years at Dell as a software engineer and has a great deal of expertise in the area of network security. Weijia has a PhD in Physics and graduated from Tsinghua university in China.
    `
   },
   {title: 'Ying Zhang',
@@ -109,7 +109,7 @@ const data = [
     img: t15,
     url: '',
     position: '',
-    describe: `Former senior financial consultant. Entered into the blockcahin space in 2014.
+    describe: `Former senior financial consultant. Entered into the blockchain space in 2014.
 Considerable expertise in blockchain product design.
 Published various articles on blockchain and currency.`
   },
@@ -117,7 +117,7 @@ Published various articles on blockchain and currency.`
     img: t16,
     url: 'https://www.linkedin.com/in/lizzielu/',
     position: '',
-    describe: `Graduated from China Communication University. Years of television, magazine and press  experience. Former marketing director at ZCODesign.
+    describe: `Graduated from China Communication University. Years of television, magazine and press experience. Former marketing director at ZCODesign.
 An organizer in the blockchain community, affiliations and conferences.`
   },
   {title: 'Justin Snyder',
@@ -161,7 +161,7 @@ An organizer in the blockchain community, affiliations and conferences.`
       img: t39,
       url: '',
       position: '',
-      describe: '14 years of c++ developing experience， strong interest on python， golang， js,  java. Believe in the  cleanliness, simpleness of code. Have strong interest on the blockchain industry, and look forward to becoming a expert in blockchain.'
+      describe: '14 years of c++ developing experience, strong interest on python, golang, js, java. Believe in the cleanliness, simpleness of code. Have strong interest on the blockchain industry, and look forward to becoming a expert in blockchain.'
   },
   {title: 'Gabriel Guo',
       img: t40,
@@ -209,13 +209,13 @@ An organizer in the blockchain community, affiliations and conferences.`
     img: t56,
     url: '',
     position: '',
-    describe: 'Graduated from Beijing University of Chemcial Technology with Master degree of Chemical Engineering. 4 years of general industry in marketing and consulting experience. Love playing Guqin and Yoga in spare time.'
+    describe: 'Graduated from Chemical University of Chemcial Technology with Master degree of Chemical Engineering. 4 years of general industry in marketing and consulting experience. Love playing Guqin and Yoga in spare time.'
   },
   {title: 'Sonia Xu',
     img: t57,
     url: '',
     position: '',
-    describe: 'Graduated from Peking University, China with Bachelor in HR management. Over 6 years in Human Resource industry, specialized in HR management and event planning. Strong communication skills and good understanding of client\'s needs, especially in Chinese market. Curious about new challenges. Loves cooking and enjoy the process from 0 to completion.'
+    describe: 'Graduated from Peking University, China with Bachelor in HR management. Over 6 years in Human Resource industry, specialized in HR management and event planning. Strong communication skills and good understanding of client\'s needs, especially in Chinese market. She is curious about new challenges and loves cooking and enjoy the process from 0 to completion.'
   },
   {title: 'Han Kao',
       img: t50,
@@ -227,13 +227,13 @@ An organizer in the blockchain community, affiliations and conferences.`
       img: t51,
       url: '',
       position: '',
-      describe: 'Gradudate from Chinese Academy of Sciences.More than 15 years software development experience.Experience in java card,N3 card VM development and related crypto libary implementation.Employed at oracle,watchdata,gameloft,etc.'
+      describe: 'Gradudated from Chinese Academy of Sciences. More than 15 years software development experience. Experience in Java card, N3 card VM development and related crypto library implementation. Worked at Oracle, Watchdata, Gameloft, etc.'
   },
   {title: 'Anson Lee',
       img: t52,
       url: '',
       position: '',
-      describe: 'MS in Telecom Engineering from RWTH-AACHEN University, Germany Served as a senior software developer in Ericsson, Huawei and some startups. Anson is a CPA, blockchain enthusiastic, Go and JavaScript developer.'
+      describe: 'MS in Telecom Engineering from RWTH-AACHEN University, Germany Served as a senior software developer in Ericsson, Huawei and some startups. Anson is a CPA, blockchain enthusiast, Go and JavaScript developer.'
   },
 ];
 
