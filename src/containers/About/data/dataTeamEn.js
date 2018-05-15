@@ -209,13 +209,13 @@ An organizer in the blockchain community, affiliations and conferences.`
     img: t56,
     url: '',
     position: '',
-    describe: 'Graduated from Chemical University of Chemcial Technology with Master degree of Chemical Engineering. 4 years of general industry in marketing and consulting experience. Love playing Guqin and Yoga in spare time.'
+    describe: 'Graduated from Beijing University of Chemical Technology with Master degree of Chemical Engineering. 4 years of general industry in marketing and consulting experience. Love playing Guqin and Yoga in spare time.'
   },
   {title: 'Sonia Xu',
     img: t57,
     url: '',
     position: '',
-    describe: 'Graduated from Peking University, China with Bachelor in HR management. Over 6 years in Human Resource industry, specialized in HR management and event planning. Strong communication skills and good understanding of client\'s needs, especially in Chinese market. She is curious about new challenges and loves cooking and enjoy the process from 0 to completion.'
+    describe: 'Graduated from Peking University, China with Bachelor in HR management. Over 6 years in Human Resource industry, specialized in HR management and event planning. Strong communication skills and good understanding of client\'s needs, especially in Chinese market. She is curious about new challenges, and loves cooking and enjoys the process from 0 to completion.'
   },
   {title: 'Han Kao',
       img: t50,
