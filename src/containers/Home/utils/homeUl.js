@@ -56,9 +56,12 @@ export function homeUlEn(styles, style) {
                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                 <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
+                <li><a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a></li>
+                
                 <li><Link to="/about">Team</Link></li>
                 <li><Link to="/career">Career</Link></li>
                 <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
+                <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li> 
             </ul>
         </div>
   );
@@ -86,6 +89,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
             <li><Link to="/about">Team</Link></li>
             <li><Link to="/career">Career</Link></li>
             <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
+            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>            
         </ul>
     </div>
   );

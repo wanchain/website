@@ -136,6 +136,7 @@ class Navigation extends Component {
                             <li><Link to="/about">Team</Link></li>
                             <li><Link to="/career">Career</Link></li>
                             <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
+                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>                            
                         </ul>
                     </div>
                     }
