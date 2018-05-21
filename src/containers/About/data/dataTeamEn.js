@@ -52,7 +52,7 @@ const data = [
     img: t33,
     url: 'https://www.linkedin.com/in/oliver-birch-08ba8a44/',
     position: '',
-    describe: `Also known as 'machinayz', Oliver is Wanchain's community manager. He is a project manager for several start-up companies and has years of experience working in the altcoin crypto space community: advising, blogging and admin work for several slack, reddit and telegram groups.`
+    describe: `VP - Global Communications, Also known as 'machinayz', Oliver is currently Vice President Of Global Communications for Wanchain. After graduating from Lancaster University with BA (Hons) in Philosophy, Politics and Economics, he commenced his career in the pharmaceutical industry. He has managed several clinical research sites and was a project manager for several start-up companies with years of experience working in the altcoin crypto space community: advising, blogging and admin work.`
   },
   {title: 'Dynal Patel',
     img: t53,
@@ -64,7 +64,7 @@ const data = [
     img: t54,
     url: 'https://www.linkedin.com/in/scottbtrowbridge/',
     position: '',
-    describe: 'Degree in Computer Science, Business & Marketing. 7+ years experience in technology startup growth. Experience project managing several global business development teams. Expert in accelerating early-stage companies.'
+    describe: 'Director of Global Business Development, Scott has continued to invest and support various blockchain projects through strategic partnerships, investor relations and early-stage growth since 2014 with Ethereum.Currently supporting Wanchain’s global business development and WANLabs operations through strategic partnerships, investor relations and continual growth activities.Educated in Computer Science, Business & Marketing. 7+ years experience in technology organisations and startups. Experience project managing remote global business/project development teams. Expertise incubating early-stage projects from ideology to later stage growth.'
   },
   {title: 'Weijia Zhang',
     img: t2,
