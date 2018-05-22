@@ -107,14 +107,13 @@ app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
 app.use(Express.static(path.join(__dirname, '..', 'static')));
 
-app.use('/download/gwanLinux', function(req, res) {
-  console.log(path.join(__dirname, '..', 'static', config.app.files.gwanLinux));
+app.use('/download/gwan-linux*', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.gwanLinux));
 });
-app.use('/download/gwanWin', function(req, res) {
+app.use('/download/gwan-windows*', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.gwanWin));
 });
-app.use('/download/gwanMac', function(req, res) {
+app.use('/download/gwan-mac*', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.gwanMac));
 });
 
@@ -247,9 +246,9 @@ app.post('/upload',function(req, res){
 });
 
 // Proxy to API server
-app.use('/api', (req, res) => {
-  proxy.web(req, res, {target: targetUrl});
-});
+// app.use('/api', (req, res) => {
+//   proxy.web(req, res, {target: targetUrl});
+// });
 
 app.use('/ws', (req, res) => {
   proxy.web(req, res, {target: targetUrl + '/ws'});

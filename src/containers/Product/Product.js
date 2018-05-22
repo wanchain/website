@@ -230,9 +230,9 @@ class Product extends Component {
             </div>
              <div className={styles.GwanDload}>
                <p>Gwan Download:</p>
-               <a href="/download/gwanWin" className={styles.icoWin}><em></em></a>
-               <a href="/download/gwanMac" className={styles.icoMac}><em></em></a>
-               <a href="/download/gwanLinux" className={styles.icoGLINUX}><em></em></a>
+               <a href="/download/gwan-windows-amd64-1.0.4-b7ce29ea.zip" className={styles.icoWin}><em></em></a>
+               <a href="/download/gwan-mac-amd64-1.0.4-b7ce29ea.tar.gz" className={styles.icoMac}><em></em></a>
+               <a href="/download/gwan-linux-amd64-1.0.4-b7ce29ea.tar.gz" className={styles.icoGLINUX}><em></em></a>
              </div>
             </div>
           </div>
