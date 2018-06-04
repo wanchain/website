@@ -60,7 +60,7 @@ export function homeUlEn(styles, style) {
                 
                 <li><Link to="/about">Team</Link></li>
                 <li><Link to="/career">Career</Link></li>
-                <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
+                <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                 <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li> 
             </ul>
         </div>
@@ -88,7 +88,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
             </li>
             <li><Link to="/about">Team</Link></li>
             <li><Link to="/career">Career</Link></li>
-            <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
+            <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>            
         </ul>
     </div>

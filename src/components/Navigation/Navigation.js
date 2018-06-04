@@ -94,7 +94,7 @@ class Navigation extends Component {
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                             <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                             <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li>
-                            <li><a href="/" onClick={this.getNav.bind(this)}>Explorer</a></li>
+                            <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>Explorer</a></li>
                         </ul>
                     </div>
                     }
@@ -110,7 +110,7 @@ class Navigation extends Component {
                             <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
                             <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                             <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li>
-                            <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
+                            <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                         </ul>
                     </div>
                     }
@@ -135,7 +135,7 @@ class Navigation extends Component {
                             </li>
                             <li><Link to="/about">Team</Link></li>
                             <li><Link to="/career">Career</Link></li>
-                            <li><Link to="https://explorer.wanchain.org" target="_blank">Explorer</Link></li>
+                            <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>                            
                         </ul>
                     </div>
