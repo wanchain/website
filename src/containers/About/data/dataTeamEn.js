@@ -25,7 +25,6 @@ const t46 = require('./image/t46.png');
 const t47 = require('./image/t47.png');
 const t48 = require('./image/t48.png');
 const t49 = require('./image/t49.png');
-const t50 = require('./image/t50.png');
 const t51 = require('./image/t51.png');
 const t52 = require('./image/t52.png');
 const t53 = require('./image/t53.png');
@@ -216,12 +215,6 @@ An organizer in the blockchain community, affiliations and conferences.`
     url: '',
     position: '',
     describe: 'Graduated from Peking University, China with Bachelor in HR management. Over 6 years in Human Resource industry, specialized in HR management and event planning. Strong communication skills and good understanding of client\'s needs, especially in Chinese market. She is curious about new challenges, and loves cooking and enjoys the process from 0 to completion.'
-  },
-  {title: 'Han Kao',
-      img: t50,
-      url: '',
-      position: '',
-      describe: 'Grew up in New York City and graduated from Columbia University with a B.A. in Economics. He enjoys building amazing products and growing tech businesses from 0 to 1. In his spare time he enjoys rock climbing, golfing, and investing in Bitcoin, Blockchain and Cryptocurrencies. His latest venture is a crypto media property focused on deep ICO Review & Analysis. Also he is the founder of Cryptobriefing.'
   },
   {title: 'Qinggang Jia',
       img: t51,
