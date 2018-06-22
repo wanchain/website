@@ -3,27 +3,19 @@ const t2 = require('./image/t2.png');
 const t3 = require('./image/3.png');
 const t6 = require('./image/6.png');
 const t11 = require('./image/11.png');
-const t12 = require('./image/12.png');
 const t15 = require('./image/15.png');
 const t16 = require('./image/t16.png');
 const t29 = require('./image/29.png');
 
 const t31 = require('./image/t31.png');
 
-const t32 = require('./image/t32.png');
 const t33 = require('./image/t33.png');
-const t34 = require('./image/t34.png');
-const t35 = require('./image/t35.png');
-const t36 = require('./image/t36.png');
 const t37 = require('./image/t37.png');
-const t38 = require('./image/t38.png');
 const t39 = require('./image/t39.png');
 const t40 = require('./image/t40.png');
 const t42 = require('./image/t42.png');
 const t43 = require('./image/t43.png');
 const t46 = require('./image/t46.png');
-const t47 = require('./image/t47.png');
-const t48 = require('./image/t48.png');
 const t49 = require('./image/t49.png');
 const t51 = require('./image/t51.png');
 const t52 = require('./image/t52.png');
@@ -32,7 +24,8 @@ const t54 = require('./image/t54.png');
 const t55 = require('./image/t55.png');
 const t56 = require('./image/t56.png');
 const t57 = require('./image/t57.png');
-
+const t59 = require('./image/t59.png');
+const t60 = require('./image/t60.png');
 
 const data = [
   {title: 'Jack Lu',
@@ -44,14 +37,26 @@ const data = [
   {title: 'LI NI',
     img: t46,
     url: '',
-    position: '',
+    position: 'Vice President',
     describe: 'Graduated from Peking University with BA degree and acquired Master Degree of Science (MSc) in Computer Science with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommunication, Delta Electronics and SuperMap Software as directors and principals in business teams. Currently vice president of Wanchain and Wanglu Tech for BD, marketing, PR and sales. Also served as IT consultant for FECC, Ministry of Agriculture (MOA) of China and Food and Agriculture Organization (FAO).'
   },
   {title: 'Oliver Birch',
     img: t33,
     url: 'https://www.linkedin.com/in/oliver-birch-08ba8a44/',
-    position: '',
-    describe: `VP - Global Communications, Also known as 'machinayz', Oliver is currently Vice President Of Global Communications for Wanchain. After graduating from Lancaster University with BA (Hons) in Philosophy, Politics and Economics, he commenced his career in the pharmaceutical industry. He has managed several clinical research sites and was a project manager for several start-up companies with years of experience working in the altcoin crypto space community: advising, blogging and admin work.`
+    position: 'Vice President of Global Communications',
+    describe: `Also known as 'machinayz', Oliver is currently Vice President Of Global Communications for Wanchain. After graduating from Lancaster University with BA (Hons) in Philosophy, Politics and Economics, he commenced his career in the pharmaceutical industry. He has managed several clinical research sites and was a project manager for several start-up companies with years of experience working in the altcoin crypto space community: advising, blogging and admin work.`
+  },
+  {title: 'Scott Trowbridge',
+    img: t54,
+    url: 'https://www.linkedin.com/in/scottbtrowbridge/',
+    position: 'Director of Global Business Development',
+    describe: 'Scott has continued to invest and support various blockchain projects through strategic partnerships, investor relations and early-stage growth since 2014 with Ethereum.Currently supporting Wanchain’s global business development and WANLabs operations through strategic partnerships, investor relations and continual growth activities.Educated in Computer Science, Business & Marketing. 7+ years experience in technology organisations and startups. Experience project managing remote global business/project development teams. Expertise incubating early-stage projects from ideology to later stage growth.'
+  },
+  {title: 'Marcos Cunha',
+    img: t59,
+    url: 'https://www.linkedin.com/in/marcos3/',
+    position: 'Director of WanLabs Americas',
+    describe: `Marcos is in charge Wanchain's exclusive accelerator for FinTech start-ups that are looking to grow their companies in the preeminent blockchain ecosystem. Before joining Wanchain, Marcos founded several companies in the tech space, led development teams in building technology for enterprise clients, worked on Wall Street at Goldman Sachs and at various other Fortune 100 companies. Marcos has an MBA from Indiana University, an Engineering degree from Purdue University and a Fellowship from Stanford on Scaling Companies. He recently served as an Entrepreneur in Residence at Capital Factory/Google/Code2040 and as a Google Developers Expert for Growth. Marcos is an advisor to various companies and a mentor at Google's Pioneer Accelerator and University of Texas Longhorn Startup Lab.`
   },
   {title: 'Dynal Patel',
     img: t53,
@@ -59,15 +64,15 @@ const data = [
     position: '',
     describe: 'Accomplished executive with a strong track record of delivering innovative products and solutions to the market and developing market leading partner ecosystems. Leads the development and execution of strategic partnerships at Wanchain. Has over 15 years of management experience in leading technology and telecommunication companies such as Vodafone, Altran Technologies and Microsoft. Holds a PhD in Computer Science from the University of Cape Town and is a certified Project Management Professional.'
   },
-  {title: 'Scott Trowbridge',
-    img: t54,
-    url: 'https://www.linkedin.com/in/scottbtrowbridge/',
-    position: '',
-    describe: 'Director of Global Business Development, Scott has continued to invest and support various blockchain projects through strategic partnerships, investor relations and early-stage growth since 2014 with Ethereum.Currently supporting Wanchain’s global business development and WANLabs operations through strategic partnerships, investor relations and continual growth activities.Educated in Computer Science, Business & Marketing. 7+ years experience in technology organisations and startups. Experience project managing remote global business/project development teams. Expertise incubating early-stage projects from ideology to later stage growth.'
+  {title: 'Dan Reecer',
+    img: t60,
+    url: 'https://www.linkedin.com/in/reecer',
+    position: 'Director of Global Marketing',
+    describe: `Dan is joining Wanchain as Global Marketing Director based in Austin, TX. Before joining Wanchain, Dan was a brand marketer at Eli Lilly & Company in the pharmaceutical industry and worked on several multi-billion dollar brands in roles across U.S. and Global brand marketing, product pricing, and digital marketing technology. Dan graduated from Indiana University’s Kelley School of Business with a Bachelors in Information Systems and International Business and a Masters in Information Systems`
   },
   {title: 'Weijia Zhang',
     img: t2,
-    position: '',
+    position: 'Head of Engineering',
     url: '',
     describe: `
     Weijia has published over 30 research/technical papers and is named as an inventor on 20 patents. He worked for 14 years at Dell as a software engineer and has a great deal of expertise in the area of network security. Weijia has a PhD in Physics and graduated from Tsinghua university in China.
@@ -92,12 +97,6 @@ const data = [
     position: '',
     describe: `More than 20 years of software development experience. Proficient in C/C++, Golang, Node.js, Java and other languages. Considerable expertise in block chain P2P networking, encryption algorithms and consensus algorithms.`
   },
-  {title: 'Jeffrey Gu',
-    img: t12,
-    url: 'https://www.linkedin.com/in/jeffrey-gu-703548/',
-    position: '',
-    describe: 'BS from Tsinghua University and MS in Computer Science from the University of Maryland. Served as a senior engineer at Cisco and Dell, specializing in network communications and information security.'
-  },
   {title: 'Astro Sun',
     img: t29,
     url: '',
@@ -119,42 +118,11 @@ Published various articles on blockchain and currency.`
     describe: `Graduated from China Communication University. Years of television, magazine and press experience. Former marketing director at ZCODesign.
 An organizer in the blockchain community, affiliations and conferences.`
   },
-  {title: 'Justin Snyder',
-    img: t34,
-    url: 'https://www.linkedin.com/in/jus10snyder/',
-    position: '',
-    describe: `Co-Founder of DecentraNet. Customer engagement specialist who develops creative and compelling ways to build Wanchain's Twitter and Facebook communities.`
-  },
-  {title: 'Ethan Parker',
-    img: t32,
-    url: 'https://www.linkedin.com/in/ethaneparker/',
-    position: '',
-    describe: `With over 15 years of Silicon Valley experience in media relations, Treble founder Ethan Parker has successfully secured press coverage for technology startups in publications including Forbes, VentureBeat, TechCrunch, GigaOM, ReadWrite, New York Times, Wall Street Journal, Bloomberg and many more.`
-  },
-
-  {title: 'Germán Palau',
-      img: t35,
-      url: '',
-      position: '',
-      describe: 'CEO of Prymtech Ltd., specializes in full digital marketing solutions'
-  },
-  {title: 'Trung Seng',
-      img: t36,
-      url: '',
-      position: '',
-      describe: 'Founder and Director of Prymtech Ltd, a performance driven marketing agency.  A serial entrepreneur with over 10 years experience in digital marketing strategies and business development'
-  },
   {title: 'Zhihui Liu',
       img: t37,
       url: '',
       position: '',
       describe: 'More than 10 years of software development experience. Good at developing languages such as C++ and golang. Most of the time engaged in the Internet industry. Having rich programming experience in network transmission, software optimization, distributed architecture and large concurrent.'
-  },
-  {title: 'Crane Lv',
-      img: t38,
-      url: '',
-      position: '',
-      describe: 'Graduated from Tsinghua University. More than 15 years of software development experience. Proficient in C/C++, Golang, Node.js, Java and other languages.'
   },
   {title: 'Mengfei Liu',
       img: t39,
@@ -179,18 +147,6 @@ An organizer in the blockchain community, affiliations and conferences.`
       url: '',
       position: '',
       describe: 'Proficient in java, javascript. Be in charge of  alliance chain and superstratum development.'
-  },
-  {title: 'Justin Liao',
-      img: t47,
-      url: '',
-      position: '',
-      describe: 'Graduated from Vanderbilt University with a degree in Human & Organizational Development, Financial Economics, and Corporate Strategy. Founded Shorewood Ventures, a multi-strategy hedge fund that specializes in digital assets and derivative products, as well as the Daily Bit, a cryptocurrency newsletter. Heading Strategic Corporate Alliances.'
-  },
-  {title: 'Eli Wong',
-      img: t48,
-      url: '',
-      position: '',
-      describe: 'Early Bitcoin investor, VC/angel investor in new technologies, fintech and blockchain startups. Founder of Blockchain Association of HK/Organizer of blockchain events. 20+ years of investment experiences. Worked at ING Barings, Merrill Lynch, GAM and Elixir Capital.'
   },
   {title: 'Bryan YE',
       img: t49,
