@@ -1,0 +1,12 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .eventsBanner{ width: 100%; height: 298px; line-height: 298px; text-align: center; background: #f7fafd;}
+  .eventsBanner img{ width: 90%; }
+  .w{ width: 94%; margin: 0 auto; position: relative;}
+  .eventsTable{ margin: 30px 0 50px; overflow-x: auto;}
+  .eventsTable tr th{ font-size: 12px; height: 45px; font-weight: normal; border-bottom: solid 2px #f6f6f6; text-transform: uppercase;}
+  .eventsTable tr td{ font-size: 10px; color: #688499; height: 60px;}
+  .eventsTable tr:hover td{ color: #1483ff;}
+  .eventsTable tr td a{ color: #1483ff;}
+  .unline{ width: 45px; height: 2px; display: inline-block; position: absolute; top: 45px; left: 0; background: #1483ff;}
+  .eventsTable tr td:nth-child(1){ color: #1483ff;}
+}

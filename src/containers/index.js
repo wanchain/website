@@ -12,4 +12,5 @@ export WhiteForm from './WhiteForm/WhiteForm';
 export Career from './Career/Career';
 
 export Product from './Product/Product';
+export Events from './Events/Events';
 

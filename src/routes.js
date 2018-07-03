@@ -12,6 +12,7 @@ import {
     Crowdsale,
     Career,
     Product,
+    Events,
     // WhiteForm,
   } from 'containers';
 
@@ -60,6 +61,7 @@ export default () => {
         {/* <Route path="whitelist" component={WhiteForm}/> */}
 
         <Route path="product" component={Product}/>
+        <Route path="events" component={Events}/>
 
       <Route path="login" component={Login}/>
       { /* <Route path="pagination" component={Pagination}/> */ }

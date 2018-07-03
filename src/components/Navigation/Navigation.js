@@ -95,6 +95,9 @@ class Navigation extends Component {
                             <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                             <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li>
                             <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>Explorer</a></li>
+                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
+                            <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li>
+
                         </ul>
                     </div>
                     }
@@ -111,6 +114,8 @@ class Navigation extends Component {
                             <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                             <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li>
                             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
+                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
+                            <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li>
                         </ul>
                     </div>
                     }
@@ -136,7 +141,8 @@ class Navigation extends Component {
                             <li><Link to="/about">Team</Link></li>
                             <li><Link to="/career">Career</Link></li>
                             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
-                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>                            
+                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
+                            <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li>
                         </ul>
                     </div>
                     }
