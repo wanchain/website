@@ -44,11 +44,6 @@ class Events extends Component {
                   <td>Kuala Lumpur, Malaysia</td>
                 </tr>
                 <tr>
-                  <td><a target="_blank" href="https://www.eventbrite.com/e/cryptocurrency-blockchain-30-wanchain-and-partners-asia-tour-2018-feat-jack-lu-tickets-46653927152?aff=ebdssbdestsearch">Wanchain Meetup</a></td>
-                  <td>07/07/2018  -  07/07/2018</td>
-                  <td>Kuala Lumpur, Malaysia</td>
-                </tr>
-                <tr>
                   <td>Bitrue & Wanchain Meetup</td>
                   <td>10/07/2018 -  11/07/2018</td>
                   <td>Taipei, Taiwan</td>
