@@ -25,10 +25,12 @@ class Div3 extends React.Component {
         this.setState({
           isShow: 'false'
         });
+        this.refs.video.pause();
       } else {
         this.setState({
           isShow: 'true'
         });
+        this.refs.video.play();
       }
     }
 
@@ -87,8 +89,8 @@ class Div3 extends React.Component {
                         </div>
                         <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>
                           <div className={styles.videoshade} onClick={this.videoCon.bind(this)}></div>
-                          <div ref="video">
-                              <video width="750px" className={styles.videoBox} src={config.app.files.wanIntro} autoPlay controls preload></video>
+                          <div>
+                              <video ref="video" width="750px" className={styles.videoBox} src={config.app.files.wanIntro} controls preload></video>
                           </div>
                         </div>
 
