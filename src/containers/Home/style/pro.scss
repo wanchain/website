@@ -90,7 +90,7 @@
     margin: 60px auto 0 auto;
     padding-bottom:40px;
     div{
-      margin-top: 80px;
+      // margin-top: 80px;
       .bannerTitle{
         font-weight: bold; font-size: 50px;
       }
@@ -159,10 +159,11 @@
       }
     }
 
+    
     .bannerShare{
       display: block;
-      margin-top: 0;
-      text-align: center;
+      text-align: left;
+      margin: 50px 0 0 0;
       img{
         display: inline-block;
         margin: 15px;

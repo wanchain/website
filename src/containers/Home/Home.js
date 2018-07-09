@@ -8,6 +8,7 @@ import { joinOpenFunc, joinCloseFunc, joinMsgFunc } from 'redux/modules/joinWarn
 import JoinwarningModal from '../../components/JoinWarn';
 
 import {homeUlEn, homePcUlEn} from './utils/homeUl';
+import config from '../../config';
 
 import Div1 from './components/Div1/Div1';
 import Div2 from './components/Div2/Div2';
@@ -39,6 +40,13 @@ export default class Home extends Component {
       joinMsgFunc: PropTypes.func,
     };
 
+    constructor() {
+      super();
+      this.state = {
+        isShow: 'false'
+      };
+    }
+
     componentWillMount() {
       this.props.joinCloseFunc();
     }
@@ -60,6 +68,7 @@ export default class Home extends Component {
       const navButton = this.props.navButton;
       this.props.getNavButtonFunc(!navButton);
     }
+
 
     showWarns = () => {
       this.props.joinOpenFunc();
@@ -86,10 +95,11 @@ export default class Home extends Component {
 
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
+    var isShow = this.state.isShow;
 
     return (
         <div>
-            <Helmet script={[{src: '/jquery/jquery.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>
+            <Helmet script={[{src: '/jquery/jquery.min.js'}, {src: '/jquery/bootstrap.min.js'}]} link={[{rel: 'stylesheet', href: '/css/style4.css'}]}/>
 
             <div className={styles.homeDiv}>
                 <div className={styles.homeHeader + ' container'}>
@@ -123,6 +133,7 @@ export default class Home extends Component {
                                     'Wanchain is creating new distributed financial infrastructure. Cross-chain smart contracts built on Wanchain will power the new digital economy'}
                             </small>
                         </p>
+
 
                         <div className={styles.bannerShare}>
                             <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram}/></a>

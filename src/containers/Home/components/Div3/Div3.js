@@ -1,6 +1,8 @@
 import React, {PropTypes} from 'react';
 import { connect } from 'react-redux';
 
+import config from '../../../../config';
+
 
 @connect(
     state => ({language: state.auth.language, clientWidth: state.auth.clientWidth, }),
@@ -11,16 +13,37 @@ class Div3 extends React.Component {
       clientWidth: PropTypes.number,
     };
 
+    constructor() {
+      super();
+      this.state = {
+        isShow: 'false'
+      };
+    }
+
+    videoCon() {
+      if (this.state.isShow === 'true') {
+        this.setState({
+          isShow: 'false'
+        });
+      } else {
+        this.setState({
+          isShow: 'true'
+        });
+      }
+    }
+
     render() {
       const {language} = this.props;
       const styles = require('./Div3.scss');
 
+      const videpIco = require('../../image/videoIco.png');
       const wanchain = require('../../image/wanchain.png');
       const one = require('../../image/1.png');
       const two = require('../../image/2.png');
       const download = require('../../image/download.png');
       const widthPic = {width: '40px'};
       const downLoad = {width: '29px', padding: '0', margin: '6px'};
+      var isShow = this.state.isShow;
 
       let pValue;
       if (language === 'zn') {
@@ -28,6 +51,7 @@ class Div3 extends React.Component {
       } else {
         pValue = 'A distributed financial infrastructure that seamlessly connects blockchain networks together';
       }
+
       return (
           <div className={styles.div2Header + ' container'}>
               {language === 'zn' ?
@@ -56,17 +80,18 @@ class Div3 extends React.Component {
                           }
                       </div>
 
-                      <div className={styles['div2-submit-area']}>
-                          {language === 'zn' ?
-                              <a className={styles['div2-submit-button'] + ' btn'} href="/files/Wanchain-Whitepaper-CH-version.pdf" target="_blank">
-                                  白皮书<img src={download} style={downLoad} />
-                              </a>
-                          :
-                              <a className={styles['div2-submit-buttonEn'] + ' btn'} href="/files/Wanchain-Whitepaper-EN-version.pdf" target="_blank">
-                                  White Paper<img src={download} style={downLoad} />
-                              </a>
-                          }
-                      </div>
+
+                        <div id="link" onClick={this.videoCon.bind(this)} className={styles.videoBtn}>
+                            <span>WATCH VIDEO</span>
+                            <img src={videpIco} className={styles.videpIco} />
+                        </div>
+                        <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>
+                          <div className={styles.videoshade} onClick={this.videoCon.bind(this)}></div>
+                          <div ref="video">
+                              <video width="750px" className={styles.videoBox} src={config.app.files.wanIntro} autoPlay controls preload></video>
+                          </div>
+                        </div>
+
                   </div>
               </div>
           </div>

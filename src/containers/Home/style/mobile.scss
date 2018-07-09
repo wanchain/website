@@ -152,7 +152,7 @@
     //  font-size:18px!important;
     //}
     div{
-      margin-top: 80px;
+      // margin-top: 80px;
       .bannerTitle{
         font-weight: bold; font-size: 28px;
       }
@@ -219,11 +219,11 @@
         }
       }
     }
-
     .bannerShare{
       display: block;
-      margin-top: 60px;
-      text-align: center;
+      text-align: left;
+      margin: 50px 0 0 0;
+      clear: both;
       img{
         display: inline-block;
         margin: 15px;
