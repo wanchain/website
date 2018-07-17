@@ -103,9 +103,9 @@ export default class Home extends Component {
                     homePcUlEn(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
 
                     {/* <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a> */}
-                    <div className={styles.homeGit}>
-                        <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 767 ? github : github2} /></a>
-                    </div>
+                    {/* <div className={styles.homeGit}> */}
+                        {/* <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 767 ? github : github2} /></a> */}
+                    {/* </div> */}
                 </div>
 
                 <div className="container">

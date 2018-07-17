@@ -108,6 +108,7 @@ class Footer extends React.Component {
       const webo1 = require('./image/web.png');
       const wechat1 = require('./image/webcat.png');
       const qq1 = require('./image/qq.png');
+      const gitHub = require('./image/gitHub.png');
 
       const wecater = require('./image/wecatZn.png');
       const wecaterEn = require('./image/wecatEn.png');
@@ -155,6 +156,10 @@ class Footer extends React.Component {
                                 <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
                                 <span className={text}>{language === 'zn' ? 'QQ群' : 'QQ group'}</span>
                                 <img style={widthWechat} src={qqer} className={styles.qq} id="qq"/>
+                            </div>
+                            <div className={styles.GitHub}>
+                                <a href="https://github.com/wanchain" target="_blank"><img src={gitHub}/></a>
+                                <span>GitHub</span>
                             </div>
                         </div>
                     </div>

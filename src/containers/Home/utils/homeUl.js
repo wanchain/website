@@ -49,7 +49,7 @@ export function homeUlEn(styles, style) {
   return (
         <div className={styles} id="navbar-menu" style={style}>
             <ul>
-                <li><IndexLink to="/">Home</IndexLink></li>
+                {/* <li><IndexLink to="/">Home</IndexLink></li> */}
                 <li><Link to="/product">Product</Link></li>
                   <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
                 {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
@@ -63,6 +63,7 @@ export function homeUlEn(styles, style) {
                 <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                 <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
                 <li><Link to="/events">Events</Link></li>
+                <li><Link to="/wanlabs">WanLabs</Link></li>
             </ul>
         </div>
   );
@@ -72,7 +73,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
   return (
     <div className={styles} id="navbar-menu" style={style}>
         <ul>
-            <li><IndexLink to="/">Home</IndexLink></li>
+            {/* <li><IndexLink to="/">Home</IndexLink></li> */}
             <li><Link to="/product">Product</Link></li>
               <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
@@ -92,6 +93,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
             <li><Link to="/events">Events</Link></li>
+            <li><Link to="/wanlabs">WanLabs</Link></li>
         </ul>
     </div>
   );

@@ -1,0 +1,20 @@
+@import './style/pro';
+@import './style/pc';
+@import './style/mobile';
+
+.productBox {
+ background: url("./image/bannerBg.jpg") no-repeat center center ;
+ background-size: cover;
+}
+.videoBox {
+ background: url("./image/videoBg.jpg") no-repeat center center ;
+ background-size: cover;
+}
+.projects {
+ background: url("./image/prjctBg.jpg") no-repeat center center ;
+ background-size: cover;
+}
+.interestedBox {
+ background: url("./image/interestedBg.jpg") no-repeat center center ;
+ background-size: 100%;
+}

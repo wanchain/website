@@ -86,7 +86,7 @@ class Navigation extends Component {
                     { !navButton && clientWidth <= 1024 &&
                     <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
                         <ul>
-                            <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li>
+                            {/* <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li> */}
                              <li><Link to="https://swap.wanchain.org" onClick={this.getNav.bind(this)}>Tokensale</Link></li>
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
@@ -104,7 +104,7 @@ class Navigation extends Component {
                     { navButton && clientWidth <= 1024 &&
                     <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'inline-block'}}>
                         <ul>
-                            <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li>
+                            {/* <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li> */}
                             <li><Link to="/product" onClick={this.getNav.bind(this)}>Product</Link></li>
                              <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
@@ -116,6 +116,7 @@ class Navigation extends Component {
                             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
                             <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li>
+                            <li><Link to="/wanlabs" onClick={this.getNav.bind(this)}>WanLabs</Link></li>                            
                         </ul>
                     </div>
                     }
@@ -123,7 +124,7 @@ class Navigation extends Component {
                     {!navButton && clientWidth > 1024 &&
                     <div className={styles.navHeaderUl} id="navbar-menu">
                         <ul>
-                            <li><IndexLink to="/">Home</IndexLink></li>
+                            {/* <li><IndexLink to="/">Home</IndexLink></li> */}
                             <li><Link to="/product">Product</Link></li>
                              <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
@@ -143,13 +144,14 @@ class Navigation extends Component {
                             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
                             <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li>
+                            <li><Link to="/wanlabs">WanLabs</Link></li>
                         </ul>
                     </div>
                     }
                     {/* <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a> */}
-                    <div className={styles.navGit}>
+                    {/* <div className={styles.navGit}>
                         <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 320 ? github : github2} /></a>
-                    </div>
+                    </div> */}
                 </div>
                 <JoinwarningModal show={joinWarningModal} onHide={this.showWarnsFunc} onClose={this.closeWarnsFunc}/>
             </div>

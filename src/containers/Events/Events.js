@@ -54,22 +54,22 @@ class Events extends Component {
                   <td>Seoul, South Korea</td>
                 </tr>
                 <tr>
-                  <td>Wanchain European Roadshow 2018</td>
+                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-and-wanlabs-european-tour-london-tickets-47642007527">Wanchain European Roadshow London</a></td>
                   <td>19/07/2018 -  19/07/2018</td>
                   <td>London, United Kindom</td>
                 </tr>
                 <tr>
-                  <td>Wanchain European Roadshow 2018</td>
+                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-and-wanlabs-european-tour-amsterdam-tickets-47655252142">Wanchain European Roadshow Amsterdam</a></td>
                   <td>23/07/2018 -  23/07/2018</td>
                   <td>Amsterdam, Netherlands</td>
                 </tr>
                 <tr>
-                  <td>Wanchain European Roadshow 2018</td>
+                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-and-wanlabs-european-tour-berlin-tickets-47655312322">Wanchain European Roadshow Zurich</a></td>
                   <td>25/07/2018 -  25/07/2018</td>
                   <td>Zurich, Switzerland</td>
                 </tr>
                 <tr>
-                  <td>Wanchain European Roadshow 2019</td>
+                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-and-wanlabs-european-tour-berlin-tickets-47655312322">Wanchain European Roadshow Berlin</a></td>
                   <td>27/07/2018 -  27/07/2018</td>
                   <td>Berlin Germany</td>
                 </tr>
@@ -88,6 +88,7 @@ class Events extends Component {
           </div>
         </div>
       </div>
+      <p className={styles.eventsText}>To RSVP for the Wanchain European Tour , please send email to ines.b@wanchain.org . We will send you a private invitation closer to the event</p>
     </div>);
   }
 }

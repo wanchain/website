@@ -9,4 +9,11 @@
   .eventsTable tr td a{ color: #1483ff;}
   .unline{ width: 45px; height: 2px; display: inline-block; position: absolute; top: 45px; left: 0; background: #1483ff;}
   .eventsTable tr td:nth-child(1){ color: #1483ff;}
+  .eventsText{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #688499;
+    margin-bottom: 20px;
+  }
 }

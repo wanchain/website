@@ -13,6 +13,7 @@ import {
     Career,
     Product,
     Events,
+    WanLabs,
     // WhiteForm,
   } from 'containers';
 
@@ -62,7 +63,7 @@ export default () => {
 
         <Route path="product" component={Product}/>
         <Route path="events" component={Events}/>
-
+        <Route path="wanlabs" component={WanLabs}/>
       <Route path="login" component={Login}/>
       { /* <Route path="pagination" component={Pagination}/> */ }
       { /* <Route path="survey" component={Survey}/> */ }

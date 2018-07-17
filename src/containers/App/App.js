@@ -90,7 +90,7 @@ class App extends Component {
     return (
       <div className={styles.app}>
         <Helmet title={title}/>
-        {transition.pathname !== '/' && transition.pathname !== '/product' && <Navigation/>}
+        {transition.pathname !== '/' && transition.pathname !== '/wanlabs' && transition.pathname !== '/product' && <Navigation/>}
         <div className={styles.appContent}>
           {this.props.children}
         </div>

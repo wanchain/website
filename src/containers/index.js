@@ -13,4 +13,6 @@ export Career from './Career/Career';
 
 export Product from './Product/Product';
 export Events from './Events/Events';
+export WanLabs from './WanLabs/WanLabs';
+
 
