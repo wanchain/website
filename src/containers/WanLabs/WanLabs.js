@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { IndexLink } from 'react-router';
 import { connect } from 'react-redux';
 import { getClientWidthFunc, getNavButtonFunc, changeLangFunc } from 'redux/modules/auth';
+import config from '../../config';
 
 import { homeUlEn, homePcUlEn } from '../Home/utils/homeUl';
 
@@ -52,13 +53,14 @@ class WanLabs extends Component {
       const server5 = require('./image/icon5.png');
       const server6 = require('./image/icon6.png');
       const linBg = require('./image/linBg.png');
-      const prjctIco = require('./image/prjctIco.png');
       const prjctLogo1 = require('./image/prjctLogo1.png');
       const prjctLogo2 = require('./image/prjctLogo2.png');
       const prjctLogo3 = require('./image/prjctLogo3.png');
       const prjctLogo4 = require('./image/prjctLogo4.png');
+      const poster = require('./image/poster.png');
       const style = { display: 'none' };
       const style1 = { display: 'inline_block' };
+
       return (
           <div>
               <div className={styles.productBox}>
@@ -74,38 +76,38 @@ class WanLabs extends Component {
                   </div>
                   <div className={styles.WanLabsBox}>
                       <div className={styles.WanLabsBanner}>
-                          <h1>WanLabs IS A BLOCKCHAIN INCUBATOR FOR THE WANCHAIN ECOSYSTEM</h1>
+                          <h1><b>WanLabs</b> is a blockchain incubator for the Wanchain ecosystem</h1>
                           <div className={styles.bannerLine}>
                             <span className={styles.greenLine}></span>
                             <span className={styles.blueLine}></span>
                           </div>
                           <p className={styles.textp}>WanLabs focuses on blockchain projects that address real-world problems by utilising Wanchain's unique privacy and cross-chain capabilities and building an interconnected blockchain ecosystem.</p>
-                          <p className={styles.textp2}>READY TO JOIN WanLabs?</p>
-                          <button className={styles.comBtn}>Apply Now</button>
+                          <p className={styles.textp2}>Ready to join WanLabs?</p>
+                          <a className={styles.comBtn} href="/wanlabs/apply" target="_blank">Apply Now</a>
                       </div>
                   </div>
               </div>
               <div className={styles.videoBox}>
                   <div className={styles.whiteTit}>
-                      <h1>LEARN MORE ABOUT WanLabs</h1>
+                      <h1>About WanLabs</h1>
                       <div className={styles.bannerLine}>
                           <span className={styles.greenLine}></span>
                           <span className={styles.blueLine}></span>
                       </div>
                   </div>
                   <div className={styles.videoShow}>
-
+                     <video width="750px" className={styles.video} src={config.app.files.wanchainlabs} controls preload poster={poster}></video>
                   </div>
                   <div className={styles.downBtn}>
-                      <a href="#">
+                      <a href="/download/wanLabs_introduction">
                           <img src={downBtnIco} className={styles.downBtnIco} />
-                          <span>Download WanLab brochure</span>
+                          <span>Download WanLabs brochure</span>
                       </a>
                   </div>
               </div>
               <div className={styles.serverWeBox}>
                   <div className={styles.comTit}>
-                      <h1>SERVICES WE PROVIDE</h1>
+                      <h1>Services</h1>
                       <div className={styles.bannerLine}>
                           <span className={styles.greenLine}></span>
                           <span className={styles.blueLine}></span>
@@ -115,7 +117,7 @@ class WanLabs extends Component {
                       <div className={styles.serverBox}>
                           <div className={styles.serverdl}>
                               <img src={server1} className={styles.server1} />
-                              <p>ICO Advisory</p>
+                              <p>Blockchain Advisory</p>
                           </div>
                           <ul className={styles.serverUl}>
                               <li><em className={styles.comCircle}></em><span>Competitor benchmarking</span></li>
@@ -124,7 +126,7 @@ class WanLabs extends Component {
                               <li><em className={styles.comCircle}></em><span>Business model</span></li>
                               <li><em className={styles.comCircle}></em><span>Token economics</span></li>
                               <li><em className={styles.comCircle}></em><span>Whitepaper</span></li>
-                              <li><em className={styles.comCircle}></em><span>ICO infrastructure</span></li>
+                              <li><em className={styles.comCircle}></em><span>Token infrastructure</span></li>
                               <img src={linBg} className={styles.linBg} />
                           </ul>
                       </div>
@@ -146,17 +148,16 @@ class WanLabs extends Component {
                       <div className={styles.serverBox}>
                           <div className={styles.serverdl}>
                               <img src={server3} className={styles.server3} />
-                              <p>Legal Support</p>
+                              <p>Legal Support*</p>
                           </div>
                           <ul className={styles.serverUl}>
-                              <li><em className={styles.comCircle}></em><span>Legal structure</span></li>
                               <li><em className={styles.comCircle}></em><span>Company incorporation</span></li>
                               <li><em className={styles.comCircle}></em><span>Token model review</span></li>
                               <li><em className={styles.comCircle}></em><span>Whitepaper review</span></li>
-                              <li><em className={styles.comCircle}></em><span>Legal consultation and</span></li>
-                              <li><em className={styles.comCircle}></em><span>documentation</span></li>
+                              <li><em className={styles.comCircle}></em><span>Legal documentation</span></li>
                               <img src={linBg} className={styles.linBg} />
                           </ul>
+                          <p className={styles.serverPText}>* Wanchain will provide introductions to legal firms for legal support</p>
                       </div>
                       <div className={styles.serverBox}>
                           <div className={styles.serverdl}>
@@ -167,7 +168,7 @@ class WanLabs extends Component {
                               <li><em className={styles.comCircle}></em><span>Foundational Brand Building</span></li>
                               <li><em className={styles.comCircle}></em><span>PR & Marketing strategy</span></li>
                               <li><em className={styles.comCircle}></em><span>Community management strategy</span></li>
-                              <li><em className={styles.comCircle}></em><span>Leverage Wanchain's 250k+community members</span></li>
+                              <li><em className={styles.comCircle}></em><span>Leverage Wanchain's 200k+ community members</span></li>
                               <li><em className={styles.comCircle}></em><span>Showcase on WanLabs roadshows</span></li>
                               <li><em className={styles.comCircle}></em><span>Broadcast to our investor network</span></li>
                               <img src={linBg} className={styles.linBg} />
@@ -201,9 +202,12 @@ class WanLabs extends Component {
                       </div>
                   </div>
               </div>
+              <div className={styles.applyBtn}>
+                  <a className={styles.comBtn} href="/wanlabs/apply" target="_blank">Apply Now</a>
+              </div>
               <div className={styles.projects}>
                   <div className={styles.whiteTit}>
-                      <h1>projects</h1>
+                      <h1>Projects</h1>
                       <div className={styles.bannerLine}>
                           <span className={styles.greenLine}></span>
                           <span className={styles.blueLine}></span>
@@ -211,18 +215,16 @@ class WanLabs extends Component {
                   </div>
                   <div className={styles.projectsCont}>
                       <ul className={styles.projectsLogoUl}>
-                          <li><img src={prjctLogo1} className={styles.prjctLogo1} /></li>
-                          <li><img src={prjctLogo2} className={styles.prjctLogo2} /></li>
-                          <li><img src={prjctLogo3} className={styles.prjctLogo3} /></li>
-                          <li><img src={prjctLogo4} className={styles.prjctLogo4} /></li>
+                          <li><img src={prjctLogo3} className={styles.prjctLogo1} /></li>
+                          <li><img src={prjctLogo4} className={styles.prjctLogo2} /></li>
+                          <li><img src={prjctLogo1} className={styles.prjctLogo3} /></li>
+                          <li><img src={prjctLogo2} className={styles.prjctLogo4} /></li>
                       </ul>
-                      <p><img src={prjctIco} className={styles.prjctIco} /></p>
-                      <p className={styles.projectsCText}>READY TO JOIN WanLabs? </p>
                   </div>
               </div>
               <div className={styles.interestedBox}>
                   <div className={styles.comTit2}>
-                      <h1>INTERESTED IN A CAREER AT WanLabs?</h1>
+                      <h1>Interested in a career at WanLabs?</h1>
                       <div className={styles.bannerLine}>
                           <span className={styles.greenLine}></span>
                           <span className={styles.blueLine}></span>
@@ -230,7 +232,7 @@ class WanLabs extends Component {
                   </div>
                   <div className={styles.interestedCont}>
                       <p>We're on the lookout for business developers across the world to connect WanLabs to local blockchain communities. If you're interested in joining one of the leading projects in blockchain, you can apply using the link below.</p>
-                      <button className={styles.comBtn}>JOIN WanLabs</button>
+                      <a className={styles.comBtn} href="/wanlabs/career" target="_blank">Come work with us</a>
                   </div>
               </div>
           </div>

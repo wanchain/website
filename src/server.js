@@ -64,7 +64,7 @@ if (__DEVELOPMENT__) {
 
   server = https.createServer({
     key: fs.readFileSync(path.join(__dirname, 'cert/wanchain.org.key')),
-    cert: fs.readFileSync(path.join(__dirname, 'cert/3bb55a3526ededcc.crt')),
+    cert: fs.readFileSync(path.join(__dirname, 'cert/343826d2a48a2880.crt')),
     ca: [fs.readFileSync(path.join(__dirname, 'cert/gd_bundle-g2-g1.crt'))
     ],
     requestCert: false,
@@ -115,6 +115,18 @@ app.use('/download/gwan-windows*', function(req, res) {
 });
 app.use('/download/gwan-mac*', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.gwanMac));
+});
+app.use('/download/wanLabs_introduction', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.wanLabs_introduction));
+});
+app.use('/download/winwallet', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet));
+});
+app.use('/download/macwallet', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet));
+});
+app.use('/download/linwallet', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet));
 });
 
 /* 上传*/

@@ -5,7 +5,7 @@ import {
     App,
     Home,
     About,
-    Login,
+    // Login,
     // LoginSuccess,
     NotFound,
     // IcoNotice,
@@ -14,6 +14,8 @@ import {
     Product,
     Events,
     WanLabs,
+    Apply,
+    LabCareer,
     // WhiteForm,
   } from 'containers';
 
@@ -64,7 +66,9 @@ export default () => {
         <Route path="product" component={Product}/>
         <Route path="events" component={Events}/>
         <Route path="wanlabs" component={WanLabs}/>
-      <Route path="login" component={Login}/>
+        <Route path="wanlabs/apply" component={Apply}/>
+        <Route path="wanlabs/career" component={LabCareer}/>
+      {/* <Route path="login" component={Login}/> */}
       { /* <Route path="pagination" component={Pagination}/> */ }
       { /* <Route path="survey" component={Survey}/> */ }
       { /* <Route path="widgets" component={Widgets}/> */ }

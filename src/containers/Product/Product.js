@@ -60,11 +60,11 @@ class Product extends Component {
   }
   popContent(urlData) {
     if (urlData === 'win') {
-      this.setState({download: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-win64-1.0.0.zip'});
+      this.setState({download: '/download/winwallet'});
     } else if (urlData === 'mac') {
-      this.setState({download: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-mac-1.0.0.zip'});
+      this.setState({download: '/download/macwallet'});
     } else if (urlData === 'linux') {
-      this.setState({download: 'https://github.com/wanchain/go-wanchain/releases/download/v1.0.0/WanWalletGui-linux64-1.0.0.zip'});
+      this.setState({download: '/download/linwallet'});
     }
 
     if (this.state.pop === 'true') {
