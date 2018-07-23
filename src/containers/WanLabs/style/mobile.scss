@@ -215,15 +215,44 @@
   width: 100%;
   margin-top: 50px;
   padding-bottom: 20px;
+  display: inline-block;
   .projectsCont{
     text-align: center;
     .projectsLogoUl{
+      li:hover{
+        background-image: linear-gradient(to right, #00d2ff, #1a90fc);
+      }
       li{
         width: 94%;
-        margin-left: 2%;
+        margin: 2% 3%;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        line-height: 80px;
+        border-radius: 5px;
+        background:rgba(255,255,255,.1);
         img{
           width: 100%;
           margin-bottom: 20px;
+        }
+
+        .prjctLogo1{
+          width: 170px;
+        }
+        .prjctLogo2{
+          width: 175px;
+        }
+        .prjctLogo3{
+          width: 179px;
+        }
+        .prjctLogo4{
+          width: 120px;
+        }
+        .prjctLogo5{
+          width: 165px;
+        }
+        .prjctLogo6{
+          width: 165px;
         }
       }
     }

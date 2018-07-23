@@ -127,7 +127,8 @@ class Div1 extends React.Component {
       }
 
       return (
-          <div>
+        <div>
+          <div className={styles.comBgWhite}>
             <div className={styles.div1Header + ' container'}>
               <h2> <hr className={styles.div1HeaderImg}/>
                 <span>{language === 'zn' ? '万维链是什么？' : "WANCHAIN'S VISION"}</span>
@@ -160,6 +161,7 @@ class Div1 extends React.Component {
                   </li>
                 </ul>
               </div>
+            </div>
             </div>
           </div>
       );

@@ -251,16 +251,44 @@ p{
   .projectsCont{
     text-align: center;
     .projectsLogoUl{
-      width: 1141px;
-      margin: 66px auto 0;
-      li:nth-child(4){
+      width: 850px;
+      margin: 36px auto 0;
+      li:nth-child(3){
         margin-right: 0;
       }
+      li:nth-child(6){
+        margin-right: 0;
+      }
+      li:hover{
+        background-image: linear-gradient(to right, #00d2ff, #1a90fc);
+      }
       li{
+        width: 262px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 5px;
         float: left;
-        margin-right: 30px;
-        img{
-          width: 262px;
+        text-align: center;
+        margin: 0 30px 30px 0;
+        cursor: pointer;
+        background:rgba(255,255,255,.1);
+        .prjctLogo1{
+          width: 170px;
+        }
+        .prjctLogo2{
+          width: 175px;
+        }
+        .prjctLogo3{
+          width: 179px;
+        }
+        .prjctLogo4{
+          width: 120px;
+        }
+        .prjctLogo5{
+          width: 165px;
+        }
+        .prjctLogo6{
+          width: 165px;
         }
       }
     }

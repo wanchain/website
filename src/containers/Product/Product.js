@@ -6,6 +6,7 @@ import { getClientWidthFunc, getNavButtonFunc, changeLangFunc} from 'redux/modul
 
 import {homeUlEn, homePcUlEn} from '../Home/utils/homeUl';
 import Content from './Content';
+import { win32 } from 'path';
 
 
 @connect(
@@ -65,6 +66,12 @@ class Product extends Component {
       this.setState({download: '/download/macwallet'});
     } else if (urlData === 'linux') {
       this.setState({download: '/download/linwallet'});
+    } else if (urlData === 'win2') {
+      this.setState({download: '/download/winwallet2'});
+    } else if (urlData === 'mac2') {
+      this.setState({download: '/download/macwallet2'});
+    } else if (urlData === 'linux2') {
+      this.setState({download: '/download/linwallet2'});
     }
 
     if (this.state.pop === 'true') {
@@ -88,7 +95,8 @@ class Product extends Component {
     const Glinux = require('./image/Glinux.png');
     const git = require('./image/git.png');
     const banRbg = require('./image/proimg4.png');
-    const coin = require('./image/coin.png');
+    const banRbg5 = require('./image/proimg5.png');
+    const banDownL = require('./image/banDownL.png');
     const circle = require('./image/circle.png');
     const proimg1 = require('./image/proimg1.png');
     const proimg2 = require('./image/proimg2.png');
@@ -130,23 +138,27 @@ class Product extends Component {
           <div className={styles.bannerLeft}>
             <img className={styles.bannBg} src={bannBg} />
             <h1>WAN WALLET</h1>
-            <h3>Transfer your assets with privacy protection</h3>
-            <ul>
+            <h3>TRANSFER YOUR ASSETS WITH PRIVACY PROTECTION</h3>
+            <ul className={styles.leftUl}>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>WAN wallet help you to manage different assets including WAN and other tokens on Wanchain</span>
+                <span>WAN wallet helps you manage different digital assets including WAN and other cryptocurrencies on Wanchain</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span> You can transfer your assets either in ordinary (public transactions)  or in private (stealth transactions)</span>
+                <span>You can transfer your assets either the traditional way (public transactions) or in private (stealth transactions)</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>We will support multi-cryptocurrencies in later version</span>
+                <span>Wan Wallet now supports cross-chain transactions with Ethereum and will support more cryptocurrencies in future versions</span>
+              </li>
+              <li>
+                <em><img className={styles.icoCircle} src={circle2}/></em>
+                <span>With support of hardware wallets (Trezor™, LedgerWallet™), Wanchain transactions are more secure than ever</span>
               </li>
             </ul>
-             <div className={styles.downloadBox}>
-              <h2>download :</h2>
+             <div className={styles.downloadBoxBan}>
+              <h2>Download Wanwallet 1.0.5</h2>
               <ul>
                 <li onClick={(event) => this.popContent('win', event)}><img src={win}/></li>
                 <li onClick={(event) => this.popContent('mac', event)}><img src={mac}/></li>
@@ -154,10 +166,41 @@ class Product extends Component {
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div>
+             <div className={styles.downloadBoxBan}>
+              <h2>Download Wanwallet 2.1.2</h2>
+              <ul>
+                <li onClick={(event) => this.popContent('win2', event)}><img src={win}/></li>
+                <li onClick={(event) => this.popContent('mac2', event)}><img src={mac}/></li>
+                <li onClick={(event) => this.popContent('linux2', event)}><img src={Glinux}/></li>
+              </ul>
+              <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
+             </div>
+             <a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet%202.0%20release%20EN%20180723.pdf" className={styles.downloadManual}>
+                <img className={styles.banDownL} src={banDownL}/> <span>Instruction manual for cross-chain</span>
+             </a>
           </div>
           <div className={styles.bannerRight}>
             <div className={styles.comimgBox}><img className={styles.banRbg} src={banRbg}/></div>
-            <div><img className={styles.banRico} src={coin}/></div>
+          </div>
+        </div>
+        <div className={styles.proCont}>
+          <div className={styles.bannerLeft2}>
+            <div className={styles.comimgBox}><img className={styles.banRbg5 } src={banRbg5}/></div>
+          </div>
+          <div className={styles.bannerRight2}>
+            <h1>CROSS-CHAIN ABILITIES</h1>
+            <h4>WHY CROSS-CHAIN?</h4>
+             <div className={styles.downloadBoxBan2}>
+                <h3>Scalability for disparate blockchains like ETH/BTC</h3>
+                <h3>Dapps are able to take advantage of interoperability</h3>
+                <h3>Real-world scenarios based on cross-chain technology:</h3>
+              <ul>
+              <li><em><img className={styles.icoCircle} src={circle2}/></em>Multi-asset investment and financing</li>
+              <li><em><img className={styles.icoCircle} src={circle2}/></em>Decentralized loans</li>
+              <li><em><img className={styles.icoCircle} src={circle2}/></em>Multi-coin payments and settlements</li>
+              <li><em><img className={styles.icoCircle} src={circle2}/></em>Decentralized cryptocurrency exchanges</li>
+              </ul>
+              </div>
           </div>
         </div>
       </div>
@@ -172,11 +215,11 @@ class Product extends Component {
             <ul>
               <li>
                 <em className={styles.emHeight}><img className={styles.icoCircle2} src={circle}/></em>
-                <span>You can deploy smart contract like Ethereum</span>
+                <span>You can deploy smart contracts on Wanchain just as with Ethereum</span>
               </li>
                 <li>
                   <em><img className={styles.icoCircle2} src={circle}/></em>
-                  <span>Wanchain supply a special character which you can issue a token with privacy protection. Please click button below, see how to deploy a smart contract with privacy protection</span>
+                  <span>One of Wanchain's unique features is the ability to issue a new token with privacy protection in mind. Please click the button below to see how to deploy a smart contract with privacy protection</span>
                 </li>
             </ul>
             <a target="_blank" href="https://github.com/wanchain/go-wanchain/wiki/How--to-deploy-smart-contracts-on-Wanchain" className={styles.comBtn}>Issue your token</a>
@@ -191,11 +234,11 @@ class Product extends Component {
             <ul>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>Use our block Explorer to check every transaction details</span>
+                <span>The Block Explorer can be used to check every transaction detail, and now supports cross-chain transactions!</span>
               </li>
                 <li>
                   <em><img className={styles.icoCircle2} src={circle}/></em>
-                  <span>From dates to fees, block heights to amounts, you can track them all and more</span>
+                  <span>From dates to fees, block heights to amounts, you can track all of this information and more</span>
                 </li>
             </ul>
             <a href="https://www.wanscan.org" target="_blank"><button className={styles.comBtn}>wanchain explorer</button></a>
@@ -216,16 +259,16 @@ class Product extends Component {
             <ul>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>We provide command line tools for anyone who is comfortable using CMD terminology</span>
+                <span>We provide command line tools for those who feel at ease with the CLI.</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>Check <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">here</a> for more information on How to Use Cli Guide</span>
+                <span>Check <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">here</a> for more information in our Wanchain wallet CLI guide</span>
               </li>
             </ul>
             <div className={styles.downloadBox}>
             <div className={styles.cmdDload}>
-              <p>CMD Download:</p>
+              <p>CLI tools Download:</p>
               <a href={this.state.href}><button className={styles.comBtn}>download</button></a>
             </div>
              <div className={styles.GwanDload}>

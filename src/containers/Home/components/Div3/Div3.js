@@ -55,6 +55,7 @@ class Div3 extends React.Component {
       }
 
       return (
+        <div className={styles.comBgWhite}>
           <div className={styles.div2Header + ' container'}>
               {language === 'zn' ?
                   <h2><hr className={styles.div1HeaderImg}/>万维链整体架构<hr className={styles.div1HeaderImg}/></h2>
@@ -96,6 +97,7 @@ class Div3 extends React.Component {
 
                   </div>
               </div>
+          </div>
           </div>
       );
     }

@@ -2,9 +2,14 @@
 @media screen and (min-width: 1200px) {
 
   // ++++++++++++++++++div3 style+++++++++++++++++++++++++++++++++++++++++++++
+  .comBgWhite{
+    width: 100%;
+    background: #fff;
+  }
   .div2Header {
     margin: 0 auto;
     padding-bottom: 30px;
+    background: #fff;
     h2 {
       margin: 0;
       padding: 80px 0 0 0;

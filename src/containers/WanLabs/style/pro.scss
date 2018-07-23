@@ -241,13 +241,34 @@
     text-align: center;
     .projectsLogoUl{
       width: 100%;
+      li:hover{
+        background-image: linear-gradient(to right, #00d2ff, #1a90fc);
+      }
       li{
-        width: 47%;
-        margin-left: 2%;
+        width: 40%;
+        margin: 3% 5%;
         float: left;
-        img{
-          width: 100%;
-          margin-bottom: 20px;
+        display: inline-block;
+        line-height: 80px;
+        border-radius: 5px;
+        background:rgba(255,255,255,.1);
+        .prjctLogo1{
+          width: 170px;
+        }
+        .prjctLogo2{
+          width: 175px;
+        }
+        .prjctLogo3{
+          width: 179px;
+        }
+        .prjctLogo4{
+          width: 120px;
+        }
+        .prjctLogo5{
+          width: 165px;
+        }
+        .prjctLogo6{
+          width: 165px;
         }
       }
     }

@@ -128,6 +128,15 @@ app.use('/download/macwallet', function(req, res) {
 app.use('/download/linwallet', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet));
 });
+app.use('/download/winwallet2', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet2));
+});
+app.use('/download/macwallet2', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet2));
+});
+app.use('/download/linwallet2', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet2));
+});
 
 /* 上传*/
 app.post('/upload',function(req, res){

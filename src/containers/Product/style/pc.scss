@@ -232,12 +232,20 @@
   color: #fff;
   display: inline-block;
   padding-bottom: 90px;
-  background-image: linear-gradient(135deg, #10192f 0%, #233050 100%);
+  background: #06102e;
   .proCont{
     width: 1300px;
     margin: 0 auto;
+    clear: both;
+    .bannerLeft2{
+      float: left;
+      margin-top: 200px;
+      .banRbg5{
+        width: 633px;
+      }
+    }
     .bannerLeft{
-      width: 540px;
+      width: 480px;
       float: left;
       margin-top: 60px;
       position: relative; z-index: 2;
@@ -247,11 +255,11 @@
       }
       h1{
         font-weight: bold;
-        font-size: 30px;
+        font-size: 35px;
         padding: 0;
-        margin: 0;
-        text-transform: uppercase;
+        margin: 0 0 10px 0;
       }
+
       h3{
         font-size: 18px;
         padding: 0;
@@ -259,11 +267,12 @@
         text-transform : uppercase;
       }
       ul{
-        margin-top: 35px;
         display:inline-block;
+        margin-top: 30px;
         li{
           float: left;
           font-size: 12px;
+          opacity: .8;
           em{
             height: 30px;
             display: inline-block;
@@ -276,18 +285,42 @@
           }
         }
       }
-      .downloadBox{
+      .bannTextP{
+        margin: 22px 0 0;
+      }
+      p{
+        font-size: 14px;
+        padding: 0;
+        color: #fff;
+        opacity: .7;
+        margin: 0;
+      }
+      .downloadBoxBan:nth-child(2){
+        margin-right: 0;
+      }
+      .downloadBoxBan{
+        float: left;
+        margin: 30px 40px 20px 0;
+        h3{
+          font-size: 14px!important;
+          margin: 0 0 10px 0;
+        }
         h2{
-          font-size: 16px;
-          text-transform : uppercase;
+          font-size: 14px;
           font-weight: bold;
+          margin: 0 0 10px 0;
         }
         ul{
+          margin-top: 10px;
+          li:hover{
+            background-image: linear-gradient(0deg,  #1a90fc 0%,  #00d2ff 100%);
+          }
           li{
             cursor: pointer;
             width: 45px;
             height: 45px;
-            line-height: 45px;
+            line-height: 43px;
+            float: left;
             margin-right: 20px;
             text-align: center;
             border-radius: 100%;
@@ -312,6 +345,20 @@
             cursor: pointer;
             background-image: linear-gradient(to right, #1a90fc, #00d2ff);
           }
+        }
+      }
+      .downloadManual:hover{
+        text-decoration: none;
+      }
+      .downloadManual{
+        color: #0079ff;
+        font-size: 14px;
+        clear: both;
+        display: inline-block;
+        .banDownL{
+          width: 12px;
+          margin-right: 10px;
+          vertical-align: middle;
         }
       }
       .shadeBox{
@@ -354,11 +401,46 @@
         }
       }
     }
+    .bannerRight2{
+      float: left;
+      margin-left: 90px;
+      margin-top: 285px;
+      h1{
+        font-weight: bold;
+        font-size: 35px;
+        padding: 0;
+        margin: 0 0 10px 0;
+      }
+      h4{
+        font-size: 18px;
+      }
+      .downloadBoxBan2{
+        margin-top: 30px;
+        h3{
+          font-size: 14px;
+          margin: 0 0 10px 0;
+        }
+      }
+      ul{
+        margin: 10px 0 0 0;
+        li{
+          font-size: 12px;
+          color: #fff;
+          line-height: 34px;
+          img{
+            width: 12px;
+            height: 12px;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
     .bannerRight{
       float: right;
       width: 700px;
       .banRbg{
         width: 100%;
+        margin-top: 80px;
       }
       .banRico{
         width: 180px;
@@ -424,6 +506,7 @@
   background: #f7f9fa;
   display: inline-block;
   padding-top:  60px;
+  height: 461px;
   .grayCont{
     width: 1300px;
     margin: 0 auto;
@@ -559,10 +642,12 @@
 .downloadBox{
   h2{
     font-size: 16px;
-    text-transform : uppercase;
     font-weight: bold;
   }
   ul{
+    li:hover{
+      background-image: linear-gradient(0deg,  #1a90fc 0%,  #00d2ff 100%)!important;
+    }
     li{
       width: 45px;
       height: 45px;

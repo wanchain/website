@@ -1,11 +1,15 @@
 @media screen and (min-width: 1199px) {
   // +++++++++++++++++++++div1 style++++++++++++++++++++++++++++++++++++
+  .comBgWhite{
+    width: 100%;
+    background: #fff;
+  }
   .div1Header {
     margin: 0 auto;
     padding: 0;
     padding-bottom: 30px;
     height:800px;
-
+    background: #fff;
     h2{
       margin: 0;
       padding: 80px 0 0 0;

@@ -5,7 +5,11 @@
     position: relative;
     //background: url("../image/homeHeader.jpg") no-repeat center center;
 
+    .container{
+      width: 1300px!important;
+    }
     .homeHeader{
+      width: 1300px!important;
       img{
         float: left;
         padding-right: 10px;
@@ -19,7 +23,7 @@
       .homeHeaderUl{
         padding-top: 20px;
         float: left;
-
+        padding-left: 60px;
         ul{
           li{
             float: left;
@@ -108,8 +112,9 @@
       float: left;
       margin-top: 180px;
       //8.16
-      width:1040px;
+      width:1300px!important;
       height:451px;
+      margin-left: 10px;
       .bannerTitle{
         font-family: MicrosoftYaHei-Bold;
       	font-size: 50px;
@@ -119,12 +124,18 @@
       	letter-spacing: 2px;
       	color: #ffffff;
       }
-      .bannerTitleSmall{
+      .bannertextP{
         font-family: MicrosoftYaHei;
-      	font-size: 24px;
+      	font-size: 16px;
       	font-weight: normal;
       	letter-spacing: 1px;
-      	color: #ffffff;
+      	color: #AFBADC;
+        padding: 0;
+        .bannertextSpan{
+          font-weight: bold;
+          color: #fff;
+          font-size:24px;
+        }
       }
       img{
         margin: 0 auto;
@@ -199,7 +210,7 @@
         height: 3px;
         background: #fff;
         border-radius: 30%;
-        margin-top: 20px;
+        margin-top: 25px;
       }
 
       .bannerShare{
@@ -389,5 +400,63 @@
         font-family: BebasNeue;
       }
     }
+  }
+  .videoBtn{
+    color: #fff;
+    float: left;
+    width:190px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin: 45px 40px 0 0;
+    font-size:16px;
+    font-weight: bold;
+    border-radius:25px;
+    background-image: linear-gradient(to right, #3680F8, #00AEFF);
+  }
+  .bannerLine{
+    margin: 35px 0;
+    display: inline-block;
+    span{
+      width: 20px;
+      height: 3px;
+      display: inline-block;
+      float: left;
+    }
+    .greenLine{
+      background: #2AB3AB;
+      margin-right: 4px;
+    }
+    .blueLine{
+      background: #368AF6;
+    }
+  }
+  .videpIco{
+    display: inline!important;
+    width: 28px!important;
+    height: 28px!important;
+    margin: 0 0 0 8px!important;
+    padding: 0!important;
+  }
+  .videoshade{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: #000;
+    opacity: .5;
+  }
+  .videoBox{
+    width: 950px;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    margin-left: -427px;
+    margin-top: -267px;
   }
 }

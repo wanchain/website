@@ -8,6 +8,7 @@ import { joinOpenFunc, joinCloseFunc, joinMsgFunc } from 'redux/modules/joinWarn
 import JoinwarningModal from '../../components/JoinWarn';
 
 import {homeUlEn, homePcUlEn} from './utils/homeUl';
+import config from '../../config';
 
 import Div1 from './components/Div1/Div1';
 import Div2 from './components/Div2/Div2';
@@ -37,6 +38,13 @@ export default class Home extends Component {
       joinWarningModal: PropTypes.bool,
       joinMsgFunc: PropTypes.func,
     };
+
+    constructor() {
+      super();
+      this.state = {
+        isShow: 'false'
+      };
+    }
 
     componentWillMount() {
       this.props.joinCloseFunc();
@@ -68,6 +76,19 @@ export default class Home extends Component {
       this.props.joinCloseFunc();
     };
 
+    videoCon() {
+      if (this.state.isShow === 'true') {
+        this.setState({
+          isShow: 'false'
+        });
+        this.refs.video.pause();
+      } else {
+        this.setState({
+          isShow: 'true'
+        });
+        this.refs.video.play();
+      }
+    }
 
   render() {
     const styles = require('./Home.scss');
@@ -77,6 +98,7 @@ export default class Home extends Component {
     const github = require('./image/github.png');
     const github2 = require('./image/icoLog4.png');
 
+    const videpIco = require('./image/videoIco.png');
     const Telegram = require('./image/Telegram.png');
     const Reddit = require('./image/Reddit.png');
     const Twitter = require('./image/Twitter.png');
@@ -86,6 +108,7 @@ export default class Home extends Component {
 
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
+    var isShow = this.state.isShow;
 
     return (
         <div>
@@ -111,18 +134,24 @@ export default class Home extends Component {
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
                         <div>
-                          <p className={styles.bannerTitle}>REBUILDING FINANCE</p>
-                          <p className={styles.bannerTitleSmall}>With Private Cross-Chain Smart Contracts</p>
+                          <p className={styles.bannerTitle}>WANCHAIN 2.0 IS LIVE</p>
+                          <div className={styles.bannerLine}>
+                            <span className={styles.greenLine}></span>
+                            <span className={styles.blueLine}></span>
+                          </div>
+                          <p className={styles.bannertextP}>THE WORLD'S <span className={styles.bannertextSpan}>FIRST AND ONLY</span> INTEROPERABLE BLOCKCHAIN </p>
+                          <p className={styles.bannertextP}>WITH SECURE MULTI-PARTY COMPUTING</p>
                         </div>
-                        <div className={styles.divLine}></div>
-                        <p className={styles.bannerp}>
-                            {language === 'zn' ? '连接不同数字资产，连接现在与未来' :
-                                'Connecting the World\'s Digital Assets'}
-                            <small>
-                                {language === 'zn' ? '万维链旨在建立一个基础设施，以去中心化的方式完成不同区块链网络的连接及价值的交换' :
-                                    'Wanchain is creating new distributed financial infrastructure. Cross-chain smart contracts built on Wanchain will power the new digital economy'}
-                            </small>
-                        </p>
+                        <div id="link" onClick={this.videoCon.bind(this)} className={styles.videoBtn}>
+                            <span>WATCH VIDEO</span>
+                            <img src={videpIco} className={styles.videpIco} />
+                        </div>
+                        <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>
+                          <div className={styles.videoshade} onClick={this.videoCon.bind(this)}></div>
+                          <div>
+                              <video ref="video" width="750px" className={styles.videoBox} src={config.app.files.wanchain2} controls preload></video>
+                          </div>
+                        </div>
                         <div className={styles.bannerShare}>
                             <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram}/></a>
                             <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={Reddit}/></a>

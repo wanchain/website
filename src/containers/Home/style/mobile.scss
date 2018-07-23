@@ -83,6 +83,7 @@
       font-weight: 600;
     }
     .navbarImg{
+      width: 20px;
       float: right;
       margin-right: 0;
       margin-top: 20px;
@@ -146,8 +147,8 @@
   }
 
   .homeHeaderBodyDiv1{
-    margin-top: 27px;
-    text-align: center;
+    margin-top: 100px;
+    text-align: left;
     //.indexH2size{
     //  font-size:18px!important;
     //}
@@ -155,6 +156,19 @@
       // margin-top: 80px;
       .bannerTitle{
         font-weight: bold; font-size: 28px;
+      }
+      .bannertextP{
+        font-family: MicrosoftYaHei;
+      	font-size: 12px;
+      	font-weight: normal;
+      	letter-spacing: 1px;
+      	color: #AFBADC;
+        padding: 0;
+        .bannertextSpan{
+          font-weight: bold;
+          color: #fff;
+          font-size:18px;
+        }
       }
       p{
         padding-top: 0;
@@ -386,5 +400,61 @@
         }
       }
     }
+  }
+  .bannerLine{
+    margin: 20px 0 30px;
+    display: inline-block;
+    span{
+      width: 20px;
+      height: 3px;
+      display: inline-block;
+      float: left;
+    }
+    .greenLine{
+      background: #2AB3AB;
+      margin-right: 4px;
+    }
+    .blueLine{
+      background: #368AF6;
+    }
+  }
+  .videoshade{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: #000;
+    opacity: .5;
+    z-index: 8;
+  }
+  .videoBox{
+    width: 96%;
+    position: fixed;
+    top: 30%;
+    left: 2%;
+    z-index: 9;
+  }
+  .videoBtn{
+    color: #fff;
+    float: left;
+    width:190px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin: 45px 40px 50px 0;
+    font-size:16px;
+    font-weight: bold;
+    border-radius:25px;
+    background-image: linear-gradient(to right, #3680F8, #00AEFF);
+  }
+  .videpIco{
+    display: inline;
+    width: 28px!important;
+    height: 28px!important;
+    margin: 0 0 0 8px!important;
+    padding: 0!important;
   }
 }

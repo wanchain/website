@@ -21,6 +21,8 @@ class Div4 extends React.Component {
       const styles = require('./Div4.scss');
       return (
           <div className={clientWidth < 1025 ? styles.officalModule : ''}>
+
+            <div className={styles.comBgWhite}>
               <div className={styles.officalModule3}>
                   <div className="container">
                       {clientWidth > 1025 ? <img src={part1} id="div3img1"/> : ''}
@@ -38,6 +40,7 @@ class Div4 extends React.Component {
                       {clientWidth > 1025 ? '' : <img src={part1} id="div3img1" className={styles.div3img1}/>}
                   </div>
               </div>
+              </div>
 
               <div className={clientWidth < 1025 ? styles.officalModule3 : styles.officalModule4}>
                   <div className="container">
@@ -53,6 +56,7 @@ class Div4 extends React.Component {
                   </div>
               </div>
 
+                <div className={styles.comBgWhite}>
               <div className={styles.officalModule3}>
                   <div className="container">
                       {clientWidth > 1025 ? <img src={part3} id="div3img3"/> : ''}
@@ -67,6 +71,7 @@ class Div4 extends React.Component {
                       </div>
                       {clientWidth > 1025 ? '' : <img src={part3} id="div3img3" className={styles.div3img3}/>}
                   </div>
+              </div>
               </div>
           </div>
         );

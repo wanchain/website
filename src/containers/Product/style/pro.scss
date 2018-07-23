@@ -133,7 +133,7 @@
           }
         }
       }
-      .downloadBox{
+      .downloadBoxBan{
         h2{
           font-size: 16px;
           text-transform : uppercase;
@@ -210,6 +210,44 @@
         background-image: linear-gradient(70deg, #9549ff 0%, #21d4fd 100%), linear-gradient( #ffffff, #ffffff);
       }
     }
+
+        .bannerRight2{
+          float: left;
+          margin-top: 35px;
+          h1{
+            font-weight: bold;
+            font-size: 26px;
+            padding: 0;
+            margin: 0 0 10px 0;
+          }
+          ul{
+            margin-top: 40px;
+            li{
+              font-size: 16px;
+              color: #fff;
+              line-height: 34px;
+              em{
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                display: inline-block;
+                background: #1a90fc;
+                vertical-align: middle;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .bannerLeft2{
+          float: left;
+          margin-top: 30px;
+          .comimgBox{
+            text-align: center;
+          }
+          .banRbg5{
+            width: 96%;
+          }
+        }
     .bannerRight{
       width: 96%;
       margin: 0 auto;
