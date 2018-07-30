@@ -175,7 +175,7 @@ class Product extends Component {
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div>
-             <a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet%202.0%20release%20EN%20180723.pdf" className={styles.downloadManual}>
+             <a href="https://github.com/wanchain/go-wanchain/wiki/Wanwallet-2.0-Cross-chain-transactions" className={styles.downloadManual}>
                 <img className={styles.banDownL} src={banDownL}/> <span>Instruction manual for cross-chain</span>
              </a>
           </div>

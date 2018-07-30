@@ -5,9 +5,6 @@
     position: relative;
     //background: url("../image/homeHeader.jpg") no-repeat center center;
 
-    .container{
-      width: 1300px!important;
-    }
     .homeHeader{
       width: 1300px!important;
       img{
@@ -108,13 +105,17 @@
       }
     }
 
+    .container{
+      width: 100%!important;
+      margin: 0 auto;
+    }
     .homeHeaderBodyDiv1{
       float: left;
       margin-top: 180px;
       //8.16
       width:1300px!important;
       height:451px;
-      margin-left: 10px;
+      margin-left: -30px;
       .bannerTitle{
         font-family: MicrosoftYaHei-Bold;
       	font-size: 50px;
@@ -400,6 +401,9 @@
         font-family: BebasNeue;
       }
     }
+  }
+  .videoBtn:hover{
+    background-image: linear-gradient(to right, #00AEFF, #3680F8);
   }
   .videoBtn{
     color: #fff;
