@@ -24,19 +24,29 @@ class Events extends Component {
                   <th width="25%">Location</th>
                 </tr>
                 <tr>
-                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-wanlabs-meetup-beijng-tickets-48685254908"> Wanchain meetup series</a></td>
+                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-wanlabs-meetup-beijng-tickets-48685254908">Wanchain meetup series</a></td>
                   <td>8/18</td>
                   <td>Beijng</td>
                 </tr>
                 <tr>
-                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-wanlabs-meetup-shanghai-tickets-49027519631"> Wanchain meetup series</a></td>
-                  <td>9/8</td>
+                  <td><a target="_blank" href="http://www.huodongxing.com/event/6452253960000">P.O.D conference</a></td>
+                  <td>9/5</td>
+                  <td>Beijing</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://shanghai.slush.org">Slush Shanghai</a></td>
+                  <td>9/7-9/8</td>
                   <td>Shanghai</td>
                 </tr>
                 <tr>
-                  <td><a target="_blank" href="https://www.eventbrite.com/e/wanchain-20-wanlabs-meetup-shenzhen-tickets-49027884723"> Wanchain meetup series</a></td>
-                  <td>9/16</td>
-                  <td>Shenzhen</td>
+                  <td><a target="_blank" href="http://www.blockchainlabs.org/week2018/index_en.html">Wanxiang Blochain Hackthon</a></td>
+                  <td>9/7-9/9</td>
+                  <td>Shanghai</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://www.blockchainlabs.org/week2018/index_en.html">Shanghai International Blockchain Week tech open day</a></td>
+                  <td>9/10</td>
+                  <td>Shanghai</td>
                 </tr>
               </tbody>
             </table>
