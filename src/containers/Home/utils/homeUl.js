@@ -51,7 +51,7 @@ export function homeUlEn(styles, style) {
             <ul>
                 {/* <li><IndexLink to="/">Home</IndexLink></li> */}
                 <li><Link to="/product">Product</Link></li>
-                  <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
+                {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
                 {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
@@ -75,7 +75,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
         <ul>
             {/* <li><IndexLink to="/">Home</IndexLink></li> */}
             <li><Link to="/product">Product</Link></li>
-              <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
+            {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
             <li>
                 <div className={homeDropdown}>

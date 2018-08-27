@@ -106,7 +106,7 @@ class Navigation extends Component {
                         <ul>
                             {/* <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li> */}
                             <li><Link to="/product" onClick={this.getNav.bind(this)}>Product</Link></li>
-                             <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
+                             {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                             <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                             <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
@@ -126,7 +126,7 @@ class Navigation extends Component {
                         <ul>
                             {/* <li><IndexLink to="/">Home</IndexLink></li> */}
                             <li><Link to="/product">Product</Link></li>
-                             <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li>
+                            {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
                             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                             <li>
                                 <div className={styles.navDropdown}>
