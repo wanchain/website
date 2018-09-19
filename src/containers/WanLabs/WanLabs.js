@@ -58,7 +58,6 @@ class WanLabs extends Component {
       const prjctLogo3 = require('./image/prjctLogo3.png');
       const prjctLogo4 = require('./image/prjctLogo4.png');
       const prjctLogo5 = require('./image/prjctLogo5.png');
-      const prjctLogo6 = require('./image/prjctLogo6.png');
       const poster = require('./image/poster.png');
       const style = { display: 'none' };
       const style1 = { display: 'inline_block' };
@@ -220,9 +219,8 @@ class WanLabs extends Component {
                           <li><a href="https://www.allsparkchain.com/" target="_blank"><img src={prjctLogo1} className={styles.prjctLogo1} /></a></li>
                           <li><a href="https://www.freedium.io/" target="_blank"><img src={prjctLogo2} className={styles.prjctLogo2} /></a></li>
                           <li><a href="https://cryptocurve.io/" target="_blank"><img src={prjctLogo3} className={styles.prjctLogo3} /></a></li>
-                          <li><a><img src={prjctLogo4} className={styles.prjctLogo4} /></a></li>
+                          <li><a href="http://www.thachain.org/" target="_blank"><img src={prjctLogo4} className={styles.prjctLogo4} /></a></li>
                           <li><a href="https://blockmedx.com/en/" target="_blank"><img src={prjctLogo5} className={styles.prjctLogo5} /></a></li>
-                          <li><a href="https://intellos.com/" target="_blank"><img src={prjctLogo6} className={styles.prjctLogo6} /></a></li>
                       </ul>
                   </div>
               </div>
