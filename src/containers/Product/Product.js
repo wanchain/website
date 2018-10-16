@@ -157,7 +157,7 @@ class Product extends Component {
                 <span>With support of hardware wallets (Trezor™, LedgerWallet™), Wanchain transactions are more secure than ever</span>
               </li>
             </ul>
-             <div className={styles.downloadBoxBan}>
+             {/* <div className={styles.downloadBoxBan}>
               <h2>Download Wanwallet 1.0.5</h2>
               <ul>
                 <li onClick={(event) => this.popContent('win', event)}><img src={win}/></li>
@@ -165,7 +165,7 @@ class Product extends Component {
                 <li onClick={(event) => this.popContent('linux', event)}><img src={Glinux}/></li>
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
-             </div>
+             </div> */}
              <div className={styles.downloadBoxBan}>
               <h2>Download Wanwallet 2.1.2</h2>
               <ul>
