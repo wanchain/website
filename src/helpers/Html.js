@@ -73,7 +73,7 @@ export default class Html extends Component {
           <script type="text/javascript" src="/baidu/baidu.js" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127069904-1"></script>
           <script>
-            window.dataLayer = window.dataLayer ||  || [];
+            var dataLayer = dataLayer ||  || [];
             function gtag(){
                 window.dataLayer.push(arguments)
             }
