@@ -121,7 +121,7 @@ app.use('/download/wanLabs_introduction', function(req, res) {
 });
 app.use('/download/winwallet', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet));
-});
+});  
 app.use('/download/macwallet', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet));
 });

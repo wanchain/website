@@ -60,6 +60,7 @@ class Product extends Component {
     }
   }
   popContent(urlData) {
+    const _hmt = _hmt || [];
     if (urlData === 'win') {
       this.setState({download: '/download/winwallet'});
     } else if (urlData === 'mac') {
@@ -73,7 +74,7 @@ class Product extends Component {
     } else if (urlData === 'linux2') {
       this.setState({download: '/download/linwallet2'});
     }
-
+    _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     if (this.state.pop === 'true') {
       this.setState({
         pop: 'false'
