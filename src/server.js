@@ -119,15 +119,15 @@ app.use('/download/gwan-mac*', function(req, res) {
 app.use('/download/wanLabs_introduction', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.wanLabs_introduction));
 });
-app.use('/download/winwallet', function(req, res) {
-  res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet));
-});  
-app.use('/download/macwallet', function(req, res) {
-  res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet));
-});
-app.use('/download/linwallet', function(req, res) {
-  res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet));
-});
+// app.use('/download/winwallet', function(req, res) {
+//   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet));
+// });  
+// app.use('/download/macwallet', function(req, res) {
+//   res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet));
+// });
+// app.use('/download/linwallet', function(req, res) {
+//   res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet));
+// });
 app.use('/download/winwallet2', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet2));
 });

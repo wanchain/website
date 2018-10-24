@@ -61,20 +61,16 @@ class Product extends Component {
   }
   popContent(urlData) {
     const _hmt = _hmt || [];
-    if (urlData === 'win') {
-      this.setState({download: '/download/winwallet'});
-    } else if (urlData === 'mac') {
-      this.setState({download: '/download/macwallet'});
-    } else if (urlData === 'linux') {
-      this.setState({download: '/download/linwallet'});
-    } else if (urlData === 'win2') {
+    if (urlData === 'win2') {
       this.setState({download: '/download/winwallet2'});
+      _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     } else if (urlData === 'mac2') {
       this.setState({download: '/download/macwallet2'});
+      _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     } else if (urlData === 'linux2') {
       this.setState({download: '/download/linwallet2'});
+      _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     }
-    _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     if (this.state.pop === 'true') {
       this.setState({
         pop: 'false'
