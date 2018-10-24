@@ -71,7 +71,7 @@ export default class Html extends Component {
           <script type="text/javascript" src="/jquery/jquery.min.js" />
           <script type="text/javascript" src="/js/career/career.js" />
           <script type="text/javascript" src="/baidu/baidu.js" />
-
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127069904-1" />
           {/* <script type="text/javascript" src="/facebook/facebook.js" /> */}
           <noscript>
             < img height="1" width="1" style={{display: 'none'}} src="https://www.facebook.com/tr?id=1773079876322445&ev=PageView&noscript=1"/>
