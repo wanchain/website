@@ -30,6 +30,8 @@ var util = require('util');
 var getIP = require('ipware')().get_ip;
 var geoIp = require('geoip-lite');
 
+var _hmt = _hmt || [];
+
 const mysite = (config.app.cert.mysite); //key
 const mysiteCrt = (config.app.cert.mysiteCrt); //
 const gd1 = (config.app.cert.gd1);
@@ -128,14 +130,18 @@ app.use('/download/wanLabs_introduction', function(req, res) {
 // app.use('/download/linwallet', function(req, res) {
 //   res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet));
 // });
+
 app.use('/download/winwallet2', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet2));
+  _hmt.push(['_trackEvent', 'software', 'download', 'winwallet']);
 });
 app.use('/download/macwallet2', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet2));
+  _hmt.push(['_trackEvent', 'software', 'download', 'macwallet']);
 });
 app.use('/download/linwallet2', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet2));
+  _hmt.push(['_trackEvent', 'software', 'download', 'linwallet']);
 });
 
 /* 上传*/
