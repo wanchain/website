@@ -60,7 +60,7 @@ class Product extends Component {
     }
   }
   popContent(urlData) {
-    const _hmt = _hmt || [];
+    var _hmt = _hmt || [];
     if (urlData === 'win2') {
       this.setState({download: '/download/winwallet2'});
       _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
