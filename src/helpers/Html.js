@@ -70,6 +70,7 @@ export default class Html extends Component {
 
           <script type="text/javascript" src="/jquery/jquery.min.js" />
           <script type="text/javascript" src="/js/career/career.js" />
+          <script type="text/javascript" src="/baidu/baiduJSApi.js" />
           <script type="text/javascript" src="/baidu/baidu.js" />
           {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128074682-1"></script>

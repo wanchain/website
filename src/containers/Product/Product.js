@@ -62,15 +62,13 @@ class Product extends Component {
   popContent(urlData) {
     var _hmt = _hmt || [];
     if (urlData === 'win2') {
-      this.setState({download: '/download/winwallet2'});
-      _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);     
+      this.setState({download: '/download/winwallet2'});  
     } else if (urlData === 'mac2') {
       this.setState({download: '/download/macwallet2'});
-      _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     } else if (urlData === 'linux2') {
       this.setState({download: '/download/linwallet2'});
-      _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     }
+    _hmt.push(['_trackEvent', 'software', 'download', 'wanwallet']);
     if (this.state.pop === 'true') {
       this.setState({
         pop: 'false'
