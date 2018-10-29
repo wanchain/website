@@ -135,7 +135,8 @@ app.use('/download/winwallet2', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet2));
 });
 app.use('/baidu_statistics', function(req, res) {
-  res.send('<p>baidu_statistics</p>');
+  res.setHeader('X-Frame-Options', 'https://tongji.baidu.com');
+  res.sendfile(path.join(__dirname, '..', 'static', '/baidu/baiduStatistics.html'));
 });
 app.use('/download/macwallet2', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet2));
