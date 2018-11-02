@@ -15,7 +15,6 @@ class About extends Component {
       language: PropTypes.string,
       getNavButtonFunc: PropTypes.func,
     };
-
     componentWillUnmount() {
       this.props.getNavButtonFunc(false);
     }
@@ -24,7 +23,9 @@ class About extends Component {
       const blog1 = require('./image/blog1.png');
       const blog2 = require('./image/team.png');
       const styles = require('./About.scss');
-
+      const isLinkedIn = 'https://www.linkedin.com/';
+      const other = require('./image/other.png');
+      const In = require('./image/in.png');
       const team = teamDataEn;
       const advisory = dataAdvisoryEn;
 
@@ -46,9 +47,10 @@ class About extends Component {
                         team.map((value, index) => {
                           return (
                               <div className={styles.aboutTitleDiv + ' col-lg-4'} key={index}>
-                                  {value.url ? <a href={value.url} target="_blank"><img src={value.img} /></a> : <img src={value.img} />}
-                                  <h4>{value.title}<small>{value.position}</small></h4>
-                                  <p>{value.describe}</p>
+                                  <img className={styles.title} src={value.img}></img>
+                                  <h4>{value.title}</h4> 
+                                  <h4><small>{value.position}</small></h4> 
+                                  {value.url ? <a href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <img src={In} ></img> : <img src={other}></img>}</a> : '' }
                               </div>
                           );
                         })
@@ -64,9 +66,10 @@ class About extends Component {
                         advisory.map((value, index) => {
                           return (
                               <div className={styles.aboutTitleDiv2 + ' col-lg-4'} key={index}>
-                                  {value.url ? <a href={value.url} target="_blank"><img src={value.img} /></a> : <img src={value.img} />}
-                                  <h4>{value.title}</h4>
-                                  <p>{value.describe}</p>
+                                  <img className={styles.title} src={value.img}></img>
+                                  <h4>{value.title}</h4> 
+                                  <h4><small>{value.position}</small></h4> 
+                                  {value.url ? <a href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <img src={In}></img> : <img src={other}></img>}</a> : '' }
                               </div>
                           );
                         })

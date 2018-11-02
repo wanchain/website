@@ -40,7 +40,6 @@ const targetUrl = 'http://' + config.apiHost + ':' + config.apiPort;
 const pretty = new PrettyError();
 
 const app = new Express();
-
 app.use(helmet())
 app.use(referrerPolicy({ policy: 'same-origin' }))
 app.use(csp({

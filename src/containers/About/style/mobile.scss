@@ -95,11 +95,18 @@
     }
 
     .aboutTitleDiv{
-
+      border:1px solid #eee;
+      display:inline-block;
+      width: 250px;
+      margin:22px 22px;
+      .title{
+        margin-top:20px;
+        border-radius:50%;
+      }
       img{
         display: block;
         margin: 0 auto;
-        width: 30%;
+        // width: 30%;
       }
 
       h4{
@@ -129,12 +136,19 @@
     .aboutTitleDiv2{
       text-align: center;
       padding-top: 20px;
-
-      img{
-        display: block;
-        margin: 0 auto;
-        width: 30%;
+      border:1px solid #eee;
+      display:inline-block;
+      width: 250px;
+      margin:22px 22px;
+      .title{
+        margin-top:20px;
+        border-radius:50%
       }
+      // img{
+      //   display: block;
+      //   margin: 0 auto;
+      //   width: 30%;
+      // }
 
       h4{
         display: block;

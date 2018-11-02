@@ -24,167 +24,170 @@ const t54 = require('./image/t54.png');
 const t55 = require('./image/t55.png');
 const t56 = require('./image/t56.png');
 const t57 = require('./image/t57.png');
-const t59 = require('./image/t59.png');
+// const t59 = require('./image/t59.png');
 const t60 = require('./image/t60.png');
-
+const t61 = require('./image/t61.jpeg');
+const t62 = require('./image/t62.png');
+const t63 = require('./image/t63.jpeg');
+const t64 = require('./image/t64.jpeg');
+const t65 = require('./image/t65.jpeg');
+const t66 = require('./image/t66.jpg');
+const t67 = require('./image/t67.jpg');
 const data = [
   {title: 'Jack Lu',
     img: t1,
     url: 'https://www.linkedin.com/in/jack-lu-57995469/',
     position: 'Founder',
-    describe: `Graduated from Peking University and The Ohio State University. Blockchain entrepreneur and technical expert. Cofounded Factom in 2014. Founded Wanglutech, which brings Blockchain technology to a greater range of applications.`
   },
   {title: 'LI NI',
     img: t46,
-    url: '',
+    url: 'https://www.linkedin.com/in/ni-li-80708050/',
     position: 'Vice President',
-    describe: 'Graduated from Peking University with BA degree and acquired Master Degree of Science (MSc) in Computer Science with Distinction from University of Durham, UK. Over 15 years in IT business especially international experience in marketing, BD and sales. Before joining Wanchain, worked for ZTE Telecommunication, Delta Electronics and SuperMap Software as directors and principals in business teams. Currently vice president of Wanchain and Wanglu Tech for BD, marketing, PR and sales. Also served as IT consultant for FECC, Ministry of Agriculture (MOA) of China and Food and Agriculture Organization (FAO).'
   },
   {title: 'Oliver Birch',
     img: t33,
     url: 'https://www.linkedin.com/in/oliver-birch-08ba8a44/',
     position: 'Vice President of Global Communications',
-    describe: `Also known as 'machinayz', Oliver is currently Vice President Of Global Communications for Wanchain. After graduating from Lancaster University with BA (Hons) in Philosophy, Politics and Economics, he commenced his career in the pharmaceutical industry. He has managed several clinical research sites and was a project manager for several start-up companies with years of experience working in the altcoin crypto space community: advising, blogging and admin work.`
   },
   {title: 'Scott Trowbridge',
     img: t54,
     url: 'https://www.linkedin.com/in/scottbtrowbridge/',
     position: 'Director of Global Business Development',
-    describe: 'Scott has continued to invest and support various blockchain projects through strategic partnerships, investor relations and early-stage growth since 2014 with Ethereum.Currently supporting Wanchain’s global business development and WANLabs operations through strategic partnerships, investor relations and continual growth activities.Educated in Computer Science, Business & Marketing. 7+ years experience in technology organisations and startups. Experience project managing remote global business/project development teams. Expertise incubating early-stage projects from ideology to later stage growth.'
-  },
-  {title: 'Marcos Cunha',
-    img: t59,
-    url: 'https://www.linkedin.com/in/marcos3/',
-    position: 'Director of WanLabs Americas',
-    describe: `Marcos is in charge Wanchain's exclusive accelerator for FinTech start-ups that are looking to grow their companies in the preeminent blockchain ecosystem. Before joining Wanchain, Marcos founded several companies in the tech space, led development teams in building technology for enterprise clients, worked on Wall Street at Goldman Sachs and at various other Fortune 100 companies. Marcos has an MBA from Indiana University, an Engineering degree from Purdue University and a Fellowship from Stanford on Scaling Companies. He recently served as an Entrepreneur in Residence at Capital Factory/Google/Code2040 and as a Google Developers Expert for Growth. Marcos is an advisor to various companies and a mentor at Google's Pioneer Accelerator and University of Texas Longhorn Startup Lab.`
   },
   {title: 'Dynal Patel',
     img: t53,
-    url: '',
-    position: '',
-    describe: 'Accomplished executive with a strong track record of delivering innovative products and solutions to the market and developing market leading partner ecosystems. Leads the development and execution of strategic partnerships at Wanchain. Has over 15 years of management experience in leading technology and telecommunication companies such as Vodafone, Altran Technologies and Microsoft. Holds a PhD in Computer Science from the University of Cape Town and is a certified Project Management Professional.'
+    url: 'https://www.linkedin.com/in/dynalpatel/',
+    position: 'Vice President of Product',
   },
   {title: 'Dan Reecer',
     img: t60,
     url: 'https://www.linkedin.com/in/reecer',
     position: 'Director of Global Marketing',
-    describe: `Dan is joining Wanchain as Global Marketing Director based in Austin, TX. Before joining Wanchain, Dan was a brand marketer at Eli Lilly & Company in the pharmaceutical industry and worked on several multi-billion dollar brands in roles across U.S. and Global brand marketing, product pricing, and digital marketing technology. Dan graduated from Indiana University’s Kelley School of Business with a Bachelors in Information Systems and International Business and a Masters in Information Systems`
   },
   {title: 'Weijia Zhang',
     img: t2,
     position: 'Head of Engineering',
-    url: '',
-    describe: `
-    Weijia has published over 30 research/technical papers and is named as an inventor on 20 patents. He worked for 14 years at Dell as a software engineer and has a great deal of expertise in the area of network security. Weijia has a PhD in Physics and graduated from Tsinghua university in China.
-   `
+    url: 'https://www.linkedin.com/in/weijia-zhang-013b84153',
+  },
+  {title: 'Lizzie Lu',
+    img: t16,
+    url: 'https://www.linkedin.com/in/lizzielu/',
+    position: 'Marketing Manager',
+  },
+  {title: 'Edward Evenson',
+    img: t61,
+    position: 'Project Manager in Wanlabs and Global Business Development',
+    url: 'https://www.linkedin.com/in/edward-evenson-107b51132/',
+  },
+  {title: 'Bryan YE',
+    img: t49,
+    url: 'https://www.linkedin.com/in/bryanyewei',
+    position: 'Marketing Manager',
+  },
+  {title: 'Mark Tan',
+    img: t67,
+    url: 'https://www.linkedin.com/in/mark-tan-844ba798',
+    position: 'South East Asia Business Development Director',
+  },
+  {title: 'Noah Maizels',
+    img: t62,
+    position: 'Global Business Development and Marketing Manager',
+    url: 'https://www.linkedin.com/in/noah-maizels'
+  },
+  {title: 'Mimi Chu',
+    img: t55,
+    url: 'https://www.linkedin.com/in/mimi-chu-05511367',
+    position: 'Business Development Manager',
+  },
+  {title: 'Ruby Wang',
+    img: t56,
+    url: 'https://www.linkedin.com/in/ruby-wang-10742b91',
+    position: 'Marketing Manager',
   },
   {title: 'Ying Zhang',
     img: t3,
-    position: '',
-    url: '',
-    describe: `
-    Senior engineer from Huawei and served as CAO and CTO of several companies. A senior developer of Ethereum with a deep understanding of, and engineering experience with, blockchain architecture, smart contracts and consensus algorithms.`
+    position: 'Vice President of Development',
+    url: 'https://www.linkedin.com/in/zhang-ying-628406113/',
   },
-  {title: 'Michael Y.',
+  {title: 'Michael Yakubovich',
     img: t6,
-    position: '',
+    position: 'Senior Core Developer',
     url: '',
-    describe: 'Entered into the blockchain space in 2012, specializing in Bitcoin related development. Core developer of Master Coin, Omni and Factom.'
   },
   {title: 'Richard Zhang',
     img: t11,
-    url: '',
-    position: '',
-    describe: `More than 20 years of software development experience. Proficient in C/C++, Golang, Node.js, Java and other languages. Considerable expertise in block chain P2P networking, encryption algorithms and consensus algorithms.`
+    url: 'https://www.linkedin.com/in/lihua-zhang-a9b586174/',
+    position: 'Core Developer',
   },
   {title: 'Astro Sun',
     img: t29,
-    url: '',
-    position: '',
-    describe: 'Proficient in javascript, React, Angularjs and node. Mainly responsible for the development of the wallet.'
+    url: 'https://www.linkedin.com/in/%E9%9C%87-%E5%AD%99-725b45169/',
+    position: 'Senior Software Engineer (Front-End)',
   },
   {title: 'Boris Yang',
     img: t15,
     url: '',
     position: '',
-    describe: `Former senior financial consultant. Entered into the blockchain space in 2014.
-Considerable expertise in blockchain product design.
-Published various articles on blockchain and currency.`
   },
-  {title: 'Lizzie Lu',
-    img: t16,
-    url: 'https://www.linkedin.com/in/lizzielu/',
-    position: '',
-    describe: `Graduated from China Communication University. Years of television, magazine and press experience. Former marketing director at ZCODesign.
-An organizer in the blockchain community, affiliations and conferences.`
-  },
-  {title: 'Zhihui Liu',
+  {title: 'Liu Zhihui',
       img: t37,
-      url: '',
-      position: '',
-      describe: 'More than 10 years of software development experience. Good at developing languages such as C++ and golang. Most of the time engaged in the Internet industry. Having rich programming experience in network transmission, software optimization, distributed architecture and large concurrent.'
+      url: 'https://www.linkedin.com/in/LiuZhihui/',
+      position: 'Senior Software Engineer',
   },
-  {title: 'Mengfei Liu',
+  {title: 'Liu Mengfei',
       img: t39,
-      url: '',
-      position: '',
-      describe: '14 years of c++ developing experience, strong interest on python, golang, js, java. Believe in the cleanliness, simpleness of code. Have strong interest on the blockchain industry, and look forward to becoming a expert in blockchain.'
+      url: 'https://www.linkedin.com/in/%E5%AD%9F%E9%A3%9E-%E5%88%98-5787ab173/',
+      position: 'Senior Software Engineer',
   },
   {title: 'Gabriel Guo',
       img: t40,
-      url: '',
-      position: '',
-      describe: 'BS and MS in Electronic Engineering from Peking University. Proficient in C/C++, Python, Golang and Node.js. Considerable expertise in networking and encryption algorithms. 14 years of experience in software development.'
+      url: 'https://www.linkedin.com/in/wu-guo-1b660053/',
+      position: 'Research and Development Director',
   },
   {title: 'Aaron Zhan',
       img: t42,
-      url: '',
-      position: '',
-      describe: 'Graduated from Beijing Institute of Technology. Years of software development experience. Proficient in C/C++, python, shell. Employed at Alcatel, Nokia, etc. '
+      url: 'https://www.linkedin.com/in/li-zhan-1a9636b0/',
+      position: 'Senior Software Engineer',
   },
   {title: 'Sean Chai',
       img: t43,
-      url: '',
-      position: '',
-      describe: 'Proficient in java, javascript. Be in charge of  alliance chain and superstratum development.'
-  },
-  {title: 'Bryan YE',
-      img: t49,
-      url: '',
-      position: '',
-      describe: 'Graduated from Zhengzhou University with Master Degree of Science. Over 8 years of IT business  in international market. Previously worked at SuperMap Software as sales director and at APUS Group as BD manager.'
-  },
-  {title: 'Mimi Chu',
-    img: t55,
-    url: '',
-    position: '',
-    describe: 'Graduated from Aalborg University, Denmark with BSc and MSc degrees in Medialogy. Academic background in HCI and innovative design. Over 7 years in international marketing especially BD and project management. Lived in Denmark for 15 years and work in cross functional teams and international circumstance. Detail-oriented and structured in planning and implementation. Marathon runner.'
-  },
-  {title: 'Ruby Wang',
-    img: t56,
-    url: '',
-    position: '',
-    describe: 'Graduated from Beijing University of Chemical Technology with Master degree of Chemical Engineering. 4 years of general industry in marketing and consulting experience. Love playing Guqin and Yoga in spare time.'
+      url: 'https://www.linkedin.com/in/seanchai-9277ab173',
+      position: 'Senior Software Engineer (Front-End)',
   },
   {title: 'Sonia Xu',
-    img: t57,
-    url: '',
-    position: '',
-    describe: 'Graduated from Peking University, China with Bachelor in HR management. Over 6 years in Human Resource industry, specialized in HR management and event planning. Strong communication skills and good understanding of client\'s needs, especially in Chinese market. She is curious about new challenges, and loves cooking and enjoys the process from 0 to completion.'
-  },
-  {title: 'Qinggang Jia',
-      img: t51,
+      img: t57,
       url: '',
-      position: '',
-      describe: 'Gradudated from Chinese Academy of Sciences. More than 15 years software development experience. Experience in Java card, N3 card VM development and related crypto library implementation. Worked at Oracle, Watchdata, Gameloft, etc.'
+      position: 'Marketing Manager',
+  },
+  {title: 'Jia Qinggang',
+      img: t51,
+      url: 'https://www.linkedin.com/in/qinggang-jia-074757131/',
+      position: 'Senior Software Engineer',
   },
   {title: 'Anson Lee',
       img: t52,
-      url: '',
-      position: '',
-      describe: 'MS in Telecom Engineering from RWTH-AACHEN University, Germany Served as a senior software developer in Ericsson, Huawei and some startups. Anson is a CPA, blockchain enthusiast, Go and JavaScript developer.'
+      url: 'https://www.linkedin.com/in/fanghua-li-851203162/',
+      position: 'Senior Software Engineer (Smart Contract Expert)',
+  },
+  {title: 'Scott Brasfield',
+      img: t65,
+      url: 'https://www.linkedin.com/in/scott-brasfield-32bb87a5/',
+      position: 'Business Development Manager'
+  },
+  {title: 'Michael A.',
+      img: t63,
+      url: 'https://www.linkedin.com/in/map01/',
+      position: 'Business Development Manager'
+  },
+  {title: 'Matthew Kenahan',
+      img: t64,
+      url: 'https://www.linkedin.com/in/matthewkenahan/',
+      position: 'Business Development Manager'
+  },
+  {title: 'Jacky Wang',
+      img: t66,
+      url: 'https://www.linkedin.com/in/jacky-wang-776458173/',
+      position: 'Business Director'
   },
 ];
-
-
 export default data;

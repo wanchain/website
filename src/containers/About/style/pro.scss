@@ -100,6 +100,15 @@
   }
   .aboutTitleDiv{
     text-align: center;
+    height: 280px;
+    width:90%;
+    border:1px solid #eee;
+    display:inline-block;
+    margin:22px 22px;
+    .title{
+      margin-top:20px;
+      border-radius:50%
+    }
     //padding-top: 30px;
     h4{
       display: block;
@@ -128,7 +137,16 @@
 
   .aboutTitleDiv2{
     text-align: center;
+    height: 280px;
+    width:90%;
     //padding-top: 30px;
+    border:1px solid #eee;
+    display:inline-block;
+    margin:22px 22px;
+    .title{
+      margin-top:20px;
+      border-radius:50%
+    }
     h4{
       display: block;
       //padding-top: 10px;
