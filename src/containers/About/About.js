@@ -50,7 +50,7 @@ class About extends Component {
                                   <img className={styles.title} src={value.img}></img>
                                   <h4>{value.title}</h4> 
                                   <h4><small>{value.position}</small></h4> 
-                                  {value.url ? <a href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <img src={In} ></img> : <img src={other}></img>}</a> : '' }
+                                  {value.url ? <a href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <img src={In} className={styles.link}></img> : <img src={other} className={styles.link}></img>}</a> : '' }
                               </div>
                           );
                         })
@@ -69,7 +69,7 @@ class About extends Component {
                                   <img className={styles.title} src={value.img}></img>
                                   <h4>{value.title}</h4> 
                                   <h4><small>{value.position}</small></h4> 
-                                  {value.url ? <a href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <img src={In}></img> : <img src={other}></img>}</a> : '' }
+                                  {value.url ? <a href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <img className={styles.link} src={In}></img> : <img className={styles.link} src={other}></img>}</a> : '' }
                               </div>
                           );
                         })
