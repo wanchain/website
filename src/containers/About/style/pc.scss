@@ -99,8 +99,10 @@
   }
   .aboutTitleDiv{
     .title{
-      margin-top:20px;
       border-radius:50%
+    }
+    img{
+      margin-top:20px;
     }
     .link{
       width:24px;
@@ -109,18 +111,17 @@
     text-align: center;
     height: 280px;
     width:28%;
-    border:3px solid #eee;
-    box-shadow: 1px 1px 5px #888888;
+    box-shadow: 0 1px 3px 0 rgba(63,63,68,.15);
     display:inline-block;
     margin:22px 22px;
-    
+
     //padding-top: 30px; 
     h4{
       display: block;
       //padding-top: 10px;
       //padding-bottom: 10px;
       font-size: 18px;
-     
+
       color: #153259;
       small{
         padding-left: 4px;
@@ -146,17 +147,18 @@
     text-align: center;
     height: 280px;
     width:28%;
-    border:3px solid #eee;
-    box-shadow: 1px 1px 5px #888888;
+    box-shadow: 0 1px 3px 0 rgba(63,63,68,.15);
     display:inline-block;
     margin:22px 22px;
     .title{
-      margin-top:20px;
       border-radius:50%
     }
     .link{
       width:24px;
       height:24px;
+    }
+    img{
+      margin-top:20px;
     }
     //padding-top: 30px;
     h4{

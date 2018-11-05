@@ -4,3 +4,25 @@
 @import './style/pc';
 @import './style/mobile';
 
+.linkIn{
+  width:24px;
+  height:24px;
+  display: inline-block;
+  background: url("./image/in.png") no-repeat center center;
+  background-size: 100%;
+}
+.linkIn:hover{
+  background: url("./image/inBlue.png") no-repeat center center;
+  background-size: 100%;
+}
+.linkOther{
+  width:24px;
+  height:24px;
+  display: inline-block;
+  background: url("./image/other.png") no-repeat center center;
+  background-size: 100%;
+}
+.linkOther:hover{
+  background: url("./image/otherBlue.png") no-repeat center center;
+  background-size: 100%;
+}
