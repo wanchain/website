@@ -49,7 +49,7 @@ class About extends Component {
                                   <img className={styles.title} src={value.img}></img>
                                   <h4>{value.title}</h4>
                                   <h4><small>{value.position}</small></h4>
-                                  {value.url ? <a href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <em className={styles.linkIn}></em> : <em className={styles.linkOther}></em>}</a> : '' }
+                                  {value.url ? <a className={styles.icoA} href={value.url} target="_blank">{value.url.startsWith(isLinkedIn) ? <em className={styles.linkIn}></em> : <em className={styles.linkOther}></em>}</a> : '' }
                               </div>
                           );
                         })
