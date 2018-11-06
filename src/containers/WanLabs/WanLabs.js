@@ -53,7 +53,7 @@ class WanLabs extends Component {
       const server5 = require('./image/icon5.png');
       const server6 = require('./image/icon6.png');
       const linBg = require('./image/linBg.png');
-      const prjctLogo1 = require('./image/prjctLogo1.png');
+    //   const prjctLogo1 = require('./image/prjctLogo1.png');
       const prjctLogo2 = require('./image/prjctLogo2.png');
       const prjctLogo3 = require('./image/prjctLogo3.png');
       const prjctLogo4 = require('./image/prjctLogo4.png');
@@ -216,7 +216,7 @@ class WanLabs extends Component {
                   </div>
                   <div className={styles.projectsCont}>
                       <ul className={styles.projectsLogoUl}>
-                          <li><a href="https://www.allsparkchain.com/" target="_blank"><img src={prjctLogo1} className={styles.prjctLogo1} /></a></li>
+                          {/* <li><a href="https://www.allsparkchain.com/" target="_blank"><img src={prjctLogo1} className={styles.prjctLogo1} /></a></li> */}
                           <li><a href="https://www.freedium.io/" target="_blank"><img src={prjctLogo2} className={styles.prjctLogo2} /></a></li>
                           <li><a href="https://cryptocurve.io/" target="_blank"><img src={prjctLogo3} className={styles.prjctLogo3} /></a></li>
                           <li><a href="http://www.thachain.org/" target="_blank"><img src={prjctLogo4} className={styles.prjctLogo4} /></a></li>
