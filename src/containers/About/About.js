@@ -38,7 +38,7 @@ class About extends Component {
 
                 <div className={styles.aboutBody + ' container'}>
                     <div className={styles.aboutTitle}>
-                        <h1>{language === 'zn' ? '核心团队' : 'Wanchain Team'}</h1>
+                        <h1>{language === 'zn' ? '领导团队' : ' Leadership Team'}</h1>
                     </div>
 
                     <div className={styles.aboutTeam + ' col-lg-12'}>
