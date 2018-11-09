@@ -1,24 +1,14 @@
-// const t16 = require('./image/16.png');
-const t17 = require('./image/17.png');
 const t18 = require('./image/18.png');
-// const t19 = require('./image/19.png');
 const t20 = require('./image/20.png');
 const t21 = require('./image/21.png');
 const t22 = require('./image/22.png');
-const t23 = require('./image/23.png');
 const t24 = require('./image/t24.png');
 const t26 = require('./image/26.png');
 const t27 = require('./image/27.png');
 const t28 = require('./image/28.png');
 const t30 = require('./image/t30.png');
-const t58 = require('./image/t58.png');
 
 const data = [
-    {title: 'Feng Han',
-        img: t17,
-        url: 'https://www.8btc.com/author/4989',
-        position: 'Secretary-General of DACA'
-    },
     {title: 'David A. Johnston',
         img: t18,
         url: 'https://www.linkedin.com/in/davidajohnston/',
@@ -44,11 +34,6 @@ const data = [
         url: 'https://www.linkedin.com/in/博-蓝-434504132/',
         position: 'Chairman of North America Blockchain Association(NABA)'
     },
-    {title: 'Loi Lu',
-        img: t58,
-        url: 'https://www.linkedin.com/in/loiluu/',
-        position: 'CEO and CoFounder of Kyber Network'
-    },
     {title: 'Gang Wu',
         img: t26,
         url: 'https://www.hibtc.org/6995.html',
@@ -64,11 +49,6 @@ const data = [
         url: 'http://www.caict.ac.cn/english/',
         position: 'Research Fellow, China Information and Communication Research Institute(CAICT)'
     },
-    {title: 'Pitinan Kooarmornpatana',
-        img: t23,
-        url: 'https://www.linkedin.com/in/pitinan/',
-        position: 'DIGITALPASS Co., Ltd. Managing Partner'
-    },  
     {title: 'Zhong Chen',
         img: t27,
         url: 'https://wapbaike.baidu.com/item/%E9%99%88%E9%92%9F/13839177?fr=aladdin',
