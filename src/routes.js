@@ -19,8 +19,8 @@ import {
     // WhiteForm,
   } from 'containers';
 
-import Table from './containers/LoginSuccess/Table';
-import Add from './containers/LoginSuccess/Add';
+// import Table from './containers/LoginSuccess/Table';
+// import Add from './containers/LoginSuccess/Add';
 
 export default () => {
   // const requireLogin = (nextState, replace, cb) => {
@@ -54,8 +54,8 @@ export default () => {
         {/* <Route path="table" component={Table}/> */}
         {/* <Route path="add" component={Add}/> */}
       {/* </Route> */}
-        <Route path="table" component={Table}/>
-        <Route path="add" component={Add}/>
+        {/* <Route path="table" component={Table}/>
+        <Route path="add" component={Add}/> */}
 
       { /* Routes */ }
       <Route path="about" component={About}/>
