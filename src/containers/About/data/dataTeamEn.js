@@ -58,7 +58,7 @@ const data = [
   {title: 'James Zhu',
     img: t69,
     position: 'Director of Engineering',
-    url: '',
+    url: 'https://www.linkedin.com/in/jameszhu1976/',
   },
   {title: 'Gabriel Guo',
     img: t40,
