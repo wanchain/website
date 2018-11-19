@@ -116,7 +116,7 @@ class Navigation extends Component {
                             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
                             <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li>
-                            <li><Link to="/wanlabs" onClick={this.getNav.bind(this)}>WanLabs</Link></li>                            
+                            {/* <li><Link to="/wanlabs" onClick={this.getNav.bind(this)}>WanLabs</Link></li>                             */}
                         </ul>
                     </div>
                     }
@@ -144,7 +144,7 @@ class Navigation extends Component {
                             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
                             <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li>
-                            <li><Link to="/wanlabs">WanLabs</Link></li>
+                            {/* <li><Link to="/wanlabs">WanLabs</Link></li> */}
                         </ul>
                     </div>
                     }
