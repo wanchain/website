@@ -32,7 +32,7 @@ const conConfig = {
     },
     part4: {
       zn: 'ICO tokens销售开始，发布万维链测试网络',
-      en: 'ICO crowd funding'
+      en: 'Fundraising'
     },
     part5: {
       zn: '万维链1.0上线，实现万维链钱包及带隐私保护的智能合约功能，WAN Coin发行',
