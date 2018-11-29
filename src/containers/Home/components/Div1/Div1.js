@@ -152,7 +152,7 @@ class Div1 extends React.Component {
                   <li style={clear}>
                     <img src={vision3} />
                     <p>New Opportunities</p>
-                    <span>Tell your local banker to stop focusing on repairing finance and their bottom line. Instead create banking applications and services for the digital economy, #rebuildFinance, expand top-line revenue, & change the world</span>
+                    <span>We believe our blockchain finance platform will not only unlock opportunities for blockchain companies, but also for traditional financial institutions building bridges to the new digital economy.</span>
                   </li>
                   <li>
                     <img src={vision4} />

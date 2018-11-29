@@ -26,7 +26,7 @@ class Div2 extends React.Component {
                 <div className={language === 'zn' ? styles.div1oHeader : styles.div1oHeaderEn + ' container'}>
                     <h2>
                       <hr className={styles.div1HeaderImg}/>
-                      <span>{language === 'zn' ? '万维链应用场景' : 'APPLICATION SCENARIOS'}</span>
+                      <span>{language === 'zn' ? '万维链应用场景' : 'Potential Use Cases for Wanchain'}</span>
                       <hr className={styles.div1HeaderImg}/>
                     </h2>
                     <div className={styles.div1oBody}>
@@ -52,7 +52,7 @@ class Div2 extends React.Component {
                                 <ul>
                                     <img src={pot}/><li>Exchange the world's digital assets on-chain</li>
                                     <img src={pot}/><li>Transact using Wanchain's multi-asset wallet</li>
-                                    <img src={pot}/><li>Build decentralized exchange applications like Ether Delta with protocol tokens</li>
+                                    <img src={pot}/><li>Build decentralized exchange applications with protocol tokens</li>
                                 </ul>
                             }
                         </div>
@@ -93,7 +93,7 @@ class Div2 extends React.Component {
                                 {language === 'zn' ?
                                     <p>多币种ICO<br/><small>众筹</small></p>
                                 :
-                                    <p id={styles.div1oP4}><small>ICO</small><br/>Platform</p>
+                                    <p id={styles.div1oP4}><small>Cross-chain</small><br/>dApps</p>
                                 }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
@@ -105,9 +105,9 @@ class Div2 extends React.Component {
                                 </ul>
                             :
                                 <ul>
-                                    <img src={pot}/><li>Streamlined process to launch ICO</li>
-                                    <img src={pot}/><li>Access to Wanchain's exuberant community</li>
-                                    <img src={pot}/><li>Collect funds from multiple assets</li>
+                                    <img src={pot}/><li>Leverage our interoperability for added liquidity</li>
+                                    <img src={pot}/><li>Build on Wanchain or add cross-chain to any existing dApp</li>
+                                    <img src={pot}/><li>Access to BTC for Ethereum-based dApps</li>
                                 </ul>
                             }
                         </div>
