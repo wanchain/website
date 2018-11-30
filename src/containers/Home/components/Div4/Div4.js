@@ -48,7 +48,7 @@ class Div4 extends React.Component {
                           <h2>{language === 'zn' ? '通用跨链协议' : 'CROSS-CHAIN'}</h2>
                           <p>{language === 'zn' ? conConfig.HomeDiv4.part2.zn : conConfig.HomeDiv4.part2.en}</p>
                           <ul>
-                            <li>-> Locked accounts with Secure Multi-Party Compute (SMPC)</li>
+                            <li>-> Locked accounts with Secure Multi-Party Computation (SMPC)</li>
                             <li>-> Support for all ERC20 and protocol tokens</li>
                           </ul>
                       </div>

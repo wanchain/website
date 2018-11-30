@@ -140,7 +140,7 @@ export default class Home extends Component {
                             <span className={styles.blueLine}></span>
                           </div>
                           <p className={styles.bannertextP}>THE WORLD'S <span className={styles.bannertextSpan}>FIRST AND ONLY</span> INTEROPERABLE BLOCKCHAIN </p>
-                          <p className={styles.bannertextP}>WITH SECURE MULTI-PARTY COMPUTING</p>
+                          <p className={styles.bannertextP}>WITH SECURE MULTI-PARTY COMPUTATION</p>
                         </div>
                         <div id="link" onClick={this.videoCon.bind(this)} className={styles.videoBtn}>
                             <span>WATCH VIDEO</span>
