@@ -164,8 +164,7 @@
   }
   .Newsletter{
     width:69px;
-    margin-left: 620px;
-    margin-top: -71px;
+    float: left;
     a{
       img{
         width: 53px;
@@ -180,8 +179,8 @@
   }
   .GitHub{
     width: 69px;
+    float: left;
     position: relative;
-    margin-left: 550px;
     a{
       img{
         width: 53px;

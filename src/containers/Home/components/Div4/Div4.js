@@ -40,9 +40,9 @@ class Div4 extends React.Component {
                       {clientWidth > 1025 ? '' : <img src={part1} id="div3img1" className={styles.div3img1}/>}
                   </div>
               </div>
-              </div>
+            </div>
 
-              <div className={clientWidth < 1025 ? styles.officalModule3 : styles.officalModule4}>
+              <div style={{background: '#f7fafe'}} className={styles.offBg + clientWidth < 1025 ? styles.officalModule3 : styles.officalModule4}>
                   <div className="container">
                       <div className={clientWidth < 1025 ? styles.officalModule3Div : styles.officalModule4Div + ' col-lg-7'}>
                           <h2>{language === 'zn' ? '通用跨链协议' : 'CROSS-CHAIN'}</h2>
