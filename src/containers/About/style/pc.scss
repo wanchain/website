@@ -2,8 +2,9 @@
   .aboutDiv {
     position: relative;
     margin-top: 25px;
-    background: #fff;
-
+    // background: #fff;
+    background: #06102e;
+  
     .aboutHeader{
       padding-top: 0;
       position: relative;
@@ -99,6 +100,7 @@
     margin-bottom: 60px;
   }
   .aboutTitleDiv{
+    background: #ffffff;
     .title{
       border-radius:50%
     }
@@ -134,6 +136,7 @@
 
   .aboutTitleDiv2{
     text-align: center;
+    background: #ffffff;
     height: 280px;
     width:28%;
     box-shadow: 0 1px 3px 0 rgba(63,63,68,.15);

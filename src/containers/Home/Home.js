@@ -15,7 +15,6 @@ import Div2 from './components/Div2/Div2';
 import Div3 from './components/Div3/Div3';
 import Div4 from './components/Div4/Div4';
 import Div6 from './components/Div6/Div6';
-import Div8 from './components/Div8/Div8';
 
 @connect(
     state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, titleState: state.auth.titleState,
@@ -98,7 +97,6 @@ export default class Home extends Component {
     const github = require('./image/github.png');
     const github2 = require('./image/icoLog4.png');
 
-    const videpIco = require('./image/videoIco.png');
     const Telegram = require('./image/Telegram.png');
     const Reddit = require('./image/Reddit.png');
     const Twitter = require('./image/Twitter.png');
@@ -134,17 +132,15 @@ export default class Home extends Component {
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
                         <div>
-                          <p className={styles.bannerTitle}>WANCHAIN 2.0 IS LIVE</p>
+                          <p className={styles.bannerTitle}>WANCHAIN 3.0 IS LIVE</p>
                           <div className={styles.bannerLine}>
                             <span className={styles.greenLine}></span>
                             <span className={styles.blueLine}></span>
                           </div>
-                          <p className={styles.bannertextP}>THE WORLD'S <span className={styles.bannertextSpan}>FIRST AND ONLY</span> INTEROPERABLE BLOCKCHAIN </p>
-                          <p className={styles.bannertextP}>WITH SECURE MULTI-PARTY COMPUTATION</p>
+                          <p className={styles.bannertextP}>CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC20S</p>
                         </div>
                         <div id="link" onClick={this.videoCon.bind(this)} className={styles.videoBtn}>
-                            <span>WATCH VIDEO</span>
-                            <img src={videpIco} className={styles.videpIco} />
+                            <span>READ MORE</span>
                         </div>
                         <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>
                           <div className={styles.videoshade} onClick={this.videoCon.bind(this)}></div>
@@ -168,7 +164,7 @@ export default class Home extends Component {
             <Div1/>
             <Div2/>
             <Div3/>
-            <Div8/>
+            {/* <Div8/> */}
             <Div4/>
             <Div6/>
         </div>

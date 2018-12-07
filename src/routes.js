@@ -10,12 +10,12 @@ import {
     NotFound,
     // IcoNotice,
     Crowdsale,
-    Career,
+    // Career,
     Product,
-    Events,
-    WanLabs,
-    Apply,
-    LabCareer,
+    // Events,
+    // WanLabs,
+    // Apply,
+    // LabCareer,
     // WhiteForm,
   } from 'containers';
 
@@ -60,11 +60,11 @@ export default () => {
       { /* Routes */ }
       <Route path="about" component={About}/>
        <Route path="tokensale" component={Crowdsale}/>
-        <Route path="career" component={Career}/>
+        {/* <Route path="career" component={Career}/> */}
         {/* <Route path="whitelist" component={WhiteForm}/> */}
 
-        <Route path="product" component={Product}/>
-        <Route path="events" component={Events}/>
+        <Route path="products" component={Product}/>
+        {/* <Route path="events" component={Events}/> */}
         {/* <Route path="wanlabs" component={WanLabs}/> */}
         {/* <Route path="wanlabs/apply" component={Apply}/> */}
         {/* <Route path="wanlabs/career" component={LabCareer}/> */}

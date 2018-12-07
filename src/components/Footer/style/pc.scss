@@ -144,12 +144,12 @@
   .wechat{
     display: none;
     left: -25px;
-    top: -150px!important;
+    top: -120px!important;
   }
 
   .qq{
     display: none;
-    right: -35px;
+    right: -25px;
     top: -151px !important;
   }
   .footMenu{
@@ -165,6 +165,9 @@
   .Newsletter{
     width:69px;
     float: left;
+
+    // margin-left: 620px;
+    // margin-top: -71px;
     a{
       img{
         width: 53px;

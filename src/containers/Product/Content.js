@@ -121,6 +121,27 @@ class Content extends Component {
               <b>31. </b>These Terms shall be governed by and construed in accordance with Singapore law. You submit to the exclusive jurisdiction of the Singapore courts with regards to all proceedings relating to this these Terms and any of your dealings in the WAN ERC-20 tokens and WAN. Nothing herein shall limit the right of Wanchain to bring proceedings against you or your assets in the courts of any other jurisdiction.
             </div>
           </div>
+          <div className={styles.TableDiv}>
+            <h6>Please verify downloaded file's data integrity with SHA256 checksum tools</h6>
+             <table>
+               <tr>
+                 <th>File Name</th>
+                 <th>Checksum (SHA256)</th>
+               </tr>
+               <tr>
+                 <td>WanWalletGui-installer-3.0.23.exe</td>
+                 <td>8a815bae39024a8feaf3f587fe71afbc4e23953ca589e927fca8b0bfe403c1c2</td>
+               </tr>
+               <tr>
+                 <td>WanWalletGui-linux64-3.0.23.deb</td>
+                 <td>8e246c43dd2b711b4e172c7f76a06c7178f9c16ff5ecc6b7ebc9777d4f8640f2</td>
+               </tr>
+               <tr>
+                 <td>WanWalletGui-mac-3.0.23.zip</td>
+                 <td>1f4163bf1b9a0716a2c893c3d72b06fe3efa901881291463952db7088159ea87</td>
+               </tr>
+             </table>
+          </div>
           <a onClick={this.props.isPopFunc} href={this.props.download} target="_blank">Got it</a>
         </div>
       </div>

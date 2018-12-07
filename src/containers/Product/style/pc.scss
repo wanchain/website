@@ -1,4 +1,27 @@
 @media screen and (min-width: 1025px) {
+  .TableDiv{
+    h6{
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    table{
+      width: 100%;
+      border-right:none;
+      border: 1px solid #dfe2e5;
+      th{ 
+        text-align: center;
+        border-right: 1px solid #dfe2e5;
+        border-bottom: 1px solid #dfe2e5;
+      }
+      td{
+        border-bottom: 1px solid #dfe2e5;
+        border-right: 1px solid #dfe2e5;
+        line-height: 30px;
+        padding-left: 20px;
+      }
+    }
+  }
   .homeDiv {
     height:100px;
     position: relative;
@@ -246,7 +269,7 @@
       }
     }
     .bannerLeft{
-      width: 480px;
+      width: 500px;
       float: left;
       margin-top: 60px;
       position: relative; z-index: 2;
@@ -366,7 +389,7 @@
         width: 100%; height: 100%; background: #000; opacity: .5; position: fixed; top: 0; left: 0; z-index: 6;
       }
       .aggreePopBox{
-         text-align: center; background: #fff; border-radius: 5px; padding: 30px 40px 20px 40px!important; width: 1000px; margin-top: -343px; margin-left: -480px; display: inline-block; position: fixed; top: 50%; left: 50%; z-index: 999;
+         text-align: center; background: #fff; border-radius: 5px; padding: 30px 40px 20px 40px!important; width: 1000px; margin-top: -401px; margin-left: -480px; display: inline-block; position: fixed; top: 50%; left: 50%; z-index: 999;
         h1{
           font-size: 22px; color: #484848; text-align: center; padding-bottom: 20px;
           em{

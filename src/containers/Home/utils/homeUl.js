@@ -50,7 +50,7 @@ export function homeUlEn(styles, style) {
         <div className={styles} id="navbar-menu" style={style}>
             <ul>
                 {/* <li><IndexLink to="/">Home</IndexLink></li> */}
-                <li><Link to="/product">Product</Link></li>
+                <li><Link to="/products">Products</Link></li>
                 {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
                 {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
@@ -59,10 +59,10 @@ export function homeUlEn(styles, style) {
                 <li><a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a></li>
                 
                 <li><Link to="/about">Team</Link></li>
-                <li><Link to="/career">Career</Link></li>
+                {/* <li><Link to="/career">Career</Link></li> */}
                 <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
                 <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
-                <li><Link to="/events">Events</Link></li>
+                {/* <li><Link to="/events">Events</Link></li> */}
                 {/* <li><Link to="/wanlabs">WanLabs</Link></li> */}
             </ul>
         </div>
@@ -74,7 +74,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
     <div className={styles} id="navbar-menu" style={style}>
         <ul>
             {/* <li><IndexLink to="/">Home</IndexLink></li> */}
-            <li><Link to="/product">Product</Link></li>
+            <li><Link to="/products">Products</Link></li>
             {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
             {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
             <li>
@@ -89,10 +89,10 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
                 </div>
             </li>
             <li><Link to="/about">Team</Link></li>
-            <li><Link to="/career">Career</Link></li>
+            {/* <li><Link to="/career">Career</Link></li> */}
             <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
             <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
-            <li><Link to="/events">Events</Link></li>
+            {/* <li><Link to="/events">Events</Link></li> */}
             {/* <li><Link to="/wanlabs">WanLabs</Link></li> */}
         </ul>
     </div>

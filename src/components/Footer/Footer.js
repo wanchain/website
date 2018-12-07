@@ -111,7 +111,7 @@ class Footer extends React.Component {
       const gitHub = require('./image/gitHub.png');
 
       const wecater = require('./image/wecatZn.png');
-      const wecaterEn = require('./image/wecatEn.png');
+      const wecaterEn = require('./image/wechatEn.jpg');
       const qqer = require('./image/qqer.png');
       const tm = require('./image/tm.png');
       const newsletter = require('./image/Newsletter.png');

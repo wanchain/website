@@ -111,7 +111,7 @@ class Div1 extends React.Component {
       const {language, clientWidth} = this.props;
       const div1Img = require('../../image/div1.png');
       const div1En = require('../../image/div1EnPc.png');
-      const div1EnPc = require('../../image/div1EnPc.png');
+      const div1EnPc = require('../../image/div1EnPc.jpg');
       const styles = require('./Div1.scss');
       const vision1 = require('../../image/vision1.png');
       const vision2 = require('../../image/vision2.png');

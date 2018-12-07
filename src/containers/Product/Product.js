@@ -130,20 +130,20 @@ class Product extends Component {
         <div className={styles.proCont}>
           <div className={styles.bannerLeft}>
             <img className={styles.bannBg} src={bannBg} />
-            <h1>WAN WALLET</h1>
+            <h1>WANCHAIN WALLET</h1>
             <h3>TRANSFER YOUR ASSETS WITH PRIVACY PROTECTION</h3>
             <ul className={styles.leftUl}>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>WAN wallet helps you manage different digital assets including WAN and other cryptocurrencies on Wanchain</span>
+                <span>Wanchain Wallet helps you manage different digital assets including WAN, BTC, ETH and other cryptocurrencies on Wanchain</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>You can transfer your assets either the traditional way (public transactions) or in private (stealth transactions)</span>
+                <span>You can transfer your WAN assets either the traditional way (public transactions) or in private (stealth transactions)</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>Wan Wallet now supports cross-chain transactions with Ethereum and will support more cryptocurrencies in future versions</span>
+                <span>Wanchain Wallet now supports cross-chain transactions with Bitcoin, Ethereum, ERC20 tokens and will support more cryptocurrencies in future versions</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
@@ -160,7 +160,7 @@ class Product extends Component {
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div> */}
              <div className={styles.downloadBoxBan}>
-              <h2>Download Wanwallet 2.1.2</h2>
+              <h2>Download Wanchain Wallet for your platform</h2>
               <ul>
                 <li onClick={(event) => this.popContent('win2', event)}><img src={win}/></li>
                 <li onClick={(event) => this.popContent('mac2', event)}><img src={mac}/></li>
@@ -169,7 +169,7 @@ class Product extends Component {
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div>
              <a href="https://github.com/wanchain/go-wanchain/wiki/Wanwallet-2.0-Cross-chain-transactions" className={styles.downloadManual}>
-                <img className={styles.banDownL} src={banDownL}/> <span>Instruction manual for cross-chain</span>
+                <img className={styles.banDownL} src={banDownL}/> <span>Instruction manual for cross-chain transactions</span>
              </a>
           </div>
           <div className={styles.bannerRight}>
