@@ -139,15 +139,15 @@ export default class Home extends Component {
                           </div>
                           <p className={styles.bannertextP}>CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC20S</p>
                         </div>
-                        <div id="link" onClick={this.videoCon.bind(this)} className={styles.videoBtn}>
-                            <span>READ MORE</span>
+                        <div id="link" className={styles.videoBtn}>
+                            <a href="https://medium.com/wanchain-foundation" target="_blank" className={styles.read}>READ MORE</a>
                         </div>
-                        <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>
+                        {/* <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>
                           <div className={styles.videoshade} onClick={this.videoCon.bind(this)}></div>
                           <div>
                               <video ref="video" width="750px" className={styles.videoBox} src={config.app.files.wanchain2} controls preload></video>
                           </div>
-                        </div>
+                        </div> */}
                         <div className={styles.bannerShare}>
                             <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram}/></a>
                             <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={Reddit}/></a>
