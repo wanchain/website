@@ -110,21 +110,13 @@ class Div1 extends React.Component {
     render() {
       const {language, clientWidth} = this.props;
       const div1Img = require('../../image/div1.png');
-      const div1En = require('../../image/div1EnPc.jpg');
-      const div1EnPc = require('../../image/div1EnPc.jpg');
+      const div1EnPc = require('../../image/div1EnPc.png');
       const styles = require('./Div1.scss');
       const vision1 = require('../../image/vision1.png');
       const vision2 = require('../../image/vision2.png');
       const vision3 = require('../../image/vision3.png');
       const vision4 = require('../../image/vision4.png');
       const clear = {clear: 'both'};
-
-      let imgEn;
-      if ( Number(clientWidth) >= 320 && Number(clientWidth) <= 767) {
-        imgEn = div1En;
-      } else {
-        imgEn = div1EnPc;
-      }
 
       return (
         <div>
@@ -135,7 +127,7 @@ class Div1 extends React.Component {
                 <hr className={styles.div1HeaderImg}/>
               </h2>
               <div className={styles.div1HeaderImg2} id="div1HeaderImg2">
-                <img src={language === 'zn' ? div1Img : imgEn} />
+                <img src={language === 'zn' ? div1Img : div1EnPc} />
               </div>
               <div className={styles.divTextContent}>
                 <ul>

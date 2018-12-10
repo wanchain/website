@@ -60,12 +60,12 @@ class Product extends Component {
     }
   }
   popContent(urlData) {
-    if (urlData === 'win2') {
-      this.setState({download: '/download/winwallet2'});  
-    } else if (urlData === 'mac2') {
-      this.setState({download: '/download/macwallet2'});
-    } else if (urlData === 'linux2') {
-      this.setState({download: '/download/linwallet2'});
+    if (urlData === 'win3') {
+      this.setState({download: '/download/winwallet3'});  
+    } else if (urlData === 'mac3') {
+      this.setState({download: '/download/macwallet3'});
+    } else if (urlData === 'linux3') {
+      this.setState({download: '/download/linwallet3'});
     }
     if (this.state.pop === 'true') {
       this.setState({
@@ -162,13 +162,13 @@ class Product extends Component {
              <div className={styles.downloadBoxBan}>
               <h2>Download Wanchain Wallet for your platform</h2>
               <ul>
-                <li onClick={(event) => this.popContent('win2', event)}><img src={win}/></li>
-                <li onClick={(event) => this.popContent('mac2', event)}><img src={mac}/></li>
-                <li onClick={(event) => this.popContent('linux2', event)}><img src={Glinux}/></li>
+                <li onClick={(event) => this.popContent('win3', event)}><img src={win}/></li>
+                <li onClick={(event) => this.popContent('mac3', event)}><img src={mac}/></li>
+                <li onClick={(event) => this.popContent('linux3', event)}><img src={Glinux}/></li>
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div>
-             <a href="https://github.com/wanchain/go-wanchain/wiki/Wanwallet-2.0-Cross-chain-transactions" className={styles.downloadManual}>
+             <a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet%20GUI%203.0%20mainnet.pdf" className={styles.downloadManual}>
                 <img className={styles.banDownL} src={banDownL}/> <span>Instruction manual for cross-chain transactions</span>
              </a>
           </div>

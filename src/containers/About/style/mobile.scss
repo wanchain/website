@@ -1,8 +1,8 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .aboutDiv {
     position: relative;
-    margin-top: 25px;
-
+    // margin-top: 25px;
+    background: #F5F5F5;
     .aboutHeader{
       padding-top: 0;
       position: relative;
@@ -96,6 +96,7 @@
     }
 
     .aboutTitleDiv{
+      background: #ffffff;
       box-shadow: 0 1px 3px 0 rgba(63,63,68,.15);
       display:inline-block;
       width: 250px;
@@ -139,6 +140,7 @@
     }
 
     .aboutTitleDiv2{
+      background: #ffffff;
       text-align: center;
       padding-top: 20px;
       box-shadow: 0 1px 3px 0 rgba(63,63,68,.15);

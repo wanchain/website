@@ -129,16 +129,16 @@ class Content extends Component {
                  <th>Checksum (SHA256)</th>
                </tr>
                <tr>
-                 <td>WanWalletGui-installer-3.0.23.exe</td>
-                 <td>8a815bae39024a8feaf3f587fe71afbc4e23953ca589e927fca8b0bfe403c1c2</td>
+                 <td>WanWalletGui-installer-3.0.25.exe</td>
+                 <td>15c7a40ff47e9a521e0e677df66e55c0e0f6ea6e527cc2dcc150f3caa1d90a2e </td>
                </tr>
                <tr>
-                 <td>WanWalletGui-linux64-3.0.23.deb</td>
-                 <td>8e246c43dd2b711b4e172c7f76a06c7178f9c16ff5ecc6b7ebc9777d4f8640f2</td>
+                 <td>WanWalletGui-mac-3.0.25.zip</td>
+                 <td>2efa8f45b54ea37b67a2f38d63fde5704cdb45535c6c9aba62890d4f1d021a7d</td>
                </tr>
                <tr>
-                 <td>WanWalletGui-mac-3.0.23.zip</td>
-                 <td>1f4163bf1b9a0716a2c893c3d72b06fe3efa901881291463952db7088159ea87</td>
+                 <td>WanWalletGui-linux64-3.0.25.deb</td>
+                 <td>3440de877b05dc5bccfb188cb2d86f00312fc8323cce8ae29d23879ddb0f8037</td>
                </tr>
              </table>
           </div>
