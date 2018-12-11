@@ -256,7 +256,15 @@ class Product extends Component {
               </li>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>Check <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">here</a> for more information in our Wanchain wallet CLI guide</span>
+                <span>Check <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">here</a> for more information in our Wanchain 1.0 CLI wallet guide</span>
+              </li>
+              <li>
+                <em><img className={styles.icoCircle2} src={circle}/></em>
+                <span>Click on 2.1 button for CLI wallet for ETH and ERC20 tokens cross-chain transactions</span>
+              </li>
+              <li>
+                <em><img className={styles.icoCircle2} src={circle}/></em>
+                <span>Click on 3.0 button for CLI wallet for BTC cross-chain transactions</span>
               </li>
             </ul>
             <div className={styles.downloadBox}>
