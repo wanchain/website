@@ -139,7 +139,7 @@ class Div1 extends React.Component {
                   <li>
                     <img src={vision2} />
                     <p>Digitization of Assets</p>
-                    <span>These digital assets now operate in the domain of 0s, 1s, Moore's law, and exponential scale. The impacts on the financial services industry will be profound. Historical example: digitization of photographs</span>
+                    <span>These digital assets now operate in the domain of 0s, 1s, Moore's law, and exponential scale. The impacts on the financial services industry will be profound.</span>
                   </li>
                   <li style={clear}>
                     <img src={vision3} />

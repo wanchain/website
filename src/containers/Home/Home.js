@@ -137,7 +137,7 @@ export default class Home extends Component {
                             <span className={styles.greenLine}></span>
                             <span className={styles.blueLine}></span>
                           </div>
-                          <p className={styles.bannertextP}>CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC20S</p>
+                          <p className={styles.bannertextP}>CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC20 TOKENS</p>
                         </div>
                         <div id="link" className={styles.videoBtn}>
                             <a href="https://medium.com/wanchain-foundation" target="_blank" className={styles.read}>READ MORE</a>

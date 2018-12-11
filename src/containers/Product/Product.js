@@ -261,8 +261,9 @@ class Product extends Component {
             </ul>
             <div className={styles.downloadBox}>
             <div className={styles.cmdDload}>
-              <p>CLI tools Download:</p>
-              <a href={this.state.href}><button className={styles.comBtn}>download</button></a>
+              <p>CLI Tools:</p>
+              <a href="https://github.com/wanchain/wanchain-js-walletcli/tree/2.1-release" target="_blank"><button className={styles.CLI}>2.1</button></a>
+              <a href="https://github.com/wanchain/wanchain-crosschain-walletcli" target="_blank"><button className={styles.CLI}>3.0</button></a>
             </div>
              <div className={styles.GwanDload}>
                <p>Gwan Download:</p>

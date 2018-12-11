@@ -115,6 +115,7 @@ class Footer extends React.Component {
       const qqer = require('./image/qqer.png');
       const tm = require('./image/tm.png');
       const newsletter = require('./image/Newsletter.png');
+      const Business = require('./image/business.png');
       const text = {display: 'inline_block', width: '112px'};
       const widthWechat = {width: '120px'};
 
@@ -165,6 +166,10 @@ class Footer extends React.Component {
                             <div className={styles.Newsletter}>
                                 <a href="https://wanchain.us17.list-manage.com/subscribe?u=474affe3661620cb14a108d52&id=f76852edbb" target="_blank"><img src={newsletter}/></a>
                                 <span>Newsletter</span>
+                            </div>
+                            <div className={styles.footMenu}>
+                                <a href="mailto:business@wanchain.org" target="_blank"><img className={styles.business} src={Business}/></a>
+                                <span>Business Inquiries</span>
                             </div>
                         </div>
                     </div>

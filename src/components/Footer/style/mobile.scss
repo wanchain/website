@@ -153,10 +153,14 @@
     font-size: 10px;
     display: block;
   }
+  .business{
+    width: 36px
+  }
   .Newsletter{
     width: 69px;
     position: relative;
-    margin-left: 80px;
+    float: left;
+    margin-left: 16px;
     a{
       img{
         width: 36px;

@@ -85,7 +85,7 @@ class App extends Component {
     if (language === 'zn') {
       title = '万维链(Wanchain)-资产跨链+隐私保护+智能合约 构建数字新经济基础设施';
     } else {
-      title = 'Wanchain - Links Future Assets';
+      title = 'Wanchain';
     }
     return (
       <div className={styles.app}>
