@@ -120,6 +120,9 @@ app.use('/download/gwan-mac*', function(req, res) {
 app.use('/download/wanLabs_introduction', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.wanLabs_introduction));
 });
+app.use('/product', (req, res)=>{
+  res.redirect('/products');
+});
 // app.use('/download/winwallet', function(req, res) {
 //   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet));
 // });  
