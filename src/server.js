@@ -125,7 +125,7 @@ app.use('/product', (req, res)=>{
 });
 // app.use('/download/winwallet', function(req, res) {
 //   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet));
-// });  
+// });
 // app.use('/download/macwallet', function(req, res) {
 //   res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet));
 // });
@@ -135,10 +135,6 @@ app.use('/product', (req, res)=>{
 
 app.use('/download/winwallet3', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.winwallet3));
-});
-app.use('/baidu_statistics', function(req, res) {
-  res.setHeader('X-Frame-Options', 'https://tongji.baidu.com');
-  res.sendfile(path.join(__dirname, '..', 'static', '/baidu/baiduStatistics.html'));
 });
 app.use('/download/macwallet3', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.macwallet3));

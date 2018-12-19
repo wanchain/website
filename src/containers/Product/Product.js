@@ -61,7 +61,7 @@ class Product extends Component {
   }
   popContent(urlData) {
     if (urlData === 'win3') {
-      this.setState({download: '/download/winwallet3'});  
+      this.setState({download: '/download/winwallet3'});
     } else if (urlData === 'mac3') {
       this.setState({download: '/download/macwallet3'});
     } else if (urlData === 'linux3') {
@@ -168,7 +168,7 @@ class Product extends Component {
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download}/>
              </div>
-             <a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet_GUI_3.0_mainnet.pdf" className={styles.downloadManual}>
+             <a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet%20GUI%203.0%20mainnet.pdf" className={styles.downloadManual}>
                 <img className={styles.banDownL} src={banDownL}/> <span>Instruction manual for cross-chain transactions</span>
              </a>
           </div>
@@ -275,9 +275,9 @@ class Product extends Component {
             </div>
              <div className={styles.GwanDload}>
                <p>Gwan Download:</p>
-               <a href="/download/gwan-windows-amd64-1.0.5-9b532dfe.zip" className={styles.icoWin}><em></em></a>
-               <a href="/download/gwan-mac-amd64-1.0.5-9b532dfe.tar.gz" className={styles.icoMac}><em></em></a>
-               <a href="/download/gwan-linux-amd64-1.0.5-9b532dfe.tar.gz" className={styles.icoGLINUX}><em></em></a>
+               <a href="/download/gwan-windows-amd64-1.0.7-3c1c638c.zip" className={styles.icoWin}><em></em></a>
+               <a href="/download/gwan-mac-amd64-1.0.7-3c1c638c.tar.gz" className={styles.icoMac}><em></em></a>
+               <a href="/download/gwan-linux-amd64-1.0.7-3c1c638c.tar.gz" className={styles.icoGLINUX}><em></em></a>
              </div>
             </div>
           </div>
