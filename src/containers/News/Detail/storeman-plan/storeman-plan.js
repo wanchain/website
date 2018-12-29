@@ -55,7 +55,7 @@ class storemanplan extends Component {
                   <li><a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet_GUI_3.0_mainnet_guide_CHN.pdf">万维链3.0钱包使用说明</a></li>
                   <li className={styles.fontStyle}>注意：针对第一阶段中提交调查问卷的和在资格竞选中落选的用户，我们将会从中抽取若干名幸运用户，给予一定的奖励。</li>
                   <h4>第三阶段：正式进入Wanchain Storeman节点奖励环节</h4>
-                  <li>在竞选中胜出的WAN地址，其WAN将会锁仓3个月，即从4月初锁仓至7月初。</li>
+                  <li>在竞选中胜出的WAN地址，其投入智能合约的WAN将会被锁仓3个月，从4月初锁仓至7月初。</li>
                   <li>需要特别注意的是，正式进入Wanchain Storeman节点奖励环节的所有WAN币在这三个月内是无法提前赎回的，因为智能合约会将其锁住。3个月后，这些WAN连同奖励部分将自动返回用户的WAN地址。</li>
                   <li className={styles.fontStyle}>注意：WAN会原路返回至当初用户向智能合约转账时所用的WAN地址。</li>
                   <li>锁仓的具体细则会在3月底4月初出台。</li>
