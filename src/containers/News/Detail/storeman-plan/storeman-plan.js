@@ -51,6 +51,7 @@ class storemanplan extends Component {
                   <li>希望参加Storeman奖励先行计划的用户会收到一个智能合约地址（不限于调查问卷渠道），用户必须在3月15日至3月31日期间将WAN转入至该地址。该智能合约上的WAN之后将锁仓3个月。</li>
                   <li>由于奖励计划名额有限，一个WAN地址允许发起多笔交易提高总参与金额，这个WAN地址是否被选中取决于此地址向智能合约发起的总参与金额。同一个WAN地址的总参与金额越大，胜出机率越大。需要指出的是，奖励机制的上限是每个WAN地址5000个WAN，超过5000个WAN的部分将不纳入奖励计算。</li>
                   <li>资格竞选结束后，每一组Storeman自动将WAN汇总，智能合约将发起转账的所有WAN地址根据投入智能合约的WAN的数量从高到低进行排序，被选中的WAN地址投入合约的代币将进入锁仓期。只有当智能合约上WAN的数量达到预先设定的数量时，或者所有参与的WAN都被锁定时，智能合约才会被激活。</li>
+                  <li>此时在资格竞选中落选的WAN地址，其投入智能合约的WAN将会在资格竞选阶段结束后数日内原路返回至原地址</li>
                   <li><a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet_GUI_3.0_mainnet_guide_CHN.pdf">万维链3.0钱包使用说明</a></li>
                   <li className={styles.fontStyle}>注意：针对第一阶段中提交调查问卷的和在资格竞选中落选的用户，我们将会从中抽取若干名幸运用户，给予一定的奖励。</li>
                   <h4>第三阶段：正式进入Wanchain Storeman节点奖励环节</h4>
