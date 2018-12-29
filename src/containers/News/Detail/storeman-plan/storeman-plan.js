@@ -45,8 +45,7 @@ class storemanplan extends Component {
                   <h3>如何参与奖励计划？</h3>
                   <h4>第一阶段：提交调查问卷（12月28日至1月7日)</h4>                  
                   <li>请在2018年12月28日至2019年1月7日提交调查问卷。</li>
-                  <li>调查问卷地址：</li>
-                  <li><a target="_blank" href="http://wanchainfans.mikecrm.com/yfb3INn">http://wanchainfans.mikecrm.com/yfb3INn</a></li>
+                  <li><a target="_blank" href="http://wanchainfans.mikecrm.com/yfb3INn">调查问卷</a></li>
                   <li className={styles.fontStyle}>注意：提交调查问卷的用户不代表直接拥有了参与Storeman奖励先行计划的资格，而是进入了该计划的候选名单。资格竞选阶段3月开始，所以1月未提交调查问卷的用户也不必担心会失去参加奖励计划的资格。</li>
                   <h4>第二阶段：参与资格竞选（2019年3月15日 – 2019年3月31日）</h4>
                   <li>希望参加Storeman奖励先行计划的用户会收到一个智能合约地址（不限于调查问卷渠道），用户必须在3月15日至3月31日期间将WAN转入至该地址。该智能合约上的WAN之后将锁仓3个月。</li>
