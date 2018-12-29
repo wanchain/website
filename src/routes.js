@@ -12,6 +12,9 @@ import {
     Crowdsale,
     // Career,
     Product,
+    News,
+    Detail,
+    storemanplan,
     // Events,
     // WanLabs,
     // Apply,
@@ -64,6 +67,8 @@ export default () => {
         {/* <Route path="whitelist" component={WhiteForm}/> */}
 
         <Route path="products" component={Product}/>
+        <Route path="news" component={News}/>
+        <Route path="news/detail/storemanplan" component={storemanplan}/>
         {/* <Route path="events" component={Events}/> */}
         {/* <Route path="wanlabs" component={WanLabs}/> */}
         {/* <Route path="wanlabs/apply" component={Apply}/> */}

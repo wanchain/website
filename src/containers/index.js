@@ -12,6 +12,8 @@ export WhiteForm from './WhiteForm/WhiteForm';
 export Career from './Career/Career';
 
 export Product from './Product/Product';
+export News from './News/News';
+export storemanplan from './News/Detail/storeman-plan/storeman-plan';
 export Events from './Events/Events';
 export WanLabs from './WanLabs/WanLabs';
 export Apply from './Apply/Apply';

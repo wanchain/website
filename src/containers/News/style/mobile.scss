@@ -1,0 +1,68 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .newsCom{
+        width: 100%;
+        margin-top: 20px;
+        display: inline-block;
+        .newsDiv{
+            width: 96%;
+            margin: 0 auto;
+            .newsNav{
+                h2{
+                    width: 70px;
+                    margin: 0;
+                    padding-bottom: 5px;
+                    font-weight: bold;
+                    border-bottom: 3px solid #3680f8;
+                    font-size: 22px;
+                    color: #2c313a;
+                }
+            }
+            .newsContainers{
+                dl:hover a{
+                    color: #0c84ff;
+                }
+                dl{
+                    width: 100%;
+                    display: inline-block;
+                    padding-bottom: 20px;
+                    border-bottom: 1px ridge #b6b6ba;
+                    dt{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    dd{
+                        width: 100%;
+                        margin-top: 30px;
+                        display: inline-block;
+                        a{
+                            font-weight: bold;
+                            font-size: 22px;
+                            color: #2c313a;
+                        }
+                        .newsMess{
+                            margin: 2px 0  20px;
+                            display: inline-block;
+                            p{
+                                font-size: 14px;
+                                color: #828a92;
+                                margin: 0;
+                            }
+                        }
+                        .newsTime{
+                            img{
+                                margin-right: 10px;
+                                vertical-align: middle;
+                            }
+                            span{
+                                color: #cccccc;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

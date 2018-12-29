@@ -1,0 +1,74 @@
+@media screen and (min-width: 1025px) {
+.newsCom{
+    width: 100%;
+    height: calc(100vh - 337px);
+    margin-top: 60px;
+    display: inline-block;
+    .newsDiv{
+        width: 900px;
+        margin: 0 auto;
+        .newsNav{
+            h2{
+                width: 70px;
+                margin: 0;
+                padding-bottom: 5px;
+                font-weight: bold;
+                border-bottom: 3px solid #3680f8;
+                font-size: 22px;
+                color: #2c313a;
+            }
+        }
+        .newsContainers{
+            dl:hover a{
+                color: #0c84ff;
+            }
+            dl{
+                width: 900px;
+                display: inline-block;
+                margin: 20px 0;
+                padding-bottom: 20px;
+                border-bottom: 1px ridge #b6b6ba;
+                dt{
+                    width: 250px;
+                    height: 150px;
+                    float: left;
+                    img{
+                        width: 100%;
+                    }
+                }
+                dd{
+                    width: 620px;
+                    margin-left: 30px;
+                    float: left;
+                    display: inline-block;
+                    a{
+                        font-weight: bold;
+                        font-size: 22px;
+                        color: #2c313a;
+                    }
+                    .newsMess{
+                        margin: 2px 0  0;
+                        display: inline-block;
+                        height: 113px;   
+                        p{
+                            font-size: 14px;
+                            color: #828a92;
+                            margin: 0;
+                        }
+                    }
+                    .newsTime{
+                        img{
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+                        span{
+                            color: #cccccc;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

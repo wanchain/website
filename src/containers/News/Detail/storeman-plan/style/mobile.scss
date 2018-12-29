@@ -1,0 +1,47 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .storemanPlanCom{
+        width: 100%;
+        margin: 30px 0 60px;
+        display: inline-block;
+        .storemanPlanDiv{
+            width: 94%;
+            margin: 0 auto;
+            h1{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            img{
+                width: 98%;
+                text-align: center;
+                margin: 0 auto;
+                margin: 20px 0 ;
+            }
+            ul{
+                li{
+                    padding-bottom: 15px;
+                    line-height: 1.5;
+                    a{
+                        color: #0c84ff;
+                    }
+                    .colorText{
+                        color: #0c84ff;
+                    }
+                }
+                .fontStyle{
+                    font-style:oblique;
+                }
+                h3{
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                h4{
+                    font-weight: bold;
+                }
+                h5{
+                    font-weight: bold;
+                }
+            }
+        }
+    
+    }
+}
