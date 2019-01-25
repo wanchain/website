@@ -1,15 +1,17 @@
 @media screen and (max-width: 320px) {
-  .homeHeaderBodyDiv1{
+  .homeHeaderBodyDiv1 {
     margin-top: 25px !important;
   }
-  .navGitaTit{
+
+  .navGitaTit {}
+
+  .homeHeader .homeGit {
+    right: 60px !important;
   }
-  .homeHeader .homeGit{
-    right: 60px!important;
-  }
-  .bannerBtn{
+
+  .bannerBtn {
     height: 36px !important;
-    margin: 60px auto 0 6%!important;
+    margin: 60px auto 0 6% !important;
     text-align: center !important;
 
     a {
@@ -28,19 +30,24 @@
   }
 
   .homeHeaderBodyDiv1 #scroll {
-    h2{
+    h2 {
       font-size: 24px !important;
-      small{ font-size: 24px !important;}
+
+      small {
+        font-size: 24px !important;
+      }
     }
   }
 }
+
 @media screen and (min-width: 321px) and (max-width: 360px) {
-  .homeHeaderBodyDiv1{
+  .homeHeaderBodyDiv1 {
     margin-top: 25px !important;
   }
-  .bannerBtn{
+
+  .bannerBtn {
     height: 36px !important;
-    margin: 60px auto 0 6%!important;
+    margin: 60px auto 0 6% !important;
     text-align: center !important;
 
     a {
@@ -58,19 +65,22 @@
     }
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .homeDiv {
     height: 660px;
     position: relative;
   }
 
-  .homeHeader{
-    img{
+  .homeHeader {
+    img {
+      width: 130px;
       float: left;
       padding-left: 0;
       margin-top: 15px;
     }
-    .navJoin{
+
+    .navJoin {
       color: #fff;
       padding-top: 20px;
       padding-bottom: 10px;
@@ -82,14 +92,15 @@
       margin-top: 2px;
       font-weight: 600;
     }
-    .navbarImg{
+
+    .navbarImg {
       width: 20px;
       float: right;
       margin-right: 0;
       margin-top: 20px;
     }
 
-    .homeHeaderUl{
+    .homeHeaderUl {
       padding-top: 10px;
       position: absolute;
       top: 60px;
@@ -98,105 +109,122 @@
       width: 100%;
       z-index: 9;
       opacity: .95;
-      ul{
+
+      ul {
         text-align: center;
-        li{
+
+        li {
           margin: 13px;
-          a{
+
+          a {
             color: #000;
             padding-left: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
           }
         }
-        a:hover{
+
+        a:hover {
           border-bottom: 1px solid #ffffff;
           text-decoration: none;
         }
       }
     }
 
-    .homeGit{
+    .homeGit {
       float: left;
       color: #fff;
       line-height: 26px;
       position: absolute;
       top: 20px;
       right: 60px;
-      p{
+
+      p {
         color: #fff;
         float: right;
         padding-left: 20px;
         padding-top: 23px;
       }
-      a{
+
+      a {
         color: #fff;
         text-decoration: none;
         cursor: pointer;
         padding: 3px;
       }
-      img{
+
+      img {
         padding-top: 0;
         margin: 0;
       }
     }
 
-    .homeGit a:hover{
+    .homeGit a:hover {
       color: #1f6ce9;
     }
   }
 
-  .homeHeaderBodyDiv1{
+  .homeHeaderBodyDiv1 {
     margin-top: 100px;
     text-align: left;
+
     //.indexH2size{
     //  font-size:18px!important;
     //}
-    div{
+    div {
+
       // margin-top: 80px;
-      .bannerTitle{
-        font-weight: bold; font-size: 28px;
+      .bannerTitle {
+        font-weight: bold;
+        font-size: 28px;
       }
-      .bannertextP{
+
+      .bannertextP {
         font-family: MicrosoftYaHei;
-      	font-size: 12px;
-      	font-weight: normal;
-      	letter-spacing: 1px;
-      	color: #ffffff;
+        font-size: 12px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        color: #ffffff;
         padding: 0;
-        .bannertextSpan{
+
+        .bannertextSpan {
           font-weight: bold;
           color: #fff;
-          font-size:18px;
+          font-size: 18px;
         }
       }
-      p{
+
+      p {
         padding-top: 0;
       }
     }
 
-    img{
+    img {
       width: 100%;
       margin-top: 25px;
     }
-    #scroll{
-      h2{
+
+    #scroll {
+      h2 {
         font-size: 20px;
         color: #ffffff;
         margin-top: 50px;
         text-align: center;
         width: 100%;
         line-height: 24px;
-        small{
+
+        small {
           font-size: 20px;
           color: #008aff;
         }
       }
     }
-    p{
+
+    p {
       font-size: 20px;
       color: #ffffff;
-      small{
+
+      small {
         display: block;
         font-size: 12px;
         opacity: 0.65;
@@ -206,24 +234,28 @@
       }
     }
 
-    .countdown{
+    .countdown {
       padding-top: 15px;
       width: 100%;
-      li{
+
+      li {
         display: inline-block;
-        span{
+
+        span {
           font-family: BebasNeue;
           font-size: 30px;
           color: #fff;
           padding: 6px;
         }
-        small{
+
+        small {
           padding-left: 10px;
           padding-right: 10px;
           color: #3680f8;
           font-size: 30px;
         }
-        p{
+
+        p {
           padding-top: 5px;
           font-size: 10px;
           color: #fff;
@@ -233,26 +265,29 @@
         }
       }
     }
-    .bannerShare{
+
+    .bannerShare {
       display: block;
       text-align: left;
       margin: 50px 0 0 0;
       clear: both;
-      img{
+
+      img {
         display: inline-block;
         margin: 15px;
         width: 9%;
       }
-      p{
+
+      p {
         font-size: 14px;
         padding-top: 0;
       }
     }
   }
 
-  .homeHeaderBodyDiv2{
+  .homeHeaderBodyDiv2 {
 
-    .home-submit-button{
+    .home-submit-button {
       width: 210px;
       height: 50px;
       background-color: #008aff;
@@ -267,7 +302,7 @@
       margin-top: 20px;
     }
 
-    .home-submit-button2{
+    .home-submit-button2 {
       width: 210px;
       height: 50px;
       border: 1px solid #008aff;
@@ -283,58 +318,63 @@
     }
 
     .home-submit-button .home-submit-button2:focus,
-    .home-submit-button2:hover{
+    .home-submit-button2:hover {
       color: #FFF;
       border-color: transparent;
     }
 
-    .home-submit-button:hover{
+    .home-submit-button:hover {
       background: #1f6ce9;
     }
   }
 
   //banner 8.16
-  .bannerBtn{
+  .bannerBtn {
     height: 36px;
-    margin:30px auto 0 12%;
+    margin: 30px auto 0 12%;
     text-align: center;
   }
-  .bannerBtn a{
-    width:130px;
-    height:36px;
+
+  .bannerBtn a {
+    width: 130px;
+    height: 36px;
     line-height: 36px;
     display: block;
-    float:left;
+    float: left;
     border-radius: 150px;
-    color:#fff;
-    margin-right:20px;
+    color: #fff;
+    margin-right: 20px;
     //background: rgba(5,17,43,0.5);
     background: #1f6ce9;
-    transition:background 1s;
+    transition: background 1s;
     margin-bottom: 10px;
   }
-  .bannerBtn a:hover{
+
+  .bannerBtn a:hover {
     text-decoration: none;
-    background-color: #008aff!important;
+    background-color: #008aff !important;
 
   }
 
-  .bannerp{
-    text-align: center;}
-  .ingBox{
+  .bannerp {
+    text-align: center;
+  }
+
+  .ingBox {
     width: 100%;
     background-color: #030b1b;
     display: inline-block;
     position: relative;
     top: -29px;
-    h2{
+
+    h2 {
       color: #fff;
       font-size: 22px;
       text-align: center;
       margin: 10px 0;
     }
 
-    .arrow{
+    .arrow {
       color: #fff;
       position: absolute;
       top: 14px;
@@ -343,7 +383,7 @@
       text-align: center;
     }
 
-    .arrow2{
+    .arrow2 {
       color: #fff;
       position: absolute;
       top: 14px;
@@ -352,7 +392,7 @@
       text-align: center;
     }
 
-    .ingDetal{
+    .ingDetal {
       color: #fff;
       text-align: center;
       padding-bottom: 10px;
@@ -360,37 +400,44 @@
       font-size: 16px;
       margin-top: 72px;
     }
-    .ingDetalSpan{
-      margin-left:20px;
+
+    .ingDetalSpan {
+      margin-left: 20px;
     }
-    em{
+
+    em {
       font-style: normal;
     }
-    .col-md-offset-2{
-      margin-top:10px;
+
+    .col-md-offset-2 {
+      margin-top: 10px;
       padding: 0 30px;
     }
 
-    .countdown{
+    .countdown {
       padding-top: 15px;
       width: 85%;
       margin: 0 auto;
       text-align: center;
-      li{
+
+      li {
         display: inline-block;
-        span{
+
+        span {
           font-family: BebasNeue;
           font-size: 30px;
           color: #fff;
           padding: 6px;
         }
-        small{
+
+        small {
           padding-left: 10px;
           padding-right: 10px;
           color: #3680f8;
           font-size: 30px;
         }
-        p{
+
+        p {
           padding-top: 5px;
           font-size: 10px;
           color: #fff;
@@ -401,24 +448,29 @@
       }
     }
   }
-  .bannerLine{
+
+  .bannerLine {
     margin: 20px 0 30px;
     display: inline-block;
-    span{
+
+    span {
       width: 20px;
       height: 3px;
       display: inline-block;
       float: left;
     }
-    .greenLine{
+
+    .greenLine {
       background: #2AB3AB;
       margin-right: 4px;
     }
-    .blueLine{
+
+    .blueLine {
       background: #368AF6;
     }
   }
-  .videoshade{
+
+  .videoshade {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -429,18 +481,21 @@
     opacity: .5;
     z-index: 8;
   }
-  .videoBox{
+
+  .videoBox {
     width: 96%;
     position: fixed;
     top: 30%;
     left: 2%;
     z-index: 9;
   }
-  .videoBtn{
-    .read{
-      color:#ffffff;
+
+  .videoBtn {
+    .read {
+      color: #ffffff;
       text-decoration: none;
     }
+
     color: #fff;
     float: left;
     width:190px;
@@ -454,11 +509,12 @@
     border-radius:25px;
     background-image: linear-gradient(to right, #3680F8, #00AEFF);
   }
-  .videpIco{
+
+  .videpIco {
     display: inline;
-    width: 28px!important;
-    height: 28px!important;
-    margin: 0 0 0 8px!important;
-    padding: 0!important;
+    width: 28px !important;
+    height: 28px !important;
+    margin: 0 0 0 8px !important;
+    padding: 0 !important;
   }
 }

@@ -4,20 +4,21 @@
     position: relative;
   }
 
-  .homeHeader{
-    img{
+  .homeHeader {
+    img {
+      width: 130px;
       float: left;
       padding-left: 0;
       margin-top: 15px;
     }
 
-    .navbarImg{
+    .navbarImg {
       float: right;
       margin-right: 3px;
       margin-top: 20px;
     }
 
-    .homeHeaderUl{
+    .homeHeaderUl {
       padding-top: 10px;
       position: absolute;
       top: 60px;
@@ -25,49 +26,57 @@
       background: #fff;
       width: 100%;
       z-index: 9;
-      ul{
+
+      ul {
         text-align: center;
-        li{
+
+        li {
           margin: 13px;
-          a{
+
+          a {
             color: #000;
             padding-left: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
           }
         }
-        a:hover{
+
+        a:hover {
           border-bottom: 1px solid #ffffff;
           text-decoration: none;
         }
       }
     }
 
-    .homeGit{
+    .homeGit {
       float: left;
       color: #fff;
       line-height: 26px;
       position: absolute;
       top: 20px;
       right: 80px;
-      p{
+
+      p {
         color: #fff;
         float: right;
         padding-left: 20px;
         padding-top: 23px;
       }
-      a{
+
+      a {
         color: #fff;
         text-decoration: none;
         cursor: pointer;
         padding: 5px;
       }
-      img{
+
+      img {
         padding-top: 0;
         margin: 0;
       }
     }
-    .navJoin{
+
+    .navJoin {
       color: #fff;
       padding-top: 22px;
       padding-bottom: 10px;
@@ -78,63 +87,76 @@
       margin-right: 156px;
       font-weight: 600;
     }
-    .homeGit a:hover{
+
+    .homeGit a:hover {
       color: #1f6ce9;
     }
   }
 
-  .homeHeaderBodyDiv1{
+  .homeHeaderBodyDiv1 {
     text-align: left;
     //background: rgba(4, 13, 36, 0.4);
     width: 90%;
     margin: 60px auto 0 auto;
-    padding-bottom:40px;
-    div{
+    padding-bottom: 40px;
+
+    div {
+
       // margin-top: 80px;
-      .bannerTitle{
-        font-weight: bold; font-size: 50px;
+      .bannerTitle {
+        font-weight: bold;
+        font-size: 50px;
       }
-      .bannertextP{
+
+      .bannertextP {
         font-family: MicrosoftYaHei;
-      	font-size: 18px;
-      	font-weight: normal;
-      	letter-spacing: 1px;
-      	color: #ffffff;
+        font-size: 18px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        color: #ffffff;
         padding: 0;
-        .bannertextSpan{
+
+        .bannertextSpan {
           font-weight: bold;
           color: #fff;
-          font-size:24px;
+          font-size: 24px;
         }
       }
-      .bannerTitleSmall{
+
+      .bannerTitleSmall {
         font-size: 34px;
       }
-      p{
+
+      p {
         padding-top: 0;
       }
     }
-    img{
+
+    img {
       width: 100%;
       margin-top: 30px;
     }
-    #scroll{
-      h2{
+
+    #scroll {
+      h2 {
         font-size: 30px;
         color: #ffffff;
         margin-top: 50px;
         text-align: center;
-        small{
+
+        small {
           font-size: 30px;
           color: #008aff;
         }
       }
     }
-    p{
+
+    p {
       padding-top: 0px;
       font-size: 33px;
       color: #ffffff;
-      small{
+
+      small {
         display: block;
         font-size: 12px;
         opacity: 0.65;
@@ -144,24 +166,28 @@
       }
     }
 
-    .countdown{
+    .countdown {
       padding-top: 15px;
       width: 100%;
-      li{
+
+      li {
         display: inline-block;
-        span{
+
+        span {
           font-family: BebasNeue;
           font-size: 30px;
           color: #fff;
           padding: 6px;
         }
-        small{
+
+        small {
           padding-left: 10px;
           padding-right: 10px;
           color: #3680f8;
           font-size: 30px;
         }
-        p{
+
+        p {
           padding-top: 5px;
           font-size: 10px;
           color: #fff;
@@ -173,16 +199,18 @@
     }
 
 
-    .bannerShare{
+    .bannerShare {
       display: block;
       text-align: left;
       margin: 50px 0 0 0;
-      img{
+
+      img {
         display: inline-block;
         margin: 15px;
         width: 5%;
       }
-      p{
+
+      p {
         font-size: 14px;
         padding-top: 0;
       }
@@ -190,9 +218,9 @@
 
   }
 
-  .homeHeaderBodyDiv2{
+  .homeHeaderBodyDiv2 {
 
-    .home-submit-button{
+    .home-submit-button {
       width: 210px;
       height: 50px;
       background-color: #008aff;
@@ -207,7 +235,7 @@
       margin-top: 20px;
     }
 
-    .home-submit-button2{
+    .home-submit-button2 {
       width: 210px;
       height: 50px;
       border: 1px solid #008aff;
@@ -223,56 +251,61 @@
     }
 
     .home-submit-button .home-submit-button2:focus,
-    .home-submit-button2:hover{
+    .home-submit-button2:hover {
       color: #FFF;
       border-color: transparent;
     }
 
-    .home-submit-button:hover{
+    .home-submit-button:hover {
       background: #1f6ce9;
     }
   }
 
   //banner 8.16
-  .bannerBtn{
+  .bannerBtn {
     width: 490px;
     height: 36px;
     margin: 0 auto;
   }
-  .bannerBtn a{
-    width:130px;
-    height:36px;
+
+  .bannerBtn a {
+    width: 130px;
+    height: 36px;
     line-height: 36px;
     display: block;
-    float:left;
+    float: left;
     border-radius: 150px;
-    color:#fff;
-    margin-right:20px;
-    background: rgba(5,17,43,0.5);
-    transition:background 1s;
+    color: #fff;
+    margin-right: 20px;
+    background: rgba(5, 17, 43, 0.5);
+    transition: background 1s;
   }
-  .bannerBtn a:hover{
+
+  .bannerBtn a:hover {
     text-decoration: none;
-    background-color: #008aff!important;
+    background-color: #008aff !important;
 
   }
 
-  .bannerp{
-    text-align: center;}
-  .ingBox{
+  .bannerp {
+    text-align: center;
+  }
+
+  .ingBox {
     width: 100%;
     background-color: #030b1b;
     display: inline-block;
     position: relative;
     top: -72px;
-    h2{
+
+    h2 {
       color: #fff;
       font-size: 22px;
       text-align: center;
       margin: 20px 0;
     }
 
-    .arrow{
+    .arrow {
       color: #fff;
       position: absolute;
       top: 14px;
@@ -281,7 +314,7 @@
       text-align: center;
     }
 
-    .arrow2{
+    .arrow2 {
       color: #fff;
       position: absolute;
       top: 14px;
@@ -290,44 +323,51 @@
       text-align: center;
     }
 
-    .ingDetal{
+    .ingDetal {
       color: #fff;
       text-align: center;
       padding-bottom: 10px;
-      font-size:18px;
+      font-size: 18px;
       margin-top: 60px;
     }
-    .ingDetalSpan{
-      margin-left:20px;
-    }
-    em{
-      font-style: normal;
-    }
-    .col-md-offset-2{
-      margin:10px 20px 0 20px!important;
+
+    .ingDetalSpan {
+      margin-left: 20px;
     }
 
-    .countdown{
+    em {
+      font-style: normal;
+    }
+
+    .col-md-offset-2 {
+      margin: 10px 20px 0 20px !important;
+    }
+
+    .countdown {
       padding-top: 15px;
       width: 40%;
       margin: 0 auto;
       padding-left: 15px;
       text-align: center;
-      li{
+
+      li {
         display: inline-block;
-        span{
+
+        span {
           font-family: BebasNeue;
           font-size: 30px;
           color: #fff;
           padding: 6px;
         }
-        small{
+
+        small {
           padding-left: 10px;
           padding-right: 10px;
           color: #3680f8;
           font-size: 30px;
         }
-        p{
+
+        p {
           padding-top: 5px;
           font-size: 10px;
           color: #fff;
@@ -339,24 +379,28 @@
     }
   }
 
-  .bannerLine{
+  .bannerLine {
     margin: 25px 0 40px;
     display: inline-block;
-    span{
+
+    span {
       width: 20px;
       height: 3px;
       display: inline-block;
       float: left;
     }
-    .greenLine{
+
+    .greenLine {
       background: #2AB3AB;
       margin-right: 4px;
     }
-    .blueLine{
+
+    .blueLine {
       background: #368AF6;
     }
   }
-  .videoshade{
+
+  .videoshade {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -367,18 +411,21 @@
     opacity: .5;
     z-index: 8;
   }
-  .videoBox{
+
+  .videoBox {
     width: 96%;
     position: fixed;
     top: 26%;
     left: 2%;
     z-index: 9;
   }
-  .videoBtn{
-    .read{
-      color:#ffffff;
+
+  .videoBtn {
+    .read {
+      color: #ffffff;
       text-decoration: none;
     }
+
     color: #fff;
     float: left;
     width:190px;
@@ -392,11 +439,12 @@
     border-radius:25px;
     background-image: linear-gradient(to right, #3680F8, #00AEFF);
   }
-  .videpIco{
+
+  .videpIco {
     display: inline;
-    width: 28px!important;
-    height: 28px!important;
-    margin: 0 0 0 8px!important;
-    padding: 0!important;
+    width: 28px !important;
+    height: 28px !important;
+    margin: 0 0 0 8px !important;
+    padding: 0 !important;
   }
 }
