@@ -50,10 +50,10 @@ class App extends Component {
     store: PropTypes.object.isRequired
   };
 
-  // componentWillMount() {
-  //   // console.log('global.language==>', getLange());
-  //   this.props.changeLangFunc(global.language);
-  // }
+  componentWillMount() {
+    // console.log('global.language==>', getLange());
+    this.props.changeLangFunc(global.language);
+  }
 
   componentDidMount() {
     const curr = getLange();

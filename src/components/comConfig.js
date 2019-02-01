@@ -15,7 +15,7 @@ const comConfig = {
 
   },
   Footer: {
-    footEnd: {zn: '©wanchain 2018 版权所有 all rights reserved', en: '©WANCHAIN FOUNDATION LTD 2018 all rights reserved'},
+    footEnd: {zn: '版权所有©2019年 WANCHAIN FOUNDATION LTD', en: '©WANCHAIN FOUNDATION LTD 2019 all rights reserved'},
   }
 };
 

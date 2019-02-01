@@ -22,16 +22,16 @@ const dest = document.getElementById('content');
 const store = createStore(_browserHistory, client, window.__data);
 const history = syncHistoryWithStore(_browserHistory, store);
 
-// import getLange from './containers/Home/utils/getLange';
+import getLange from './containers/Home/utils/getLange';
 
-// const lan = getLange();
+const lan = getLange();
 
-// if (lan === 'zh-CN') {
-//   global.language = 'zn';
-// } else {
-//   global.language = 'en';
-// }
-global.language = 'en';
+if (lan === 'zh-CN') {
+  global.language = 'zn';
+} else {
+  global.language = 'en';
+}
+// global.language = 'en';
 
 // console.log('lan', lan);
 

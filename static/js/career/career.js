@@ -29,6 +29,19 @@ $(document).ready(function(){
   $(".comMobileP5").click(function(){
     $(".toggleBox5").slideToggle();
   });
+  $("#clickDiv").click(function(){
+    $("#showDiv").slideToggle();
+  });
+  $(".clickDiv11").click(function(){
+    $(".showDiv11").slideToggle();
+  });
+  $("#clickDiv2").click(function(){
+    $("#showDiv2").slideToggle();
+  });
+  $("#clickDiv3").click(function(){
+    $("#showDiv3").slideToggle();
+  });
+  
 });
 // window.onload = function(){
 //   var current = 0;

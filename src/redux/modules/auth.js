@@ -32,8 +32,8 @@ const TITLE_STATE = 'redux-example/auth/TITLE_STATE';
 const initialState = {
   loaded: false,
   navButton: false,
-  // language: 'zn',
-  language: 'en',
+//   language: 'zn',
+//   language: 'en',
   tableState: 0,
   clientWidth: 321,
 };

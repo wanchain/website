@@ -10,11 +10,12 @@ import {
     NotFound,
     // IcoNotice,
     Crowdsale,
-    // Career,
+    Career,
     Product,
     News,
     Detail,
     storemanplan,
+    Roadmap,
     // Events,
     // WanLabs,
     // Apply,
@@ -67,12 +68,14 @@ export default () => {
         {/* <Route path="whitelist" component={WhiteForm}/> */}
 
         <Route path="products" component={Product}/>
+        <Route path="roadmap" component={Roadmap}/>
         <Route path="news" component={News}/>
         <Route path="news/detail/storemanplan" component={storemanplan}/>
         {/* <Route path="events" component={Events}/> */}
         {/* <Route path="wanlabs" component={WanLabs}/> */}
         {/* <Route path="wanlabs/apply" component={Apply}/> */}
         {/* <Route path="wanlabs/career" component={LabCareer}/> */}
+        <Route path="career" component={Career}/>
       {/* <Route path="login" component={Login}/> */}
       { /* <Route path="pagination" component={Pagination}/> */ }
       { /* <Route path="survey" component={Survey}/> */ }

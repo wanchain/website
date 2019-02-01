@@ -431,7 +431,7 @@
           color: #0079ff;
           font-size: 14px;
           clear: both;
-          display: inline-block;
+          display: block;
 
           .banDownL {
             width: 12px;
@@ -640,7 +640,7 @@
           li {
             float: left;
             font-size: 12px;
-
+            
             em {
               height: 30px;
               display: inline-block;
@@ -815,6 +815,7 @@
           li {
             float: left;
             font-size: 12px;
+            clear: both;
 
             a {
               .comBtn {

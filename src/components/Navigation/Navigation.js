@@ -76,85 +76,153 @@ class Navigation extends Component {
       const github = require('./image/github2.png');
       const github2 = require('./image/icoLoho1.png');
 
-      const {clientWidth, navButton} = this.props;
+      const {clientWidth, navButton, language} = this.props;
 
       return (
             <div className={styles.navRoot}>
                 <div className={styles.navHeader + ' container'}>
                     <IndexLink to="/"><img src={clientWidth > 320 ? logo : logoMo} /></IndexLink>
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
-                    { !navButton && clientWidth <= 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
-                        <ul>
-                            {/* <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li> */}
-                             <li><Link to="https://swap.wanchain.org" onClick={this.getNav.bind(this)}>Tokensale</Link></li>
-                            {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
-                            <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
-                            <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
-                            <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
-                            <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
-                            {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
-                            <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>Explorer</a></li>
-                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
-                            {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
-                            {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
-
-                        </ul>
-                    </div>
+                    { !navButton && clientWidth <= 1024 && language !== 'zn' &&
+                        <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
+                            <ul>
+                                <li><Link to="/products" onClick={this.getNav.bind(this)}>Products</Link></li>
+                                <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
+                                <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
+                                <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
+                                <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
+                                {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
+                                <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>Explorer</a></li>
+                                <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
+                                {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
+                                {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
+                                <li><Link to="/roadmap">Roadmap</Link></li>
+                            </ul>
+                        </div>
                     }
-                    { navButton && clientWidth <= 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'inline-block'}}>
-                        <ul>
-                            {/* <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li> */}
-                            <li><Link to="/products" onClick={this.getNav.bind(this)}>Products</Link></li>
-                             {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
-                            {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
-                            <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
-                            <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
-                            <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
-                            <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
-                            {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
-                            <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
-                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
-                            {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
-                            {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
-                            {/* <li><Link to="/wanlabs" onClick={this.getNav.bind(this)}>WanLabs</Link></li>                             */}
-                        </ul>
-                    </div>
+                    { navButton && clientWidth <= 1024 && language !== 'zn' &&
+                        <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'inline-block'}}>
+                            <ul>
+                                {/* <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li> */}
+                                <li><Link to="/products" onClick={this.getNav.bind(this)}>Products</Link></li>
+                                {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
+                                {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
+                                <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
+                                <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
+                                <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
+                                <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
+                                {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
+                                <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
+                                <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
+                                <li><Link to="/roadmap">Roadmap</Link></li>
+                                {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
+                                {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
+                                {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
+                                {/* <li><Link to="/wanlabs" onClick={this.getNav.bind(this)}>WanLabs</Link></li>                             */}
+                            </ul>
+                        </div>
                     }
 
-                    {!navButton && clientWidth > 1024 &&
-                    <div className={styles.navHeaderUl} id="navbar-menu">
-                        <ul>
-                            {/* <li><IndexLink to="/">Home</IndexLink></li> */}
-                            <li><Link to="/products">Products</Link></li>
-                            {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
-                            {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
-                            <li>
-                                <div className={styles.navDropdown}>
-                                    <a>Docs</a>
-                                    <div className={styles['navDropdown-content']}>
-                                        <a href={config.app.files.WhitepaperEN} target="_blank">White paper</a>
-                                        <a href={config.app.files.YellowpaperEN} target="_blank">Yellow paper</a>
-                                        <a href={config.app.files.CommercialEN} target="_blank">Commercial paper</a>
-                                        <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a>                                        
+                    {!navButton && clientWidth > 1024 && language !== 'zn' &&
+                        <div className={styles.navHeaderUl} id="navbar-menu">
+                            <ul>
+                                {/* <li><IndexLink to="/">Home</IndexLink></li> */}
+                                <li><Link to="/products">Products</Link></li>
+                                {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
+                                {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
+                                <li>
+                                    <div className={styles.navDropdown}>
+                                        <a>Docs</a>
+                                        <div className={styles['navDropdown-content']}>
+                                            <a href={config.app.files.WhitepaperEN} target="_blank">White paper</a>
+                                            <a href={config.app.files.YellowpaperEN} target="_blank">Yellow paper</a>
+                                            <a href={config.app.files.CommercialEN} target="_blank">Commercial paper</a>
+                                            <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a>                                        
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li><Link to="/about">Team</Link></li>
-                            {/* <li><Link to="/career">Career</Link></li> */}
-                            <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
-                            <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
-                            {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
-                            {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
-                            {/* <li><Link to="/wanlabs">WanLabs</Link></li> */}
-                        </ul>
-                    </div>
+                                </li>
+                                <li><Link to="/about">Team</Link></li>
+                                {/* <li><Link to="/career">Career</Link></li> */}
+                                <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
+                                <li><Link to="https://medium.com/wanchain-foundation" target="_blank">Medium</Link></li>
+                                <li><Link to="/roadmap">Roadmap</Link></li>
+                                {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
+                                {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
+                                {/* <li><Link to="/wanlabs">WanLabs</Link></li> */}
+                            </ul>
+                        </div>
                     }
-                    {/* <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a> */}
-                    {/* <div className={styles.navGit}>
-                        <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 320 ? github : github2} /></a>
-                    </div> */}
+
+                    { !navButton && clientWidth <= 1024 && language === 'zn' &&
+                        <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
+                            <ul>
+                                <li><Link to="/products" onClick={this.getNav.bind(this)}>产品</Link></li>
+                                <li><a href={config.app.files.WhitepaperEN} target="_blank">白皮书</a></li>
+                                <li><a href={config.app.files.YellowpaperEN} target="_blank">黄皮书</a></li>
+                                <li><a href={config.app.files.CommercialEN} target="_blank">商业白皮书</a></li>
+                                <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
+                                {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
+                                <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>浏览器</a></li>
+                                <li><Link to="https://medium.com/wanchain-foundation" target="_blank">资讯</Link></li>
+                                {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
+                                {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
+                                <li><Link to="/roadmap">路线图</Link></li>
+                            </ul>
+                        </div>
+                    }
+                    { navButton && clientWidth <= 1024 && language === 'zn' &&
+                        <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'inline-block'}}>
+                            <ul>
+                                {/* <li><IndexLink to="/" onClick={this.getNav.bind(this)}>Home</IndexLink></li> */}
+                                <li><Link to="/products" onClick={this.getNav.bind(this)}>产品</Link></li>
+                                {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
+                                {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
+                                <li><a href={config.app.files.WhitepaperEN} target="_blank">白皮书</a></li>
+                                <li><a href={config.app.files.YellowpaperEN} target="_blank">黄皮书</a></li>
+                                <li><a href={config.app.files.CommercialEN} target="_blank">商业白皮书</a></li>
+                                <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
+                                {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
+                                <li><Link to="https://www.wanscan.org" target="_blank">浏览器</Link></li>
+                                <li><Link to="https://medium.com/wanchain-foundation" target="_blank">资讯</Link></li>
+                                <li><Link to="/roadmap">路线图</Link></li>
+                                {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
+                                {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
+                                {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
+                                {/* <li><Link to="/wanlabs" onClick={this.getNav.bind(this)}>WanLabs</Link></li>                             */}
+                            </ul>
+                        </div>
+                    }
+
+                    {!navButton && clientWidth > 1024 && language === 'zn' &&
+                        <div className={styles.navHeaderUl} id="navbar-menu">
+                            <ul>
+                                {/* <li><IndexLink to="/">Home</IndexLink></li> */}
+                                <li><Link to="/products">产品</Link></li>
+                                {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
+                                {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
+                                <li>
+                                    <div className={styles.navDropdown}>
+                                        <a>文档</a>
+                                        <div className={styles['navDropdown-content']}>
+                                            <a href={config.app.files.WhitepaperEN} target="_blank">白皮书</a>
+                                            <a href={config.app.files.YellowpaperEN} target="_blank">黄皮书</a>
+                                            <a href={config.app.files.CommercialEN} target="_blank">商业白皮书</a>
+                                            <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">文档</a>                                        
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><Link to="/about">团队</Link></li>
+                                {/* <li><Link to="/career">Career</Link></li> */}
+                                <li><Link to="https://www.wanscan.org" target="_blank">浏览器</Link></li>
+                                <li><Link to="https://medium.com/wanchain-foundation" target="_blank">资讯</Link></li>
+                                <li><Link to="/roadmap">路线图</Link></li>
+                                {/* <li><Link to="/news" onClick={this.getNav.bind(this)}>News</Link></li> */}
+                                {/* <li><Link to="/events" onClick={this.getNav.bind(this)}>Events</Link></li> */}
+                                {/* <li><Link to="/wanlabs">WanLabs</Link></li> */}
+                            </ul>
+                        </div>
+                    }
+
                 </div>
                 <JoinwarningModal show={joinWarningModal} onHide={this.showWarnsFunc} onClose={this.closeWarnsFunc}/>
             </div>

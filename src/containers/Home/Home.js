@@ -7,7 +7,7 @@ import { getClientWidthFunc, getNavButtonFunc, changeLangFunc} from 'redux/modul
 import { joinOpenFunc, joinCloseFunc, joinMsgFunc } from 'redux/modules/joinWarning';
 import JoinwarningModal from '../../components/JoinWarn';
 
-import {homeUlEn, homePcUlEn} from './utils/homeUl';
+import {homeUlEn, homePcUlEn, homeUl, homePcUl} from './utils/homeUl';
 import config from '../../config';
 
 import Div1 from './components/Div1/Div1';
@@ -47,6 +47,7 @@ export default class Home extends Component {
 
     componentWillMount() {
       this.props.joinCloseFunc();
+      this.props.changeLangFunc(global.language);
     }
     componentDidMount() {
       const width = document.documentElement.clientWidth;
@@ -116,38 +117,33 @@ export default class Home extends Component {
                 <div className={styles.homeHeader + ' container'}>
                     <IndexLink to="/"><img src={clientWidth > 320 ? logo : logo2} /></IndexLink>
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
-
-                    { !navButton && clientWidth <= 1024 && language === 'en' && homeUlEn(styles.homeHeaderUl, style)}
-                    { navButton && clientWidth <= 1024 && language === 'en' && homeUlEn(styles.homeHeaderUl, style1)}
-
-                    {!navButton && clientWidth > 1024 && language === 'en' &&
+                    
+                    { !navButton && clientWidth <= 1024 && language !== 'zn' && homeUlEn(styles.homeHeaderUl, style)}
+                    { navButton && clientWidth <= 1024 && language !== 'zn' && homeUlEn(styles.homeHeaderUl, style1)}
+                    {!navButton && clientWidth > 1024 && language !== 'zn' &&
                     homePcUlEn(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
 
-                    {/* <a onClick={this.onClick.bind(this)} className={styles.navJoin}>Join us</a> */}
-                    {/* <div className={styles.homeGit}> */}
-                        {/* <a href="https://github.com/wanchain" target="_blank"><img src={clientWidth > 767 ? github : github2} /></a> */}
-                    {/* </div> */}
+                    { !navButton && clientWidth <= 1024 && language === 'zn' && homeUl(styles.homeHeaderUl, style)}
+                    { navButton && clientWidth <= 1024 && language === 'zn' && homeUl(styles.homeHeaderUl, style1)}
+                    {!navButton && clientWidth > 1024 && language === 'zn' &&
+                    homePcUl(styles.homeHeaderUl, style1, styles.homeDropdown, styles['homeDropdown-content'])}
                 </div>
 
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
                         <div>
-                          <p className={styles.bannerTitle}>WANCHAIN 3.0 IS LIVE</p>
+                          <p className={styles.bannerTitle}>{language === 'zn' ? 'Wanchain 3.0主网正式上线' : 'WANCHAIN 3.0 IS LIVE'}</p>
                           <div className={styles.bannerLine}>
                             <span className={styles.greenLine}></span>
                             <span className={styles.blueLine}></span>
                           </div>
-                          <p className={styles.bannertextP}>CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC20 TOKENS</p>
+                          <p className={styles.bannertextP}>
+                            {language === 'zn' ? '实现与比特币，以太坊，ERC20通证的跨链交易' : 'CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC20 TOKENS'}
+                          </p>
                         </div>
                         <div id="link" className={styles.videoBtn}>
-                            <a href="https://medium.com/wanchain-foundation" target="_blank" className={styles.read}>READ MORE</a>
+                            <a href="https://medium.com/wanchain-foundation" target="_blank" className={styles.read}>{language === 'zn' ? '了解更多' : 'READ MORE'}</a>
                         </div>
-                        {/* <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>
-                          <div className={styles.videoshade} onClick={this.videoCon.bind(this)}></div>
-                          <div>
-                              <video ref="video" width="750px" className={styles.videoBox} src={config.app.files.wanchain2} controls preload></video>
-                          </div>
-                        </div> */}
                         <div className={styles.bannerShare}>
                             <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram}/></a>
                             <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={Reddit}/></a>
@@ -166,7 +162,7 @@ export default class Home extends Component {
             <Div3/>
             {/* <Div8/> */}
             <Div4/>
-            <Div6/>
+            {/* <Div6/> */}
         </div>
     );
   }

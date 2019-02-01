@@ -18,3 +18,4 @@ export Events from './Events/Events';
 export WanLabs from './WanLabs/WanLabs';
 export Apply from './Apply/Apply';
 export LabCareer from './LabCareer/LabCareer';
+export Roadmap from './Roadmap/Roadmap';

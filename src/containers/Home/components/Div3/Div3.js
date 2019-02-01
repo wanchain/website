@@ -49,7 +49,7 @@ class Div3 extends React.Component {
 
       let pValue;
       if (language === 'zn') {
-        pValue = '万维链旨在建立一个基础设施--能够以去中心化的方式完成不同区块链网络的连接及价值的交换';
+        pValue = '分布式金融基础设施与各类区块链网络无缝连接';
       } else {
         pValue = 'A distributed financial infrastructure that seamlessly connects blockchain networks together';
       }
@@ -58,26 +58,26 @@ class Div3 extends React.Component {
         <div className={styles.comBgWhite}>
           <div className={styles.div2Header + ' container'}>
               {language === 'zn' ?
-                  <h2><hr className={styles.div1HeaderImg}/>万维链整体架构<hr className={styles.div1HeaderImg}/></h2>
-              :
+                  <h2 className={styles.h2En}><hr className={styles.div1HeaderImg}/>Wanchain架构<hr className={styles.div1HeaderImg}/></h2>
+                  :
                   <h2 className={styles.h2En}><hr className={styles.div1HeaderImg}/>WANCHAIN ARCHITECTURE<hr className={styles.div1HeaderImg}/></h2>
               }
               <p>{pValue}</p>
               <div className={styles.astroModule2}>
                   <img src={wanchain} className={styles.astroModule2Img} id="astroModule2Img"/>
                   <div className= {styles.astroModule2word + ' col-lg-4'}>
-                      <div className={ language === 'zn' ? styles.astroModule2wordDiv : styles.astroModule2wordDivEn}>
+                      <div className={ language === 'zn' ? styles.astroModule2wordDivEn : styles.astroModule2wordDivEn}>
                           <img src={one} style={widthPic} />
                           {language === 'zn' ?
-                              <p>万维链不仅仅是一个<small>通用的跨链协议<br/></small>同时是一个记录跨链交易、链内交易的<small>分布式账本</small></p>
-                          :
+                              <p>Wanchain不仅是通用的跨链协议，它还是记录跨链交易信息的分布式账本</p>
+                              :
                               <p>Wanchain is not merely a universal cross-chain protocol, it is a distributed ledger that records cross-chain and intra-chain transactions</p>
                           }
                       </div>
-                      <div className={ language === 'zn' ? styles.astroModule2wordDiv : styles.astroModule2wordDivEn}>
+                      <div className={ language === 'zn' ? styles.astroModule2wordDivEn : styles.astroModule2wordDivEn}>
                           <img src={two} style={widthPic} />
                           {language === 'zn' ?
-                              <p>这个账本不但支持<small>智能合约虚拟机<br/></small>而且能支持智能合约下的<small>交易隐私保护</small></p>
+                              <p>Wanchain账本支持智能合约，同时也支持交易的隐私保护</p>
                               :
                               <p>The ledger not only supports <span>smart contracts,</span> but also supports <span>privacy protection</span></p>
                           }
@@ -85,7 +85,7 @@ class Div3 extends React.Component {
 
 
                         <div id="link" onClick={this.videoCon.bind(this)} className={styles.videoBtn}>
-                            <span>WATCH VIDEO</span>
+                            <span>{language === 'zn' ? '观看视频' : 'WATCH VIDEO'}</span>
                             <img src={videpIco} className={styles.videpIco} />
                         </div>
                         <div className={styles.videoPopul} id="bg" style={{ display: isShow === 'true' ? 'block' : 'none' }}>

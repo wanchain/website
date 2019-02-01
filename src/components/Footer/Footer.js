@@ -19,7 +19,6 @@ class Footer extends React.Component {
       insertSubscribeFunc: PropTypes.func,
       subscribeState: PropTypes.object,
       clientWidth: PropTypes.number,
-
       warningOpenFunc: PropTypes.func,
       warningCloseFunc: PropTypes.func,
       warningMsgFunc: PropTypes.func,
@@ -152,7 +151,7 @@ class Footer extends React.Component {
                             <div className={styles.footMenu}>
                                 <a onClick={this.onSubmit.bind(this)} onMouseOver={this.onSubmit.bind(this)} onMouseLeave={this.onLeave.bind(this)}><img src={wechat1}/></a>
                                 <span>{language === 'zn' ? '微信' : 'wechat'}</span>
-                                <img style={widthWechat} src={language === 'zn' ? wecater : wecaterEn} className={styles.wechat} id="wechat"/>
+                                <img style={widthWechat} src={language === 'zn' ? wecaterEn : wecaterEn} className={styles.wechat} id="wechat"/>
                             </div>
                             <div className={styles.footMenu}>
                                 <a onClick={this.onQQ.bind(this)} onMouseOver={this.onQQ.bind(this)} onMouseLeave={this.onQQLeave.bind(this)}><img src={qq1}/></a>
@@ -165,11 +164,11 @@ class Footer extends React.Component {
                             </div>
                             <div className={styles.Newsletter}>
                                 <a href="https://wanchain.us17.list-manage.com/subscribe?u=474affe3661620cb14a108d52&id=f76852edbb" target="_blank"><img src={newsletter}/></a>
-                                <span>Newsletter</span>
+                                <span>{language === 'zn' ? '订阅' : 'Newsletter'}</span>
                             </div>
                             <div className={styles.footMenu}>
                                 <a href="mailto:business@wanchain.org" target="_blank"><img className={styles.business} src={Business}/></a>
-                                <span>Business Inquiries</span>
+                                <span>{language === 'zn' ? '商务洽谈' : 'Business Inquiries'}</span>
                             </div>
                         </div>
                     </div>

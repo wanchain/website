@@ -27,14 +27,14 @@ class Div4 extends React.Component {
                   <div className="container">
                       {clientWidth > 1025 ? <img src={part1} id="div3img1"/> : ''}
                       <div className={styles.officalModule3Div + ' col-lg-8'}>
-                          <h2>{language === 'zn' ? '去中心化的跨链机制' : 'PRIVATE'}</h2>
+                          <h2>{language === 'zn' ? '隐私保护' : 'PRIVATE'}</h2>
                           <p>
                             {language === 'zn' ? conConfig.HomeDiv4.part1.zn : conConfig.HomeDiv4.part1.en}
                           </p>
                           <ul>
-                            <li>-> Ring Signature</li>
-                            <li>-> One-Time Addresses</li>
-                            <li>-> Private Send</li>
+                            <li>-> {language === 'zn' ? '环签名' : 'Ring Signature'}</li>
+                            <li>-> {language === 'zn' ? '一次性地址' : 'One-Time Addresses'}</li>
+                            <li>-> {language === 'zn' ? '匿名发送' : 'Private Send'}</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? '' : <img src={part1} id="div3img1" className={styles.div3img1}/>}
@@ -45,11 +45,11 @@ class Div4 extends React.Component {
               <div style={{background: '#f7fafe'}} className={styles.offBg + clientWidth < 1025 ? styles.officalModule3 : styles.officalModule4}>
                   <div className="container">
                       <div className={clientWidth < 1025 ? styles.officalModule3Div : styles.officalModule4Div + ' col-lg-7'}>
-                          <h2>{language === 'zn' ? '通用跨链协议' : 'CROSS-CHAIN'}</h2>
+                          <h2>{language === 'zn' ? '跨链' : 'CROSS-CHAIN'}</h2>
                           <p>{language === 'zn' ? conConfig.HomeDiv4.part2.zn : conConfig.HomeDiv4.part2.en}</p>
                           <ul>
-                            <li>-> Locked accounts with Secure Multi-Party Computation (SMPC)</li>
-                            <li>-> Support for all ERC20 and protocol tokens</li>
+                            <li>-> {language === 'zn' ? '使用安全多方计算的锁定帐户' : 'Locked accounts with Secure Multi-Party Computation (SMPC)'}</li>
+                            <li>-> {language === 'zn' ? '支持对公链和ERC20通证的跨链交易。' : 'Support for all ERC20 and protocol tokens'}</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? <img src={part2} id="div3img2" /> : <img src={part2} id="div3img2" className={styles.div3img2}/>}
@@ -61,12 +61,12 @@ class Div4 extends React.Component {
                   <div className="container">
                       {clientWidth > 1025 ? <img src={part3} id="div3img3"/> : ''}
                       <div className={styles.officalModule3Div + ' col-lg-8'} id="officalModule3Div2">
-                          <h2>{language === 'zn' ? '交易隐私保护' : 'SMART CONTRACTS'}</h2>
+                          <h2>{language === 'zn' ? '智能合约' : 'SMART CONTRACTS'}</h2>
                           <p>{language === 'zn' ? conConfig.HomeDiv4.part3.zn : conConfig.HomeDiv4.part3.en}</p>
                           <ul>
-                            <li>-> Implementation based on Ethereum's Codebase </li>
-                            <li>-> Leverage all existing Development Tools</li>
-                            <li>-> Build compelling distributed cross-chain Dapps</li>
+                            <li>-> {language === 'zn' ? '基于以太坊底层代码库实现' : 'Implementation based on Ethereum\'s Codebase'} </li>
+                            <li>-> {language === 'zn' ? '充分利用现有的开发工具' : 'Leverage all existing Development Tools'}</li>
+                            <li>-> {language === 'zn' ? '构建独特的分布式跨链应用' : 'Build compelling distributed cross-chain Dapps'}</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? '' : <img src={part3} id="div3img3" className={styles.div3img3}/>}

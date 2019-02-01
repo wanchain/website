@@ -123,33 +123,50 @@ class Div1 extends React.Component {
           <div className={styles.comBgWhite}>
             <div className={styles.div1Header + ' container'}>
               <h2> <hr className={styles.div1HeaderImg}/>
-                <span>{language === 'zn' ? '万维链是什么？' : "WANCHAIN'S VISION"}</span>
+                <span>{language === 'zn' ? 'Wanchain愿景' : "WANCHAIN'S VISION"}</span>
                 <hr className={styles.div1HeaderImg}/>
               </h2>
               <div className={styles.div1HeaderImg2} id="div1HeaderImg2">
-                <img src={language === 'zn' ? div1Img : div1EnPc} />
+                <img src={language === 'zn' ? div1EnPc : div1EnPc} />
               </div>
               <div className={styles.divTextContent}>
                 <ul>
                   <li>
                     <img src={vision1} />
-                    <p>Digital Economy</p>
-                    <span>Bitcoin was the first natively digital asset, tens of thousands have followed. The digital economy is expanding exponentially and will soon become 'the economy'</span>
+                    <p>{language === 'zn' ? '数字经济' : 'Digital Economy'}</p>
+                    <span>
+                        {language === 'zn' 
+                        ? '比特币作为首个原生数字资产，受到来自世界各地人们的追捧。数字经济体量呈几何倍数增长，它必将成为全球经济增长的主要引擎。' 
+                        : "Bitcoin was the first natively digital asset, tens of thousands have followed. The digital economy is expanding exponentially and will soon become 'the economy'"}
+                    </span>
                   </li>
                   <li>
                     <img src={vision2} />
-                    <p>Digitization of Assets</p>
-                    <span>These digital assets now operate in the domain of 0s, 1s, Moore's law, and exponential scale. The impacts on the financial services industry will be profound.</span>
+                    <p>{language === 'zn' ? '资产数字化' : 'Digitization of Assets'}</p>
+                    <span>
+                        {language === 'zn' 
+                        ? '数字资产表现为二进制编码，正遵循着摩尔定律飞速发展。这必将给金融服务行业带来深刻变革。' 
+                        : "These digital assets now operate in the domain of 0s, 1s, Moore's law, and exponential scale. The impacts on the financial services industry will be profound."}
+                    </span>
                   </li>
                   <li style={clear}>
                     <img src={vision3} />
-                    <p>New Opportunities</p>
-                    <span>We believe our blockchain finance platform will not only unlock opportunities for blockchain companies, but also for traditional financial institutions building bridges to the new digital economy.</span>
+                    <p>{language === 'zn' ? '新机遇' : 'New Opportunities'}</p>
+                    <span>
+                        {language === 'zn' 
+                        ? '区块链金融平台不仅为区块链公司带来机遇，同时也为传统金融机构架起通往数字经济的桥梁。' 
+                        : 'We believe our blockchain finance platform will not only unlock opportunities for blockchain companies, but also for traditional financial institutions building bridges to the new digital economy.'}
+                        
+                    </span>
                   </li>
                   <li>
                     <img src={vision4} />
-                    <p>Financial Infrastructure</p>
-                    <span>The problem is that today's digital assets are isolated on their respective chains. Wanchain connects these assets and enables banking applications to be developed that guide their flows on-chain, removing centralized counterparty risk</span>
+                    <p>{language === 'zn' ? '金融基础设施' : 'Financial Infrastructure'}</p>
+                    <span>
+                        {language === 'zn' 
+                        ? '如今不同的数字资产彼此孤立。Wanchain打通了互不相连的各类资产，将去中心化的金融应用全都部署在链上，使得价值在不同链上得以自由流转，有效避免了传统中心化竞争对手的威胁。' 
+                        : "The problem is that today's digital assets are isolated on their respective chains. Wanchain connects these assets and enables banking applications to be developed that guide their flows on-chain, removing centralized counterparty risk."}  
+                    </span>
                   </li>
                 </ul>
               </div>

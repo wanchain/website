@@ -23,10 +23,10 @@ class Div2 extends React.Component {
       const widthL = {width: '380px'};
       return (
             <div className={styles.div1o} id="div1o">
-                <div className={language === 'zn' ? styles.div1oHeader : styles.div1oHeaderEn + ' container'}>
+                <div className={language === 'zn' ? styles.div1oHeaderEn : styles.div1oHeaderEn + ' container'}>
                     <h2>
                       <hr className={styles.div1HeaderImg}/>
-                      <span>{language === 'zn' ? '万维链应用场景' : 'Potential Use Cases for Wanchain'}</span>
+                      <span>{language === 'zn' ? 'Wanchain应用场景' : 'Potential Use Cases for Wanchain'}</span>
                       <hr className={styles.div1HeaderImg}/>
                     </h2>
                     <div className={styles.div1oBody}>
@@ -36,17 +36,17 @@ class Div2 extends React.Component {
                                 <img src={card1} id="div1oimg1" />
                               </p>
                               {language === 'zn' ?
-                                  <p className={styles.psize}>数字货币<br/>交易<small>兑换</small></p>
-                               :
+                                  <p><small>去中心化</small><br/> 交易所</p>
+                                  :
                                   <p><small>Decentralized</small><br/> Exchange</p>
                               }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
                             {language === 'zn' ?
                                 <ul>
-                                    <img src={pot}/><li>多种数字货币的交易兑换</li>
-                                    <img src={pot}/><li>不同机构或个人依托万维链提<br/>供分布式货币交易兑换服务</li>
-                                    <img src={pot}/><li>万维链提供分布式跨链交易机制</li>
+                                    <img src={pot}/><li>全球数字资产在链上自由交易</li>
+                                    <img src={pot}/><li>使用万维链多资产钱包进行交易</li>
+                                    <img src={pot}/><li>在跨链平台上构建去中心化交易所应用</li>
                                 </ul>
                             :
                                 <ul>
@@ -63,8 +63,8 @@ class Div2 extends React.Component {
                                 <img src={card2} id="div1oimg2"/>
                               </p>
                                 {language === 'zn' ?
-                                    <p>数字货币<br/><small>借贷</small></p>
-                                :
+                                    <p><small>资产</small><br/>管理工具</p>
+                                    :
                                     <p><small>Asset</small><br/>Management Tools</p>
                                 }
 
@@ -72,9 +72,9 @@ class Div2 extends React.Component {
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
                             {language === 'zn' ?
                                 <ul>
-                                    <img src={pot}/><li>所有交易过程实现基于跨链机<br/>制和智能合约的非人为执行</li>
-                                    <img src={pot}/><li>用户以去中心化的方式持有自<br/>己的资产和负债(不同tokens)</li>
-                                    <img src={pot}/><li>万维链确保过程中资产的安全<br/>性和客观性</li>
+                                    <img src={pot}/><li>将交易风险降至最低</li>
+                                    <img src={pot}/><li>公开地址允许方便且可信的审计</li>
+                                    <img src={pot}/><li>对交易过程和交易地址进行隐私保护</li>
                                 </ul>
                             :
                                 <ul>
@@ -91,17 +91,17 @@ class Div2 extends React.Component {
                                 <img src={card3} id="div1oimg4"/>
                               </p>
                                 {language === 'zn' ?
-                                    <p>多币种ICO<br/><small>众筹</small></p>
-                                :
+                                    <p id={styles.div1oP4}><small>去中心化</small><br/>跨链应用</p>
+                                    :
                                     <p id={styles.div1oP4}><small>Cross-chain</small><br/>dApps</p>
                                 }
                             </div>
                             <img className={styles.div1oBodyCardLine} src={divo1Line} />
                             {language === 'zn' ?
                                 <ul>
-                                    <img src={pot}/><li>支持多币种智能合约进行ICO</li>
-                                    <img src={pot}/><li>ICO tokens转换代币 自动化</li>
-                                    <img src={pot}/><li>ICO过程完全 去中心化</li>
+                                    <img src={pot}/><li>通过跨链增加资产流动性</li>
+                                    <img src={pot}/><li>直接在Wanchain上部署或者将跨链机制嵌入已有的任何应用</li>
+                                    <img src={pot}/><li>对基于以太坊的应用和BTC之间进行跨链交易</li>
                                 </ul>
                             :
                                 <ul>

@@ -1,15 +1,15 @@
 const conConfig = {
   HomeDiv4: {
     part1: {
-      zn: '在万维链上，我们将支持主流公链的跨链交易（如BTC、ETH）、联盟链之间的资产跨链交易，以及公链与联盟链的跨链交易。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',
+      zn: '环签名（Ring Signature）是将交易的签名者完全匿名，交易接收方能够正确验证交易发起方是否就该笔交易进行签名。一次性地址（OAT）为接收方的每笔交易提供匿名保护。匿名发送（Private Send）功能则将每笔交易拆分成若干标准金额，从而进一步干扰交易总金额信息。',
       en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send function breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
     },
     part2: {
-      zn: '万维链通用跨链协议是钱包与万维链节点，万维链节点与同构链节点的通信协议，通过协议完成跨链交易相关数据的请求、确认等相关通信。根据通用协议社区开发者可以根据应用场景开发独立的多资产钱包、建立不同开放程度的链条。通过类联合锚定，多方计算和门限秘钥共享机制结合多角色节点设计，完成跨链锁定账号的分布式秘钥管理。',
+      zn: '基于安全多方计算（SMPC）和复杂的代数运算，原链上锁定帐户的数字资产可以轻松转换成Wanchain上的映射资产，转换门槛很低。这将为分布式的跨链应用注入全新的活力，同时也消除了中心化竞争对手的威胁。Wanchain会持续对公链和ERC20通证的跨链交易。',
       en: 'Based on complex algebra, locked accounts with SMPC enables low threshold to convert any digital asset from any blockchain into a corresponding proxy asset on Wanchain\'s blockchain. This unleashes the power to build compelling distributed cross-chain Dapps and removes centralized counterparty risk. Wanchain will support ERC20 and protocol tokens'
     },
     part3: {
-      zn: '万维链上本身及同构链支持基于智能合约的资产的交易隐私保护。利用环签名和一次性地址，万维链实现智能合约代币的隐私保护，万维链不但是全球第一个实现智能合约代币交易的隐私保护，更让万维链及同构联盟链更好的适用于金融等应用场景。',
+      zn: 'Wanchain是基于以太坊开发的通用账本，汲取以太坊的优点，运行稳健。任何在以太坊上的应用都可以直接迁移到Wanchain上，做到零代码修改。同时，通过调用Wanchain的API接口，这些应用能够获得Wanchain独有的隐私保护和跨链交易功能。',
       en: 'Wanchain\'s blockchain builds upon the strengths and robustness of Ethereum. Any Ethereum Dapp will run on Wanchain with zero code changes, yet, applications can be enhanced with Wanchain\'s APIs to leverage privacy protection and cross-chain capabilities'
     },
     part4: {

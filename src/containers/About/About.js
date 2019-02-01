@@ -5,6 +5,8 @@ import { getNavButtonFunc } from 'redux/modules/auth';
 
 import teamDataEn from './data/dataTeamEn';
 import dataAdvisoryEn from './data/dataAdvisoryEn';
+import teamDataZn from './data/dataTeamZn';
+import dataAdvisoryZn from './data/dataAdvisoryZn';
 
 @connect(
     state => ({language: state.auth.language, }),
@@ -25,9 +27,16 @@ class About extends Component {
       const styles = require('./About.scss');
       const isLinkedIn = 'https://www.linkedin.com/';
       const In = require('./image/in.png');
-      const team = teamDataEn;
-      const advisory = dataAdvisoryEn;
 
+      let team;
+      let advisory;
+      if (language === 'zn') {
+        team = teamDataZn;
+        advisory = dataAdvisoryZn;
+      } else {
+        team = teamDataEn;
+        advisory = dataAdvisoryEn;
+      }
       return (
             <div className={styles.aboutDiv}>
                 {/* <div className={styles.aboutHeader}>
@@ -38,7 +47,7 @@ class About extends Component {
 
                 <div className={styles.aboutBody + ' container'}>
                     <div className={styles.aboutTitle}>
-                        <h1>{language === 'zn' ? '领导团队' : ' Leadership Team'}</h1>
+                        <h1>{language === 'zn' ? '管理层团队' : ' Leadership Team'}</h1>
                     </div>
 
                     <div className={styles.aboutTeam + ' col-lg-12'}>
