@@ -117,6 +117,7 @@ class Footer extends React.Component {
       const Business = require('./image/business.png');
       const text = {display: 'inline_block', width: '112px'};
       const widthWechat = {width: '120px'};
+      const margin = {margin: '0'};
 
       return (
             <div className={styles.FooterRoot}>
@@ -166,7 +167,7 @@ class Footer extends React.Component {
                                 <a href="https://wanchain.us17.list-manage.com/subscribe?u=474affe3661620cb14a108d52&id=f76852edbb" target="_blank"><img src={newsletter}/></a>
                                 <span>{language === 'zn' ? '订阅' : 'Newsletter'}</span>
                             </div>
-                            <div className={styles.footMenu}>
+                            <div className={styles.footMenu} style={margin}>
                                 <a href="mailto:business@wanchain.org" target="_blank"><img className={styles.business} src={Business}/></a>
                                 <span>{language === 'zn' ? '商务洽谈' : 'Business Inquiries'}</span>
                             </div>
