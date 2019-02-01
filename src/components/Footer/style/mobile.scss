@@ -152,15 +152,15 @@
     color: #999;
     font-size: 10px;
     display: block;
+    margin-top: 5px;
   }
   .business{
     width: 36px
   }
   .Newsletter{
-    width: 69px;
+    width: 25%;
     position: relative;
     float: left;
-    margin-left: 16px;
     a{
       img{
         width: 36px;
@@ -175,7 +175,7 @@
     }
   }
   .GitHub{
-    width: 69px;
+    width: 25%;
     float: left;
     // position: relative;
     a{
