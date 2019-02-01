@@ -107,6 +107,9 @@ class Product extends Component {
 
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
+    const hrefpdf = this.props.language === 'zn'
+     ? 'https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet_GUI_3.0_mainnet_guide_CHN.pdf'
+      : 'https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet%20GUI%203.0%20mainnet.pdf';
     return (
     <div>
       <div className={styles.productBox}>
@@ -170,7 +173,7 @@ class Product extends Component {
               </ul>
               <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download} language={language}/>
              </div>
-             <a href="https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet%20GUI%203.0%20mainnet.pdf" className={styles.downloadManual}>
+             <a href={hrefpdf} className={styles.downloadManual}>
                 <img className={styles.banDownL} src={banDownL}/> <span>{language === 'zn' ? '跨链交易使用手册' : 'Instruction manual for cross-chain transactions'}</span>
              </a>
           </div>
