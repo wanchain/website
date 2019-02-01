@@ -13,6 +13,7 @@
     }
 
     .navbarImg {
+      width: 20px !important;
       float: right;
       margin-right: 3px;
       margin-top: 20px;
@@ -106,9 +107,11 @@
       .bannerTitle {
         font-weight: bold;
         font-size: 50px;
+        font-family: MicrosoftYaHei;
       }
 
       .bannertextP {
+        width: 500px;
         font-family: MicrosoftYaHei;
         font-size: 18px;
         font-weight: normal;

@@ -2,9 +2,6 @@
   .homeHeaderBodyDiv1 {
     margin-top: 25px !important;
   }
-
-  .navGitaTit {}
-
   .homeHeader .homeGit {
     right: 60px !important;
   }
@@ -94,7 +91,7 @@
     }
 
     .navbarImg {
-      width: 20px;
+      width: 20px!important;
       float: right;
       margin-right: 0;
       margin-top: 20px;
@@ -176,7 +173,7 @@
       // margin-top: 80px;
       .bannerTitle {
         font-weight: bold;
-        font-size: 28px;
+        font-size: 24px;
       }
 
       .bannertextP {

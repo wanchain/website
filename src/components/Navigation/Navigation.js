@@ -157,9 +157,9 @@ class Navigation extends Component {
                         <div className={styles.navHeaderUl} id="navbar-menu" style={{display: 'none'}}>
                             <ul>
                                 <li><Link to="/products" onClick={this.getNav.bind(this)}>产品</Link></li>
-                                <li><a href={config.app.files.WhitepaperEN} target="_blank">白皮书</a></li>
-                                <li><a href={config.app.files.YellowpaperEN} target="_blank">黄皮书</a></li>
-                                <li><a href={config.app.files.CommercialEN} target="_blank">商业白皮书</a></li>
+                                <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
+                                <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
+                                <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>浏览器</a></li>
@@ -177,9 +177,9 @@ class Navigation extends Component {
                                 <li><Link to="/products" onClick={this.getNav.bind(this)}>产品</Link></li>
                                 {/* <li><Link to="https://swap.wanchain.org" target="_blank">Tokenswap</Link></li> */}
                                 {/* <li><Link to="/whitelist">Whitelist</Link></li> */}
-                                <li><a href={config.app.files.WhitepaperEN} target="_blank">白皮书</a></li>
-                                <li><a href={config.app.files.YellowpaperEN} target="_blank">黄皮书</a></li>
-                                <li><a href={config.app.files.CommercialEN} target="_blank">商业白皮书</a></li>
+                                <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
+                                <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
+                                <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><Link to="https://www.wanscan.org" target="_blank">浏览器</Link></li>
@@ -204,9 +204,9 @@ class Navigation extends Component {
                                     <div className={styles.navDropdown}>
                                         <a>文档</a>
                                         <div className={styles['navDropdown-content']}>
-                                            <a href={config.app.files.WhitepaperEN} target="_blank">白皮书</a>
-                                            <a href={config.app.files.YellowpaperEN} target="_blank">黄皮书</a>
-                                            <a href={config.app.files.CommercialEN} target="_blank">商业白皮书</a>
+                                            <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
+                                            <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
+                                            <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
                                             <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">文档</a>                                        
                                         </div>
                                     </div>

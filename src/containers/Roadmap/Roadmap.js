@@ -23,7 +23,7 @@ class Roadmap extends Component {
             {<Helmet script={[{src: '/jquery/jquery.min.js'}, {src: '/js/career/roadmap.js'}]}/>}
                 <div className={styles.title}>
                     <h1>{language === 'zn' ? '路线图' : 'Roadmap'}</h1>
-                    <p>{language === 'zn' ? '已完成进度和未来规划' : 'Completed milestones and coming ones'}</p>
+                    <p>{language === 'zn' ? '已完成进度和未来规划' : 'Completed and Upcoming Milestones'}</p>
                 </div>
                 <div className={styles.container}>
                     <div className={styles.w}>

@@ -9,7 +9,9 @@
   font-family: BebasNeue;
   src: url('/image/BEBAS___.ttf');
 }
-
+.container{
+    padding: 0!important;
+}
 .homeDiv {
  background: url("./image/banner.jpg") no-repeat center center ;
  background-size: cover;

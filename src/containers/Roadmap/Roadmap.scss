@@ -1,6 +1,10 @@
 @import './style/pro';
 @import './style/pc';
 @import './style/mobile';
+
+.container{
+    padding: 0!important;
+}
 .app{
     display: flex;
     display: -webkit-flex; /* Safari */
