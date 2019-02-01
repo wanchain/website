@@ -1,7 +1,7 @@
 const conConfig = {
   HomeDiv4: {
     part1: {
-      zn: '环签名（Ring Signature）是将交易的签名者完全匿名，交易接收方能够正确验证交易发起方是否就该笔交易进行签名。一次性地址（OAT）为接收方的每笔交易提供匿名保护。匿名发送（Private Send）功能则将每笔交易拆分成若干标准金额，从而进一步干扰交易总金额信息。',
+      zn: '环签名（Ring Signature）是将交易的签名者完全匿名，交易接收方能够正确验证交易发起方是否就该笔交易进行签名。一次性地址（OAT）为接收方的每笔交易提供匿名保护。匿名发送（Private Send）功能则将每笔交易拆分成若干标准金额，从而进一步隐藏交易总金额信息。',
       en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send function breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
     },
     part2: {

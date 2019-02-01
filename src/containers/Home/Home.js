@@ -132,7 +132,7 @@ export default class Home extends Component {
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
                         <div>
-                          <p className={styles.bannerTitle}>{language === 'zn' ? 'Wanchain 3.0主网正式上线' : 'WANCHAIN 3.0 IS LIVE'}</p>
+                          <p className={styles.bannerTitle}>{language === 'zn' ? 'Wanchain 3.0 主网上线' : 'WANCHAIN 3.0 IS LIVE'}</p>
                           <div className={styles.bannerLine}>
                             <span className={styles.greenLine}></span>
                             <span className={styles.blueLine}></span>
