@@ -79,105 +79,105 @@ class Roadmap extends Component {
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '发表万维链权益证明（PoS）研究论文' : 'Release Wanchain Proof of Stake (PoS) research paper'}</li>
                                     <li className={styles.d}>Q1 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '进行中' : 'Ongoing'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '进行中' : 'Ongoing'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? 'PoS原型' : 'Proof of Concept for PoS'}</li>
                                     <li className={styles.d}>Q1 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '进行中' : 'Ongoing'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '进行中' : 'Ongoing'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
                                     <li className={styles.d}>Q1 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '进行中' : 'Ongoing'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '进行中' : 'Ongoing'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? 'Storeman节点奖励先行计划' : 'Staking Pilot April-July'}</li>
                                     <li className={styles.d}>Q2 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '万维链PoS Alpha测试网' : 'Alpha testnet for Wanchain-PoS'}</li>
                                     <li className={styles.d}>Q2 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新的公链' : 'Integration with new blockchain'}</li>
                                     <li className={styles.d}>Q2 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '钱包改进（界面，用户体验）' : 'Wallet improvement (UX/UI)'}</li>
                                     <li className={styles.d}>Q2 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
                                     <li className={styles.d}>Q2 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '万维链PoS Beta测试网' : 'Beta testnet for Wanchain-PoS'}</li>
                                     <li className={styles.d}>Q3 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
                                     <li className={styles.d}>Q3 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '移动和桌面端轻钱包发布' : 'Mobile/light multi-asset wallet release'}</li>
                                     <li className={styles.d}>Q3 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? 'PoS主网上线' : 'Proof of Stake goes live on mainnet'}</li>
                                     <li className={styles.d}>Q4 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新的公链' : 'Integration with another new blockchain'}</li>
                                     <li className={styles.d}>Q4 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
                                     <li className={styles.d}>Q4 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
                                     <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '万维链4.0 - 与企业区块链的跨链集成' : 'Wanchain 4.0 - Cross-chain Integration with Enterprise Blockchain'}</li>
                                     <li className={styles.d}>Q4 2019</li>
-                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}<i className={styles.ico}></i></li>
+                                    <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
                             </div>
                         </div>
