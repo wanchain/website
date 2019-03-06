@@ -91,7 +91,7 @@
     }
 
     .navbarImg {
-      width: 20px!important;
+      width: 20px !important;
       float: right;
       margin-right: 0;
       margin-top: 20px;
@@ -105,7 +105,7 @@
       background: #fff;
       width: 100%;
       z-index: 9;
-      opacity: .95;
+      opacity: 0.95;
 
       ul {
         text-align: center;
@@ -162,14 +162,13 @@
   }
 
   .homeHeaderBodyDiv1 {
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: left;
 
     //.indexH2size{
     //  font-size:18px!important;
     //}
     div {
-
       // margin-top: 80px;
       .bannerTitle {
         font-weight: bold;
@@ -256,7 +255,7 @@
           padding-top: 5px;
           font-size: 10px;
           color: #fff;
-          opacity: .65;
+          opacity: 0.65;
           text-align: left;
           font-family: BebasNeue;
         }
@@ -266,7 +265,7 @@
     .bannerShare {
       display: block;
       text-align: left;
-      margin: 50px 0 0 0;
+      // margin: 50px 0 0 0;
       clear: both;
 
       img {
@@ -280,15 +279,42 @@
         padding-top: 0;
       }
     }
+    // 倒计时
+    .timeText {
+      font-size: 20px;
+      color: #ffffff;
+      margin: 20px 0 10px;
+    }
+    .timeText2 {
+      font-size: 14px;
+      color: #ffffff;
+    }
+    .timeBox {
+      font-size: 40px;
+      color: rgba(255, 255, 255, 1);
+      margin-top: 30px;
+      .Timespan {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        display: inline-block;
+        text-align: center;
+      }
+      .TimeF {
+        margin: 0 18px;
+        color: #3680f8;
+      }
+    }
   }
 
   .homeHeaderBodyDiv2 {
-
     .home-submit-button {
       width: 210px;
       height: 50px;
       background-color: #008aff;
-      color: #FFF;
+      color: #fff;
       font-size: 18px;
       vertical-align: middle;
       padding-top: 12px;
@@ -303,7 +329,7 @@
       width: 210px;
       height: 50px;
       border: 1px solid #008aff;
-      color: #FFF;
+      color: #fff;
       font-size: 18px;
       vertical-align: middle;
       padding-top: 12px;
@@ -316,7 +342,7 @@
 
     .home-submit-button .home-submit-button2:focus,
     .home-submit-button2:hover {
-      color: #FFF;
+      color: #fff;
       border-color: transparent;
     }
 
@@ -350,7 +376,6 @@
   .bannerBtn a:hover {
     text-decoration: none;
     background-color: #008aff !important;
-
   }
 
   .bannerp {
@@ -438,7 +463,7 @@
           padding-top: 5px;
           font-size: 10px;
           color: #fff;
-          opacity: .65;
+          opacity: 0.65;
           text-align: left;
           font-family: BebasNeue;
         }
@@ -458,12 +483,12 @@
     }
 
     .greenLine {
-      background: #2AB3AB;
+      background: #2ab3ab;
       margin-right: 4px;
     }
 
     .blueLine {
-      background: #368AF6;
+      background: #368af6;
     }
   }
 
@@ -475,7 +500,7 @@
     left: 0;
     z-index: 4;
     background: #000;
-    opacity: .5;
+    opacity: 0.5;
     z-index: 8;
   }
 
@@ -495,16 +520,16 @@
 
     color: #fff;
     float: left;
-    width:190px;
-    height:50px;
+    width: 190px;
+    height: 50px;
     line-height: 50px;
     text-align: center;
     cursor: pointer;
-    margin: 45px 40px 50px 0;
-    font-size:16px;
+    margin: 45px 40px 20px 0;
+    font-size: 16px;
     font-weight: bold;
-    border-radius:25px;
-    background-image: linear-gradient(to right, #3680F8, #00AEFF);
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #3680f8, #00aeff);
   }
 
   .videpIco {

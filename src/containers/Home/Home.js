@@ -15,6 +15,7 @@ import Div2 from './components/Div2/Div2';
 import Div3 from './components/Div3/Div3';
 import Div4 from './components/Div4/Div4';
 import Div6 from './components/Div6/Div6';
+import { _ } from 'core-js';
 
 @connect(
     state => ({clientWidth: state.auth.clientWidth, navButton: state.auth.navButton, language: state.auth.language, titleState: state.auth.titleState,
@@ -41,7 +42,14 @@ export default class Home extends Component {
     constructor() {
       super();
       this.state = {
-        isShow: 'false'
+        isShow: 'false',
+        showTime: true,
+        textEn: 'Bidding period starts in',
+        textCn: '离竞选开始还有',
+        day: 0,
+        hour: 0,
+        minute: 0,
+        second: 0
       };
     }
 
@@ -52,11 +60,13 @@ export default class Home extends Component {
     componentDidMount() {
       const width = document.documentElement.clientWidth;
       this.props.getClientWidthFunc(width);
+      this.countFun('Fri, 15 Mar 2019 00:00:00 GMT');
     }
 
     componentWillUnmount() {
       // clearInterval(this.interval);
       this.props.getNavButtonFunc(false);
+      clearInterval(this.timer);
     }
 
     onClick() {
@@ -68,6 +78,42 @@ export default class Home extends Component {
       this.props.getNavButtonFunc(!navButton);
     }
 
+    countFun(time) {
+      const localTime = new Date(time).toString();
+      const endTime = new Date(localTime).getTime();
+      let sysSecond = (endTime - new Date().getTime());
+      this.timer = setInterval(() => {
+      // 防止倒计时出现负数
+        if (sysSecond > 1000) {
+          sysSecond -= 1000;
+          const day = Math.floor((sysSecond / 1000 / 3600) / 24);
+          const hour = Math.floor((sysSecond / 1000 / 3600) % 24);
+          const minute = Math.floor((sysSecond / 1000 / 60) % 60);
+          const second = Math.floor(sysSecond / 1000 % 60);
+          this.setState({
+            day: day,
+            hour: hour < 10 ? '0' + hour : hour,
+            minute: minute < 10 ? '0' + minute : minute,
+            second: second < 10 ? '0' + second : second
+          });
+        } else {
+          clearInterval(this.timer);
+          // 倒计时结束时触发父组件的方法
+          if (time === 'Fri, 15 Mar 2019 00:00:00 GMT') {
+            this.setState({
+              textEn: 'Bidding Period Ends in',
+              textCn: '离竞选结束还有'
+            });
+            this.countFun('Mon, 01 Apr 2019 00:00:00 GMT');
+          }
+          if (time === 'Mon, 01 Apr 2019 00:00:00 GMT') {
+            this.setState({
+              showTime: false
+            });
+          }
+        }
+      }, 1000);
+    }
 
     showWarns = () => {
       this.props.joinOpenFunc();
@@ -151,6 +197,17 @@ export default class Home extends Component {
                             <a href="https://discord.gg/3DpeV6W" target="_blank"><img src={Discord}/></a>
                             <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={Facebook}/></a>
                         </div>
+                        {this.state.showTime && 
+                          <div>
+                            <div className={styles.timeText}>
+                              {language === 'zn' ? 'Storeman节点奖励先行计划' : 'Storeman Staking Pilot'}
+                            </div>
+                            <div className={styles.timeText2}>
+                              {language === 'zn' ? this.state.textCn : this.state.textEn}
+                            </div>
+                            <div className={styles.timeBox}><span className={styles.Timespan}>{this.state.day}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.hour}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.minute}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.second}</span></div>                        
+                          </div>
+                        }
                     </div>
                 </div>
 

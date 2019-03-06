@@ -1,46 +1,45 @@
-
 @media screen and (min-width: 1025px) {
   .homeDiv {
     height: 800px;
     position: relative;
     //background: url("../image/homeHeader.jpg") no-repeat center center;
 
-    .homeHeader{
-      width: 1300px!important;
-      img{
+    .homeHeader {
+      width: 1300px !important;
+      img {
         width: 130px;
         float: left;
         padding-right: 10px;
         margin-top: 15px;
       }
 
-      .navbarImg{
+      .navbarImg {
         display: none;
       }
 
-      .homeHeaderUl{
+      .homeHeaderUl {
         padding-top: 20px;
         float: left;
         padding-left: 60px;
-        ul{
-          li{
+        ul {
+          li {
             float: left;
             padding-left: 10px;
             margin-left: 20px;
-            a{
+            a {
               color: #fff;
               padding-left: 10px;
               padding-right: 10px;
               padding-bottom: 10px;
             }
           }
-          a:hover{
+          a:hover {
             border-bottom: 2px solid #ffffff;
             text-decoration: none;
           }
         }
 
-        .homeDropdown{
+        .homeDropdown {
           position: relative;
           display: inline-block;
 
@@ -53,9 +52,8 @@
             text-align: center;
             //letter-spacing: 3px;
             left: -44px;
-            a{
+            a {
               display: block;
-
             }
           }
         }
@@ -65,35 +63,35 @@
         }
       }
 
-      .homeGit{
+      .homeGit {
         float: right;
         color: #fff;
         padding-top: 20px;
         line-height: 26px;
-        p{
+        p {
           color: #fff;
           float: right;
           padding-left: 20px;
           padding-top: 23px;
         }
-        a{
+        a {
           color: #fff;
           text-decoration: none;
           cursor: pointer;
           padding: 5px;
         }
-        img{
+        img {
           padding-top: 0;
           float: left;
           margin: 0;
         }
       }
 
-      .homeGit a:hover{
+      .homeGit a:hover {
         color: #1f6ce9;
       }
 
-      .navJoin{
+      .navJoin {
         color: #fff;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -101,59 +99,59 @@
         text-decoration: none;
         margin-left: 25px;
       }
-      .navJoin:hover{
+      .navJoin:hover {
         border-bottom: 2px solid #fff;
       }
     }
 
-    .container{
-      width: 100%!important;
+    .container {
+      width: 100% !important;
       margin: 0 auto;
     }
-    .homeHeaderBodyDiv1{
+    .homeHeaderBodyDiv1 {
       float: left;
-      margin-top: 180px;
+      margin-top: 120px;
       //8.16
-      width:1300px!important;
-      height:451px;
+      width: 1300px !important;
+      height: 451px;
       margin-left: -30px;
-      .bannerTitle{
+      .bannerTitle {
         font-family: MicrosoftYaHei-Bold;
-      	font-size: 50px;
-      	font-weight: bold;
-      	font-stretch: normal;
-      	line-height: 10px;
-      	letter-spacing: 2px;
-      	color: #ffffff;
+        font-size: 50px;
+        font-weight: bold;
+        font-stretch: normal;
+        line-height: 10px;
+        letter-spacing: 2px;
+        color: #ffffff;
       }
-      .bannertextP{
+      .bannertextP {
         font-family: MicrosoftYaHei;
-      	font-size: 16px;
-      	font-weight: normal;
-      	letter-spacing: 1px;
-      	color: #ffffff;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        color: #ffffff;
         padding: 0;
-        .bannertextSpan{
+        .bannertextSpan {
           font-weight: bold;
           color: #fff;
-          font-size:24px;
+          font-size: 24px;
         }
       }
-      img{
+      img {
         margin: 0 auto;
         display: block;
         margin-top: 35px;
       }
 
-      #scroll{
-        h2{
+      #scroll {
+        h2 {
           font-size: 40px;
           color: #ffffff;
           height: 90px;
           margin-top: 25px;
           text-align: center;
           width: 100%;
-          small{
+          small {
             color: #008aff;
             font-size: 40px;
             line-height: 60px;
@@ -161,28 +159,28 @@
         }
       }
 
-      p{
+      p {
         padding-top: 34px;
         font-size: 24px;
         color: #ffffff;
-        small{
+        small {
           display: inline-block;
           font-size: 16px;
           opacity: 0.65;
           padding-top: 10px;
           width: 64%;
           margin: 0 auto;
-        	letter-spacing: 0px;
+          letter-spacing: 0px;
         }
       }
 
-      .countdown{
+      .countdown {
         padding-top: 30px;
         width: 540px;
         margin: 0 auto;
-        li{
+        li {
           display: inline-block;
-          span{
+          span {
             font-family: BebasNeue;
             font-size: 48px;
             color: #fff;
@@ -192,13 +190,13 @@
             text-align: center;
             line-height: 55px;
           }
-          small{
+          small {
             padding-left: 30px;
             padding-right: 30px;
             color: #3680f8;
             font-size: 48px;
           }
-          p{
+          p {
             padding-top: 0;
             font-size: 16px;
             color: #ffffff;
@@ -207,7 +205,7 @@
           }
         }
       }
-      .divLine{
+      .divLine {
         width: 25px;
         height: 3px;
         background: #fff;
@@ -215,49 +213,77 @@
         margin-top: 25px;
       }
 
-      .bannerShare{
+      .bannerShare {
         display: block;
         text-align: left;
         margin: 50px 0 0 0;
-        img{
+        img {
           display: inline-block;
           margin: 20px 20px 20px 0;
           opacity: 0.6;
-          width:21px;
+          width: 21px;
         }
-        p{
+        p {
           font-size: 14px;
           padding-top: 0;
         }
-        img:hover{
+        img:hover {
           opacity: 1;
+        }
+      }
+      // 倒计时
+      .timeText {
+        font-size: 36px;
+        color: #ffffff;
+        margin: 60px 0 10px;
+      }
+      .timeText2 {
+        font-size: 18px;
+        color: #ffffff;
+      }
+      .timeBox {
+        font-size: 48px;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 30px;
+        .Timespan {
+          width: 60px;
+          height: 60px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 4px;
+          display: inline-block;
+          text-align: center;
+          line-height: 60px;
+        }
+        .TimeF{
+          margin: 0 28px;
+          color: #3680F8;
         }
       }
     }
 
-    .homeHeaderBodyDiv2{
+    .homeHeaderBodyDiv2 {
       float: left;
       margin-top: 220px;
       margin-left: 135px;
 
-      .home-submit-button{
+      .home-submit-button {
         width: 210px;
         height: 50px;
         margin-top: 20px;
         background-color: #008aff;
-        color: #FFF;
+        color: #fff;
         font-size: 18px;
         vertical-align: middle;
         padding-top: 12px;
         display: block;
       }
 
-      .home-submit-button2{
+      .home-submit-button2 {
         width: 210px;
         height: 50px;
         margin-top: 20px;
         border: 1px solid #008aff;
-        color: #FFF;
+        color: #fff;
         font-size: 18px;
         vertical-align: middle;
         padding-top: 12px;
@@ -266,18 +292,18 @@
       }
 
       .home-submit-button .home-submit-button2:focus,
-      .home-submit-button2:hover{
-        color: #FFF;
+      .home-submit-button2:hover {
+        color: #fff;
         border-color: transparent;
       }
 
-      .home-submit-button:hover{
+      .home-submit-button:hover {
         background: #1f6ce9;
       }
     }
   }
   //banner 8.16
-  .bannerBtn{
+  .bannerBtn {
     //height: 36px;
     //margin:60px auto 0 19%;
     //text-align: center;
@@ -286,7 +312,7 @@
     position: relative;
     top: 58px;
   }
-  .bannerBtn a{
+  .bannerBtn a {
     width: 170px;
     height: 47px;
     line-height: 50px;
@@ -299,86 +325,85 @@
     transition: background 1s;
     font-size: 18px;
   }
-  .bannerBtn a:hover{
+  .bannerBtn a:hover {
     text-decoration: none;
-    background-color: #008aff!important;
-
+    background-color: #008aff !important;
   }
 
-.ingBox{
-  width: 100%;
-  background-color: rgba(3, 11, 27, 1.502);
-  position: relative;
-  top: -111px;
-  h2{
-    color: #fff;
-    font-size: 22px;
-    text-align: center;
-    margin: 40px 0 15px;
-    padding-top: 15px;
-  }
+  .ingBox {
+    width: 100%;
+    background-color: rgba(3, 11, 27, 1.502);
+    position: relative;
+    top: -111px;
+    h2 {
+      color: #fff;
+      font-size: 22px;
+      text-align: center;
+      margin: 40px 0 15px;
+      padding-top: 15px;
+    }
 
-  .arrow{
-    color: #fff;
-    position: absolute;
-    top: 14px;
-    left: 30%;
-    display: inline-block;
-    text-align: center;
-  }
+    .arrow {
+      color: #fff;
+      position: absolute;
+      top: 14px;
+      left: 30%;
+      display: inline-block;
+      text-align: center;
+    }
 
-  .arrow2{
-    color: #fff;
-    position: absolute;
-    top: 14px;
-    left: 70.5%;
-    display: inline-block;
-    text-align: center;
-  }
+    .arrow2 {
+      color: #fff;
+      position: absolute;
+      top: 14px;
+      left: 70.5%;
+      display: inline-block;
+      text-align: center;
+    }
 
-  .ingDetal{
-    color: #fff;
-    text-align: center;
-    margin-top: 60px;
-    font-size: 18px;
-    padding-bottom: 20px;
-  }
-  .ingDetalSpan{
-    margin-left:20px;
-  }
-  em{
-    font-style: normal;
-  }
-  .row{
-    width:54%;
-  }
-  ul{
-    li{
-      float: left;
-      padding-left: 10px;
-      //margin-left: 20px;
-      a{
-        color: #fff;
+    .ingDetal {
+      color: #fff;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+    .ingDetalSpan {
+      margin-left: 20px;
+    }
+    em {
+      font-style: normal;
+    }
+    .row {
+      width: 54%;
+    }
+    ul {
+      li {
+        float: left;
         padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
+        //margin-left: 20px;
+        a {
+          color: #fff;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      a:hover {
+        border-bottom: 1px solid #ffffff;
+        text-decoration: none;
       }
     }
-    a:hover{
-      border-bottom: 1px solid #ffffff;
-      text-decoration: none;
-    }
   }
-}
 
-  .countdown{
+  .countdown {
     width: 60px;
     //padding-top: 30px;
     width: 570px;
     margin: 0 auto;
-    li{
+    li {
       display: inline-block;
-      span{
+      span {
         font-family: BebasNeue;
         font-size: 48px;
         color: #fff;
@@ -388,13 +413,13 @@
         text-align: center;
         line-height: 55px;
       }
-      small{
+      small {
         padding-left: 30px;
         padding-right: 30px;
         color: #3680f8;
         font-size: 48px;
       }
-      p{
+      p {
         padding-top: 0;
         font-size: 16px;
         color: #ffffff;
@@ -403,52 +428,52 @@
       }
     }
   }
-  .videoBtn:hover{
-    background-image: linear-gradient(to right, #00AEFF, #3680F8);
+  .videoBtn:hover {
+    background-image: linear-gradient(to right, #00aeff, #3680f8);
   }
-  .videoBtn{
+  .videoBtn {
     color: #fff;
     float: left;
-    width:190px;
-    height:50px;
-    .read{
-      color:#ffffff;
+    width: 190px;
+    height: 50px;
+    .read {
+      color: #ffffff;
       text-decoration: none;
     }
     line-height: 50px;
     text-align: center;
     cursor: pointer;
     margin: 45px 40px 0 0;
-    font-size:16px;
+    font-size: 16px;
     font-weight: bold;
-    border-radius:25px;
-    background-image: linear-gradient(to right, #3680F8, #00AEFF);
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #3680f8, #00aeff);
   }
-  .bannerLine{
+  .bannerLine {
     margin: 35px 0;
     display: inline-block;
-    span{
+    span {
       width: 20px;
       height: 3px;
       display: inline-block;
       float: left;
     }
-    .greenLine{
-      background: #2AB3AB;
+    .greenLine {
+      background: #2ab3ab;
       margin-right: 4px;
     }
-    .blueLine{
-      background: #368AF6;
+    .blueLine {
+      background: #368af6;
     }
   }
-  .videpIco{
-    display: inline!important;
-    width: 28px!important;
-    height: 28px!important;
-    margin: 0 0 0 8px!important;
-    padding: 0!important;
+  .videpIco {
+    display: inline !important;
+    width: 28px !important;
+    height: 28px !important;
+    margin: 0 0 0 8px !important;
+    padding: 0 !important;
   }
-  .videoshade{
+  .videoshade {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -456,9 +481,9 @@
     left: 0;
     z-index: 4;
     background: #000;
-    opacity: .5;
+    opacity: 0.5;
   }
-  .videoBox{
+  .videoBox {
     width: 950px;
     display: block;
     position: fixed;
