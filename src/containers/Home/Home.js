@@ -29,7 +29,7 @@ export default class Home extends Component {
       getNavButtonFunc: PropTypes.func,
       changeLangFunc: PropTypes.func,
       language: PropTypes.string,
-
+      hrefSrc: PropTypes.string,
       titleState: PropTypes.string,
 
       icoMsg: PropTypes.string,
@@ -154,6 +154,10 @@ export default class Home extends Component {
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
     var isShow = this.state.isShow;
+    var hrefSrc = 'https://medium.com/wanchain-foundation/wanchain-staking-pilot-how-to-participate-and-earn-wan-infographic-bc644981ca08';
+    if (language === 'zn') {
+      hrefSrc = 'https://mp.weixin.qq.com/s/xdpSUXt7mTd1kpY9VBLNwA';
+    }
 
     return (
         <div>
@@ -197,8 +201,9 @@ export default class Home extends Component {
                             <a href="https://discord.gg/3DpeV6W" target="_blank"><img src={Discord}/></a>
                             <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={Facebook}/></a>
                         </div>
+                        {/* 倒计时 */}
                         {this.state.showTime && 
-                          <div>
+                          <div className={styles.timecont}>
                             <div className={styles.timeText}>
                               {language === 'zn' ? 'Storeman节点奖励先行计划' : 'Storeman Staking Pilot'}
                             </div>
@@ -208,6 +213,9 @@ export default class Home extends Component {
                             <div className={styles.timeBox}><span className={styles.Timespan}>{this.state.day}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.hour}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.minute}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.second}</span></div>                        
                           </div>
                         }
+                        <div className={styles.videoBtn} id="start">
+                            <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? '竞选详情' : 'Start staking'}</a>
+                        </div>
                     </div>
                 </div>
 
