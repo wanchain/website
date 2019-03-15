@@ -12,7 +12,7 @@ export function homeUl(styles, style) {
               <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
               <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
               <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
-              <li><a href="http://www.wanchaindocs.org/en/latest/" target="_blank">文档库</a></li>
+              <li><a href="https://www.explorewanchain.org/" target="_blank">文档库</a></li>
               <li><Link to="/about">团队</Link></li>
               <li><Link to="https://www.wanscan.org" target="_blank">浏览器</Link></li>
               <li><Link to="https://medium.com/wanchain-foundation" target="_blank">资讯</Link></li>
@@ -34,7 +34,7 @@ export function homePcUl(styles, style, homeDropdown, content) {
                             <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                             <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                             <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
-                            <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">文档库</a>
+                            <a href="https://www.explorewanchain.org/" target="_blank">文档库</a>
                         </div>
                     </div>
                 </li>
@@ -59,7 +59,7 @@ export function homeUlEn(styles, style) {
                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                 <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
-                <li><a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a></li>
+                <li><a href="https://www.explorewanchain.org/" target="_blank">Wanchain docs</a></li>
                 
                 <li><Link to="/about">Team</Link></li>
                 {/* <li><Link to="/career">Career</Link></li> */}
@@ -90,7 +90,7 @@ export function homePcUlEn(styles, style, homeDropdown, content) {
                         <a href={config.app.files.WhitepaperEN} target="_blank">White paper</a>
                         <a href={config.app.files.YellowpaperEN} target="_blank">Yellow paper</a>
                         <a href={config.app.files.CommercialEN} target="_blank">Commercial paper</a>
-                        <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a>
+                        <a href="https://www.explorewanchain.org/" target="_blank">Wanchain docs</a>
                     </div>
                 </div>
             </li>

@@ -137,7 +137,7 @@ class Navigation extends Component {
                                             <a href={config.app.files.WhitepaperEN} target="_blank">White paper</a>
                                             <a href={config.app.files.YellowpaperEN} target="_blank">Yellow paper</a>
                                             <a href={config.app.files.CommercialEN} target="_blank">Commercial paper</a>
-                                            <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">Wanchain docs</a>                                        
+                                            <a href="https://www.explorewanchain.org/" target="_blank">Wanchain docs</a>                                        
                                         </div>
                                     </div>
                                 </li>
@@ -207,7 +207,7 @@ class Navigation extends Component {
                                             <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                                             <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                                             <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
-                                            <a href="http://www.wanchaindocs.org/en/latest/" target="_blank">文档</a>                                        
+                                            <a href="https://www.explorewanchain.org/" target="_blank">文档</a>                                        
                                         </div>
                                     </div>
                                 </li>
