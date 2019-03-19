@@ -75,7 +75,7 @@ export default () => {
         {/* <Route path="wanlabs" component={WanLabs}/> */}
         {/* <Route path="wanlabs/apply" component={Apply}/> */}
         {/* <Route path="wanlabs/career" component={LabCareer}/> */}
-        <Route path="career" component={Career}/>
+        {/* <Route path="career" component={Career}/> */}
       {/* <Route path="login" component={Login}/> */}
       { /* <Route path="pagination" component={Pagination}/> */ }
       { /* <Route path="survey" component={Survey}/> */ }
