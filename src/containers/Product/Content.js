@@ -225,16 +225,16 @@ class Content extends Component {
                  <th>{language === 'zn' ? 'SHA256校验值' : 'Checksum (SHA256)'}</th>
                </tr>
                <tr>
-                 <td>WanWalletGui-installer-3.0.26.exe</td>
-                 <td>6fcccfafb3e7b990e41bafc7b5d81339a859d8c840350632afff481d326dc976</td>
+                 <td>WanWalletGui-installer-3.0.27.exe</td>
+                 <td>7f68434b2da43455f7ee6dc96c344b4b0b2c9d05fbb5ea254f4f864f65667a58</td>
                </tr>
                <tr>
-                 <td>WanWalletGui-mac-3.0.26.zip</td>
-                 <td>88c3ad99eb9126ae6045c96c10cc20d7043f09c7419f4d66eebba27adba0315f</td>
+                 <td>WanWalletGui-mac-3.0.27.zip</td>
+                 <td>e43eb7880f7221b879915de8639c142fdc9fa08f38ca7d81a70247f6d73a47b7</td>
                </tr>
                <tr>
-                 <td>WanWalletGui-linux64-3.0.26.deb</td>
-                 <td>8b27c113330201f02cfdb56ef7f37da2f1132a25f6568e3293765000e2ddec79</td>
+                 <td>WanWalletGui-linux64-3.0.27.deb</td>
+                 <td>c6cae2b4d014815a953f745e43de23730b5ccdf029f02814fb0e410ff4713e00</td>
                </tr>
              </table>
           </div>
