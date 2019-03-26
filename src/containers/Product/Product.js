@@ -66,6 +66,15 @@ class Product extends Component {
       this.setState({download: '/download/macwallet3'});
     } else if (urlData === 'linux3') {
       this.setState({download: '/download/linwallet3'});
+    } else if (urlData === 'winoff3') {
+      this.offline = true;
+      this.setState({download: '/download/winoffwallet3'});
+    } else if (urlData === 'macoff3') {
+      this.offline = true;
+      this.setState({download: '/download/macoffwallet3'});
+    } else if (urlData === 'linuxoff3') {
+      this.offline = true;
+      this.setState({download: '/download/linoffwallet3'});
     }
     if (this.state.pop === 'true') {
       this.setState({
@@ -110,6 +119,7 @@ class Product extends Component {
     const hrefpdf = this.props.language === 'zn'
      ? 'https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet_GUI_3.0_mainnet_guide_CHN.pdf'
       : 'https://github.com/wanchain/wanchain_docs/raw/master/Wanwallet%20GUI%203.0%20mainnet.pdf';
+    const hrefpdf1 = 'https://github.com/wanchain/wanchain_docs/raw/master/Wanchain_Offline_Wallet_Instructions_Manual.pdf';
     return (
     <div>
       <div className={styles.productBox}>
@@ -171,11 +181,22 @@ class Product extends Component {
                 <li onClick={(event) => this.popContent('mac3', event)}><img src={mac}/></li>
                 <li onClick={(event) => this.popContent('linux3', event)}><img src={Glinux}/></li>
               </ul>
-              <Content isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download} language={language}/>
+              <Content offline={this.offline} isShow={this.state.pop} isPopFunc={this.popContent} download={this.state.download} language={language}/>
              </div>
              <a href={hrefpdf} className={styles.downloadManual}>
                 <img className={styles.banDownL} src={banDownL}/> <span>{language === 'zn' ? '跨链交易使用手册' : 'Instruction manual for cross-chain transactions'}</span>
              </a>
+             <div className={styles.downloadBoxBan}>
+             <h2>{language === 'zn' ? '根据您的操作系统下载Wanchain离线钱包' : 'Download Wanchain Offline Wallet for your platform'}</h2>
+             <ul>
+               <li onClick={(event) => this.popContent('winoff3', event)}><img src={win}/></li>
+               <li onClick={(event) => this.popContent('macoff3', event)}><img src={mac}/></li>
+               <li onClick={(event) => this.popContent('linuxoff3', event)}><img src={Glinux}/></li>
+             </ul>
+            </div>
+            <a href={hrefpdf1} className={styles.downloadManual}>
+               <img className={styles.banDownL} src={banDownL}/> <span>{language === 'zn' ? '离线交易使用手册' : 'Instruction manual for offline transactions'}</span>
+            </a>
           </div>
           <div className={styles.bannerRight}>
             <div className={styles.comimgBox}><img className={styles.banRbg} src={banRbg}/></div>
@@ -262,8 +283,8 @@ class Product extends Component {
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
                 <span>
-                    {language === 'zn' ? '点击' : 'Check'} 
-                    <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">{language === 'zn' ? '此处' : 'here'}</a> 
+                    {language === 'zn' ? '点击' : 'Check'}
+                    <a href="https://github.com/wanchain/go-wanchain/wiki/Using-the-Wanchain-Command-Line-Wallet" target="_blank">{language === 'zn' ? '此处' : 'here'}</a>
                     {language === 'zn' ? '查看Wanchain 1.0 命令行钱包指南' : 'for more information in our Wanchain 1.0 CLI wallet guide'}
                 </span>
               </li>

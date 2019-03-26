@@ -143,6 +143,16 @@ app.use('/download/linwallet3', function(req, res) {
   res.download(path.join(__dirname, '..', 'static', config.app.files.linwallet3));
 });
 
+app.use('/download/winoffwallet3', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.winoffwallet3));
+});
+app.use('/download/macoffwallet3', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.macoffwallet3));
+});
+app.use('/download/linoffwallet3', function(req, res) {
+  res.download(path.join(__dirname, '..', 'static', config.app.files.linoffwallet3));
+});
+
 /* 上传*/
 // app.post('/upload',function(req, res){
 //   var reqMethod = req.method.toLowerCase();

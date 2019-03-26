@@ -7,6 +7,7 @@ class Content extends Component {
     isShow: PropTypes.string,
     isPopFunc: PropTypes.func,
     download: PropTypes.string,
+    offline: PropTypes.string
   };
 
   constructor(props) {
@@ -17,10 +18,39 @@ class Content extends Component {
   }
 
   render() {
-    const styles = require('./Product.scss');
-    const {language} = this.props;
-
     var isShow = this.props.isShow;
+
+    const styles = require('./Product.scss');
+    const {language, offline} = this.props;
+    const products = {
+      'mac': {
+        name: 'WanWalletGui-mac-3.0.27.zip',
+        hash: 'e43eb7880f7221b879915de8639c142fdc9fa08f38ca7d81a70247f6d73a47b7'
+      },
+      'linux': {
+        name: 'WanWalletGui-linux64-3.0.27.deb',
+        hash: 'c6cae2b4d014815a953f745e43de23730b5ccdf029f02814fb0e410ff4713e00'
+      },
+      'win': {
+        name: 'WanWalletGui-installer-3.0.27.exe',
+        hash: '7f68434b2da43455f7ee6dc96c344b4b0b2c9d05fbb5ea254f4f864f65667a58'
+      }
+    };
+    if (offline) {
+      products.mac = {
+        name: 'WanOfflineWallet-1.0.0-beta_mac.zip',
+        hash: 'a1b4d57db47e5c0cf6cea079c8222dd4581b7b84a082f33677c568aa30e111a0'
+      };
+      products.linux = {
+        name: 'WanOfflineWallet-1.0.0-beta_amd64.deb',
+        hash: '52b63fd01340f99ae626e1e3111543b113eff7efd9e56d415071b9a10ce78227'
+      };
+      products.win = {
+        name: 'WanOfflineWallet-1.0.0-beta_win.exe',
+        hash: '38c9403c28d01790545895b599bad3647e3008b2507f8402891d276da6fdb32c'
+      };
+    }
+
     return (
       <div style={{ display: isShow === 'true' ? 'block' : 'none' }}>
         <div className={styles.shadeBox} onClick={this.props.isPopFunc}></div>
@@ -225,16 +255,16 @@ class Content extends Component {
                  <th>{language === 'zn' ? 'SHA256校验值' : 'Checksum (SHA256)'}</th>
                </tr>
                <tr>
-                 <td>WanWalletGui-installer-3.0.27.exe</td>
-                 <td>7f68434b2da43455f7ee6dc96c344b4b0b2c9d05fbb5ea254f4f864f65667a58</td>
+                 <td>{products.win.name}</td>
+                 <td>{products.win.hash}</td>
                </tr>
                <tr>
-                 <td>WanWalletGui-mac-3.0.27.zip</td>
-                 <td>e43eb7880f7221b879915de8639c142fdc9fa08f38ca7d81a70247f6d73a47b7</td>
+                 <td>{products.mac.name}</td>
+                 <td>{products.mac.hash}</td>
                </tr>
                <tr>
-                 <td>WanWalletGui-linux64-3.0.27.deb</td>
-                 <td>c6cae2b4d014815a953f745e43de23730b5ccdf029f02814fb0e410ff4713e00</td>
+                 <td>{products.linux.name}</td>
+                 <td>{products.linux.hash}</td>
                </tr>
              </table>
           </div>
