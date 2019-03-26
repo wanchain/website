@@ -61,10 +61,13 @@ class Product extends Component {
   }
   popContent(urlData) {
     if (urlData === 'win3') {
+      this.offline = false;
       this.setState({download: '/download/winwallet3'});
     } else if (urlData === 'mac3') {
+      this.offline = false;
       this.setState({download: '/download/macwallet3'});
     } else if (urlData === 'linux3') {
+      this.offline = false;
       this.setState({download: '/download/linwallet3'});
     } else if (urlData === 'winoff3') {
       this.offline = true;
