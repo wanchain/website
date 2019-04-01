@@ -90,6 +90,8 @@ class Navigation extends Component {
                                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                                 <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
+                                <li><a href="https://www.explorewanchain.org/" target="_blank">Wanchain docs</a></li>
+                                <li><a href={config.app.files.galaxyConsensus} target="_blank">Wanchain Galaxy Consensus</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>Explorer</a></li>
@@ -110,6 +112,8 @@ class Navigation extends Component {
                                 <li><a href={config.app.files.WhitepaperEN} target="_blank">Whitepaper</a></li>
                                 <li><a href={config.app.files.YellowpaperEN} target="_blank">Yellowpaper</a></li>
                                 <li><a href={config.app.files.CommercialEN} target="_blank">Commercialpaper</a></li>
+                                <li><a href="https://www.explorewanchain.org/" target="_blank">Wanchain docs</a></li>
+                                <li><a href={config.app.files.galaxyConsensus} target="_blank">Wanchain Galaxy Consensus</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>Team</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><Link to="https://www.wanscan.org" target="_blank">Explorer</Link></li>
@@ -137,7 +141,8 @@ class Navigation extends Component {
                                             <a href={config.app.files.WhitepaperEN} target="_blank">White paper</a>
                                             <a href={config.app.files.YellowpaperEN} target="_blank">Yellow paper</a>
                                             <a href={config.app.files.CommercialEN} target="_blank">Commercial paper</a>
-                                            <a href="https://www.explorewanchain.org/" target="_blank">Wanchain docs</a>                                        
+                                            <a href="https://www.explorewanchain.org/" target="_blank">Wanchain docs</a>
+                                            <a href={config.app.files.galaxyConsensus} target="_blank">Wanchain Galaxy Consensus</a>
                                         </div>
                                     </div>
                                 </li>
@@ -160,6 +165,8 @@ class Navigation extends Component {
                                 <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
                                 <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                                 <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
+                                <li><a href="https://www.explorewanchain.org/" target="_blank">文档</a></li>
+                                <li><a href={config.app.files.galaxyConsensus} target="_blank">万维链星系共识</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>浏览器</a></li>
@@ -180,6 +187,8 @@ class Navigation extends Component {
                                 <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
                                 <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                                 <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
+                                <li><a href="https://www.explorewanchain.org/" target="_blank">文档</a></li>
+                                <li><a href={config.app.files.galaxyConsensus} target="_blank">万维链星系共识</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><Link to="https://www.wanscan.org" target="_blank">浏览器</Link></li>
@@ -207,7 +216,8 @@ class Navigation extends Component {
                                             <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                                             <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                                             <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
-                                            <a href="https://www.explorewanchain.org/" target="_blank">文档</a>                                        
+                                            <a href="https://www.explorewanchain.org/" target="_blank">文档</a>
+                                            <a href={config.app.files.galaxyConsensus} target="_blank">万维链星系共识</a>
                                         </div>
                                     </div>
                                 </li>

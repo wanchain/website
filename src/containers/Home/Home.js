@@ -14,7 +14,6 @@ import Div1 from './components/Div1/Div1';
 import Div2 from './components/Div2/Div2';
 import Div3 from './components/Div3/Div3';
 import Div4 from './components/Div4/Div4';
-import Div6 from './components/Div6/Div6';
 import { _ } from 'core-js';
 
 @connect(
@@ -167,7 +166,7 @@ export default class Home extends Component {
                 <div className={styles.homeHeader + ' container'}>
                     <IndexLink to="/"><img src={clientWidth > 320 ? logo : logo2} /></IndexLink>
                     <img src={nav} className={styles.navbarImg} id="homeNav" onClick={this.getNav.bind(this)}/>
-                    
+
                     { !navButton && clientWidth <= 1024 && language !== 'zn' && homeUlEn(styles.homeHeaderUl, style)}
                     { navButton && clientWidth <= 1024 && language !== 'zn' && homeUlEn(styles.homeHeaderUl, style1)}
                     {!navButton && clientWidth > 1024 && language !== 'zn' &&
@@ -202,7 +201,7 @@ export default class Home extends Component {
                             <a href="https://www.facebook.com/wanchainfoundation/" target="_blank"><img src={Facebook}/></a>
                         </div>
                         {/* 倒计时 */}
-                        {this.state.showTime && 
+                        {/* this.state.showTime &&
                           <div className={styles.timecont}>
                             <div className={styles.timeText}>
                               {language === 'zn' ? 'Storeman节点奖励先行计划' : 'Storeman Staking Pilot'}
@@ -210,11 +209,11 @@ export default class Home extends Component {
                             <div className={styles.timeText2}>
                               {language === 'zn' ? this.state.textCn : this.state.textEn}
                             </div>
-                            <div className={styles.timeBox}><span className={styles.Timespan}>{this.state.day}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.hour}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.minute}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.second}</span></div>                        
+                            <div className={styles.timeBox}><span className={styles.Timespan}>{this.state.day}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.hour}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.minute}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.second}</span></div>
                           </div>
-                        }
+                        */}
                         <div className={styles.videoBtn} id="start">
-                            <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? '竞选详情' : 'Start staking'}</a>
+                            <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? 'Storeman节点奖励' : 'Storeman Staking'}</a>
                         </div>
                     </div>
                 </div>
