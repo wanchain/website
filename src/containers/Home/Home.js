@@ -153,10 +153,7 @@ export default class Home extends Component {
     const style = {display: 'none'};
     const style1 = {display: 'inline_block'};
     var isShow = this.state.isShow;
-    var hrefSrc = 'https://medium.com/wanchain-foundation/wanchain-staking-pilot-how-to-participate-and-earn-wan-infographic-bc644981ca08';
-    if (language === 'zn') {
-      hrefSrc = 'https://mp.weixin.qq.com/s/xdpSUXt7mTd1kpY9VBLNwA';
-    }
+    var hrefSrc = 'https://wandevs.org';
 
     return (
         <div>
@@ -213,7 +210,7 @@ export default class Home extends Component {
                           </div>
                         */}
                         <div className={styles.videoBtn} id="start">
-                            <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? 'Storeman节点奖励' : 'Storeman Staking'}</a>
+                            <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? '加入WanDevs' : 'Join WanDevs'}</a>
                         </div>
                     </div>
                 </div>
