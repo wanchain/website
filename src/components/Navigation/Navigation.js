@@ -166,7 +166,7 @@ class Navigation extends Component {
                                 <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                                 <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
                                 <li><a href="https://www.explorewanchain.org/" target="_blank">文档</a></li>
-                                <li><a href={config.app.files.galaxyConsensus} target="_blank">万维链星系共识</a></li>
+                                <li><a href={config.app.files.galaxyConsensusCH} target="_blank">万维链星系共识</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><a href="https://www.wanscan.org" onClick={this.getNav.bind(this)}>浏览器</a></li>
@@ -188,7 +188,7 @@ class Navigation extends Component {
                                 <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
                                 <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
                                 <li><a href="https://www.explorewanchain.org/" target="_blank">文档</a></li>
-                                <li><a href={config.app.files.galaxyConsensus} target="_blank">万维链星系共识</a></li>
+                                <li><a href={config.app.files.galaxyConsensusCH} target="_blank">万维链星系共识</a></li>
                                 <li><Link to="/about" onClick={this.getNav.bind(this)}>团队</Link></li>
                                 {/* <li><Link to="/career" onClick={this.getNav.bind(this)}>Career</Link></li> */}
                                 <li><Link to="https://www.wanscan.org" target="_blank">浏览器</Link></li>
@@ -217,7 +217,7 @@ class Navigation extends Component {
                                             <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                                             <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
                                             <a href="https://www.explorewanchain.org/" target="_blank">文档</a>
-                                            <a href={config.app.files.galaxyConsensus} target="_blank">万维链星系共识</a>
+                                            <a href={config.app.files.galaxyConsensusCH} target="_blank">万维链星系共识</a>
                                         </div>
                                     </div>
                                 </li>
