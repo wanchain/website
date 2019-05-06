@@ -180,7 +180,9 @@ class Product extends Component {
              <div className={styles.downloadBoxBan}>
               <h2>{language === 'zn' ? '根据您的操作系统下载Wanchain钱包' : 'Download Wanchain Wallet for your platform'}</h2>
               <ul>
-                <li onClick={(event) => this.popContent('win3', event)}><img src={win}/></li>
+                {/*
+                  <li onClick={(event) => this.popContent('win3', event)}><img src={win}/></li>
+                */}
                 <li onClick={(event) => this.popContent('mac3', event)}><img src={mac}/></li>
                 <li onClick={(event) => this.popContent('linux3', event)}><img src={Glinux}/></li>
               </ul>
