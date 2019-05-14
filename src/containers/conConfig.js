@@ -5,8 +5,8 @@ const conConfig = {
       en: 'Ring signature provides complete anonymity to the signer of a transaction, and yet provides the ability for the receiver to correctly verify that the sender did in fact sign the transaction. The optional One Time Addresses (OTA) provides complete anonymity for the receiver of every transaction. Private Send function breaks down every transaction input to a standard denomination, thereby providing further obfuscation to the transaction amount'
     },
     part2: {
-      zn: '基于安全多方计算（SMPC）和复杂的代数运算，原链上锁定帐户的数字资产可以轻松转换成Wanchain上的映射资产，转换门槛很低。这将为分布式的跨链应用注入全新的活力，同时也消除了中心化竞争对手的威胁。Wanchain会持续对公链和ERC20通证的跨链交易。',
-      en: 'Based on complex algebra, locked accounts with SMPC enables low threshold to convert any digital asset from any blockchain into a corresponding proxy asset on Wanchain\'s blockchain. This unleashes the power to build compelling distributed cross-chain Dapps and removes centralized counterparty risk. Wanchain will support ERC20 and protocol tokens'
+      zn: '基于安全多方计算（SMPC）和复杂的代数运算，原链上锁定帐户的数字资产可以轻松转换成Wanchain上的映射资产，转换门槛很低。这将为分布式的跨链应用注入全新的活力，同时也消除了中心化竞争对手的威胁。Wanchain会持续对公链和ERC-20通证的跨链交易。',
+      en: 'Based on complex algebra, locked accounts with SMPC enables low threshold to convert any digital asset from any blockchain into a corresponding proxy asset on Wanchain\'s blockchain. This unleashes the power to build compelling distributed cross-chain Dapps and removes centralized counterparty risk. Wanchain will support ERC-20 and protocol tokens'
     },
     part3: {
       zn: 'Wanchain是基于以太坊开发的通用账本，汲取以太坊的优点，运行稳健。任何在以太坊上的应用都可以直接迁移到Wanchain上，做到零代码修改。同时，通过调用Wanchain的API接口，这些应用能够获得Wanchain独有的隐私保护和跨链交易功能。',

@@ -49,7 +49,7 @@ class Div4 extends React.Component {
                           <p>{language === 'zn' ? conConfig.HomeDiv4.part2.zn : conConfig.HomeDiv4.part2.en}</p>
                           <ul>
                             <li>-> {language === 'zn' ? '使用安全多方计算的锁定帐户' : 'Locked accounts with Secure Multi-Party Computation (SMPC)'}</li>
-                            <li>-> {language === 'zn' ? '支持对公链和ERC20通证的跨链交易。' : 'Support for all ERC20 and protocol tokens'}</li>
+                            <li>-> {language === 'zn' ? '支持对公链和ERC-20通证的跨链交易。' : 'Support for all ERC-20 and protocol tokens'}</li>
                           </ul>
                       </div>
                       {clientWidth > 1025 ? <img src={part2} id="div3img2" /> : <img src={part2} id="div3img2" className={styles.div3img2}/>}

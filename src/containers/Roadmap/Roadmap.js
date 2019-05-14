@@ -70,8 +70,8 @@ class Roadmap extends Component {
                                 <div className={styles.showDiv} id="showDiv3">
                                     <p>
                                         {language === 'zn'
-                                         ? '2018年末万维链迎来了3.0的盛大发布。这次更新打通了与比特币的跨链交易，首次将以太坊生态圈与比特币生态圈连到了一起。这次发布同时包含了ERC20通证的跨链，包括MakerDAO项目的DAI稳定币和MKR代币，以及Loopring的LRC代币。'
-                                         : 'Wanchain ended 2018 with a major launch of Wanchain 3.0. This launch finalized the cross-chain integration with Bitcoin, bridging the Bitcoin community to the Ethereum community. Wanchain 3.0 also added cross-chain ERC20 tokens including MakerDAO\'s DAI and MKR and Loopring\'s LRC.'}
+                                         ? '2018年末万维链迎来了3.0的盛大发布。这次更新打通了与比特币的跨链交易，首次将以太坊生态圈与比特币生态圈连到了一起。这次发布同时包含了ERC-20通证的跨链，包括MakerDAO项目的DAI稳定币和MKR代币，以及Loopring的LRC代币。'
+                                         : 'Wanchain ended 2018 with a major launch of Wanchain 3.0. This launch finalized the cross-chain integration with Bitcoin, bridging the Bitcoin community to the Ethereum community. Wanchain 3.0 also added cross-chain ERC-20 tokens including MakerDAO\'s DAI and MKR and Loopring\'s LRC.'}
                                     </p>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ class Roadmap extends Component {
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
-                                    <li className={styles.m}><i className={styles.comIco}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
+                                    <li className={styles.m}><i className={styles.comIco}></i>{language === 'zn' ? '集成新一批ERC-20通证' : 'Next batch of ERC-20 integrations released'}</li>
                                     <li className={styles.d}>Q1 2019</li>
                                     <li className={styles.s}>{language === 'zn' ? '已完成' : 'Complete'}</li>
                                 </ul>
@@ -126,7 +126,7 @@ class Roadmap extends Component {
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
-                                    <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
+                                    <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC-20通证' : 'Next batch of ERC-20 integrations released'}</li>
                                     <li className={styles.d}>Q2 2019</li>
                                     <li className={styles.s}>{language === 'zn' ? '进行中' : 'Ongoing'}</li>
                                 </ul>
@@ -140,7 +140,7 @@ class Roadmap extends Component {
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
-                                    <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
+                                    <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC-20通证' : 'Next batch of ERC-20 integrations released'}</li>
                                     <li className={styles.d}>Q3 2019</li>
                                     <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>
@@ -168,7 +168,7 @@ class Roadmap extends Component {
                             </div>
                             <div className={styles.comContainer}>
                                 <ul className={styles.clickDiv}>
-                                    <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC20通证' : 'Next batch of ERC20 integrations released'}</li>
+                                    <li className={styles.m}><i className={styles.comIco2}></i>{language === 'zn' ? '集成新一批ERC-20通证' : 'Next batch of ERC-20 integrations released'}</li>
                                     <li className={styles.d}>Q4 2019</li>
                                     <li className={styles.s}>{language === 'zn' ? '待启动' : 'Pending'}</li>
                                 </ul>

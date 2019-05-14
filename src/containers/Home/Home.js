@@ -184,7 +184,7 @@ export default class Home extends Component {
                             <span className={styles.blueLine}></span>
                           </div>
                           <p className={styles.bannertextP}>
-                            {language === 'zn' ? '实现与比特币，以太坊，ERC20通证的跨链交易' : 'CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC20 TOKENS'}
+                            {language === 'zn' ? '实现与比特币，以太坊，ERC-20通证的跨链交易' : 'CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC-20 TOKENS'}
                           </p>
                         </div>
                         <div id="link" className={styles.videoBtn}>

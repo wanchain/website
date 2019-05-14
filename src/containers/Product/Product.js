@@ -161,7 +161,7 @@ class Product extends Component {
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
-                <span>{language === 'zn' ? 'Wanchain钱包现支持与比特币、以太坊、ERC20代币的跨链交易，在未来还将支持更多数字货币的跨链' : 'Wanchain Wallet now supports cross-chain transactions with Bitcoin, Ethereum, ERC20 tokens and will support more cryptocurrencies in future versions'}</span>
+                <span>{language === 'zn' ? 'Wanchain钱包现支持与比特币、以太坊、ERC-20代币的跨链交易，在未来还将支持更多数字货币的跨链' : 'Wanchain Wallet now supports cross-chain transactions with Bitcoin, Ethereum, ERC-20 tokens and will support more cryptocurrencies in future versions'}</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle} src={circle2}/></em>
@@ -293,7 +293,7 @@ class Product extends Component {
               </li>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
-                <span>{language === 'zn' ? '点击2.1按钮，获取ETH和ERC20跨链交易的命令行钱包' : 'Click on 2.1 button for CLI wallet for ETH and ERC20 tokens cross-chain transactions'}</span>
+                <span>{language === 'zn' ? '点击2.1按钮，获取ETH和ERC-20跨链交易的命令行钱包' : 'Click on 2.1 button for CLI wallet for ETH and ERC-20 tokens cross-chain transactions'}</span>
               </li>
               <li>
                 <em><img className={styles.icoCircle2} src={circle}/></em>
