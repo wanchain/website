@@ -138,6 +138,9 @@ export default class Home extends Component {
   render() {
     const styles = require('./Home.scss');
     const logo = require('./image/logo.png');
+    const posTitleEn = require('./image/posTitleEn.png');
+    const posTitleZn = require('./image/posTitleZn.png');
+    const partner = require('./image/partner.png');
     const logo2 = require('./image/icoLoho2.png');
     const nav = require('./image/nav1.png');
     const github = require('./image/github.png');
@@ -178,17 +181,22 @@ export default class Home extends Component {
                 <div className="container">
                     <div className={styles.homeHeaderBodyDiv1}>
                         <div>
-                          <p className={styles.bannerTitle}>{language === 'zn' ? 'Wanchain 3.0 主网上线' : 'WANCHAIN 3.0 IS LIVE'}</p>
+                          <p className={styles.bannerTitle}>{language === 'zn' ? '构建未来金融' : 'Build the Future of Finance'}</p>
                           <div className={styles.bannerLine}>
                             <span className={styles.greenLine}></span>
                             <span className={styles.blueLine}></span>
                           </div>
+                          {/*
                           <p className={styles.bannertextP}>
                             {language === 'zn' ? '实现与比特币，以太坊，ERC-20通证的跨链交易' : 'CROSS-CHAIN TRANSACTIONS WITH BITCOIN, ETHEREUM, AND ERC-20 TOKENS'}
                           </p>
+                          */}
                         </div>
                         <div id="link" className={styles.videoBtn}>
-                            <a href="https://medium.com/wanchain-foundation" target="_blank" className={styles.read}>{language === 'zn' ? '了解更多' : 'READ MORE'}</a>
+                          <a href="https://medium.com/wanchain-foundation" target="_blank" className={styles.read}>{language === 'zn' ? '了解更多' : 'READ MORE'}</a>
+                        </div>
+                        <div className={styles.videoBtn} id="start">
+                          <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? '加入WanDevs' : 'Join WanDevs'}</a>
                         </div>
                         <div className={styles.bannerShare}>
                             <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram}/></a>
@@ -209,8 +217,10 @@ export default class Home extends Component {
                             <div className={styles.timeBox}><span className={styles.Timespan}>{this.state.day}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.hour}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.minute}</span><span className={styles.TimeF}>:</span><span className={styles.Timespan}>{this.state.second}</span></div>
                           </div>
                         */}
-                        <div className={styles.videoBtn} id="start">
-                            <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? '加入WanDevs' : 'Join WanDevs'}</a>
+                        <div className={styles.posStyle}>
+                          {language === 'zn' ? <img src={posTitleZn} className={styles.img1}/> : <img src={posTitleEn} className={styles.img1}/> }
+                          <img src={partner} className={styles.img2}/>
+                          <p className={styles.posPartner}>More partners coming soon</p>
                         </div>
                     </div>
                 </div>

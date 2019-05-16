@@ -118,7 +118,7 @@
       margin-left: -30px;
       .bannerTitle {
         font-family: MicrosoftYaHei-Bold;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
         font-stretch: normal;
         line-height: 10px;
@@ -217,7 +217,8 @@
       .bannerShare {
         display: block;
         text-align: left;
-        margin: 50px 0 0 0;
+        margin: 50px 0 70px 0;
+        clear: both;
         img {
           display: inline-block;
           margin: 20px 20px 20px 0;
@@ -258,6 +259,28 @@
         .TimeF{
           margin: 0 28px;
           color: #3680F8;
+        }
+      }
+      .posStyle {
+        float: left;
+        margin-top: 130px;
+
+        .img1 {
+          float: left;
+          width: 35%;
+          clear: both;
+        }
+        .img2 {
+          float: left;
+          width: 50%;
+          clear: both;
+        }
+        .posPartner {
+          clear: both;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: "Helvetica Neue";
+          color: rgba(255, 255, 255, 0.302)
         }
       }
     }
@@ -444,7 +467,7 @@
     line-height: 50px;
     text-align: center;
     cursor: pointer;
-    margin: 45px 40px 0 0;
+    margin: 0 40px 0 0;
     font-size: 16px;
     font-weight: bold;
     border-radius: 25px;
