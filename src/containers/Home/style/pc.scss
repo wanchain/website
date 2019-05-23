@@ -266,14 +266,13 @@
         margin-top: 130px;
 
         .img1 {
-          float: left;
           width: 35%;
-          clear: both;
+          margin: 35px 0 0 0;
         }
         .img2 {
-          float: left;
-          width: 50%;
-          clear: both;
+          width: 10%;
+          display: inline-block;
+          margin: 15px 15px 0 0;
         }
         .posPartner {
           clear: both;

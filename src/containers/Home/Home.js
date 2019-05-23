@@ -140,7 +140,12 @@ export default class Home extends Component {
     const logo = require('./image/logo.png');
     const posTitleEn = require('./image/posTitleEn.png');
     const posTitleZn = require('./image/posTitleZn.png');
-    const partner = require('./image/partner.png');
+    const blocksTech = require('./image/blocks_tech.png');
+    const keystore = require('./image/keystore.png');
+    const matpool = require('./image/matpool.png');
+    const wetez = require('./image/wetez.png');
+    const bitrue = require('./image/bitrue.png');
+
     const logo2 = require('./image/icoLoho2.png');
     const nav = require('./image/nav1.png');
     const github = require('./image/github.png');
@@ -219,7 +224,11 @@ export default class Home extends Component {
                         */}
                         <div className={styles.posStyle}>
                           {language === 'zn' ? <img src={posTitleZn} className={styles.img1}/> : <img src={posTitleEn} className={styles.img1}/> }
-                          <img src={partner} className={styles.img2}/>
+                          <a href="https://blocks.tech/"><img src={blocksTech} className={styles.img2}/></a>
+                          <a href="https://www.keystore.com/#/"><img src={keystore} className={styles.img2}/></a>
+                          <a href="https://matpool.io/pos"><img src={matpool} className={styles.img2}/></a>
+                          <a href="http://www.wetez.io/pc/wetez"><img src={wetez} className={styles.img2}/></a>
+                          <a href="https://www.bitrue.com/"><img src={bitrue} className={styles.img2}/></a>
                           <p className={styles.posPartner}>More partners coming soon</p>
                         </div>
                     </div>
