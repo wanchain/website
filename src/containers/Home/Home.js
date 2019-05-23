@@ -224,11 +224,11 @@ export default class Home extends Component {
                         */}
                         <div className={styles.posStyle}>
                           {language === 'zn' ? <img src={posTitleZn} className={styles.img1}/> : <img src={posTitleEn} className={styles.img1}/> }
-                          <a href="https://blocks.tech/"><img src={blocksTech} className={styles.img2}/></a>
-                          <a href="https://www.keystore.com/#/"><img src={keystore} className={styles.img2}/></a>
-                          <a href="https://matpool.io/pos"><img src={matpool} className={styles.img2}/></a>
-                          <a href="http://www.wetez.io/pc/wetez"><img src={wetez} className={styles.img2}/></a>
-                          <a href="https://www.bitrue.com/"><img src={bitrue} className={styles.img2}/></a>
+                          <a target="_blank" href="https://blocks.tech/"><img src={blocksTech} className={styles.img2}/></a>
+                          <a target="_blank" href="https://www.keystore.com/#/"><img src={keystore} className={styles.img2}/></a>
+                          <a target="_blank" href="https://matpool.io/pos"><img src={matpool} className={styles.img2}/></a>
+                          <a target="_blank" href="http://www.wetez.io/pc/wetez"><img src={wetez} className={styles.img2}/></a>
+                          <a target="_blank" href="https://www.bitrue.com/"><img src={bitrue} className={styles.img2}/></a>
                           <p className={styles.posPartner}>More partners coming soon</p>
                         </div>
                     </div>
