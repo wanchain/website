@@ -230,7 +230,7 @@ export default class Home extends Component {
                           <a target="_blank" href="https://matpool.io/pos"><img src={matpool} className={styles.img2}/></a>
                           <a target="_blank" href="http://www.wetez.io/pc/wetez"><img src={wetez} className={styles.img2}/></a>
                           <a target="_blank" href="https://www.bitrue.com/"><img src={bitrue} className={styles.img2}/></a>
-                          <a target="_blank" href="https://validators.online/"><img src={valida} className={styles.img2}/></a>
+                          <a target="_blank" href="https://validators.online/"><img src={valida} className={styles.img3}/></a>
 
                           <p className={styles.posPartner}>More partners coming soon</p>
                         </div>
