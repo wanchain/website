@@ -147,6 +147,7 @@ export default class Home extends Component {
     const bitrue = require('./image/bitrue.png');
     const valida = require('./image/valida.png');
     const hashquark = require('./image/hashquark.png');
+    const snz = require('./image/snz.png');
 
     const logo2 = require('./image/icoLoho2.png');
     const nav = require('./image/nav1.png');
@@ -233,8 +234,7 @@ export default class Home extends Component {
                           <a target="_blank" href="https://www.bitrue.com/"><img src={bitrue} className={styles.img2}/></a>
                           <a target="_blank" href="https://validators.online/"><img src={valida} className={styles.img3}/></a>
                           <a target="_blank" href="https://www.hashquark.io/#/supernode"><img src={hashquark} className={styles.img2}/></a>
-
-
+                          <a target="_blank" href="https://snzholding.com"><img src={snz} className={styles.img4}/></a>
                           <p className={styles.posPartner}>More partners coming soon</p>
                         </div>
                     </div>
