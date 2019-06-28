@@ -263,7 +263,7 @@
       }
       .posStyle {
         float: left;
-        margin-top: 130px;
+        margin-top: 0;
 
         .img1 {
           width: 35%;
@@ -481,6 +481,12 @@
     font-weight: bold;
     border-radius: 25px;
     background-image: linear-gradient(to right, #3680f8, #00aeff);
+  }
+  .posStart {
+    display: block;
+    clear: both;
+    font-size: 28px!important;
+    padding-top: 39px!important;
   }
   .bannerLine {
     margin: 35px 0;

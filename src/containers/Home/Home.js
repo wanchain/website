@@ -208,6 +208,15 @@ export default class Home extends Component {
                         <div className={styles.videoBtn} id="start">
                           <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? '加入WanDevs' : 'Join WanDevs'}</a>
                         </div>
+                        <p className={styles.posStart}>{language === 'zn' ? '星系共识Beta测试已上线' : 'Galaxy Consensus Beta Testnet is Live'}</p>
+                        <div id="link" className={styles.videoBtn}>
+                          <a
+                            href={language === 'zn'
+                              ? 'https://mp.weixin.qq.com/s?__biz=Mzg3MTAyOTgxMw==&mid=2247484574&idx=1&sn=297232b1649ad10e856088948771ff5c&chksm=ce8589c4f9f200d2e74ab6c04e88b9f6aeda850ad25bc0556a4e9ec217df6fc55a415e9acc11&scene=0&xtrack=1&key=adf1da94ffba578c14123d69d522814560b5dce79a418276e066b0c544ef089afc85eb04df4ce5054b35f6928d929e3cc0b2db3e780ba442230b527b1fd5e0c534e8b6c7c400eda5a6307832660276c7&ascene=1&uin=ODUyMTI4Mzgw&devicetype=Windows+7&version=62060739&lang=zh_CN&pass_ticket=CsmGf2%2FAfydMZmWIWzC08OsfUlyW3ha4%2FGJToRi2shMJrvadvrjOqKimGa5FuKxK'
+                              : 'https://medium.com/wanchain-foundation/wanchain-staking-beta-testnet-live-and-tps-increased-to-1000-19396e11ac4d'}
+                            target="_blank" className={styles.read}>{language === 'zn' ? '了解更多' : 'READ MORE'}
+                          </a>
+                        </div>
                         <div className={styles.bannerShare}>
                             <a href="https://t.me/WanchainANN" target="_blank"><img src={Telegram}/></a>
                             <a href="https://www.reddit.com/r/wanchain/" target="_blank"><img src={Reddit}/></a>

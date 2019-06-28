@@ -197,7 +197,7 @@
 
     img {
       width: 100%;
-      margin-top: 25px;
+      margin-top: 0;
     }
 
     .img2 {
@@ -552,13 +552,15 @@
     line-height: 50px;
     text-align: center;
     cursor: pointer;
-    margin: 45px 40px 20px 0;
+    margin: 7px 40px 20px 0;
     font-size: 16px;
     font-weight: bold;
     border-radius: 25px;
     background-image: linear-gradient(to right, #3680f8, #00aeff);
   }
-
+  .posStart {
+    clear: both;
+  }
   .videpIco {
     display: inline;
     width: 28px !important;
