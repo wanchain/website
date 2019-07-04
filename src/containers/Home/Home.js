@@ -203,7 +203,10 @@ export default class Home extends Component {
                           */}
                         </div>
                         <div id="link" className={styles.videoBtn}>
-                          <a href="https://medium.com/wanchain-foundation" target="_blank" className={styles.read}>{language === 'zn' ? '了解更多' : 'READ MORE'}</a>
+                          <a href={language === 'zn'
+                            ? 'https://mp.weixin.qq.com/s?__biz=Mzg3MTAyOTgxMw==&mid=2247484601&idx=1&sn=3153a681504cc703e07eef30fd3c8bc3&chksm=ce8589e3f9f200f5f27dfe1cf6e5cea489545b30f22583d75632060b1aa60127b28bbd6ec34f&scene=0&xtrack=1&key=3dada79245d9b2b202d688fe2932f5bd3711b272efca991ad41d8bc47a60c0947095fd4e6ea1251ad638809a520b5d4efe4c614d73a150ebcafb5324b77290a67e8f38038ab03306dd75de96454fba2f&ascene=1&uin=ODUyMTI4Mzgw&devicetype=Windows+7&version=62060739&lang=zh_CN&pass_ticket=vvMwkCQA0JsUod3CZunLdqWmGtG%2B4vv4hqbbMYiw7UrSjAGCLhe3yWxshmFphq%2Ba'
+                            : 'https://www.youtube.com/watch?v=VeNrqpCH5Q4'
+                          } target="_blank" className={styles.read}>{language === 'zn' ? '愿景视频' : 'Vision Video'}</a>
                         </div>
                         <div className={styles.videoBtn} id="start">
                           <a href={hrefSrc} target="_blank" className={styles.read}>{language === 'zn' ? '加入WanDevs' : 'Join WanDevs'}</a>
