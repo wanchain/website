@@ -12,7 +12,7 @@ export function homeUl(styles, style) {
               <li><a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a></li>
               <li><a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a></li>
               <li><a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a></li>
-              <li><a href="https://www.explorewanchain.org/" target="_blank">文档库</a></li>
+              <li><a href="https://wanchain.github.io/explorewanchain/" target="_blank">文档库</a></li>
               <li><a href={config.app.files.galaxyConsensusCH} target="_blank">万维链星系共识</a></li>
               <li><Link to="/about">团队</Link></li>
               <li><Link to="https://www.wanscan.org" target="_blank">浏览器</Link></li>
@@ -35,7 +35,7 @@ export function homePcUl(styles, style, homeDropdown, content) {
                             <a href={config.app.files.WhitepaperCH} target="_blank">白皮书</a>
                             <a href={config.app.files.YellowpaperCH} target="_blank">黄皮书</a>
                             <a href={config.app.files.CommercialCH} target="_blank">商业白皮书</a>
-                            <a href="https://www.explorewanchain.org/" target="_blank">文档库</a>
+                            <a href="https://wanchain.github.io/explorewanchain/" target="_blank">文档库</a>
                             <a href={config.app.files.galaxyConsensusCH} target="_blank">万维链星系共识</a>
                         </div>
                     </div>
