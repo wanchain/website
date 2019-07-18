@@ -149,7 +149,7 @@ export default class Home extends Component {
     const hashquark = require('./image/hashquark.png');
     const snz = require('./image/snz.png');
     const bepal = require('./image/bepal.png');
-
+    const xdrive = require('./image/xdrive.png');
 
     const logo2 = require('./image/icoLoho2.png');
     const nav = require('./image/nav1.png');
@@ -250,6 +250,7 @@ export default class Home extends Component {
                           <a target="_blank" href="https://www.hashquark.io/#/supernode"><img src={hashquark} className={styles.img2}/></a>
                           <a target="_blank" href="https://snzholding.com"><img src={snz} className={styles.img4}/></a>
                           <a target="_blank" href="https://m.bepal.pro"><img src={bepal} className={styles.img2}/></a>
+                          <a target="_blank" href="https://www.xdrive.solutions"><img src={xdrive} className={styles.img6}/></a>
                           <p className={styles.posPartner}>More partners coming soon</p>
                         </div>
                     </div>

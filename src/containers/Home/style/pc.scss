@@ -1,6 +1,6 @@
 @media screen and (min-width: 1025px) {
   .homeDiv {
-    height: 800px;
+    height: 850px;
     position: relative;
     //background: url("../image/homeHeader.jpg") no-repeat center center;
 
@@ -281,6 +281,11 @@
         }
         .img3 {
           width: 15%;
+          display: inline-block;
+          margin: 15px 15px 0 0;
+        }
+        .img6 {
+          width: 8%;
           display: inline-block;
           margin: 15px 15px 0 0;
         }
