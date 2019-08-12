@@ -308,9 +308,9 @@ class Product extends Component {
             </div>
              <div className={styles.GwanDload}>
                <p>{language === 'zn' ? '下载Gwan:' : 'Gwan Download:'}</p>
-               <a href="/download/gwan-windows-amd64-1.0.9-efebea0d.zip" className={styles.icoWin}><em></em></a>
-               <a href="/download/gwan-mac-amd64-1.0.9-efebea0d.tar.gz" className={styles.icoMac}><em></em></a>
-               <a href="/download/gwan-linux-amd64-1.0.9-efebea0d.tar.gz" className={styles.icoGLINUX}><em></em></a>
+               <a href="https://github.com/wanchain/go-wanchain/releases/download/v2.1.2/gwan-windows-amd64-2.1.2-e7e0f23d.zip" className={styles.icoWin}><em></em></a>
+               <a href="https://github.com/wanchain/go-wanchain/releases/download/v2.1.2/gwan-mac-amd64-2.1.2-e7e0f23d.tar.gz" className={styles.icoMac}><em></em></a>
+               <a href="https://github.com/wanchain/go-wanchain/releases/download/v2.1.2/gwan-linux-amd64-2.1.2-e7e0f23d.tar.gz" className={styles.icoGLINUX}><em></em></a>
              </div>
             </div>
           </div>
